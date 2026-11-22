@@ -61,6 +61,31 @@
     // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
     var m = /^#draft=([^:]+):(.+)$/.exec(location.hash || '');
     if (m) openDraft(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
+    refreshEmbeddedData();
+  }
+
+  // *-embed.js 会被浏览器/CDN 缓存（GitHub Pages 10 分钟），而站点数据每天更新。
+  // 线上环境额外用 no-store 拉一次 JSON，比对 updatedAt 后静默替换，避免看到昨天的分。
+  function refreshEmbeddedData() {
+    if (!/^https?:/.test(location.protocol) || typeof fetch !== 'function') return;
+    function pull(url, pick, apply) {
+      fetch(url + '?t=' + Date.now(), { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { if (d && pick(d)) apply(d); })
+        .catch(function () {});
+    }
+    pull('data/audit.json', function (d) { return d && d.updatedAt && (!state.audit || d.updatedAt !== state.audit.updatedAt); }, function (d) {
+      state.audit = d;
+      if (state.view === 'audit') renderAudit();
+    });
+    pull('data/picks.json', function (d) { return d && d.generatedAt && (!state.picks || d.generatedAt !== state.picks.generatedAt); }, function (d) {
+      state.picks = d;
+      if (state.view === 'picks') renderPicks();
+    });
+    pull('data/ready/index.json', function (d) { return d && d.docs; }, function (d) {
+      state.ready = d;
+      if (state.view === 'picks') renderPicks();
+    });
   }
 
   function applyView() {
