@@ -105,8 +105,22 @@
   </article>
 </div>
 
+<div class="draft-mask" id="draftMask" hidden>
+  <div class="draft-shell" role="dialog" aria-modal="true" aria-labelledby="draftTitle">
+    <div class="draft-topbar">
+      <div class="draft-tabs" id="draftTabs"></div>
+      <div class="draft-tools">
+        <button class="draft-copy" id="draftCopy">复制全文</button>
+        <button class="draft-close" id="draftClose" aria-label="关闭">×</button>
+      </div>
+    </div>
+    <div class="draft-scroll" id="draftBody"></div>
+  </div>
+</div>
+
 <script src="data/embed.js"></script>
 <script src="data/picks-embed.js"></script>
+<script src="data/ready-embed.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

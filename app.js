@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'picks', target: '', priority: '' };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'picks', target: '', priority: '', draftOpen: null };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -52,6 +52,7 @@
     state.items = (data && data.items) || [];
     state.meta = (window.__META__ && window.__META__) || {};
     state.picks = window.__PICKS__ || null;
+    state.ready = window.__READY__ || { docs: [] };
     initControls();
     applyView();
     render();
@@ -126,7 +127,18 @@
     document.getElementById('moreBtn').onclick = function () { state.page++; drawCards(); };
     document.getElementById('closeBtn').onclick = closeModal;
     document.getElementById('modalMask').onclick = function (e) { if (e.target.id === 'modalMask') closeModal(); };
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    document.getElementById('draftClose').onclick = closeDraft;
+    document.getElementById('draftMask').onclick = function (e) { if (e.target.id === 'draftMask') closeDraft(); };
+    document.getElementById('draftCopy').onclick = function (b) {
+      var o = state.draftOpen;
+      if (!o) return;
+      var piece = o.pieces.find(function (p) { return p.id === o.pieceId; });
+      if (piece) copyText(pieceFullText(piece, o.doc), document.getElementById('draftCopy'));
+    };
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      if (!document.getElementById('draftMask').hidden) closeDraft(); else closeModal();
+    });
 
     var total = state.items.length;
     var cn = state.items.filter(function (i) { return i.region === '国内'; }).length;
@@ -210,11 +222,91 @@
       '</div>' +
       '<div class="pick-src">线索源：' + esc(pick.platform || '') + ' · ' + esc(pick.region || '') + ' · ' + esc(pick.heatStage || '') + '</div>' +
       '<div class="pick-actions">' +
+        (findDocForPick(pick) ? '<button class="view-draft" data-item="' + esc(pick.itemId) + '">查看草稿详情</button>' : '') +
         '<button class="copy-brief" data-key="' + esc(pick.itemId + '|' + pick.target) + '">复制成稿 brief</button>' +
-        (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') +
-        '<span class="draft-tag">草稿已生成</span>' +
+        (url ? '<a class="pick-orig" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文</a>' : '') +
       '</div>' +
     '</article>';
+  }
+
+  function findDocForPick(pick) {
+    return (state.ready.docs || []).find(function (d) { return d.sourceItemId === pick.itemId; }) || null;
+  }
+
+  function docPiecesForItem(itemId) {
+    var doc = (state.ready.docs || []).find(function (d) { return d.sourceItemId === itemId; });
+    return doc ? { doc: doc, pieces: doc.pieces || [] } : null;
+  }
+
+  function blocksToHtml(piece) {
+    return (piece.blocks || []).map(function (b) {
+      if (b.type === 'h2') return '<h3 class="rp-h2">' + esc(b.text) + '</h3>';
+      if (b.type === 'para') return '<p class="rp-para">' + esc(b.text) + '</p>';
+      if (b.type === 'note') return '<p class="rp-note">' + esc(b.text) + '</p>';
+      if (b.type === 'list') return '<ul class="rp-list">' + (b.items || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+      return '';
+    }).join('');
+  }
+
+  function pieceHtml(piece, doc) {
+    var imgs = piece.images || [];
+    // 文章：图穿插在开头与中段；贴图：首图后跟正文
+    var lead = imgs.length ? '<figure class="rp-figure"><img src="' + esc(imgs[0].src) + '" alt="' + esc(imgs[0].caption || '') + '" loading="lazy"><figcaption>' + esc(imgs[0].caption || '') + '</figcaption></figure>' : '';
+    var midImg = '';
+    if (imgs.length > 1) {
+      midImg = '<figure class="rp-figure"><img src="' + esc(imgs[1].src) + '" alt="' + esc(imgs[1].caption || '') + '" loading="lazy"><figcaption>' + esc(imgs[1].caption || '') + '</figcaption></figure>';
+    }
+    var all = blocksToHtml(piece);
+    // 把第二张图插到正文中段（约一半处）
+    if (midImg) {
+      var anchor = '<h3 class="rp-h2">';
+      var idx = all.indexOf(anchor, all.indexOf(anchor) + 1);
+      if (idx > 0) all = all.slice(0, idx) + midImg + all.slice(idx);
+      else all = all + midImg;
+    }
+    return '<div class="rp-meta"><span class="badge l-' + esc(piece.target) + '">' + esc(piece.target) + '</span>' +
+      '<span class="rp-form">' + esc(piece.form) + '</span>' +
+      '<span class="vpill v-' + esc(statusClass(doc.verification)) + '">' + esc(doc.verification || '') + '</span>' +
+      '<span class="rp-badge">' + esc(piece.badge || '') + '</span></div>' +
+      '<h2 class="rp-title" id="draftTitle">' + esc(piece.title) + '</h2>' +
+      (piece.digest ? '<p class="rp-digest">' + esc(piece.digest) + '</p>' : '') +
+      lead + '<div class="rp-content">' + all + '</div>' +
+      '<div class="rp-disclaimer"><b>核实与配图说明</b><p>' + esc(doc.verificationNote || '') + '</p><p>' + esc(doc.imageNote || '') + '</p>' +
+      '<p>原文：<a href="' + esc(safeUrl(doc.sourceUrl) || '#') + '" target="_blank" rel="noopener noreferrer">' + esc(doc.sourceTitle || '查看来源') + ' ↗</a></p></div>';
+  }
+
+  function openDraft(itemId, pieceId) {
+    var found = docPiecesForItem(itemId);
+    if (!found) return;
+    var doc = found.doc, pieces = found.pieces;
+    var current = pieceId || (pieces[0] && pieces[0].id);
+    state.draftOpen = { itemId: itemId, pieceId: current, doc: doc, pieces: pieces };
+    var tabs = document.getElementById('draftTabs');
+    tabs.innerHTML = pieces.map(function (p) {
+      return '<button class="draft-tab' + (p.id === current ? ' on' : '') + '" data-piece="' + esc(p.id) + '">' +
+        esc(p.target) + ' · ' + esc(p.form) + '</button>';
+    }).join('');
+    Array.prototype.forEach.call(tabs.querySelectorAll('.draft-tab'), function (b) {
+      b.onclick = function () { openDraft(itemId, b.getAttribute('data-piece')); };
+    });
+    var piece = pieces.find(function (p) { return p.id === current; }) || pieces[0];
+    document.getElementById('draftBody').innerHTML = pieceHtml(piece, doc);
+    document.getElementById('draftBody').scrollTop = 0;
+    document.getElementById('draftMask').hidden = false;
+  }
+
+  function closeDraft() { document.getElementById('draftMask').hidden = true; state.draftOpen = null; }
+
+  function pieceFullText(piece, doc) {
+    var lines = ['【' + piece.target + ' · ' + piece.form + '】' + piece.title];
+    if (piece.digest) lines.push('', piece.digest);
+    (piece.blocks || []).forEach(function (b) {
+      if (b.type === 'h2') lines.push('', b.text);
+      else if (b.type === 'para' || b.type === 'note') lines.push('', b.text);
+      else if (b.type === 'list') (b.items || []).forEach(function (x, i) { lines.push((i + 1) + '. ' + x); });
+    });
+    lines.push('', '---', '核实：' + (doc.verification || ''), doc.verificationNote || '', '原文：' + (doc.sourceUrl || ''));
+    return lines.join('\n');
   }
 
   function renderPicks() {
@@ -240,6 +332,9 @@
     });
     groupsEl.innerHTML = html;
 
+    Array.prototype.forEach.call(groupsEl.querySelectorAll('.view-draft'), function (b) {
+      b.onclick = function () { openDraft(b.getAttribute('data-item')); };
+    });
     Array.prototype.forEach.call(groupsEl.querySelectorAll('.copy-brief'), function (b) {
       b.onclick = function () {
         var parts = b.getAttribute('data-key').split('|');
