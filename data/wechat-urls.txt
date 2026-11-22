@@ -3,6 +3,11 @@
 # 每日 18:00 爆款采集任务会自动读取本文件，用 scripts/fetch_wechat_url.py 批量解析入库
 # 解析后本文件不清空（去重按 URL），可长期累积；以 # 开头的行会被忽略
 #
-# === 已采集样例（2026-11-22，用户实测提供）===
-# 小马宋《控制你的固定支出》贴图，type=9/item_show_type=8，1172字8图，客户端可见赞218/分享645/在看57/评论10
+# === 已采集样例（2026-11-22）===
+# 小马宋《控制你的固定支出》贴图，type=9/item_show_type=8，1172字8图，赞218/分享645/在看57（用户提供）
 https://mp.weixin.qq.com/s/jVxBF-ei1TDPcW2gcqEnlA
+# 以下 4 条由 WorkBuddy 按截图流程（进贴图→点···→复制链接）自动从本机微信客户端采集，调研心得公众号贴图
+https://mp.weixin.qq.com/s/jabcBJx5VD33Mi0bfk36Gg
+https://mp.weixin.qq.com/s/vGLX7wre_TKQ7HvezQeocw
+https://mp.weixin.qq.com/s/YX3xzxEFM4Pz40agMiBBCQ
+https://mp.weixin.qq.com/s/h6P8BRN-YvlwppSzoJ-PHg

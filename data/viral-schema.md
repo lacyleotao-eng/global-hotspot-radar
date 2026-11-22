@@ -13,7 +13,14 @@
 
 **贴图直链的获取方式（实测 2026-11-22）**：贴图作品没有搜索引擎索引，但在微信客户端点开作品 → 右上角「···」→「复制链接」，剪贴板即得到 `https://mp.weixin.qq.com/s/xxx` 真实直链。用微信 UA 抓取该链接，HTML 内嵌 `window.cgiDataNew` 对象含 `nick_name/title/content_noencode/create_time/cdn_url/type/item_show_type`，可完整解析。互动数在 HTML 里是占位（`readNum=0`），真实值走客户端接口，外部拿不到——只有用户从客户端截图读到时才可补录并注明来源。
 
-**本机微信客户端为什么不做 GUI 自动点击（实测）**：桌面操作接口能截图、能点击滚动，但截图不回传文字、辅助功能树只暴露按钮不含正文、后台键盘事件被丢弃、且用户会实时接管桌面导致窗口不可操作。因此不抢占鼠标键盘，改为「用户复制 + 剪贴板监听自动解析」，把人工动作压缩到最小的一次「复制链接」。
+**本机微信客户端 GUI 自动复制链接（2026-11-22 21:20 跑通，可自主执行）**：
+已验证 WorkBuddy 能**自己**按截图流程操作微信，无需用户手动复制：
+1. `osascript -e 'tell application "WeChat" to activate'` 或 computer-use `open_app` 把微信窗口拉到可见；`screencapture -x` 存图 + ViewImage 读取画面（屏幕录制权限已授权，截图可用）。
+2. 对微信窗口 `get_app_state` → `get_next_action(instruction=点开某贴图/点右上角···)` → `click`（坐标用 get_app_state 截图像素，view_id 必须是同一次快照的）。
+3. 点「···」会弹出一个 248×632 的**独立菜单窗口**；此时**立刻**对新视图 `get_next_action(instruction=点击「复制链接」)` → `click`，中间不要切回主窗口（切回会让菜单坐标系失效）。
+4. `pbpaste` 读到 `mp.weixin.qq.com/s/xxx`，喂给 `fetch_wechat_url.py` 解析入库。
+**踩坑记录**：click 返回 `click_method: fs` 表示按全屏坐标投递；早期失败是因为把菜单窗口的相对坐标用主窗口 view_id 执行，或菜单被切走后坐标失效。正确姿势是「get_app_state 聚焦菜单 → get_next_action → click」三步紧邻、不插其他窗口切换。键盘 cmd+c 对正文无效，但鼠标点菜单「复制链接」有效。
+**结论**：贴图采集不再只能等用户手动复制，我可自主批量进公众号主页逐个复制；用户实时接管桌面时窗口可能失联，此时改走 `data/wechat-urls.txt` 清单通道。
 **闸门不变**：形态决定平台、平台决定域名；贴图形态允许 `url` 为空但必须记 `verification.notes` 说明来源；有直链时必须是 mp.weixin.qq.com；不得用教程文/头条/搜狐链接冒名贴图作品。
 
 ## 一、四种形态 form（必填，枚举）
