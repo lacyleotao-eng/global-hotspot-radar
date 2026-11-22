@@ -28,6 +28,43 @@ FORMS = {
 }
 TIERS = ["S", "A", "B", "C"]
 
+# 平台归属硬闸门：形态决定平台，平台决定原文域名。
+# 公众号只认 mp.weixin.qq.com 原文直链；头条只认 toutiao.com 系直链。
+# 门户转载页、榜单页、拆解文章一律不算对应平台的爆款，避免"挂着公众号名、链到搜狐/头条"。
+PLATFORM_HOSTS = {
+    "gzh-article": {"mp.weixin.qq.com"},
+    "gzh-poster": {"mp.weixin.qq.com"},
+    "tt-article": {"toutiao.com", "m.toutiao.com", "www.toutiao.com"},
+    "tt-micro": {"toutiao.com", "m.toutiao.com", "www.toutiao.com"},
+}
+
+
+def url_host(u):
+    from urllib.parse import urlparse
+    try:
+        return (urlparse(str(u or "")).hostname or "").lower()
+    except Exception:
+        return ""
+
+
+def validate_platform(raw):
+    """返回 (是否合规, 原因)。不合规的条目不得进入爆款对标库。"""
+    form = raw.get("form", "")
+    if form not in FORMS:
+        return False, "未知形态：" + str(form or "空")
+    expect_plat = FORMS[form][0]
+    plat = str(raw.get("platform") or "").strip()
+    if plat and plat != expect_plat:
+        return False, "平台与形态冲突：标称" + plat + "，但" + form + "只能属于" + expect_plat
+    u = str(raw.get("url") or "").strip()
+    if not u:
+        return False, "缺少原文直链，无法核验平台归属"
+    host = url_host(u)
+    allowed = PLATFORM_HOSTS[form]
+    if host not in allowed and not any(host.endswith("." + h) for h in allowed if h != "toutiao.com"):
+        return False, "原文域名 " + (host or "空") + " 不属于" + expect_plat + "（允许：" + "/".join(sorted(allowed)) + "）"
+    return True, ""
+
 
 def now_iso():
     return datetime.now(timezone(timedelta(hours=8))).isoformat(timespec="seconds")
@@ -206,6 +243,7 @@ def main():
     files = sorted(INBOX.glob("*.json")) if INBOX.exists() else []
     seen = {}
     incoming = 0
+    rejected = []
     for f in files:
         try:
             data = json.loads(f.read_text(encoding="utf-8"))
@@ -215,6 +253,17 @@ def main():
         rows = data if isinstance(data, list) else data.get("items", [])
         incoming += len(rows)
         for raw in rows:
+            ok, reason = validate_platform(raw)
+            if not ok:
+                rejected.append({
+                    "file": f.name,
+                    "title": str(raw.get("title") or "")[:60],
+                    "form": raw.get("form", ""),
+                    "platform": raw.get("platform", ""),
+                    "url": str(raw.get("url") or "")[:160],
+                    "reason": reason,
+                })
+                continue
             it = clean_item(raw)
             key = it["id"]
             if key in seen:
@@ -230,10 +279,13 @@ def main():
     items = sorted(seen.values(), key=lambda x: (-x["viralScore"]["total"], -_ts(x["collectedAt"])))
 
     by_form = {}
+    by_platform = {}
     by_tier = {t: 0 for t in TIERS}
     by_source = {}
     for i in items:
         by_form[i["form"]] = by_form.get(i["form"], 0) + 1
+        by_platform[i["platform"]] = by_platform.get(i["platform"], 0) + 1
+        i["sourceHost"] = url_host(i.get("url"))
         by_tier[i["viralScore"]["tier"]] += 1
         src = i["signals"].get("source", "不可见")
         by_source[src] = by_source.get(src, 0) + 1
@@ -243,8 +295,12 @@ def main():
         "total": len(items),
         "incoming": incoming,
         "byForm": by_form,
+        "byPlatform": by_platform,
         "byTier": by_tier,
         "bySignalSource": by_source,
+        "rejected": rejected,
+        "rejectedCount": len(rejected),
+        "gate": "形态决定平台，平台决定原文域名：公众号仅 mp.weixin.qq.com，头条仅 toutiao.com 系；转载页/拆解文章不入库",
     }
     benchmark = build_benchmark(items)
 
@@ -254,8 +310,10 @@ def main():
     payload = {"items": items, "meta": meta, "benchmark": benchmark}
     EMBED.write_text("window.__VIRAL__=" + json.dumps(payload, ensure_ascii=False) + ";\n", encoding="utf-8")
 
-    print(f"[done] 爆款 {len(items)} 条（读入 {incoming}），档位 {by_tier}")
-    print(f"[done] 形态 {by_form}")
+    print(f"[done] 爆款 {len(items)} 条（读入 {incoming}，平台闸门拒绝 {len(rejected)}），档位 {by_tier}")
+    print(f"[done] 形态 {by_form} · 平台 {by_platform}")
+    for r in rejected:
+        print(f"[reject] {r['form']} | {r['platform']} | {r['title']} → {r['reason']}")
     for b in benchmark:
         print(f"  {b['formLabel']}: 爆款字中位 {b['viral']['wordCount']} / 自家 {b['mine']['wordCount']} → {b['verdict']}")
 

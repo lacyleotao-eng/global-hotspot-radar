@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T19:53:37+08:00",
+  "updatedAt": "2026-11-22T20:04:22+08:00",
   "rows": [
     {
       "form": "gzh-article",
@@ -7,35 +7,35 @@
       "viralSample": 3,
       "selfSample": 1,
       "viral": {
-        "wordCount": 1400,
-        "images": 3,
-        "subheads": 3
+        "wordCount": 1200,
+        "images": 2,
+        "subheads": 1
       },
       "mine": {
         "wordCount": 1167,
         "images": 2,
         "subheads": 4
       },
-      "verdict": "字数偏少",
-      "advice": "名人选题要找到一个小切口（火炬手）而非复述整个人生"
+      "verdict": "字数达标",
+      "advice": "写热点评论先交代权威信源，再展开观点，避免空喊口号"
     },
     {
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
-      "viralSample": 1,
+      "viralSample": 0,
       "selfSample": 1,
       "viral": {
-        "wordCount": 650,
-        "images": 6,
-        "subheads": 3
+        "wordCount": null,
+        "images": null,
+        "subheads": null
       },
       "mine": {
         "wordCount": 798,
         "images": 1,
         "subheads": 4
       },
-      "verdict": "字数达标",
-      "advice": "贴图靠首图的视觉冲击力，首图必须一眼看懂核心矛盾"
+      "verdict": "爆款样本不足，暂无基准",
+      "advice": ""
     },
     {
       "form": "tt-article",

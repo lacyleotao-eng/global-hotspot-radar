@@ -327,6 +327,11 @@
     'gzh-article': '公众号文章', 'gzh-poster': '公众号贴图',
     'tt-article': '头条文章', 'tt-micro': '微头条'
   };
+  // 前端二次隔离：形态与平台必须对应，防止历史脏数据混显
+  var FORM_PLATFORM = {
+    'gzh-article': '微信公众号', 'gzh-poster': '微信公众号',
+    'tt-article': '今日头条', 'tt-micro': '今日头条'
+  };
   var VTIER = {
     S: { label: 'S 现象级', cls: 's' }, A: { label: 'A 爆款', cls: 'a' },
     B: { label: 'B 热门', cls: 'b' }, C: { label: 'C 上升', cls: 'c' }
@@ -349,7 +354,9 @@
   }
 
   function viralFiltered() {
-    var rows = (state.viral.items || []).slice();
+    var rows = (state.viral.items || []).filter(function (i) {
+      return FORM_PLATFORM[i.form] && i.platform === FORM_PLATFORM[i.form];
+    });
     if (state.viralForm) rows = rows.filter(function (i) { return i.form === state.viralForm; });
     if (state.viralTier) rows = rows.filter(function (i) { return (i.viralScore || {}).tier === state.viralTier; });
     var order = { S: 4, A: 3, B: 2, C: 1 };
@@ -371,11 +378,12 @@
     return '<article class="viral-card">' +
       '<div class="viral-card-head">' +
         '<span class="vform">' + esc(VFORM[it.form] || it.form) + '</span>' +
+        '<span class="vplat">' + esc(it.platform || FORM_PLATFORM[it.form] || '') + '</span>' +
         '<span class="vtier t-' + tier.cls + '">' + esc(tier.label) + '</span>' +
         '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
       '</div>' +
       '<h3>' + title + '</h3>' +
-      '<p class="viral-account">' + esc(it.account || '') + ' · ' + esc(it.category || '') + ' · ' + esc(it.platform || '') + '</p>' +
+      '<p class="viral-account">' + esc(it.account || '') + ' · ' + esc(it.category || '') + ' · 原文域名 ' + esc(it.sourceHost || '未标注') + '</p>' +
       '<div class="viral-stats">' +
         '<span>字数 <b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></span>' +
         '<span>配图 <b>' + (an.images != null ? an.images : '—') + '</b></span>' +
@@ -411,7 +419,7 @@
       });
     }
     var rows = viralFiltered();
-    document.getElementById('viralCount').textContent = '显示 ' + rows.length + ' 条爆款（基准为公开可见信息估算，非精确实测）';
+    document.getElementById('viralCount').textContent = '显示 ' + rows.length + ' 条爆款（已按平台隔离：公众号仅微信原文、头条仅头条原文；基准为公开可见信息估算，非精确实测）';
     document.getElementById('viralEmpty').hidden = rows.length > 0;
     document.getElementById('viralGrid').innerHTML = rows.map(viralCardHtml).join('');
     Array.prototype.forEach.call(document.querySelectorAll('.viral-detail'), function (b) {
@@ -422,7 +430,7 @@
   function viralFullText(it) {
     var an = it.anatomy || {}, vs = it.viralScore || {};
     var lines = ['【爆款拆解 · ' + (VFORM[it.form] || '') + '】' + it.title,
-      '账号：' + (it.account || '') + ' · 平台：' + (it.platform || ''),
+      '账号：' + (it.account || '') + ' · 平台：' + (it.platform || '') + ' · 原文域名：' + (it.sourceHost || '未标注'),
       '爆款指数：' + vs.total + ' 分（' + (VTIER[vs.tier] || {}).label + '）',
       '', '【形态拆解】',
       '字数：' + (an.wordCount != null ? an.wordCount : '—') + '　配图：' + (an.images != null ? an.images : '—') + '　小标题：' + (an.subheads != null ? an.subheads : '—'),
@@ -448,11 +456,12 @@
     document.getElementById('viralBody').innerHTML =
       '<div class="vdetail-head">' +
         '<span class="vform">' + esc(VFORM[it.form] || it.form) + '</span>' +
+        '<span class="vplat">' + esc(it.platform || FORM_PLATFORM[it.form] || '') + '</span>' +
         '<span class="vtier t-' + tier.cls + '">' + esc(tier.label) + '</span>' +
         '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
       '</div>' +
       '<h2 id="viralDetailTitle">' + esc(it.title) + '</h2>' +
-      '<p class="vdetail-sub">' + esc(it.account || '') + ' · ' + esc(it.platform || '') + ' · ' + esc(it.category || '') + ' · ' + esc(fmt(it.publishedAt || it.collectedAt)) + '</p>' +
+      '<p class="vdetail-sub">' + esc(it.account || '') + ' · ' + esc(it.platform || '') + ' · 原文域名 ' + esc(it.sourceHost || '未标注') + ' · ' + esc(it.category || '') + ' · ' + esc(fmt(it.publishedAt || it.collectedAt)) + '</p>' +
       '<p class="vdetail-summary">' + esc(it.summary || '') + '</p>' +
       '<div class="vdetail-metrics">' +
         '<div><span>正文字数</span><b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></div>' +

@@ -55,7 +55,7 @@ title         爆款原文标题（原样保留）
 form          四形态枚举之一
 account       发布账号名
 platform      "微信公众号" 或 "今日头条"
-url           真实可直达原文；拿不到原链可用公开榜单页，但须在 verification.notes 写明
+url           真实可直达原文，且域名必须与 form 对应（公众号 mp.weixin.qq.com / 头条 toutiao.com）；域名不符会被入库脚本拒绝
 publishedAt   原发布时间 ISO8601，不可知写 null
 collectedAt   采集时间 ISO8601，必填
 category      领域：情感/职场/科技/财经/社会/民生/健康/娱乐/教育等
@@ -70,6 +70,8 @@ tags          字符串数组
 ```
 
 ## 六、铁律
+
+0. **平台归属硬闸门（最高优先级）**：形态决定平台，平台决定原文域名——`gzh-article`/`gzh-poster` 的 `url` 必须是 `mp.weixin.qq.com` 微信原文直链；`tt-article`/`tt-micro` 必须是 `toutiao.com` 系直链。门户转载页、榜单页、拆解文章只能作为线索，**不得作为该平台的爆款条目入库**。拿不到对应平台原文就留空，绝不拿其他平台凑数。`scripts/ingest_viral.py` 会自动拒绝不合规条目，拒绝原因写入 `data/viral/meta.json` 的 `rejected` 字段。
 
 1. **数字不编造**：任何阅读/互动数字必须有来源；拿不到一律"不可见"并在 notes 说明。
 2. **榜单数字不是页面数字**：第三方榜单/拆解文的数字标注清楚，不冒充平台页面数据。

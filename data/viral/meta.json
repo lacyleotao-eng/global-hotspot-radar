@@ -1,22 +1,61 @@
 {
-  "updatedAt": "2026-11-22T19:53:37+08:00",
-  "total": 8,
-  "incoming": 8,
+  "updatedAt": "2026-11-22T20:04:22+08:00",
+  "total": 7,
+  "incoming": 11,
   "byForm": {
-    "gzh-article": 3,
     "tt-article": 3,
-    "gzh-poster": 1,
-    "tt-micro": 1
+    "tt-micro": 1,
+    "gzh-article": 3
+  },
+  "byPlatform": {
+    "今日头条": 4,
+    "微信公众号": 3
   },
   "byTier": {
     "S": 0,
-    "A": 2,
+    "A": 0,
     "B": 3,
-    "C": 3
+    "C": 4
   },
   "bySignalSource": {
-    "不可见": 6,
     "页面可见（评论区存在，计数未渲染）": 1,
-    "页面可见（正文自述，非平台后台数据）": 1
-  }
+    "页面可见（正文自述，非平台后台数据）": 1,
+    "不可见": 5
+  },
+  "rejected": [
+    {
+      "file": "seed-20261122.json",
+      "title": "演都不演了，全红婵再破天花板，这一次，她让整个泳坛刮目相看",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "url": "http://xkshenghuo.xingkong.net/xkshenghuo/20261108/0840683.html",
+      "reason": "原文域名 xkshenghuo.xingkong.net 不属于微信公众号（允许：mp.weixin.qq.com）"
+    },
+    {
+      "file": "seed-20261122.json",
+      "title": "全红婵有了新头衔：没站上跳台，但站在了光里",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "url": "https://yule.sohu.com/a/1100753469_122049102",
+      "reason": "原文域名 yule.sohu.com 不属于微信公众号（允许：mp.weixin.qq.com）"
+    },
+    {
+      "file": "seed-20261122.json",
+      "title": "黄金首饰每克300元的工费，很荒唐，很不合理（贴图版示意）",
+      "form": "gzh-poster",
+      "platform": "微信公众号",
+      "url": "https://www.toutiao.com/a7710783752208728585",
+      "reason": "原文域名 www.toutiao.com 不属于微信公众号（允许：mp.weixin.qq.com）"
+    },
+    {
+      "file": "seed-20261122.json",
+      "title": "93年，31岁，拥有三份收入后才发现：停止内耗后，我的人生开挂了",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "url": "https://www.toutiao.com/article/7706019908915692066/",
+      "reason": "原文域名 www.toutiao.com 不属于微信公众号（允许：mp.weixin.qq.com）"
+    }
+  ],
+  "rejectedCount": 4,
+  "gate": "形态决定平台，平台决定原文域名：公众号仅 mp.weixin.qq.com，头条仅 toutiao.com 系；转载页/拆解文章不入库"
 }
