@@ -6,7 +6,8 @@
     python3 scripts/ingest.py --dry-run  # 只检查不写入
 
 输入文件格式: JSON 数组，或 {"items": [...]}。
-去重键: 规范化 URL；无 URL 时用标题哈希。
+去重键: 规范化 URL + 规范化标题（同一聚合页不同条目不能误合并）。
+来源池与线索产出规则见 data/sources.md，字段规范见 data/schema.json。
 """
 import argparse
 import hashlib
@@ -66,6 +67,7 @@ def clean(item):
     item.setdefault("tags", [])
     item.setdefault("needs", [])
     item.setdefault("citations", [])
+    item.setdefault("leads", [])
     if not isinstance(item.get("heat"), dict):
         item["heat"] = {"stage": "未知", "signals": {}}
     else:
@@ -89,6 +91,29 @@ def clean(item):
         item["needs"] = []
     if not isinstance(item.get("citations"), list):
         item["citations"] = []
+    if not isinstance(item.get("leads"), list):
+        item["leads"] = []
+    clean_leads = []
+    for lead in item["leads"]:
+        if not isinstance(lead, dict) or not lead.get("headline"):
+            continue
+        target = lead.get("target")
+        if target not in {"公众号", "今日头条"}:
+            continue
+        outline = lead.get("outline")
+        outline = [str(x) for x in outline] if isinstance(outline, list) else []
+        clean_leads.append({
+            "target": target,
+            "headline": str(lead.get("headline") or ""),
+            "angle": str(lead.get("angle") or ""),
+            "outline": outline[:6],
+            "audience": str(lead.get("audience") or ""),
+            "timeliness": str(lead.get("timeliness") or "长期"),
+            "priority": lead.get("priority") if lead.get("priority") in {"高", "中", "低"} else "中",
+            "risk": str(lead.get("risk") or "无"),
+            "basis": str(lead.get("basis") or ""),
+        })
+    item["leads"] = clean_leads
     return item
 
 
@@ -142,14 +167,22 @@ def main():
     )[:MAX_ITEMS]
 
     counts = {}
+    by_target = {"公众号": 0, "今日头条": 0}
+    leads_total = 0
     for it in rows:
         counts[it["type"]] = counts.get(it["type"], 0) + 1
+        for lead in it.get("leads", []):
+            leads_total += 1
+            if lead.get("target") in by_target:
+                by_target[lead["target"]] += 1
 
     meta = {
         "updatedAt": now_iso(),
         "total": len(rows),
         "byType": counts,
         "sources": sorted({it["platform"] for it in rows}),
+        "leadsTotal": leads_total,
+        "byTarget": by_target,
         "lastBatch": len(incoming),
     }
 
@@ -158,13 +191,13 @@ def main():
         return
 
     ITEMS.write_text(
-        json.dumps({"version": 1, "items": rows}, ensure_ascii=False, indent=2),
+        json.dumps({"version": 2, "items": rows}, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # 同时生成内联脚本，保证 file:// 本地预览也能读到数据
-    payload = json.dumps({"version": 1, "items": rows}, ensure_ascii=False)
+    payload = json.dumps({"version": 2, "items": rows}, ensure_ascii=False)
     embed = ROOT / "data" / "embed.js"
     embed.write_text(
         "window.__ITEMS__=" + payload + ";\n"

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "description": "热点情报条目字段规范。定时任务必须按此结构写入 data/inbox/*.json。",
+  "version": 2,
+  "description": "热点情报条目字段规范。定时任务必须按此结构写入 data/inbox/*.json。来源池与轮换规则见 sources.md。",
   "required": ["title", "url", "type", "region", "platform", "summary", "collectedAt"],
   "types": {
     "hotspot": "热点话题",
@@ -31,7 +31,8 @@
     "citations": "数组 [{title,url,publisher,date,relation}]；relation 为 一手/二手/官方/转载",
     "evaluation": "对象 {editor,community,sentiment,source}；editor 为编辑点评，community 为社区评价概述，sentiment 为 正面/中性/负面/争议/未知",
     "tags": "字符串数组，便于检索",
-    "needs": "字符串数组，仅 demand 类型填写，匿名概括需求主题"
+    "needs": "字符串数组，仅 demand 类型填写，匿名概括需求主题",
+    "leads": "数组，选题线索。每项 {target, headline, angle, outline, audience, timeliness, priority, risk, basis}。target 只能填 公众号 或 今日头条；outline 为 3-5 个要点；priority 为 高/中/低；risk 无风险写“无”；basis 写明依据哪条事实或引用。不符合事实、无直链、涉及敏感内容的条目不要产出线索"
   },
   "rules": [
     "事实、页面信号、推断必须分开：事实进 summary，可见数字进 heat.signals，判断进 evaluation.editor",
@@ -39,6 +40,8 @@
     "评论只做匿名需求归纳，不复制原句、不带用户 ID",
     "涉及健康、法律、投资的内容必须标注 待核实 或 部分核实，不得写成确定结论",
     "不收录政治敏感、违法违规、侵犯版权的内容；图片只留原站链接与版权说明",
-    "同一 URL 或同一标题只保留一条，重复采集由 ingest.py 自动合并"
+    "同一 URL 或同一标题只保留一条，重复采集由 ingest.py 自动合并",
+    "来源必须按 sources.md 的平台池轮换，单平台当天不超过 3 条，同一事件合并其他平台进 citations",
+    "线索必须能由原文事实支撑，标题不夸大、不伪造数字；公众号与今日头条各最多一条"
   ]
 }

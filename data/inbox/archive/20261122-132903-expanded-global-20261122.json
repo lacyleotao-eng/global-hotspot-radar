@@ -1,0 +1,209 @@
+[
+  {
+    "title": "X 开发者热议 OpenRouter 撤销125个端点的零数据保留标记",
+    "summary": "OpenRouter 11月22日发布事件说明，确认下架3家提供商并将125个端点的零数据保留（ZDR）资格移除，此前 Dragos 的 canary 研究在 MiniMax 路由上发现提示词被延迟读取。X 上开发者围绕“政策标签能否约束下游转售方”分成两派，CEO 主张用技术验证与可信执行环境替代自我声明。",
+    "type": "news", "subtype": "AI安全/隐私", "region": "海外", "platform": "X（经 DeAI News 整理）",
+    "url": "https://www.deai.org/news/openrouter-zdr-canary-discourse-pulse",
+    "publishedAt": "2026-11-22T08:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见（原文记为中等讨论速度）", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "二手整理引用 OpenRouter 官方事件帖与第三方研究，未直连官方原文", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "3家提供商名单未公开；各方自述与独立审计需区分"},
+    "citations": [{"title": "OpenRouter Data Processing Incidents：Providers Off-boarded and ZDR Labels Pulled", "url": "https://agentbeam.com/blog/openrouter-data-processing-incidents-inference-providers-november-2026", "publisher": "AgentBeam", "date": "2026-11-22", "relation": "二手"}, {"title": "X lights up over OpenRouter's ZDR purge", "url": "https://www.deai.org/news/openrouter-zdr-canary-discourse-pulse", "publisher": "DeAI News", "date": "2026-11-22", "relation": "二手"}],
+    "evaluation": {"editor": "对使用AI API的团队有直接操作价值，也是“隐私承诺如何被验证”的好案例", "community": "匿名观点：一派认为中间商模式结构性不安全，另一派认为处置及时", "sentiment": "争议", "source": "X 讨论匿名归纳"},
+    "tags": ["OpenRouter", "AI安全", "隐私", "X", "API"],
+    "needs": ["想知道如何验证推理服务商的零数据保留承诺", "想知道密钥是否需要轮换"],
+    "leads": [
+      {"target": "公众号", "headline": "“不保留数据”的标签说撤就撤：AI 服务商的隐私承诺怎么验证？", "angle": "从一次真实撤销事件切入，讲清政策声明和技术验证的差别", "outline": ["事件确认了什么、没确认什么", "canary 测试如何发现提示词泄露", "团队可执行的三条防护措施"], "audience": "开发者、技术负责人", "timeliness": "当日", "priority": "高", "risk": "不夸大事件影响，注明3家提供商名单未公开", "basis": "OpenRouter 事件说明与第三方报道"},
+      {"target": "今日头条", "headline": "125个AI接口被撤销隐私标记，问题出在“看不见的下一跳”", "angle": "用“下一跳”这个直观概念解释供应链信任问题", "outline": ["发生了什么", "为什么标签不等于安全", "普通用户要注意什么"], "audience": "泛科技读者", "timeliness": "当日", "priority": "中", "risk": "同上", "basis": "X 讨论与事件报道"}
+    ]
+  },
+  {
+    "title": "LinkedIn 与 Meltwater 研究：AI 回答中75%的本站引用来自个人帖子",
+    "summary": "LinkedIn 营销团队11月12日发文称，Meltwater 对950万条AI引用样本的分析显示，AI 回答中来自 LinkedIn 的引用有75%指向个人主页或成员内容，25%指向公司页面；高赞内容多为原创、结构化、带数字的长文。LinkedIn 建议品牌选定三四个主题并让员工持续发布。研究为双方合作发布，且只显示哪些内容被引用，不能证明发布行为导致引用。",
+    "type": "idea", "subtype": "内容运营/AI搜索", "region": "海外", "platform": "LinkedIn（经 Discoverable 整理）",
+    "url": "https://bediscoverable.ai/resources/linkedin-ai-search-citations",
+    "publishedAt": "2026-11-15T08:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "成熟", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "二手报道引用 LinkedIn 官方博客与 Meltwater 研究页，未取得原报告", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "75%与25%来自合作方数据，且是相关性而非因果；不同报道对粉丝量分层的表述不一致"},
+    "citations": [{"title": "LinkedIn AI Search Visibility: Why Employee Posts Get Cited", "url": "https://brandella.in/linkedin-ai-search-visibility-employee-posts", "publisher": "Brandella Journal", "date": "2026-11-15", "relation": "二手"}, {"title": "LinkedIn says staff posts get brands cited by AI", "url": "https://bediscoverable.ai/resources/linkedin-ai-search-citations", "publisher": "Discoverable", "date": "2026-11-16", "relation": "二手"}],
+    "evaluation": {"editor": "与我们的公众号、头条运营强相关：个人号与公司号的分工、结构化写作都可直接借鉴", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["LinkedIn", "AI搜索", "内容分发", "运营方法"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "AI回答里，75%的引用给了个人号：公司号还有必要做吗？", "angle": "从平台研究切入，落到我们自己的公众号与头条分工策略", "outline": ["研究说了什么、没证明什么", "个人号与公司号各自适合什么内容", "结构化写作为什么更容易被引用"], "audience": "内容运营、品牌负责人", "timeliness": "长期", "priority": "高", "risk": "注明数据来自合作方研究、相关性不等于因果", "basis": "LinkedIn 官方博客与 Meltwater 研究的二手报道"},
+      {"target": "今日头条", "headline": "950万条引用告诉你：AI更喜欢引用什么样的文章", "angle": "用数字化标题与清单式结构，给出可执行的写作建议", "outline": ["被引用的内容有什么共同点", "标题、小标题、数字的作用", "中文内容创作者怎么借鉴"], "audience": "自媒体作者、职场人", "timeliness": "长期", "priority": "中", "risk": "同上", "basis": "二手报道中的研究数据"}
+    ]
+  },
+  {
+    "title": "LinkedIn 平台数据：AI能力较强的新加坡企业招聘增长更快",
+    "summary": "LinkedIn 11月18日发布平台数据称，2025年9月至2026年9月期间，AI能力较强的企业在各规模区间的员工人数增长都更快，中型企业差距为1.8个百分点、中小企业为1.4个百分点。数据为平台观测的相关性，不构成因果结论。",
+    "type": "news", "subtype": "职场/AI", "region": "海外", "platform": "LinkedIn（经 Daily 8 报道）",
+    "url": "https://www.daily8.com/en/article/d8_fdc01acf3fc318c93d052087d28afe441b7af3753d0db525074dcd1f55f3ef08",
+    "publishedAt": "2026-11-18T09:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "媒体报道引用平台数据，未取得 LinkedIn 原始报告", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "原文明确说明不 establish 因果关系，成稿不可写成“AI带来招聘增长”"},
+    "citations": [{"title": "AI adoption raises headcount growth among Singapore firms of all sizes: LinkedIn", "url": "https://www.daily8.com/en/article/d8_fdc01acf3fc318c93d052087d28afe441b7af3753d0db525074dcd1f55f3ef08", "publisher": "Daily 8", "date": "2026-11-18", "relation": "二手"}],
+    "evaluation": {"editor": "职场类选题有受众，但要严格区分相关与因果", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["LinkedIn", "招聘", "AI能力", "职场数据"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "AI能力强的公司在招人，而不只是裁员：一份平台数据里的反常识", "angle": "用相关性数据讨论AI落地与组织能力的关系，明确不推断因果", "outline": ["数据具体说了什么", "为什么“省时间”不是唯一回报", "中小企业该补哪一类能力"], "audience": "管理者、HR、职场人", "timeliness": "本周", "priority": "中", "risk": "必须注明相关性不等于因果", "basis": "LinkedIn 平台数据的媒体报道"}
+    ]
+  },
+  {
+    "title": "Hacker News 热帖：15年经验工程师失业两年，储蓄将尽求助",
+    "summary": "Frontier Daily 11月22日整理的 Hacker News 热帖中，一位拥有15年经验的美国资深软件工程师自述失业两年、储蓄接近耗尽并寻求建议，帖子获得392 points与415条评论。属于典型的匿名求助/讨论型需求信号。",
+    "type": "demand", "subtype": "求职/职场求助", "region": "海外", "platform": "Hacker News（经 Frontier Daily 整理）",
+    "url": "https://www.laojinchuhai.com/en/insights/frontier-daily-2026-11-22",
+    "publishedAt": "2026-11-20T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "成熟", "signals": {"views": "392 points", "likes": "不可见", "comments": "415 comments", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "整理页转述HN帖子与互动数字，未直连原帖", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "求助内容为个人自述，只做匿名需求归纳，不引用用户ID或原文句子"},
+    "citations": [{"title": "Frontier Daily (Nov 22): 8 items from Hacker News, Latent Space and more", "url": "https://www.laojinchuhai.com/en/insights/frontier-daily-2026-11-22", "publisher": "老金出海", "date": "2026-11-22", "relation": "二手"}],
+    "evaluation": {"editor": "海外资深工程师失业焦虑是高共鸣话题，但要避免消费个人困境", "community": "匿名观点：建议集中在降维求职、短期合同与技能再定位", "sentiment": "负面", "source": "HN 评论区匿名归纳"},
+    "tags": ["Hacker News", "失业", "程序员", "职场", "需求信号"],
+    "needs": ["想知道资深工程师长期失业时如何调整求职策略", "想知道如何延长现金储备"],
+    "leads": [
+      {"target": "公众号", "headline": "15年经验、失业两年：资深工程师的困境为什么值得所有人看", "angle": "不消费个人遭遇，从职业周期与技能再定位角度做理性讨论", "outline": ["这条求助为什么引发四百多条回应", "资深岗位的结构性变化", "可提前准备的三道缓冲"], "audience": "技术从业者、职场中年人", "timeliness": "本周", "priority": "高", "risk": "不得识别或引用具体发帖人，避免写成个案指导", "basis": "HN 热帖整理页与匿名观点归纳"},
+      {"target": "今日头条", "headline": "一条失业求助帖引出400多条建议：资深程序员该怎么过冬", "angle": "用建议清单的结构写，给读者可执行信息", "outline": ["社区给出的主要方向", "现金储备与求职节奏", "技能重估的方法"], "audience": "泛职场读者", "timeliness": "本周", "priority": "中", "risk": "同上", "basis": "同上"}
+    ]
+  },
+  {
+    "title": "Show HN：给 DOS 写的 AI 编程助手 ClawDOS 登上热榜",
+    "summary": "Hacker News 出现 Show HN 项目 ClawDOS，一个为 DOS 环境设计的 AI 编程助手，获得127 points与39条评论。属于趣味技术项目，适合做“老平台遇上新工具”的轻科技内容。",
+    "type": "resource", "subtype": "开源/趣味技术", "region": "海外", "platform": "Hacker News（经 Frontier Daily 整理）",
+    "url": "https://www.laojinchuhai.com/en/insights/frontier-daily-2026-11-22",
+    "publishedAt": "2026-11-21T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "127 points", "likes": "不可见", "comments": "39 comments", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "整理页转述，未取得Hacker News原帖与项目仓库", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "项目能力与互动数字需以原帖为准"},
+    "citations": [{"title": "Frontier Daily (Nov 22)", "url": "https://www.laojinchuhai.com/en/insights/frontier-daily-2026-11-22", "publisher": "老金出海", "date": "2026-11-22", "relation": "二手"}],
+    "evaluation": {"editor": "趣味性强、门槛低，适合做轻阅读内容", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["Show HN", "DOS", "AI编程", "开源"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "有人给 DOS 写了个 AI 编程助手：老系统为什么还在被折腾？", "angle": "用反差感开头，落到复古计算与工具边界的讨论", "outline": ["项目做了什么", "为什么老平台仍有爱好者", "AI编程工具的适用边界"], "audience": "技术爱好者", "timeliness": "本周", "priority": "低", "risk": "项目细节需核对原帖，不夸大能力", "basis": "Hacker News 热帖整理页"}
+    ]
+  },
+  {
+    "title": "海外需求信号：有人愿每月付29美元请人维护内部小工具",
+    "summary": "Ideas Radar 11月19日整理的海外需求池中，一位开发者称每周花20小时维护自建内部应用，愿意每月付29美元请人维护；同期还有非开发者把含客户数据的应用公开上网的安全诉求。反映了 vibe coding 之后“谁来维护”的新需求。",
+    "type": "demand", "subtype": "产品机会/需求", "region": "海外", "platform": "Reddit + X（经 Ideas Radar 整理）",
+    "url": "https://clauday.com/article/b0e86e49-46a5-4081-b6d8-4b3f60f71fba",
+    "publishedAt": "2026-11-19T08:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "需求池整理引用X原帖与Reddit帖子，未逐条核对原帖", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "29美元/月为个人意愿报价，不代表市场价格；只做需求归纳"},
+    "citations": [{"title": "X 原帖：内部应用维护订阅需求", "url": "https://x.com/kylegawley/status/2122993260474028502", "publisher": "X", "date": "2026-11-19", "relation": "一手（个人自述）"}, {"title": "Ideas Radar: 2026-11-19", "url": "https://clauday.com/article/b0e86e49-46a5-4081-b6d8-4b3f60f71fba", "publisher": "Clauday", "date": "2026-11-19", "relation": "聚合整理"}],
+    "evaluation": {"editor": "需求非常具体，适合做产品机会分析；也提醒我们自己的小工具要有人维护", "community": "匿名观点：同类抱怨集中在依赖更新与安全配置", "sentiment": "中性", "source": "社区匿名归纳"},
+    "tags": ["vibe coding", "内部工具", "需求信号", "订阅服务"],
+    "needs": ["希望有人托管并维护自己用AI生成的小工具", "希望默认私有部署而非公网暴露"],
+    "leads": [
+      {"target": "公众号", "headline": "每周20小时维护小工具，有人愿意每月付29美元找人接手", "angle": "从一个具体报价切入，讨论AI生成应用之后的维护市场", "outline": ["需求来自什么场景", "维护服务的成本与定价难点", "默认私有部署为什么是刚需"], "audience": "独立开发者、小团队负责人", "timeliness": "长期", "priority": "高", "risk": "报价为个人意愿，不等于市场价；不引用用户ID", "basis": "X 原帖与 Ideas Radar 需求池"},
+      {"target": "今日头条", "headline": "AI帮你写了应用，谁来负责修？海外出现新付费需求", "angle": "用问答式标题讲清“生成之后”的空白", "outline": ["新需求是什么", "为什么小团队最痛", "服务形态可能长什么样"], "audience": "泛科技与创业读者", "timeliness": "长期", "priority": "中", "risk": "同上", "basis": "需求池整理"}
+    ]
+  },
+  {
+    "title": "海外需求信号：五个营销归因工具给出五套互相矛盾的数字",
+    "summary": "Ideas Radar 引用一位营销人的自述：在准备调动4万美元预算时，Meta Ads Manager、Shopify、Triple Whale、Northbeam、GA4 给出的购买或订单数分别为212、141、96、74、38，差异达数倍。需求指向能对齐真实订单并给出置信度的归因工具。",
+    "type": "demand", "subtype": "营销工具/需求", "region": "海外", "platform": "X（经 Ideas Radar 整理）",
+    "url": "https://clauday.com/article/b0e86e49-46a5-4081-b6d8-4b3f60f71fba",
+    "publishedAt": "2026-11-19T08:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "整理页引用X原帖，未核对发布者身份与各工具截图", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "数字为个人自述场景，不可推广为各工具的普遍表现"},
+    "citations": [{"title": "X 原帖：营销归因数字不一致", "url": "https://x.com/greg_steckel/status/2122847668166672608", "publisher": "X", "date": "2026-11-19", "relation": "一手（个人自述）"}, {"title": "Ideas Radar: 2026-11-19", "url": "https://clauday.com/article/b0e86e49-46a5-4081-b6d8-4b3f60f71fba", "publisher": "Clauday", "date": "2026-11-19", "relation": "聚合整理"}],
+    "evaluation": {"editor": "痛点具体、数字有冲击力，适合做营销数据可信度的话题", "community": "匿名观点：归因口径差异长期存在", "sentiment": "负面", "source": "社区匿名归纳"},
+    "tags": ["营销归因", "数据分析", "需求信号", "X"],
+    "needs": ["想知道该信哪个归因工具", "想要能对账并标注置信度的方案"],
+    "leads": [
+      {"target": "公众号", "headline": "五个工具五套数字：4万美元预算该信哪一个？", "angle": "用真实场景讲归因口径差异，落到“先看订单再谈模型”", "outline": ["五个数字为什么差这么多", "归因模型各自的默认假设", "预算决策前该做的对账"], "audience": "营销从业者、增长负责人", "timeliness": "长期", "priority": "中", "risk": "数字为个人自述，须注明场景限制", "basis": "X 原帖与 Ideas Radar 整理"}
+    ]
+  },
+  {
+    "title": "GitHub 趋势榜：Claude-BugHunter 24小时新增约1830星",
+    "summary": "多个GitHub榜单显示，Claude-BugHunter 技能包当日热度居前：一套面向 Claude Code 的漏洞挖掘技能集合，提供约83个技能、15条斜杠命令与681条公开漏洞报告模式，覆盖24类核心漏洞。不同榜单的星数与增量略有差异。",
+    "type": "resource", "subtype": "开源工具/安全", "region": "海外", "platform": "GitHub Trending（经榜单站整理）",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "publishedAt": "2026-11-22T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": " Stars 约1.6万（榜单快照）", "likes": "24h 新增约1830 stars", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "博客园与Appndo两个榜单快照交叉比对，未直连GitHub仓库页面", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "各快照stars与增量口径不同，引用时写约数并注明时间"},
+    "citations": [{"title": "GitHub 日榜趋势速报·2026-11-22", "url": "https://www.cnblogs.com/wflynn/p/23744129", "publisher": "博客园", "date": "2026-11-22", "relation": "榜单整理"}, {"title": "GitHub Trending（Appndo）", "url": "https://appndo.com/github-trending", "publisher": "Appndo", "date": "2026-11-22", "relation": "榜单整理"}],
+    "evaluation": {"editor": "安全工具热度高，但内容涉及攻防，写作时只介绍能力与合规用法", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["GitHub", "开源工具", "安全", "Claude Code"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "一天涨1830星：这个AI漏洞挖掘工具包在火什么", "angle": "介绍能力边界与合规前提，避免写成攻击教程", "outline": ["技能包包含什么", "为什么安全社区关注", "合规使用的前提"], "audience": "安全从业者、开发者", "timeliness": "本周", "priority": "中", "risk": "不提供可用于攻击的操作细节，强调授权测试", "basis": "GitHub 榜单快照"}
+    ]
+  },
+  {
+    "title": "GitHub 趋势榜：AutoClip 一键把长视频剪成适配抖音小红书的短片",
+    "summary": "GitHub 趋势榜出现开源项目 AutoClip：输入一个链接，自动把播客、访谈、课程等长视频剪成短视频，生成字幕、封面与发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。榜单显示约1.05万 stars。",
+    "type": "resource", "subtype": "开源工具/内容生产", "region": "海外", "platform": "GitHub Trending（经榜单站整理）",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "publishedAt": "2026-11-22T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": " Stars 约1.05万（榜单快照）", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "榜单整理页描述，未直连仓库README验证功能", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "功能清单为项目自述，实际效果需自行测试；注意音视频版权"},
+    "citations": [{"title": "Daily GitHub Trending Repositories（TopGit）", "url": "https://topgit.dev/trending", "publisher": "TopGit", "date": "2026-11-22", "relation": "榜单整理"}],
+    "evaluation": {"editor": "与我们的内容分发链路直接相关：可评估作为公众号/头条素材的辅助工具", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["GitHub", "视频剪辑", "内容工具", "开源", "抖音"],
+    "needs": ["想把长访谈快速转成多平台短视频", "想知道自动生成的文案是否可用"],
+    "leads": [
+      {"target": "公众号", "headline": "一个链接自动出片：这个开源工具把长视频拆成多平台短片", "angle": "从内容团队的实际流程切入，评估工具能省什么、不能省什么", "outline": ["工具做了哪几步", "跨平台适配具体指什么", "人工仍需把关的环节与版权问题"], "audience": "内容创作者、新媒体运营", "timeliness": "本周", "priority": "高", "risk": "功能为项目自述；必须提示版权与肖像权边界", "basis": "GitHub 趋势榜项目描述"},
+      {"target": "今日头条", "headline": "播客访谈一键剪成短视频？开源工具AutoClip上了趋势榜", "angle": "用工具介绍+使用边界的结构，适配头条读者的实用取向", "outline": ["能生成什么", "适配哪些平台", "使用前要注意什么"], "audience": "自媒体作者", "timeliness": "本周", "priority": "中", "risk": "同上", "basis": "同上"}
+    ]
+  },
+  {
+    "title": "Product Hunt 新品 Perit：把专业知识和数据集卖给AI实验室",
+    "summary": "Product Hunt 榜单产品 Perit Marketplace 提供两类服务：卖家可出售自有的音频、视频、代码、文档、CAD 数据集，通过审核的专家可在平台上构建强化学习任务与基准并把成果交给实验室。榜单显示112 votes，公司自述约四个半月产生1100万美元收入，该数字未经独立核实。",
+    "type": "resource", "subtype": "新产品/副业", "region": "海外", "platform": "Product Hunt（经 Productlist 整理）",
+    "url": "https://productlist.info/product/perit-marketplace",
+    "publishedAt": "2026-11-18T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "112 votes（Product Hunt 榜单可见）", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "待核实", "method": "榜单整理页描述，收入数字来自公司自述", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "1100万美元为公司层面说法，不代表专家个人收益；副业类内容须避免收益承诺"},
+    "citations": [{"title": "Perit Marketplace 产品档案", "url": "https://productlist.info/product/perit-marketplace", "publisher": "Productlist", "date": "2026-11-18", "relation": "二手"}],
+    "evaluation": {"editor": "“专业知识变现”是高关注话题，但必须写清收益不确定与个人门槛", "community": "不可见", "sentiment": "中性", "source": "编辑判断"},
+    "tags": ["Product Hunt", "AI数据", "副业", "专家网络"],
+    "needs": ["想知道普通人能否靠专业知识参与AI数据标注", "想知道审核门槛与结算方式"],
+    "leads": [
+      {"target": "公众号", "headline": "把你的专业知识卖给AI实验室：新平台说已做成1100万美元", "angle": "拆解模式与门槛，明确公司收入不等于个人收益", "outline": ["平台连接的两端是谁", "专家到底要做什么工作", "参与前该问清的三个问题"], "audience": "想做AI副业的专业人士", "timeliness": "本周", "priority": "中", "risk": "不得暗示稳定收益；收入数字注明为公司自述且未核实", "basis": "Product Hunt 榜单产品档案"}
+    ]
+  },
+  {
+    "title": "海外获客方法：在 Reddit 不刷屏地找客户，招聘帖生命周期很短",
+    "summary": "DEV Community 文章总结 Reddit 接单经验：先读各 subreddit 自助推广规则，r/startups 与 r/socialmedia 把招聘集中到每周固定帖；招聘帖在观察样本中一周内有42/176被删除或锁定，工作日14:00–20:00 UTC为高峰，回复应短、具体并直接回应预算与项目。",
+    "type": "resource", "subtype": "海外获客/方法", "region": "海外", "platform": "DEV Community（引 Reddit 社区规则）",
+    "url": "https://dev.to/marius_stiuriuc_f65afb31a/how-to-find-clients-on-reddit-without-spamming-142l",
+    "publishedAt": "2026-11-20T00:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "作者个人经验与自采样统计，未取得原始数据", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "42/176为作者样本，社区规则会变化，实操前须重新核对"},
+    "citations": [{"title": "How to Find Clients on Reddit Without Spamming", "url": "https://dev.to/marius_stiuriuc_f65afb31a/how-to-find-clients-on-reddit-without-spamming-142l", "publisher": "DEV Community", "date": "2026-11-20", "relation": "一手（作者经验）"}],
+    "evaluation": {"editor": "对做出海业务或海外接单的读者实用，且强调遵守平台规则", "community": "不可见", "sentiment": "正面", "source": "编辑判断"},
+    "tags": ["Reddit", "海外获客", "自由职业", "社区规则"],
+    "needs": ["想知道哪些板块允许自我推广", "想知道招聘帖的响应时机"],
+    "leads": [
+      {"target": "公众号", "headline": "在Reddit找客户，先别发广告：一份不刷屏的操作清单", "angle": "把规则、时机和回复结构整理成可执行清单", "outline": ["先读哪些社区规则", "什么时间回应最有效", "一条好回复包含什么"], "audience": "出海自由职业者、小团队销售", "timeliness": "长期", "priority": "中", "risk": "社区规则会变，须提示读者自行核对；不鼓励垃圾推广", "basis": "DEV Community 作者经验"}
+    ]
+  },
+  {
+    "title": "Hacker News 讨论：推理服务商数据处理事件暴露AI供应链信任边界",
+    "summary": "Hacker News 上关于推理服务商数据处理事件的讨论聚焦于信任边界：评论者认为最有效的零数据保留协议是与推理方直签，但小团队往往负担不起；也有人质疑只撤销标签而不做技术审计是否能解决问题，以及为何不公开被下架的三家提供商。",
+    "type": "discussion", "subtype": "AI安全/社区讨论", "region": "海外", "platform": "Hacker News（经 AgentBeam 整理）",
+    "url": "https://agentbeam.com/blog/openrouter-data-processing-incidents-inference-providers-november-2026",
+    "publishedAt": "2026-11-22T09:00:00+08:00", "collectedAt": "2026-11-22T13:30:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "二手整理引用HN评论观点，未直连讨论串", "verifiedAt": "2026-11-22T13:30:00+08:00", "notes": "评论观点只做匿名归纳，不代表事实认定"},
+    "citations": [{"title": "OpenRouter Data Processing Incidents（含HN评论摘要）", "url": "https://agentbeam.com/blog/openrouter-data-processing-incidents-inference-providers-november-2026", "publisher": "AgentBeam", "date": "2026-11-22", "relation": "二手"}],
+    "evaluation": {"editor": "与上一条X讨论构成同一事件的不同平台视角，适合合并引用", "community": "匿名观点：直签、审计与透明度是三大焦点", "sentiment": "争议", "source": "HN 评论区匿名归纳"},
+    "tags": ["Hacker News", "AI供应链", "隐私", "零数据保留"],
+    "needs": ["想知道小团队如何在预算内做供应商审计"],
+    "leads": []
+  }
+]

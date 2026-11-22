@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24 };
+  var state = { items: [], meta: {}, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'feed', target: '', priority: '' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -17,6 +17,27 @@
   }
   function safeUrl(u) {
     try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? u : ''; } catch (e) { return ''; }
+  }
+  function copyText(text, btn) {
+    function done() {
+      if (!btn) return;
+      var old = btn.textContent;
+      btn.textContent = '已复制';
+      setTimeout(function () { btn.textContent = old; }, 1600);
+    }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) { /* 忽略浏览器限制 */ }
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(fallback);
+    } else fallback();
   }
   function fmt(t) {
     if (!t) return '时间未知';
@@ -43,6 +64,25 @@
     REGION.forEach(function (r) { var o = document.createElement('option'); o.value = r; o.textContent = r; rf.appendChild(o); });
     var vf = document.getElementById('verifyFilter');
     STATUS.forEach(function (s) { var o = document.createElement('option'); o.value = s; o.textContent = s; vf.appendChild(o); });
+
+    var tabs = document.getElementById('viewTabs');
+    Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (btn) {
+      btn.onclick = function () {
+        state.view = btn.getAttribute('data-view');
+        state.page = 1;
+        Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
+        document.getElementById('typeChips').hidden = state.view === 'leads';
+        document.getElementById('leadBar').hidden = state.view !== 'leads';
+        document.querySelector('.legend').hidden = state.view === 'leads';
+        document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
+        document.getElementById('viewHint').textContent = state.view === 'leads'
+          ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
+          : '每条情报可展开详情，查看来源与核实过程';
+        render();
+      };
+    });
+    document.getElementById('targetFilter').addEventListener('change', function (e) { state.target = e.target.value; state.page = 1; render(); });
+    document.getElementById('priorityFilter').addEventListener('change', function (e) { state.priority = e.target.value; state.page = 1; render(); });
 
     var chips = document.getElementById('typeChips');
     var keys = ['', 'hotspot', 'news', 'discussion', 'resource', 'demand', 'idea'];
@@ -74,8 +114,10 @@
 
     var total = state.items.length;
     var cn = state.items.filter(function (i) { return i.region === '国内'; }).length;
+    var leads = state.items.reduce(function (n, i) { return n + ((i.leads || []).length); }, 0);
+    document.getElementById('leadTabCount').textContent = leads;
     document.getElementById('topStats').innerHTML =
-      '<span><b>' + total + '</b>条目</span><span><b>' + cn + '</b>国内</span><span><b>' + (total - cn) + '</b>海外</span>';
+      '<span><b>' + total + '</b>条目</span><span><b>' + leads + '</b>选题线索</span><span><b>' + cn + '</b>国内</span><span><b>' + (total - cn) + '</b>海外</span>';
     document.getElementById('updateLabel').textContent = state.meta.updatedAt ? '更新于 ' + fmt(state.meta.updatedAt) : '等待数据';
     document.getElementById('footerMeta').textContent = state.meta.updatedAt ? '数据更新时间：' + fmt(state.meta.updatedAt) + ' · 共 ' + total + ' 条' : '';
   }
@@ -87,7 +129,10 @@
       if (state.region && it.region !== state.region) return false;
       if (state.verify && (it.verification || {}).status !== state.verify) return false;
       if (q) {
-        var hay = [it.title, it.summary, it.platform, it.subtype, (it.tags || []).join(' '), (it.evaluation || {}).editor].join(' ').toLowerCase();
+        var leadText = (it.leads || []).map(function (l) {
+          return [l.headline, l.angle, l.audience, (l.outline || []).join(' ')].join(' ');
+        }).join(' ');
+        var hay = [it.title, it.summary, it.platform, it.subtype, (it.tags || []).join(' '), (it.evaluation || {}).editor, leadText].join(' ').toLowerCase();
         if (hay.indexOf(q) < 0) return false;
       }
       return true;
@@ -100,9 +145,27 @@
     return rows;
   }
 
+  function filteredLeads() {
+    var rank = { '高': 0, '中': 1, '低': 2 };
+    var out = [];
+    filtered().forEach(function (it) {
+      (it.leads || []).forEach(function (lead) {
+        if (state.target && lead.target !== state.target) return;
+        if (state.priority && lead.priority !== state.priority) return;
+        out.push({ item: it, lead: lead });
+      });
+    });
+    out.sort(function (a, b) {
+      var d = (rank[a.lead.priority] == null ? 3 : rank[a.lead.priority]) - (rank[b.lead.priority] == null ? 3 : rank[b.lead.priority]);
+      if (d) return d;
+      return String(b.item.collectedAt || '').localeCompare(String(a.item.collectedAt || ''));
+    });
+    return out;
+  }
+
   function render() {
-    var rows = filtered();
-    document.getElementById('resultCount').textContent = '显示 ' + rows.length + ' 条';
+    var rows = state.view === 'leads' ? filteredLeads() : filtered();
+    document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
     document.getElementById('empty').hidden = rows.length > 0;
     window.__ROWS__ = rows;
     state.page = 1;
@@ -133,12 +196,53 @@
     '</article>';
   }
 
+  function leadCardHtml(pair) {
+    var it = pair.item, ld = pair.lead;
+    var url = safeUrl(it.url);
+    var outline = (ld.outline || []).slice(0, 4).map(function (o, i) {
+      return '<li>' + esc(o) + '</li>';
+    }).join('');
+    var risk = ld.risk || '无';
+    var riskCls = risk === '无' ? 'safe' : 'warn';
+    return '<article class="card lead-card">' +
+      '<div class="card-head">' +
+        '<span class="badge l-' + esc(ld.target) + '">' + esc(ld.target) + '</span>' +
+        '<span class="lead-pri p-' + esc(ld.priority) + '">' + esc(ld.priority || '中') + '优先级</span>' +
+        '<span class="lead-time">' + esc(ld.timeliness || '长期') + '</span>' +
+      '</div>' +
+      '<h3 class="card-title lead-title">' + esc(ld.headline) + '</h3>' +
+      '<p class="lead-angle"><b>切入角度：</b>' + esc(ld.angle) + '</p>' +
+      (outline ? '<ol class="lead-outline">' + outline + '</ol>' : '') +
+      '<div class="lead-extra"><span>读者：' + esc(ld.audience || '泛读者') + '</span>' +
+        '<span class="risk-' + riskCls + '">风险：' + esc(risk) + '</span></div>' +
+      '<p class="lead-basis"><b>事实依据：</b>' + esc(ld.basis || it.summary.slice(0, 80)) + '</p>' +
+      '<div class="card-meta"><span>线索源：' + esc(it.platform) + '</span><span class="sep">·</span><span>' + esc(it.title) + '</span></div>' +
+      '<div class="card-actions">' +
+        '<button class="copy-lead" data-id="' + esc(it.id) + '" data-target="' + esc(ld.target) + '">复制选题包</button>' +
+        (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') +
+        '<button class="detail-btn" data-id="' + esc(it.id) + '">详情 / 溯源 →</button></div>' +
+    '</article>';
+  }
+
   function drawCards() {
     var rows = window.__ROWS__ || [];
     var grid = document.getElementById('grid');
     var start = (state.page - 1) * state.per;
     var slice = rows.slice(0, start + state.per);
-    grid.innerHTML = slice.map(cardHtml).join('');
+    grid.innerHTML = state.view === 'leads' ? slice.map(leadCardHtml).join('') : slice.map(cardHtml).join('');
+    Array.prototype.forEach.call(grid.querySelectorAll('.copy-lead'), function (b) {
+      b.onclick = function () {
+        var it = state.items.find(function (x) { return x.id === b.getAttribute('data-id'); });
+        if (!it) return;
+        var ld = (it.leads || []).find(function (l) { return l.target === b.getAttribute('data-target'); });
+        if (!ld) return;
+        var text = '【' + ld.target + '选题】' + ld.headline + '\n\n切入角度：' + ld.angle +
+          '\n\n提纲：\n' + (ld.outline || []).map(function (o, i) { return (i + 1) + '. ' + o; }).join('\n') +
+          '\n\n事实依据：' + ld.basis + '\n风险提示：' + (ld.risk || '无') +
+          '\n原文：' + (it.url || '') + '\n采集时间：' + it.collectedAt;
+        copyText(text, b);
+      };
+    });
     Array.prototype.forEach.call(grid.querySelectorAll('.detail-btn'), function (b) {
       b.onclick = function () { openModal(b.getAttribute('data-id')); };
     });
@@ -177,16 +281,16 @@
         '<div class="m-box"><h4>评价</h4><p>编辑点评：' + esc(e.editor || '无') + '</p><p>社区评价：' + esc(e.community || '不可见') + '</p><p>倾向：' + esc(e.sentiment || '未知') + (e.source ? '（' + esc(e.source) + '）' : '') + '</p>' +
           ((it.needs || []).length ? '<p>需求归纳：</p><ul>' + it.needs.map(function (n) { return '<li>' + esc(n) + '</li>'; }).join('') + '</ul>' : '') + '</div>' +
       '</div>' +
+      ((it.leads || []).length ? '<div class="m-box"><h4>选题线索</h4>' + it.leads.map(function (l) {
+        return '<div class="m-lead"><span class="badge l-' + esc(l.target) + '">' + esc(l.target) + '</span> <b>' + esc(l.headline) + '</b>' +
+          '<p>' + esc(l.angle) + '</p><small>优先级：' + esc(l.priority || '中') + ' · 时效：' + esc(l.timeliness || '长期') + ' · 风险：' + esc(l.risk || '无') + '</small></div>';
+      }).join('') + '</div>' : '') +
       '<div class="m-box"><h4>引用溯源</h4>' + (cites || '<p>暂无独立引用，仅以上述来源为准。</p>') + '</div>' +
       '<div class="m-actions">' + (url ? '<a class="btn" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">打开原文 ↗</a>' : '') +
       '<button class="btn alt" id="copyLink">复制本条链接</button></div>';
     document.getElementById('modalMask').hidden = false;
     var cp = document.getElementById('copyLink');
-    if (cp) cp.onclick = function () {
-      var text = url || it.title;
-      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text);
-      cp.textContent = '已复制';
-    };
+    if (cp) cp.onclick = function () { copyText(url || it.title, cp); };
   }
   function closeModal() { document.getElementById('modalMask').hidden = true; }
 
