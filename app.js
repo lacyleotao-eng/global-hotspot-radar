@@ -383,7 +383,7 @@
         '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
       '</div>' +
       '<h3>' + title + '</h3>' +
-      '<p class="viral-account">' + esc(it.account || '') + ' · ' + esc(it.category || '') + ' · 原文域名 ' + esc(it.sourceHost || '未标注') + '</p>' +
+      '<p class="viral-account">' + esc(it.account || '') + ' · ' + esc(it.category || '') + ' · ' + (it.sourceHost ? '原文域名 ' + esc(it.sourceHost) : '无公开直链（客户端补录）') + '</p>' +
       '<div class="viral-stats">' +
         '<span>字数 <b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></span>' +
         '<span>配图 <b>' + (an.images != null ? an.images : '—') + '</b></span>' +
@@ -461,7 +461,7 @@
         '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
       '</div>' +
       '<h2 id="viralDetailTitle">' + esc(it.title) + '</h2>' +
-      '<p class="vdetail-sub">' + esc(it.account || '') + ' · ' + esc(it.platform || '') + ' · 原文域名 ' + esc(it.sourceHost || '未标注') + ' · ' + esc(it.category || '') + ' · ' + esc(fmt(it.publishedAt || it.collectedAt)) + '</p>' +
+      '<p class="vdetail-sub">' + esc(it.account || '') + ' · ' + esc(it.platform || '') + ' · ' + (it.sourceHost ? '原文域名 ' + esc(it.sourceHost) : '无公开直链（客户端补录）') + ' · ' + esc(it.category || '') + ' · ' + esc(fmt(it.publishedAt || it.collectedAt)) + '</p>' +
       '<p class="vdetail-summary">' + esc(it.summary || '') + '</p>' +
       '<div class="vdetail-metrics">' +
         '<div><span>正文字数</span><b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></div>' +

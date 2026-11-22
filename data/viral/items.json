@@ -291,6 +291,197 @@
       "sourceHost": "www.toutiao.com"
     },
     {
+      "title": "美术老师转型贴图号：第8天跑出110万阅读的单条贴图",
+      "form": "gzh-poster",
+      "platform": "微信公众号",
+      "account": "贴图号案例（美术机构转型，91运营网复盘）",
+      "url": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:40:00+08:00",
+      "category": "职场",
+      "region": "国内",
+      "summary": "公众号贴图（小绿书）真实爆款案例：开美术培训机构的作者转型做贴图号，第 8 天单条跑到 110 万阅读、当日变现 1500+；随后新号又出 4 条 10万+。玩法为 AI 二创封面图 + 争议标题 + 引导评论。",
+      "signals": {
+        "views": "110万（第三方复盘文自述，非平台页面实测）",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "第三方拆解"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 52,
+        "tier": "B",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 30,
+            "note": "第三方复盘文明确写「第8天110万阅读」，来源=第三方拆解，非平台页面实测"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "评论/点赞数不可见，不编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该贴图上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 15,
+            "note": "该案例被 91运营网、生财等多篇运营文引用拆解，多平台传播"
+          },
+          {
+            "label": "时效性",
+            "points": 7,
+            "note": "案例为近期（2026年内）公开复盘，作为形态与打法基准"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 300,
+        "paragraphs": 6,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "身份反差+结果数字化（美术老师→110万阅读）",
+        "hook": "用「线下招生难、转型线上」的真实困境开场，紧接着给出第 8 天 110 万阅读的结果",
+        "structure": [
+          "开头交代真实身份与困境（美术培训机构 8 年）",
+          "给出关键结果：第 8 天 110 万阅读、当日 1500+",
+          "拆解打法：去服务号刷 10万+ 贴图找对标",
+          "用 AI 工具二创封面图，标题写到让人想吐槽",
+          "内容留争议引导评论，放大流量主收益"
+        ],
+        "highlightSkills": [
+          "封面字少、高饱和、大字体，一眼看懂",
+          "标题含金钱/反差/悬念/数字锚点",
+          "正文留争议点，主动引导评论（评论区才出广告位）",
+          "文案短，200-500 字，30 秒读完"
+        ],
+        "lessons": [
+          "贴图封面决定 90% 点击，先定封面再做内容，固定 2-3 类模板形成视觉记忆",
+          "标题必须含数字锚点或反差，例如「第8天110万」，不要用抽象表达",
+          "正文刻意留一个可争论的点并把提问写进结尾，评论区互动直接影响推荐",
+          "文案控制在 200-500 字，一句话钩子 + 3-5 个要点 + 互动引导"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "公开运营复盘文（91运营网/生财有术）交叉核对",
+        "notes": "贴图作品本身无公开直链（只在微信客户端可见），url 留空；阅读数 110万/10万+ 来自第三方复盘文自述并附后台截图，标注为第三方拆解而非平台页面实测；字数/图数为贴图形态典型值估算（正文200-500字、单竖版封面为主）。由客户端人工补录通道建档，非自动抓取。"
+      },
+      "tags": [
+        "贴图",
+        "小绿书",
+        "流量主",
+        "形态基准",
+        "第三方拆解"
+      ],
+      "id": "e879276aee3407b5",
+      "formLabel": "微信公众号 · 贴图",
+      "sourceHost": ""
+    },
+    {
+      "title": "0 粉素人做贴图 3 个月涨 6000 粉、变现 8000：AI 工具方向的贴图打法",
+      "form": "gzh-poster",
+      "platform": "微信公众号",
+      "account": "贴图号案例（AI工具方向素人，微信原文复盘）",
+      "url": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:40:00+08:00",
+      "category": "科技",
+      "region": "国内",
+      "summary": "公众号贴图真实爆款案例：0 粉起步做 AI 工具技巧贴图，每篇一张竖版首图配 200-500 字文案，第 3 个月涨粉 6000+、当月变现 8200 元；单篇曾达 1200 阅读且推荐流量占比 87%。",
+      "signals": {
+        "views": "1200（复盘文自述单篇），3个月涨粉6000+",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "第三方拆解"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 48,
+        "tier": "B",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 22,
+            "note": "复盘文自述单篇 1200 阅读、推荐流量占比 87%，落 1w-10w 以下档，来源=第三方拆解"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "互动数不可见"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 15,
+            "note": "多篇运营文引用该案例（微信原文、91运营网等）"
+          },
+          {
+            "label": "时效性",
+            "points": 11,
+            "note": "近期案例，按第三方拆解给出的时间估算"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 400,
+        "paragraphs": 8,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "数字+具体承诺（这3个免费的AI工具）",
+        "hook": "第一句直接给可量化收益：「这 3 个免费的 AI 工具，每个都能帮你省至少 2 个小时」",
+        "structure": [
+          "一句话钩子，给出明确收益数字",
+          "列 3 个工具，每个配一句功能说明",
+          "结尾抛互动问题，请读者说最耗时的重复工作",
+          "封面用 AI 生成的竖版图，固定视觉风格"
+        ],
+        "highlightSkills": [
+          "标题用「这3个」制造具体感",
+          "要点编号 ①②③，扫读友好",
+          "封面固定 prompt 批量生成，风格统一",
+          "话题标签 # 带垂直领域词"
+        ],
+        "lessons": [
+          "方向要窄到「说出来别人就知道你发什么」，例如「AI 绘画 prompt 分享」而非「AI 资讯」",
+          "封面用固定 prompt 批量生成（如 9:16 极简白底+强调色），形成可识别的视觉风格",
+          "文案严格按「钩子句 + 3-5 要点 + 互动提问」三段式，30 秒读完",
+          "新号前两周数据差是正常的，系统还没打标签，坚持到第三周再看留存"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "微信原文复盘（mp.weixin.qq.com）+ 公开转载交叉核对",
+        "notes": "贴图作品本身无公开直链、只在微信客户端可见，url 留空；1200 阅读/6000 粉/8200 元来自复盘文自述，标注第三方拆解、非平台页面实测；字数/图数为贴图形态典型值。由客户端人工补录通道建档。"
+      },
+      "tags": [
+        "贴图",
+        "小绿书",
+        "AI工具",
+        "形态基准",
+        "第三方拆解"
+      ],
+      "id": "56ee818d32afe705",
+      "formLabel": "微信公众号 · 贴图",
+      "sourceHost": ""
+    },
+    {
       "title": "暴雨中，他把伞给了陌生人，自己淋透：成年人的善良，从不声张",
       "form": "tt-micro",
       "account": "情感故事类头条号",
@@ -382,6 +573,708 @@
       "id": "bcb8ffc15162ee95",
       "formLabel": "今日头条 · 微头条",
       "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "Anthropic正式敲钟上市！超越马斯克SpaceX，创史上最大 IPO",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "夕小瑶科技说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623565&idx=1&sn=30615c2bc21d1307c702fb700550da46",
+      "publishedAt": "2026-11-20T04:24:00+08:00",
+      "collectedAt": "2026-11-22T20:36:49+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "Anthropic 开盘暴涨 34%",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 9,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 6,
+            "note": "发布于 2026-11-20T04:24:00+08:00，距采集 6 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 3222,
+        "paragraphs": 76,
+        "subheads": 4,
+        "images": 13,
+        "titlePattern": "强情绪判断",
+        "hook": "Anthropic 开盘暴涨 34%",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "c2d8ced1c1c39f66",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "斯坦福Agent工程课开源：教你从零搭 Agent",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "夕小瑶科技说",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623545&idx=1&sn=d27c9653f0a6252229a5c1c5bb200e0f",
+      "publishedAt": "2026-11-19T15:07:00+08:00",
+      "collectedAt": "2026-11-22T20:36:49+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "原创 乱码 2026-11-19 15:07 北京\n\n\n\n\n\n\n\n\n \n \n\n \n 这两年，大家聊 Agent 时，话题已经从“模型能不能回答问题”，转向了“怎么让它调用工具、处理任务、管理上下文”了。\nHarness 也越来越常被提起。\n想学习怎么做 Agent 的朋友，救星来了。\n斯坦福今年秋天开了一门新课，叫 CS329Z：Engineering AI",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 9,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 6,
+            "note": "发布于 2026-11-19T15:07:00+08:00，距采集 6 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 4527,
+        "paragraphs": 75,
+        "subheads": 3,
+        "images": 9,
+        "titlePattern": "热点借势+观点判断",
+        "hook": "",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "10b5943bd67e8b45",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "2026年6月长赢投资计划（四）（卖出部分）",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "长赢指数投资",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412874&idx=1&sn=cb15a63f24e34c97339834acb1b1ccab",
+      "publishedAt": "2026-06-25T19:16:00+08:00",
+      "collectedAt": "2026-11-22T20:36:51+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "150计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\nS计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\n\n\n今天卖出的这份建信500，且慢平台跟车的朋友平均收益率是87.11%。\n\n卖出的这份证券公司，且慢平台跟车的朋友平均收益率是30.01%。\n\n（收益率计算方式：各位卖出该份拿回的资金，与当初买入时候的",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2026-06-25T19:16:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 575,
+        "paragraphs": 20,
+        "subheads": 0,
+        "images": 2,
+        "titlePattern": "数字+结果",
+        "hook": "150计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\nS计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\n\n\n今天卖出的这份建信500，且慢平台跟车的",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "9213e1eb0cbd5ced",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "2026年6月长赢投资计划（二）（卖出部分）",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "长赢指数投资",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412822&idx=1&sn=c4a29e8e877e7d65ba1ff8e57c025a5f",
+      "publishedAt": "2026-06-05T20:49:00+08:00",
+      "collectedAt": "2026-11-22T20:36:51+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "150计划：\n\n卖出一份富国中证红利（100032）\n\nS计划：\n\n卖出一份富国中证红利（100032）\n\n\n与昨天建信500卖出的朋友非常多不同，本次卖出富国红利的人少了很多很多。\n\n但各位的收益率是非常好：平均收益率高达82%。\n\n原因很简单，因为这份我们买的太早了，建立大仓位是2018年。最重要的是，买入后就几乎没有机会补仓上车。这与建信500完全不同——中证500一直到去年都没涨。\n\n这也",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2026-06-05T20:49:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 496,
+        "paragraphs": 15,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "数字+结果",
+        "hook": "150计划：\n\n卖出一份富国中证红利（100032）\n\nS计划：\n\n卖出一份富国中证红利（100032）\n\n\n与昨天建信500卖出的朋友非常多不同，本次卖出富国红利的人少了很多很多。\n\n但各位的收益率是非常好：平均收益率高达82%。\n\n原因",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "d2b2ec0bfab2e934",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "从《我看见的世界》里品出的育儿经",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "思想花火",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314046&idx=1&sn=5ccc37c3e90e66f928be68f2a0fa11df",
+      "publishedAt": "2025-10-09T07:02:00+08:00",
+      "collectedAt": "2026-11-22T20:36:51+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "强烈推荐每一位家长都去阅读此书，无论你懂不懂 AI，你都应该去了解一下李飞飞的成长过程，一定会让你受益良多。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2025-10-09T07:02:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 1630,
+        "paragraphs": 16,
+        "subheads": 0,
+        "images": 2,
+        "titlePattern": "第一人称经历",
+        "hook": "强烈推荐每一位家长都去阅读此书，无论你懂不懂 AI，你都应该去了解一下李飞飞的成长过程，一定会让你受益良多。",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "628d6b1f33036eac",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "Garak-大语言模型脆弱性扫描器",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "思想花火",
+      "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314038&idx=1&sn=7e1abbb07e76b5277b66851dc6518eba",
+      "publishedAt": "2025-06-30T19:52:07+08:00",
+      "collectedAt": "2026-11-22T20:36:51+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "Garak - 是英伟达开源的大语言模型脆弱性扫描器，今天让我们来学习他。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2025-06-30T19:52:07+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 913,
+        "paragraphs": 34,
+        "subheads": 0,
+        "images": 11,
+        "titlePattern": "热点借势+观点判断",
+        "hook": "Garak - 是英伟达开源的大语言模型脆弱性扫描器，今天让我们来学习他。",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "98eb1fe5fc38886e",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "莫言：高明的作家都有一个强大的“本我”",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "莫言读书会",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495736&idx=1&sn=82335ffef2cb51b9e2524172c376c21a",
+      "publishedAt": "2026-11-07T18:00:00+08:00",
+      "collectedAt": "2026-11-22T20:36:50+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "我们要学习和借鉴的是属于艺术的共通性的东西，我们要赋予的，是属于艺术个性的东西。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2026-11-07T18:00:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 3806,
+        "paragraphs": 68,
+        "subheads": 0,
+        "images": 11,
+        "titlePattern": "第一人称经历",
+        "hook": "我们要学习和借鉴的是属于艺术的共通性的东西，我们要赋予的，是属于艺术个性的东西。",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "d7d245108c988acd",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "莫言：我几乎尝遍了田野里的百草百虫",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "莫言读书会",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495725&idx=1&sn=ebfb144df22da593680f813d065c86b3",
+      "publishedAt": "2026-10-17T18:00:00+08:00",
+      "collectedAt": "2026-11-22T20:36:50+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "莫言 2026-10-17 18:00 上海\n\n\n\n\n\n\n\n \n \n\n \n \n\n草木虫鱼\n莫言 | 文\n好多文章把三年困难时期写得一团漆黑、毫无乐趣，我认为是不对的。在那个特殊的时期里，也还是有欢乐，尽管几乎所有的欢乐都与得到食物有关。\n那时候，我六七八岁，与村中的孩子们一起，四处游荡着觅食，活似一群小精灵。\n我们像传说中的神农一样，几乎尝遍了田野里的百草百",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2026-10-17T18:00:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2829,
+        "paragraphs": 62,
+        "subheads": 0,
+        "images": 25,
+        "titlePattern": "第一人称经历",
+        "hook": "",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "b3bd5955501e0b79",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "夜里，我偷偷用“千问AI小剧场”演了十五部短剧。。。",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "浅黑科技",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzU0NDEwMTc1MA==&mid=2247526850&idx=1&sn=2cd3c1e530e59266149c1873fa9f1852",
+      "publishedAt": "2025-12-16T19:29:00+08:00",
+      "collectedAt": "2026-11-22T20:36:48+08:00",
+      "category": "综合",
+      "region": "国内",
+      "summary": "一晚上，四大名著被我演完了。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 5,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "微信外部页面无阅读数，不可见，不编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "无可见点赞/在看/评论计数"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该文上榜证据"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 2,
+            "note": "发布于 2025-12-16T19:29:00+08:00，距采集 2 分档"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2625,
+        "paragraphs": 127,
+        "subheads": 0,
+        "images": 21,
+        "titlePattern": "第一人称经历",
+        "hook": "一晚上，四大名著被我演完了。",
+        "structure": [],
+        "highlightSkills": [],
+        "lessons": []
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+        "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+      },
+      "tags": [
+        "微信文章",
+        "feed采集",
+        "形态基准"
+      ],
+      "id": "3e8b9e1b42e95724",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
     },
     {
       "title": "全红婵别怕！向网暴亮剑，有理有法",

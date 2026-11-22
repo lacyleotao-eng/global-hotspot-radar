@@ -1,0 +1,31 @@
+{
+  "_说明": "Wechat2RSS 公开 feed 列表（https://wechat2rss.xlab.app/list/all/）。这里只放经验证可达、且有深度长文的号，用于「公众号文章」形态基准。该源不含阅读/点赞数（写不可见），也不含贴图/图片消息。新增账号请从公开列表取真实 feed URL，不要编造。",
+  "_更新于": "2026-11-22",
+  "feeds": [
+    {
+      "name": "浅黑科技",
+      "url": "https://wechat2rss.xlab.app/feed/6111a6d5ecf28cfdd4fc9b664244c05ddacef15c.xml",
+      "category": "科技"
+    },
+    {
+      "name": "夕小瑶科技说",
+      "url": "https://wechat2rss.xlab.app/feed/a1cd365aa14ed7d64cabfc8aa086da40ecaba34d.xml",
+      "category": "科技"
+    },
+    {
+      "name": "莫言读书会",
+      "url": "https://wechat2rss.xlab.app/feed/6324f2c5d7c2413541a11589b64d7fcb63417ff7.xml",
+      "category": "文化"
+    },
+    {
+      "name": "长赢指数投资",
+      "url": "https://wechat2rss.xlab.app/feed/1f35edb36dfda13906f958fc3047e59ce9c234fe.xml",
+      "category": "财经"
+    },
+    {
+      "name": "思想花火",
+      "url": "https://wechat2rss.xlab.app/feed/5b925323244e9737c39285596c53e3a2f4a30774.xml",
+      "category": "综合"
+    }
+  ]
+}

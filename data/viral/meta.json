@@ -1,26 +1,28 @@
 {
-  "updatedAt": "2026-11-22T20:04:22+08:00",
-  "total": 7,
-  "incoming": 11,
+  "updatedAt": "2026-11-22T20:37:49+08:00",
+  "total": 18,
+  "incoming": 22,
   "byForm": {
     "tt-article": 3,
+    "gzh-poster": 2,
     "tt-micro": 1,
-    "gzh-article": 3
+    "gzh-article": 12
   },
   "byPlatform": {
     "今日头条": 4,
-    "微信公众号": 3
+    "微信公众号": 14
   },
   "byTier": {
     "S": 0,
     "A": 0,
-    "B": 3,
-    "C": 4
+    "B": 5,
+    "C": 13
   },
   "bySignalSource": {
     "页面可见（评论区存在，计数未渲染）": 1,
     "页面可见（正文自述，非平台后台数据）": 1,
-    "不可见": 5
+    "不可见": 14,
+    "第三方拆解": 2
   },
   "rejected": [
     {

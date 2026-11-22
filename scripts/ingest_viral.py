@@ -58,6 +58,11 @@ def validate_platform(raw):
         return False, "平台与形态冲突：标称" + plat + "，但" + form + "只能属于" + expect_plat
     u = str(raw.get("url") or "").strip()
     if not u:
+        # 唯一例外：公众号贴图无公开直链，若明确标注为客户端人工补录则放行，
+        # 但必须在 verification.notes 里说明来源，绝不用其他平台链接冒名。
+        notes = str((raw.get("verification") or {}).get("notes", ""))
+        if form == "gzh-poster" and "客户端" in notes and "补录" in notes:
+            return True, ""
         return False, "缺少原文直链，无法核验平台归属"
     host = url_host(u)
     allowed = PLATFORM_HOSTS[form]
