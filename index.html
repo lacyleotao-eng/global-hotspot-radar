@@ -35,11 +35,49 @@
 
 <main class="wrap">
   <div class="viewtabs" id="viewTabs">
+    <button class="vtab" data-view="benchmark">爆款对标</button>
     <button class="vtab on" data-view="picks">今日选题 TOP3</button>
     <button class="vtab" data-view="feed">情报流</button>
     <button class="vtab" data-view="leads">选题线索 <span id="leadTabCount">0</span></button>
     <span class="viewhint" id="viewHint">每日按时效、热度、核实度、优先级打分排序的成稿候选</span>
   </div>
+
+  <section class="benchpanel" id="benchPanel" hidden>
+    <div class="bench-intro">
+      <div>
+        <h2>爆款对标 · 我们的成品稿够不够打？</h2>
+        <p>每天采集真实爆款（公众号文章/贴图、头条文章/微头条），拆成字数、配图、结构的基准线，再和自家样例逐项对照。数据为公开可见信息，互动数字不可见的一律标注，基准仅供参考。</p>
+      </div>
+      <div class="bench-updated" id="benchUpdated">—</div>
+    </div>
+    <div class="bench-table-wrap">
+      <table class="bench-table" id="benchTable">
+        <thead><tr><th>形态</th><th>爆款字数中位</th><th>我们</th><th>爆款配图中位</th><th>我们</th><th>结论</th></tr></thead>
+        <tbody id="benchBody"></tbody>
+      </table>
+    </div>
+    <p class="bench-caveat" id="benchCaveat">说明：爆款字数/配图为抓取正文的估算中位数，互动数据多不可见，属于参考基准而非精确实测；样本越多基准越稳。</p>
+
+    <div class="viral-bar">
+      <div class="viral-form-chips" id="viralFormChips"></div>
+      <div class="viral-sort">
+        <label>排序
+          <select id="viralSort" aria-label="爆款排序方式">
+            <option value="score">爆款指数</option>
+            <option value="words">正文字数</option>
+            <option value="tier">档位</option>
+            <option value="collected">最新采集</option>
+          </select>
+        </label>
+        <label>档位
+          <select id="viralTierFilter" aria-label="按档位筛选"><option value="">全部档位</option><option value="S">S 现象级</option><option value="A">A 爆款</option><option value="B">B 热门</option><option value="C">C 上升</option></select>
+        </label>
+      </div>
+    </div>
+    <div class="resultbar"><span id="viralCount">—</span></div>
+    <div class="viral-grid" id="viralGrid"></div>
+    <div class="empty" id="viralEmpty" hidden>该形态暂无爆款样本。</div>
+  </section>
 
   <section class="pickspanel" id="picksPanel">
     <div class="pickshead">
@@ -118,9 +156,23 @@
   </div>
 </div>
 
+<div class="viral-mask" id="viralMask" hidden>
+  <div class="viral-shell" role="dialog" aria-modal="true" aria-labelledby="viralDetailTitle">
+    <div class="viral-topbar">
+      <span class="viral-top-label">爆款拆解</span>
+      <div class="draft-tools">
+        <button class="draft-copy" id="viralCopy">复制拆解</button>
+        <button class="draft-close" id="viralClose" aria-label="关闭">×</button>
+      </div>
+    </div>
+    <div class="viral-scroll" id="viralBody"></div>
+  </div>
+</div>
+
 <script src="data/embed.js"></script>
 <script src="data/picks-embed.js"></script>
 <script src="data/ready-embed.js"></script>
+<script src="data/viral-embed.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

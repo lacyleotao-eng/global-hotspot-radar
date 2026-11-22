@@ -1,0 +1,22 @@
+{
+  "updatedAt": "2026-11-22T19:53:37+08:00",
+  "total": 8,
+  "incoming": 8,
+  "byForm": {
+    "gzh-article": 3,
+    "tt-article": 3,
+    "gzh-poster": 1,
+    "tt-micro": 1
+  },
+  "byTier": {
+    "S": 0,
+    "A": 2,
+    "B": 3,
+    "C": 3
+  },
+  "bySignalSource": {
+    "不可见": 6,
+    "页面可见（评论区存在，计数未渲染）": 1,
+    "页面可见（正文自述，非平台后台数据）": 1
+  }
+}

@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'picks', target: '', priority: '', draftOpen: null };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'benchmark', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -53,6 +53,7 @@
     state.meta = (window.__META__ && window.__META__) || {};
     state.picks = window.__PICKS__ || null;
     state.ready = window.__READY__ || { docs: [] };
+    state.viral = window.__VIRAL__ || { items: [], meta: {}, benchmark: [] };
     initControls();
     applyView();
     render();
@@ -61,14 +62,16 @@
   function applyView() {
     var isPicks = state.view === 'picks';
     var isLeads = state.view === 'leads';
+    var isBench = state.view === 'benchmark';
+    document.getElementById('benchPanel').hidden = !isBench;
     document.getElementById('picksPanel').hidden = !isPicks;
-    document.getElementById('mainToolbar').hidden = isPicks;
-    document.getElementById('typeChips').hidden = isPicks || isLeads;
+    document.getElementById('mainToolbar').hidden = isPicks || isBench;
+    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench;
     document.getElementById('leadBar').hidden = !isLeads;
-    document.querySelector('.resultbar').hidden = isPicks;
-    document.getElementById('grid').hidden = isPicks;
+    document.querySelector('.resultbar').hidden = isPicks || isBench;
+    document.getElementById('grid').hidden = isPicks || isBench;
     document.getElementById('empty').hidden = true;
-    document.querySelector('.more-wrap').hidden = isPicks;
+    document.querySelector('.more-wrap').hidden = isPicks || isBench;
   }
 
   function initControls() {
@@ -88,18 +91,22 @@
         state.page = 1;
         Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
         applyView();
-        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks';
+        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
-        document.getElementById('viewHint').textContent = state.view === 'picks'
-          ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
-          : (state.view === 'leads'
-            ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
-            : '每条情报可展开详情，查看来源与核实过程');
+        document.getElementById('viewHint').textContent = state.view === 'benchmark'
+          ? '真实爆款拆解成基准，和自家 4 形态成品稿逐项对照'
+          : (state.view === 'picks'
+            ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
+            : (state.view === 'leads'
+              ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
+              : '每条情报可展开详情，查看来源与核实过程'));
         render();
       };
     });
     document.getElementById('targetFilter').addEventListener('change', function (e) { state.target = e.target.value; state.page = 1; render(); });
     document.getElementById('priorityFilter').addEventListener('change', function (e) { state.priority = e.target.value; state.page = 1; render(); });
+    document.getElementById('viralSort').addEventListener('change', function (e) { state.viralSort = e.target.value; renderBenchmark(); });
+    document.getElementById('viralTierFilter').addEventListener('change', function (e) { state.viralTier = e.target.value; renderBenchmark(); });
 
     var chips = document.getElementById('typeChips');
     var keys = ['', 'hotspot', 'news', 'discussion', 'resource', 'demand', 'idea'];
@@ -129,6 +136,11 @@
     document.getElementById('modalMask').onclick = function (e) { if (e.target.id === 'modalMask') closeModal(); };
     document.getElementById('draftClose').onclick = closeDraft;
     document.getElementById('draftMask').onclick = function (e) { if (e.target.id === 'draftMask') closeDraft(); };
+    document.getElementById('viralClose').onclick = closeViral;
+    document.getElementById('viralMask').onclick = function (e) { if (e.target.id === 'viralMask') closeViral(); };
+    document.getElementById('viralCopy').onclick = function () {
+      if (state.viralOpen) copyText(viralFullText(state.viralOpen), document.getElementById('viralCopy'));
+    };
     document.getElementById('draftCopy').onclick = function (b) {
       var o = state.draftOpen;
       if (!o) return;
@@ -137,7 +149,9 @@
     };
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
-      if (!document.getElementById('draftMask').hidden) closeDraft(); else closeModal();
+      if (!document.getElementById('viralMask').hidden) closeViral();
+      else if (!document.getElementById('draftMask').hidden) closeDraft();
+      else closeModal();
     });
 
     var total = state.items.length;
@@ -145,7 +159,7 @@
     var leads = state.items.reduce(function (n, i) { return n + ((i.leads || []).length); }, 0);
     document.getElementById('leadTabCount').textContent = leads;
     document.getElementById('topStats').innerHTML =
-      '<span><b>' + total + '</b>条目</span><span><b>' + leads + '</b>选题线索</span><span><b>' + cn + '</b>国内</span><span><b>' + (total - cn) + '</b>海外</span>';
+      '<span><b>' + total + '</b>条目</span><span><b>' + leads + '</b>选题线索</span><span><b>' + ((state.viral.meta || {}).total || 0) + '</b>爆款样本</span><span><b>' + cn + '</b>国内</span>';
     document.getElementById('updateLabel').textContent = state.meta.updatedAt ? '更新于 ' + fmt(state.meta.updatedAt) : '等待数据';
     document.getElementById('footerMeta').textContent = state.meta.updatedAt ? '数据更新时间：' + fmt(state.meta.updatedAt) + ' · 共 ' + total + ' 条' : '';
   }
@@ -309,6 +323,158 @@
     return lines.join('\n');
   }
 
+  var VFORM = {
+    'gzh-article': '公众号文章', 'gzh-poster': '公众号贴图',
+    'tt-article': '头条文章', 'tt-micro': '微头条'
+  };
+  var VTIER = {
+    S: { label: 'S 现象级', cls: 's' }, A: { label: 'A 爆款', cls: 'a' },
+    B: { label: 'B 热门', cls: 'b' }, C: { label: 'C 上升', cls: 'c' }
+  };
+
+  function benchTableHtml() {
+    var rows = state.viral.benchmark || [];
+    return rows.map(function (r) {
+      var v = r.viral || {}, m = r.mine || {};
+      var verdictCls = r.verdict.indexOf('达标') >= 0 ? 'ok' : (r.verdict.indexOf('不足') >= 0 || r.verdict.indexOf('偏少') >= 0 ? 'warn' : 'muted');
+      return '<tr>' +
+        '<td><b>' + esc(r.formLabel) + '</b><small>爆款 ' + r.viralSample + ' 条 / 自家 ' + r.selfSample + ' 条</small></td>' +
+        '<td>' + (v.wordCount != null ? v.wordCount + ' 字' : '—') + '</td>' +
+        '<td><b>' + (m.wordCount != null ? m.wordCount + ' 字' : '—') + '</b></td>' +
+        '<td>' + (v.images != null ? v.images + ' 张' : '—') + '</td>' +
+        '<td><b>' + (m.images != null ? m.images + ' 张' : '—') + '</b></td>' +
+        '<td><span class="bench-verdict ' + verdictCls + '">' + esc(r.verdict) + '</span></td>' +
+      '</tr>';
+    }).join('');
+  }
+
+  function viralFiltered() {
+    var rows = (state.viral.items || []).slice();
+    if (state.viralForm) rows = rows.filter(function (i) { return i.form === state.viralForm; });
+    if (state.viralTier) rows = rows.filter(function (i) { return (i.viralScore || {}).tier === state.viralTier; });
+    var order = { S: 4, A: 3, B: 2, C: 1 };
+    rows.sort(function (a, b) {
+      if (state.viralSort === 'words') return ((b.anatomy || {}).wordCount || 0) - ((a.anatomy || {}).wordCount || 0);
+      if (state.viralSort === 'collected') return String(b.collectedAt || '').localeCompare(String(a.collectedAt || ''));
+      if (state.viralSort === 'tier') return (order[(b.viralScore || {}).tier] || 0) - (order[(a.viralScore || {}).tier] || 0) || (b.viralScore.total - a.viralScore.total);
+      return (b.viralScore || {}).total - (a.viralScore || {}).total;
+    });
+    return rows;
+  }
+
+  function viralCardHtml(it) {
+    var url = safeUrl(it.url);
+    var vs = it.viralScore || {}, an = it.anatomy || {}, sig = it.signals || {};
+    var tier = VTIER[vs.tier] || VTIER.C;
+    var title = url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(it.title) + '</a>' : esc(it.title);
+    var lessons = (an.lessons || []).slice(0, 2);
+    return '<article class="viral-card">' +
+      '<div class="viral-card-head">' +
+        '<span class="vform">' + esc(VFORM[it.form] || it.form) + '</span>' +
+        '<span class="vtier t-' + tier.cls + '">' + esc(tier.label) + '</span>' +
+        '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
+      '</div>' +
+      '<h3>' + title + '</h3>' +
+      '<p class="viral-account">' + esc(it.account || '') + ' · ' + esc(it.category || '') + ' · ' + esc(it.platform || '') + '</p>' +
+      '<div class="viral-stats">' +
+        '<span>字数 <b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></span>' +
+        '<span>配图 <b>' + (an.images != null ? an.images : '—') + '</b></span>' +
+        '<span>小标题 <b>' + (an.subheads != null ? an.subheads : '—') + '</b></span>' +
+        '<span class="vsrc">信号：' + esc(sig.source || '不可见') + '</span>' +
+      '</div>' +
+      '<p class="viral-pattern"><b>标题套路：</b>' + esc(an.titlePattern || '—') + '</p>' +
+      (lessons.length ? '<ul class="viral-lessons">' + lessons.map(function (l) { return '<li>' + esc(l) + '</li>'; }).join('') + '</ul>' : '') +
+      '<div class="viral-card-actions">' +
+        '<button class="viral-detail" data-id="' + esc(it.id) + '">查看拆解 →</button>' +
+        (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') +
+      '</div>' +
+    '</article>';
+  }
+
+  function renderBenchmark() {
+    document.getElementById('benchBody').innerHTML = benchTableHtml() || '<tr><td colspan="6">暂无对标数据</td></tr>';
+    var m = state.viral.meta || {};
+    document.getElementById('benchUpdated').textContent = m.updatedAt ? '更新于 ' + fmt(m.updatedAt) + ' · ' + (m.total || 0) + ' 条爆款' : '等待爆款数据';
+    var chips = document.getElementById('viralFormChips');
+    if (!chips.childElementCount) {
+      var keys = [['', '全部'], ['gzh-article', '公众号文章'], ['gzh-poster', '公众号贴图'], ['tt-article', '头条文章'], ['tt-micro', '微头条']];
+      keys.forEach(function (kv) {
+        var b = document.createElement('button');
+        b.className = 'vform-chip' + (kv[0] === '' ? ' on' : '');
+        b.textContent = kv[1]; b.setAttribute('data-form', kv[0]);
+        b.onclick = function () {
+          state.viralForm = kv[0];
+          Array.prototype.forEach.call(chips.children, function (c) { c.classList.toggle('on', c === b); });
+          renderBenchmark();
+        };
+        chips.appendChild(b);
+      });
+    }
+    var rows = viralFiltered();
+    document.getElementById('viralCount').textContent = '显示 ' + rows.length + ' 条爆款（基准为公开可见信息估算，非精确实测）';
+    document.getElementById('viralEmpty').hidden = rows.length > 0;
+    document.getElementById('viralGrid').innerHTML = rows.map(viralCardHtml).join('');
+    Array.prototype.forEach.call(document.querySelectorAll('.viral-detail'), function (b) {
+      b.onclick = function () { openViral(b.getAttribute('data-id')); };
+    });
+  }
+
+  function viralFullText(it) {
+    var an = it.anatomy || {}, vs = it.viralScore || {};
+    var lines = ['【爆款拆解 · ' + (VFORM[it.form] || '') + '】' + it.title,
+      '账号：' + (it.account || '') + ' · 平台：' + (it.platform || ''),
+      '爆款指数：' + vs.total + ' 分（' + (VTIER[vs.tier] || {}).label + '）',
+      '', '【形态拆解】',
+      '字数：' + (an.wordCount != null ? an.wordCount : '—') + '　配图：' + (an.images != null ? an.images : '—') + '　小标题：' + (an.subheads != null ? an.subheads : '—'),
+      '标题套路：' + (an.titlePattern || ''),
+      '开头钩子：' + (an.hook || ''),
+      '', '结构：', (an.structure || []).map(function (x, i) { return (i + 1) + '. ' + x; }).join('\n'),
+      '', '重点手法：', (an.highlightSkills || []).map(function (x, i) { return (i + 1) + '. ' + x; }).join('\n'),
+      '', '可借鉴：', (an.lessons || []).map(function (x, i) { return (i + 1) + '. ' + x; }).join('\n'),
+      '', '评分明细：', (vs.breakdown || []).map(function (b) { return b.label + ' +' + b.points + '（' + b.note + '）'; }).join('\n'),
+      '', '信号来源：' + ((it.signals || {}).source || '不可见'),
+      '核实：' + ((it.verification || {}).status || '') + ' · ' + ((it.verification || {}).notes || ''),
+      '原文：' + (it.url || '')];
+    return lines.join('\n');
+  }
+
+  function openViral(id) {
+    var it = (state.viral.items || []).find(function (x) { return x.id === id; });
+    if (!it) return;
+    state.viralOpen = it;
+    var an = it.anatomy || {}, vs = it.viralScore || {}, sig = it.signals || {}, v = it.verification || {};
+    var url = safeUrl(it.url);
+    var tier = VTIER[vs.tier] || VTIER.C;
+    document.getElementById('viralBody').innerHTML =
+      '<div class="vdetail-head">' +
+        '<span class="vform">' + esc(VFORM[it.form] || it.form) + '</span>' +
+        '<span class="vtier t-' + tier.cls + '">' + esc(tier.label) + '</span>' +
+        '<span class="vscore"><b>' + (vs.total || 0) + '</b> 分</span>' +
+      '</div>' +
+      '<h2 id="viralDetailTitle">' + esc(it.title) + '</h2>' +
+      '<p class="vdetail-sub">' + esc(it.account || '') + ' · ' + esc(it.platform || '') + ' · ' + esc(it.category || '') + ' · ' + esc(fmt(it.publishedAt || it.collectedAt)) + '</p>' +
+      '<p class="vdetail-summary">' + esc(it.summary || '') + '</p>' +
+      '<div class="vdetail-metrics">' +
+        '<div><span>正文字数</span><b>' + (an.wordCount != null ? an.wordCount : '—') + '</b></div>' +
+        '<div><span>配图</span><b>' + (an.images != null ? an.images : '—') + '</b></div>' +
+        '<div><span>小标题</span><b>' + (an.subheads != null ? an.subheads : '—') + '</b></div>' +
+        '<div><span>信号来源</span><b class="small">' + esc(sig.source || '不可见') + '</b></div>' +
+      '</div>' +
+      '<div class="vdetail-signals"><b>可见信号</b>　阅读：' + esc(sig.views || '不可见') + '　点赞：' + esc(sig.likes || '不可见') + '　评论：' + esc(sig.comments || '不可见') + '　转发：' + esc(sig.shares || '不可见') + (it.ranking ? '<br><b>榜单：</b>' + esc(it.ranking.name || '') + ' · ' + esc(it.ranking.position || '') : '') + '</div>' +
+      '<section class="vdetail-sec"><h3>标题套路 & 开头钩子</h3><p><b>套路：</b>' + esc(an.titlePattern || '—') + '</p><p><b>钩子：</b>' + esc(an.hook || '—') + '</p></section>' +
+      '<section class="vdetail-sec"><h3>结构拆解</h3><ol>' + (an.structure || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol></section>' +
+      '<section class="vdetail-sec"><h3>重点突出手法</h3><ul>' + (an.highlightSkills || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></section>' +
+      '<section class="vdetail-sec lessons"><h3>可借鉴点（写给下次的我们）</h3><ol>' + (an.lessons || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol></section>' +
+      '<section class="vdetail-sec"><h3>爆款指数明细</h3>' + (vs.breakdown || []).map(function (b) {
+        return '<p class="vbreak"><span>' + esc(b.label) + '</span><b>+' + b.points + '</b><small>' + esc(b.note) + '</small></p>';
+      }).join('') + '<p class="vmethod">' + esc(vs.method || '') + '</p></section>' +
+      '<section class="vdetail-sec"><h3>资料核实</h3><p>状态：' + esc(v.status || '未核实') + '</p><p>方法：' + esc(v.method || '') + '</p><p class="vnotes">存疑：' + esc(v.notes || '无') + '</p></section>' +
+      '<div class="vdetail-actions">' + (url ? '<a class="btn" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">打开原文 ↗</a>' : '') + '</div>';
+    document.getElementById('viralMask').hidden = false;
+  }
+
+  function closeViral() { document.getElementById('viralMask').hidden = true; state.viralOpen = null; }
+
   function renderPicks() {
     var p = state.picks;
     var groupsEl = document.getElementById('picksGroups');
@@ -363,6 +529,7 @@
   }
 
   function render() {
+    if (state.view === 'benchmark') { renderBenchmark(); return; }
     if (state.view === 'picks') { renderPicks(); return; }
     var rows = state.view === 'leads' ? filteredLeads() : filtered();
     document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
