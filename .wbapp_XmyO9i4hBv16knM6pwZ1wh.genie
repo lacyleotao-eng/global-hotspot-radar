@@ -1,0 +1,5 @@
+appId: wbapp_XmyO9i4hBv16knM6pwZ1wh
+name: 全球热点情报站
+localDir: /Users/lee/WorkBuddy/hotspot-radar
+appType: web
+entryHtml: index.html

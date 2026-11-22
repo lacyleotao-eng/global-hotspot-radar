@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "description": "热点情报条目字段规范。定时任务必须按此结构写入 data/inbox/*.json。",
+  "required": ["title", "url", "type", "region", "platform", "summary", "collectedAt"],
+  "types": {
+    "hotspot": "热点话题",
+    "news": "新闻资讯",
+    "discussion": "热门帖子/讨论",
+    "resource": "资源/工具/项目",
+    "demand": "需求/求助/求推荐/悬赏",
+    "idea": "想法/观点/创意",
+    "other": "其他"
+  },
+  "regions": ["国内", "海外"],
+  "verificationStatus": ["已核实", "部分核实", "待核实", "未核实"],
+  "heatStages": ["新出现", "缓慢起量", "上升", "成熟", "回落", "未知"],
+  "fields": {
+    "id": "可选，缺省由 url 生成",
+    "title": "条目标题（原文标题或准确概括）",
+    "summary": "100-200字摘要，只写来源直述事实，推断另放 evaluation",
+    "type": "types 中的枚举值",
+    "subtype": "细分类型，如 科技/财经/社会/体育/开源工具/数据集/求职",
+    "region": "国内 或 海外",
+    "platform": "来源平台名，如 腾讯新闻 / GitHub / Hacker News / Reddit / 知乎",
+    "url": "可直达原文的地址，必须真实可访问",
+    "publishedAt": "原发布时间，ISO8601 带时区；不可知写 null",
+    "collectedAt": "本次采集时间，ISO8601 带时区，必填",
+    "image": "对象 {url, caption, rights}；无图写 null。只记录来源图片链接，不下载不转存",
+    "heat": "对象 {stage, signals:{views,likes,comments,shares}}；不可见的信号值写 不可见",
+    "verification": "对象 {status, method, verifiedAt, notes}；method 说明核实手段，notes 写存疑点",
+    "citations": "数组 [{title,url,publisher,date,relation}]；relation 为 一手/二手/官方/转载",
+    "evaluation": "对象 {editor,community,sentiment,source}；editor 为编辑点评，community 为社区评价概述，sentiment 为 正面/中性/负面/争议/未知",
+    "tags": "字符串数组，便于检索",
+    "needs": "字符串数组，仅 demand 类型填写，匿名概括需求主题"
+  },
+  "rules": [
+    "事实、页面信号、推断必须分开：事实进 summary，可见数字进 heat.signals，判断进 evaluation.editor",
+    "互动数字不可见时写 不可见，禁止估算，禁止用第三方榜单数字冒充本页数据",
+    "评论只做匿名需求归纳，不复制原句、不带用户 ID",
+    "涉及健康、法律、投资的内容必须标注 待核实 或 部分核实，不得写成确定结论",
+    "不收录政治敏感、违法违规、侵犯版权的内容；图片只留原站链接与版权说明",
+    "同一 URL 或同一标题只保留一条，重复采集由 ingest.py 自动合并"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "updatedAt": "2026-11-22T12:38:41+08:00",
+  "total": 23,
+  "byType": {
+    "news": 8,
+    "hotspot": 3,
+    "discussion": 3,
+    "demand": 2,
+    "resource": 5,
+    "idea": 2
+  },
+  "sources": [
+    "12306 / 自贡网",
+    "AI Paper Digest",
+    "DEV Community",
+    "GitHub Trending",
+    "Hacker News",
+    "Hacker News / AI Paper Digest",
+    "Hacker News / MIT OCW",
+    "Lobste.rs",
+    "中央气象台 / 央视新闻",
+    "北京日报 / 中国南水北调集团",
+    "央视新闻",
+    "川观新闻",
+    "工业和信息化部 / 腾讯新闻",
+    "新华网英文",
+    "社交媒体 / 自贡网",
+    "自贡网（媒体汇总）"
+  ],
+  "lastBatch": 23
+}

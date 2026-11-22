@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球热点情报站 · 每日热点 / 资源 / 需求聚合</title>
+<meta name="description" content="每天汇总国内外热点、新闻、帖子、资源、需求与想法，附来源链接、核实状态、评价与引用溯源。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">情</div>
+    <div>
+      <h1>全球热点情报站</h1>
+      <p class="subtitle">热点 · 新闻 · 帖子 · 资源 · 需求 · 想法</p>
+    </div>
+  </div>
+  <div class="topstats" id="topStats"></div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">DAILY INTELLIGENCE DIGEST</div>
+      <h2>把散落在全网的信息，收成一张可追溯的情报清单</h2>
+      <p>每条都带原文网址、来源平台、采集时间、核实状态、评价与引用溯源。事实与推断分开写，不确定的一律标注。</p>
+    </div>
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      <span id="updateLabel">等待数据</span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="toolbar">
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg>
+      <input id="search" type="search" placeholder="搜索标题、摘要、平台、标签…" autocomplete="off">
+    </div>
+    <select id="typeFilter" aria-label="按类型筛选"><option value="">全部类型</option></select>
+    <select id="regionFilter" aria-label="按地区筛选"><option value="">国内 + 海外</option></select>
+    <select id="verifyFilter" aria-label="按核实状态筛选"><option value="">全部核实状态</option></select>
+    <select id="sortBy" aria-label="排序方式">
+      <option value="collected">最新采集</option>
+      <option value="published">原发布时间</option>
+      <option value="type">按类型</option>
+    </select>
+  </div>
+
+  <div class="chips" id="typeChips"></div>
+
+  <div class="resultbar">
+    <span id="resultCount">—</span>
+    <span class="legend"><i class="dot ok"></i>已核实 <i class="dot part"></i>部分核实 <i class="dot wait"></i>待核实 <i class="dot none"></i>未核实</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>没有匹配的条目，换个筛选条件试试。</div>
+  <div class="more-wrap"><button id="moreBtn" class="more" hidden>加载更多</button></div>
+</main>
+
+<footer class="footer">
+  <p>只收录公开可访问来源。图片仅展示来源站链接，不下载、不转存；互动数据以页面可见为准，不可见即标注。本站内容为信息聚合，不构成投资或决策建议。</p>
+  <p id="footerMeta"></p>
+</footer>
+
+<div class="modal-mask" id="modalMask" hidden>
+  <article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close" id="closeBtn" aria-label="关闭">×</button>
+    <div id="modalBody"></div>
+  </article>
+</div>
+
+<script src="data/embed.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
