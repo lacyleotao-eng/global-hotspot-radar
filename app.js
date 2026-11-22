@@ -551,7 +551,7 @@
     var covTitle = cov.ok ? '今日每个 TOP3 选题都有对应成品稿' : '缺稿：' + (cov.missing || []).join('；');
     var g = a.grades || {};
     document.getElementById('auditSummary').innerHTML =
-      '<div class="audit-sum-box ' + (cov.ok ? 'g-ok' : 'g-near') + '" title="' + esc(covTitle) + '"><span>TOP3 草稿覆盖</span><b>' + cov.covered + '/' + cov.total + '</b></div>' +
+      '<div class="audit-sum-box ' + (cov.ok ? 'g-ok' : 'g-near') + '" title="' + esc(covTitle) + '"><span>TOP3 草稿覆盖&nbsp;</span><b>' + cov.covered + '/' + cov.total + '</b></div>' +
       '<div class="audit-sum-box"><span>均分</span><b>' + a.avgScore + '</b></div>' +
       '<div class="audit-sum-box g-ok"><span>达标 ≥85</span><b>' + (g['达标'] || 0) + '</b></div>' +
       '<div class="audit-sum-box g-near"><span>接近 70-84</span><b>' + (g['接近'] || 0) + '</b></div>' +
