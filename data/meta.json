@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-22T13:29:03+08:00",
-  "total": 54,
+  "updatedAt": "2026-11-22T20:36:27+08:00",
+  "total": 62,
   "byType": {
+    "resource": 16,
+    "idea": 7,
+    "demand": 6,
     "news": 17,
     "discussion": 10,
-    "idea": 5,
-    "hotspot": 6,
-    "resource": 11,
-    "demand": 5
+    "hotspot": 6
   },
   "sources": [
     "12306 / 自贡网",
@@ -16,6 +16,7 @@
     "DEV Community（引 Reddit 社区规则）",
     "GitHub Trending",
     "GitHub Trending（经榜单站整理）",
+    "Gitee",
     "Hacker News",
     "Hacker News / AI Paper Digest",
     "Hacker News / MIT OCW",
@@ -25,8 +26,11 @@
     "LinkedIn（经 Daily 8 报道）",
     "LinkedIn（经 Discoverable 整理）",
     "Lobste.rs",
+    "OSCHINA",
+    "Product Hunt",
     "Product Hunt（经 Productlist 整理）",
     "Reddit + X（经 Ideas Radar 整理）",
+    "V2EX",
     "X（经 DeAI News 整理）",
     "X（经 Ideas Radar 整理）",
     "中央气象台 / 央视新闻",
@@ -35,6 +39,7 @@
     "今日头条（引工信部）",
     "北京日报 / 中国南水北调集团",
     "央视新闻",
+    "少数派",
     "川观新闻",
     "工业和信息化部 / 腾讯新闻",
     "微信公众号·壹家之计（引新民晚报）",
@@ -53,10 +58,10 @@
     "网易号·365资讯简报",
     "自贡网（媒体汇总）"
   ],
-  "leadsTotal": 40,
+  "leadsTotal": 44,
   "byTarget": {
-    "公众号": 28,
-    "今日头条": 12
+    "公众号": 31,
+    "今日头条": 13
   },
-  "lastBatch": 31
+  "lastBatch": 8
 }

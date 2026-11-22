@@ -1,8 +1,8 @@
 {
   "version": 1,
   "date": "2026-11-22",
-  "generatedAt": "2026-11-22T14:06:49+08:00",
-  "totalScored": 40,
+  "generatedAt": "2026-11-22T20:36:57+08:00",
+  "totalScored": 44,
   "topPerTarget": 3,
   "weights": {
     "timeliness": {
@@ -34,6 +34,69 @@
   },
   "groups": {
     "公众号": [
+      {
+        "score": 89,
+        "breakdown": [
+          {
+            "label": "时效性：当日",
+            "points": 25
+          },
+          {
+            "label": "热度阶段：上升",
+            "points": 20
+          },
+          {
+            "label": "核实状态：部分核实",
+            "points": 12
+          },
+          {
+            "label": "编辑优先级：高",
+            "points": 20
+          },
+          {
+            "label": "线索完整度",
+            "points": 10
+          },
+          {
+            "label": "来源权威度",
+            "points": 0
+          },
+          {
+            "label": "采集新鲜度",
+            "points": 5
+          },
+          {
+            "label": "风险扣分：需核对/注明（注明）",
+            "points": -3
+          }
+        ],
+        "itemId": "4cbbac81e7a57558",
+        "region": "海外",
+        "sourceTitle": "GitHub 趋势榜：MiniMind 开源项目主打从零训练超小语言模型",
+        "platform": "GitHub Trending",
+        "url": "https://github.com/jingyaogong/minimind",
+        "verification": "部分核实",
+        "heatStage": "上升",
+        "lead": {
+          "target": "公众号",
+          "headline": "2 小时、3 元训练一个小模型？先把这句话的前提读完整",
+          "angle": "从一个登上 GitHub Trending 的开源项目切入，拆解“2 小时/3 元”这句话背后的限定条件，帮读者建立看技术标题的判断框架，而不是复述一个诱人数字。",
+          "outline": [
+            "项目自述做了什么：约 64M 主线模型与从零训练的完整链路",
+            "“2 小时”的准确含义：单张 3090 上 SFT 阶段 1 个 epoch 的实测耗时",
+            "“3 元”的准确含义：对应时段的 GPU 租用成本，且为经验估算",
+            "项目开源协议与实现方式：Apache 2.0、PyTorch 原生实现、兼容主流推理框架",
+            "读者该怎么用：当作入门教程与实验起点，而不是“人人可训大模型”的承诺"
+          ],
+          "audience": "对 AI 技术感兴趣的开发爱好者、想上手 LLM 的学生与独立开发者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "项目自述的耗时与成本有硬件和阶段前提，成稿须逐条注明，勿写成普遍结论",
+          "basis": "item.summary 与 citations 中 README 原文：项目自述“2 小时/3 元”，并明确限定为单张 NVIDIA 3090 上 SFT 阶段 1 epoch 实测与对应时段 GPU 租用成本；训练开销表数值标注为经验估算。"
+        },
+        "rank": 1,
+        "target": "公众号"
+      },
       {
         "score": 86,
         "breakdown": [
@@ -92,7 +155,7 @@
           "risk": "行业数据需核对来源；不做具体品牌导购",
           "basis": "热榜简报转述的行业信息"
         },
-        "rank": 1,
+        "rank": 2,
         "target": "公众号"
       },
       {
@@ -153,15 +216,17 @@
           "risk": "不夸大事件影响，注明3家提供商名单未公开",
           "basis": "OpenRouter 事件说明与第三方报道"
         },
-        "rank": 2,
+        "rank": 3,
         "target": "公众号"
-      },
+      }
+    ],
+    "今日头条": [
       {
-        "score": 79,
+        "score": 81,
         "breakdown": [
           {
-            "label": "时效性：本周",
-            "points": 18
+            "label": "时效性：当日",
+            "points": 25
           },
           {
             "label": "热度阶段：上升",
@@ -172,8 +237,8 @@
             "points": 12
           },
           {
-            "label": "编辑优先级：高",
-            "points": 20
+            "label": "编辑优先级：中",
+            "points": 12
           },
           {
             "label": "线索完整度",
@@ -181,44 +246,43 @@
           },
           {
             "label": "来源权威度",
-            "points": -3
+            "points": 0
           },
           {
             "label": "采集新鲜度",
             "points": 5
           },
           {
-            "label": "风险扣分：需核对/注明（须）",
+            "label": "风险扣分：需核对/注明（注明）",
             "points": -3
           }
         ],
-        "itemId": "16eddab3d63cb715",
+        "itemId": "4cbbac81e7a57558",
         "region": "海外",
-        "sourceTitle": "GitHub 趋势榜：AutoClip 一键把长视频剪成适配抖音小红书的短片",
-        "platform": "GitHub Trending（经榜单站整理）",
-        "url": "https://github.com/zhouxiaoka/autoclip",
+        "sourceTitle": "GitHub 趋势榜：MiniMind 开源项目主打从零训练超小语言模型",
+        "platform": "GitHub Trending",
+        "url": "https://github.com/jingyaogong/minimind",
         "verification": "部分核实",
         "heatStage": "上升",
         "lead": {
-          "target": "公众号",
-          "headline": "一个链接自动出片：这个开源工具把长视频拆成多平台短片",
-          "angle": "从内容团队的实际流程切入，评估工具能省什么、不能省什么",
+          "target": "今日头条",
+          "headline": "GitHub 热榜项目称 2 小时、3 元可训小模型，前提是什么？",
+          "angle": "用直白问答讲清一个上榜开源项目的标题口径：它做了什么、数字怎么来的、普通人能从中拿走什么。",
           "outline": [
-            "工具做了哪几步",
-            "跨平台适配具体指什么",
-            "人工仍需把关的环节与版权问题"
+            "项目是什么：从零训练超小语言模型的开源教程项目",
+            "数字从哪来：单张 3090、SFT 单 epoch、对应时段租卡成本",
+            "项目覆盖哪些训练环节，采用什么协议",
+            "提醒：数字为项目方自述与经验估算，尚无第三方复现"
           ],
-          "audience": "内容创作者、新媒体运营",
-          "timeliness": "本周",
-          "priority": "高",
-          "risk": "功能为项目自述；必须提示版权与肖像权边界",
-          "basis": "GitHub 趋势榜项目描述"
+          "audience": "关注 AI 与开源资讯的泛科技读者",
+          "timeliness": "当日",
+          "priority": "中",
+          "risk": "需注明数字为项目方自述口径，不得写成已验证的普遍事实",
+          "basis": "item.summary、verification.notes 与 citations：README 原文及限定说明，核实状态为部分核实。"
         },
-        "rank": 3,
-        "target": "公众号"
-      }
-    ],
-    "今日头条": [
+        "rank": 1,
+        "target": "今日头条"
+      },
       {
         "score": 80,
         "breakdown": [
@@ -277,7 +341,7 @@
           "risk": "同上",
           "basis": "热榜热度值与腾讯新闻报道"
         },
-        "rank": 1,
+        "rank": 2,
         "target": "今日头条"
       },
       {
@@ -337,67 +401,6 @@
           "priority": "中",
           "risk": "同上",
           "basis": "X 讨论与事件报道"
-        },
-        "rank": 2,
-        "target": "今日头条"
-      },
-      {
-        "score": 75,
-        "breakdown": [
-          {
-            "label": "时效性：本周",
-            "points": 18
-          },
-          {
-            "label": "热度阶段：上升",
-            "points": 20
-          },
-          {
-            "label": "核实状态：部分核实",
-            "points": 12
-          },
-          {
-            "label": "编辑优先级：中",
-            "points": 12
-          },
-          {
-            "label": "线索完整度",
-            "points": 10
-          },
-          {
-            "label": "来源权威度",
-            "points": 0
-          },
-          {
-            "label": "采集新鲜度",
-            "points": 5
-          },
-          {
-            "label": "风险扣分：存在提示性风险",
-            "points": -2
-          }
-        ],
-        "itemId": "18d38b8afa9378d8",
-        "region": "国内",
-        "sourceTitle": "网红钛杯钛锅被指养生功效缺乏科学依据，专家提醒认准材质标识",
-        "platform": "微信公众号·壹家之计（引新民晚报）",
-        "url": "http://mp.weixin.qq.com/s?__biz=MjM5NDQ4NTkwMg==&mid=2687463355&idx=1&sn=63e55d41a5a2de107de26fe3684221bb&chksm=82e665f0d9e36f9ae0f651955a7b8f0f1394994bfb5ece100fd099e68be07a6bee4c71e6648c#rd",
-        "verification": "部分核实",
-        "heatStage": "上升",
-        "lead": {
-          "target": "今日头条",
-          "headline": "钛杯钛锅卖断货，专家：认准标识，别为养生噱头买单",
-          "angle": "从热销现象切入，落点在可执行的选购建议",
-          "outline": [
-            "热销现象",
-            "功效宣称与科学依据的差距",
-            "选购时看什么"
-          ],
-          "audience": "大众消费者",
-          "timeliness": "本周",
-          "priority": "中",
-          "risk": "同上",
-          "basis": "公众号转述的新民晚报报道"
         },
         "rank": 3,
         "target": "今日头条"

@@ -2,6 +2,524 @@
   "version": 2,
   "items": [
     {
+      "title": "Product Hunt 今日新品：Mockreel 主打免登录的 3D 手机演示录屏",
+      "url": "https://www.producthunt.com/products/mockreel",
+      "type": "resource",
+      "subtype": "新产品/创作工具",
+      "region": "海外",
+      "platform": "Product Hunt",
+      "summary": "Product Hunt 当日新品列表收录 Mockreel，页面标语为 “your screen recording, but in a 3D phone. free, no signup”，即把屏幕录制套进 3D 手机样机，强调免费与免注册。同批上榜还有 TeaserKit、Creavit Studio 4.0 等产品。Product Hunt 页面注明当日最初 4 小时隐藏 upvote 数，本次抓取未显示具体票数，因此不记录热度数字。",
+      "publishedAt": "2026-11-22",
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见（Product Hunt 当日最初 4 小时隐藏 upvote）",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "读取 Product Hunt 当日新品榜单页的产品名、标语与真实产品链接；页面自身声明隐藏当日票数为页面可见事实",
+        "verifiedAt": "2026-11-22T20:34:00+08:00",
+        "notes": "“免费、免注册”为产品方自述标语，未实测。产品 URL 取自 Product Hunt 当日公开榜单页；直接命令行请求该链接可能被反爬返回 403，浏览器可正常打开。待核问题：免费额度与导出水印规则是什么？是否需要授权才能商用？"
+      },
+      "citations": [
+        {
+          "title": "Mockreel - Product Hunt",
+          "url": "https://www.producthunt.com/products/mockreel",
+          "publisher": "Product Hunt",
+          "date": "2026-11-22",
+          "relation": "一手"
+        },
+        {
+          "title": "Product Hunt 当日新品榜单页",
+          "url": "https://www.producthunt.com/",
+          "publisher": "Product Hunt",
+          "date": "2026-11-22",
+          "relation": "官方"
+        }
+      ],
+      "evaluation": {
+        "editor": "适合做“新工具速览”素材，成稿前必须实测免费与商用条款。",
+        "community": "当日票数被平台隐藏，社区评价不可见。",
+        "sentiment": "未知",
+        "source": "Product Hunt 公开榜单页"
+      },
+      "tags": [
+        "Product Hunt",
+        "创作工具",
+        "新产品",
+        "录屏"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "e554f1f8a3d5dd7e"
+    },
+    {
+      "title": "OSCHINA 转述：哈佛研究者工作论文称 AI 编程瓶颈转向代码审查",
+      "url": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+      "type": "idea",
+      "subtype": "行业观点/研究转述",
+      "region": "国内",
+      "platform": "OSCHINA",
+      "summary": "OSCHINA 资讯文章称，哈佛大学两位博士候选人发布工作论文，以 718 家公司、725938 名员工为样本讨论 AI 编程 Agent 的实际效果，报道标题称“AI 编程目前的瓶颈是 Code Review”。页面摘要还提到人均每月新增代码行数的变化，但未给出完整数值。该内容属媒体转述，本次未取得论文原文，样本口径与结论均未独立核实，因此只作议题线索，不写成研究结论。",
+      "publishedAt": "2026-11-20",
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "未知",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "0（列表页可见）",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "待核实",
+        "method": "读取 OSCHINA 公开资讯列表的标题与摘要；未取得论文原文",
+        "verifiedAt": "2026-11-22T20:34:00+08:00",
+        "notes": "二手转述，涉及样本数字与研究结论。待核问题：论文原文题名、作者、版本与是否同行评议？718 家公司与 725938 名员工的口径与数据来源？“瓶颈转向代码审查”是作者结论还是报道标题概括？"
+      },
+      "citations": [
+        {
+          "title": "哈佛大学研究人员：AI 编程目前的瓶颈是“Code Review” - OSCHINA",
+          "url": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+          "publisher": "OSCHINA",
+          "date": "2026-11-20",
+          "relation": "二手/转载"
+        }
+      ],
+      "evaluation": {
+        "editor": "议题本身有价值，但在拿到论文原文之前不宜引用任何数字或结论；只做观察名单。",
+        "community": "列表页显示 0 条评论，社区评价不可见。",
+        "sentiment": "未知",
+        "source": "OSCHINA 公开资讯页（二手转述）"
+      },
+      "tags": [
+        "AI编程",
+        "研究转述",
+        "待核实",
+        "OSCHINA"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "53edae8224cf01de"
+    },
+    {
+      "title": "DEV Community 观点帖：AI 编程真的更快更便宜吗",
+      "url": "https://dev.to/sylwia-lask/is-coding-with-ai-actually-faster-and-cheaper-2810",
+      "type": "idea",
+      "subtype": "行业观点/AI编程",
+      "region": "海外",
+      "platform": "DEV Community",
+      "summary": "DEV Community 于 2026-11-18 发布文章 “Is Coding with AI Actually Faster and Cheaper?”，作者为 Sylwia Laskowska，标签为 #ai #programming #productivity #agents。从标题与标签可见文章围绕 AI 辅助编程的速度与成本展开讨论。本次仅核对列表页的标题、作者、日期与标签，未逐段读取正文论证与数据，故不引用文中的具体结论或数字。",
+      "publishedAt": "2026-11-18",
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "未知",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "待核实",
+        "method": "读取 DEV Community 首页列表的标题、作者、发布日期与标签；正文未逐段读取",
+        "verifiedAt": "2026-11-22T20:34:00+08:00",
+        "notes": "只能确认标题、作者、日期与标签。待核问题：作者给出了哪些可核查的时间或成本数据？是否说明样本与测量方法？结论是否只适用于特定任务类型？"
+      },
+      "citations": [
+        {
+          "title": "Is Coding with AI Actually Faster and Cheaper? - DEV Community",
+          "url": "https://dev.to/sylwia-lask/is-coding-with-ai-actually-faster-and-cheaper-2810",
+          "publisher": "DEV Community",
+          "date": "2026-11-18",
+          "relation": "一手"
+        }
+      ],
+      "evaluation": {
+        "editor": "这是典型的“值得追读但不宜先下结论”的观点帖，只能作为议题线索，不能当作效率结论。",
+        "community": "互动数字在列表页不可见。",
+        "sentiment": "未知",
+        "source": "DEV Community 公开列表页"
+      },
+      "tags": [
+        "AI编程",
+        "观点",
+        "DEV Community",
+        "效率"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "b503bc29bd356651"
+    },
+    {
+      "title": "少数派经验文：研究生如何用 AI 辅助完成一篇综述",
+      "url": "https://sspai.com/post/118153",
+      "type": "resource",
+      "subtype": "教程/科研写作",
+      "region": "国内",
+      "platform": "少数派",
+      "summary": "少数派 Matrix 精选文章《研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验》，页面标注 2026 年 11 月 13 日、34 分钟阅读。作者以一篇被《食品科学》录用并网络首发的综述为例，自述在选题阶段用 Gemini 探索方向、用 Zotero 管理文献并批量导出摘要报告、用 Qwen 做摘要分级与信息提取、正文以“研究问题或作用机制”为主线、用 ChatGPT 生成机理图草图参考再用 Keynote 临摹、投稿前按 GB/T 7714-2015 做格式与参考文献核验。文章明确写明工具只减少重复劳动，科研判断与数据核对仍需人工完成。",
+      "publishedAt": "2026-11-13",
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": {
+        "url": "https://unsplash.com/@bekukanomi",
+        "caption": "原文注明封面图来自 Unsplash 的 Beku Kanomi，此处仅记录作者页与版权说明，不下载不转存",
+        "rights": "原文注明封面来源；使用需按 Unsplash 许可与作者署名要求另行核实"
+      },
+      "heat": {
+        "stage": "成熟",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见",
+          "extra": "页面标注 34 分钟阅读；Matrix 首页推荐"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "打开少数派文章全文逐段核对：作者自述的成果、各阶段所用工具、提示词中的严谨性约束与结尾判断均已读到",
+        "verifiedAt": "2026-11-22T20:34:00+08:00",
+        "notes": "文章为作者个人经验，录用事实与工具效果均为作者自述，不构成方法普适性的证明。待核问题：该流程在其他学科与英文期刊是否同样适用？所推荐素材站的许可条款需读者自行核对。"
+      },
+      "citations": [
+        {
+          "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验 - 少数派",
+          "url": "https://sspai.com/post/118153",
+          "publisher": "少数派 Matrix",
+          "date": "2026-11-13",
+          "relation": "一手"
+        }
+      ],
+      "evaluation": {
+        "editor": "难得的是作者把“必须人工核验的地方”写进每一步，而不是展示一套看似全自动的流水线；适合做成可执行的长尾选题。",
+        "community": "页面可见为 Matrix 首页推荐，具体互动数字不可见。",
+        "sentiment": "正面",
+        "source": "少数派公开全文"
+      },
+      "tags": [
+        "教程",
+        "科研写作",
+        "AI工具",
+        "少数派",
+        "Zotero"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "一篇综述是怎么用 AI 写出来的：流程能借，判断不能省",
+          "angle": "把作者的六段流程拆成读者可照做的步骤，同时突出原文反复强调的“人工核验红线”，避免写成 AI 代写教程。",
+          "outline": [
+            "选题：用联网 AI 发散方向，并给出“禁止编造文献与数值”的指令约束",
+            "检索：先拆三个维度再生成检索式，最终仍回数据库筛选",
+            "筛选：以文献摘要为输入做相关性分级，标记需读全文的盲区",
+            "写作与作图：以机制主线串联文献，草图仅作参考再用工具重绘",
+            "投稿前：按国标做引用与格式交叉核验，改动前先看核验报告"
+          ],
+          "audience": "需要写综述的研究生与科研新手",
+          "timeliness": "长期",
+          "priority": "高",
+          "risk": "作者个人经验与录用情况为自述，成稿须写明“个人经验”，不得写成普适方法或承诺发表",
+          "basis": "item.summary 与 citations：全文明确写出各阶段工具、提示词中的严谨性约束，以及“科研判断仍需作者自己完成”的结尾判断。"
+        }
+      ],
+      "id": "d315140aea575283"
+    },
+    {
+      "title": "GitHub 趋势榜：MiniMind 开源项目主打从零训练超小语言模型",
+      "url": "https://github.com/jingyaogong/minimind",
+      "type": "resource",
+      "subtype": "开源工具/大模型",
+      "region": "海外",
+      "platform": "GitHub Trending",
+      "summary": "GitHub Trending 今日上榜的开源项目 jingyaogong/minimind，README 自述为“从 0 开始训练超小语言模型”的项目与 LLM 入门教程，主线模型约 64M、MoE 版约 198M-A64M。README 对标题口径作了限定：“2 小时”指 SFT 阶段在单张 NVIDIA 3090 上跑完 1 个 epoch 的实测耗时，“3 块钱”指对应时段的 GPU 租用成本。项目基于 Apache 2.0 开源，核心算法用 PyTorch 原生实现，覆盖预训练、SFT、LoRA、RLHF、蒸馏等环节。GitHub Trending 页面显示当日新增约 473 星（抓取时间 2026-11-22 20:31 CST）。",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "总星标 68,380（GitHub Trending 页面可见，抓取时间 2026-11-22 20:31 CST）",
+          "comments": "不可见",
+          "shares": "fork 数不可见",
+          "extra": "当日新增约 473 星（榜单页可见）"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "直接打开 GitHub 仓库 README 与 GitHub Trending 榜单页核对；README 原文逐字可读，星标数取榜单页可见值",
+        "verifiedAt": "2026-11-22T20:31:00+08:00",
+        "notes": "仓库存在、许可证、README 表述与星标数已核实；“2 小时/3 元”为项目方自述且自带限定条件，未取得第三方独立复现。待核问题：其他硬件与数据集下的耗时、总成本是否仍成立？SFT 单 epoch 的结论能否外推到完整训练？"
+      },
+      "citations": [
+        {
+          "title": "jingyaogong/minimind - GitHub 仓库 README",
+          "url": "https://github.com/jingyaogong/minimind",
+          "publisher": "GitHub",
+          "date": null,
+          "relation": "一手"
+        },
+        {
+          "title": "GitHub Trending（当日榜单页）",
+          "url": "https://github.com/trending",
+          "publisher": "GitHub",
+          "date": "2026-11-22",
+          "relation": "官方"
+        }
+      ],
+      "evaluation": {
+        "editor": "对小团队和个人学习者，价值不在“复现大模型”，而在于一套可读的迷你训练链路；标题里的成本数字有严格前提，讲清楚前提比复述数字更重要。",
+        "community": "榜单页未展示评论内容；社区评价不可见。",
+        "sentiment": "正面",
+        "source": "GitHub 官方榜单页 + 仓库一手 README"
+      },
+      "tags": [
+        "开源工具",
+        "LLM",
+        "AI编程",
+        "GitHub Trending",
+        "教育"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "2 小时、3 元训练一个小模型？先把这句话的前提读完整",
+          "angle": "从一个登上 GitHub Trending 的开源项目切入，拆解“2 小时/3 元”这句话背后的限定条件，帮读者建立看技术标题的判断框架，而不是复述一个诱人数字。",
+          "outline": [
+            "项目自述做了什么：约 64M 主线模型与从零训练的完整链路",
+            "“2 小时”的准确含义：单张 3090 上 SFT 阶段 1 个 epoch 的实测耗时",
+            "“3 元”的准确含义：对应时段的 GPU 租用成本，且为经验估算",
+            "项目开源协议与实现方式：Apache 2.0、PyTorch 原生实现、兼容主流推理框架",
+            "读者该怎么用：当作入门教程与实验起点，而不是“人人可训大模型”的承诺"
+          ],
+          "audience": "对 AI 技术感兴趣的开发爱好者、想上手 LLM 的学生与独立开发者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "项目自述的耗时与成本有硬件和阶段前提，成稿须逐条注明，勿写成普遍结论",
+          "basis": "item.summary 与 citations 中 README 原文：项目自述“2 小时/3 元”，并明确限定为单张 NVIDIA 3090 上 SFT 阶段 1 epoch 实测与对应时段 GPU 租用成本；训练开销表数值标注为经验估算。"
+        },
+        {
+          "target": "今日头条",
+          "headline": "GitHub 热榜项目称 2 小时、3 元可训小模型，前提是什么？",
+          "angle": "用直白问答讲清一个上榜开源项目的标题口径：它做了什么、数字怎么来的、普通人能从中拿走什么。",
+          "outline": [
+            "项目是什么：从零训练超小语言模型的开源教程项目",
+            "数字从哪来：单张 3090、SFT 单 epoch、对应时段租卡成本",
+            "项目覆盖哪些训练环节，采用什么协议",
+            "提醒：数字为项目方自述与经验估算，尚无第三方复现"
+          ],
+          "audience": "关注 AI 与开源资讯的泛科技读者",
+          "timeliness": "当日",
+          "priority": "中",
+          "risk": "需注明数字为项目方自述口径，不得写成已验证的普遍事实",
+          "basis": "item.summary、verification.notes 与 citations：README 原文及限定说明，核实状态为部分核实。"
+        }
+      ],
+      "id": "4cbbac81e7a57558"
+    },
+    {
+      "title": "Hacker News 热帖：一个真实 Linux 内核被编译到 WebAssembly",
+      "url": "https://github.com/pithings/unkernel",
+      "type": "resource",
+      "subtype": "开源工具/系统",
+      "region": "海外",
+      "platform": "Hacker News",
+      "summary": "Hacker News 首页条目 “A real Linux kernel, compiled to WebAssembly” 指向开源仓库 pithings/unkernel，标题称把一个真实的 Linux 内核编译到 WebAssembly。Hacker News 榜单页显示该帖 67 分、17 条评论（抓取时间 2026-11-22 20:31 CST）。仓库页的具体实现范围与可用场景本次未逐项核对，仅以榜单页标题与指向链接为准。",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "67 points（Hacker News 榜单页可见）",
+          "comments": "17（榜单页可见）",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "读取 Hacker News 首页榜单条目及其指向链接；榜单页分数与评论数为页面可见值",
+        "verifiedAt": "2026-11-22T20:31:00+08:00",
+        "notes": "拿不到仓库 README 的逐项细节，故使用公开榜单页并在此说明。待核问题：编译的是哪个内核版本？可运行到什么程度、有哪些已知限制？"
+      },
+      "citations": [
+        {
+          "title": "A real Linux kernel, compiled to WebAssembly - Hacker News",
+          "url": "https://news.ycombinator.com/",
+          "publisher": "Hacker News",
+          "date": "2026-11-22",
+          "relation": "官方"
+        },
+        {
+          "title": "pithings/unkernel - GitHub",
+          "url": "https://github.com/pithings/unkernel",
+          "publisher": "GitHub",
+          "date": null,
+          "relation": "一手"
+        }
+      ],
+      "evaluation": {
+        "editor": "“内核跑在浏览器里”这类项目更适合当技术好奇心入口，成稿要停在榜单页能支撑的标题事实上。",
+        "community": "榜单页可见 17 条评论，具体内容未读取，社区评价不可见。",
+        "sentiment": "未知",
+        "source": "Hacker News 公开首页榜单"
+      },
+      "tags": [
+        "WebAssembly",
+        "Linux",
+        "开源项目",
+        "Hacker News"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "31696137ecb1b62b"
+    },
+    {
+      "title": "V2EX 求助帖：已有多个 AI 订阅，业余使用还要不要保留 Claude",
+      "url": "https://www.v2ex.com/t/1258871",
+      "type": "demand",
+      "subtype": "需求/AI订阅取舍",
+      "region": "国内",
+      "platform": "V2EX",
+      "summary": "V2EX 程序员节点帖《要取消 claude 订阅吗》，页面显示 14 条回复。发帖者自述同时订阅 GPT Plus、Claude Pro 与 Google Gemini，因某项功能在当前方案内不可用需另行购买，且自己属于业余编程、使用强度不高，同时家人会用 GPT 做学习，因此询问是否应取消 Claude。回复中既有“留着”“体感仍强”的意见，也有“可平替”“业余场景够用”的意见。此处只做匿名需求归纳，不复述用户 ID 与原句。",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "14 条回复（页面可见）",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "读取 V2EX 公开主题页的标题、节点、回复数与发帖/回复主题；评论内容仅做匿名归纳",
+        "verifiedAt": "2026-11-22T20:34:00+08:00",
+        "notes": "订阅价格、功能可用性均为发帖者自述，未独立核实；评论为匿名观点，不代表普遍结论。待核问题：各订阅当前官方定价与所含额度是多少？“平替”说法是否有同任务对比依据？"
+      },
+      "citations": [
+        {
+          "title": "要取消 claude 订阅吗 - V2EX",
+          "url": "https://www.v2ex.com/t/1258871",
+          "publisher": "V2EX",
+          "date": null,
+          "relation": "一手"
+        }
+      ],
+      "evaluation": {
+        "editor": "这是一个很典型的“多订阅冗余”需求：问题不在哪家更强，而在自己的使用强度与场景是否用得上。",
+        "community": "匿名归纳：回复意见分歧明显，围绕使用强度、额度、替代方案与价格展开。",
+        "sentiment": "争议",
+        "source": "V2EX 公开主题页"
+      },
+      "tags": [
+        "需求",
+        "AI订阅",
+        "V2EX",
+        "程序员"
+      ],
+      "needs": [
+        "业余用户是否需要同时保留多个 AI 订阅",
+        "订阅额度与实际使用强度的匹配",
+        "不同模型在家庭学习场景中的取舍"
+      ],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "同时订了三家 AI，业余用户该怎么决定留哪一个",
+          "angle": "用一个真实的公开求助帖当引子，讨论订阅决策的通用方法：先看使用强度和场景，再看额度与价格，避免把“别人说好”当成自己的结论。",
+          "outline": [
+            "案例背景：发帖者订阅多个服务，因功能不可用与使用强度低而犹豫",
+            "第一步：按使用强度与真实场景盘点，而非按套餐名单做选择",
+            "第二步：核对各服务当期官方定价与所含额度，数字以官网为准",
+            "第三步：给“平替”说法设一个检验标准——同一任务、同一口径对比",
+            "收尾：订阅是可调整的支出，先降档试用比一次退订更稳妥"
+          ],
+          "audience": "已订阅或正考虑订阅 AI 服务的普通用户与开发者",
+          "timeliness": "本周",
+          "priority": "中",
+          "risk": "价格与功能均为发帖者自述，成稿须以官网当期信息为准，避免写成确定结论",
+          "basis": "item.summary：V2EX 主题页显示的发帖背景与 14 条回复的匿名归纳；verification.notes 标明自述与待核问题。"
+        }
+      ],
+      "id": "c8018204cc04dbab"
+    },
+    {
+      "title": "Gitee 推荐项目：SmartKBS 智慧教学平台支持离线部署",
+      "url": "https://gitee.com/youufis/smartkbs",
+      "type": "resource",
+      "subtype": "开源工具/教育",
+      "region": "国内",
+      "platform": "Gitee",
+      "summary": "Gitee 探索页推荐开源项目 youufis/SmartKBS 智慧教学平台，项目描述称其为面向小学、初中、高中的通用学科 AI 教学平台，包含题库与智能组卷、考试练习、作业自动批改、课堂互动、学情分析等 60 多项功能；技术栈为 FastAPI + React，采用 AGPL-3.0 协议，支持 DashScope、DeepSeek 或本地 Ollama，本地 SQLite，可完全离线部署。页面显示该项目约 180 星（抓取时间 2026-11-22 20:31 CST）。上述能力均为项目自述，未实测。",
+      "publishedAt": null,
+      "collectedAt": "2026-11-22T20:34:45+08:00",
+      "image": null,
+      "heat": {
+        "stage": "未知",
+        "signals": {
+          "views": "不可见",
+          "likes": "约 180 星（Gitee 探索页可见）",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "读取 Gitee 探索页的项目名称、描述、语言、星标数与更新时间；未进入仓库核验功能清单",
+        "verifiedAt": "2026-11-22T20:31:00+08:00",
+        "notes": "功能数量、协议与离线能力均为项目自述。待核问题：60 多项功能的实际可用度如何？AGPL-3.0 对二次分发意味着什么？教学场景的数据合规如何保障？"
+      },
+      "citations": [
+        {
+          "title": "youufis/SmartKBS 智慧教学平台 - Gitee",
+          "url": "https://gitee.com/youufis/smartkbs",
+          "publisher": "Gitee",
+          "date": null,
+          "relation": "一手"
+        },
+        {
+          "title": "Gitee 探索页",
+          "url": "https://gitee.com/explore",
+          "publisher": "Gitee",
+          "date": "2026-11-22",
+          "relation": "官方"
+        }
+      ],
+      "evaluation": {
+        "editor": "教育类开源项目值得记一笔，但功能清单与离线能力必须以实际部署验证为准。",
+        "community": "互动信息在探索页不可见。",
+        "sentiment": "未知",
+        "source": "Gitee 公开探索页"
+      },
+      "tags": [
+        "Gitee",
+        "开源教育",
+        "离线部署",
+        "国内开源"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "141e708c21031018"
+    },
+    {
       "title": "《2026年脑机接口创新发展研究报告》发布：全球企业增至1175家",
       "summary": "11月21日召开的2026脑机接口大会上发布研究报告。报告称全球脑机接口企业数量从800多家增至1175家，中国京津冀、长三角、粤港澳三大城市群集聚190余家企业、占全国77.4%；报告以靶点、流向、递送、信号四个维度重新界定脑机接口，并把产业分为四代。",
       "type": "news",
