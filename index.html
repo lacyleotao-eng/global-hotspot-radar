@@ -35,12 +35,28 @@
 
 <main class="wrap">
   <div class="viewtabs" id="viewTabs">
-    <button class="vtab on" data-view="feed">情报流</button>
+    <button class="vtab on" data-view="picks">今日选题 TOP3</button>
+    <button class="vtab" data-view="feed">情报流</button>
     <button class="vtab" data-view="leads">选题线索 <span id="leadTabCount">0</span></button>
-    <span class="viewhint" id="viewHint">每条情报可展开详情，查看来源与核实过程</span>
+    <span class="viewhint" id="viewHint">每日按时效、热度、核实度、优先级打分排序的成稿候选</span>
   </div>
 
-  <div class="toolbar">
+  <section class="pickspanel" id="picksPanel">
+    <div class="pickshead">
+      <div>
+        <div class="picks-date" id="picksDate">—</div>
+        <p class="picks-sub">按四维评分自动排序，每个去向取前 3 条。分数只作参考，发布前必须人工核实、改写、配图。</p>
+      </div>
+      <div class="picks-stat" id="picksStat"></div>
+    </div>
+    <div class="picks-groups" id="picksGroups"></div>
+    <div class="picks-foot">
+      <span>草稿文件位于 <code>drafts/日期/</code>，队列清单 <code>drafts/queue.json</code></span>
+      <span class="picks-boundary">本站只生成草稿，不代发、不登录平台、不点发布</span>
+    </div>
+  </section>
+
+  <div class="toolbar" id="mainToolbar" hidden>
     <div class="searchbox">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg>
       <input id="search" type="search" placeholder="搜索标题、摘要、平台、标签…" autocomplete="off">
@@ -90,6 +106,7 @@
 </div>
 
 <script src="data/embed.js"></script>
+<script src="data/picks-embed.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'feed', target: '', priority: '' };
+  var state = { items: [], meta: {}, picks: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'picks', target: '', priority: '' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -51,8 +51,23 @@
   function boot(data) {
     state.items = (data && data.items) || [];
     state.meta = (window.__META__ && window.__META__) || {};
+    state.picks = window.__PICKS__ || null;
     initControls();
+    applyView();
     render();
+  }
+
+  function applyView() {
+    var isPicks = state.view === 'picks';
+    var isLeads = state.view === 'leads';
+    document.getElementById('picksPanel').hidden = !isPicks;
+    document.getElementById('mainToolbar').hidden = isPicks;
+    document.getElementById('typeChips').hidden = isPicks || isLeads;
+    document.getElementById('leadBar').hidden = !isLeads;
+    document.querySelector('.resultbar').hidden = isPicks;
+    document.getElementById('grid').hidden = isPicks;
+    document.getElementById('empty').hidden = true;
+    document.querySelector('.more-wrap').hidden = isPicks;
   }
 
   function initControls() {
@@ -71,13 +86,14 @@
         state.view = btn.getAttribute('data-view');
         state.page = 1;
         Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
-        document.getElementById('typeChips').hidden = state.view === 'leads';
-        document.getElementById('leadBar').hidden = state.view !== 'leads';
-        document.querySelector('.legend').hidden = state.view === 'leads';
+        applyView();
+        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
-        document.getElementById('viewHint').textContent = state.view === 'leads'
-          ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
-          : '每条情报可展开详情，查看来源与核实过程';
+        document.getElementById('viewHint').textContent = state.view === 'picks'
+          ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
+          : (state.view === 'leads'
+            ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
+            : '每条情报可展开详情，查看来源与核实过程');
         render();
       };
     });
@@ -163,7 +179,96 @@
     return out;
   }
 
+  function scoreRows(pick) {
+    return (pick.breakdown || []).map(function (b) {
+      var cls = b.points > 0 ? 'sp-pos' : (b.points < 0 ? 'sp-neg' : 'sp-zero');
+      return '<span class="score-part ' + cls + '">' + esc(b.label) + ' <b>' + (b.points > 0 ? '+' : '') + b.points + '</b></span>';
+    }).join('');
+  }
+
+  function pickCardHtml(pick) {
+    var lead = pick.lead || {};
+    var url = safeUrl(pick.url);
+    var outline = (lead.outline || []).map(function (o, i) {
+      return '<li>' + esc(o) + '</li>';
+    }).join('');
+    var verifyCls = statusClass(pick.verification);
+    var risk = lead.risk || '无';
+    return '<article class="pick-card">' +
+      '<div class="pick-top">' +
+        '<span class="pick-rank">TOP ' + pick.rank + '</span>' +
+        '<span class="pick-score"><b>' + pick.score + '</b> 分</span>' +
+        '<span class="vpill v-' + esc(verifyCls) + '">' + esc(pick.verification || '未核实') + '</span>' +
+      '</div>' +
+      '<h3 class="pick-title">' + esc(lead.headline || pick.sourceTitle) + '</h3>' +
+      '<p class="pick-angle">' + esc(lead.angle || '') + '</p>' +
+      (outline ? '<ol class="pick-outline">' + outline + '</ol>' : '') +
+      '<div class="pick-scores">' + scoreRows(pick) + '</div>' +
+      '<div class="pick-meta">' +
+        '<span>读者：' + esc(lead.audience || '泛读者') + '</span>' +
+        '<span class="risk-warn">风险：' + esc(risk) + '</span>' +
+      '</div>' +
+      '<div class="pick-src">线索源：' + esc(pick.platform || '') + ' · ' + esc(pick.region || '') + ' · ' + esc(pick.heatStage || '') + '</div>' +
+      '<div class="pick-actions">' +
+        '<button class="copy-brief" data-key="' + esc(pick.itemId + '|' + pick.target) + '">复制成稿 brief</button>' +
+        (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文 ↗</a>' : '') +
+        '<span class="draft-tag">草稿已生成</span>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function renderPicks() {
+    var p = state.picks;
+    var groupsEl = document.getElementById('picksGroups');
+    if (!p || !p.groups) {
+      document.getElementById('picksDate').textContent = '暂无选题数据';
+      document.getElementById('picksStat').textContent = '';
+      groupsEl.innerHTML = '<div class="picks-empty">今日选题尚未生成，等待定时任务运行或手动执行评分脚本。</div>';
+      return;
+    }
+    document.getElementById('picksDate').textContent = p.date + ' 每日选题';
+    var total = 0;
+    Object.keys(p.groups).forEach(function (k) { total += (p.groups[k] || []).length; });
+    document.getElementById('picksStat').innerHTML = '<b>' + total + '</b> 个成稿候选<span>评分 ' + p.totalScored + ' 条线索</span>';
+
+    var html = '';
+    ['公众号', '今日头条'].forEach(function (target) {
+      var rows = p.groups[target] || [];
+      if (!rows.length) return;
+      html += '<div class="picks-group"><div class="picks-group-head"><span class="target-badge l-' + esc(target) + '">' + esc(target) + '</span><span>TOP ' + rows.length + '</span></div>';
+      html += '<div class="picks-cards">' + rows.map(pickCardHtml).join('') + '</div></div>';
+    });
+    groupsEl.innerHTML = html;
+
+    Array.prototype.forEach.call(groupsEl.querySelectorAll('.copy-brief'), function (b) {
+      b.onclick = function () {
+        var parts = b.getAttribute('data-key').split('|');
+        var found = null;
+        Object.keys(p.groups).forEach(function (k) {
+          (p.groups[k] || []).forEach(function (row) {
+            if (row.itemId === parts[0] && row.target === parts[1]) found = row;
+          });
+        });
+        if (!found) return;
+        var lead = found.lead || {};
+        var text = '【' + found.target + '成稿 brief · ' + found.date + ' · ' + found.score + '分】\n\n' +
+          '标题：' + (lead.headline || '') + '\n\n' +
+          '切入角度：' + (lead.angle || '') + '\n\n' +
+          '提纲：\n' + (lead.outline || []).map(function (o, i) { return (i + 1) + '. ' + o; }).join('\n') + '\n\n' +
+          '目标读者：' + (lead.audience || '') + '\n' +
+          '时效：' + (lead.timeliness || '') + ' · 优先级：' + (lead.priority || '') + '\n\n' +
+          '事实依据：' + (lead.basis || '') + '\n' +
+          '核实状态：' + (found.verification || '') + '\n' +
+          '风险提示：' + (lead.risk || '无') + '\n' +
+          '原文：' + (found.url || '') + '\n' +
+          '评分明细：' + (found.breakdown || []).map(function (x) { return x.label + '(' + (x.points > 0 ? '+' : '') + x.points + ')'; }).join('、');
+        copyText(text, b);
+      };
+    });
+  }
+
   function render() {
+    if (state.view === 'picks') { renderPicks(); return; }
     var rows = state.view === 'leads' ? filteredLeads() : filtered();
     document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
     document.getElementById('empty').hidden = rows.length > 0;
