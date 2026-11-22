@@ -244,7 +244,9 @@
       '</div>' +
       '<div class="pick-src">线索源：' + esc(pick.platform || '') + ' · ' + esc(pick.region || '') + ' · ' + esc(pick.heatStage || '') + '</div>' +
       '<div class="pick-actions">' +
-        (findDocForPick(pick) ? '<button class="view-draft" data-item="' + esc(pick.itemId) + '">查看草稿详情</button>' : '') +
+        (findDocForPick(pick)
+          ? '<button class="view-draft" data-item="' + esc(pick.itemId) + '">查看草稿详情</button>'
+          : '<span class="draft-pending" title="这条选题还没有对应成品稿，出稿任务会在下一轮补上">草稿待补</span>') +
         '<button class="copy-brief" data-key="' + esc(pick.itemId + '|' + pick.target) + '">复制成稿 brief</button>' +
         (url ? '<a class="pick-orig" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">原文</a>' : '') +
       '</div>' +
@@ -253,6 +255,25 @@
 
   function findDocForPick(pick) {
     return (state.ready.docs || []).find(function (d) { return d.sourceItemId === pick.itemId; }) || null;
+  }
+
+  function picksCoverage() {
+    var p = state.picks || {};
+    var have = {};
+    ((state.ready || {}).docs || []).forEach(function (d) { if (d.sourceItemId) have[d.sourceItemId] = 1; });
+    var total = 0, covered = 0, missing = [];
+    Object.keys(p.groups || {}).forEach(function (k) {
+      var seen = {};
+      (p.groups[k] || []).forEach(function (pick) {
+        var id = pick.itemId;
+        if (!id || seen[id]) return;
+        seen[id] = 1;
+        total += 1;
+        if (have[id]) covered += 1;
+        else missing.push((pick.lead || {}).headline || pick.sourceTitle || id);
+      });
+    });
+    return { total: total, covered: covered, ok: total > 0 && covered === total, missing: missing };
   }
 
   function docPiecesForItem(itemId) {
@@ -501,8 +522,11 @@
     empty.hidden = true;
     document.getElementById('auditUpdated').textContent = '自检于 ' + fmt(a.updatedAt) + ' · ' + a.total + ' 篇 · 爆款库 ' + (a.viralTotal || 0) + ' 条';
 
+    var cov = a.coverage || picksCoverage();
+    var covTitle = cov.ok ? '今日每个 TOP3 选题都有对应成品稿' : '缺稿：' + (cov.missing || []).join('；');
     var g = a.grades || {};
     document.getElementById('auditSummary').innerHTML =
+      '<div class="audit-sum-box ' + (cov.ok ? 'g-ok' : 'g-near') + '" title="' + esc(covTitle) + '"><span>TOP3 草稿覆盖</span><b>' + cov.covered + '/' + cov.total + '</b></div>' +
       '<div class="audit-sum-box"><span>均分</span><b>' + a.avgScore + '</b></div>' +
       '<div class="audit-sum-box g-ok"><span>达标 ≥85</span><b>' + (g['达标'] || 0) + '</b></div>' +
       '<div class="audit-sum-box g-near"><span>接近 70-84</span><b>' + (g['接近'] || 0) + '</b></div>' +
@@ -513,15 +537,15 @@
 
     var bar = document.getElementById('auditFormBar');
     if (!bar.childElementCount) {
-      var opts = [['', '全部形态']].concat((a.byForm || []).map(function (f) { return [f.form, f.formLabel]; }));
+      var opts = [['', '全部形态']].concat((a.byForm || []).map(function (f) { return [f.form, f.formLabel + ' ' + f.count]; }));
       opts.forEach(function (kv) {
         var b = document.createElement('button');
-        b.className = 'vchip' + (kv[0] === '' ? ' on' : '');
+        b.className = 'vform-chip' + (kv[0] === '' ? ' on' : '');
         b.textContent = kv[1];
         b.setAttribute('data-form', kv[0]);
         b.onclick = function () {
           state.auditForm = kv[0];
-          Array.prototype.forEach.call(bar.querySelectorAll('.vchip'), function (x) { x.classList.toggle('on', x === b); });
+          Array.prototype.forEach.call(bar.querySelectorAll('.vform-chip'), function (x) { x.classList.toggle('on', x === b); });
           renderAudit();
         };
         bar.appendChild(b);
@@ -629,7 +653,9 @@
     document.getElementById('picksDate').textContent = p.date + ' 每日选题';
     var total = 0;
     Object.keys(p.groups).forEach(function (k) { total += (p.groups[k] || []).length; });
-    document.getElementById('picksStat').innerHTML = '<b>' + total + '</b> 个成稿候选<span>评分 ' + p.totalScored + ' 条线索</span>';
+    var cov = picksCoverage();
+    document.getElementById('picksStat').innerHTML = '<b>' + total + '</b> 个成稿候选<span>评分 ' + p.totalScored + ' 条线索</span>' +
+      '<span class="picks-cov ' + (cov.ok ? 'ok' : 'warn') + '">草稿覆盖 ' + cov.covered + '/' + cov.total + '</span>';
 
     var html = '';
     ['公众号', '今日头条'].forEach(function (target) {

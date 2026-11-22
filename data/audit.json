@@ -1,10 +1,30 @@
 {
-  "updatedAt": "2026-11-22T22:13:38+08:00",
+  "updatedAt": "2026-11-22T22:40:11+08:00",
+  "coverage": {
+    "date": "2026-11-22",
+    "total": 6,
+    "covered": 6,
+    "ok": true,
+    "byTarget": [
+      {
+        "target": "公众号",
+        "total": 3,
+        "covered": 3,
+        "missing": []
+      },
+      {
+        "target": "今日头条",
+        "total": 3,
+        "covered": 3,
+        "missing": []
+      }
+    ]
+  },
   "benchmarkUpdatedAt": "2026-11-22T22:13:38+08:00",
-  "total": 8,
-  "avgScore": 98.0,
+  "total": 16,
+  "avgScore": 100,
   "grades": {
-    "达标": 8,
+    "达标": 16,
     "接近": 0,
     "不达标": 0
   },
@@ -12,7 +32,7 @@
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "count": 2,
+      "count": 4,
       "avgScore": 100.0,
       "min": 100,
       "max": 100,
@@ -21,27 +41,27 @@
     {
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
-      "count": 2,
-      "avgScore": 98.0,
-      "min": 96.0,
+      "count": 4,
+      "avgScore": 100.0,
+      "min": 100,
       "max": 100,
       "grade": "达标"
     },
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "count": 2,
-      "avgScore": 96.0,
-      "min": 96.0,
-      "max": 96.0,
+      "count": 4,
+      "avgScore": 100.0,
+      "min": 100,
+      "max": 100,
       "grade": "达标"
     },
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "count": 2,
-      "avgScore": 98.0,
-      "min": 96.0,
+      "count": 4,
+      "avgScore": 100.0,
+      "min": 100,
       "max": 100,
       "grade": "达标"
     }
@@ -242,46 +262,46 @@
       "gaps": []
     },
     {
-      "file": "2026-11-22-minimind.json",
+      "file": "2026-11-22-riemann.json",
       "date": "2026-11-22",
-      "form": "gzh-poster",
-      "formLabel": "微信公众号 · 贴图",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
       "target": "公众号",
-      "title": "2 小时、3 元训小模型？先看懂这三个前提",
-      "score": 96.0,
+      "title": "AI 证明了黎曼猜想？先别急，这件事还差最关键一步",
+      "score": 100,
       "grade": "达标",
-      "viralSample": 7,
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 400,
-        "images": 9,
-        "subheads": 0
+        "wordCount": 1515.0,
+        "images": 5.5,
+        "subheads": 0.0
       },
       "metrics": {
-        "wordCount": 504,
-        "images": 9,
-        "subheads": 4,
-        "paragraphs": 6,
-        "lists": 1,
+        "wordCount": 1436,
+        "images": 6,
+        "subheads": 6,
+        "paragraphs": 15,
+        "lists": 2,
         "quotes": 0,
-        "numbers": 24,
-        "firstParaLen": 88,
+        "numbers": 7,
+        "firstParaLen": 41,
         "firstParaAnchor": true,
-        "titleLen": 15,
-        "titleHasNumber": true,
+        "titleLen": 20,
+        "titleHasNumber": false,
         "titleHasQuestion": true,
-        "avgParaLen": 84,
-        "imageCaptions": 9
+        "avgParaLen": 96,
+        "imageCaptions": 6
       },
       "checks": {
         "wordCount": {
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 400,
-          "value": 504,
+          "target": 1515.0,
+          "value": 1436,
           "notes": [
-            "为基准的 126%"
+            "为基准的 95%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
@@ -289,10 +309,10 @@
           "label": "配图",
           "score": 25,
           "weight": 25,
-          "target": 9,
-          "value": 9,
+          "target": 5.5,
+          "value": 6,
           "notes": [
-            "为基准的 100%"
+            "为基准的 109%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -300,12 +320,12 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
-          "value": 4,
+          "target": 0.0,
+          "value": 6,
           "notes": [
-            "配图 9 张，符合贴图多图形态",
-            "段落 6 段，节奏合适",
-            "平均每段 84 字，适合截图阅读"
+            "小标题 6 个，分节清晰",
+            "段落 15 段，节奏可读",
+            "有列表/引用块，信息可扫读"
           ],
           "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
         },
@@ -314,9 +334,9 @@
           "score": 15,
           "weight": 15,
           "target": null,
-          "value": "2 小时、3 元训小模型？先看懂这三个前提",
+          "value": "AI 证明了黎曼猜想？先别急，这件事还差最关键一步",
           "notes": [
-            "标题 15 字，长度合适",
+            "标题 20 字，长度合适",
             "标题带疑问，制造信息缺口",
             "标题有转折/悬念词"
           ],
@@ -324,14 +344,111 @@
         },
         "hook": {
           "label": "开头钩子",
-          "score": 11.0,
+          "score": 15,
           "weight": 15,
           "target": null,
-          "value": 88,
+          "value": 41,
           "notes": [
-            "首段 88 字，开场利落",
+            "首段 41 字，开场利落",
             "首段有具体事实/数字锚点",
-            "首段无时间锚，时效感弱"
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-zdr.json",
+      "date": "2026-11-22",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "「不保留数据」的标签说撤就撤：AI 服务的隐私承诺怎么验证？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1515.0,
+        "images": 5.5,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 1418,
+        "images": 6,
+        "subheads": 5,
+        "paragraphs": 16,
+        "lists": 2,
+        "quotes": 0,
+        "numbers": 5,
+        "firstParaLen": 35,
+        "firstParaAnchor": true,
+        "titleLen": 23,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 89,
+        "imageCaptions": 6
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1515.0,
+          "value": 1418,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 5.5,
+          "value": 6,
+          "notes": [
+            "为基准的 109%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 16 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "「不保留数据」的标签说撤就撤：AI 服务的隐私承诺怎么验证？",
+          "notes": [
+            "标题 23 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 35,
+          "notes": [
+            "首段 35 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }
@@ -436,13 +553,304 @@
       "gaps": []
     },
     {
+      "file": "2026-11-22-minimind.json",
+      "date": "2026-11-22",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "2 小时、3 元训小模型？先看懂这三个前提",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 507,
+        "images": 9,
+        "subheads": 4,
+        "paragraphs": 6,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 24,
+        "firstParaLen": 91,
+        "firstParaAnchor": true,
+        "titleLen": 15,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 84,
+        "imageCaptions": 9
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 507,
+          "notes": [
+            "为基准的 127%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 9,
+          "value": 9,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 4,
+          "notes": [
+            "配图 9 张，符合贴图多图形态",
+            "段落 6 段，节奏合适",
+            "平均每段 84 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "2 小时、3 元训小模型？先看懂这三个前提",
+          "notes": [
+            "标题 15 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 91,
+          "notes": [
+            "首段 91 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-riemann.json",
+      "date": "2026-11-22",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "5414 万热度，数学界为什么还没点头？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 416,
+        "images": 8,
+        "subheads": 5,
+        "paragraphs": 8,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 9,
+        "firstParaLen": 75,
+        "firstParaAnchor": true,
+        "titleLen": 13,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 52,
+        "imageCaptions": 8
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 416,
+          "notes": [
+            "为基准的 104%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 9,
+          "value": 8,
+          "notes": [
+            "为基准的 89%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 5,
+          "notes": [
+            "配图 8 张，符合贴图多图形态",
+            "段落 8 段，节奏合适",
+            "平均每段 52 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "5414 万热度，数学界为什么还没点头？",
+          "notes": [
+            "标题 13 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 75,
+          "notes": [
+            "首段 75 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-zdr.json",
+      "date": "2026-11-22",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "125 个端点被撤掉隐私标签，你的请求其实绕了三个环节",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 378,
+        "images": 8,
+        "subheads": 5,
+        "paragraphs": 8,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 11,
+        "firstParaLen": 57,
+        "firstParaAnchor": true,
+        "titleLen": 22,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 47,
+        "imageCaptions": 8
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 378,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 9,
+          "value": 8,
+          "notes": [
+            "为基准的 89%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 5,
+          "notes": [
+            "配图 8 张，符合贴图多图形态",
+            "段落 8 段，节奏合适",
+            "平均每段 47 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "125 个端点被撤掉隐私标签，你的请求其实绕了三个环节",
+          "notes": [
+            "标题 22 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 57,
+          "notes": [
+            "首段 57 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
       "file": "2026-11-22-downjacket.json",
       "date": "2026-11-22",
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "羽绒服市场从抢货转向清库存，500元以下到底能不能买？",
-      "score": 96.0,
+      "score": 100,
       "grade": "达标",
       "viralSample": 3,
       "benchmarkReliable": false,
@@ -452,19 +860,19 @@
         "subheads": 0
       },
       "metrics": {
-        "wordCount": 1148,
+        "wordCount": 1155,
         "images": 1,
         "subheads": 4,
         "paragraphs": 11,
         "lists": 1,
         "quotes": 0,
         "numbers": 2,
-        "firstParaLen": 108,
+        "firstParaLen": 115,
         "firstParaAnchor": true,
         "titleLen": 22,
         "titleHasNumber": true,
         "titleHasQuestion": true,
-        "avgParaLen": 104,
+        "avgParaLen": 105,
         "imageCaptions": 1
       },
       "checks": {
@@ -473,7 +881,7 @@
           "score": 25,
           "weight": 25,
           "target": 1200,
-          "value": 1148,
+          "value": 1155,
           "notes": [
             "为基准的 96%"
           ],
@@ -518,14 +926,14 @@
         },
         "hook": {
           "label": "开头钩子",
-          "score": 11.0,
+          "score": 15,
           "weight": 15,
           "target": null,
-          "value": 108,
+          "value": 115,
           "notes": [
-            "首段 108 字，开场利落",
+            "首段 115 字，开场利落",
             "首段有具体事实/数字锚点",
-            "首段无时间锚，时效感弱"
+            "首段有时间锚，贴近热点"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }
@@ -539,7 +947,7 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "GitHub 热榜项目称 2 小时、3 元训小模型，原文限定条件是什么？",
-      "score": 96.0,
+      "score": 100,
       "grade": "达标",
       "viralSample": 3,
       "benchmarkReliable": false,
@@ -549,14 +957,14 @@
         "subheads": 0
       },
       "metrics": {
-        "wordCount": 1262,
+        "wordCount": 1263,
         "images": 1,
         "subheads": 5,
         "paragraphs": 10,
         "lists": 1,
         "quotes": 0,
         "numbers": 28,
-        "firstParaLen": 86,
+        "firstParaLen": 87,
         "firstParaAnchor": true,
         "titleLen": 21,
         "titleHasNumber": true,
@@ -570,7 +978,7 @@
           "score": 25,
           "weight": 25,
           "target": 1200,
-          "value": 1262,
+          "value": 1263,
           "notes": [
             "为基准的 105%"
           ],
@@ -615,14 +1023,208 @@
         },
         "hook": {
           "label": "开头钩子",
-          "score": 11.0,
+          "score": 15,
           "weight": 15,
           "target": null,
-          "value": 86,
+          "value": 87,
           "notes": [
-            "首段 86 字，开场利落",
+            "首段 87 字，开场利落",
             "首段有具体事实/数字锚点",
-            "首段无时间锚，时效感弱"
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-riemann.json",
+      "date": "2026-11-22",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "5414万热度背后：黎曼猜想到底算不算被证明？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 3,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 1200,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 1129,
+        "images": 1,
+        "subheads": 5,
+        "paragraphs": 14,
+        "lists": 2,
+        "quotes": 0,
+        "numbers": 7,
+        "firstParaLen": 52,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 81,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1200,
+          "value": 1129,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 14 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "5414万热度背后：黎曼猜想到底算不算被证明？",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 52,
+          "notes": [
+            "首段 52 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-zdr.json",
+      "date": "2026-11-22",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "125个AI接口被撤销隐私标记，问题到底出在哪一跳？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 3,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 1200,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 1132,
+        "images": 1,
+        "subheads": 4,
+        "paragraphs": 15,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 9,
+        "firstParaLen": 44,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 75,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1200,
+          "value": 1132,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 4,
+          "notes": [
+            "小标题 4 个，分节清晰",
+            "段落 15 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "125个AI接口被撤销隐私标记，问题到底出在哪一跳？",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 44,
+          "notes": [
+            "首段 44 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }
@@ -636,7 +1238,7 @@
       "formLabel": "今日头条 · 微头条",
       "target": "今日头条",
       "title": "羽绒服从抢货变清库存了，500元以下的到底能不能买？说说我的看法",
-      "score": 96.0,
+      "score": 100,
       "grade": "达标",
       "viralSample": 1,
       "benchmarkReliable": false,
@@ -646,14 +1248,14 @@
         "subheads": 0
       },
       "metrics": {
-        "wordCount": 301,
+        "wordCount": 302,
         "images": 1,
         "subheads": 0,
         "paragraphs": 6,
         "lists": 0,
         "quotes": 0,
         "numbers": 2,
-        "firstParaLen": 58,
+        "firstParaLen": 59,
         "firstParaAnchor": true,
         "titleLen": 27,
         "titleHasNumber": true,
@@ -667,7 +1269,7 @@
           "score": 25,
           "weight": 25,
           "target": 320,
-          "value": 301,
+          "value": 302,
           "notes": [
             "为基准的 94%"
           ],
@@ -692,7 +1294,7 @@
           "value": 0,
           "notes": [
             "段落 6 段，符合短讯节奏",
-            "首段 58 字，开口干脆",
+            "首段 59 字，开口干脆",
             "有配图"
           ],
           "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
@@ -712,14 +1314,14 @@
         },
         "hook": {
           "label": "开头钩子",
-          "score": 11.0,
+          "score": 15,
           "weight": 15,
           "target": null,
-          "value": 58,
+          "value": 59,
           "notes": [
-            "首段 58 字，开场利落",
+            "首段 59 字，开场利落",
             "首段有具体事实/数字锚点",
-            "首段无时间锚，时效感弱"
+            "首段有时间锚，贴近热点"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }
@@ -815,6 +1417,200 @@
           "value": 54,
           "notes": [
             "首段 54 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-riemann.json",
+      "date": "2026-11-22",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "AI 说它证明了黎曼猜想，热榜 5414 万，但数学界还没点头",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 1,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 320,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 316,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 3,
+        "firstParaLen": 35,
+        "firstParaAnchor": true,
+        "titleLen": 20,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 53,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 320,
+          "value": 316,
+          "notes": [
+            "为基准的 99%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 35 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "AI 说它证明了黎曼猜想，热榜 5414 万，但数学界还没点头",
+          "notes": [
+            "标题 20 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 35,
+          "notes": [
+            "首段 35 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-22-zdr.json",
+      "date": "2026-11-22",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "125 个 AI 接口的「不保留数据」标签说撤就撤，问题出在哪？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 1,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 320,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 319,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 3,
+        "firstParaLen": 40,
+        "firstParaAnchor": true,
+        "titleLen": 20,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 53,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 320,
+          "value": 319,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 40 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "125 个 AI 接口的「不保留数据」标签说撤就撤，问题出在哪？",
+          "notes": [
+            "标题 20 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 40,
+          "notes": [
+            "首段 40 字，开场利落",
             "首段有具体事实/数字锚点",
             "首段有时间锚，贴近热点"
           ],

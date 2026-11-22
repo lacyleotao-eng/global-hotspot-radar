@@ -118,3 +118,20 @@ tags          字符串数组
 
 产出：`data/audit.json` + `data/audit-embed.js`，前端「达标自检」标签读取 `window.__AUDIT__`。补稿后重新跑 `python3 scripts/make_ready_embed.py && python3 scripts/audit_ready.py` 即可刷新。
 
+
+## 八、选题全覆盖铁律（2026-11-22 定）
+
+「今日选题 TOP3」是选题入口，「查看草稿详情」是它的出口。**每一条出现在 TOP3 里的 itemId 都必须有对应成品稿（4 形态）**，否则页面上会出现没有草稿可看的卡片，这是硬缺陷，不是可以解释的例外。
+
+- 判定：`scripts/audit_ready.py` 会读 `data/picks.json`，把两个去向出现过的 itemId 去重后与 `data/ready/*.json` 的 `sourceItemId` 对齐，输出 `[coverage] TOP3 选题 N/N 有成品稿`，结果写进 `data/audit.json` 的 `coverage` 字段。
+- 闸门：`python3 scripts/audit_ready.py --strict` 在「有缺稿」或「有任何一篇 <85 分」时退出码为 1，定时任务以此作为返工信号。
+- 前端：`今日选题 TOP3` 头顶显示「草稿覆盖 N/N」，`达标自检` 汇总区第一格显示「TOP3 草稿覆盖 N/N」。万一缺稿，卡片上会显示灰色「草稿待补」而不是静默留空。
+- 一条 item 同时被公众号与头条选中时，两个去向要用各自的 lead 口径写，标题和切入角度必须区分。
+
+## 九、配图两条腿：自制信息卡 + 豆包场景图
+
+豆包免费额度有限且会耗尽，**贴图（8–9 张）不再依赖它**：
+
+- `scripts/make_cards.py`：读 `data/card-specs/<slug>.json`（prefix + cards），用本机 Chrome 无头渲染 1080×1440 信息卡，直接落到 `assets/images/<prefix>-N.jpeg`。五种版式：`cover`（封面）、`stat`（大数字）、`steps`（步骤/链路过关）、`points`（要点）、`list`（清单）、`closing`（结语）。`theme` 在 `dark / light / accent` 之间交替，避免 8 张图一个色调。
+- 卡片只放**已核实的事实、公开来源和判断标准**，不放推测数字；`source` 必填，结语卡写明「不构成结论」。caption 统一写「自制信息卡：……」，让读者一眼知道这不是新闻现场图。
+- 豆包（`scripts/doubao_images.js`）只用于补场景图/氛围图，额度不足或 120 秒无图就放弃，绝不用假路径占位。

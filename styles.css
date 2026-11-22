@@ -180,7 +180,7 @@ select{background:var(--surface);border:1px solid var(--line);border-radius:10px
 .rp-title{font-size:25px;line-height:1.4;margin:0 0 10px;color:#111827;font-weight:700;letter-spacing:.2px}
 .rp-digest{font-size:14px;color:#6b7280;line-height:1.7;margin:0 0 20px;padding-left:12px;border-left:3px solid var(--accent)}
 .rp-figure{margin:18px 0;text-align:center}
-.rp-figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.rp-figure img{max-width:440px;width:100%;height:auto;border-radius:10px;display:block;margin:0 auto;border:1px solid var(--line)}
 .rp-figure figcaption{font-size:11px;color:#9ca3af;margin-top:7px}
 .rp-content{font-size:15.5px;line-height:1.95;color:#374151}
 .rp-h2{font-size:18px;color:#111827;margin:26px 0 10px;padding-left:11px;border-left:4px solid var(--teal);font-weight:700}
@@ -293,7 +293,14 @@ select{background:var(--surface);border:1px solid var(--line);border-radius:10px
 .audit-sum-box.g-near b{color:#b7791f}
 .audit-sum-box.g-bad{background:#fdf1ef;border-color:#f6d6d0}
 .audit-sum-box.g-bad b{color:#c0392b}
-.audit-formbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.audit-formbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+.audit-formbar .vform-chip{background:#fff}
+.audit-formbar .vform-chip.on{background:var(--ink);color:#fff}
+.draft-pending{display:inline-flex;align-items:center;font-size:12px;font-weight:600;color:var(--muted);
+  background:#f1f3f9;border:1px dashed #d4dae6;border-radius:8px;padding:7px 12px;cursor:default}
+.picks-cov{display:inline-block;margin-left:10px;font-size:11px;font-weight:600;padding:4px 9px;border-radius:7px}
+.picks-cov.ok{color:#0b7d4b;background:#eefaf3}
+.picks-cov.warn{color:#b45309;background:#fff8ec}
 .audit-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
 .audit-card{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff;display:flex;flex-direction:column;gap:12px}
 .audit-card.g-ok{border-left:3px solid #0b7d4b}

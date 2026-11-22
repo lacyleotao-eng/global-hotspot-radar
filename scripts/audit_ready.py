@@ -19,12 +19,14 @@ import json
 import os
 import re
 import statistics
+import sys
 from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 READY_DIR = os.path.join(ROOT, "data", "ready")
 BENCH = os.path.join(ROOT, "data", "viral", "benchmark.json")
 VIRAL = os.path.join(ROOT, "data", "viral", "items.json")
+PICKS = os.path.join(ROOT, "data", "picks.json")
 OUT_JSON = os.path.join(ROOT, "data", "audit.json")
 OUT_EMBED = os.path.join(ROOT, "data", "audit-embed.js")
 
@@ -257,6 +259,47 @@ def build_gaps(form: str, m: dict, viral: dict, checks: dict) -> list:
     return gaps
 
 
+def coverage_report(docs):
+    """选题覆盖：每条「今日选题 TOP3」都必须有对应成品稿，缺一条就是出稿漏了。"""
+    try:
+        picks = json.load(open(PICKS, encoding="utf-8"))
+    except Exception as exc:
+        print(f"[warn] 读不到 picks.json：{exc}")
+        return None
+    have = {d.get("sourceItemId") for d in docs if d.get("sourceItemId")}
+    rows = []
+    total = covered = 0
+    for target, group in (picks.get("groups") or {}).items():
+        t_total = t_cov = 0
+        missing = []
+        seen = set()
+        for pick in group:
+            iid = pick.get("itemId")
+            if not iid or iid in seen:
+                continue
+            seen.add(iid)
+            t_total += 1
+            if iid in have:
+                t_cov += 1
+            else:
+                missing.append({
+                    "itemId": iid,
+                    "rank": pick.get("rank"),
+                    "score": pick.get("score"),
+                    "headline": (pick.get("lead") or {}).get("headline") or pick.get("sourceTitle"),
+                })
+        rows.append({"target": target, "total": t_total, "covered": t_cov, "missing": missing})
+        total += t_total
+        covered += t_cov
+    return {
+        "date": picks.get("date"),
+        "total": total,
+        "covered": covered,
+        "ok": total > 0 and covered == total,
+        "byTarget": rows,
+    }
+
+
 def main() -> None:
     bench = json.load(open(BENCH, encoding="utf-8")) if os.path.exists(BENCH) else {"rows": []}
     bench_by_form = {r["form"]: r for r in bench.get("rows", [])}
@@ -265,10 +308,12 @@ def main() -> None:
         viral_items = json.load(open(VIRAL, encoding="utf-8")).get("items", [])
 
     pieces_out = []
+    docs = []
     for path in sorted(glob.glob(os.path.join(READY_DIR, "*.json"))):
         if path.endswith("index.json"):
             continue
         doc = json.load(open(path, encoding="utf-8"))
+        docs.append(doc)
         for pc in doc.get("pieces", []):
             form = pc.get("id")
             if form not in FORM_LABEL:
@@ -373,8 +418,15 @@ def main() -> None:
     for p in pieces_out:
         grades[p["grade"]] += 1
 
+    cov = coverage_report(docs)
+    if cov:
+        missing_rows = [m for r in cov["byTarget"] for m in r["missing"]]
+        print(f"[coverage] TOP3 选题 {cov['covered']}/{cov['total']} 有成品稿" +
+              ("".join([f"；缺 {m['itemId']}（{(m['headline'] or '')[:24]}）" for m in missing_rows]) if missing_rows else "，无遗漏"))
+
     out = {
         "updatedAt": now_iso(),
+        "coverage": cov,
         "benchmarkUpdatedAt": bench.get("updatedAt"),
         "total": len(pieces_out),
         "avgScore": round(statistics.mean([p["score"] for p in pieces_out]), 1) if pieces_out else 0,
@@ -392,6 +444,18 @@ def main() -> None:
         print(f"  {p['score']:5.1f} {p['grade']:3} {p['formLabel']:14} 字{p['metrics']['wordCount']:5} 图{p['metrics']['images']:2} | {str(p['title'])[:30]}")
         for g in p["gaps"]:
             print(f"        · {g['dim']}：{g['gap']}")
+
+    if "--strict" in sys.argv:
+        problems = []
+        if not cov or not cov["ok"]:
+            problems.append("TOP3 选题存在没有成品稿的条目")
+        low = [p for p in out["pieces"] if p["score"] < 85]
+        if low:
+            problems.append(f"{len(low)} 篇成品稿未达标")
+        if problems:
+            print("[strict] 未通过：" + "；".join(problems))
+            sys.exit(1)
+        print("[strict] 通过：选题全覆盖且全部达标")
 
 
 if __name__ == "__main__":
