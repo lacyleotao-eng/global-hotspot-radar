@@ -272,9 +272,16 @@ def main():
             it = clean_item(raw)
             key = it["id"]
             if key in seen:
-                # 重复条目：合并信号与来源标注，保留更完整的一条
+                # 重复条目：保留更完整的一条。优先级：①有带来源的真实互动数字 > ②summary 更长
                 old = seen[key]
-                if len(str(it.get("summary", ""))) > len(str(old.get("summary", ""))):
+                def sourced(it):
+                    sig = it.get("signals") or {}
+                    return sum(1 for k in ("views", "likes", "comments", "shares", "wow")
+                               if sig.get(k) not in (None, "", "不可见")
+                               and "来源" in str(sig.get(k, "")))
+                new_score = (sourced(it), len(str(it.get("summary", ""))))
+                old_score = (sourced(old), len(str(old.get("summary", ""))))
+                if new_score > old_score:
                     seen[key] = it
                 continue
             seen[key] = it
