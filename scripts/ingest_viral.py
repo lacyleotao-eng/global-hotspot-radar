@@ -179,12 +179,17 @@ def build_benchmark(items):
             return "tt-article"
         return None
 
+    CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+
     def wc_of(piece):
-        n = 0
+        # 与 scripts/audit_ready.py 同一口径：只数中文字符，避免标点/英文把字数放大
+        parts = []
         for b in piece.get("blocks", []):
-            n += len(str(b.get("text") or ""))
-            n += sum(len(str(x)) for x in (b.get("items") or []))
-        return n
+            if b.get("type") == "note":
+                continue  # 与 audit_ready.py 一致：核实/配图说明不计入正文字数
+            parts.append(str(b.get("text") or ""))
+            parts.extend(str(x) for x in (b.get("items") or []))
+        return len(CJK_RE.findall("".join(parts)))
 
     self_by_form = {}
     for d in self_docs:

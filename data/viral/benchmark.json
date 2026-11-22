@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T21:22:12+08:00",
+  "updatedAt": "2026-11-22T22:13:38+08:00",
   "rows": [
     {
       "form": "gzh-article",
@@ -12,9 +12,9 @@
         "subheads": 0.0
       },
       "mine": {
-        "wordCount": 1657.0,
-        "images": 1.5,
-        "subheads": 4.5
+        "wordCount": 1525.0,
+        "images": 6.0,
+        "subheads": 5.0
       },
       "verdict": "字数达标",
       "advice": "写热点评论先交代权威信源，再展开观点，避免空喊口号"
@@ -30,8 +30,8 @@
         "subheads": 0
       },
       "mine": {
-        "wordCount": 909.0,
-        "images": 1.0,
+        "wordCount": 500.5,
+        "images": 8.5,
         "subheads": 4.0
       },
       "verdict": "字数达标",
@@ -48,11 +48,11 @@
         "subheads": 0
       },
       "mine": {
-        "wordCount": 865.5,
+        "wordCount": 1205.0,
         "images": 1.0,
-        "subheads": 3.5
+        "subheads": 4.5
       },
-      "verdict": "字数偏少",
+      "verdict": "字数达标",
       "advice": "政策解读要先翻译成'这和我有什么关系'，用注销场景切入比讲法条有效"
     },
     {
@@ -66,7 +66,7 @@
         "subheads": 0
       },
       "mine": {
-        "wordCount": 507.0,
+        "wordCount": 314.0,
         "images": 1.0,
         "subheads": 0.0
       },

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球热点情报站 · 每日热点 / 资源 / 需求聚合</title>
 <meta name="description" content="每天汇总国内外热点、新闻、帖子、资源、需求与想法，附来源链接、核实状态、评价与引用溯源。">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=1122e">
 </head>
 <body>
 <header class="topbar">
@@ -36,11 +36,26 @@
 <main class="wrap">
   <div class="viewtabs" id="viewTabs">
     <button class="vtab on" data-view="benchmark">爆款对标</button>
+    <button class="vtab" data-view="audit">达标自检</button>
     <button class="vtab" data-view="picks">今日选题 TOP3</button>
     <button class="vtab" data-view="feed">情报流</button>
     <button class="vtab" data-view="leads">选题线索 <span id="leadTabCount">0</span></button>
     <span class="viewhint" id="viewHint">每日按时效、热度、核实度、优先级打分排序的成稿候选</span>
   </div>
+
+  <section class="auditpanel" id="auditPanel" hidden>
+    <div class="audit-head">
+      <div>
+        <h2>达标自检 · 每篇成品稿离爆款还差什么</h2>
+        <p>用真实爆款的中位数当标尺，对每篇成品稿按 <b>字数 25 / 配图 25 / 结构 20 / 标题 15 / 开头钩子 15</b> 五项打分。分数只衡量「形态是否够打」，不代表内容质量；基准样本不足 5 条的形态会标注仅供参考。</p>
+      </div>
+      <div class="audit-updated" id="auditUpdated">—</div>
+    </div>
+    <div class="audit-summary" id="auditSummary"></div>
+    <div class="audit-formbar" id="auditFormBar"></div>
+    <div class="audit-list" id="auditList"></div>
+    <div class="empty" id="auditEmpty" hidden>暂无成品稿自检数据。</div>
+  </section>
 
   <section class="benchpanel" id="benchPanel" hidden>
     <div class="bench-intro">
@@ -173,6 +188,7 @@
 <script src="data/picks-embed.js"></script>
 <script src="data/ready-embed.js"></script>
 <script src="data/viral-embed.js"></script>
-<script src="app.js"></script>
+<script src="data/audit-embed.js"></script>
+<script src="app.js?v=1122e"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'benchmark', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'benchmark', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -54,24 +54,30 @@
     state.picks = window.__PICKS__ || null;
     state.ready = window.__READY__ || { docs: [] };
     state.viral = window.__VIRAL__ || { items: [], meta: {}, benchmark: [] };
+    state.audit = window.__AUDIT__ || null;
     initControls();
     applyView();
     render();
+    // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
+    var m = /^#draft=([^:]+):(.+)$/.exec(location.hash || '');
+    if (m) openDraft(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
   }
 
   function applyView() {
     var isPicks = state.view === 'picks';
     var isLeads = state.view === 'leads';
     var isBench = state.view === 'benchmark';
+    var isAudit = state.view === 'audit';
     document.getElementById('benchPanel').hidden = !isBench;
+    document.getElementById('auditPanel').hidden = !isAudit;
     document.getElementById('picksPanel').hidden = !isPicks;
-    document.getElementById('mainToolbar').hidden = isPicks || isBench;
-    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench;
+    document.getElementById('mainToolbar').hidden = isPicks || isBench || isAudit;
+    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit;
     document.getElementById('leadBar').hidden = !isLeads;
-    document.querySelector('.resultbar').hidden = isPicks || isBench;
-    document.getElementById('grid').hidden = isPicks || isBench;
+    document.querySelector('.resultbar').hidden = isPicks || isBench || isAudit;
+    document.getElementById('grid').hidden = isPicks || isBench || isAudit;
     document.getElementById('empty').hidden = true;
-    document.querySelector('.more-wrap').hidden = isPicks || isBench;
+    document.querySelector('.more-wrap').hidden = isPicks || isBench || isAudit;
   }
 
   function initControls() {
@@ -91,15 +97,17 @@
         state.page = 1;
         Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
         applyView();
-        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark';
+        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
         document.getElementById('viewHint').textContent = state.view === 'benchmark'
           ? '真实爆款拆解成基准，和自家 4 形态成品稿逐项对照'
-          : (state.view === 'picks'
-            ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
-            : (state.view === 'leads'
-              ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
-              : '每条情报可展开详情，查看来源与核实过程'));
+          : (state.view === 'audit'
+            ? '每篇成品稿对照爆款基准打分，列出还差多少字、多少图、哪里不够'
+            : (state.view === 'picks'
+              ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
+              : (state.view === 'leads'
+                ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
+                : '每条情报可展开详情，查看来源与核实过程')));
         render();
       };
     });
@@ -252,36 +260,56 @@
     return doc ? { doc: doc, pieces: doc.pieces || [] } : null;
   }
 
+  function blockOne(b) {
+    if (b.type === 'h2') return '<h3 class="rp-h2">' + esc(b.text) + '</h3>';
+    if (b.type === 'para') return '<p class="rp-para">' + esc(b.text) + '</p>';
+    if (b.type === 'note') return '<p class="rp-note">' + esc(b.text) + '</p>';
+    if (b.type === 'list') return '<ul class="rp-list">' + (b.items || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+    return '';
+  }
+
+  function figHtml(im) {
+    return '<figure class="rp-figure"><img src="' + esc(im.src) + '" alt="' + esc(im.caption || '') + '" loading="lazy"><figcaption>' + esc(im.caption || '') + '</figcaption></figure>';
+  }
+
   function blocksToHtml(piece) {
-    return (piece.blocks || []).map(function (b) {
-      if (b.type === 'h2') return '<h3 class="rp-h2">' + esc(b.text) + '</h3>';
-      if (b.type === 'para') return '<p class="rp-para">' + esc(b.text) + '</p>';
-      if (b.type === 'note') return '<p class="rp-note">' + esc(b.text) + '</p>';
-      if (b.type === 'list') return '<ul class="rp-list">' + (b.items || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
-      return '';
-    }).join('');
+    return (piece.blocks || []).map(blockOne).join('');
+  }
+
+  // 把全部配图均匀穿插进正文：文章首图作封面，其余按段落均分；贴图从第一张起均分
+  function bodyWithImages(piece) {
+    var imgs = piece.images || [];
+    var rows = (piece.blocks || []).map(blockOne).filter(Boolean);
+    var isPoster = piece.form === '贴图';
+    var cover = (!isPoster && imgs.length) ? figHtml(imgs[0]) : '';
+    var rest = isPoster ? imgs.slice() : imgs.slice(1);
+    if (!rest.length || !rows.length) {
+      return { cover: cover, body: rows.join('') + rest.map(figHtml).join('') };
+    }
+    var step = rows.length / rest.length;
+    var marks = rest.map(function (im, i) {
+      return { at: Math.min(rows.length, Math.max(1, Math.round((i + 1) * step))), im: im };
+    });
+    var out = [];
+    var k = 0;
+    for (var i = 0; i <= rows.length; i++) {
+      while (k < marks.length && marks[k].at === i) { out.push(figHtml(marks[k].im)); k++; }
+      if (i < rows.length) out.push(rows[i]);
+    }
+    while (k < marks.length) { out.push(figHtml(marks[k].im)); k++; }
+    return { cover: cover, body: out.join('') };
   }
 
   function pieceHtml(piece, doc) {
     var imgs = piece.images || [];
-    // 文章：图穿插在开头与中段；贴图：首图后跟正文
-    var lead = imgs.length ? '<figure class="rp-figure"><img src="' + esc(imgs[0].src) + '" alt="' + esc(imgs[0].caption || '') + '" loading="lazy"><figcaption>' + esc(imgs[0].caption || '') + '</figcaption></figure>' : '';
-    var midImg = '';
-    if (imgs.length > 1) {
-      midImg = '<figure class="rp-figure"><img src="' + esc(imgs[1].src) + '" alt="' + esc(imgs[1].caption || '') + '" loading="lazy"><figcaption>' + esc(imgs[1].caption || '') + '</figcaption></figure>';
-    }
-    var all = blocksToHtml(piece);
-    // 把第二张图插到正文中段（约一半处）
-    if (midImg) {
-      var anchor = '<h3 class="rp-h2">';
-      var idx = all.indexOf(anchor, all.indexOf(anchor) + 1);
-      if (idx > 0) all = all.slice(0, idx) + midImg + all.slice(idx);
-      else all = all + midImg;
-    }
+    var built = bodyWithImages(piece);
+    var lead = built.cover;
+    var all = built.body;
     return '<div class="rp-meta"><span class="badge l-' + esc(piece.target) + '">' + esc(piece.target) + '</span>' +
       '<span class="rp-form">' + esc(piece.form) + '</span>' +
       '<span class="vpill v-' + esc(statusClass(doc.verification)) + '">' + esc(doc.verification || '') + '</span>' +
-      '<span class="rp-badge">' + esc(piece.badge || '') + '</span></div>' +
+      '<span class="rp-badge">' + esc(piece.badge || '') + '</span>' +
+      '<span class="rp-imgcount">' + imgs.length + ' 张配图</span></div>' +
       '<h2 class="rp-title" id="draftTitle">' + esc(piece.title) + '</h2>' +
       (piece.digest ? '<p class="rp-digest">' + esc(piece.digest) + '</p>' : '') +
       lead + '<div class="rp-content">' + all + '</div>' +
@@ -399,8 +427,113 @@
     '</article>';
   }
 
-  function renderBenchmark() {
-    document.getElementById('benchBody').innerHTML = benchTableHtml() || '<tr><td colspan="6">暂无对标数据</td></tr>';
+  var AGRADE = { '达标': 'g-ok', '接近': 'g-near', '不达标': 'g-bad' };
+
+  function auditCardHtml(p) {
+    var m = p.metrics || {};
+    var bench = p.bench || {};
+    var checks = p.checks || {};
+    var keys = ['wordCount', 'images', 'structure', 'title', 'hook'];
+    var bars = keys.map(function (k) {
+      var c = checks[k];
+      if (!c) return '';
+      var pct = Math.round((c.score / c.weight) * 100);
+      var cls = pct >= 85 ? 'b-ok' : (pct >= 65 ? 'b-near' : 'b-bad');
+      var note = (c.notes || []).filter(function (n) { return n; }).join('；');
+      return '<div class="audit-check">' +
+        '<div class="ac-head"><span class="ac-label">' + esc(c.label) + '</span>' +
+        '<span class="ac-score">' + c.score + '/' + c.weight + '</span></div>' +
+        '<div class="ac-bar ' + cls + '"><i style="width:' + Math.max(2, Math.min(100, pct)) + '%"></i></div>' +
+        '<p class="ac-note">' + esc(note) + '</p>' +
+        '</div>';
+    }).join('');
+
+    var gaps = (p.gaps || []).map(function (g) {
+      return '<li><b>' + esc(g.dim) + '</b><span>' + esc(g.gap) + '</span>' +
+        '<em>' + esc(g.fix) + '</em></li>';
+    }).join('');
+    var gapBlock = gaps
+      ? '<div class="audit-gaps"><div class="ag-title">还差什么、怎么补</div><ul>' + gaps + '</ul></div>'
+      : '<div class="audit-gaps ok"><div class="ag-title">五项全部达标，可以直接进排期</div></div>';
+
+    var numMeta = function (label, val, target) {
+      if (val == null) return '';
+      var t = (target == null || target === 0) ? '' : ' <span class="mm-t">/ ' + target + '</span>';
+      return '<div class="audit-metric"><span>' + esc(label) + '</span><b>' + esc(val) + t + '</b></div>';
+    };
+
+    return '<article class="audit-card ' + (AGRADE[p.grade] || '') + '">' +
+      '<div class="audit-card-head">' +
+        '<div class="audit-title-wrap">' +
+          '<div class="audit-tags"><span class="audit-form">' + esc(p.formLabel) + '</span>' +
+            '<span class="audit-grade ' + (AGRADE[p.grade] || '') + '">' + esc(p.grade) + '</span>' +
+            (p.benchmarkReliable === false ? '<span class="audit-warn">基准样本 ' + (p.viralSample || 0) + ' 条，仅供参考</span>' : '') +
+          '</div>' +
+          '<h3>' + esc(p.title) + '</h3>' +
+          '<p class="audit-sub">' + esc(p.file || '') + ' · 爆款基准 ' + esc(p.formLabel) + '</p>' +
+        '</div>' +
+        '<div class="audit-score"><b>' + p.score + '</b><span>分</span></div>' +
+      '</div>' +
+      '<div class="audit-metrics">' +
+        numMeta('字数', m.wordCount, bench.wordCount ? Math.round(bench.wordCount) : null) +
+        numMeta('配图', m.images, bench.images != null ? bench.images : null) +
+        numMeta('小标题', m.subheads, null) +
+        numMeta('首段', m.firstParaLen + ' 字', null) +
+        numMeta('段落', m.paragraphs, null) +
+      '</div>' +
+      '<div class="audit-checks">' + bars + '</div>' +
+      gapBlock +
+    '</article>';
+  }
+
+  function renderAudit() {
+    var a = state.audit;
+    var list = document.getElementById('auditList');
+    var empty = document.getElementById('auditEmpty');
+    if (!a || !a.pieces || !a.pieces.length) {
+      list.innerHTML = '';
+      empty.hidden = false;
+      document.getElementById('auditSummary').innerHTML = '';
+      document.getElementById('auditFormBar').innerHTML = '';
+      document.getElementById('auditUpdated').textContent = '等待自检数据';
+      return;
+    }
+    empty.hidden = true;
+    document.getElementById('auditUpdated').textContent = '自检于 ' + fmt(a.updatedAt) + ' · ' + a.total + ' 篇 · 爆款库 ' + (a.viralTotal || 0) + ' 条';
+
+    var g = a.grades || {};
+    document.getElementById('auditSummary').innerHTML =
+      '<div class="audit-sum-box"><span>均分</span><b>' + a.avgScore + '</b></div>' +
+      '<div class="audit-sum-box g-ok"><span>达标 ≥85</span><b>' + (g['达标'] || 0) + '</b></div>' +
+      '<div class="audit-sum-box g-near"><span>接近 70-84</span><b>' + (g['接近'] || 0) + '</b></div>' +
+      '<div class="audit-sum-box g-bad"><span>不达标 &lt;70</span><b>' + (g['不达标'] || 0) + '</b></div>' +
+      (a.byForm || []).map(function (f) {
+        return '<div class="audit-sum-box mini"><span>' + esc(f.formLabel) + '</span><b>' + f.avgScore + '</b></div>';
+      }).join('');
+
+    var bar = document.getElementById('auditFormBar');
+    if (!bar.childElementCount) {
+      var opts = [['', '全部形态']].concat((a.byForm || []).map(function (f) { return [f.form, f.formLabel]; }));
+      opts.forEach(function (kv) {
+        var b = document.createElement('button');
+        b.className = 'vchip' + (kv[0] === '' ? ' on' : '');
+        b.textContent = kv[1];
+        b.setAttribute('data-form', kv[0]);
+        b.onclick = function () {
+          state.auditForm = kv[0];
+          Array.prototype.forEach.call(bar.querySelectorAll('.vchip'), function (x) { x.classList.toggle('on', x === b); });
+          renderAudit();
+        };
+        bar.appendChild(b);
+      });
+    }
+
+    var rows = a.pieces.filter(function (p) { return !state.auditForm || p.form === state.auditForm; });
+    rows.sort(function (x, y) { return x.score - y.score; });
+    list.innerHTML = rows.map(auditCardHtml).join('') || '<div class="empty">该形态暂无成品稿。</div>';
+  }
+
+  function renderBenchmark() {    document.getElementById('benchBody').innerHTML = benchTableHtml() || '<tr><td colspan="6">暂无对标数据</td></tr>';
     var m = state.viral.meta || {};
     document.getElementById('benchUpdated').textContent = m.updatedAt ? '更新于 ' + fmt(m.updatedAt) + ' · ' + (m.total || 0) + ' 条爆款' : '等待爆款数据';
     var chips = document.getElementById('viralFormChips');
@@ -539,6 +672,7 @@
 
   function render() {
     if (state.view === 'benchmark') { renderBenchmark(); return; }
+    if (state.view === 'audit') { renderAudit(); return; }
     if (state.view === 'picks') { renderPicks(); return; }
     var rows = state.view === 'leads' ? filteredLeads() : filtered();
     document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
