@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'benchmark', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '' };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', issue: null };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -48,8 +48,8 @@
   }
   function statusClass(s) { return STATUS.indexOf(s) >= 0 ? s : '未核实'; }
 
-  // 站点每天两个批次：09:30 晨间微头条、20:30 当日全套稿（19:45 起若调整，改这里即可）。
-  var BATCH = [[9, 30, '晨间微头条'], [20, 30, '当日全套稿']];
+  // 每天一班：清晨把当天素材备齐，09:30 起发布人随时可取（排期改动同步这里）。
+  var BATCH = [[8, 45, '当天素材备齐']];
 
   function pad2(n) { return n < 10 ? '0' + n : '' + n; }
 
@@ -69,12 +69,11 @@
   function renderWindows() {
     var el = document.getElementById('heroWindow');
     if (el) {
-      var nb = nextBatches(), a = nb[0], b = nb[1];
+      var nb = nextBatches(), a = nb[0];
       var tag = '<span class="hw-tag">下一批</span>';
-      if (a && b && a.label.slice(0, 2) === b.label.slice(0, 2)) {
-        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what + ' → <b>' + b.label.slice(3) + '</b> ' + b.what;
-      } else if (a) {
-        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what;
+      if (a) {
+        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what +
+          '　→　<b>09:30 起</b>公众号 1 篇、头条 3 篇，素材随时取用';
       }
     }
     var pw = document.getElementById('picksWindow');
@@ -88,8 +87,8 @@
       var stale = (p.date || latest) && (p.date || latest) < today;
       var nb2 = nextBatches()[0];
       pw.innerHTML = '本批生成 ' + esc(gen) +
-        ' ｜ 建议发布：<b>生成当晚 21:00–22:00</b>（公众号晚高峰），或 <b>次日 07:00–08:30</b>（早高峰）；今日头条/微头条可随时发，早 07–09、午 12–13、晚 18–21 更好' +
-        (stale ? ' ｜ <span class="pw-stale">今天还有新批次（' + esc(nb2.label) + '）</span>' : '');
+        ' ｜ 发布节奏：<b>09:30 公众号 1 篇</b>，<b>10:30 / 14:30 / 19:30 头条各 1 篇</b>；去「今日发布」直接复制全文与图片' +
+        (stale ? ' ｜ <span class="pw-stale">今天素材将在 ' + esc(nb2.label) + ' 前备齐</span>' : '');
     }
   }
 
@@ -100,9 +99,10 @@
     state.ready = window.__READY__ || { docs: [] };
     state.viral = window.__VIRAL__ || { items: [], meta: {}, benchmark: [] };
     state.audit = window.__AUDIT__ || null;
+    state.issue = window.__ISSUE__ || null;
     initControls();
     // 深链：#view=picks|audit|benchmark|feed|leads 直接打开某个视图
-    var vm = /^#view=(picks|audit|benchmark|feed|leads)$/.exec(location.hash || '');
+    var vm = /^#view=(issue|picks|audit|benchmark|feed|leads)$/.exec(location.hash || '');
     if (vm) {
       state.view = vm[1];
       Array.prototype.forEach.call(document.querySelectorAll('.vtab'), function (b) {
@@ -111,6 +111,7 @@
     }
     applyView();
     render();
+    renderIssue();
     // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
     var m = /^#draft=([^:]+):(.+)$/.exec(location.hash || '');
     if (m) openDraft(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
@@ -141,6 +142,10 @@
       state.ready = d;
       if (state.view === 'picks') renderPicks();
     });
+    pull('data/issue.json', function (d) { return d && d.slots && d.generatedAt !== (state.issue || {}).generatedAt; }, function (d) {
+      state.issue = d;
+      if (state.view === 'issue') renderIssue();
+    });
   }
 
   function applyView() {
@@ -148,16 +153,18 @@
     var isLeads = state.view === 'leads';
     var isBench = state.view === 'benchmark';
     var isAudit = state.view === 'audit';
+    var isIssue = state.view === 'issue';
+    document.getElementById('issuePanel').hidden = !isIssue;
     document.getElementById('benchPanel').hidden = !isBench;
     document.getElementById('auditPanel').hidden = !isAudit;
     document.getElementById('picksPanel').hidden = !isPicks;
-    document.getElementById('mainToolbar').hidden = isPicks || isBench || isAudit;
-    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit;
+    document.getElementById('mainToolbar').hidden = isPicks || isBench || isAudit || isIssue;
+    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit || isIssue;
     document.getElementById('leadBar').hidden = !isLeads;
-    document.querySelector('.resultbar').hidden = isPicks || isBench || isAudit;
-    document.getElementById('grid').hidden = isPicks || isBench || isAudit;
+    document.querySelector('.resultbar').hidden = isPicks || isBench || isAudit || isIssue;
+    document.getElementById('grid').hidden = isPicks || isBench || isAudit || isIssue;
     document.getElementById('empty').hidden = true;
-    document.querySelector('.more-wrap').hidden = isPicks || isBench || isAudit;
+    document.querySelector('.more-wrap').hidden = isPicks || isBench || isAudit || isIssue;
   }
 
   function initControls() {
@@ -177,9 +184,12 @@
         state.page = 1;
         Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
         applyView();
-        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit';
+        if (state.view === 'issue') renderIssue();
+        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit' || state.view === 'issue';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
-        document.getElementById('viewHint').textContent = state.view === 'benchmark'
+        document.getElementById('viewHint').textContent = state.view === 'issue'
+          ? '今天 4 个固定时段要发的东西，全部备好，复制即可发'
+          : state.view === 'benchmark'
           ? '真实爆款拆解成基准，和自家 4 形态成品稿逐项对照'
           : (state.view === 'audit'
             ? '每篇成品稿对照爆款基准打分，列出还差多少字、多少图、哪里不够'
@@ -720,6 +730,117 @@
   }
 
   function closeViral() { document.getElementById('viralMask').hidden = true; state.viralOpen = null; }
+
+  // ===== 今日素材（issue）：公众号池 + 头条池，发布人自己挑时段 =====
+  function issueAsset(a) {
+    var thumbs = (a.images || []).map(function (im, i) {
+      var name = (a.slug || 'img') + '-' + (i + 1) + '.jpeg';
+      return '<a class="ic-thumb" href="' + esc(im.src) + '" download="' + esc(name) + '" target="_blank" rel="noopener" title="' + esc(im.caption || ('图 ' + (i + 1))) + '">' +
+        '<img src="' + esc(im.src) + '" alt="" loading="lazy"><i>图' + (i + 1) + ' ↓</i></a>';
+    }).join('');
+    return '<article class="ia-card" data-item="' + esc(a.itemId) + '" data-piece="' + esc(a.pieceId) + '">' +
+      '<div class="ia-top">' +
+        '<span class="ia-form f-' + esc(a.pieceId) + '">' + esc(a.formShort) + '</span>' +
+        '<span class="ia-num"><b>' + a.words + '</b> 字</span>' +
+        '<span class="ia-num"><b>' + a.imageCount + '</b> 图</span>' +
+        '<span class="vpill v-' + esc(statusClass(a.verification)) + '">' + esc(a.verification || '未核实') + '</span>' +
+      '</div>' +
+      '<h3 class="ia-title">' + esc(a.title) + '</h3>' +
+      (a.digest ? '<p class="ia-digest">' + esc(a.digest) + '</p>' : '') +
+      '<div class="ia-foot">' +
+        '<div class="ia-actions">' +
+          '<button class="ic-btn primary" data-act="copy">复制全文</button>' +
+          '<button class="ic-btn" data-act="title">复制标题</button>' +
+          (a.imageCount ? '<button class="ic-btn" data-act="imgs">图片（' + a.imageCount + '）</button>' : '') +
+          '<button class="ic-btn ghost" data-act="open">看排版</button>' +
+        '</div>' +
+        '<span class="ia-src" title="' + esc(a.sourceTitle) + '">' + esc(a.sourceTitle || '') + '</span>' +
+      '</div>' +
+      '<div class="ic-imgs" hidden>' + thumbs + '</div>' +
+      '</article>';
+  }
+
+  function renderIssue() {
+    var it = state.issue;
+    var list = document.getElementById('issueList');
+    var empty = document.getElementById('issueEmpty');
+    if (!it || !it.pools) {
+      list.innerHTML = '';
+      empty.hidden = false;
+      document.getElementById('issueDate').textContent = '—';
+      document.getElementById('issueState').textContent = '—';
+      return;
+    }
+    empty.hidden = true;
+    document.getElementById('issueDate').textContent = it.date;
+
+    var gzh = it.pools['公众号'] || { items: [], target: 3 };
+    var tt = it.pools['今日头条'] || { items: [], target: 6 };
+    var ok = it.status === 'ready';
+    var st = document.getElementById('issueState');
+    st.className = 'issue-state ' + (ok ? 'ok' : 'warn');
+    st.innerHTML = '<b>公众号 ' + gzh.items.length + ' 篇 · 头条 ' + tt.items.length + ' 篇</b>' +
+      '<span>' + (it.stale
+        ? '最近一版 · ' + esc((gzh.items[0] || tt.items[0] || {}).date || '')
+        : (it.generatedAt ? String(it.generatedAt).slice(11, 16) + ' 备齐' : '')) + '</span>';
+
+    var callout = document.getElementById('issueCallout');
+    if (it.stale) {
+      callout.hidden = false;
+      callout.className = 'issue-callout warn';
+      callout.innerHTML = '<b>今天（' + esc(it.date) + '）的素材还没生成。</b>' +
+        '下面是最近一版（' + esc((gzh.items[0] || tt.items[0] || {}).date || '') + '），只能应急；标题和开头里的时间点必须自己改成今天。';
+    } else if (!ok) {
+      callout.hidden = false;
+      callout.className = 'issue-callout warn';
+      callout.innerHTML = '<b>' + esc(it.note || '素材没备齐') + '</b>　够发的先发，缺的部分下一轮会补。';
+    } else {
+      callout.hidden = true;
+    }
+
+    var groups = [
+      { key: '公众号', pool: gzh, desc: (it.usage || {})['公众号'] || '每天 09:30 发 1 篇' },
+      { key: '今日头条', pool: tt, desc: (it.usage || {})['今日头条'] || '每天 3 篇' }
+    ];
+    list.innerHTML = groups.map(function (g) {
+      var items = g.pool.items || [];
+      return '<section class="ia-group">' +
+        '<div class="ia-ghead"><h3>' + esc(g.key) + '</h3>' +
+          '<span class="ia-gcount">已备 <b>' + items.length + '</b> 篇' +
+            (items.length < (g.pool.target || 0) ? '（目标 ' + g.pool.target + '）' : '') + '</span>' +
+          '<span class="ia-gdesc">' + esc(g.desc) + '</span></div>' +
+        (items.length
+          ? '<div class="ia-grid">' + items.map(issueAsset).join('') + '</div>'
+          : '<p class="ia-none">这个池还没有素材。</p>') +
+        '</section>';
+    }).join('');
+
+    Array.prototype.forEach.call(list.querySelectorAll('.ia-card'), function (card) {
+      Array.prototype.forEach.call(card.querySelectorAll('.ic-btn'), function (b) {
+        b.onclick = function () {
+          var itemId = card.getAttribute('data-item');
+          var pieceId = card.getAttribute('data-piece');
+          var a = null;
+          ['公众号', '今日头条'].some(function (k) {
+            var hit = ((it.pools[k] || {}).items || []).filter(function (x) {
+              return x.itemId === itemId && x.pieceId === pieceId;
+            })[0];
+            if (hit) a = hit;
+            return !!hit;
+          });
+          if (!a) return;
+          var act = b.getAttribute('data-act');
+          if (act === 'copy') copyText(a.text || '', b);
+          else if (act === 'title') copyText(a.title || '', b);
+          else if (act === 'imgs') {
+            var box = card.querySelector('.ic-imgs');
+            box.hidden = !box.hidden;
+            b.textContent = box.hidden ? ('图片（' + a.imageCount + '）') : '收起图片';
+          } else if (act === 'open') openDraft(itemId, pieceId);
+        };
+      });
+    });
+  }
 
   function renderPicks() {
     var p = state.picks;

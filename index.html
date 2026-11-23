@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球热点情报站 · 每日热点 / 资源 / 需求聚合</title>
 <meta name="description" content="每天汇总国内外热点、新闻、帖子、资源、需求与想法，附来源链接、核实状态、评价与引用溯源。">
-<link rel="stylesheet" href="styles.css?v=1123c">
+<link rel="stylesheet" href="styles.css?v=1124c">
 </head>
 <body>
 <header class="topbar">
@@ -36,13 +36,27 @@
 
 <main class="wrap">
   <div class="viewtabs" id="viewTabs">
-    <button class="vtab on" data-view="benchmark">爆款对标</button>
+    <button class="vtab on" data-view="issue">今日发布</button>
+    <button class="vtab" data-view="benchmark">爆款对标</button>
     <button class="vtab" data-view="audit">达标自检</button>
     <button class="vtab" data-view="picks">今日选题 TOP3</button>
     <button class="vtab" data-view="feed">情报流</button>
     <button class="vtab" data-view="leads">选题线索 <span id="leadTabCount">0</span></button>
     <span class="viewhint" id="viewHint">每日按时效、热度、核实度、优先级打分排序的成稿候选</span>
   </div>
+
+  <section class="issuepanel" id="issuePanel">
+    <div class="issue-head">
+      <div>
+        <h2>今日发布 · <span id="issueDate">—</span></h2>
+        <p class="issue-sub">公众号备 <b>3 篇</b>、头条备 <b>6 篇</b>，<b>几点发、发哪篇都由你定</b>。每篇的标题、正文、配图都已备好，复制即发，不用再找素材或做图。</p>
+      </div>
+      <div class="issue-state" id="issueState">—</div>
+    </div>
+    <div class="issue-callout" id="issueCallout" hidden></div>
+    <div class="issue-list" id="issueList"></div>
+    <div class="empty" id="issueEmpty" hidden>今天的发布包还没生成，稍后再看。</div>
+  </section>
 
   <section class="auditpanel" id="auditPanel" hidden>
     <div class="audit-head">
@@ -187,10 +201,11 @@
 </div>
 
 <script src="data/embed.js"></script>
+<script src="data/issue-embed.js"></script>
 <script src="data/picks-embed.js"></script>
 <script src="data/ready-embed.js"></script>
 <script src="data/viral-embed.js"></script>
 <script src="data/audit-embed.js"></script>
-<script src="app.js?v=1123c"></script>
+<script src="app.js?v=1124c"></script>
 </body>
 </html>
