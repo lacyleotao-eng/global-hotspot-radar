@@ -48,6 +48,51 @@
   }
   function statusClass(s) { return STATUS.indexOf(s) >= 0 ? s : '未核实'; }
 
+  // 站点每天两个批次：09:30 晨间微头条、20:30 当日全套稿（19:45 起若调整，改这里即可）。
+  var BATCH = [[9, 30, '晨间微头条'], [20, 30, '当日全套稿']];
+
+  function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+  function nextBatches() {
+    var now = new Date(), out = [];
+    BATCH.forEach(function (b) {
+      var d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), b[0], b[1], 0);
+      var same = d > now;
+      if (!same) d.setDate(d.getDate() + 1);
+      out.push({ at: d, label: (same ? '今天 ' : '明天 ') + pad2(b[0]) + ':' + pad2(b[1]), what: b[2] });
+    });
+    out.sort(function (a, b) { return a.at - b.at; });
+    return out;
+  }
+
+  // 这一批稿什么时候发：生成当晚 21:00–22:00（公众号晚高峰尾段），或次日 07:00–08:30（早高峰）。
+  function renderWindows() {
+    var el = document.getElementById('heroWindow');
+    if (el) {
+      var nb = nextBatches(), a = nb[0], b = nb[1];
+      var tag = '<span class="hw-tag">下一批</span>';
+      if (a && b && a.label.slice(0, 2) === b.label.slice(0, 2)) {
+        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what + ' → <b>' + b.label.slice(3) + '</b> ' + b.what;
+      } else if (a) {
+        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what;
+      }
+    }
+    var pw = document.getElementById('picksWindow');
+    if (pw) {
+      var p = state.picks || {};
+      var gen = p.generatedAt ? fmt(p.generatedAt) : (p.date ? p.date + ' 晚间批次' : '未知');
+      var latest = ((state.ready || {}).docs || []).reduce(function (acc, d) {
+        return (d.date && d.date > acc) ? d.date : acc;
+      }, '');
+      var today = fmt(new Date()).slice(0, 10);
+      var stale = (p.date || latest) && (p.date || latest) < today;
+      var nb2 = nextBatches()[0];
+      pw.innerHTML = '本批生成 ' + esc(gen) +
+        ' ｜ 建议发布：<b>生成当晚 21:00–22:00</b>（公众号晚高峰），或 <b>次日 07:00–08:30</b>（早高峰）；今日头条/微头条可随时发，早 07–09、午 12–13、晚 18–21 更好' +
+        (stale ? ' ｜ <span class="pw-stale">今天还有新批次（' + esc(nb2.label) + '）</span>' : '');
+    }
+  }
+
   function boot(data) {
     state.items = (data && data.items) || [];
     state.meta = (window.__META__ && window.__META__) || {};
@@ -56,11 +101,21 @@
     state.viral = window.__VIRAL__ || { items: [], meta: {}, benchmark: [] };
     state.audit = window.__AUDIT__ || null;
     initControls();
+    // 深链：#view=picks|audit|benchmark|feed|leads 直接打开某个视图
+    var vm = /^#view=(picks|audit|benchmark|feed|leads)$/.exec(location.hash || '');
+    if (vm) {
+      state.view = vm[1];
+      Array.prototype.forEach.call(document.querySelectorAll('.vtab'), function (b) {
+        b.classList.toggle('on', b.getAttribute('data-view') === state.view);
+      });
+    }
     applyView();
     render();
     // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
     var m = /^#draft=([^:]+):(.+)$/.exec(location.hash || '');
     if (m) openDraft(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
+    renderWindows();
+    setInterval(renderWindows, 60000);
     refreshEmbeddedData();
   }
 
@@ -193,7 +248,7 @@
     document.getElementById('leadTabCount').textContent = leads;
     document.getElementById('topStats').innerHTML =
       '<span><b>' + total + '</b>条目</span><span><b>' + leads + '</b>选题线索</span><span><b>' + ((state.viral.meta || {}).total || 0) + '</b>爆款样本</span><span><b>' + cn + '</b>国内</span>';
-    document.getElementById('updateLabel').textContent = state.meta.updatedAt ? '更新于 ' + fmt(state.meta.updatedAt) : '等待数据';
+    document.getElementById('updateLabel').textContent = state.meta.updatedAt ? '条目更新 ' + fmt(state.meta.updatedAt) : '等待数据';
     document.getElementById('footerMeta').textContent = state.meta.updatedAt ? '数据更新时间：' + fmt(state.meta.updatedAt) + ' · 共 ' + total + ' 条' : '';
   }
 
@@ -671,11 +726,13 @@
     var groupsEl = document.getElementById('picksGroups');
     if (!p || !p.groups) {
       document.getElementById('picksDate').textContent = '暂无选题数据';
+      renderWindows();
       document.getElementById('picksStat').textContent = '';
       groupsEl.innerHTML = '<div class="picks-empty">今日选题尚未生成，等待定时任务运行或手动执行评分脚本。</div>';
       return;
     }
-    document.getElementById('picksDate').textContent = p.date + ' 每日选题';
+    document.getElementById('picksDate').textContent = p.date + ' 批次 · 今日选题 TOP3';
+    renderWindows();
     var total = 0;
     Object.keys(p.groups).forEach(function (k) { total += (p.groups[k] || []).length; });
     var cov = picksCoverage();
