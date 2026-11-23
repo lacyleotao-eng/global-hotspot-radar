@@ -1,0 +1,37 @@
+{
+  "slug": "harvard",
+  "date": "2026-11-23",
+  "builtAt": "2026-11-23T11:30:09+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/harvard/raw-1.webp",
+      "bytes": 37346,
+      "w": 560,
+      "h": 377,
+      "url": "https://oscimg.oschina.net/oscnet/up-c6370fbc76e2af29a1dcf7968069c60f89c.png",
+      "page": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+      "alt": "",
+      "md5": "2c11c589e20b6d00e09eb1bbd1da294b",
+      "status": "drop",
+      "reason": "像素不足 560x377",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/harvard/raw-2.webp",
+      "bytes": 37346,
+      "w": 560,
+      "h": 377,
+      "url": "https://oscimg.oschina.net/oscnet/up-c6370fbc76e2af29a1dcf7968069c60f89c.png",
+      "page": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+      "alt": "",
+      "md5": "2c11c589e20b6d00e09eb1bbd1da294b",
+      "status": "drop",
+      "reason": "与前面重复",
+      "crop": "",
+      "approved": false
+    }
+  ]
+}

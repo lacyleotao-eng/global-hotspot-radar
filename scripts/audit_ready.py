@@ -422,6 +422,24 @@ def main() -> None:
     for p in pieces_out:
         grades[p["grade"]] += 1
 
+    # 一选题一篇：同一个 sourceItemId 出了多种形态 = 重复，属于结构性问题
+    dup_rows = []
+    by_story = {}
+    for p in pieces_out:
+        doc = next((d for d in docs if d.get("sourceItemId") and p["file"] == f"{d.get('date')}-{d.get('slug')}.json"), None)
+        # 按「日期 + 选题」分组：历史批次不再追究，只看当天的重复
+        key = f"{p.get('date')}::{(doc or {}).get('sourceItemId') or p['file']}"
+        by_story.setdefault(key, []).append(p)
+    today_iso = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d")
+    for key, group in by_story.items():
+        if len(group) > 1 and key and key.startswith(today_iso):
+            for extra in group[1:]:
+                dup_rows.append({"itemId": key, "title": extra["title"], "formLabel": extra["formLabel"],
+                                 "score": extra["score"], "file": extra["file"]})
+    if dup_rows:
+        print(f"[dedupe] {len(dup_rows)} 篇属于同一选题的重复形态（一选题只应出一篇）：" +
+              "；".join(f"《{str(d['title'])[:20]}》{d['formLabel']}" for d in dup_rows[:6]))
+
     cov = coverage_report(docs)
     if cov:
         missing_rows = [m for r in cov["byTarget"] for m in r["missing"]]
@@ -431,6 +449,7 @@ def main() -> None:
     out = {
         "updatedAt": now_iso(),
         "coverage": cov,
+        "duplicates": dup_rows,
         "benchmarkUpdatedAt": bench.get("updatedAt"),
         "total": len(pieces_out),
         "avgScore": round(statistics.mean([p["score"] for p in pieces_out]), 1) if pieces_out else 0,
@@ -453,6 +472,8 @@ def main() -> None:
         problems = []
         if not cov or not cov["ok"]:
             problems.append("选题池存在没有成品稿的条目（出稿漏了）")
+        if dup_rows:
+            problems.append(f"{len(dup_rows)} 篇与同选题重复（一选题只能出一篇、一个平台、一种形态）")
         # 只看当天：历史稿分数低不该一直卡住今天的验收
         today_str = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d")
         today_pieces = [p for p in out["pieces"] if p.get("date") == today_str]

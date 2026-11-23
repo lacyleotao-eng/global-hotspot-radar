@@ -1,0 +1,55 @@
+{
+  "slug": "riemann",
+  "date": "2026-11-23",
+  "builtAt": "2026-11-23T11:30:09+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/riemann/raw-1.jpeg",
+      "bytes": 40356,
+      "w": 1280,
+      "h": 544,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/VDuyQKcOpoml0QiaM7LPR6kqs3olnWGgcoczNynZ7hMic43XtNib5Z7Tp6cQxicNd35lwlBXuIiap79oj1yEsrYu4u8gM8O42QWK3ibSWhsDG1KKI/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
+      "alt": "",
+      "md5": "36543e972e73538664c2a33d6e49a14c",
+      "status": "approved",
+      "reason": "微信公众号原文配图",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/riemann/raw-2.jpeg",
+      "bytes": 37576,
+      "w": 700,
+      "h": 342,
+      "url": "https://k.sinaimg.cn/n/spider20261123/724/w1024h500/20261123/d94c-420c34056035e73c32dc89535da58c5e.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+      "page": "https://finance.sina.cn/2026-11-23/detail-inizrtku2608007.d.html",
+      "alt": "转自返朴，仅用于学术分享，如有侵权留言删除",
+      "md5": "15a3d4b8ddeaf5ebed290f3d7d602213",
+      "status": "drop",
+      "reason": "像素不足 700x342",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/riemann/raw-1.jpeg",
+      "bytes": 40356,
+      "w": 1280,
+      "h": 544,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/VDuyQKcOpoml0QiaM7LPR6kqs3olnWGgcoczNynZ7hMic43XtNib5Z7Tp6cQxicNd35lwlBXuIiap79oj1yEsrYu4u8gM8O42QWK3ibSWhsDG1KKI/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
+      "alt": "",
+      "md5": "36543e972e73538664c2a33d6e49a14c",
+      "status": "approved",
+      "reason": "原文封面（带标题文字，仅作补充图）",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-23T11:30:26+08:00"
+}

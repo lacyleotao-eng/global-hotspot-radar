@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "date": "2026-11-23",
+  "slug": "harvard-review",
+  "sourceItemId": "53edae8224cf01de",
+  "sourceTitle": "OSCHINA 转述：哈佛研究者工作论文称 AI 编程瓶颈转向代码审查",
+  "sourceUrl": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+  "sourcePlatform": "OSCHINA",
+  "verification": "待核实",
+  "verificationNote": "二手转述，涉及样本数字与研究结论。待核问题：论文原文题名、作者、版本与是否同行评议？718 家公司与 725938 名员工的口径与数据来源？“瓶颈转向代码审查”是作者结论还是报道标题概括？",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "tt-micro",
+      "target": "今日头条",
+      "form": "微头条",
+      "badge": "研究议题",
+      "title": "718 家公司、72 万人：AI 编程的瓶颈真是代码审查吗？",
+      "digest": "一份工作论文说，AI 让代码产量上去了，但审查跟不上。数据未独立核实，先把结论看清楚。",
+      "images": [
+        {
+          "src": "assets/images/harvard-ai-1.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "OSCHINA 今天转述了一份哈佛两位博士候选人的工作论文，样本是 718 家公司、725938 名员工，讨论 AI 编程 Agent 的实际效果。"
+        },
+        {
+          "type": "para",
+          "text": "报道标题给出的结论是：AI 编程目前的瓶颈是 Code Review。意思是代码产出变快了，但没人来得及看，审查成了新堵点。"
+        },
+        {
+          "type": "para",
+          "text": "报道摘要还提到人均每月新增代码行数的变化，但没有给出完整数值。"
+        },
+        {
+          "type": "para",
+          "text": "这里要打个折扣：这是媒体转述，论文原文没拿到，样本口径和结论都没有独立核实。"
+        },
+        {
+          "type": "para",
+          "text": "不过这个方向和开发者社区的体感是一致的：写代码变快之后，评审队列变长，合并变慢，最后卡在人的注意力上。"
+        },
+        {
+          "type": "para",
+          "text": "如果结论成立，接下来该投入的不是更快的生成，而是更好的审查工具和更小的变更粒度。"
+        },
+        {
+          "type": "para",
+          "text": "值得注意的是，这个结论跟「AI 写的代码质量差」不是一回事。它说的是流程问题：产出速度超过了审查速度，瓶颈就从写转移到了看。"
+        },
+        {
+          "type": "para",
+          "text": "如果这个判断成立，团队该调整的是变更粒度：小批量提交、每次只改一件事，审查才追得上。"
+        },
+        {
+          "type": "note",
+          "text": "事实来自 OSCHINA 转述，论文原文未取得；样本量与结论均为报道表述，未独立核实。"
+        }
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
+    }
+  ]
+}

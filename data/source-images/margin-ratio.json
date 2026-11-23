@@ -1,0 +1,22 @@
+{
+  "slug": "margin-ratio",
+  "date": "2026-11-23",
+  "builtAt": "2026-11-23T11:13:38+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/margin-ratio/raw-1.png",
+      "bytes": 32051,
+      "w": 120,
+      "h": 120,
+      "url": "https://cdnjdphoto.aikan.pdnews.cn/zhbj-20261123/image/content/0b1359e8a14c464f93f357294507cdff.png?x-oss-process=image/resize,w_120",
+      "page": "https://www.peopleapp.com/column/30053614296-500007797897",
+      "alt": "",
+      "md5": "c50cca311df86a58ac30b26b6fc6083f",
+      "status": "drop",
+      "reason": "像素不足 120x120",
+      "crop": "",
+      "approved": false
+    }
+  ]
+}

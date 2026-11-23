@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "date": "2026-11-23",
+  "slug": "linjunyang",
+  "sourceItemId": "a85d341696c61f0d",
+  "sourceTitle": "林俊旸追上李飞飞",
+  "sourceUrl": "https://36kr.com/p/4080757699958660",
+  "sourcePlatform": "36氪",
+  "verification": "部分核实",
+  "verificationNote": "融资额、估值、股东名单均未获企业确认，属媒体口径；“追上李飞飞”是标题修辞，World Labs 已于 9 月被 AMD 以约 82 亿美元全股票交易收购，两者估值不可直接类比",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "商业观察",
+      "title": "还没有产品，估值 50 亿美元：这家 Agent 公司凭什么三个月涨 2.5 倍？",
+      "digest": "36 氪今天的消息：语用科技新一轮融资，估值 50 亿美元。公司 5 月才注册，目前没有产品和收入。",
+      "images": [
+        {
+          "src": "assets/source/linjunyang/raw-1.jpeg",
+          "caption": "原文刊发的现场画面（图源：36氪）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/linjunyang-ai-1.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        },
+        {
+          "src": "assets/images/linjunyang-ai-2.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        },
+        {
+          "src": "assets/images/linjunyang-c-1.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        },
+        {
+          "src": "assets/images/linjunyang-c-2.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        },
+        {
+          "src": "assets/images/linjunyang-c-3.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，36 氪 11 月 23 日报道：林俊旸创办的语用科技（Pragmatik Labs）完成新一轮融资，估值 50 亿美元，约合人民币 335 亿元。新投资方里有华业天成资本、鼎晖投资，还有吉利汽车。本轮融资数千万美元，出让股份不到 2%。三个月前是另一组数字：今年 8 月首轮融资约 2.2 亿美元，估值 20 亿美元，腾讯出资约 2000 万美元，持股 1%。"
+        },
+        {
+          "type": "para",
+          "text": "公司 2026 年 5 月 13 日注册。报道明确写着：目前没有产品，也没有收入。"
+        },
+        {
+          "type": "para",
+          "text": "业务方向分两块，一块是数字办公 Agent，一块是物理 Agent。前者在电脑里干活，后者要落到设备与场景里。"
+        },
+        {
+          "type": "para",
+          "text": "一个成立半年、没有产品的团队，三个月估值涨 2.5 倍，钱买的不是现在的收入，是对人的定价。"
+        },
+        {
+          "type": "para",
+          "text": "值得留意的两个信号：车企进场，说明物理 Agent 的场景方开始下注；出让不到 2% 却拿到数千万美元，说明老股东不愿意被稀释太多。"
+        },
+        {
+          "type": "para",
+          "text": "能不能撑住这个估值，要看两件事什么时候发生：产品什么时候出来，第一批客户愿不愿意付钱。"
+        },
+        {
+          "type": "para",
+          "text": "把这轮和首轮放一起看更清楚：8 月估值 20 亿美元，11 月 50 亿美元，三个月涨 2.5 倍；而两轮之间，公司并没有发布产品。"
+        },
+        {
+          "type": "para",
+          "text": "也就是说，涨的不是业绩，是对团队和方向的预期。这类估值最怕的一件事是：产品出来那天，市场发现它跟预期不是一回事。"
+        },
+        {
+          "type": "note",
+          "text": "事实来自 36 氪报道：估值、投资方、融资额、注册时间、业务方向均照引；「没有产品与收入」为报道原文表述。「钱买的是对人的定价」为编辑判断。配图见文内说明。"
+        }
+      ],
+      "imageNote": "6 张配图：原文图1 张、ChatGPT 生成5 张"
+    }
+  ]
+}

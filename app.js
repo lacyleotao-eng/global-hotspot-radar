@@ -94,7 +94,7 @@
       var stale = (p.date || latest) && (p.date || latest) < today;
       var nb2 = nextBatches()[0];
       pw.innerHTML = '本批生成 ' + esc(gen) +
-        ' ｜ 发布节奏：<b>09:30 公众号 1 篇</b>，<b>10:30 / 14:30 / 19:30 头条各 1 篇</b>；去「今日发布」直接复制全文与图片' +
+        ' ｜ 已备好 <b>公众号 6 篇</b>、<b>头条 8 篇</b>，<b>几点发、发哪篇由发布人定</b>；去「今日发布」直接复制全文与图片' +
         (stale ? ' ｜ <span class="pw-stale">今天素材将在 ' + esc(nb2.label) + ' 前备齐</span>' : '');
     }
   }
@@ -859,10 +859,16 @@
       ? '<div class="ia-cover"><img src="' + esc(first.src) + '" alt="' + esc(first.caption || '') + '" loading="lazy">' +
         '<span class="ia-cover-tag">封面 · 共 ' + a.imageCount + ' 图</span></div>'
       : '';
+    var ORIGIN = { source: '原文图', doubao: 'AI 生成', chatgpt: 'AI 生成', card: '自制卡' };
+    var origins = (a.imageOrigins || []).map(function (o) { return ORIGIN[o] || ''; }).filter(function (v, i, arr) { return v && arr.indexOf(v) === i; });
+    var originChip = origins.length
+      ? '<span class="ia-origin' + (origins.indexOf('原文图') === 0 ? ' is-src' : '') + '" title="' + esc(a.imageNote || '') + '">' + esc(origins.join('+')) + '</span>'
+      : '';
     return '<article class="ia-card" data-item="' + esc(a.itemId) + '" data-piece="' + esc(a.pieceId) + '">' +
       cover +
       '<div class="ia-top">' +
         '<span class="ia-form f-' + esc(a.pieceId) + '">' + esc(a.formShort) + '</span>' +
+        originChip +
         '<span class="ia-num"><b>' + a.words + '</b> 字</span>' +
         '<span class="ia-num"><b>' + a.imageCount + '</b> 图</span>' +
         '<span class="dstate pass" title="自检分数，≥' + esc((state.issue || {}).passScore || 85) + ' 分才进发布池">自检 <b>' + (a.score != null ? a.score : '—') + '</b></span>' +
@@ -904,7 +910,9 @@
     var ttTarget = tt.target || 8;
     var st = document.getElementById('issueState');
     st.className = 'issue-state ' + (ok ? 'ok' : 'warn');
+    var dupN = (it.duplicates || []).length;
     st.innerHTML = '<b>公众号 ' + gzh.items.length + '/' + gzhTarget + ' · 头条 ' + tt.items.length + '/' + ttTarget + '</b>' +
+      (dupN ? '<span class="dup-chip">合并重复 ' + dupN + ' 篇</span>' : '') +
       '<span>' + (it.stale
         ? '最近一版 · ' + esc((gzh.items[0] || tt.items[0] || {}).date || '')
         : (it.generatedAt ? String(it.generatedAt).slice(11, 16) + ' 备齐' : '')) + '</span>';

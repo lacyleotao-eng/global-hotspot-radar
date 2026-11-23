@@ -1,0 +1,4 @@
+{"jobs":[
+ {"name":"shenzhou-24","prompt":"摄影：夜空下的航天发射塔架与白色火箭箭体，塔架灯光与地面泛光，远处地平线微亮，无人，冷调，画面中不要出现任何文字、国旗、logo、水印，16:9 横构图。","prefix":"assets/images/sz-ai","count":1},
+ {"name":"margin-ratio","prompt":"纪实摄影：证券营业部大厅里的行情大屏，屏幕上是虚化不可读的红绿数字与曲线，室内无人，冷调光线，画面中不要出现任何可读文字、logo、水印，16:9 横构图。","prefix":"assets/images/mgn-ai","count":1}
+]}

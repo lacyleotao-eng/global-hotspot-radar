@@ -1,0 +1,269 @@
+{
+  "updatedAt": "2026-11-23T03:29:56.555Z",
+  "items": {
+    "riemann": [
+      {
+        "file": "assets/source/riemann/raw-1.jpeg",
+        "bytes": 40356,
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/VDuyQKcOpoml0QiaM7LPR6kqs3olnWGgcoczNynZ7hMic43XtNib5Z7Tp6cQxicNd35lwlBXuIiap79oj1yEsrYu4u8gM8O42QWK3ibSWhsDG1KKI/0?wx_fmt=jpeg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a"
+      },
+      {
+        "file": "assets/source/riemann/raw-2.jpeg",
+        "bytes": 37576,
+        "url": "https://k.sinaimg.cn/n/spider20261123/724/w1024h500/20261123/d94c-420c34056035e73c32dc89535da58c5e.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "w": 700,
+        "h": 342,
+        "alt": "转自返朴，仅用于学术分享，如有侵权留言删除",
+        "from": "img",
+        "page": "https://finance.sina.cn/2026-11-23/detail-inizrtku2608007.d.html"
+      }
+    ],
+    "linjunyang": [
+      {
+        "file": "assets/source/linjunyang/raw-1.jpeg",
+        "bytes": 38272,
+        "url": "https://img.36krcdn.com/hsossms/20261122/v2_a385e4a343334688a9374e61e8ad8506@6119835_oswg574077oswg819oswg457_img_000?x-oss-process=image/format,jpg/interlace,1",
+        "w": 819,
+        "h": 457,
+        "alt": "",
+        "from": "img",
+        "page": "https://36kr.com/p/4080757699958660"
+      },
+      {
+        "file": "assets/source/linjunyang/raw-2.jpeg",
+        "bytes": 31808,
+        "url": "https://img.36krcdn.com/hsossms/20261123/v2_ad20911ff375477bacf0a64035c5c979@1200352198_oswg82784oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.36kr.com/p/4081573022552962"
+      }
+    ],
+    "neon": [],
+    "sspai": [
+      {
+        "file": "assets/source/sspai/raw-1.webp",
+        "bytes": 184030,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/d9a470dd016053f7712135e98648f7fc.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 2233,
+        "alt": "如何更快地找到画图素材",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-2.webp",
+        "bytes": 192002,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/8367c7263d0f477cd3432a576369d834.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 1941,
+        "alt": "Gemini 给我的选题建议",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-3.webp",
+        "bytes": 64156,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/2dd09ae587bed0e48e227f5e3cf633c2.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 842,
+        "alt": "知网检索词检索文献示例",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-4.webp",
+        "bytes": 84668,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/76805656e112886dba80f28ae6c2f941.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 747,
+        "alt": "AI 生成的图片样式",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-5.webp",
+        "bytes": 36370,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/ccbf4b1ad409608d7a3116792cd11140.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "右键选择“生成条目报告”",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-6.webp",
+        "bytes": 52624,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/a06cc2c38d1151856cd638271437fc49.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "全选文献报告并且复制",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-7.webp",
+        "bytes": 50510,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/078e3dd696ff9b7ad4329b46b22256f6.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "我画出来的图，每个元素都可编辑",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-8.webp",
+        "bytes": 36532,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/d771ede584158faa6fd1f44fa453f190.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "最终效果",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-9.webp",
+        "bytes": 184030,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/d9a470dd016053f7712135e98648f7fc.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 2233,
+        "alt": "如何更快地找到画图素材",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-10.webp",
+        "bytes": 192002,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/8367c7263d0f477cd3432a576369d834.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 1941,
+        "alt": "Gemini 给我的选题建议",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-11.webp",
+        "bytes": 64156,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/2dd09ae587bed0e48e227f5e3cf633c2.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 842,
+        "alt": "知网检索词检索文献示例",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-12.webp",
+        "bytes": 84668,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/76805656e112886dba80f28ae6c2f941.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 747,
+        "alt": "AI 生成的图片样式",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-13.webp",
+        "bytes": 36370,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/ccbf4b1ad409608d7a3116792cd11140.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "右键选择“生成条目报告”",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-14.webp",
+        "bytes": 52624,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/a06cc2c38d1151856cd638271437fc49.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "全选文献报告并且复制",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-15.webp",
+        "bytes": 50510,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/078e3dd696ff9b7ad4329b46b22256f6.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "我画出来的图，每个元素都可编辑",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      },
+      {
+        "file": "assets/source/sspai/raw-16.webp",
+        "bytes": 36532,
+        "url": "https://cdnfile.sspai.com/2026/11/01/article/d771ede584158faa6fd1f44fa453f190.jpeg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 646,
+        "alt": "最终效果",
+        "from": "img",
+        "page": "https://sspai.com/post/118153"
+      }
+    ],
+    "bughunter": [
+      {
+        "file": "assets/source/bughunter/raw-1.png",
+        "bytes": 612291,
+        "url": "https://repository-images.githubusercontent.com/1229774092/93703d75-077c-4a14-b580-e2374741fe3d",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
+        "file": "assets/source/bughunter/raw-2.jpeg",
+        "bytes": 132945,
+        "url": "https://img2024.cnblogs.com/blog/2750369/202611/2750369-20261122074505428-490773980.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.cnblogs.com/wflynn/p/23744129"
+      },
+      {
+        "file": "assets/source/bughunter/raw-3.jpeg",
+        "bytes": 60274,
+        "url": "https://www.appndo.com/videos/appndo-intro-v1.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://appndo.com/github-trending"
+      }
+    ],
+    "harvard": [
+      {
+        "file": "assets/source/harvard/raw-1.webp",
+        "bytes": 37346,
+        "url": "https://oscimg.oschina.net/oscnet/up-c6370fbc76e2af29a1dcf7968069c60f89c.png",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted"
+      },
+      {
+        "file": "assets/source/harvard/raw-2.webp",
+        "bytes": 37346,
+        "url": "https://oscimg.oschina.net/oscnet/up-c6370fbc76e2af29a1dcf7968069c60f89c.png",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted"
+      }
+    ],
+    "mockreel": [],
+    "smartkbs": [],
+    "bci": []
+  }
+}

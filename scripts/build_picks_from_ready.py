@@ -28,7 +28,10 @@ EMBED = ROOT / "data" / "picks-embed.js"
 
 SH = timezone(timedelta(hours=8))
 TARGETS = {"公众号": 6, "今日头条": 8}
-# 同一去向内，长文优先，短稿其次；同形态内按自检分排
+# 形态配额：公众号 3 文章 + 3 贴图；头条 4 文章 + 4 微头条
+QUOTA = {"公众号": [("gzh-article", 3), ("gzh-poster", 3)],
+         "今日头条": [("tt-article", 4), ("tt-micro", 4)]}
+# 同一个选题要产出多个形态时，保留哪个：长文优先（信息量更大），再按自检分
 FORM_ORDER = {"gzh-article": 0, "gzh-poster": 1, "tt-article": 0, "tt-micro": 1}
 FORM_LABEL = {"gzh-article": "公众号文章", "gzh-poster": "公众号贴图",
               "tt-article": "头条文章", "tt-micro": "微头条"}
@@ -111,17 +114,54 @@ def main() -> None:
                 "docFile": path.name,
             })
 
-    groups = {}
-    caps = {}
+    # ---- 一条情报只能出一篇稿 ----
+    # 同一个 sourceItemId 出了多种形态（文章 + 贴图 + 微头条…）时，只留一篇，
+    # 其余的记进 duplicates，由页面显示"因重复被合并"。发布人拿到的 14 篇必须是 14 件事。
+    by_story: dict[str, list[dict]] = {}
+    for target in rows:
+        for r in rows[target]:
+            by_story.setdefault(r["itemId"] or r["docFile"], []).append(r)
+
+    best_of: dict[str, dict] = {}
+    duplicates: list[dict] = []
+    for story, candidates in by_story.items():
+        candidates.sort(key=lambda r: (FORM_ORDER.get(r["pieceId"], 9), -(r["score"] or 0)))
+        best_of[story] = candidates[0]
+        for dup in candidates[1:]:
+            duplicates.append({
+                "itemId": story,
+                "keptPiece": candidates[0]["pieceId"],
+                "pieceId": dup["pieceId"],
+                "form": dup["form"],
+                "title": dup["lead"].get("headline"),
+                "score": dup["score"],
+                "reason": "同一选题已有一篇，不重复出稿",
+            })
+
+    # ---- 按形态配额挑，每个选题只用一次 ----
+    groups: dict[str, list[dict]] = {}
+    caps: dict[str, int] = {}
+    used: set[str] = set()
     for target, cap in TARGETS.items():
-        group = rows[target]
-        group.sort(key=lambda r: (FORM_ORDER.get(r["pieceId"], 9), -(r["score"] or 0)))
-        group = group[:cap]
-        for i, r in enumerate(group, 1):
+        quota = QUOTA[target]
+        pool = [r for r in best_of.values() if r["target"] == target]
+        chosen: list[dict] = []
+        for fid, limit in quota:
+            bucket = sorted([r for r in pool if r["pieceId"] == fid and r["itemId"] not in used],
+                            key=lambda r: -(r["score"] or 0))
+            for r in bucket[:limit]:
+                used.add(r["itemId"])
+                chosen.append(r)
+        if len(chosen) < cap:
+            rest = sorted([r for r in pool if r["itemId"] not in used], key=lambda r: -(r["score"] or 0))
+            for r in rest[: cap - len(chosen)]:
+                used.add(r["itemId"])
+                chosen.append(r)
+        chosen.sort(key=lambda r: (FORM_ORDER.get(r["pieceId"], 9), -(r["score"] or 0)))
+        for i, r in enumerate(chosen, 1):
             r["rank"] = i
-            # 选题分沿用自检分，明细不再重复展示（卡片顶部已标 92 分）
             r["breakdown"] = []
-        groups[target] = group
+        groups[target] = chosen
         caps[target] = cap
 
     out = {
@@ -133,11 +173,17 @@ def main() -> None:
         "topPerTarget": caps,
         "weights": {},
         "groups": groups,
+        "duplicates": duplicates,
+        "rule": "一条情报只出一篇稿：同一选题不跨形态、不跨平台重复",
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     EMBED.write_text("window.__PICKS__=" + json.dumps(out, ensure_ascii=False) + ";\n", encoding="utf-8")
 
-    print(f"[picks] {date} 以成品稿为准生成选题池")
+    print(f"[picks] {date} 以成品稿为准生成选题池（一选题一篇）")
+    if duplicates:
+        print(f"[dedupe] 合并掉 {len(duplicates)} 篇重复稿：")
+        for d in duplicates:
+            print(f"  - {d['form']}《{str(d['title'])[:28]}》与 {d['keptPiece']} 同源")
     for target, group in groups.items():
         print(f"[{target} {len(group)}/{caps[target]}]")
         for r in group:

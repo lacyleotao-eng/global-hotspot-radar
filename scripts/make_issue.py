@@ -54,7 +54,7 @@ FORM_SHORT = {
 TARGETS = {"公众号": 6, "今日头条": 8}
 # 每个去向的形态配额：总数满即停，各形态有上限，保证「文章 + 图文短稿」混搭
 QUOTA = {
-    "公众号": [("gzh-article", 4), ("gzh-poster", 3)],
+    "公众号": [("gzh-article", 3), ("gzh-poster", 3)],
     "今日头条": [("tt-article", 4), ("tt-micro", 4)],
 }
 
@@ -154,7 +154,8 @@ def asset_of(doc: dict, piece: dict, rank: int, audit: dict) -> dict:
         "imageCount": len(piece.get("images") or []),
         "verification": doc.get("verification") or "",
         "verificationNote": doc.get("verificationNote") or "",
-        "imageNote": doc.get("imageNote") or "",
+        "imageNote": piece.get("imageNote") or doc.get("imageNote") or "",
+        "imageOrigins": sorted({im.get("origin") for im in (piece.get("images") or []) if im.get("origin")}),
         "sourceTitle": doc.get("sourceTitle") or "",
         "sourceUrl": doc.get("sourceUrl") or "",
         "date": doc.get("date") or "",
@@ -239,6 +240,19 @@ def main() -> None:
             print(f"[issue] 有 {len(outside)} 篇过了自检但不在今日选题里，不进发布池")
         passed_assets = [a for a in passed_assets if (a["itemId"], a["pieceId"]) in allowed]
 
+    # 一条情报只出一篇稿：同一 sourceItemId 在池里出现第二次就是重复，直接挡掉
+    seen_story: set[str] = set()
+    deduped: list[dict] = []
+    dup_assets: list[dict] = []
+    for a in sorted(passed_assets, key=lambda x: -(x["score"] or 0)):
+        key = a["itemId"] or a["docFile"]
+        if key in seen_story:
+            dup_assets.append(a)
+            continue
+        seen_story.add(key)
+        deduped.append(a)
+    passed_assets = deduped
+
     pools = {}
     for target, quota in QUOTA.items():
         cap = TARGETS[target]
@@ -273,6 +287,8 @@ def main() -> None:
             note_parts.append(f"{t}自检淘汰 {v['rejected']} 篇")
         if v["pending"]:
             note_parts.append(f"{t}{v['pending']} 篇还没跑自检")
+    if dup_assets:
+        note_parts.append(f"{len(dup_assets)} 篇与同选题的稿件重复，已按「一选题一篇」挡在池外")
     if not audit:
         note_parts.append("没有自检数据，发布池为空——先跑 scripts/audit_ready.py")
 
@@ -284,6 +300,7 @@ def main() -> None:
         "drafted": len(all_assets),
         "passed": len(passed_assets),
         "rejected": len(rejected),
+        "duplicates": len(dup_assets),
         "pending": len(pending),
         "publishable": sum(v["available"] for v in pools.values()),
     }
@@ -314,6 +331,11 @@ def main() -> None:
         "pending": [
             {"title": a["title"], "formLabel": a["formLabel"], "target": a["target"], "docFile": a["docFile"]}
             for a in pending
+        ],
+        "duplicates": [
+            {"title": a["title"], "formLabel": a["formLabel"], "target": a["target"],
+             "score": a["score"], "docFile": a["docFile"], "pieceId": a["pieceId"]}
+            for a in dup_assets
         ],
         "note": "；".join(note_parts),
     }

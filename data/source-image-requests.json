@@ -1,0 +1,71 @@
+{
+  "jobs": [
+    {
+      "slug": "riemann",
+      "urls": [
+        "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
+        "https://finance.sina.cn/2026-11-23/detail-inizrtku2608007.d.html",
+        "https://www.toutiao.com/a7711136404964688434"
+      ]
+    },
+    {
+      "slug": "linjunyang",
+      "urls": [
+        "https://36kr.com/p/4080757699958660",
+        "https://www.36kr.com/p/4081573022552962"
+      ]
+    },
+    {
+      "slug": "neon",
+      "urls": [
+        "https://www.v2ex.com/t/1258877",
+        "https://www.v2ex.com/t/1258877"
+      ]
+    },
+    {
+      "slug": "sspai",
+      "urls": [
+        "https://sspai.com/post/118153",
+        "https://sspai.com/post/118153"
+      ]
+    },
+    {
+      "slug": "bughunter",
+      "urls": [
+        "https://github.com/elementalsouls/Claude-BugHunter",
+        "https://www.cnblogs.com/wflynn/p/23744129",
+        "https://appndo.com/github-trending"
+      ]
+    },
+    {
+      "slug": "harvard",
+      "urls": [
+        "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
+        "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted"
+      ]
+    },
+    {
+      "slug": "mockreel",
+      "urls": [
+        "https://www.producthunt.com/products/mockreel",
+        "https://www.producthunt.com/products/mockreel",
+        "https://www.producthunt.com/"
+      ]
+    },
+    {
+      "slug": "smartkbs",
+      "urls": [
+        "https://gitee.com/youufis/smartkbs",
+        "https://gitee.com/youufis/smartkbs",
+        "https://gitee.com/explore"
+      ]
+    },
+    {
+      "slug": "bci",
+      "urls": [
+        "https://www.163.com/dy/article/LCB6R7UE0511B8LM.html",
+        "https://www.163.com/dy/article/LCB6R7UE0511B8LM.html"
+      ]
+    }
+  ]
+}

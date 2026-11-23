@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "date": "2026-11-23",
+  "slug": "mockreel",
+  "sourceItemId": "e554f1f8a3d5dd7e",
+  "sourceTitle": "Product Hunt 今日新品：Mockreel 主打免登录的 3D 手机演示录屏",
+  "sourceUrl": "https://www.producthunt.com/products/mockreel",
+  "sourcePlatform": "Product Hunt",
+  "verification": "部分核实",
+  "verificationNote": "“免费、免注册”为产品方自述标语，未实测。产品 URL 取自 Product Hunt 当日公开榜单页；直接命令行请求该链接可能被反爬返回 403，浏览器可正常打开。待核问题：免费额度与导出水印规则是什么？是否需要授权才能商用？",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "tt-micro",
+      "target": "今日头条",
+      "form": "微头条",
+      "badge": "新产品",
+      "title": "录屏套进 3D 手机还免注册：Mockreel 上了 Product Hunt，能活多久？",
+      "digest": "做 App 演示的人有福了：把屏幕录制塞进 3D 手机样机，免费、免登录。",
+      "images": [
+        {
+          "src": "assets/images/mockreel-ai-1.jpeg",
+          "caption": "AI 生成示意图：与选题相关的场景（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "Product Hunt 今天的新品里有个小工具叫 Mockreel，标语写得很直白：your screen recording, but in a 3D phone. free, no signup。"
+        },
+        {
+          "type": "para",
+          "text": "翻过来就是：把你的屏幕录制套进一台 3D 手机样机里，免费，不用注册。"
+        },
+        {
+          "type": "para",
+          "text": "这类需求一直存在。做 App、做小程序、写产品文档的人，都需要一段「手机里正在跑」的画面，过去要么录真机，要么用模板拼，费时。"
+        },
+        {
+          "type": "para",
+          "text": "它解决的是最后一公里：素材有了，缺一个像样的壳。"
+        },
+        {
+          "type": "para",
+          "text": "同批上榜的还有 TeaserKit、Creativ Studio 4.0 等产品。Product Hunt 页面注明当日最初 4 小时隐藏 upvote 数，本次没有抓到具体票数，所以不给热度数字。"
+        },
+        {
+          "type": "para",
+          "text": "值不值得试：如果你每月要出几条演示视频，这个能省时间；如果一年做两次，用现成模板也够。"
+        },
+        {
+          "type": "para",
+          "text": "免费加免注册这个组合，本身就是定位：它不打算做团队协作，也不打算做资产管理，只想吃「临时要做一段演示」这一小块需求。"
+        },
+        {
+          "type": "para",
+          "text": "这类工具的寿命通常取决于两件事：样机模型够不够多、导出格式够不够全。如果只支持一种手机外观，用两次就腻了。"
+        },
+        {
+          "type": "note",
+          "text": "事实来自 Product Hunt 产品页：标语、免费免注册、当日隐藏投票数均照引。未实测产品功能。"
+        }
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
+    }
+  ]
+}

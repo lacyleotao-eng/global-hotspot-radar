@@ -7,7 +7,7 @@
   "sourceUrl": "http://mp.weixin.qq.com/s?__biz=MzIwODM3MzAwNg==&mid=2247554815&idx=3&sn=09d8f2257ab5de73e175cc19b1a0c365",
   "verification": "已核实",
   "verificationNote": "公众号（酒泉市政府驻上海联络处微发布）标注信息来源为新华社、大漠问天，文本与中国网、天津日报数字报同篇通稿一致。发射具体时间与乘组名单均未公布，不可推测。",
-  "imageNote": "本日豆包图像生成免费额度已用完，该篇暂用自制信息卡兜底，未进入今日发布池；额度重置后补生成配图再进池。事实来自新华社通稿。",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -19,8 +19,9 @@
       "digest": "",
       "images": [
         {
-          "src": "assets/images/sz24-1.jpeg",
-          "caption": "自制信息卡：神舟二十四号完成最后一次全区合练"
+          "src": "assets/images/sz-ai-1.png",
+          "caption": "AI 生成示意图：夜空下的航天发射塔架与白色火箭箭体（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
         }
       ],
       "blocks": [
@@ -52,7 +53,8 @@
           "type": "note",
           "text": "事实来源：新华社、大漠问天通稿，经多家媒体交叉核对。发射时间与乘组名单均未公布。"
         }
-      ]
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
     }
   ]
 }

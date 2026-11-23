@@ -1,0 +1,91 @@
+{
+  "updatedAt": "2026-11-23T03:44:46.577Z",
+  "items": {
+    "riemann": [
+      {
+        "src": "assets/images/riemann-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/riemann-ai-2.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/riemann-ai-3.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/riemann-ai-4.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "linjunyang": [
+      {
+        "src": "assets/images/linjunyang-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/linjunyang-ai-2.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/linjunyang-c-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/linjunyang-c-2.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      },
+      {
+        "src": "assets/images/linjunyang-c-3.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "mockreel": [
+      {
+        "src": "assets/images/mockreel-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "smartkbs": [
+      {
+        "src": "assets/images/smartkbs-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "bci": [
+      {
+        "src": "assets/images/bci-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "harvard-review": [
+      {
+        "src": "assets/images/harvard-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "model-split": [
+      {
+        "src": "assets/images/neon-ai-1.jpeg",
+        "prompt": "纪实摄影：与选题相关的场景，画面中没有任何文字与 logo，16:9 横构图"
+      }
+    ],
+    "shenzhou-24": [
+      {
+        "src": "assets/images/sz-ai-1.png",
+        "prompt": "摄影：夜空下的航天发射塔架与白色火箭箭体，塔架灯光与地面泛光，远处地平线微亮，无人，冷调，画面中不要出现任何文字、国旗、logo、水印，16:9 横构图。"
+      }
+    ],
+    "margin-ratio": [
+      {
+        "src": "assets/images/mgn-ai-1.png",
+        "prompt": "纪实摄影：证券营业部大厅里的行情大屏，屏幕上是虚化不可读的红绿数字与曲线，室内无人，冷调光线，画面中不要出现任何可读文字、logo、水印，16:9 横构图。"
+      },
+      {
+        "src": "assets/images/mgn-ai-1.jpeg",
+        "prompt": "证券营业部大厅行情大屏，屏幕虚化不可读，室内无人"
+      }
+    ]
+  }
+}
