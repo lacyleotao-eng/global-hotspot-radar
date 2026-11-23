@@ -7,7 +7,7 @@
   "sourceUrl": "https://www.ithome.com/1/030/713.htm",
   "verification": "部分核实",
   "verificationNote": "事实主线来自 IT之家对英国《金融时报》报道的转述，涨幅 25%–45% 为知情人士口径，四家厂商均未公开确认；未取得《金融时报》原文与爱尔兰法院文书，xAI 诉戴尔案仍在审理，本文不对胜负作判断。",
-  "imageNote": "配图为自制信息卡，依据公开报道整理，不是新闻现场照片，也不代表厂商官方口径。",
+  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
   "batch": "morning",
   "pieces": [
     {
@@ -19,28 +19,24 @@
       "digest": "戴尔、HPE、联想、超微被曝在交付前上调 AI 服务器价格，涨幅最高 45%。比涨价本身更值得看的是：涨的主要是内存，不是 GPU。",
       "images": [
         {
-          "src": "assets/images/aset-1.jpeg",
-          "caption": "自制信息卡：签约后还能涨 45%，这轮 AI 服务器涨价涨在哪"
+          "src": "assets/images/ais-a-1.jpeg",
+          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
         },
         {
-          "src": "assets/images/aset-2.jpeg",
-          "caption": "自制信息卡：知情人士给出的涨幅上限 45%"
+          "src": "assets/images/ais-a-2.jpeg",
+          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
         },
         {
-          "src": "assets/images/aset-3.jpeg",
-          "caption": "自制信息卡：2024 年初以来内存成本涨超 400%"
+          "src": "assets/images/ais-a-3.jpeg",
+          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
         },
         {
-          "src": "assets/images/aset-4.jpeg",
-          "caption": "自制信息卡：一笔涨价要经过的三道门"
+          "src": "assets/images/ais-b-1.jpeg",
+          "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
         },
         {
-          "src": "assets/images/aset-5.jpeg",
-          "caption": "自制信息卡：目前能确认的只有这些"
-        },
-        {
-          "src": "assets/images/aset-7.jpeg",
-          "caption": "自制信息卡：采购这类硬件，签约时争取三件事"
+          "src": "assets/images/ais-b-2.jpeg",
+          "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
         }
       ],
       "blocks": [
@@ -164,36 +160,28 @@
       "digest": "一条消息、三个问题：涨什么、凭什么、谁买单。",
       "images": [
         {
-          "src": "assets/images/aset-1.jpeg",
-          "caption": "自制信息卡：签约后还能涨 45%，这轮 AI 服务器涨价涨在哪"
+          "src": "assets/images/ais-a-1.jpeg",
+          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
         },
         {
-          "src": "assets/images/aset-2.jpeg",
-          "caption": "自制信息卡：知情人士给出的涨幅上限 45%"
+          "src": "assets/images/ais-a-2.jpeg",
+          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
         },
         {
-          "src": "assets/images/aset-3.jpeg",
-          "caption": "自制信息卡：2024 年初以来内存成本涨超 400%"
+          "src": "assets/images/ais-a-3.jpeg",
+          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
         },
         {
-          "src": "assets/images/aset-4.jpeg",
-          "caption": "自制信息卡：一笔涨价要经过的三道门"
+          "src": "assets/images/ais-b-1.jpeg",
+          "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
         },
         {
-          "src": "assets/images/aset-5.jpeg",
-          "caption": "自制信息卡：目前能确认的只有这些"
+          "src": "assets/images/ais-b-2.jpeg",
+          "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
         },
         {
-          "src": "assets/images/aset-6.jpeg",
-          "caption": "自制信息卡：两种涨价，法律性质完全不同"
-        },
-        {
-          "src": "assets/images/aset-7.jpeg",
-          "caption": "自制信息卡：采购这类硬件，签约时争取三件事"
-        },
-        {
-          "src": "assets/images/aset-8.jpeg",
-          "caption": "自制信息卡：「固定价」在长周期合同里只是当时那个价"
+          "src": "assets/images/ais-b-3.jpeg",
+          "caption": "AI 生成示意图：服务器内部结构与冷白光源"
         }
       ],
       "blocks": [
@@ -268,12 +256,16 @@
       "digest": "戴尔、HPE 等厂商被曝交付前提价，最高 45%。争议的核心不是涨多少，而是「固定价」到底固定了什么。",
       "images": [
         {
-          "src": "assets/images/aset-1.jpeg",
-          "caption": "自制信息卡：签约后还能涨 45%，这轮 AI 服务器涨价涨在哪"
+          "src": "assets/images/ais-a-1.jpeg",
+          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
         },
         {
-          "src": "assets/images/aset-3.jpeg",
-          "caption": "自制信息卡：2024 年初以来内存成本涨超 400%"
+          "src": "assets/images/ais-a-2.jpeg",
+          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
+        },
+        {
+          "src": "assets/images/ais-a-3.jpeg",
+          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
         }
       ],
       "blocks": [
@@ -385,8 +377,8 @@
       "digest": "",
       "images": [
         {
-          "src": "assets/images/aset-1.jpeg",
-          "caption": "自制信息卡：签约后还能涨 45%，这轮 AI 服务器涨价涨在哪"
+          "src": "assets/images/ais-a-1.jpeg",
+          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
         }
       ],
       "blocks": [

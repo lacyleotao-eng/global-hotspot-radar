@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球热点情报站 · 每日热点 / 资源 / 需求聚合</title>
 <meta name="description" content="每天汇总国内外热点、新闻、帖子、资源、需求与想法，附来源链接、核实状态、评价与引用溯源。">
-<link rel="stylesheet" href="styles.css?v=1124e">
+<link rel="stylesheet" href="styles.css?v=1123a">
 </head>
 <body>
 <header class="topbar">
@@ -35,25 +35,69 @@
 </section>
 
 <main class="wrap">
-  <div class="viewtabs" id="viewTabs">
-    <button class="vtab on" data-view="issue">今日发布</button>
-    <button class="vtab" data-view="benchmark">爆款对标</button>
-    <button class="vtab" data-view="audit">达标自检</button>
-    <button class="vtab" data-view="picks">今日选题 TOP3</button>
-    <button class="vtab" data-view="feed">情报流</button>
-    <button class="vtab" data-view="leads">选题线索 <span id="leadTabCount">0</span></button>
-    <span class="viewhint" id="viewHint">每日按时效、热度、核实度、优先级打分排序的成稿候选</span>
+  <div class="pipe" id="viewTabs">
+    <div class="pipe-head">
+      <span class="pipe-title">生产线 · 每天走完这五步</span>
+      <span class="pipe-note">数字是今天的真实条数，点任一环节可跳转</span>
+    </div>
+    <div class="pipe-row">
+      <button class="pnode" data-view="feed">
+        <span class="pn-num">1</span>
+        <b>情报流</b>
+        <em id="pnIntel">—</em>
+        <small>全网采集的原始情报</small>
+      </button>
+      <span class="pipe-arrow" aria-hidden="true">›</span>
+      <button class="pnode" data-view="leads">
+        <span class="pn-num">2</span>
+        <b>选题线索</b>
+        <em id="pnLeads">—</em>
+        <small>情报里能写的角度</small>
+      </button>
+      <span class="pipe-arrow" aria-hidden="true">›</span>
+      <button class="pnode" data-view="picks">
+        <span class="pn-num">3</span>
+        <b>今日选题</b>
+        <em id="pnPicks">—</em>
+        <small>公众号 6 · 头条 8</small>
+      </button>
+      <span class="pipe-arrow" aria-hidden="true">›</span>
+      <button class="pnode" data-view="audit">
+        <span class="pn-num">4</span>
+        <b>达标自检</b>
+        <em id="pnAudit">—</em>
+        <small>对标爆款，不过就淘汰</small>
+      </button>
+      <span class="pipe-arrow" aria-hidden="true">›</span>
+      <button class="pnode" data-view="issue">
+        <span class="pn-num">5</span>
+        <b>今日发布</b>
+        <em id="pnIssue">—</em>
+        <small>复制全文与图片就能发</small>
+      </button>
+    </div>
+    <div class="pipe-ref">
+      <span class="pipe-ref-label">参照系 · 不参与生产，只当标尺</span>
+      <button class="pnode ref" data-view="benchmark">
+        <span class="pn-num">◎</span>
+        <b>爆款对标</b>
+        <em id="pnViral">—</em>
+        <small>每天采 10 篇真爆款（公众号 5 · 头条 5）</small>
+      </button>
+    </div>
   </div>
+  <p class="viewhint" id="viewHint">今日发布 = 通过自检的最终成品，直接复制就能发</p>
 
   <section class="issuepanel" id="issuePanel">
     <div class="issue-head">
       <div>
         <h2>今日发布 · <span id="issueDate">—</span></h2>
-        <p class="issue-sub">公众号备 <b>3 篇</b>、头条备 <b>6 篇</b>，<b>几点发、发哪篇都由你定</b>。每篇的标题、正文、配图都已备好，复制即发，不用再找素材或做图。</p>
+        <p class="issue-sub">这里只放<b>通过自检（≥85 分）</b>的成品：公众号备 <b>6 篇</b>（文章 + 贴图）、头条备 <b>8 篇</b>（文章 + 微头条）。<b>几点发、发哪篇都由你定</b>，标题、正文、配图都已备好，复制即发。</p>
       </div>
       <div class="issue-state" id="issueState">—</div>
     </div>
     <div class="issue-callout" id="issueCallout" hidden></div>
+    <div class="issue-rejected" id="issueRejected" hidden></div>
     <div class="issue-list" id="issueList"></div>
     <div class="empty" id="issueEmpty" hidden>今天的发布包还没生成，稍后再看。</div>
   </section>
@@ -61,8 +105,8 @@
   <section class="auditpanel" id="auditPanel" hidden>
     <div class="audit-head">
       <div>
-        <h2>达标自检 · 每篇成品稿离爆款还差什么</h2>
-        <p>用真实爆款的中位数当标尺，对每篇成品稿按 <b>字数 25 / 配图 25 / 结构 20 / 标题 15 / 开头钩子 15</b> 五项打分。分数只衡量「形态是否够打」，不代表内容质量；基准样本不足 5 条的形态会标注仅供参考。</p>
+        <h2>达标自检 · 跟爆款比，够不够打</h2>
+        <p>这是<b>闸门</b>：每篇成品稿按 <b>字数 25 / 配图 25 / 结构 20 / 标题 15 / 开头钩子 15</b> 打分，标尺来自「爆款对标」里真实爆款的中位数。<b>≥85 分才能进今日发布，＜85 分直接淘汰</b>，不会出现在发布池里。分数只衡量「形态够不够打」，不代表内容对错。</p>
       </div>
       <div class="audit-updated" id="auditUpdated">—</div>
     </div>
@@ -114,7 +158,7 @@
       <div>
         <div class="picks-date" id="picksDate">—</div>
         <p class="picks-window" id="picksWindow"></p>
-        <p class="picks-sub">按四维评分自动排序，每个去向取前 3 条。分数只作参考，发布前必须人工核实、改写、配图。</p>
+        <p class="picks-sub">从打分过的线索里选出的今日选题池：<b>公众号 6 个 + 今日头条 8 个</b>。每个选题下面挂着已出的稿件与自检分，没过的会标红。</p>
       </div>
       <div class="picks-stat" id="picksStat"></div>
     </div>
@@ -206,6 +250,6 @@
 <script src="data/ready-embed.js"></script>
 <script src="data/viral-embed.js"></script>
 <script src="data/audit-embed.js"></script>
-<script src="app.js?v=1124e"></script>
+<script src="app.js?v=1123a"></script>
 </body>
 </html>

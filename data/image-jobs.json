@@ -1,39 +1,188 @@
 {
   "results": [
     {
-      "name": "down-jacket-poster-5",
-      "out": "assets/images/down-jacket-poster-5.jpeg",
-      "url": null,
-      "ok": false,
-      "error": "120 秒内未获得新生成图链接"
+      "name": "ais-dc",
+      "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
+      "outs": [
+        "assets/images/ais-a-1.jpeg",
+        "assets/images/ais-a-2.jpeg",
+        "assets/images/ais-a-3.jpeg"
+      ],
+      "urls": [
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/da8bff7e3e9344f08953490db77ed909.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNFFnM0FRTlNRaDE=.png?lk3s=8e244e95&rcl=20261123101750E22FA451F32746037F58&rrcfp=d623987c&x-expires=2111624270&x-signature=EnQpM%2BLk%2FmKtPqXpiJfktLWlnuM%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/78020a23712f4a7385e364baa92aee40.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNFFnM0FRTlNRaDE=.png?lk3s=8e244e95&rcl=20261123101750E22FA451F32746037F58&rrcfp=d623987c&x-expires=2111624270&x-signature=psiygzeNmnXxAMLNlyUdSMfLMb0%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/6dbdb6eb192d4f45b16bd6d1d3df2530.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNFFnM0FRTlNRaDE=.png?lk3s=8e244e95&rcl=20261123101750E22FA451F32746037F58&rrcfp=d623987c&x-expires=2111624270&x-signature=xMxk10zLVydDzWQubLvTIkq82YI%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        4133576,
+        3571748,
+        3299014
+      ]
     },
     {
-      "name": "minimind-article-3",
-      "out": "assets/images/minimind-article-3.jpeg",
-      "url": null,
-      "ok": false,
-      "error": "120 秒内未获得新生成图链接"
+      "name": "ais-gpu",
+      "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
+      "outs": [
+        "assets/images/ais-b-1.jpeg",
+        "assets/images/ais-b-2.jpeg",
+        "assets/images/ais-b-3.jpeg"
+      ],
+      "urls": [
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/be590bd9224f446e8402d0a7c4b55fd4.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNFFnM0FRTlNRaDE=.png?lk3s=8e244e95&rcl=20261123101750E22FA451F32746037F58&rrcfp=d623987c&x-expires=2111624270&x-signature=xaYoQbByqkHsMJqqA%2FGsEBpJndQ%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/8e7aa0b93828448e9bdc69065d59214d.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExMUZiTm0zOHM3T3U=.png?lk3s=8e244e95&rcl=20261123101922C3D0759F0A5897BB440C&rrcfp=d623987c&x-expires=2111624362&x-signature=qgk22Blx%2Fcl0PDQ4KYJsOUpeRkI%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/ba1e36d3c06a4acea4ee8e1e77f86280.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExMUZiTm0zOHM3T3U=.png?lk3s=8e244e95&rcl=20261123101922C3D0759F0A5897BB440C&rrcfp=d623987c&x-expires=2111624362&x-signature=Gz9wn2%2FnN%2BVhSyrvgv5%2BrMuz5%2FE%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        3882636,
+        6067718,
+        4320914
+      ]
     },
     {
-      "name": "minimind-article-4",
-      "out": "assets/images/minimind-article-4.jpeg",
-      "url": null,
-      "ok": false,
-      "error": "120 秒内未获得新生成图链接"
+      "name": "mgn-hall",
+      "prompt": "纪实摄影：中国城市证券营业部大厅，墙上悬挂的大屏幕行情板发出红绿光，屏幕内容虚化不可辨，室内无人，冷调光线，画面中没有任何可读文字，16:9 横构图",
+      "outs": [
+        "assets/images/mgn-a-1.jpeg",
+        "assets/images/mgn-a-2.jpeg",
+        "assets/images/mgn-a-3.jpeg"
+      ],
+      "urls": [
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c7a002082480425b98a0b81572185722.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExMUZiTm0zOHM3T3U=.png?lk3s=8e244e95&rcl=20261123101922C3D0759F0A5897BB440C&rrcfp=d623987c&x-expires=2111624362&x-signature=MPnhV4I9SNLxlDabFMe8qzs5r3A%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/5c5d7be8889e428e8c187302299ff61e.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQmtjMEFVYmpZdUY=.png?lk3s=8e244e95&rcl=2026112310212414049F21DBC814EACD90&rrcfp=d623987c&x-expires=2111624484&x-signature=OjlKCVcfaKGpeYgQES0kf%2BA3gYQ%3D",
+        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/5191af8fa6b74bf98da878fb5c41238d.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQmtjMEFVYmpZdUY=.png?lk3s=8e244e95&rcl=2026112310212414049F21DBC814EACD90&rrcfp=d623987c&x-expires=2111624484&x-signature=5N2ufQyQ8kwjO%2BSeF%2FjcFlEmfhg%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        3908337,
+        4283202,
+        3843984
+      ]
     },
     {
-      "name": "minimind-article-5",
-      "out": "assets/images/minimind-article-5.jpeg",
-      "url": null,
-      "ok": false,
-      "error": "120 秒内未获得新生成图链接"
+      "name": "mgn-city",
+      "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
+      "outs": [
+        "assets/images/mgn-b-1.jpeg",
+        "assets/images/mgn-b-2.jpeg",
+        "assets/images/mgn-b-3.jpeg"
+      ],
+      "urls": [
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/d3a3b46e0976431cb498cf630163e375.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQmtjMEFVYmpZdUY=.png?lk3s=8e244e95&rcl=2026112310212414049F21DBC814EACD90&rrcfp=d623987c&x-expires=2111624484&x-signature=mRV3A4KRiPZquvTy4GNMo9cMdIs%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/38d4b3ccbc5e4a86b551904132d2ec7d.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRE9SZVBaYmtrQVI=.png?lk3s=8e244e95&rcl=2026112310220687E0964EAAA273CAB17A&rrcfp=d623987c&x-expires=2111624527&x-signature=ob1iRK5RFanhXOKfmdTi4WM5hEE%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/9b27e2384c974dccb80a35dd7154fe86.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRE9SZVBaYmtrQVI=.png?lk3s=8e244e95&rcl=2026112310220687E0964EAAA273CAB17A&rrcfp=d623987c&x-expires=2111624527&x-signature=RSmM6%2BUCXZrMTILrpiHX90FDHTE%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        4356942,
+        6211481,
+        5216390
+      ]
     },
     {
-      "name": "minimind-article-6",
-      "out": "assets/images/minimind-article-6.jpeg",
-      "url": null,
+      "name": "orc-orchard",
+      "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
+      "outs": [
+        "assets/images/orc-a-1.jpeg",
+        "assets/images/orc-a-2.jpeg",
+        "assets/images/orc-a-3.jpeg"
+      ],
+      "urls": [
+        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/4504ba3747864c259c3bc4811f7dcc1d.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRE9SZVBaYmtrQVI=.png?lk3s=8e244e95&rcl=2026112310220687E0964EAAA273CAB17A&rrcfp=d623987c&x-expires=2111624527&x-signature=BE1FNJpBD%2Bv11dde97wR3Kif%2F5U%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/e50e90e818674d42b7a7fa4a3578d468.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODBnNlZUNXVSZFU=.png?lk3s=8e244e95&rcl=20261123102241E462FF2EE0B2679519F8&rrcfp=d623987c&x-expires=2111624561&x-signature=0CFHdB7%2BOAiooJeYTbUwIsAhmOk%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/8148193953484248bd80168d1c6cf887.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODBnNlZUNXVSZFU=.png?lk3s=8e244e95&rcl=20261123102241E462FF2EE0B2679519F8&rrcfp=d623987c&x-expires=2111624561&x-signature=oxTN0pertEFIYMNDOZh4Vy9tLdo%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        5128708,
+        6803541,
+        6376989
+      ]
+    },
+    {
+      "name": "orc-live",
+      "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
+      "outs": [
+        "assets/images/orc-b-1.jpeg",
+        "assets/images/orc-b-2.jpeg",
+        "assets/images/orc-b-3.jpeg"
+      ],
+      "urls": [
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/be4db9da223845f396dd953ef94b8434.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODBnNlZUNXVSZFU=.png?lk3s=8e244e95&rcl=20261123102241E462FF2EE0B2679519F8&rrcfp=d623987c&x-expires=2111624561&x-signature=vf2pd422ThOF0%2Fil97XjzN4dteg%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/95c4b405456b4e2f870253093513fe1a.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExN202N3N0dFVBaVI=.png?lk3s=8e244e95&rcl=20261123102329CC03096DA56ABBBFAE1F&rrcfp=d623987c&x-expires=2111624609&x-signature=Qh%2BGub4eizqe9qBvFWzvk3Hc74Q%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/4e886c9d45aa4b8d99e5bb68068be3b5.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExN202N3N0dFVBaVI=.png?lk3s=8e244e95&rcl=20261123102329CC03096DA56ABBBFAE1F&rrcfp=d623987c&x-expires=2111624609&x-signature=MYaeUFgSp0b2HDxqy91QPwETvx0%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        5939982,
+        5676093,
+        6838245
+      ]
+    },
+    {
+      "name": "prf-garage",
+      "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
+      "outs": [
+        "assets/images/prf-a-1.jpeg",
+        "assets/images/prf-a-2.jpeg",
+        "assets/images/prf-a-3.jpeg"
+      ],
+      "urls": [
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/6efa6d6b83084782ab9e9876e064b267.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExN202N3N0dFVBaVI=.png?lk3s=8e244e95&rcl=20261123102329CC03096DA56ABBBFAE1F&rrcfp=d623987c&x-expires=2111624609&x-signature=A5LkK5p8WRP4om14ul5gFf3R7CU%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/793a590ca1f4411c90ad5579a429bf1c.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNEVYWVNtM1RQV0Y=.png?lk3s=8e244e95&rcl=2026112310240533C4F6BDDEF61D72B869&rrcfp=d623987c&x-expires=2111624645&x-signature=5yHu%2Bf3TUwVJ7LtmIVx33YtRxAY%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/203ba255893a431097079133a262a4b6.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNEVYWVNtM1RQV0Y=.png?lk3s=8e244e95&rcl=2026112310240533C4F6BDDEF61D72B869&rrcfp=d623987c&x-expires=2111624645&x-signature=p%2BU3NlVpK%2F2bcUp2InzIXmNbKTg%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        7058106,
+        3680181,
+        3356257
+      ]
+    },
+    {
+      "name": "prf-yard",
+      "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
+      "outs": [
+        "assets/images/prf-b-1.jpeg",
+        "assets/images/prf-b-2.jpeg",
+        "assets/images/prf-b-3.jpeg"
+      ],
+      "urls": [
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/4883ff3550104a4c82f635acdfe351ae.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNEVYWVNtM1RQV0Y=.png?lk3s=8e244e95&rcl=2026112310240533C4F6BDDEF61D72B869&rrcfp=d623987c&x-expires=2111624645&x-signature=3mm6a3RImyLY9a6qeYvmMWxub9M%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/b0bcfef59c474ba7973803873dcf0629.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNjBRbXdNRURBNHQ=.png?lk3s=8e244e95&rcl=20261123102439DC4EC31371AF54BF0E0E&rrcfp=d623987c&x-expires=2111624679&x-signature=BRD%2BHzuSNWprUROJoviFEAgb0i0%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/66314d87033f44dcb8bdea6e1f136646.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNjBRbXdNRURBNHQ=.png?lk3s=8e244e95&rcl=20261123102439DC4EC31371AF54BF0E0E&rrcfp=d623987c&x-expires=2111624679&x-signature=ssovQpLI9xkSjr8mR96U0skxgKI%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        3162029,
+        5782228,
+        5468183
+      ]
+    },
+    {
+      "name": "sz-pad",
+      "prompt": "摄影：夜空下的航天发射塔架与火箭箭体，塔架灯光与地面泛光，远处地平线微亮，无人，宏大冷调，画面中没有任何可读文字与国旗标识，16:9 横构图",
+      "outs": [],
+      "urls": [],
       "ok": false,
-      "error": "120 秒内未获得新生成图链接"
+      "error": "180 秒内没抓到新生成图"
+    },
+    {
+      "name": "sz-hangar",
+      "prompt": "摄影：航天器总装测试厂房内部，白色整流罩与银色舱段并排，工业照明与蓝色地标线，无人，洁净厂房质感，画面中没有任何可读文字，16:9 横构图",
+      "outs": [],
+      "urls": [],
+      "ok": false,
+      "error": "180 秒内没抓到新生成图"
     }
   ]
 }

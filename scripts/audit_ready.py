@@ -260,7 +260,7 @@ def build_gaps(form: str, m: dict, viral: dict, checks: dict) -> list:
 
 
 def coverage_report(docs):
-    """选题覆盖：每条「今日选题 TOP3」都必须有对应成品稿，缺一条就是出稿漏了。"""
+    """选题覆盖：今日选题池（公众号 6 + 头条 8）里每个选题都必须有对应成品稿，缺一条就是出稿漏了。"""
     try:
         picks = json.load(open(PICKS, encoding="utf-8"))
     except Exception as exc:
@@ -269,6 +269,7 @@ def coverage_report(docs):
     have = {d.get("sourceItemId") for d in docs if d.get("sourceItemId")}
     rows = []
     total = covered = 0
+    seen_all = set()   # 跨去向去重：同一事件出公众号版和头条版，只算一个选题
     for target, group in (picks.get("groups") or {}).items():
         t_total = t_cov = 0
         missing = []
@@ -288,9 +289,12 @@ def coverage_report(docs):
                     "score": pick.get("score"),
                     "headline": (pick.get("lead") or {}).get("headline") or pick.get("sourceTitle"),
                 })
+            if iid not in seen_all:
+                seen_all.add(iid)
+                total += 1
+                if iid in have:
+                    covered += 1
         rows.append({"target": target, "total": t_total, "covered": t_cov, "missing": missing})
-        total += t_total
-        covered += t_cov
     return {
         "date": picks.get("date"),
         "total": total,
@@ -421,7 +425,7 @@ def main() -> None:
     cov = coverage_report(docs)
     if cov:
         missing_rows = [m for r in cov["byTarget"] for m in r["missing"]]
-        print(f"[coverage] TOP3 选题 {cov['covered']}/{cov['total']} 有成品稿" +
+        print(f"[coverage] 今日选题池 {cov['covered']}/{cov['total']} 个事件有成品稿" +
               ("".join([f"；缺 {m['itemId']}（{(m['headline'] or '')[:24]}）" for m in missing_rows]) if missing_rows else "，无遗漏"))
 
     out = {
@@ -448,14 +452,21 @@ def main() -> None:
     if "--strict" in sys.argv:
         problems = []
         if not cov or not cov["ok"]:
-            problems.append("TOP3 选题存在没有成品稿的条目")
-        low = [p for p in out["pieces"] if p["score"] < 85]
-        if low:
-            problems.append(f"{len(low)} 篇成品稿未达标")
+            problems.append("选题池存在没有成品稿的条目（出稿漏了）")
+        # 只看当天：历史稿分数低不该一直卡住今天的验收
+        today_str = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d")
+        today_pieces = [p for p in out["pieces"] if p.get("date") == today_str]
+        if today_pieces:
+            passed = [p for p in today_pieces if p["score"] >= 85]
+            rate = len(passed) / len(today_pieces)
+            if rate < 0.6:
+                problems.append(f"今日 {len(today_pieces)} 篇里只有 {len(passed)} 篇达标（{rate:.0%}），低于 60% 说明出稿质量崩了")
+        else:
+            problems.append("今天还没有成品稿")
         if problems:
             print("[strict] 未通过：" + "；".join(problems))
             sys.exit(1)
-        print("[strict] 通过：选题全覆盖且全部达标")
+        print(f"[strict] 通过：选题全覆盖，今日 {len(today_pieces)} 篇中 {len(passed)} 篇达标（未达标的进淘汰池，不发布）")
 
 
 if __name__ == "__main__":

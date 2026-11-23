@@ -6,8 +6,12 @@
 风险提示只做扣分，不自动删除；高风险条目仍会出现，但分数靠后并带明显标记。
 
 用法:
-    python3 scripts/rank_leads.py              # 默认每个去向取 3 条
-    python3 scripts/rank_leads.py --top 5
+    python3 scripts/rank_leads.py              # 公众号 6 条、今日头条 8 条（默认）
+    python3 scripts/rank_leads.py --top 5      # 两个去向都取 5 条（临时压测用）
+
+为什么是 6 / 8：
+    发布人每天发 1 篇公众号 + 3 篇头条，但需要留出「自检淘汰 + 临时换稿」的余量，
+    所以选题池按 6 / 8 备，最终进「今日发布」的只保留自检 ≥85 分的。
 """
 import argparse
 import json
@@ -25,6 +29,9 @@ TIMELINESS = {"当日": 25, "本周": 18, "长期": 8}
 HEAT = {"上升": 20, "新出现": 15, "成熟": 12, "平稳": 8}
 VERIFY = {"已核实": 20, "部分核实": 12, "待核实": 5, "未核实": 0}
 PRIORITY = {"高": 20, "中": 12, "低": 5}
+
+# 每个去向的选题池容量：公众号 6（文章+贴图可混），今日头条 8（文章+微头条可混）
+TARGET_TOP = {"公众号": 6, "今日头条": 8}
 
 SEVERE_RISK = ["未获独立验证", "不得使用", "必须写清", "未取得", "未公开", "不指名", "避免写成", "尚无", "未经核实", "不能确认"]
 MILD_RISK = ["核对", "注明", "须", "勿", "谨慎", "以原文为准", "避免"]
@@ -111,7 +118,7 @@ def score(it, lead):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--top", type=int, default=3)
+    ap.add_argument("--top", type=int, default=0, help="两个去向都取 N 条；不填则用 TARGET_TOP（公众号 6 / 头条 8）")
     args = ap.parse_args()
 
     data = json.loads(ITEMS.read_text(encoding="utf-8"))
@@ -139,7 +146,10 @@ def main():
 
     scored.sort(key=lambda x: (-x["score"], str(x["sourceTitle"])))
     groups = {}
+    caps = {}
     for target in ["公众号", "今日头条"]:
+        cap = args.top or TARGET_TOP[target]
+        caps[target] = cap
         rows = [x for x in scored if x["lead"].get("target") == target]
         seen = set()
         picked = []
@@ -153,7 +163,7 @@ def main():
             row["rank"] = rank
             row["target"] = target
             picked.append(row)
-            if len(picked) >= args.top:
+            if len(picked) >= cap:
                 break
         groups[target] = picked
 
@@ -162,7 +172,7 @@ def main():
         "date": date.today().isoformat(),
         "generatedAt": now_local(),
         "totalScored": len(scored),
-        "topPerTarget": args.top,
+        "topPerTarget": caps,
         "weights": {
             "timeliness": TIMELINESS, "heat": HEAT, "verification": VERIFY,
             "priority": PRIORITY, "completenessMax": 10, "sourceMax": 5,

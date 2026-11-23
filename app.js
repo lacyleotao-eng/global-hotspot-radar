@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', issue: null };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', auditToday: true, issue: null };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -110,13 +110,9 @@
     initControls();
     // 深链：#view=picks|audit|benchmark|feed|leads 直接打开某个视图
     var vm = /^#view=(issue|picks|audit|benchmark|feed|leads)$/.exec(location.hash || '');
-    if (vm) {
-      state.view = vm[1];
-      Array.prototype.forEach.call(document.querySelectorAll('.vtab'), function (b) {
-        b.classList.toggle('on', b.getAttribute('data-view') === state.view);
-      });
-    }
+    if (vm) state.view = vm[1];
     applyView();
+    renderPipe();
     render();
     renderIssue();
     // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
@@ -143,14 +139,16 @@
     });
     pull('data/picks.json', function (d) { return d && d.generatedAt && (!state.picks || d.generatedAt !== state.picks.generatedAt); }, function (d) {
       state.picks = d;
+      renderPipe();
       if (state.view === 'picks') renderPicks();
     });
     pull('data/ready/index.json', function (d) { return d && d.docs; }, function (d) {
       state.ready = d;
       if (state.view === 'picks') renderPicks();
     });
-    pull('data/issue.json', function (d) { return d && d.slots && d.generatedAt !== (state.issue || {}).generatedAt; }, function (d) {
+    pull('data/issue.json', function (d) { return d && d.pools && d.generatedAt !== (state.issue || {}).generatedAt; }, function (d) {
       state.issue = d;
+      renderPipe();
       if (state.view === 'issue') renderIssue();
     });
   }
@@ -174,6 +172,70 @@
     document.querySelector('.more-wrap').hidden = isPicks || isBench || isAudit || isIssue;
   }
 
+  // 六个视图其实是两条路：
+  //   生产线 feed → leads → picks → audit → issue（前者喂后者，audit 是闸门）
+  //   参照系 benchmark（只当标尺，不参与生产）
+  var VIEW_HINT = {
+    feed: '第 1 步｜每条情报都带原文链接、采集时间与核实状态，点开可看溯源',
+    leads: '第 2 步｜情报里能写的角度：标题 + 切入角度 + 提纲 + 事实依据，按去向和优先级筛',
+    picks: '第 3 步｜今天定下要做的选题：公众号 6 个 + 头条 8 个，每个选题下面挂着已出的稿和自检分',
+    audit: '第 4 步｜闸门：按爆款基准打分，≥85 进发布池，＜85 直接淘汰',
+    issue: '第 5 步｜通过自检的成品，复制全文 + 下载图片就能发',
+    benchmark: '参照系｜每天采 10 篇真爆款（公众号 5 · 头条 5），拆成标尺；它不参与生产，只决定自检的及格线'
+  };
+
+  function setText(id, txt) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = txt;
+  }
+
+  // 流水线数字全部来自真实数据，不写死；缺数据时显示「—」
+  function renderPipe() {
+    var it = state.issue || {};
+    var f = it.funnel || {};
+    var pools = it.pools || {};
+    var gzh = pools['公众号'] || {};
+    var tt = pools['今日头条'] || {};
+    var gzhAvail = gzh.available || 0;
+    var ttAvail = tt.available || 0;
+    var gzhTarget = (it.targets || {})['公众号'] || 6;
+    var ttTarget = (it.targets || {})['今日头条'] || 8;
+
+    var picks = state.picks || {};
+    var groups = picks.groups || {};
+    var gzhPicks = (groups['公众号'] || []).length;
+    var ttPicks = (groups['今日头条'] || []).length;
+    var leadCount = state.items.reduce(function (n, x) { return n + ((x.leads || []).length); }, 0);
+
+    setText('pnIntel', state.items.length ? state.items.length + ' 条' : '—');
+    setText('pnLeads', leadCount ? leadCount + ' 个角度' : '—');
+    setText('pnPicks', (gzhPicks + ttPicks) ? (gzhPicks + ttPicks) + ' 个' : '—');
+    setText('pnAudit', f.passed != null ? f.passed + ' 过 / ' + (f.rejected || 0) + ' 汰' : '—');
+    setText('pnIssue', (gzhAvail + ttAvail) ? (gzhAvail + ttAvail) + ' 篇' : '—');
+    setText('pnViral', ((state.viral || {}).meta || {}).total ? ((state.viral || {}).meta || {}).total + ' 篇' : '—');
+
+    // 小字改成动态配额，让「6 / 8」一眼可见
+    var pnPicks = document.querySelector('.pnode[data-view="picks"] small');
+    if (pnPicks) pnPicks.textContent = '公众号 ' + gzhPicks + ' · 头条 ' + ttPicks;
+    var pnAudit = document.querySelector('.pnode[data-view="audit"] small');
+    if (pnAudit) pnAudit.textContent = '及格线 ' + (it.passScore || 85) + ' 分，不过就淘汰';
+    var pnIssue = document.querySelector('.pnode[data-view="issue"] small');
+    if (pnIssue) pnIssue.textContent = '公 ' + gzhAvail + '/' + gzhTarget + ' · 头 ' + ttAvail + '/' + ttTarget;
+    var pnIntel = document.querySelector('.pnode[data-view="feed"] small');
+    if (pnIntel) pnIntel.textContent = '全网采集的原始情报';
+    var pnViralNote = document.querySelector('.pnode[data-view="benchmark"] small');
+    if (pnViralNote) {
+      var vt = ((state.viral || {}).meta || {}).total || 0;
+      pnViralNote.textContent = '样本库 ' + vt + ' 篇 · 每天新增约 10 篇（公 5 · 头 5）';
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('.pnode'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-view') === state.view);
+    });
+    var hint = document.getElementById('viewHint');
+    if (hint) hint.textContent = VIEW_HINT[state.view] || '';
+  }
+
   function initControls() {
     var tf = document.getElementById('typeFilter');
     Object.keys(TYPE).forEach(function (k) {
@@ -185,26 +247,16 @@
     STATUS.forEach(function (s) { var o = document.createElement('option'); o.value = s; o.textContent = s; vf.appendChild(o); });
 
     var tabs = document.getElementById('viewTabs');
-    Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (btn) {
+    Array.prototype.forEach.call(tabs.querySelectorAll('.pnode'), function (btn) {
       btn.onclick = function () {
         state.view = btn.getAttribute('data-view');
         state.page = 1;
-        Array.prototype.forEach.call(tabs.querySelectorAll('.vtab'), function (b) { b.classList.toggle('on', b === btn); });
+        Array.prototype.forEach.call(tabs.querySelectorAll('.pnode'), function (b) { b.classList.toggle('on', b === btn); });
         applyView();
+        renderPipe();
         if (state.view === 'issue') renderIssue();
         document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit' || state.view === 'issue';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
-        document.getElementById('viewHint').textContent = state.view === 'issue'
-          ? '今天 4 个固定时段要发的东西，全部备好，复制即可发'
-          : state.view === 'benchmark'
-          ? '真实爆款拆解成基准，和自家 4 形态成品稿逐项对照'
-          : (state.view === 'audit'
-            ? '每篇成品稿对照爆款基准打分，列出还差多少字、多少图、哪里不够'
-            : (state.view === 'picks'
-              ? '每日按时效、热度、核实度、优先级打分排序的成稿候选'
-              : (state.view === 'leads'
-                ? '按发布去向与优先级筛选，一键复制标题 + 提纲 + 原文链接'
-                : '每条情报可展开详情，查看来源与核实过程')));
         render();
       };
     });
@@ -262,7 +314,6 @@
     var total = state.items.length;
     var cn = state.items.filter(function (i) { return i.region === '国内'; }).length;
     var leads = state.items.reduce(function (n, i) { return n + ((i.leads || []).length); }, 0);
-    document.getElementById('leadTabCount').textContent = leads;
     document.getElementById('topStats').innerHTML =
       '<span><b>' + total + '</b>条目</span><span><b>' + leads + '</b>选题线索</span><span><b>' + ((state.viral.meta || {}).total || 0) + '</b>爆款样本</span><span><b>' + cn + '</b>国内</span>';
     document.getElementById('updateLabel').textContent = state.meta.updatedAt ? '条目更新 ' + fmt(state.meta.updatedAt) : '等待数据';
@@ -311,10 +362,34 @@
   }
 
   function scoreRows(pick) {
-    return (pick.breakdown || []).map(function (b) {
+    var rows = (pick.breakdown || []).filter(function (b) { return b && Number(b.points) !== 0; });
+    return rows.map(function (b) {
       var cls = b.points > 0 ? 'sp-pos' : (b.points < 0 ? 'sp-neg' : 'sp-zero');
       return '<span class="score-part ' + cls + '">' + esc(b.label) + ' <b>' + (b.points > 0 ? '+' : '') + b.points + '</b></span>';
     }).join('');
+  }
+
+  // 选题 → 今天已经出的稿（带自检分）。发布人看选题时就能知道「这条到底出了没有、过没过」。
+  function draftsOfPick(pick) {
+    var scoreMap = {};
+    ((state.audit || {}).pieces || []).forEach(function (p) { scoreMap[(p.file || '') + '::' + p.form] = p; });
+    var passScore = (state.issue || {}).passScore || 85;
+    var out = [];
+    ((state.ready || {}).docs || []).forEach(function (d) {
+      if (d.sourceItemId !== pick.itemId) return;
+      var file = d.file || (d.date + '-' + d.slug + '.json');
+      (d.pieces || []).forEach(function (pc) {
+        var rec = scoreMap[file + '::' + pc.id] || null;
+        out.push({
+          pieceId: pc.id,
+          title: pc.title,
+          formShort: pc.id === 'gzh-poster' ? '贴图' : (pc.id === 'tt-micro' ? '微头条' : '文章'),
+          score: rec ? rec.score : null,
+          passed: !!(rec && rec.score >= passScore)
+        });
+      });
+    });
+    return out;
   }
 
   function pickCardHtml(pick) {
@@ -325,6 +400,17 @@
     }).join('');
     var verifyCls = statusClass(pick.verification);
     var risk = lead.risk || '无';
+    var drafts = draftsOfPick(pick);
+    var draftsHtml = '<div class="pick-drafts"><span class="pd-label">今天的稿</span>' +
+      (drafts.length
+        ? drafts.map(function (x) {
+            var cls = x.score == null ? 'wait' : (x.passed ? 'pass' : 'fail');
+            var stateTxt = x.score == null ? '待检' : (x.passed ? '过' : '淘汰');
+            return '<button class="dstate ' + cls + '" data-item="' + esc(pick.itemId) + '" data-piece="' + esc(x.pieceId) + '" title="' + esc(x.title) + '">' +
+              esc(x.formShort) + ' <b>' + (x.score == null ? '—' : x.score) + '</b> ' + stateTxt + '</button>';
+          }).join('')
+        : '<span class="pick-empty-draft">还没出稿</span>') +
+      '</div>';
     return '<article class="pick-card">' +
       '<div class="pick-top">' +
         '<span class="pick-rank">TOP ' + pick.rank + '</span>' +
@@ -334,12 +420,13 @@
       '<h3 class="pick-title">' + esc(lead.headline || pick.sourceTitle) + '</h3>' +
       '<p class="pick-angle">' + esc(lead.angle || '') + '</p>' +
       (outline ? '<ol class="pick-outline">' + outline + '</ol>' : '') +
-      '<div class="pick-scores">' + scoreRows(pick) + '</div>' +
+      (scoreRows(pick) ? '<div class="pick-scores">' + scoreRows(pick) + '</div>' : '') +
       '<div class="pick-meta">' +
         '<span>读者：' + esc(lead.audience || '泛读者') + '</span>' +
         '<span class="risk-warn">风险：' + esc(risk) + '</span>' +
       '</div>' +
       '<div class="pick-src">线索源：' + esc(pick.platform || '') + ' · ' + esc(pick.region || '') + ' · ' + esc(pick.heatStage || '') + '</div>' +
+      draftsHtml +
       '<div class="pick-actions">' +
         (findDocForPick(pick)
           ? '<button class="view-draft" data-item="' + esc(pick.itemId) + '">查看草稿详情</button>'
@@ -551,6 +638,10 @@
     var m = p.metrics || {};
     var bench = p.bench || {};
     var checks = p.checks || {};
+    var passScore = (state.issue || {}).passScore || 85;
+    var passed = p.score >= passScore;
+    var gate = '<span class="dstate ' + (passed ? 'pass' : 'fail') + '">' +
+      (passed ? '通过 · 进发布池' : '淘汰 · 不发布') + '</span>';
     var keys = ['wordCount', 'images', 'structure', 'title', 'hook'];
     var bars = keys.map(function (k) {
       var c = checks[k];
@@ -585,6 +676,7 @@
         '<div class="audit-title-wrap">' +
           '<div class="audit-tags"><span class="audit-form">' + esc(p.formLabel) + '</span>' +
             '<span class="audit-grade ' + (AGRADE[p.grade] || '') + '">' + esc(p.grade) + '</span>' +
+            gate +
             (p.benchmarkReliable === false ? '<span class="audit-warn">基准样本 ' + (p.viralSample || 0) + ' 条，仅供参考</span>' : '') +
           '</div>' +
           '<h3>' + esc(p.title) + '</h3>' +
@@ -620,38 +712,55 @@
     document.getElementById('auditUpdated').textContent = '自检于 ' + fmt(a.updatedAt) + ' · ' + a.total + ' 篇 · 爆款库 ' + (a.viralTotal || 0) + ' 条';
 
     var cov = a.coverage || picksCoverage();
-    var covTitle = cov.ok ? '今日每个 TOP3 选题都有对应成品稿' : '缺稿：' + (cov.missing || []).join('；');
+    var covTitle = cov.ok ? '选题池里每个选题都有对应成品稿' : '缺稿：' + (cov.missing || []).join('；');
     var g = a.grades || {};
+    var passScore = (state.issue || {}).passScore || 85;
+    var now0 = new Date();
+    var todayStr = now0.getFullYear() + '-' + pad2(now0.getMonth() + 1) + '-' + pad2(now0.getDate());
+    var todayPieces = (a.pieces || []).filter(function (p) { return p.date === todayStr; });
+    var todayPass = todayPieces.filter(function (p) { return p.score >= passScore; }).length;
+    var todayFail = todayPieces.length - todayPass;
     document.getElementById('auditSummary').innerHTML =
-      '<div class="audit-sum-box ' + (cov.ok ? 'g-ok' : 'g-near') + '" title="' + esc(covTitle) + '"><span>TOP3 草稿覆盖&nbsp;</span><b>' + cov.covered + '/' + cov.total + '</b></div>' +
-      '<div class="audit-sum-box"><span>均分</span><b>' + a.avgScore + '</b></div>' +
-      '<div class="audit-sum-box g-ok"><span>达标 ≥85</span><b>' + (g['达标'] || 0) + '</b></div>' +
+      '<div class="audit-sum-box ' + (todayFail ? 'g-near' : 'g-ok') + '" title="今天的稿里，≥' + passScore + ' 分的进发布池，其余淘汰">' +
+        '<span>今日过闸&nbsp;</span><b>' + todayPass + ' 过 / ' + todayFail + ' 汰</b></div>' +
+      '<div class="audit-sum-box ' + (cov.ok ? 'g-ok' : 'g-near') + '" title="' + esc(covTitle) + '"><span>出稿覆盖&nbsp;</span><b>' + cov.covered + '/' + cov.total + '</b></div>' +
+      '<div class="audit-sum-box"><span>全部均分</span><b>' + a.avgScore + '</b></div>' +
+      '<div class="audit-sum-box g-ok"><span>达标 ≥' + passScore + '</span><b>' + (g['达标'] || 0) + '</b></div>' +
       '<div class="audit-sum-box g-near"><span>接近 70-84</span><b>' + (g['接近'] || 0) + '</b></div>' +
       '<div class="audit-sum-box g-bad"><span>不达标 &lt;70</span><b>' + (g['不达标'] || 0) + '</b></div>' +
       (a.byForm || []).map(function (f) {
         return '<div class="audit-sum-box mini"><span>' + esc(f.formLabel) + '</span><b>' + f.avgScore + '</b></div>';
       }).join('');
 
+    // 筛选条每次重建，避免 state 切换后残留旧按钮
     var bar = document.getElementById('auditFormBar');
-    if (!bar.childElementCount) {
-      var opts = [['', '全部形态']].concat((a.byForm || []).map(function (f) { return [f.form, f.formLabel + ' ' + f.count]; }));
-      opts.forEach(function (kv) {
-        var b = document.createElement('button');
-        b.className = 'vform-chip' + (kv[0] === '' ? ' on' : '');
-        b.textContent = kv[1];
-        b.setAttribute('data-form', kv[0]);
-        b.onclick = function () {
-          state.auditForm = kv[0];
-          Array.prototype.forEach.call(bar.querySelectorAll('.vform-chip'), function (x) { x.classList.toggle('on', x === b); });
-          renderAudit();
-        };
-        bar.appendChild(b);
-      });
-    }
+    bar.innerHTML = '';
+    var scope = document.createElement('button');
+    scope.className = 'vform-chip scope' + (state.auditToday ? ' on' : '');
+    scope.textContent = state.auditToday ? '只看今天（' + todayPieces.length + '）' : '看全部历史（' + (a.total || 0) + '）';
+    scope.onclick = function () { state.auditToday = !state.auditToday; renderAudit(); };
+    bar.appendChild(scope);
 
-    var rows = a.pieces.filter(function (p) { return !state.auditForm || p.form === state.auditForm; });
+    var opts = [['', '全部形态']].concat((a.byForm || []).map(function (f) { return [f.form, f.formLabel + ' ' + f.count]; }));
+    opts.forEach(function (kv) {
+      var b = document.createElement('button');
+      b.className = 'vform-chip' + (kv[0] === state.auditForm ? ' on' : '');
+      b.textContent = kv[1];
+      b.setAttribute('data-form', kv[0]);
+      b.onclick = function () {
+        state.auditForm = kv[0];
+        renderAudit();
+      };
+      bar.appendChild(b);
+    });
+
+    var rows = (a.pieces || []).filter(function (p) {
+      if (state.auditToday && p.date !== todayStr) return false;
+      if (state.auditForm && p.form !== state.auditForm) return false;
+      return true;
+    });
     rows.sort(function (x, y) { return x.score - y.score; });
-    list.innerHTML = rows.map(auditCardHtml).join('') || '<div class="empty">该形态暂无成品稿。</div>';
+    list.innerHTML = rows.map(auditCardHtml).join('') || '<div class="empty">该条件下暂无成品稿。</div>';
   }
 
   function renderBenchmark() {    document.getElementById('benchBody').innerHTML = benchTableHtml() || '<tr><td colspan="6">暂无对标数据</td></tr>';
@@ -745,11 +854,18 @@
       return '<a class="ic-thumb" href="' + esc(im.src) + '" download="' + esc(name) + '" target="_blank" rel="noopener" title="' + esc(im.caption || ('图 ' + (i + 1))) + '">' +
         '<img src="' + esc(im.src) + '" alt="" loading="lazy"><i>图' + (i + 1) + ' ↓</i></a>';
     }).join('');
+    var first = (a.images || [])[0];
+    var cover = first
+      ? '<div class="ia-cover"><img src="' + esc(first.src) + '" alt="' + esc(first.caption || '') + '" loading="lazy">' +
+        '<span class="ia-cover-tag">封面 · 共 ' + a.imageCount + ' 图</span></div>'
+      : '';
     return '<article class="ia-card" data-item="' + esc(a.itemId) + '" data-piece="' + esc(a.pieceId) + '">' +
+      cover +
       '<div class="ia-top">' +
         '<span class="ia-form f-' + esc(a.pieceId) + '">' + esc(a.formShort) + '</span>' +
         '<span class="ia-num"><b>' + a.words + '</b> 字</span>' +
         '<span class="ia-num"><b>' + a.imageCount + '</b> 图</span>' +
+        '<span class="dstate pass" title="自检分数，≥' + esc((state.issue || {}).passScore || 85) + ' 分才进发布池">自检 <b>' + (a.score != null ? a.score : '—') + '</b></span>' +
         '<span class="vpill v-' + esc(statusClass(a.verification)) + '">' + esc(a.verification || '未核实') + '</span>' +
       '</div>' +
       '<h3 class="ia-title">' + esc(a.title) + '</h3>' +
@@ -781,12 +897,14 @@
     empty.hidden = true;
     document.getElementById('issueDate').textContent = it.date;
 
-    var gzh = it.pools['公众号'] || { items: [], target: 3 };
-    var tt = it.pools['今日头条'] || { items: [], target: 6 };
+    var gzh = it.pools['公众号'] || { items: [], target: 6 };
+    var tt = it.pools['今日头条'] || { items: [], target: 8 };
     var ok = it.status === 'ready';
+    var gzhTarget = gzh.target || 6;
+    var ttTarget = tt.target || 8;
     var st = document.getElementById('issueState');
     st.className = 'issue-state ' + (ok ? 'ok' : 'warn');
-    st.innerHTML = '<b>公众号 ' + gzh.items.length + ' 篇 · 头条 ' + tt.items.length + ' 篇</b>' +
+    st.innerHTML = '<b>公众号 ' + gzh.items.length + '/' + gzhTarget + ' · 头条 ' + tt.items.length + '/' + ttTarget + '</b>' +
       '<span>' + (it.stale
         ? '最近一版 · ' + esc((gzh.items[0] || tt.items[0] || {}).date || '')
         : (it.generatedAt ? String(it.generatedAt).slice(11, 16) + ' 备齐' : '')) + '</span>';
@@ -805,9 +923,29 @@
       callout.hidden = true;
     }
 
+    // 被淘汰的稿不进发布池，但在这一步留痕：谁被淘汰、多少分、差在哪
+    var rjBox = document.getElementById('issueRejected');
+    var rejected = it.rejected || [];
+    var pending = it.pending || [];
+    if (rejected.length || pending.length) {
+      rjBox.hidden = false;
+      var rjList = rejected.map(function (r) {
+        return '<li>' + esc(r.formLabel) + '　<span class="rj-score">' + (r.score == null ? '—' : r.score) + ' 分</span>　' + esc(r.title) +
+          ((r.gaps || []).length ? '　<small>差在：' + esc((r.gaps || []).map(function (g) { return g.dim || g; }).join('、')) + '</small>' : '') + '</li>';
+      }).join('');
+      var pdList = pending.map(function (p) {
+        return '<li>' + esc(p.formLabel) + '　' + esc(p.title) + '　<small>还没跑自检</small></li>';
+      }).join('');
+      rjBox.innerHTML = '<b>自检没过的 ' + (rejected.length + pending.length) + ' 篇已挡在发布池外</b>' +
+        '<ul>' + rjList + pdList + '</ul>' +
+        '<span class="rj-note">淘汰是常态：宁可不发，也不发没把握的。要救回就改稿后重跑自检。</span>';
+    } else {
+      rjBox.hidden = true;
+    }
+
     var groups = [
-      { key: '公众号', pool: gzh, desc: (it.usage || {})['公众号'] || '每天 09:30 发 1 篇' },
-      { key: '今日头条', pool: tt, desc: (it.usage || {})['今日头条'] || '每天 3 篇' }
+      { key: '公众号', pool: gzh, desc: (it.usage || {})['公众号'] || '每天 1 篇，从池子里挑' },
+      { key: '今日头条', pool: tt, desc: (it.usage || {})['今日头条'] || '每天 3 篇，从池子里挑' }
     ];
     list.innerHTML = groups.map(function (g) {
       var items = g.pool.items || [];
@@ -859,13 +997,25 @@
       groupsEl.innerHTML = '<div class="picks-empty">今日选题尚未生成，等待定时任务运行或手动执行评分脚本。</div>';
       return;
     }
-    document.getElementById('picksDate').textContent = p.date + ' 批次 · 今日选题 TOP3';
+    document.getElementById('picksDate').textContent = p.date + ' · 今日选题';
     renderWindows();
     var total = 0;
     Object.keys(p.groups).forEach(function (k) { total += (p.groups[k] || []).length; });
-    var cov = picksCoverage();
-    document.getElementById('picksStat').innerHTML = '<b>' + total + '</b> 个成稿候选<span>评分 ' + p.totalScored + ' 条线索</span>' +
-      '<span class="picks-cov ' + (cov.ok ? 'ok' : 'warn') + '">草稿覆盖 ' + cov.covered + '/' + cov.total + '</span>';
+    var gzhN = (p.groups['公众号'] || []).length;
+    var ttN = (p.groups['今日头条'] || []).length;
+    // 选题条数 ≠ 事件数：同一事件会出公众号版和头条版，这里两个数都摆出来，避免误读
+    var events = {}, have = {};
+    Object.keys(p.groups).forEach(function (k) {
+      (p.groups[k] || []).forEach(function (r) { if (r.itemId) events[r.itemId] = 1; });
+    });
+    ((state.ready || {}).docs || []).forEach(function (d) { if (d.sourceItemId) have[d.sourceItemId] = 1; });
+    var evIds = Object.keys(events);
+    var evCovered = evIds.filter(function (id) { return have[id]; }).length;
+    var covOk = evIds.length > 0 && evCovered === evIds.length;
+    document.getElementById('picksStat').innerHTML = '<b>' + total + '</b> 个选题' +
+      '<span>公众号 ' + gzhN + ' · 头条 ' + ttN + '</span>' +
+      '<span>来自 ' + evIds.length + ' 个事件</span>' +
+      '<span class="picks-cov ' + (covOk ? 'ok' : 'warn') + '">出稿覆盖 ' + evCovered + '/' + evIds.length + '</span>';
 
     var html = '';
     ['公众号', '今日头条'].forEach(function (target) {
@@ -878,6 +1028,10 @@
 
     Array.prototype.forEach.call(groupsEl.querySelectorAll('.view-draft'), function (b) {
       b.onclick = function () { openDraft(b.getAttribute('data-item')); };
+    });
+    // 选题卡上的形态徽章直接打开对应成品稿，省一次点击
+    Array.prototype.forEach.call(groupsEl.querySelectorAll('.pick-drafts .dstate'), function (b) {
+      b.onclick = function () { openDraft(b.getAttribute('data-item'), b.getAttribute('data-piece')); };
     });
     Array.prototype.forEach.call(groupsEl.querySelectorAll('.copy-brief'), function (b) {
       b.onclick = function () {

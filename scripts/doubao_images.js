@@ -1,17 +1,24 @@
 #!/usr/bin/env node
-// 用 ego 浏览器驱动豆包 Seedream 5.5 生成配图并下载到本地。
-// 由定时任务通过 `ego-browser nodejs <本文件>` 调用；需要本机已登录豆包（Default profile）。
+// 用 ego 浏览器驱动豆包 Seedream 生成配图并下载到本地。
+// 由定时任务通过 `ego-browser nodejs < scripts/doubao_images.js` 调用；需本机已登录豆包（Default profile）。
 //
-// 输入：data/image-jobs.json  —— [{"name":"slug","prompt":"...","out":"assets/images/xxx.jpeg"}]
-// 输出：覆盖 data/image-jobs.json 为 {"results":[{name,out,url,ok,error}...]}
-// 任何一步失败都写 ok:false 并继续下一个，不影响其他任务；绝不伪造成功。
+// 输入 data/image-jobs.json（两种写法都支持）：
+//   单个：  {"jobs":[{"name":"slug","prompt":"...","out":"assets/images/xxx.jpeg"}]}
+//   批量：  {"jobs":[{"name":"slug","prompt":"...","prefix":"assets/images/xxx","count":4}]}
+//           → 一次生成的多张变体依次存成 xxx-1.jpeg / xxx-2.jpeg …
+// 输出：覆盖 data/image-jobs.json 为 {"results":[...]}，逐张记录 out / url / bytes / ok / error。
+//
+// 2026-11-23 修复：豆包改版后生成图不在 img 的 src/href 上，而是挂在任意元素的属性里，
+// 旧版只扫 src/href 会 120 秒空等。现在遍历全部属性 + 背景图，并按 hash 去重。
+// 另外「图像生成」模式不再靠 Seedream 字样判断（首页已不显示），改为点按钮 + 抓到图为准。
 
 const fs = await import("node:fs/promises");
 const ROOT = "/Users/lee/WorkBuddy/hotspot-radar";
 const JOBS = ROOT + "/data/image-jobs.json";
 const SPACE = "豆包配图自动化";
+const GEN_TIMEOUT = 180000; // 单轮生成最长等待
+const MIN_BYTES = 30000;    // 小于这个数当失败，不写文件
 
-// 取或建空间：优先复用同名 agent 空间；若是用户持有的空间则 claim；否则新建并绑定 Default profile。
 async function getSpace() {
   let entries = [];
   try { entries = await listTaskSpaces(); } catch (e) {}
@@ -22,91 +29,117 @@ async function getSpace() {
   return await taskSpace(entry.id);
 }
 
-// 收集页面里所有「生成图」直链（rc_gen_image），排除头像与图标。
+// 抓页面里所有 rc_gen_image 直链（含原图模板）。按 hash 去重，避免同一张图多个 CDN 前缀算多张。
 async function grabGenUrls(page) {
   return await page.evaluate(() => {
-    const set = new Set();
+    const map = new Map();
+    const push = (v) => {
+      if (!v || !v.includes("rc_gen_image")) return;
+      // 只要原图，不要头像/图标类
+      if (/\/rc\/icon\//.test(v)) return;
+      const m = v.match(/rc_gen_image\/([0-9a-f]{16,})/);
+      if (!m) return;
+      const key = m[1];
+      // 同一 hash 优先保留分辨率更高的模板（cgen 前缀）或首个
+      if (!map.has(key) || /cgen/.test(v)) map.set(key, v);
+    };
     document.querySelectorAll("*").forEach((e) => {
-      ["src", "href"].forEach((a) => {
-        const v = e.getAttribute(a);
-        if (v && v.includes("rc_gen_image")) set.add(v);
-      });
+      for (const a of Array.from(e.attributes || [])) push(a.value);
       const bg = getComputedStyle(e).backgroundImage;
       if (bg && bg.includes("rc_gen_image")) {
         const m = bg.match(/url\(["']?([^"')]+)/);
-        if (m) set.add(m[1]);
+        if (m) push(m[1]);
       }
     });
-    return Array.from(set);
+    return Array.from(map.values());
   });
 }
 
-const jobsRaw = JSON.parse(await fs.readFile(JOBS, "utf-8"));
-const jobs = Array.isArray(jobsRaw) ? jobsRaw : (jobsRaw.jobs || []);
+const raw = JSON.parse(await fs.readFile(JOBS, "utf-8"));
+const jobs = Array.isArray(raw) ? raw : (raw.jobs || []);
 const results = [];
+
+// 下载：byteimg 签名链接必须带 Referer
+async function download(url, outPath) {
+  const resp = await fetch(url, {
+    headers: { Referer: "https://www.doubao.com/", "User-Agent": "Mozilla/5.0" },
+  });
+  const buf = Buffer.from(await resp.arrayBuffer());
+  if (buf.length < MIN_BYTES) throw new Error("下载图片过小(" + buf.length + "B)");
+  const abs = ROOT + "/" + String(outPath).replace(/^\/+/, "");
+  await fs.mkdir(abs.substring(0, abs.lastIndexOf("/")), { recursive: true });
+  await fs.writeFile(abs, buf);
+  return buf.length;
+}
 
 try {
   const task = await getSpace();
   const page = (await task.pages())[0] || await task.adopt((await task.tabs())[0].page);
   await page.goto("https://www.doubao.com/chat/", { waitUntil: "domcontentloaded", timeout: 45000 });
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(3500);
 
-  // 确认登录：能读到输入框即可；读不到就判失败，不假装成功。
   const hasEditor = await page.evaluate(() => !!document.querySelector('[contenteditable="true"]'));
   if (!hasEditor) throw new Error("豆包页面无输入框，可能未登录或页面结构变化");
 
-  // 激活「图像生成」模式（若尚未激活，页面不会出现 Seedream 字样）
-  const active = await page.evaluate(() => document.body.innerText.includes("Seedream"));
-  if (!active) {
-    await page.click("text=图像生成");
-    await page.waitForTimeout(1000);
-  }
-  const modelOn = await page.evaluate(() => document.body.innerText.includes("Seedream"));
-  if (!modelOn) throw new Error("未能激活图像生成模式（未见 Seedream 模型标识）");
+  // 激活「图像生成」模式：点输入框下方那排按钮里文本完全等于「图像生成」的那个
+  const modeOn = await page.evaluate(() => {
+    const hit = Array.from(document.querySelectorAll("div,span,button,a"))
+      .find((e) => e.textContent.trim() === "图像生成" && e.offsetParent !== null);
+    if (!hit) return false;
+    hit.click();
+    return true;
+  });
+  if (!modeOn) throw new Error("页面上找不到「图像生成」模式按钮");
+  await page.waitForTimeout(2500);
+  console.log("[mode] 图像生成已激活");
 
   for (const job of jobs) {
-    const rec = { name: job.name, out: job.out, url: null, ok: false, error: null };
+    const count = Math.max(1, Math.min(4, job.count || 1));
+    const rec = { name: job.name, prompt: job.prompt, outs: [], urls: [], ok: false, error: null };
     try {
       const before = await grabGenUrls(page);
       await page.fill('[contenteditable="true"]', job.prompt);
       await page.press('[contenteditable="true"]', "Enter");
-      // 等待出现新的生成图链接：轮询而非固定延时，最多 120 秒
-      const deadline = Date.now() + 120000;
-      let after = [];
+
+      const deadline = Date.now() + GEN_TIMEOUT;
+      let fresh = [];
       while (Date.now() < deadline) {
-        await page.waitForTimeout(2500);
-        after = await grabGenUrls(page);
-        if (after.some((u) => !before.includes(u))) break;
+        await page.waitForTimeout(3000);
+        const now = await grabGenUrls(page);
+        fresh = now.filter((u) => !before.includes(u));
+        if (fresh.length >= count) break;
       }
-      const fresh = after.filter((u) => !before.includes(u));
-      if (!fresh.length) throw new Error("120 秒内未获得新生成图链接");
-      rec.url = fresh[0];
-      // 下载到本地：byteimg 签名链接需要 Referer；图片有效性用字节数兜底
-      const resp = await fetch(fresh[0], {
-        headers: { Referer: "https://www.doubao.com/", "User-Agent": "Mozilla/5.0" },
-      });
-      const buf = Buffer.from(await resp.arrayBuffer());
-      if (buf.length < 20000) throw new Error("下载图片过小(" + buf.length + "B)，疑似失败");
-      const outPath = ROOT + "/" + String(job.out).replace(/^\/+/, "");
-      await fs.mkdir(outPath.substring(0, outPath.lastIndexOf("/")), { recursive: true });
-      await fs.writeFile(outPath, buf);
+      if (!fresh.length) throw new Error(Math.round(GEN_TIMEOUT / 1000) + " 秒内没抓到新生成图");
+
+      const picked = fresh.slice(0, count);
+      for (let i = 0; i < picked.length; i++) {
+        const out = job.out && count === 1
+          ? job.out
+          : (job.prefix || "assets/images/gen") + "-" + (i + 1) + ".jpeg";
+        const bytes = await download(picked[i], out);
+        rec.outs.push(out);
+        rec.urls.push(picked[i]);
+        rec.bytes = rec.bytes || [];
+        rec.bytes.push(bytes);
+        console.log("[ok]", job.name, "#" + (i + 1), bytes + "B", "->", out);
+      }
       rec.ok = true;
-      rec.bytes = buf.length;
-      console.log("[ok]", job.name, rec.bytes + "B", "->", job.out);
     } catch (e) {
-      rec.error = String(e && e.message || e);
+      rec.error = String((e && e.message) || e);
       console.log("[fail]", job.name, rec.error);
     }
     results.push(rec);
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(2000);
   }
 
   await task.finish({ keep: "all" });
 } catch (e) {
-  const msg = String(e && e.message || e);
+  const msg = String((e && e.message) || e);
   console.log("[fatal]", msg);
-  jobs.forEach((j) => results.push({ name: j.name, out: j.out, url: null, ok: false, error: "fatal: " + msg }));
+  jobs.forEach((j) => results.push({ name: j.name, prompt: j.prompt, outs: [], urls: [], ok: false, error: "fatal: " + msg }));
 }
 
 await fs.writeFile(JOBS, JSON.stringify({ results }, null, 2));
-console.log("[done] 成功", results.filter((r) => r.ok).length, "/", results.length);
+const okCount = results.filter((r) => r.ok).length;
+const imgCount = results.reduce((n, r) => n + (r.outs || []).length, 0);
+console.log("[done] 任务成功", okCount, "/", results.length, "，共下载", imgCount, "张");
