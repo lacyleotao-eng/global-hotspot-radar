@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T22:40:11+08:00",
+  "updatedAt": "2026-11-23T09:38:27+08:00",
   "coverage": {
     "date": "2026-11-22",
     "total": 6,
@@ -21,10 +21,10 @@
     ]
   },
   "benchmarkUpdatedAt": "2026-11-22T22:13:38+08:00",
-  "total": 16,
-  "avgScore": 100,
+  "total": 26,
+  "avgScore": 97.4,
   "grades": {
-    "达标": 16,
+    "达标": 26,
     "接近": 0,
     "不达标": 0
   },
@@ -32,41 +32,338 @@
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "count": 4,
-      "avgScore": 100.0,
-      "min": 100,
+      "count": 7,
+      "avgScore": 96.3,
+      "min": 90.0,
       "max": 100,
       "grade": "达标"
     },
     {
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
-      "count": 4,
-      "avgScore": 100.0,
-      "min": 100,
+      "count": 5,
+      "avgScore": 98.2,
+      "min": 91.0,
       "max": 100,
       "grade": "达标"
     },
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "count": 4,
-      "avgScore": 100.0,
-      "min": 100,
+      "count": 7,
+      "avgScore": 97.1,
+      "min": 92.0,
       "max": 100,
       "grade": "达标"
     },
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "count": 4,
-      "avgScore": 100.0,
-      "min": 100,
+      "count": 7,
+      "avgScore": 98.1,
+      "min": 95.0,
       "max": 100,
       "grade": "达标"
     }
   ],
   "pieces": [
+    {
+      "file": "2026-11-23-orchard-livestream.json",
+      "date": "2026-11-23",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "181 斤和一千多斤：主播误入果园这件事，差的不只是数字",
+      "score": 90.0,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1515.0,
+        "images": 5.5,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 1504,
+        "images": 5,
+        "subheads": 6,
+        "paragraphs": 18,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 17,
+        "firstParaLen": 132,
+        "firstParaAnchor": true,
+        "titleLen": 22,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 84,
+        "imageCaptions": 5
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1515.0,
+          "value": 1504,
+          "notes": [
+            "为基准的 99%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 5.5,
+          "value": 5,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 6,
+          "notes": [
+            "小标题 6 个，分节清晰",
+            "段落 18 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "181 斤和一千多斤：主播误入果园这件事，差的不只是数字",
+          "notes": [
+            "标题 22 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 9.0,
+          "weight": 15,
+          "target": null,
+          "value": 132,
+          "notes": [
+            "首段 132 字，稍长但可接受",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "开头钩子",
+          "gap": "首段 132 字，稍长但可接受；首段有具体事实/数字锚点；首段无时间锚，时效感弱",
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-23-ai-server-price.json",
+      "date": "2026-11-23",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "合同签了、货没到，价格涨了 45%：这轮 AI 服务器涨价涨在哪",
+      "score": 92.0,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1515.0,
+        "images": 5.5,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 1426,
+        "images": 6,
+        "subheads": 6,
+        "paragraphs": 18,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 15,
+        "firstParaLen": 70,
+        "firstParaAnchor": true,
+        "titleLen": 21,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 79,
+        "imageCaptions": 6
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1515.0,
+          "value": 1426,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 5.5,
+          "value": 6,
+          "notes": [
+            "为基准的 109%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 6,
+          "notes": [
+            "小标题 6 个，分节清晰",
+            "段落 18 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "合同签了、货没到，价格涨了 45%：这轮 AI 服务器涨价涨在哪",
+          "notes": [
+            "标题 21 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 70,
+          "notes": [
+            "首段 70 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-margin-ratio.json",
+      "date": "2026-11-23",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "融资保证金从 100% 降到 80%：一个算式，比 4000 亿更重要",
+      "score": 92.0,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1515.0,
+        "images": 5.5,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 1431,
+        "images": 5,
+        "subheads": 7,
+        "paragraphs": 19,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 39,
+        "firstParaLen": 56,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 75,
+        "imageCaptions": 5
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1515.0,
+          "value": 1431,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 5.5,
+          "value": 5,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 7,
+          "notes": [
+            "小标题 7 个，分节清晰",
+            "段落 19 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "融资保证金从 100% 降到 80%：一个算式，比 4000 亿更重要",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 56,
+          "notes": [
+            "首段 56 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
     {
       "file": "2026-11-22-downjacket.json",
       "date": "2026-11-22",
@@ -449,6 +746,103 @@
             "首段 35 字，开场利落",
             "首段有具体事实/数字锚点",
             "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-ai-server-price.json",
+      "date": "2026-11-23",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "签完约还能涨 45%？AI 服务器涨价的三个关键点",
+      "score": 91.0,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 399,
+        "images": 8,
+        "subheads": 4,
+        "paragraphs": 10,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 9,
+        "firstParaLen": 34,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 40,
+        "imageCaptions": 8
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 399,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 9,
+          "value": 8,
+          "notes": [
+            "为基准的 89%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 15.0,
+          "weight": 20,
+          "target": 0,
+          "value": 4,
+          "notes": [
+            "配图 8 张，符合贴图多图形态",
+            "段落 10 段，与贴图短段节奏不符",
+            "平均每段 40 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "签完约还能涨 45%？AI 服务器涨价的三个关键点",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 34,
+          "notes": [
+            "首段 34 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }
@@ -844,6 +1238,297 @@
       "gaps": []
     },
     {
+      "file": "2026-11-23-margin-ratio.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "融资保证金降到 80%，11 月 30 日施行：三个问题看懂这次调整",
+      "score": 92.0,
+      "grade": "达标",
+      "viralSample": 3,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 1200,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 1267,
+        "images": 2,
+        "subheads": 8,
+        "paragraphs": 18,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 34,
+        "firstParaLen": 53,
+        "firstParaAnchor": true,
+        "titleLen": 21,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 70,
+        "imageCaptions": 2
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1200,
+          "value": 1267,
+          "notes": [
+            "为基准的 106%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 2,
+          "notes": [
+            "为基准的 200%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 8,
+          "notes": [
+            "小标题 8 个，分节清晰",
+            "段落 18 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "融资保证金降到 80%，11 月 30 日施行：三个问题看懂这次调整",
+          "notes": [
+            "标题 21 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 53,
+          "notes": [
+            "首段 53 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-property-fee.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "277 户只约 100 家交物业费：900 元车位费，为什么能上热搜",
+      "score": 92.0,
+      "grade": "达标",
+      "viralSample": 3,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 1200,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 1189,
+        "images": 2,
+        "subheads": 5,
+        "paragraphs": 14,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 13,
+        "firstParaLen": 62,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 85,
+        "imageCaptions": 2
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1200,
+          "value": 1189,
+          "notes": [
+            "为基准的 99%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 2,
+          "notes": [
+            "为基准的 200%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 14 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "277 户只约 100 家交物业费：900 元车位费，为什么能上热搜",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 62,
+          "notes": [
+            "首段 62 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-ai-server-price.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "AI 服务器交付前涨价 45%：签好的合同，为什么还能改价？",
+      "score": 96.0,
+      "grade": "达标",
+      "viralSample": 3,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 1200,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 1206,
+        "images": 2,
+        "subheads": 5,
+        "paragraphs": 16,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 13,
+        "firstParaLen": 61,
+        "firstParaAnchor": true,
+        "titleLen": 20,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 75,
+        "imageCaptions": 2
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1200,
+          "value": 1206,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 2,
+          "notes": [
+            "为基准的 200%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 16 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "AI 服务器交付前涨价 45%：签好的合同，为什么还能改价？",
+          "notes": [
+            "标题 20 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 61,
+          "notes": [
+            "首段 61 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
       "file": "2026-11-22-downjacket.json",
       "date": "2026-11-22",
       "form": "tt-article",
@@ -1225,6 +1910,303 @@
             "首段 44 字，开场利落",
             "首段有具体事实/数字锚点",
             "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-shenzhou-24.json",
+      "date": "2026-11-23",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "神舟二十四号完成最后一次全区合练：离点火还差哪几步？",
+      "score": 95.0,
+      "grade": "达标",
+      "viralSample": 1,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 320,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 321,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 0,
+        "firstParaLen": 66,
+        "firstParaAnchor": false,
+        "titleLen": 24,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 54,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 320,
+          "value": 321,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 66 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "神舟二十四号完成最后一次全区合练：离点火还差哪几步？",
+          "notes": [
+            "标题 24 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 10.0,
+          "weight": 15,
+          "target": null,
+          "value": 66,
+          "notes": [
+            "首段 66 字，开场利落",
+            "首段缺具体锚点，偏议论",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "开头钩子",
+          "gap": "首段 66 字，开场利落；首段缺具体锚点，偏议论；首段有时间锚，贴近热点",
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-23-ai-server-price.json",
+      "date": "2026-11-23",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "AI 服务器签完约还能涨 45%，问题不在涨价，在合同",
+      "score": 96.0,
+      "grade": "达标",
+      "viralSample": 1,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 320,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 314,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 9,
+        "firstParaLen": 45,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 52,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 320,
+          "value": 314,
+          "notes": [
+            "为基准的 98%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 45 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": "AI 服务器签完约还能涨 45%，问题不在涨价，在合同",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题缺少转折或悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 45,
+          "notes": [
+            "首段 45 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-23-orchard-livestream.json",
+      "date": "2026-11-23",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "主播误入果园切了 181 斤苹果，果农却说一千多斤",
+      "score": 96.0,
+      "grade": "达标",
+      "viralSample": 1,
+      "benchmarkReliable": false,
+      "bench": {
+        "wordCount": 320,
+        "images": 1,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 335,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 5,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 4,
+        "firstParaLen": 76,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 67,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 320,
+          "value": 335,
+          "notes": [
+            "为基准的 105%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "段落 5 段，符合短讯节奏",
+            "首段 76 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "主播误入果园切了 181 斤苹果，果农却说一千多斤",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 11.0,
+          "weight": 15,
+          "target": null,
+          "value": 76,
+          "notes": [
+            "首段 76 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段无时间锚，时效感弱"
           ],
           "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
         }

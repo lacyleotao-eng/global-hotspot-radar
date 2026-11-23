@@ -70,9 +70,16 @@
     var el = document.getElementById('heroWindow');
     if (el) {
       var nb = nextBatches(), a = nb[0];
-      var tag = '<span class="hw-tag">下一批</span>';
-      if (a) {
-        el.innerHTML = tag + '<b>' + a.label + '</b> ' + a.what +
+      var it = state.issue || {};
+      var today = new Date();
+      var ymd = today.getFullYear() + '-' + pad2(today.getMonth() + 1) + '-' + pad2(today.getDate());
+      if (it.date === ymd && it.status === 'ready') {
+        var g = ((it.pools || {})['公众号'] || {}).available || 0;
+        var t = ((it.pools || {})['今日头条'] || {}).available || 0;
+        el.innerHTML = '<span class="hw-tag">今日已备齐</span><b>公众号 ' + g + ' 篇 · 头条 ' + t + ' 篇</b>' +
+          '　→　09:30 起随时取用，复制即可发';
+      } else if (a) {
+        el.innerHTML = '<span class="hw-tag">下一批</span><b>' + a.label + '</b> ' + a.what +
           '　→　<b>09:30 起</b>公众号 1 篇、头条 3 篇，素材随时取用';
       }
     }
@@ -810,7 +817,7 @@
             (items.length < (g.pool.target || 0) ? '（目标 ' + g.pool.target + '）' : '') + '</span>' +
           '<span class="ia-gdesc">' + esc(g.desc) + '</span></div>' +
         (items.length
-          ? '<div class="ia-grid">' + items.map(issueAsset).join('') + '</div>'
+          ? '<div class="ia-grid' + (g.key === '公众号' ? ' two' : '') + '">' + items.map(issueAsset).join('') + '</div>'
           : '<p class="ia-none">这个池还没有素材。</p>') +
         '</section>';
     }).join('');
