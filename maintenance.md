@@ -7,9 +7,9 @@
 
 | 时间 | 任务 | 产出 | 是否 push |
 |---|---|---|---|
-| 07:30 | 国内热点采集（公众号/头条/抖音/知乎/微博…） | `data/inbox/cn-*.json` → `data/items.json` | 否 |
+| 07:30 | 国内热点采集（公众号/头条/抖音/知乎/微博…） | `data/inbox/cn-*.json` → `data/items.json` | 是（采集完即上线） |
 | 09:30 | 晨间微头条快稿（当天热点，上午就能发） | `data/ready/*-am.json`（仅 tt-micro） | 是 |
-| 12:30 | 海外热点采集（X/Reddit/HN/GitHub/PH…） | `data/inbox/global-*.json` → `data/items.json` | 否 |
+| 12:30 | 海外热点采集（X/Reddit/HN/GitHub/PH…） | `data/inbox/global-*.json` → `data/items.json` | 是（采集完即上线） |
 | 18:00 | 爆款采集与对标 | `data/viral-inbox/` → `data/viral/benchmark.json` | 是 |
 | 20:30 | 评分 · TOP3 全覆盖成品稿 · 自制信息卡 · 自检 · 发布 | `data/picks.json`、`data/ready/*.json`、`data/audit.json`、`assets/images/*.jpeg` | 是 |
 | 23:30 | 发布后线上验收与失败兜底 | 只读复核；不通过则补稿或重推 | 视情况 |
@@ -32,7 +32,7 @@
 
 ## 二、互相兜底的规则
 
-- 07:30 / 12:30 只入库不发布，所以**当天数据上线完全依赖 20:30 那一次 push**。
+- 07:30 / 12:30 采集完就各自 push 一次条目，所以白天的「情报流」能看到当天新增；选题批次与成品稿仍然只在 20:30 上线。
 - 18:00 若失败，20:30 会拿旧的 `benchmark.json` 当写作指标（不会崩，但指标会偏旧），验收任务应在报告里点出。
 - 23:30 是 20:30 的安全网：本地没稿 → 补写；有稿没上线 → 重推；构建失败 → 修或报错。**最多 2 轮，不许伪造通过。**
 - 所有情报站任务统一跑最低倍率模型（当前 `hy4flash-free` x0.00）；429 由「模型额度哨兵」每 4 小时自动升降档，上限 x0.15。
