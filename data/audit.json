@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T10:36:35+08:00",
+  "updatedAt": "2026-11-23T10:40:33+08:00",
   "coverage": {
     "date": "2026-11-23",
     "total": 4,
@@ -22,10 +22,10 @@
   },
   "benchmarkUpdatedAt": "2026-11-22T22:13:38+08:00",
   "total": 33,
-  "avgScore": 95.9,
+  "avgScore": 95.6,
   "grades": {
-    "达标": 33,
-    "接近": 0,
+    "达标": 32,
+    "接近": 1,
     "不达标": 0
   },
   "byForm": [
@@ -42,8 +42,8 @@
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
       "count": 8,
-      "avgScore": 94.9,
-      "min": 85.8,
+      "avgScore": 93.8,
+      "min": 76.8,
       "max": 100,
       "grade": "达标"
     },
@@ -856,8 +856,8 @@
       "formLabel": "微信公众号 · 贴图",
       "target": "公众号",
       "title": "融资保证金降到 80%：100 万保证金，能多买 25 万",
-      "score": 85.8,
-      "grade": "达标",
+      "score": 76.8,
+      "grade": "接近",
       "viralSample": 7,
       "benchmarkReliable": true,
       "bench": {
@@ -867,7 +867,7 @@
       },
       "metrics": {
         "wordCount": 424,
-        "images": 6,
+        "images": 5,
         "subheads": 5,
         "paragraphs": 9,
         "lists": 0,
@@ -879,7 +879,7 @@
         "titleHasNumber": true,
         "titleHasQuestion": false,
         "avgParaLen": 47,
-        "imageCaptions": 6
+        "imageCaptions": 5
       },
       "checks": {
         "wordCount": {
@@ -895,23 +895,23 @@
         },
         "images": {
           "label": "配图",
-          "score": 23.8,
+          "score": 19.8,
           "weight": 25,
           "target": 9,
-          "value": 6,
+          "value": 5,
           "notes": [
-            "为基准的 67%"
+            "为基准的 56%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
         "structure": {
           "label": "结构",
-          "score": 15.0,
+          "score": 10.0,
           "weight": 20,
           "target": 0,
           "value": 5,
           "notes": [
-            "配图 6 张，符合贴图多图形态",
+            "配图 5 张，仍少于爆款",
             "段落 9 段，与贴图短段节奏不符",
             "平均每段 47 字，适合截图阅读"
           ],
@@ -947,8 +947,13 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "6 张 / 基准 9 张",
+          "gap": "5 张 / 基准 9 张",
           "fix": "补到 9 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        },
+        {
+          "dim": "结构",
+          "gap": "段落 9 段，与贴图短段节奏不符",
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
         }
       ]
     },

@@ -1967,10 +1967,6 @@
           "digest": "11 月 30 日起，沪深北交易所融资买入的最低保证金比例由 100% 调低至 80%。市场上都在传「近 4000 亿增量」，但这个数字是理论上限，先把算式搞懂。",
           "images": [
             {
-              "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
-            },
-            {
               "src": "assets/images/mgn-a-2.jpeg",
               "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
@@ -1984,6 +1980,10 @@
             },
             {
               "src": "assets/images/mgn-b-2.jpeg",
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
+            },
+            {
+              "src": "assets/images/mgn-b-3.jpeg",
               "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             }
           ],
@@ -2116,7 +2116,7 @@
           "digest": "100 万保证金从能买 200 万变成能买 225 万。传得很广的「近 4000 亿」，其实是个理论上限。",
           "images": [
             {
-              "src": "assets/images/mgn-a-1.jpeg",
+              "src": "assets/images/mgn-a-2.jpeg",
               "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             }
           ],
@@ -2249,10 +2249,6 @@
           "digest": "11 月 30 日起，融资买入的最低保证金比例从 100% 降到 80%。用一道算术讲清它到底改了什么。",
           "images": [
             {
-              "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
-            },
-            {
               "src": "assets/images/mgn-a-2.jpeg",
               "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
@@ -2345,7 +2341,7 @@
           "digest": "11 月 30 日起施行。用一道算术讲清它改了什么，以及那 4000 亿为什么不能当成「已经来了」。",
           "images": [
             {
-              "src": "assets/images/mgn-a-1.jpeg",
+              "src": "assets/images/mgn-a-2.jpeg",
               "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             }
           ],
