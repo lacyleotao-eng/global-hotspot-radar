@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T10:33:11+08:00",
+  "updatedAt": "2026-11-23T10:36:35+08:00",
   "coverage": {
     "date": "2026-11-23",
     "total": 4,
@@ -22,7 +22,7 @@
   },
   "benchmarkUpdatedAt": "2026-11-22T22:13:38+08:00",
   "total": 33,
-  "avgScore": 95.3,
+  "avgScore": 95.9,
   "grades": {
     "达标": 33,
     "接近": 0,
@@ -51,8 +51,8 @@
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
       "count": 8,
-      "avgScore": 94.7,
-      "min": 85.8,
+      "avgScore": 97.0,
+      "min": 92.0,
       "max": 100,
       "grade": "达标"
     },
@@ -1661,7 +1661,7 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "融资保证金降到 80%，11 月 30 日施行：三个问题看懂这次调整",
-      "score": 85.8,
+      "score": 92.0,
       "grade": "达标",
       "viralSample": 3,
       "benchmarkReliable": false,
@@ -1672,7 +1672,7 @@
       },
       "metrics": {
         "wordCount": 1267,
-        "images": 3,
+        "images": 1,
         "subheads": 8,
         "paragraphs": 18,
         "lists": 1,
@@ -1684,7 +1684,7 @@
         "titleHasNumber": true,
         "titleHasQuestion": false,
         "avgParaLen": 70,
-        "imageCaptions": 3
+        "imageCaptions": 1
       },
       "checks": {
         "wordCount": {
@@ -1700,12 +1700,12 @@
         },
         "images": {
           "label": "配图",
-          "score": 18.8,
+          "score": 25,
           "weight": 25,
           "target": 1,
-          "value": 3,
+          "value": 1,
           "notes": [
-            "为基准的 300%（偏长）"
+            "为基准的 100%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1758,7 +1758,7 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "277 户只约 100 家交物业费：900 元车位费，为什么能上热搜",
-      "score": 85.8,
+      "score": 92.0,
       "grade": "达标",
       "viralSample": 3,
       "benchmarkReliable": false,
@@ -1769,7 +1769,7 @@
       },
       "metrics": {
         "wordCount": 1189,
-        "images": 3,
+        "images": 1,
         "subheads": 5,
         "paragraphs": 14,
         "lists": 1,
@@ -1781,7 +1781,7 @@
         "titleHasNumber": true,
         "titleHasQuestion": false,
         "avgParaLen": 85,
-        "imageCaptions": 3
+        "imageCaptions": 1
       },
       "checks": {
         "wordCount": {
@@ -1797,12 +1797,12 @@
         },
         "images": {
           "label": "配图",
-          "score": 18.8,
+          "score": 25,
           "weight": 25,
           "target": 1,
-          "value": 3,
+          "value": 1,
           "notes": [
-            "为基准的 300%（偏长）"
+            "为基准的 100%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1855,7 +1855,7 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "AI 服务器交付前涨价 45%：签好的合同，为什么还能改价？",
-      "score": 89.8,
+      "score": 96.0,
       "grade": "达标",
       "viralSample": 3,
       "benchmarkReliable": false,
@@ -1866,7 +1866,7 @@
       },
       "metrics": {
         "wordCount": 1206,
-        "images": 3,
+        "images": 1,
         "subheads": 5,
         "paragraphs": 16,
         "lists": 1,
@@ -1878,7 +1878,7 @@
         "titleHasNumber": true,
         "titleHasQuestion": true,
         "avgParaLen": 75,
-        "imageCaptions": 3
+        "imageCaptions": 1
       },
       "checks": {
         "wordCount": {
@@ -1894,12 +1894,12 @@
         },
         "images": {
           "label": "配图",
-          "score": 18.8,
+          "score": 25,
           "weight": 25,
           "target": 1,
-          "value": 3,
+          "value": 1,
           "notes": [
-            "为基准的 300%（偏长）"
+            "为基准的 100%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },

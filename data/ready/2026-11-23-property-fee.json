@@ -7,7 +7,7 @@
   "sourceUrl": "https://www.toutiao.com/a7710910657507475987",
   "verification": "部分核实",
   "verificationNote": "事件经 1818 黄金眼报道，新浪财经与公众号同源文本可交叉核对对话与金额。277 户、约 100 户缴费、年亏 40 多万均为物业负责人单方说法，未获账目印证；消控室夜间无人来自业主提供的照片，是否违反值班规定需消防部门认定；头条页面未显示发布时间。",
-  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
   "batch": "morning",
   "pieces": [
     {
@@ -20,15 +20,7 @@
       "images": [
         {
           "src": "assets/images/prf-a-1.jpeg",
-          "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
-        },
-        {
-          "src": "assets/images/prf-a-2.jpeg",
-          "caption": "AI 生成示意图：地库坡道与减速带"
-        },
-        {
-          "src": "assets/images/prf-a-3.jpeg",
-          "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         }
       ],
       "blocks": [
@@ -133,23 +125,23 @@
       "images": [
         {
           "src": "assets/images/prf-a-1.jpeg",
-          "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-a-2.jpeg",
-          "caption": "AI 生成示意图：地库坡道与减速带"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-a-3.jpeg",
-          "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-b-1.jpeg",
-          "caption": "AI 生成示意图：小区内部道路与单元门口"
+          "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-b-2.jpeg",
-          "caption": "AI 生成示意图：小区绿化带与电动车棚"
+          "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
         }
       ],
       "blocks": [
@@ -293,27 +285,27 @@
       "images": [
         {
           "src": "assets/images/prf-a-1.jpeg",
-          "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-a-2.jpeg",
-          "caption": "AI 生成示意图：地库坡道与减速带"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-a-3.jpeg",
-          "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-b-1.jpeg",
-          "caption": "AI 生成示意图：小区内部道路与单元门口"
+          "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-b-2.jpeg",
-          "caption": "AI 生成示意图：小区绿化带与电动车棚"
+          "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
         },
         {
           "src": "assets/images/prf-b-3.jpeg",
-          "caption": "AI 生成示意图：住宅楼外立面与阴天光线"
+          "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
         }
       ],
       "blocks": [
@@ -381,7 +373,7 @@
       "images": [
         {
           "src": "assets/images/prf-a-1.jpeg",
-          "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
         }
       ],
       "blocks": [

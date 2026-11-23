@@ -7,7 +7,7 @@
   "sourceUrl": "https://www.ithome.com/1/030/713.htm",
   "verification": "部分核实",
   "verificationNote": "事实主线来自 IT之家对英国《金融时报》报道的转述，涨幅 25%–45% 为知情人士口径，四家厂商均未公开确认；未取得《金融时报》原文与爱尔兰法院文书，xAI 诉戴尔案仍在审理，本文不对胜负作判断。",
-  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
   "batch": "morning",
   "pieces": [
     {
@@ -20,23 +20,23 @@
       "images": [
         {
           "src": "assets/images/ais-a-1.jpeg",
-          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-a-2.jpeg",
-          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-a-3.jpeg",
-          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-b-1.jpeg",
-          "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
+          "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
         },
         {
           "src": "assets/images/ais-b-2.jpeg",
-          "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
+          "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
         }
       ],
       "blocks": [
@@ -161,27 +161,27 @@
       "images": [
         {
           "src": "assets/images/ais-a-1.jpeg",
-          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-a-2.jpeg",
-          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-a-3.jpeg",
-          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         },
         {
           "src": "assets/images/ais-b-1.jpeg",
-          "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
+          "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
         },
         {
           "src": "assets/images/ais-b-2.jpeg",
-          "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
+          "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
         },
         {
           "src": "assets/images/ais-b-3.jpeg",
-          "caption": "AI 生成示意图：服务器内部结构与冷白光源"
+          "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
         }
       ],
       "blocks": [
@@ -257,15 +257,7 @@
       "images": [
         {
           "src": "assets/images/ais-a-1.jpeg",
-          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
-        },
-        {
-          "src": "assets/images/ais-a-2.jpeg",
-          "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
-        },
-        {
-          "src": "assets/images/ais-a-3.jpeg",
-          "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         }
       ],
       "blocks": [
@@ -378,7 +370,7 @@
       "images": [
         {
           "src": "assets/images/ais-a-1.jpeg",
-          "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+          "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
         }
       ],
       "blocks": [

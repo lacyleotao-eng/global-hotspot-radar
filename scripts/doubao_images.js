@@ -140,6 +140,26 @@ try {
 }
 
 await fs.writeFile(JOBS, JSON.stringify({ results }, null, 2));
+
+// 产出一份映射表，后续 rebind_images.py 据此把图绑到稿件上（不用人肉记文件名）
+const map = {};
+for (const rec of results) {
+  for (let i = 0; i < (rec.outs || []).length; i++) {
+    const key = rec.name;
+    (map[key] = map[key] || []).push({ src: rec.outs[i], prompt: rec.prompt, bytes: (rec.bytes || [])[i] || 0 });
+  }
+}
+const MAP = ROOT + "/data/image-map.json";
+let old = {};
+try { old = JSON.parse(await fs.readFile(MAP, "utf-8")).items || {}; } catch (e) {}
+await fs.writeFile(MAP, JSON.stringify({
+  updatedAt: new Date().toISOString(),
+  items: Object.assign(old, map),
+}, null, 2));
+
 const okCount = results.filter((r) => r.ok).length;
 const imgCount = results.reduce((n, r) => n + (r.outs || []).length, 0);
 console.log("[done] 任务成功", okCount, "/", results.length, "，共下载", imgCount, "张");
+if (okCount < results.length) {
+  console.log("[warn] 失败任务：", results.filter((r) => !r.ok).map((r) => r.name + "(" + (r.error || "") + ")").join("；"));
+}

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "date": "2026-11-23",
-  "generatedAt": "2026-11-23T10:35:04+08:00",
+  "generatedAt": "2026-11-23T10:36:40+08:00",
   "source": "ready",
   "totalScored": 46,
   "topPerTarget": {
@@ -221,11 +221,45 @@
     ],
     "今日头条": [
       {
-        "itemId": "77e7fbb75dd60e8c",
+        "itemId": "b84c75a38d8e69d0",
         "target": "今日头条",
         "pieceId": "tt-article",
         "form": "头条文章",
         "rank": 1,
+        "score": 96.0,
+        "grade": "达标",
+        "sourceTitle": "签约后也能涨价：消息称 AI 服务器厂商交付前提价，涨幅最高达 45%",
+        "platform": "IT之家",
+        "url": "https://www.ithome.com/1/030/713.htm",
+        "region": "国内",
+        "verification": "部分核实",
+        "heatStage": "上升",
+        "lead": {
+          "target": "今日头条",
+          "headline": "AI 服务器交付前涨价 45%：签好的合同，为什么还能改价？",
+          "angle": "戴尔、HPE 等厂商被曝交付前提价，最高 45%。争议的核心不是涨多少，而是「固定价」到底固定了什么。",
+          "outline": [
+            "涨幅从哪来：内存，不是显卡",
+            "一个正在打的官司，说明了问题",
+            "商业重谈和法律违约，不是一回事",
+            "成本会传到哪里",
+            "看这类消息的三个问题"
+          ],
+          "audience": "关注该话题的普通读者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "按来源报道口径写，不推测未公布信息",
+          "basis": "IT之家站内稿件与同稿公众号版本逐段比对，关键金额一致；未取得《金融时报》原文与爱尔兰法院文书"
+        },
+        "breakdown": [],
+        "docFile": "2026-11-23-ai-server-price.json"
+      },
+      {
+        "itemId": "77e7fbb75dd60e8c",
+        "target": "今日头条",
+        "pieceId": "tt-article",
+        "form": "头条文章",
+        "rank": 2,
         "score": 96.0,
         "grade": "达标",
         "sourceTitle": "百万粉丝主播被指私闯果园带货糟蹋苹果？官方通报：系误入相邻果园，已赔偿并道歉",
@@ -256,46 +290,12 @@
         "docFile": "2026-11-23-orchard-livestream.json"
       },
       {
-        "itemId": "b84c75a38d8e69d0",
-        "target": "今日头条",
-        "pieceId": "tt-article",
-        "form": "头条文章",
-        "rank": 2,
-        "score": 89.8,
-        "grade": "达标",
-        "sourceTitle": "签约后也能涨价：消息称 AI 服务器厂商交付前提价，涨幅最高达 45%",
-        "platform": "IT之家",
-        "url": "https://www.ithome.com/1/030/713.htm",
-        "region": "国内",
-        "verification": "部分核实",
-        "heatStage": "上升",
-        "lead": {
-          "target": "今日头条",
-          "headline": "AI 服务器交付前涨价 45%：签好的合同，为什么还能改价？",
-          "angle": "戴尔、HPE 等厂商被曝交付前提价，最高 45%。争议的核心不是涨多少，而是「固定价」到底固定了什么。",
-          "outline": [
-            "涨幅从哪来：内存，不是显卡",
-            "一个正在打的官司，说明了问题",
-            "商业重谈和法律违约，不是一回事",
-            "成本会传到哪里",
-            "看这类消息的三个问题"
-          ],
-          "audience": "关注该话题的普通读者",
-          "timeliness": "当日",
-          "priority": "高",
-          "risk": "按来源报道口径写，不推测未公布信息",
-          "basis": "IT之家站内稿件与同稿公众号版本逐段比对，关键金额一致；未取得《金融时报》原文与爱尔兰法院文书"
-        },
-        "breakdown": [],
-        "docFile": "2026-11-23-ai-server-price.json"
-      },
-      {
         "itemId": "fbbdfed100c5d928",
         "target": "今日头条",
         "pieceId": "tt-article",
         "form": "头条文章",
         "rank": 3,
-        "score": 85.8,
+        "score": 92.0,
         "grade": "达标",
         "sourceTitle": "融资保证金比例下限降至80%，11月30日起施行",
         "platform": "中国经济网",
@@ -330,7 +330,7 @@
         "pieceId": "tt-article",
         "form": "头条文章",
         "rank": 4,
-        "score": 85.8,
+        "score": 92.0,
         "grade": "达标",
         "sourceTitle": "277户中，只有约100家一直交物业费？业主指出原因和连锁反应，物业老总称每年起码亏40多万",
         "platform": "今日头条",

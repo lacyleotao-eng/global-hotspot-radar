@@ -7,7 +7,7 @@
   "sourceUrl": "https://m.thepaper.cn/newsDetail_forward_34537047",
   "verification": "已核实",
   "verificationNote": "以洒渔镇人民政府通报为准，交叉核对澎湃新闻、腾讯新闻及多家转载公众号文本，通报原文一致。果农自述「一千多斤」与现场称量的 181 斤存在明显差距，本文以 181 斤为准并说明两种口径来源；赔偿金额未公开，「仅赔 6000 元」是初期协商说法，不是最终认定。",
-  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
   "batch": "morning",
   "pieces": [
     {
@@ -20,23 +20,23 @@
       "images": [
         {
           "src": "assets/images/orc-a-1.jpeg",
-          "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-a-2.jpeg",
-          "caption": "AI 生成示意图：清晨薄雾中的果园与挂果枝条"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-a-3.jpeg",
-          "caption": "AI 生成示意图：果园地面与落果，侧逆光"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-b-1.jpeg",
-          "caption": "AI 生成示意图：果园里的直播三脚架与补光灯"
+          "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
         },
         {
           "src": "assets/images/orc-b-2.jpeg",
-          "caption": "AI 生成示意图：手机支架与果树背景"
+          "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
         }
       ],
       "blocks": [
@@ -161,7 +161,7 @@
       "images": [
         {
           "src": "assets/images/orc-a-1.jpeg",
-          "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         }
       ],
       "blocks": [
@@ -201,27 +201,27 @@
       "images": [
         {
           "src": "assets/images/orc-a-1.jpeg",
-          "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-a-2.jpeg",
-          "caption": "AI 生成示意图：清晨薄雾中的果园与挂果枝条"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-a-3.jpeg",
-          "caption": "AI 生成示意图：果园地面与落果，侧逆光"
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         },
         {
           "src": "assets/images/orc-b-1.jpeg",
-          "caption": "AI 生成示意图：果园里的直播三脚架与补光灯"
+          "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
         },
         {
           "src": "assets/images/orc-b-2.jpeg",
-          "caption": "AI 生成示意图：手机支架与果树背景"
+          "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
         },
         {
           "src": "assets/images/orc-b-3.jpeg",
-          "caption": "AI 生成示意图：田间地头的直播设备特写"
+          "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
         }
       ],
       "blocks": [
@@ -288,8 +288,8 @@
       "digest": "误入、有邀请、已赔偿——通报把最重的指控排除了，但没解释为什么一个专业带货团队会走错地。",
       "images": [
         {
-          "src": "assets/images/orc-b-1.jpeg",
-          "caption": "AI 生成示意图：果园里的直播三脚架与补光灯（非新闻现场）"
+          "src": "assets/images/orc-a-1.jpeg",
+          "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
         }
       ],
       "blocks": [

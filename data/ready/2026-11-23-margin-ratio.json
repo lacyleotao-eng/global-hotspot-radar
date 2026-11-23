@@ -7,7 +7,7 @@
   "sourceUrl": "https://www.ce.cn/xwzx/gnsz/gdxw/202611/t20261123_3302120.shtml",
   "verification": "已核实",
   "verificationNote": "以交易所通知条款为主线，交叉核对人民日报客户端、中国证券网、央广网同题报道，四家表述一致。「近 4000 亿元」为市场人士理论测算口径，不是监管承诺，也不是已入市资金。",
-  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+  "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
   "batch": "morning",
   "pieces": [
     {
@@ -20,23 +20,23 @@
       "images": [
         {
           "src": "assets/images/mgn-a-1.jpeg",
-          "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-a-2.jpeg",
-          "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-a-3.jpeg",
-          "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-b-1.jpeg",
-          "caption": "AI 生成示意图：金融区写字楼幕墙映出行情光"
+          "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-b-2.jpeg",
-          "caption": "AI 生成示意图：雨夜金融区街道，玻璃幕墙反光"
+          "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
         }
       ],
       "blocks": [
@@ -169,15 +169,7 @@
       "images": [
         {
           "src": "assets/images/mgn-a-1.jpeg",
-          "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
-        },
-        {
-          "src": "assets/images/mgn-a-2.jpeg",
-          "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
-        },
-        {
-          "src": "assets/images/mgn-a-3.jpeg",
-          "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         }
       ],
       "blocks": [
@@ -310,27 +302,27 @@
       "images": [
         {
           "src": "assets/images/mgn-a-1.jpeg",
-          "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-a-2.jpeg",
-          "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-a-3.jpeg",
-          "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-b-1.jpeg",
-          "caption": "AI 生成示意图：金融区写字楼幕墙映出行情光"
+          "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-b-2.jpeg",
-          "caption": "AI 生成示意图：雨夜金融区街道，玻璃幕墙反光"
+          "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
         },
         {
           "src": "assets/images/mgn-b-3.jpeg",
-          "caption": "AI 生成示意图：夜间写字楼群，红绿光斑虚化"
+          "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
         }
       ],
       "blocks": [
@@ -406,7 +398,7 @@
       "images": [
         {
           "src": "assets/images/mgn-a-1.jpeg",
-          "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+          "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
         }
       ],
       "blocks": [

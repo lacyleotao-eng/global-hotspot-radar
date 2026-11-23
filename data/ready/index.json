@@ -1547,7 +1547,7 @@
       "sourceUrl": "https://www.ithome.com/1/030/713.htm",
       "verification": "部分核实",
       "verificationNote": "事实主线来自 IT之家对英国《金融时报》报道的转述，涨幅 25%–45% 为知情人士口径，四家厂商均未公开确认；未取得《金融时报》原文与爱尔兰法院文书，xAI 诉戴尔案仍在审理，本文不对胜负作判断。",
-      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
       "batch": "morning",
       "pieces": [
         {
@@ -1560,23 +1560,23 @@
           "images": [
             {
               "src": "assets/images/ais-a-1.jpeg",
-              "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-a-2.jpeg",
-              "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-a-3.jpeg",
-              "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-b-1.jpeg",
-              "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
+              "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
             },
             {
               "src": "assets/images/ais-b-2.jpeg",
-              "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
+              "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
             }
           ],
           "blocks": [
@@ -1701,27 +1701,27 @@
           "images": [
             {
               "src": "assets/images/ais-a-1.jpeg",
-              "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-a-2.jpeg",
-              "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-a-3.jpeg",
-              "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             },
             {
               "src": "assets/images/ais-b-1.jpeg",
-              "caption": "AI 生成示意图：服务器主板上的 GPU 加速卡特写"
+              "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
             },
             {
               "src": "assets/images/ais-b-2.jpeg",
-              "caption": "AI 生成示意图：GPU 散热鳍片与金色触点，微距"
+              "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
             },
             {
               "src": "assets/images/ais-b-3.jpeg",
-              "caption": "AI 生成示意图：服务器内部结构与冷白光源"
+              "caption": "AI 生成示意图：服务器主板上密集的 GPU 加速卡与散热鳍片（非新闻现场）"
             }
           ],
           "blocks": [
@@ -1797,15 +1797,7 @@
           "images": [
             {
               "src": "assets/images/ais-a-1.jpeg",
-              "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
-            },
-            {
-              "src": "assets/images/ais-a-2.jpeg",
-              "caption": "AI 生成示意图：数据中心机柜走廊，指示灯密集闪烁"
-            },
-            {
-              "src": "assets/images/ais-a-3.jpeg",
-              "caption": "AI 生成示意图：机房地面反光，冷蓝色调"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             }
           ],
           "blocks": [
@@ -1918,7 +1910,7 @@
           "images": [
             {
               "src": "assets/images/ais-a-1.jpeg",
-              "caption": "AI 生成示意图：深夜数据中心机房，成排服务器机柜（非新闻现场）"
+              "caption": "AI 生成示意图：深夜数据中心机房（非新闻现场）"
             }
           ],
           "blocks": [
@@ -1963,7 +1955,7 @@
       "sourceUrl": "https://www.ce.cn/xwzx/gnsz/gdxw/202611/t20261123_3302120.shtml",
       "verification": "已核实",
       "verificationNote": "以交易所通知条款为主线，交叉核对人民日报客户端、中国证券网、央广网同题报道，四家表述一致。「近 4000 亿元」为市场人士理论测算口径，不是监管承诺，也不是已入市资金。",
-      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
       "batch": "morning",
       "pieces": [
         {
@@ -1976,23 +1968,23 @@
           "images": [
             {
               "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-a-2.jpeg",
-              "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-a-3.jpeg",
-              "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-b-1.jpeg",
-              "caption": "AI 生成示意图：金融区写字楼幕墙映出行情光"
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-b-2.jpeg",
-              "caption": "AI 生成示意图：雨夜金融区街道，玻璃幕墙反光"
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2125,15 +2117,7 @@
           "images": [
             {
               "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
-            },
-            {
-              "src": "assets/images/mgn-a-2.jpeg",
-              "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
-            },
-            {
-              "src": "assets/images/mgn-a-3.jpeg",
-              "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2266,27 +2250,27 @@
           "images": [
             {
               "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-a-2.jpeg",
-              "caption": "AI 生成示意图：营业部大厅，屏幕内容虚化不可辨"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-a-3.jpeg",
-              "caption": "AI 生成示意图：营业部门口的行情屏与冷调灯光"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-b-1.jpeg",
-              "caption": "AI 生成示意图：金融区写字楼幕墙映出行情光"
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-b-2.jpeg",
-              "caption": "AI 生成示意图：雨夜金融区街道，玻璃幕墙反光"
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             },
             {
               "src": "assets/images/mgn-b-3.jpeg",
-              "caption": "AI 生成示意图：夜间写字楼群，红绿光斑虚化"
+              "caption": "AI 生成示意图：城市金融区高层写字楼玻璃幕墙（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2362,7 +2346,7 @@
           "images": [
             {
               "src": "assets/images/mgn-a-1.jpeg",
-              "caption": "AI 生成示意图：证券营业部大厅的行情大屏（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市证券营业部大厅（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2403,7 +2387,7 @@
       "sourceUrl": "https://m.thepaper.cn/newsDetail_forward_34537047",
       "verification": "已核实",
       "verificationNote": "以洒渔镇人民政府通报为准，交叉核对澎湃新闻、腾讯新闻及多家转载公众号文本，通报原文一致。果农自述「一千多斤」与现场称量的 181 斤存在明显差距，本文以 181 斤为准并说明两种口径来源；赔偿金额未公开，「仅赔 6000 元」是初期协商说法，不是最终认定。",
-      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
       "batch": "morning",
       "pieces": [
         {
@@ -2416,23 +2400,23 @@
           "images": [
             {
               "src": "assets/images/orc-a-1.jpeg",
-              "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-a-2.jpeg",
-              "caption": "AI 生成示意图：清晨薄雾中的果园与挂果枝条"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-a-3.jpeg",
-              "caption": "AI 生成示意图：果园地面与落果，侧逆光"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-b-1.jpeg",
-              "caption": "AI 生成示意图：果园里的直播三脚架与补光灯"
+              "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
             },
             {
               "src": "assets/images/orc-b-2.jpeg",
-              "caption": "AI 生成示意图：手机支架与果树背景"
+              "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2557,7 +2541,7 @@
           "images": [
             {
               "src": "assets/images/orc-a-1.jpeg",
-              "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2597,27 +2581,27 @@
           "images": [
             {
               "src": "assets/images/orc-a-1.jpeg",
-              "caption": "AI 生成示意图：秋日苹果园，果树成排（非新闻现场）"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-a-2.jpeg",
-              "caption": "AI 生成示意图：清晨薄雾中的果园与挂果枝条"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-a-3.jpeg",
-              "caption": "AI 生成示意图：果园地面与落果，侧逆光"
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             },
             {
               "src": "assets/images/orc-b-1.jpeg",
-              "caption": "AI 生成示意图：果园里的直播三脚架与补光灯"
+              "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
             },
             {
               "src": "assets/images/orc-b-2.jpeg",
-              "caption": "AI 生成示意图：手机支架与果树背景"
+              "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
             },
             {
               "src": "assets/images/orc-b-3.jpeg",
-              "caption": "AI 生成示意图：田间地头的直播设备特写"
+              "caption": "AI 生成示意图：果园里的手机直播三脚架与补光灯（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2684,8 +2668,8 @@
           "digest": "误入、有邀请、已赔偿——通报把最重的指控排除了，但没解释为什么一个专业带货团队会走错地。",
           "images": [
             {
-              "src": "assets/images/orc-b-1.jpeg",
-              "caption": "AI 生成示意图：果园里的直播三脚架与补光灯（非新闻现场）"
+              "src": "assets/images/orc-a-1.jpeg",
+              "caption": "AI 生成示意图：秋日苹果园（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2814,7 +2798,7 @@
       "sourceUrl": "https://www.toutiao.com/a7710910657507475987",
       "verification": "部分核实",
       "verificationNote": "事件经 1818 黄金眼报道，新浪财经与公众号同源文本可交叉核对对话与金额。277 户、约 100 户缴费、年亏 40 多万均为物业负责人单方说法，未获账目印证；消控室夜间无人来自业主提供的照片，是否违反值班规定需消防部门认定；头条页面未显示发布时间。",
-      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含任何可读文字，事实与数字以来源报道为准。",
+      "imageNote": "配图为豆包 Seedream 生成的 AI 示意图，不是新闻现场照片，画面中人物与场景均为生成，仅作版面配图；图中不含可读文字，事实与数字以来源报道为准。",
       "batch": "morning",
       "pieces": [
         {
@@ -2827,15 +2811,7 @@
           "images": [
             {
               "src": "assets/images/prf-a-1.jpeg",
-              "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
-            },
-            {
-              "src": "assets/images/prf-a-2.jpeg",
-              "caption": "AI 生成示意图：地库坡道与减速带"
-            },
-            {
-              "src": "assets/images/prf-a-3.jpeg",
-              "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             }
           ],
           "blocks": [
@@ -2940,23 +2916,23 @@
           "images": [
             {
               "src": "assets/images/prf-a-1.jpeg",
-              "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-a-2.jpeg",
-              "caption": "AI 生成示意图：地库坡道与减速带"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-a-3.jpeg",
-              "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-b-1.jpeg",
-              "caption": "AI 生成示意图：小区内部道路与单元门口"
+              "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-b-2.jpeg",
-              "caption": "AI 生成示意图：小区绿化带与电动车棚"
+              "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
             }
           ],
           "blocks": [
@@ -3100,27 +3076,27 @@
           "images": [
             {
               "src": "assets/images/prf-a-1.jpeg",
-              "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-a-2.jpeg",
-              "caption": "AI 生成示意图：地库坡道与减速带"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-a-3.jpeg",
-              "caption": "AI 生成示意图：地下车库日光灯照明与混凝土墙面"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-b-1.jpeg",
-              "caption": "AI 生成示意图：小区内部道路与单元门口"
+              "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-b-2.jpeg",
-              "caption": "AI 生成示意图：小区绿化带与电动车棚"
+              "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
             },
             {
               "src": "assets/images/prf-b-3.jpeg",
-              "caption": "AI 生成示意图：住宅楼外立面与阴天光线"
+              "caption": "AI 生成示意图：中国城市住宅小区内部道路与单元门口（非新闻现场）"
             }
           ],
           "blocks": [
@@ -3188,7 +3164,7 @@
           "images": [
             {
               "src": "assets/images/prf-a-1.jpeg",
-              "caption": "AI 生成示意图：小区地下停车场入口道闸（非新闻现场）"
+              "caption": "AI 生成示意图：中国城市住宅小区地下停车场入口（非新闻现场）"
             }
           ],
           "blocks": [
