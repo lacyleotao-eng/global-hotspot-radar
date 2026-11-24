@@ -935,6 +935,191 @@
       "sourceHost": "mp.weixin.qq.com"
     },
     {
+      "platform": "微信公众号",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "gzh-article",
+      "account": "夕小瑶科技说",
+      "title": "DeepSeek 估值或超 6000 亿！新股东名单曝光",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623669&idx=1&sn=b80ab2f22ad78ca56547bc79ede0ec87",
+      "publishedAt": "2026-11-24T09:03:00+08:00",
+      "summary": "从工商变更信息切入，梳理 DeepSeek 新一轮融资的股东名单与估值推算，并回顾数日前「限额使用」的争议，讨论其对开源模型竞争格局的影响。",
+      "category": "科技",
+      "tags": [
+        "公众号文章",
+        "AI",
+        "融资",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 18,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 8,
+            "note": "同一内容见于来源方与转载方两处，属少量转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2082,
+        "paragraphs": 61,
+        "subheads": 3,
+        "images": 11,
+        "titlePattern": "具体金额（6000亿）+ 名单悬念（曝光）",
+        "hook": "先接上一篇文章的旧热点（限额冲上热搜），再说「没想到过了几天又有新进展」",
+        "structure": [
+          "回顾上一轮热点",
+          "工商变更的硬信息",
+          "新股东名单拆解",
+          "估值推算逻辑",
+          "对行业格局的影响"
+        ],
+        "highlightSkills": [
+          "工商信息截图",
+          "金额加粗",
+          "小标题分段"
+        ],
+        "lessons": [
+          "同一事件做「第二落点」：隔三五天用新进展再写一次，比跟第一条更省力也更容易出彩",
+          "把工商变更、股权结构这类硬材料当骨架，比纯观点耐读",
+          "标题给金额 + 给悬念，两个钩子一起用"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 feed 直链；工商变更与估值均为文中转述",
+        "notes": "估值为媒体推算，未经企业确认；股东名单以工商公示为准"
+      },
+      "id": "4ae55d2fa547168d",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-article",
+      "account": "说财猫（新浪财经转载）",
+      "title": "雷总好惨！利润暴跌69%，小米发生了什么",
+      "url": "https://www.toutiao.com/article/7711731683246146084/",
+      "publishedAt": "2026-11-24T21:37:00+08:00",
+      "summary": "从小米 2026 年三季度财报切入，列出营收 1072.4 亿元、净利 38.76 亿元同比下滑 68.4% 等数字，再拆 AI、汽车、手机三条业务线的投入与压力。",
+      "category": "财经",
+      "tags": [
+        "头条文章",
+        "财报",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 18,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 8,
+            "note": "同一内容见于来源方与转载方两处，属少量转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 932,
+        "paragraphs": 26,
+        "subheads": 0,
+        "images": 10,
+        "titlePattern": "情绪词（好惨）+ 数字（69%）+ 问句",
+        "hook": "开头一句「刚刚，小米发布最新三季报」，紧接着「利润一刀砍半」",
+        "structure": [
+          "开场情绪判断",
+          "三季报关键数字",
+          "三条业务线拆解",
+          "与去年同期对比",
+          "一句设问收尾"
+        ],
+        "highlightSkills": [
+          "每个数字单独成行",
+          "关键跌幅加粗",
+          "财报截图配图"
+        ],
+        "lessons": [
+          "头条文章 900-1300 字最稳，超过 2000 字完读率明显下降",
+          "标题把「利润暴跌69%」放前面，比「小米三季报」点击高一个量级",
+          "财经稿也要给情绪词，但要立刻用数字兜住，避免被判标题党"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "浏览器渲染原文页，本地统计正文字数与图片数；数据与公开财报口径一致",
+        "notes": "阅读/互动数不可见；原文标注来源「说财猫」，经新浪财经账号发布，属转载"
+      },
+      "id": "faa61c61303e06a0",
+      "formLabel": "今日头条 · 文章",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
       "title": "周末，超级大瓜！",
       "form": "gzh-poster",
       "platform": "微信公众号",
@@ -1022,6 +1207,829 @@
       "id": "7bce1f3ad933d3c1",
       "formLabel": "微信公众号 · 贴图",
       "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "微信公众号",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "gzh-article",
+      "account": "量子位",
+      "title": "黎曼猜想证明两天砍掉240万行！全球接力压缩，马斯克在线围观",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247948323&idx=2&sn=724e989c751e1f703b86f101e4c57951",
+      "publishedAt": "2026-11-24T14:27:00+08:00",
+      "summary": "记录 AI 生成的黎曼猜想证明代码从 240 万行被全球开发者接力压缩的过程，列出参与的大模型与工具，并提到马斯克在社交平台的围观评论。",
+      "category": "科技",
+      "tags": [
+        "公众号文章",
+        "AI",
+        "数学",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 3177,
+        "paragraphs": 86,
+        "subheads": 3,
+        "images": 16,
+        "titlePattern": "极端数字（240万行）+ 围观者（马斯克）",
+        "hook": "用「两天砍掉240万行」的极端数字开场，紧接「全球接力」制造现场感",
+        "structure": [
+          "最新进展与数字冲击",
+          "解释证明的技术路线",
+          "列出参与的模型与工具",
+          "引述学界与马斯克反应",
+          "提示证明仍待验收"
+        ],
+        "highlightSkills": [
+          "关键数字加粗",
+          "短句独立成行",
+          "每节一个小标题"
+        ],
+        "lessons": [
+          "技术长文标题用「砍掉多少行代码」这类可量化数字，比「重大突破」有效得多",
+          "把大模型当协作者逐个点名，比笼统说「AI 完成」更有信息量",
+          "结尾必须留「尚未通过同行评议」的风险句，避免次日被打脸"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "Wechat2RSS 公开 feed 取原文直链与正文，正文由脚本抓取后本地统计字数与图数",
+        "notes": "阅读/点赞数微信外部不可见，未编造；字数为中文字符统计口径"
+      },
+      "id": "db49d7a08c2711cd",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "微信公众号",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "gzh-article",
+      "account": "机器之心",
+      "title": "继黎曼猜想后，Claude给出VP≠VNP证明！通过Lean 4形式化验证",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651075852&idx=2&sn=b43990c90fd68a8fbf4fbe9d6d16f15b",
+      "publishedAt": "2026-11-24T11:05:00+08:00",
+      "summary": "报道 Anthropic 的 Claude 给出 VP≠VNP 的证明思路并通过 Lean 4 形式化验证，梳理证明路径、学界初步反应与「形式化验证不等于数学界公认」的边界。",
+      "category": "科技",
+      "tags": [
+        "公众号文章",
+        "AI",
+        "数学",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 3097,
+        "paragraphs": 77,
+        "subheads": 0,
+        "images": 10,
+        "titlePattern": "对标已知事件（继黎曼猜想后）+ 结论符号",
+        "hook": "开篇一句「代数版 P vs NP 迎来重大进展」，先给结论再解释",
+        "structure": [
+          "短结论开篇",
+          "解释 VP 与 VNP 是什么",
+          "复述 Claude 的证明路径与 Lean 验证",
+          "专家点评与争议",
+          "边界说明"
+        ],
+        "highlightSkills": [
+          "公式与符号单独成段",
+          "引用研究者原话",
+          "用对比表格呈现复杂度类关系"
+        ],
+        "lessons": [
+          "专业读者向稿件先给结论符号、再解释背景，别按教科书顺序写",
+          "数学类稿件必须写清「形式化验证通过 ≠ 学界公认」，这是可信度的关键",
+          "无小标题的长文靠配图分段，每 300 字一张图"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "Wechat2RSS 公开 feed 直链与正文，本地统计结构",
+        "notes": "阅读数不可见；证明的学术有效性以数学界评议为准，稿件仅作报道"
+      },
+      "id": "458cb57a463c67fd",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "微信公众号",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "gzh-article",
+      "account": "极客公园",
+      "title": "一家百年美妆公司的科技长期主义",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117288&idx=1&sn=37047a46ea286c801ab8f1c4290c4239",
+      "publishedAt": "2026-11-24T12:33:00+08:00",
+      "summary": "以一家百年美妆企业的研发史为线索，讲它如何把皮肤科学、原料技术与 AI 检测引入产品，用具体项目和研发人员访谈支撑「科技长期主义」这一概念。",
+      "category": "商业",
+      "tags": [
+        "公众号文章",
+        "品牌稿",
+        "科技",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 4958,
+        "paragraphs": 86,
+        "subheads": 0,
+        "images": 17,
+        "titlePattern": "身份反差（百年美妆）+ 概念词（科技长期主义）",
+        "hook": "用一句话把「科学」与「美」并置，抛出问题式开场",
+        "structure": [
+          "品牌历史切入",
+          "技术投入的具体项目",
+          "研发人员访谈",
+          "行业横向对比",
+          "回到长期主义收束"
+        ],
+        "highlightSkills": [
+          "大段人物引语",
+          "数据与时间线穿插",
+          "大量场景图"
+        ],
+        "lessons": [
+          "近 5000 字品牌稿靠「具体项目 + 人物访谈」撑住，而不是形容词堆砌",
+          "标题用「反差身份 + 概念词」，比「XX 品牌焕新」有传播力",
+          "商业稿也要给时间线，读者才信「长期」"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "Wechat2RSS 公开 feed 直链与正文，本地统计结构",
+        "notes": "品牌稿，观点带企业立场；数据为企业提供，未做第三方核验"
+      },
+      "id": "3a484bb12da9b71b",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "微信公众号",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "gzh-article",
+      "account": "差评X.PIN",
+      "title": "英伟达董事会同意恢复黄仁勋CEO职务，智谱GLM-5.4发布，特斯拉FSD V15启动推送，纳维-斯托克斯方程被解决，这就是今天的其他大新闻！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&mid=2654710378&idx=6&sn=6667b6b5476e5ddf02b360d01e579476",
+      "publishedAt": "2026-11-24T00:00:00+08:00",
+      "summary": "科技早报体：把当天四到六条科技新闻并列，每条给一段短评与一张图，用吐槽式语气串起来。",
+      "category": "科技",
+      "tags": [
+        "公众号文章",
+        "早报体",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 1328,
+        "paragraphs": 48,
+        "subheads": 0,
+        "images": 18,
+        "titlePattern": "多条并列 + 感叹句",
+        "hook": "标题直接把五六条新闻堆进去，用「这就是今天的其他大新闻」收口",
+        "structure": [
+          "一句话概括当天大新闻",
+          "逐条短评（每条 100-200 字）",
+          "配图密集",
+          "结尾一句吐槽"
+        ],
+        "highlightSkills": [
+          "每条一句加粗结论",
+          "图多字少",
+          "口语化吐槽"
+        ],
+        "lessons": [
+          "早报体靠「条数 × 密度」取胜，每条控制在 150 字上下",
+          "标题把所有事件堆进去反而提高点击，不必提炼单一主题",
+          "配图密度可以高到每 70 字一张，读者靠图判断是否继续读"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "Wechat2RSS 公开 feed 直链与正文，本地统计结构",
+        "notes": "早报体为信息聚合，单条事实以原始报道为准"
+      },
+      "id": "117daffa050a0ba9",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-article",
+      "account": "四季互联网观察",
+      "title": "谜底揭晓！巴基斯坦首位上太空航天员公布，朱杨柱确定要在轨一年",
+      "url": "https://www.toutiao.com/article/7711628746989502976/",
+      "publishedAt": "2026-11-24T15:06:00+08:00",
+      "summary": "围绕神舟二十四号乘组公布，解读外籍航天员的选拔逻辑、朱杨柱一年期在轨驻留的意义，以及中国空间站国际合作与长期驻留两条线的布局。",
+      "category": "科技",
+      "tags": [
+        "头条文章",
+        "航天",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 1339,
+        "paragraphs": 34,
+        "subheads": 0,
+        "images": 12,
+        "titlePattern": "揭晓式 + 具体人名",
+        "hook": "「今天上午，酒泉传出两个重磅消息，直接引爆全网关注」——先给数量再给悬念",
+        "structure": [
+          "两件事并列开场",
+          "外籍航天员选拔逻辑",
+          "一年期驻留的意义",
+          "国际对比",
+          "结尾升华"
+        ],
+        "highlightSkills": [
+          "每段一个判断句开头",
+          "每 200 字插一张图",
+          "用「很多人只看到表面」制造第二层"
+        ],
+        "lessons": [
+          "同一新闻要找「第二层意义」（选拔逻辑、在轨纪录），否则只是通稿复述",
+          "头条读者滑动频繁，图要密，段落要短，每段不超过 4 行",
+          "标题里同时给「揭晓」和具体人名，兼顾悬念与信息量"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "浏览器渲染原文页，本地统计；乘组信息与官方发布会一致",
+        "notes": "阅读/互动数不可见；作者解读部分为代表个人观点"
+      },
+      "id": "1f7e7d6a7372ec88",
+      "formLabel": "今日头条 · 文章",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-article",
+      "account": "小小金钱草",
+      "title": "三大运营商将无法向美国申请电话号码",
+      "url": "https://www.toutiao.com/article/7711740147288556058/",
+      "publishedAt": "2026-11-24T22:13:00+08:00",
+      "summary": "解读美国 FCC 新规要求互联网语音服务商先通过国家安全认证才能获取本地号码资源，说明此举对中国电信、移动、联通的适用范围与营收影响有限。",
+      "category": "科技",
+      "tags": [
+        "头条文章",
+        "通信",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 411,
+        "paragraphs": 9,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "主体 + 禁令式结论",
+        "hook": "直接给结论「将无法再申请号码」，第二句才交代新规内容",
+        "structure": [
+          "新规事实",
+          "适用范围界定（不是全面禁止）",
+          "营收影响测算",
+          "行业趋势"
+        ],
+        "highlightSkills": [
+          "关键限定语加粗",
+          "一句话一段"
+        ],
+        "lessons": [
+          "400 字也能成文：适合快讯位，一条禁令讲清楚就够",
+          "必须写明「不是全面禁止」，否则标题党会反噬评论区",
+          "短稿更要把限定条件放前两段，避免读者误解"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "浏览器渲染原文页，本地统计；FCC 新规内容为文中转述",
+        "notes": "阅读/互动数不可见；营收占比等数据为作者测算，未见企业披露"
+      },
+      "id": "a75b512153697959",
+      "formLabel": "今日头条 · 文章",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-micro",
+      "account": "李雨君_Bureau",
+      "title": "A股高开低走才是最狠的算计：外围涨成什么样都是假的",
+      "url": "https://www.toutiao.com/w/1882729250810951/",
+      "publishedAt": "2026-11-24T16:55:00+08:00",
+      "summary": "以当日 A 股高开低走为切口，用中际旭创从涨近 12% 回到平盘的走势，说明获利盘出货与大资金借高开撤离的判断。",
+      "category": "财经",
+      "tags": [
+        "微头条",
+        "A股",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 893,
+        "paragraphs": 18,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "否定式判断 + 情绪（最狠的算计）",
+        "hook": "第一句就否定外围利好——「外围涨成什么样都是假的」",
+        "structure": [
+          "否定式判断开场",
+          "用具体个股走势举证",
+          "解释资金行为",
+          "给出操作倾向"
+        ],
+        "highlightSkills": [
+          "第一句就是观点",
+          "个股数字具体到百分比",
+          "口语化短句"
+        ],
+        "lessons": [
+          "微头条第一句必须是判断句，不能交代背景",
+          "用一只具体股票的分时走势当证据，比讲宏观有效",
+          "近 900 字已接近微头条上限，再长就该转文章"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "浏览器渲染原文页，本地统计正文字数与图片数",
+        "notes": "阅读/互动数不可见；个股走势为作者描述，未核验分时数据；内容为个人观点，非投资建议"
+      },
+      "id": "da54dc13b2b95a6a",
+      "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-micro",
+      "account": "澎湃新闻客户端",
+      "title": "每天极限通勤6小时！在峨眉山金顶工作，冲上热搜",
+      "url": "https://www.toutiao.com/w/1882745765052428/",
+      "publishedAt": "2026-11-24T21:18:00+08:00",
+      "summary": "转载上游新闻报道：24 岁女孩在海拔 3077 米的峨眉山金顶酸奶店工作，每天往返通勤约 6 小时，7 个月体重从 90 斤降到 78 斤，并回应工资「没有5000也没有8000」。",
+      "category": "社会",
+      "tags": [
+        "微头条",
+        "职场",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 591,
+        "paragraphs": 20,
+        "subheads": 0,
+        "images": 4,
+        "titlePattern": "极限数字（6小时）+ 地点身份",
+        "hook": "「每天极限通勤6小时」直接给最反常识的数字",
+        "structure": [
+          "极限数字开场",
+          "逐段时间线还原通勤",
+          "体重与工资的细节",
+          "本人回应质疑"
+        ],
+        "highlightSkills": [
+          "短句独立成行（原文按句断行）",
+          "具体数字密集",
+          "配 4 张图"
+        ],
+        "lessons": [
+          "转载型微头条要保留原文的细节数字（6小时、12斤、不到5000）",
+          "按句断行是移动端完读率的关键排版动作",
+          "4 张图比 1 张图明显更能留住人"
+        ]
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "浏览器渲染微头条原文页；内容与上游新闻、成都发布报道一致",
+        "notes": "阅读/互动数不可见；工资金额为当事人自述"
+      },
+      "id": "34e01e2372254b9f",
+      "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "platform": "今日头条",
+      "region": "国内",
+      "collectedAt": "2026-11-24T22:50:00+08:00",
+      "form": "tt-micro",
+      "account": "小柚子弹市",
+      "title": "今天这种走势，次日基本可以认为会低开分歧",
+      "url": "https://www.toutiao.com/w/1882734958753792/",
+      "publishedAt": "2026-11-24T18:26:00+08:00",
+      "summary": "以当日盘面为依据给出次日判断：高开过多导致获利盘抛压，预计次日低开分歧，并回应「获利盘没那么大」的质疑。",
+      "category": "财经",
+      "tags": [
+        "微头条",
+        "A股",
+        "形态基准"
+      ],
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "公众号/头条正文页不展示阅读量，外部不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "点赞/评论/转发计数未在页面渲染，按 0 计"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未进入当日热榜前列，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅单一平台发布，未见多平台转载"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "采集时发布时间在 24 小时内"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 491,
+        "paragraphs": 10,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "结论前置 + 次日预判",
+        "hook": "「今天这种走势，咱们只要知道一点」——用口语把人拉进来",
+        "structure": [
+          "给出次日结论",
+          "解释为何昨天不动、今天撤",
+          "回应评论区质疑"
+        ],
+        "highlightSkills": [
+          "用「咱们」拉近距离",
+          "先给操作结论再讲理由"
+        ],
+        "lessons": [
+          "微头条适合「一个判断 + 一条理由」，不要铺三层逻辑",
+          "口语化称呼（咱们）比书面语更能带互动",
+          "主动回应质疑可以延长评论区讨论"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "浏览器渲染微头条原文页，本地统计正文字数与图片数",
+        "notes": "阅读/互动数不可见；内容为个人行情观点，非投资建议"
+      },
+      "id": "474bb40c9eb4b05b",
+      "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
     },
     {
       "title": "Anthropic正式敲钟上市！超越马斯克SpaceX，创史上最大 IPO",

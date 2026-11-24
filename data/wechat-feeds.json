@@ -1,6 +1,6 @@
 {
   "_说明": "Wechat2RSS 公开 feed 列表（https://wechat2rss.xlab.app/list/all/）。这里只放经验证可达、且有深度长文的号，用于「公众号文章」形态基准。该源不含阅读/点赞数（写不可见），也不含贴图/图片消息。新增账号请从公开列表取真实 feed URL，不要编造。",
-  "_更新于": "2026-11-22",
+  "_更新于": "2026-11-24",
   "feeds": [
     {
       "name": "浅黑科技",
@@ -26,6 +26,31 @@
       "name": "思想花火",
       "url": "https://wechat2rss.xlab.app/feed/5b925323244e9737c39285596c53e3a2f4a30774.xml",
       "category": "综合"
+    },
+    {
+      "name": "机器之心",
+      "url": "https://wechat2rss.xlab.app/feed/51e92aad2728acdd1fda7314be32b16639353001.xml",
+      "category": "科技"
+    },
+    {
+      "name": "量子位",
+      "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml",
+      "category": "科技"
+    },
+    {
+      "name": "新智元",
+      "url": "https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml",
+      "category": "科技"
+    },
+    {
+      "name": "差评",
+      "url": "https://wechat2rss.xlab.app/feed/8d839de8dd3290a1f1be7a94423cccb30c1b087d.xml",
+      "category": "科技"
+    },
+    {
+      "name": "极客公园",
+      "url": "https://wechat2rss.xlab.app/feed/1a5aec98e71c707c8ca092bc2c255b9d4bac477d.xml",
+      "category": "科技"
     }
   ]
 }
