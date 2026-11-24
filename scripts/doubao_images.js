@@ -112,10 +112,24 @@ try {
       if (!fresh.length) throw new Error(Math.round(GEN_TIMEOUT / 1000) + " 秒内没抓到新生成图");
 
       const picked = fresh.slice(0, count);
+      // 同一个 slug 补图时前缀相同，从 -1 重新编号会把上一轮的图覆盖掉（图是新的，旧的没了）。
+      // 这里先扫一遍已有文件，接着最大序号往后排，保证补图是"加"而不是"盖"。
+      let startIdx = 0;
+      if (job.prefix && !(job.out && count === 1)) {
+        try {
+          const dir = job.prefix.slice(0, job.prefix.lastIndexOf("/"));
+          const base = job.prefix.slice(job.prefix.lastIndexOf("/") + 1);
+          const ents = await fs.readdir(ROOT + "/" + dir);
+          for (const f of ents) {
+            const m = f.match(new RegExp("^" + base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "-(\\d+)\\.jpe?g$", "i"));
+            if (m) startIdx = Math.max(startIdx, parseInt(m[1], 10));
+          }
+        } catch (e) {}
+      }
       for (let i = 0; i < picked.length; i++) {
         const out = job.out && count === 1
           ? job.out
-          : (job.prefix || "assets/images/gen") + "-" + (i + 1) + ".jpeg";
+          : (job.prefix || "assets/images/gen") + "-" + (startIdx + i + 1) + ".jpeg";
         const bytes = await download(picked[i], out);
         rec.outs.push(out);
         rec.urls.push(picked[i]);
@@ -152,9 +166,23 @@ for (const rec of results) {
 const MAP = ROOT + "/data/image-map.json";
 let old = {};
 try { old = JSON.parse(await fs.readFile(MAP, "utf-8")).items || {}; } catch (e) {}
+// 同一个 slug 可能分几轮出图（补图），旧版直接 Object.assign 会让后一轮把前一轮整条覆盖掉，
+// 表现是"明明生成了 4 张，rebind 只认 1 张"。这里按 src 去重合并，保留历史图。
+for (const key of Object.keys(map)) {
+  const prev = old[key] || [];
+  const seen = new Set();
+  const merged = [];
+  for (const it of [...prev, ...map[key]]) {
+    if (seen.has(it.src)) continue;
+    seen.add(it.src);
+    merged.push(it);
+  }
+  merged.sort((a, b) => String(a.src).localeCompare(String(b.src), "en", { numeric: true }));
+  old[key] = merged;
+}
 await fs.writeFile(MAP, JSON.stringify({
   updatedAt: new Date().toISOString(),
-  items: Object.assign(old, map),
+  items: old,
 }, null, 2));
 
 const okCount = results.filter((r) => r.ok).length;
