@@ -1,0 +1,40 @@
+{
+  "slug": "james-jersey",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:28:08+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/james-jersey/raw-1.jpeg",
+      "bytes": 68262,
+      "w": 1276,
+      "h": 544,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/F2n6G5J11oFlzN65ookt3yu8dnRCmdQs0fiadnc48WKTIBFoeCa9Cr7016KnTxCTehHJzugHQvZ45F5Zz0uAO2Qiawyia2NYF7dTpYcjjqRe58/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd",
+      "alt": "",
+      "md5": "0ca3f8157fa529dffaa2f9ff28598e3c",
+      "status": "approved",
+      "reason": "原文配图",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/james-jersey/raw-1.jpeg",
+      "bytes": 68262,
+      "w": 1276,
+      "h": 544,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/F2n6G5J11oFlzN65ookt3yu8dnRCmdQs0fiadnc48WKTIBFoeCa9Cr7016KnTxCTehHJzugHQvZ45F5Zz0uAO2Qiawyia2NYF7dTpYcjjqRe58/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd",
+      "alt": "",
+      "md5": "0ca3f8157fa529dffaa2f9ff28598e3c",
+      "status": "approved",
+      "reason": "原文配图",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-24T09:28:51+08:00"
+}

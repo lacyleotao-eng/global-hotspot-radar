@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "date": "2026-11-24",
+  "slug": "xnu-linux",
+  "sourceItemId": "e258ede67d0bcbbb",
+  "sourceTitle": "XNU Linux：把 macOS 内核当模块装进 Linux，能启动完整 macOS 桌面",
+  "sourceUrl": "https://news.ycombinator.com/item?id=50607261",
+  "sourcePlatform": "Hacker News",
+  "verification": "已核实",
+  "verificationNote": "性能与兼容性数据来自项目自述与第三方转述，无独立基准；项目对 AMFI 打补丁、放宽 SIP，安全影响未评估。",
+  "imageNote": "原文图优先，已核对无水印/像素达标",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "tt-article",
+      "target": "今日头条",
+      "form": "文章",
+      "badge": "硬核观察",
+      "title": "31秒启动完整macOS，这个项目却劝你别装在工作机上",
+      "digest": "把苹果开源的XNU内核编成Linux模块，加载后能进macOS桌面。技术上很惊艳，但它改了AMFI、放宽了SIP，不是能装在工作机上的东西。",
+      "images": [
+        {
+          "src": "assets/source/xnu-linux/raw-1.png",
+          "caption": "原文刊发的现场画面（图源：Hacker News）",
+          "origin": "source"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "最近，GitHub上一个叫xnulinux的项目在Hacker News拿到601分：它把苹果开源的XNU内核编成Linux模块，加载后能启动完整macOS桌面。"
+        },
+        {
+          "type": "h2",
+          "text": "它到底做了什么：不是虚拟机"
+        },
+        {
+          "type": "para",
+          "text": "按项目README的说法，xnulinux用苹果公开的源码编译XNU，做成一个可加载内核模块xnu.ko，装进未改动的arm64 Linux内核里。中间没有虚拟机监控器。"
+        },
+        {
+          "type": "para",
+          "text": "托管起来的XNU直接驱动CPU和MMU，macOS的进程因此能和Linux进程跑在同一批CPU上。Linux通过另一个小模块fki.ko，把内存、定时器、文件、网络和GPU借给它。"
+        },
+        {
+          "type": "para",
+          "text": "分工很清楚：xnu.ko属于XNU一侧，用APSL-2.0许可证；fki.ko属于Linux一侧，用GPL-2.0。两者只在FKI这层接口上相遇。所以它不是“让macOS应用跑在Linux上”的兼容层，而是两个内核共用同一台机器。"
+        },
+        {
+          "type": "h2",
+          "text": "跑起来是什么样：31到48秒"
+        },
+        {
+          "type": "para",
+          "text": "项目给出的实测环境有两个。一个是在Apple Silicon Mac上的arm64 Linux虚拟机里，用krunkit跑1到6个托管CPU；另一个是裸机的NVIDIA DGX Spark，Ubuntu 24.04.5，4个CPU、8GiB内存。"
+        },
+        {
+          "type": "para",
+          "text": "在Mac虚拟机里，macOS 27.2.1自动登录进桌面耗时31到48秒；作为对照，同一台Mac上苹果自家的虚拟化macOS虚拟机是49秒。30分钟压力测试跑了40轮应用开关，没有内核崩溃。"
+        },
+        {
+          "type": "para",
+          "text": "屏幕上是完整的桌面：登录窗、Dock、Finder、Safari、Chrome都在。左边是macOS的终端，右边是从这个macOS里SSH登回它所寄居的Linux，两个用户空间同时活着。"
+        },
+        {
+          "type": "h2",
+          "text": "门槛在哪"
+        },
+        {
+          "type": "list",
+          "items": [
+            "架构：只支持arm64，且需要PAC（FEAT_PAuth）和4K页。",
+            "内存：至少16GB，其中8GB要预留给托管的XNU。",
+            "系统盘：得自己用苹果安装器做一份macOS 27的虚拟磁盘，仓库里不含任何苹果二进制。",
+            "显卡：Apple Silicon虚拟机里可以走virtio-gpu Venus用上GPU；DGX Spark上目前只能CPU渲染。"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "这些条件叠在一起，意味着它不是“随便一台电脑就能玩”的项目。它真正的价值，是证明了一件事：两个内核可以共享同一批CPU，而不必靠虚拟机隔开。"
+        },
+        {
+          "type": "h2",
+          "text": "虚拟机不够用吗"
+        },
+        {
+          "type": "para",
+          "text": "有人会问：虚拟机不也能跑macOS吗？能，但有区别。虚拟机里跑的是完整的macOS连同它假想出来的那套硬件，中间多了一层调度，开销是实实在在的；xnulinux让XNU直接跑在真CPU上，省掉的正是这一层。"
+        },
+        {
+          "type": "para",
+          "text": "代价是耦合变深。Linux内核一升级，模块可能就得重新编译；宿主一出问题，托管的系统也跟着倒。项目把它做成systemd服务，崩溃后自动重启，等于承认了这种脆弱。"
+        },
+        {
+          "type": "para",
+          "text": "跨内核的实验，难点通常不在第一次跑通，而在长期维护。演示视频可以拍一次，用户每天开机却是另一回事。"
+        },
+        {
+          "type": "h2",
+          "text": "为什么说别装在工作机上"
+        },
+        {
+          "type": "para",
+          "text": "项目自己在文档里写得很坦白：操作系统cryptex被合并进系统卷，AMFI打了补丁，SIP被放宽，内存访问比原生虚拟机慢（4K页对16K页）。这些都不是小瑕疵，而是让未签名的内核代码跑起来必须付出的代价。"
+        },
+        {
+          "type": "para",
+          "text": "还有许可证问题。xnu.ko在内核里被标记为Proprietary，会让内核进入tainted状态，和当年ZFS在Linux上的处境类似。对个人实验无所谓，对生产环境就是运维事故的起点。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "安全边界被放宽：AMFI和SIP是macOS的两道门，门被打开，风险要自己评估。",
+            "内核被污染：加载非GPL模块后，内核报错的可信度下降，出问题很难定位。",
+            "性能不是目标：这个项目的目标是“能跑”，不是“跑得快”。"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "对国内读者，这件事的意义在哪"
+        },
+        {
+          "type": "para",
+          "text": "国内讨论这个项目，容易滑向两个极端：一边是“黑苹果又要复活了”，一边是“苹果要完了”。两者都不成立。它跑的是你自己合法拥有的macOS安装盘，不分发任何苹果二进制，也不绕过激活。"
+        },
+        {
+          "type": "para",
+          "text": "真正值得看的是工程思路：把内核当成模块，把宿主的能力抽成一层窄接口，让两套完全不同的系统共享硬件。这个思路在虚拟化、容器，甚至车机域控里都能找到影子。"
+        },
+        {
+          "type": "para",
+          "text": "至于普通用户，最实际的结论只有一句：看看演示就好，别把自己的工作机拿来做实验。想试，找一台闲置的arm64设备，做好数据备份。"
+        },
+        {
+          "type": "h2",
+          "text": "边界"
+        },
+        {
+          "type": "para",
+          "text": "性能与兼容性数据来自项目自述和第三方转述，没有独立基准；AMFI打补丁、SIP放宽带来的安全影响，项目也没有做评估。这些都需要后续验证，不能当成结论。"
+        },
+        {
+          "type": "para",
+          "text": "一个开源项目能让macOS在Linux里跑起来，确实是件有意思的事。但“能跑”和“该跑”之间，隔着许可证、安全和运维三道坎，跨过去的人不多。"
+        }
+      ],
+      "imageNote": "1 张配图：原文图1 张"
+    }
+  ]
+}

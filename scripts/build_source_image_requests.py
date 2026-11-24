@@ -68,20 +68,43 @@ def main() -> None:
         pass
 
     jobs = []
+
+    # 选题来源：优先用已落盘的成品稿；还没出稿时退回当天的 plan（04:40 段要在写稿前就把图抓好）
+    targets = []
     for path in sorted(READY.glob(f"{a.date}-*.json")):
         d = json.loads(path.read_text(encoding="utf-8"))
-        slug = d.get("slug") or path.stem.replace(f"{a.date}-", "")
+        targets.append({
+            "slug": d.get("slug") or path.stem.replace(f"{a.date}-", ""),
+            "sourceItemId": d.get("sourceItemId") or "",
+            "citations": d.get("citations") or [],
+            "sourceUrl": d.get("sourceUrl") or "",
+        })
+    if not targets:
+        plan_path = ROOT / "data" / "plan" / f"{a.date}.json"
+        if plan_path.exists():
+            for e in (json.loads(plan_path.read_text(encoding="utf-8")).get("events") or []):
+                targets.append({
+                    "slug": e.get("slug") or "",
+                    "sourceItemId": e.get("sourceItemId") or "",
+                    "citations": e.get("citations") or [],
+                    "sourceUrl": e.get("sourceUrl") or "",
+                })
+            if targets:
+                print(f"[plan] ready 里没有今天的稿，改从 {plan_path.name} 取 {len(targets)} 个选题")
+
+    for t in targets:
+        slug = t["slug"]
         if only and slug not in only:
             continue
         urls: list[tuple[int, str]] = []
-        for c in d.get("citations") or []:
-            u = c.get("url") or ""
+        for c in t["citations"]:
+            u = (c.get("url") if isinstance(c, dict) else "") or ""
             if usable(u):
                 urls.append((rank_of(u), u))
-        for u in item_cites.get(d.get("sourceItemId") or "", []):
+        for u in item_cites.get(t["sourceItemId"], []):
             if usable(u):
                 urls.append((rank_of(u), u))
-        su = d.get("sourceUrl") or ""
+        su = t["sourceUrl"]
         if usable(su):
             urls.append((rank_of(su), su))
         urls.sort(key=lambda x: x[0])

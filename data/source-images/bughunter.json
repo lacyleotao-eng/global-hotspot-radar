@@ -1,24 +1,9 @@
 {
   "slug": "bughunter",
-  "date": "2026-11-23",
-  "builtAt": "2026-11-23T11:30:09+08:00",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:26:42+08:00",
   "candidates": [
     {
-      "index": 1,
-      "file": "assets/source/bughunter/raw-1.jpeg",
-      "bytes": 612291,
-      "w": 1600,
-      "h": 667,
-      "url": "https://repository-images.githubusercontent.com/1229774092/93703d75-077c-4a14-b580-e2374741fe3d",
-      "page": "https://github.com/elementalsouls/Claude-BugHunter",
-      "alt": "",
-      "md5": "3f1f96c06192d9d48f992060101e8db6",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
-      "crop": "",
-      "approved": true
-    },
-    {
       "index": 2,
       "file": "assets/source/bughunter/raw-2.jpeg",
       "bytes": 132945,
@@ -28,10 +13,10 @@
       "page": "https://www.cnblogs.com/wflynn/p/23744129",
       "alt": "",
       "md5": "7430b2be62c6bdddf22dc96bf0696a42",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
+      "status": "candidate",
+      "reason": "",
       "crop": "",
-      "approved": true
+      "approved": false
     },
     {
       "index": 3,
@@ -43,58 +28,10 @@
       "page": "https://appndo.com/github-trending",
       "alt": "",
       "md5": "bc7ec875570e3dcebd04a33f6cfd152c",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
+      "status": "candidate",
+      "reason": "",
       "crop": "",
-      "approved": true
+      "approved": false
     }
-  ],
-  "approved": [
-    {
-      "index": 1,
-      "file": "assets/source/bughunter/raw-1.jpeg",
-      "bytes": 612291,
-      "w": 1600,
-      "h": 667,
-      "url": "https://repository-images.githubusercontent.com/1229774092/93703d75-077c-4a14-b580-e2374741fe3d",
-      "page": "https://github.com/elementalsouls/Claude-BugHunter",
-      "alt": "",
-      "md5": "3f1f96c06192d9d48f992060101e8db6",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
-      "crop": "",
-      "approved": true
-    },
-    {
-      "index": 2,
-      "file": "assets/source/bughunter/raw-2.jpeg",
-      "bytes": 132945,
-      "w": 1328,
-      "h": 752,
-      "url": "https://img2024.cnblogs.com/blog/2750369/202611/2750369-20261122074505428-490773980.jpg",
-      "page": "https://www.cnblogs.com/wflynn/p/23744129",
-      "alt": "",
-      "md5": "7430b2be62c6bdddf22dc96bf0696a42",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
-      "crop": "",
-      "approved": true
-    },
-    {
-      "index": 3,
-      "file": "assets/source/bughunter/raw-3.jpeg",
-      "bytes": 60274,
-      "w": 1280,
-      "h": 720,
-      "url": "https://www.appndo.com/videos/appndo-intro-v1.jpg",
-      "page": "https://appndo.com/github-trending",
-      "alt": "",
-      "md5": "bc7ec875570e3dcebd04a33f6cfd152c",
-      "status": "approved",
-      "reason": "项目页/资讯页截图",
-      "crop": "",
-      "approved": true
-    }
-  ],
-  "approvedAt": "2026-11-23T11:30:26+08:00"
+  ]
 }

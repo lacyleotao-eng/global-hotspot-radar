@@ -1,0 +1,85 @@
+{
+  "slug": "riemann-day3",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:28:08+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/riemann-day3/raw-1.png",
+      "bytes": 617230,
+      "w": 975,
+      "h": 549,
+      "url": "https://x0.ifengimg.com/ucms/2026_48/E95B543FB8FF767832248EC3568048B6A3D002E7_size797_w975_h549.png",
+      "page": "https://news.ifeng.com/c/8yIYRlUj3Yr",
+      "alt": "",
+      "md5": "0adbd4bf0c2c6d1e77ecf58f42308ad3",
+      "status": "approved",
+      "reason": "黎曼肖像与Claude标志合成图、数论螺旋图形，均为原文配图",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/riemann-day3/raw-2.jpeg",
+      "bytes": 1662122,
+      "w": 1080,
+      "h": 810,
+      "url": "https://static.bjd.com.cn/dams-res/editing/image/202611/23/6b042c5fd5de433b7d8e5931.png",
+      "page": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0",
+      "alt": "图片",
+      "md5": "5b634114047df659bf22427aba7ed594",
+      "status": "approved",
+      "reason": "黎曼肖像与Claude标志合成图、数论螺旋图形，均为原文配图",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/riemann-day3/raw-3.jpeg",
+      "bytes": 29249,
+      "w": 1080,
+      "h": 540,
+      "url": "https://static.bjd.com.cn/dams-res/editing/image/202610/27/6ae0afbcd5de433b7d8258c1.jpg",
+      "page": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0",
+      "alt": "图片",
+      "md5": "399fdebb38b102256dda4186e5085a37",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/riemann-day3/raw-1.png",
+      "bytes": 617230,
+      "w": 975,
+      "h": 549,
+      "url": "https://x0.ifengimg.com/ucms/2026_48/E95B543FB8FF767832248EC3568048B6A3D002E7_size797_w975_h549.png",
+      "page": "https://news.ifeng.com/c/8yIYRlUj3Yr",
+      "alt": "",
+      "md5": "0adbd4bf0c2c6d1e77ecf58f42308ad3",
+      "status": "approved",
+      "reason": "黎曼肖像与Claude标志合成图、数论螺旋图形，均为原文配图",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/riemann-day3/raw-2.jpeg",
+      "bytes": 1662122,
+      "w": 1080,
+      "h": 810,
+      "url": "https://static.bjd.com.cn/dams-res/editing/image/202611/23/6b042c5fd5de433b7d8e5931.png",
+      "page": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0",
+      "alt": "图片",
+      "md5": "5b634114047df659bf22427aba7ed594",
+      "status": "approved",
+      "reason": "黎曼肖像与Claude标志合成图、数论螺旋图形，均为原文配图",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-24T09:29:20+08:00"
+}

@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "date": "2026-11-24",
+  "slug": "pc-price-rise",
+  "sourceItemId": "53934742ac153bce",
+  "sourceTitle": "显卡在降、内存固态在涨：一套整机从5000元涨到8000元，社区讨论“现在该不该装”",
+  "sourceUrl": "https://post.smzdm.com/p/ad7zgddz",
+  "sourcePlatform": "什么值得买",
+  "verification": "部分核实",
+  "verificationNote": "具体成交价随渠道与日期波动，社区帖未标注每项报价的采集时间；“三季度DRAM营收同比涨369%”等宏观数字来自二手引用，未核原报告。",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "消费观察",
+      "title": "16G 内存从 450 涨到 1600，显卡却在降价：装机顺序该倒了",
+      "digest": "一份装机帖把三样配件的涨幅摆在一起：内存和固态翻了几倍，显卡反而在降。为什么老经验“先锁显卡”今年会失灵，预算又该怎么重新排。三组报价，一个顺序。",
+      "images": [
+        {
+          "src": "assets/source/pc-price-rise/raw-1.jpeg",
+          "caption": "大跳水！“月初还要2万元，现在只要1.6万元”！业内称今明两年非刚需不建议入手",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/pc-price-rise/raw-2.webp",
+          "caption": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/pc-price-rise/raw-3.webp",
+          "caption": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/pc-price-rise/raw-4.webp",
+          "caption": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/pc-price-rise/raw-5.webp",
+          "caption": "原文刊发的现场画面（图源：什么值得买）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/pc-price-rise-db-1.jpeg",
+          "caption": "AI 生成示意图：产品静物摄影：电脑内存条与固态硬盘摆放在深色桌面上（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，一份装机帖在对账：16G DDR5 从 450 元涨到 1600 元，1TB 固态从 355 元涨到 850 元，显卡那头却在降价。"
+        },
+        {
+          "type": "para",
+          "text": "帖子把三样配件的报价摆在一起，量级差得很明显，涨的是存储，降的是显卡。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "16G DDR5：450 元 → 1600 元",
+            "32G DDR5：900 元 → 3800 元",
+            "1TB 固态：355 元 → 850 元",
+            "华强北 16G DDR5 现货：1400 至 1600 元"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "显卡的降价帮不上主流预算。帖里说，降价集中在 5090、5080 这类高端型号，而多数人买的 RTX 5060 仍在 3400 至 4200 元区间，省下的钱填不上内存那一块。"
+        },
+        {
+          "type": "para",
+          "text": "澎湃新闻转九派新闻的走访给了另一个口径：去年 5000 元能配的主机，现在要 8000 到 1 万元；1TB 硬盘涨 139%，16GB DDR5 涨 255%。这是转述，具体成交价仍随渠道与日期波动。"
+        },
+        {
+          "type": "para",
+          "text": "按帖中报价简单相加：内存加固态，原本 805 元，现在 2450 元，落差 1645 元。整机从 5000 涨到 8000 的那三千块，很大一块就出在这里。"
+        },
+        {
+          "type": "para",
+          "text": "涨的源头，帖中归到产能转移：AI 服务器抢 HBM，消费级 DRAM 被挤到后面。这条链条是否完整，帖子没给上游数据，只能算它的推断，不是结论。"
+        },
+        {
+          "type": "para",
+          "text": "所以顺序该倒过来：先定用途和显存需求，再定内存容量，最后才比显卡型号。别急着按“先锁显卡”的老经验下单——今年的瓶颈不在那块芯片上。"
+        },
+        {
+          "type": "para",
+          "text": "提醒一句：上面都是渠道报价，随日期和渠道波动，帖中也没标每项的采集时间。当趋势看可以，当报价单用不行。"
+        }
+      ],
+      "imageNote": "6 张配图：原文图5 张、豆包生成1 张"
+    }
+  ]
+}

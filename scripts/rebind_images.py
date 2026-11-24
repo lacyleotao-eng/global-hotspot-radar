@@ -87,8 +87,15 @@ def ai_images(pool: list[dict], tag: str) -> list[dict]:
     } for it in pool]
 
 
+AI_SUFFIX = re.compile(r"-(db|cg|c)-\d+\.jpe?g$", re.I)
+
+
 def card_images(slug: str) -> list[dict]:
-    files = sorted((ROOT / "assets" / "images").glob(f"{slug}-*.jpeg"))
+    """自制信息卡。必须排除 AI 生成图：豆包图叫 <slug>-db-1.jpeg、ChatGPT 图叫 <slug>-cg-1.jpeg，
+    它们和卡住在同一个目录，只按 <slug>-*.jpeg 匹配会把 AI 图误判成自制卡，
+    进而让整篇稿在 make_issue 里被当成"用卡凑数"排除掉。"""
+    files = [f for f in sorted((ROOT / "assets" / "images").glob(f"{slug}-*.jpeg"))
+             if not AI_SUFFIX.search(f.name)]
     return [{"src": str(f.relative_to(ROOT)), "caption": "自制信息卡（非新闻图片）", "origin": "card"} for f in files]
 
 

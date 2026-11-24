@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "date": "2026-11-24",
+  "slug": "riemann-day3",
+  "sourceItemId": "439c852d9e68b308",
+  "sourceTitle": "黎曼猜想“AI证明”进入第三日：Nielsen发布《证明无效》反驳论文，学界称尚待验收",
+  "sourceUrl": "https://news.ifeng.com/c/8yIYRlUj3Yr",
+  "sourcePlatform": "凤凰网",
+  "verification": "部分核实",
+  "verificationNote": "反驳论文原文未逐页阅读，其对anyGeometry的具体指控是否成立尚无定论；“证明已成立/已被推翻”两种说法均不可写成结论；媒体转述版本号与修订时间未独立核验。",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "科学现场",
+      "title": "1700 万行代码过了核验，黎曼猜想为什么还不算被证明？",
+      "digest": "机器说这段代码没毛病，人还没读懂它证了什么。第三天的争论，焦点从“AI 能不能做数学”，挪到了一道验收题上：谁有资格说它成立。机器过了，人还没过。",
+      "images": [
+        {
+          "src": "assets/source/riemann-day3/raw-1.png",
+          "caption": "原文刊发的现场画面（图源：凤凰网）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/riemann-day3/raw-2.jpeg",
+          "caption": "原文刊发的现场画面（图源：凤凰网）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/riemann-day3-db-1.jpeg",
+          "caption": "AI 生成示意图：深夜书桌上的数学手稿特写（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/riemann-day3-db-2.jpeg",
+          "caption": "AI 生成示意图：（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/riemann-day3-db-3.jpeg",
+          "caption": "AI 生成示意图：（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，黎曼猜想的“AI 证明”走到第三天。11 月 23 日前后，数学家 Nielsen 发布《证明无效》，克雷数学研究所仍把它列为未解决。"
+        },
+        {
+          "type": "para",
+          "text": "事由是 Anthropic 数学家莱文特·阿尔珀格称，自己与 Claude 合作完成了形式化证明，公开 4 页说明和约 1700 万行 Lean 代码，转成人类可读文本约 25 万页。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "11 月 21 日：Lean 与 Mathlib 社区联合声明确认代码逻辑通过核验",
+            "11 月 23 日前后：Nielsen 在预印本平台发布《证明无效》",
+            "至今：克雷数学研究所官网仍列为未解决"
+          ]
+        },
+        {
+          "type": "para",
+          "text": "这里要先分清两件事。机器能确认的是代码能编译、命题与目标对得上；它不能确认的是，这条论证人类读得懂、信得过。形式化核验过的是逻辑，不是共识。"
+        },
+        {
+          "type": "para",
+          "text": "Nielsen 的反驳落在中间定义上：他质疑部分定义写得太宽，比如 anyGeometry 恒返回 True，整条链可能因此空转。这类指控是否成立，反驳论文原文还没被逐页核对，目前没有定论。"
+        },
+        {
+          "type": "para",
+          "text": "反方的边界也要说清：一篇《证明无效》不等于证明被推翻，它递上的是一份待审的质疑，不是判决。两边现在都还停在“等你来看”的阶段。"
+        },
+        {
+          "type": "para",
+          "text": "北大数学科学学院院长刘若川的说法可作参照：Lean 验证通过让他对正确性偏向乐观，但更关键的一步，是从代码重建出人类能理解的论证。"
+        },
+        {
+          "type": "para",
+          "text": "所以眼下能写的结论只有一句：尚未得到官方认定。谁要说“黎曼猜想已被证明”，或者“已被推翻”，都跑在了证据前面。"
+        }
+      ],
+      "imageNote": "5 张配图：原文图2 张、豆包生成3 张"
+    }
+  ]
+}

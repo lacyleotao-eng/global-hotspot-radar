@@ -1,0 +1,40 @@
+{
+  "slug": "xnu-linux",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:28:08+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/xnu-linux/raw-1.png",
+      "bytes": 72114,
+      "w": 1200,
+      "h": 630,
+      "url": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars/opengraph-image",
+      "page": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars",
+      "alt": "",
+      "md5": "cc409bcf53727b6376131f0f93fe4cd5",
+      "status": "approved",
+      "reason": "项目页面截图，原文配图",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/xnu-linux/raw-1.png",
+      "bytes": 72114,
+      "w": 1200,
+      "h": 630,
+      "url": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars/opengraph-image",
+      "page": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars",
+      "alt": "",
+      "md5": "cc409bcf53727b6376131f0f93fe4cd5",
+      "status": "approved",
+      "reason": "项目页面截图，原文配图",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-24T09:28:51+08:00"
+}

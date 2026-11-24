@@ -1,7 +1,7 @@
 {
   "slug": "linjunyang",
-  "date": "2026-11-23",
-  "builtAt": "2026-11-23T11:30:09+08:00",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:26:42+08:00",
   "candidates": [
     {
       "index": 1,
@@ -13,10 +13,10 @@
       "page": "https://36kr.com/p/4080757699958660",
       "alt": "",
       "md5": "da6a3cd436158796c395c338af8f0571",
-      "status": "approved",
-      "reason": "36氪原文配图",
+      "status": "candidate",
+      "reason": "",
       "crop": "",
-      "approved": true
+      "approved": false
     },
     {
       "index": 2,
@@ -33,23 +33,5 @@
       "crop": "",
       "approved": false
     }
-  ],
-  "approved": [
-    {
-      "index": 1,
-      "file": "assets/source/linjunyang/raw-1.jpeg",
-      "bytes": 38272,
-      "w": 819,
-      "h": 457,
-      "url": "https://img.36krcdn.com/hsossms/20261122/v2_a385e4a343334688a9374e61e8ad8506@6119835_oswg574077oswg819oswg457_img_000?x-oss-process=image/format,jpg/interlace,1",
-      "page": "https://36kr.com/p/4080757699958660",
-      "alt": "",
-      "md5": "da6a3cd436158796c395c338af8f0571",
-      "status": "approved",
-      "reason": "36氪原文配图",
-      "crop": "",
-      "approved": true
-    }
-  ],
-  "approvedAt": "2026-11-23T11:30:26+08:00"
+  ]
 }

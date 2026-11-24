@@ -1,7 +1,7 @@
 {
   "slug": "riemann",
-  "date": "2026-11-23",
-  "builtAt": "2026-11-23T11:30:09+08:00",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:26:42+08:00",
   "candidates": [
     {
       "index": 1,
@@ -13,10 +13,10 @@
       "page": "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
       "alt": "",
       "md5": "36543e972e73538664c2a33d6e49a14c",
-      "status": "approved",
-      "reason": "微信公众号原文配图",
+      "status": "candidate",
+      "reason": "",
       "crop": "",
-      "approved": true
+      "approved": false
     },
     {
       "index": 2,
@@ -33,23 +33,5 @@
       "crop": "",
       "approved": false
     }
-  ],
-  "approved": [
-    {
-      "index": 1,
-      "file": "assets/source/riemann/raw-1.jpeg",
-      "bytes": 40356,
-      "w": 1280,
-      "h": 544,
-      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/VDuyQKcOpoml0QiaM7LPR6kqs3olnWGgcoczNynZ7hMic43XtNib5Z7Tp6cQxicNd35lwlBXuIiap79oj1yEsrYu4u8gM8O42QWK3ibSWhsDG1KKI/0?wx_fmt=jpeg",
-      "page": "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
-      "alt": "",
-      "md5": "36543e972e73538664c2a33d6e49a14c",
-      "status": "approved",
-      "reason": "原文封面（带标题文字，仅作补充图）",
-      "crop": "",
-      "approved": true
-    }
-  ],
-  "approvedAt": "2026-11-23T11:30:26+08:00"
+  ]
 }

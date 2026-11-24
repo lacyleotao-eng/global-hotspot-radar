@@ -1,0 +1,40 @@
+{
+  "slug": "pangdonglai-close",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:28:08+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/pangdonglai-close/raw-1.jpeg",
+      "bytes": 284781,
+      "w": 1536,
+      "h": 1024,
+      "url": "https://www.topicbeat.com/uploads/newimg/2026/11/24/41ac0ef2c7807fa9035bb0e75e83772a-wm.jpg",
+      "page": "https://www.topicbeat.com/news/article-1795450947029810233",
+      "alt": "",
+      "md5": "f0f132ae76ab85540b6034ae85349ac6",
+      "status": "approved",
+      "reason": "商场羽绒服区现场，右下角微博角标属平台水印，已说明",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/pangdonglai-close/raw-1.jpeg",
+      "bytes": 284781,
+      "w": 1536,
+      "h": 1024,
+      "url": "https://www.topicbeat.com/uploads/newimg/2026/11/24/41ac0ef2c7807fa9035bb0e75e83772a-wm.jpg",
+      "page": "https://www.topicbeat.com/news/article-1795450947029810233",
+      "alt": "",
+      "md5": "f0f132ae76ab85540b6034ae85349ac6",
+      "status": "approved",
+      "reason": "商场羽绒服区现场，右下角微博角标属平台水印，已说明",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-24T09:28:50+08:00"
+}

@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "date": "2026-11-24",
+  "slug": "claude-bughunter",
+  "sourceItemId": "7e5093a1213a3587",
+  "sourceTitle": "GitHub Trending：Claude-BugHunter 单日新增 1,716 星，Agent 技能类项目占据榜单前列",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "sourcePlatform": "GitHub",
+  "verification": "部分核实",
+  "verificationNote": "星标与当日新增为榜单快照，随时间变动；项目描述取自仓库自述，未审查代码质量、安全性与许可证；榜单为国际站点，条目内容以英文为主",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "tt-micro",
+      "target": "今日头条",
+      "form": "微头条",
+      "badge": "开源观察",
+      "title": "单日涨 1716 星登顶：82 个技能的包，真能帮人挖漏洞？",
+      "digest": "GitHub 日榜第一换成给 Claude Code 装技能的安全包。星数只说明注意力，不是检测率，代码也还没人审。",
+      "images": [
+        {
+          "src": "assets/images/claude-bughunter-db-1.jpeg",
+          "caption": "AI 生成示意图：摄影特写：深色终端窗口的抽象特写（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "今天上午的 GitHub 日榜第一，是 elementalsouls/Claude-BugHunter：17748 星，单日新增 1716 星。"
+        },
+        {
+          "type": "para",
+          "text": "它的自述很直接：面向漏洞挖掘与红队工作的 Claude Code 技能包，含 82 个 skill。往下一行，obra/superpowers 日增 788 星，HKUDS/CLI-Anything 日增 699 星。榜单是 11 月 23 日上午抓的快照，明天还会变。"
+        },
+        {
+          "type": "para",
+          "text": "三个项目功能不同，形态却是一回事：不是新模型，是给现成的 AI 编程助手装「专业技能包」。这股风已经从模型层吹到了工作流层，门槛不在模型，在谁更懂业务。"
+        },
+        {
+          "type": "para",
+          "text": "技能包不是扫描器，也不跑利用链。它更像一套流程封装：遇到某类任务，先查什么、按什么顺序问、最后输出成什么格式。把老手的章法固化下来，模型才不至于东一榔头西一棒。"
+        },
+        {
+          "type": "para",
+          "text": "但星数不等于能力。仓库自述没有经过审查，代码质量、安全性、许可证都还没有结论；技能包里再全的流程，误报和责任还是人担。拿它当「自动挖洞机」，只会在授权范围外惹麻烦。"
+        },
+        {
+          "type": "para",
+          "text": "我更关心的是这个信号：当技能包开始比模型更受关注，说明手里的模型已经够用，缺的是怎么把它用对。你给 AI 装过技能包吗？"
+        }
+      ],
+      "imageNote": "1 张配图：豆包生成1 张"
+    }
+  ]
+}

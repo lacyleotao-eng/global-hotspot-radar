@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "date": "2026-11-24",
+  "slug": "glm-5-4",
+  "sourceItemId": "ac630ebb5fa7c20b",
+  "sourceTitle": "智谱发布 GLM-5.4：750B 基座 28 层循环两轮，新增视觉与“泛 Coding”",
+  "sourceUrl": "https://www.163.com/dy/article/LCFAJ8E00552GIEM.html",
+  "sourcePlatform": "网易",
+  "verification": "部分核实",
+  "verificationNote": "“智能水平达2-3T级”“部署成本增幅可控”均为厂商说法，无第三方评测；权重尚未开源，仅称“计划开放”，不可写成已开源；实际编码效果需自行验证。",
+  "imageNote": "原文图优先，已核对无水印/像素达标",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "tt-micro",
+      "target": "今日头条",
+      "form": "微头条",
+      "badge": "模型观察",
+      "title": "750B 基座没加参数，GLM-5.4 却把 28 层跑了两遍",
+      "digest": "智谱 11 月 23 日发布 GLM-5.4，参数没涨，靠一次前向里循环两轮加计算深度。省钱是真的，效果还得等第三方评测。",
+      "images": [
+        {
+          "src": "assets/source/glm-5-4/raw-1.webp",
+          "caption": "原文刊发的现场画面（图源：网易）",
+          "origin": "source"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "昨天智谱发布 GLM-5.4：750B 的基座没换，只把其中 28 层改成一次前向里循环两轮，参数一个没加。"
+        },
+        {
+          "type": "para",
+          "text": "这就是它自称的第一代 Loop Transformer 旗舰。权重还是那一份，多跑一轮，等于用同样的参数换更深的计算。代价也很直接：同一份权重算两遍，省的是参数和显存，不是算力。"
+        },
+        {
+          "type": "para",
+          "text": "所以它没从零训新模型，而是在已预训练的 GLM-5 基座上改。控制成本靠三件事：逐 token 门控、KV Cache 全局共享加滑窗独立、复用第一轮的稀疏索引。"
+        },
+        {
+          "type": "para",
+          "text": "能力面也补了：新增视觉，支持 1M 上下文。官方说非高峰最高 200 token/s，高峰 70 到 80。现已向 GLM Coding Plan 全量开放，接入 ZCode、Trae、WorkBuddy，V2/V3 与团队版额度提到 1.5 倍。"
+        },
+        {
+          "type": "para",
+          "text": "但要把话说清楚：2 到 3T 级的智能水平、部署成本增幅可控，目前都是厂商说法，没有第三方评测。权重只是「计划开放」，不等于已经开源；独立 API 也还在计划里。"
+        },
+        {
+          "type": "para",
+          "text": "真正的看点不是谁又刷了个榜，而是国产旗舰开始比「同样的参数怎么想得更久」。这条路线成不成，等第一批独立评测出来再下结论。你会为省下来的成本，换一点效果吗？"
+        }
+      ],
+      "imageNote": "1 张配图：原文图1 张"
+    }
+  ]
+}

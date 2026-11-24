@@ -1,0 +1,819 @@
+{
+ "date": "2026-11-24",
+ "generatedAt": "2026-11-24T09:20:27+08:00",
+ "windowHours": 30,
+ "rule": "一条情报 = 一篇稿 = 一个平台 = 一种形态；同一 sourceItemId 不得出现第二次",
+ "quota": {
+  "gzh-article": 3,
+  "gzh-poster": 3,
+  "tt-article": 4,
+  "tt-micro": 4
+ },
+ "events": [
+  {
+   "slug": "elderly-child-policy",
+   "sourceItemId": "6827796fc26f6e2a",
+   "sourceTitle": "四部门印发“一老一小”方案：支持幼儿园办2至3岁托班，2030年社区养老设施覆盖率达70%",
+   "sourceUrl": "http://mp.weixin.qq.com/s?__biz=MjM5NzE4MTI4NA==&mid=2651511858&idx=2&sn=75498177ed2eb84c534d45c7b0fa0d37&chksm=bcecd405bd2107d7b4800e105d895521212cf0c75a33b16ed29261b36331fea0060f435d595d#rd",
+   "sourcePlatform": "微信公众号",
+   "publishedAt": "2026-11-23T18:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "方案原文未直接打开（发改委官网页面未取得可直达链接），指标以多源一致转述为准；各地落地细则、收费与师生配比尚未公布。",
+   "summary": "11月23日，国家发展改革委、民政部、国家卫生健康委、教育部联合印发《“一老一小”服务体系建设实施方案》并公布。方案明确到2030年养老机构护理型床位占比达73%、社区养老服务机构和设施覆盖率达70%、3岁以下婴幼儿入托率较2025年提高6个百分点；支持有条件的幼儿园改造改扩建、举办面向2至3岁幼儿的托班，打造“一刻钟托育服务圈”，重点推进2000个设施老旧公办养老机构改造升级，并鼓励社区嵌入式设施提供半日托、计时托与“老幼共托”。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "2岁可入园，支持有条件幼儿园办托班",
+     "url": "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml",
+     "publisher": "新浪财经（转经济日报）",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "养老托育最新举措！幼儿园要招2岁孩子了",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
+     "publisher": "微信公众号",
+     "date": "2026-11-23",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "幼儿园要收2岁孩子了：三个数字看懂“一老一小”新方案",
+   "angle": "不做政策复述，用“73%、70%、6个百分点”三个硬指标拆解这份方案到底改变了谁的日常，再落到家长最关心的钱与照护标准。",
+   "outline": [
+    "三个2030年目标分别对应什么：护理型床位、社区设施覆盖、入托率",
+    "为什么是2至3岁：出生率下行与幼儿园空位、双职工照护缺口的两端对接",
+    "供给端动作：一刻钟托育圈、2000个公办养老机构改造、老幼共托",
+    "尚未落地的关键：普惠托育补贴如何覆盖幼儿园托班、师生配比与安全标准",
+    "给家长的可执行建议：明年起怎么问社区、怎么比价、看哪几项资质"
+   ],
+   "audience": "0-6岁孩子的家长、关注养老的中青年、社区与幼教从业者",
+   "risk": "不得宣称各地已落地或给出具体收费预测；托班开设以地方细则为准。",
+   "basis": "方案明确2030年护理型床位73%、社区设施覆盖70%、入托率提高6个百分点，支持幼儿园办2至3岁托班，推进2000个公办养老机构改造。",
+   "hasLead": true,
+   "score": 76,
+   "readyFile": "2026-11-24-elderly-child-policy.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "crowdstrike-zscaler",
+   "sourceItemId": "629af7cf3c835950",
+   "sourceTitle": "CrowdStrike 以 439 亿美元全股票收购 Zscaler，剑指 AI 智能体安全",
+   "sourceUrl": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-23T16:20:00Z",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "439 亿美元为企业价值口径，部分中文报道写作「2926 亿元人民币」；协同收入与 TAM 目标均为公司指引，非既成事实。",
+   "summary": "11 月 23 日，CrowdStrike 与 Zscaler 宣布签署最终协议，前者以全股票方式收购后者，交易企业价值约 439 亿美元。换股比例为 1 股 Zscaler 换 1.135 股 CrowdStrike，按 11 月 20 日收盘价计算隐含每股 260.41 美元，溢价约 34%。交易完成后 CrowdStrike 原股东持有约 84.1% 股份，合并公司年度经常性收入将超过 100 亿美元，预计在 CrowdStrike 2028 财年下半年完成，仍需股东与监管批准。双方称合并是把终端安全与零信任网络接入合成一个平台，以便企业安全地引入 AI 智能体。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "CrowdStrike to acquire Zscaler for $44 billion",
+     "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+     "publisher": "TechCrunch",
+     "date": "2026-11-23",
+     "relation": "一手"
+    },
+    {
+     "title": "439 亿美元！网络安全行业史上最大并购有望诞生，瞄准 AI 智能体安全",
+     "url": "https://www.thepaper.cn/newsDetail_forward_34540984",
+     "publisher": "澎湃新闻",
+     "date": "2026-11-23",
+     "relation": "二手"
+    },
+    {
+     "title": "CrowdStrike 拟 439 亿美元收购 Zscaler",
+     "url": "https://news.qq.com/rain/a/20261123A0DY9Y00",
+     "publisher": "财联社（腾讯新闻转载）",
+     "date": "2026-11-23",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "439 亿美元的合并：AI 智能体把网络安全逼成了大并购",
+   "angle": "从「AI 代理要进企业，安全必须先合起来」这条因果链讲这桩交易，落到中国安全厂商的镜像处境",
+   "outline": [
+    "交易结构：全股票、1.135 换股比、34% 溢价、84% 对 16% 的股权分配",
+    "两家到底补什么：终端侧的 Falcon 与连接侧的 Zero Trust Exchange",
+    "为什么是现在：智能体自动调用系统，传统防火墙与 VPN 看不清流量",
+    "算得清的账：8000 家未交叉客户、100 亿美元 ARR、10 亿美元收入协同目标",
+    "另一面：平台越大越像单点，2024 年那次全球宕机是前车之鉴"
+   ],
+   "audience": "企业 IT 与安全负责人、关注美股与并购的读者",
+   "risk": "协同收入、TAM 均为公司指引，须标明「公司预计」；交易尚未完成，不可写成已交割",
+   "basis": "TechCrunch 对交易金额与战略表述的报道；澎湃新闻对换股比例、溢价与时间表的核对",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-24-crowdstrike-zscaler.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "pangdonglai-close",
+   "sourceItemId": "38a25a7aa3d641a4",
+   "sourceTitle": "胖东来生活广场店12月闭店，羽绒服价签标出售价529元、进货价476.6元",
+   "sourceUrl": "https://weibo.com/5092474123/RsLDos0sw",
+   "sourcePlatform": "微博",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "“年利润超1亿元”“租金涨到脱离公平”等为媒体转述企业方说法，未见企业公告原件；闭店确切日期（12月哪一天）未取得。",
+   "summary": "据微博公开报道，因租金大幅上涨，陪伴许昌市民24年的胖东来生活广场店将于12月关闭，该店年利润超1亿元。11月23日媒体现场看到工作日客流仍爆满，羽绒服区“人挤人”，一款价签直接标出售价529元、进货价476.6元、绒子含量90%、充绒量135克。据报道，闭店前门店仍按原价销售、售后照常，员工转入4公里外新店。讨论集中在两点：有客流有利润的老店为何关；把进货价印上吊牌是诚意还是定价策略。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "胖东来一店年底关闭，羽绒服价签直接亮成本：进货价476.6元，售价529元",
+     "url": "https://post.smzdm.com/p/ae65w9qz/",
+     "publisher": "什么值得买社区",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "胖东来生活广场店将关闭：羽绒服亮出成本价，消费者该看懂什么",
+     "url": "https://www.topicbeat.com/news/article-1795450947029810233",
+     "publisher": "TopicBeat",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "胖东来一店将关闭 羽绒服亮成本价 售价529元进货价476.6元",
+     "url": "http://hk.szhk.com/2026/11/24/31808467247209808.html",
+     "publisher": "深港在线",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "一件羽绒服只赚52元？胖东来把进货价印上吊牌，戳中的不是价格",
+   "angle": "从一张价签切入羽绒服行业的价格结构：原料在跌、成衣在涨，钱到底花在哪一环。用“成本—参数—渠道”三层拆，而不是替品牌或替消费者站队。",
+   "outline": [
+    "价签上的四个数字分别意味着什么：售价、进价、绒子含量、充绒量",
+    "为什么52元差价不足以判断“良心”：单款引流与全场毛利是两件事",
+    "对照行业面：羽绒原料价格回落而成衣均价上行的剪刀差从哪来",
+    "消费者可用的判断顺序：先看填充物与绒子含量，再看充绒量，最后比价与售后",
+    "闭店场景下的提醒：客流与“最后机会”话术最容易促使人放弃核对"
+   ],
+   "audience": "冬季购衣的普通消费者、零售从业者、关注商业模式的读者",
+   "risk": "不得把单款毛利率推广为品牌整体毛利；不写“羽绒服都是智商税”这类结论；不引导到店抢购。",
+   "basis": "微博博文与多家媒体探访稿一致显示：售价529元、进货价476.6元、绒子含量90%、充绒量135克，门店12月关闭且仍按原价销售。",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-24-pangdonglai-close.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "pc-price-rise",
+   "sourceItemId": "53934742ac153bce",
+   "sourceTitle": "显卡在降、内存固态在涨：一套整机从5000元涨到8000元，社区讨论“现在该不该装”",
+   "sourceUrl": "https://post.smzdm.com/p/ad7zgddz",
+   "sourcePlatform": "什么值得买",
+   "publishedAt": "2026-11-24T08:00:00+08:00",
+   "region": "国内",
+   "type": "demand",
+   "verification": "部分核实",
+   "verificationNote": "具体成交价随渠道与日期波动，社区帖未标注每项报价的采集时间；“三季度DRAM营收同比涨369%”等宏观数字来自二手引用，未核原报告。",
+   "summary": "什么值得买社区11月24日一篇装机分析帖给出：16G DDR5由450元涨至1600元、32G由900元涨至3800元、1TB固态由355元涨至850元；华强北16G DDR5报价1400至1600元。帖中判断源头在产能转移——AI服务器争抢HBM，消费级DRAM被挤后；显卡降价集中于5090、5080，单张RTX 5060集中在3400至4200元。澎湃新闻转九派新闻走访称，去年5000元可配的主机现需8000至1万元，1TB硬盘涨139%、16GB DDR5涨255%。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "大跳水！“月初还要2万元，现在只要1.6万元”！业内称今明两年非刚需不建议入手",
+     "url": "https://m.thepaper.cn/newsDetail_forward_34539526",
+     "publisher": "澎湃新闻",
+     "date": "2026-11-23",
+     "relation": "二手"
+    },
+    {
+     "title": "2026年11月第四周攒机指南：万元硬刚《影之刃零》2K光追",
+     "url": "https://diy.zol.com.cn/1276/12763571.html",
+     "publisher": "中关村在线",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "内存涨了三倍，显卡却在降：今年装机的预算顺序该倒过来了",
+   "angle": "给一份“按用途分配预算”的方法论，而不是给配置单。用三样配件的涨幅差，解释为什么老经验（先定显卡）今年会失灵。",
+   "outline": [
+    "三组价格对照：16G/32G DDR5 与 1TB 固态的涨幅量级",
+    "为什么显卡降价帮不上忙：降价集中在本就不在主流预算的型号",
+    "顺序倒过来：先定用途与显存需求，再定内存容量，最后比显卡型号",
+    "哪些值得等、哪些不值得等：固态现货与内存合约价的区别",
+    "避坑清单：杂牌条、清零盘、翻新固态的识别要点"
+   ],
+   "audience": "学生与年轻上班族、游戏玩家、需要配工作机的自由职业者",
+   "risk": "不预测具体涨跌与时间点；不做品牌导购与返利引导；价格须标注为渠道报价、随日波动。",
+   "basis": "社区帖列出16G DDR5 450→1600元、32G 900→3800元、1TB固态355→850元；澎湃转九派新闻称去年5000元主机现需8000至1万元。",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-24-pc-price-rise.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "riemann-day3",
+   "sourceItemId": "439c852d9e68b308",
+   "sourceTitle": "黎曼猜想“AI证明”进入第三日：Nielsen发布《证明无效》反驳论文，学界称尚待验收",
+   "sourceUrl": "https://news.ifeng.com/c/8yIYRlUj3Yr",
+   "sourcePlatform": "凤凰网",
+   "publishedAt": "2026-11-24T00:00:00+08:00",
+   "region": "国内",
+   "type": "idea",
+   "verification": "部分核实",
+   "verificationNote": "反驳论文原文未逐页阅读，其对anyGeometry的具体指控是否成立尚无定论；“证明已成立/已被推翻”两种说法均不可写成结论；媒体转述版本号与修订时间未独立核验。",
+   "summary": "Anthropic数学家莱文特·阿尔珀格称与Claude合作完成黎曼猜想的形式化证明，公开4页说明与约1700万行Lean代码，转成人类可读文本约25万页；11月21日Lean与Mathlib社区联合声明确认代码逻辑通过核验。11月23日前后，数学家Nielsen在预印本平台发布《证明无效》论文，质疑部分定义过宽（如anyGeometry恒返回True）。北大数学科学学院院长刘若川表示，Lean验证通过使其偏向乐观，但更关键是从代码重建人类可理解的论证；克雷研究所官网仍将其列为未解决。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "暴力“破解”多少猜想，AI也不是数学的主角",
+     "url": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0",
+     "publisher": "北京日报",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "“AI破解黎曼猜想”，好事还是坏事？",
+     "url": "https://finance.sina.cn/2026-11-24/detail-inizutpn7831891.d.html",
+     "publisher": "新浪财经（转环球时报）",
+     "date": "2026-11-24",
+     "relation": "转载"
+    },
+    {
+     "title": "Lean社区确认了黎曼猜想的证明，但它确认的是代码，不是人类读懂",
+     "url": "https://post.smzdm.com/p/avgdo7zm",
+     "publisher": "什么值得买社区",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "证明通过了机器，却卡在人这一关：黎曼猜想争的是什么",
+   "angle": "不谈“AI封神或翻车”，讲清一道验收题：形式化核验能确认什么、不能确认什么，以及当证明长到没人读得完时，数学共同体靠什么维持可信。",
+   "outline": [
+    "三份材料的分量：4页说明、1700万行代码、约25万页可读文本",
+    "Lean确认了什么：命题比对与逻辑编译，不等于数学界承认",
+    "反驳方的落点：中间定义写得过宽，是否让整条链空转",
+    "反方的边界：反驳不等于推翻，依赖审计也不构成无效证明",
+    "更大的问题：产出速度超过理解速度后，评审制度怎么改"
+   ],
+   "audience": "科技从业者、理工科学生、对AI与基础科学交叉感兴趣的读者",
+   "risk": "不得断言黎曼猜想已被证明或被推翻；涉及预印本论文与个人观点须标“待核实”；避免把AI贡献与人类贡献做简单归因。",
+   "basis": "凤凰网稿件中刘若川表述“Lean社区已完成验证，我对正确性偏向乐观；更关键的是重建人类可理解的论证”；北京日报称克雷数学研究所仍将其列为未解决。",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-24-riemann-day3.json",
+   "auditScore": 89.8
+  },
+  {
+   "slug": "shenzhou-24-crew",
+   "sourceItemId": "fabfc190082e9be4",
+   "sourceTitle": "神舟二十四号瞄准11月25日08时18分发射，乘组含首位外籍航天员",
+   "sourceUrl": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=5312856043623816131&channelId=1119",
+   "sourcePlatform": "央视新闻",
+   "publishedAt": "2026-11-24T09:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "乘组名单与发射窗口属于官方发布会口径；任务细节（如短期驻留时长）以官方后续通报为准。",
+   "summary": "11月24日上午，神舟二十四号载人飞行任务新闻发布会在酒泉举行，发言人张静波表示瞄准11月25日08时18分发射。乘组由汤洪波、武毅和巴基斯坦航天员穆罕默德·齐尚·阿里组成，汤洪波任指令长，三人分别为航天驾驶员、航天飞行工程师与载荷专家。汤洪波曾执行神舟十二号、十七号任务，将成首位三次到访“天宫”者；武毅首飞；阿里是首位到访中国空间站的外籍航天员。按其短期驻留后返回的安排，朱杨柱将成为我国首位在轨驻留一年的航天员。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "神舟二十四航天员乘组确定 “天宫”将迎来首位外籍航天员",
+     "url": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119",
+     "publisher": "央视新闻",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "神舟二十四号乘组阵容公布：汤洪波、武毅和巴基斯坦航天员穆罕默德·齐尚·阿里",
+     "url": "https://www.chinanews.com/gn/2026/11-24/10736761.shtml",
+     "publisher": "中国新闻网",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "神二十四乘组名单、发射窗口公布",
+     "url": "https://news.qq.com/rain/a/20261124A03WND00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "今年最确定的“可预告大事件”：发射窗口精确到分钟，25日早间是天然的流量窗口。真正的新闻点不是“又发一次”，而是首个外籍航天员与首次一年期驻留同时出现，标志着空间站从“建成”转向“常态化国际合作运营”。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 83,
+   "readyFile": "2026-11-24-shenzhou-24-crew.json",
+   "auditScore": 89.8
+  },
+  {
+   "slug": "treetree-chicken",
+   "sourceItemId": "4a242ab803f442ff",
+   "sourceTitle": "一句“treetree”带火许昌炸鸡店后，店家11月23日晚宣布暂停营业",
+   "sourceUrl": "https://www.163.com/dy/article/LCFC4S2O051492LM.html",
+   "sourcePlatform": "网易",
+   "publishedAt": "2026-11-23T23:00:00+08:00",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "“一天出油三四桶”为店家自述，桶规格与换油台账未披露；外卖员涨粉数据（11月13日41.2万→11月22日146.9万）来自第三方平台，未独立核验；TREETREE商标已被他方申请注册一说来自企业信息查询，未见官方裁定。",
+   "summary": "河南许昌一家主营披萨的小店，因外卖员送餐视频里一句带口音的“脆脆的”（被听成“treetree”）走红。据橙柿互动·都市快报综合报道，走红后炸鸡上架3分钟卖空当天存量，11月23日9点半营业、40分钟后售罄，上午只发50个号，有顾客等两三小时、也有外地顾客专程赶来，一份26元。店主称店里只有夫妻两人，备料到凌晨2点、每天睡4个多小时；11月23日晚门店发布暂停营业通知称“血条已清空”。外卖员回应不接线下餐饮广告。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "东湖快语｜“tree tree”的炸鸡，为什么总有食物魔性出圈",
+     "url": "https://news.hubeidaily.net/pc/c_6194155.html",
+     "publisher": "湖北日报",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "treetree炸鸡“一天出油三四桶”到底什么意思",
+     "url": "https://post.smzdm.com/p/ae65wk74",
+     "publisher": "什么值得买社区",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "treetree炸鸡爆单之后：流量产能与商标三笔账",
+     "url": "https://dy.163.com/article/LCG3C5MU0556Q1AQ.html",
+     "publisher": "网易号",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "一句“treetree”让小店3分钟卖空，夫妻俩扛了10天后关门歇业",
+   "angle": "按时间线还原“一条视频如何把两人小店推到极限”，落点在“接不住的流量是不是好事”，给做小生意的人一份可对照的清单。",
+   "outline": [
+    "起点：11月13日外卖员送餐视频，自费换炸鸡，口音成梗",
+    "爆发：3分钟售罄、40分钟清空、50个号、跨省打卡",
+    "代价：两人两锅、备料到凌晨2点、每天睡4小时、披萨停做",
+    "收尾：11月23日晚暂停营业，老板称“想细水长流，不做一波流”",
+    "可复用经验：限号、预售、错峰取餐、提前公告，哪一步能保住品控"
+   ],
+   "audience": "小微餐饮店主、外卖从业者、爱看市井故事的泛用户",
+   "risk": "不得把“出油三四桶”写成用油违规；不传播未证实的商标抢注结论；不鼓励跨城打卡。",
+   "basis": "报道明确：3分钟售罄、9点半营业40分钟售罄、上午50个号、26元一份、两人经营、11月23日晚发布暂停营业通知。",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-24-treetree-chicken.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "shaoxing-paint",
+   "sourceItemId": "d4e21bad37c6aa31",
+   "sourceTitle": "绍兴一女业主自费7.3万元给对面楼栋刷漆，物业：在她房子视线内",
+   "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_34544166",
+   "sourcePlatform": "澎湃新闻",
+   "publishedAt": "2026-11-23T20:00:00+08:00",
+   "region": "国内",
+   "type": "discussion",
+   "verification": "已核实",
+   "verificationNote": "维修基金表决的具体票数与小区总户数未披露；“业主意见不一”为物业转述。",
+   "summary": "据澎湃新闻等报道，浙江绍兴柯桥区世茂名流小区一栋楼外立面腰线老化泛黄、污渍斑驳，该腰线属纯美化项目、不涉结构安全与基础使用功能，该栋业主对是否修复、能否动用公共维修基金意见不一。住在另一栋的业主沈女士全额出资7.3万元整体粉刷翻新。11月23日物业回应称其房子正对该楼栋，“在她视线内，觉得不舒服就出钱搞了”；此前她曾自费为自家楼栋刷大门并获业委会感谢信，这次想通报表扬被她婉拒。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "浙江绍兴一女子自费7.3万元给对面楼栋刷漆，物业：在她房子视线内，太老旧了她看不惯",
+     "url": "https://news.qq.com/rain/a/20261123A0DMER00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-23",
+     "relation": "转载"
+    },
+    {
+     "title": "女子自费7.3万元给对面楼栋刷漆？物业回应",
+     "url": "https://www.sohu.com/a/1105512470_162758",
+     "publisher": "搜狐",
+     "date": "2026-11-23",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "嫌对面楼太旧，她自掏7.3万刷了整面墙，物业：就在她窗户前面",
+   "angle": "先讲清事实和反响，再把问题抛回制度：一栋楼的“脸”该谁出钱修，维修基金为什么常常表决不下来。",
+   "outline": [
+    "事情经过：9栋腰线老化、业主意见不一、隔壁楼业主全额出资7.3万",
+    "物业回应与当事人态度：因在视线内看不惯，此前也自费刷过自家楼栋大门，拒绝表扬",
+    "两种评价：善意美化 vs 共有部分责任边界",
+    "制度追问：外立面属共有部分，维修基金使用的表决门槛与流程难在哪",
+    "同类小区的可行路径：业委会牵头、分摊方案、街道协调"
+   ],
+   "audience": "老旧小区住户、业委会成员、物业从业者",
+   "risk": "不得披露业主姓名以外的个人信息与具体门牌；不把个案写成“维修基金制度失效”的结论；不使用未授权的现场照片。",
+   "basis": "澎湃新闻：腰线属纯美化项目、不涉结构安全，该栋业主对是否动用维修基金意见不一；沈女士出资7.3万元，物业11月23日回应“在她视线内”。",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-24-shaoxing-paint.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "miit-app-popup",
+   "sourceItemId": "1de491aa7311bede",
+   "sourceTitle": "今日头条早报：工信部通报23款App及SDK弹窗乱跳转，首批18只主动ETF上市",
+   "sourceUrl": "https://www.toutiao.com/article/7711390526307222056",
+   "sourcePlatform": "今日头条",
+   "publishedAt": "2026-11-24T07:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "本条为早报聚合页（非单条新闻原文），属当日榜单/聚合快照、未取得各条新闻原链接；具体App名单需以工信部通报原文为准；页面互动数字不可见。",
+   "summary": "今日头条“7点出发”11月24日早报汇总多条要闻：工信部11月23日通报，对App、SDK商业信息弹窗开展专项治理，经第三方机构抽查，共发现23款App及SDK存在信息窗口乱跳转、无法关闭等侵害用户权益行为，相关主体应按有关规定整改；同日国内首批18只主动ETF在上交所、深交所挂牌，开盘不到半小时成交额均破1亿元；四部门公布第六批鼓励研发申报儿童药品清单共18个品种；教育部就《教材管理条例（征求意见稿）》征求意见。该链接为早报聚合页，单条原文未取得。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "早啊！新闻来了〔2026.11.24〕",
+     "url": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=1721625810146432636&channelId=1119",
+     "publisher": "央视新闻",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "早！11-24丨中央考核巡查组进驻冀湘滇；张雪计划推出万元外卖电摩……",
+     "url": "https://news.qq.com/rain/a/20261124A02TJ900",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "手机弹窗关不掉、点一下就跳转？工信部通报了23款App和SDK",
+   "angle": "从用户每天的真实遭遇切入，讲清“弹窗乱跳转”被认定侵害权益的依据，以及用户自己能做的三件事；不追名单八卦，追整改是否闭环。",
+   "outline": [
+    "通报事实：专项治理、第三方抽查、23款App及SDK、两类问题（乱跳转、无法关闭）",
+    "为什么这类问题屡禁不止：开屏与信息窗口是流量入口，整改成本低、收益高",
+    "用户可操作的三步：关闭个性化推荐与通知权限、认准应用商店来源、遇到关不掉的窗口如何投诉",
+    "值得追问的后续：通报后是否复检、是否与下架/罚款挂钩",
+    "延伸对照：同一批要闻里的儿童药品清单与教材管理条例，反映的是另一种“监管节奏”"
+   ],
+   "audience": "普通手机用户、中老年用户家属、应用开发者",
+   "risk": "不得点名未被通报的企业；不编造处罚结果；名单以工信部原文为准，本文不逐一列举。",
+   "basis": "今日头条早报页与央视新闻同日稿均载：工信部11月23日通报，经第三方检测抽查发现23款App及SDK存在信息窗口乱跳转、无法关闭等侵害用户权益行为。",
+   "hasLead": true,
+   "score": 67,
+   "readyFile": "2026-11-24-miit-app-popup.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "xnu-linux",
+   "sourceItemId": "e258ede67d0bcbbb",
+   "sourceTitle": "XNU Linux：把 macOS 内核当模块装进 Linux，能启动完整 macOS 桌面",
+   "sourceUrl": "https://news.ycombinator.com/item?id=50607261",
+   "sourcePlatform": "Hacker News",
+   "publishedAt": "2026-11-23T03:49:24Z",
+   "region": "海外",
+   "type": "resource",
+   "verification": "已核实",
+   "verificationNote": "性能与兼容性数据来自项目自述与第三方转述，无独立基准；项目对 AMFI 打补丁、放宽 SIP，安全影响未评估。",
+   "summary": "开源项目 AFK-surf/xnulinux 把 Apple 公开源码的 XNU 内核编译成 Linux 内核模块 xnu.ko，再配一个接口模块 fki.ko 借用 Linux 的内存、定时器、文件、网络与 GPU，中间没有虚拟机监控器。在未改动的 arm64 Ubuntu 内核上，加载模块后可将用户自备的 macOS 27 系统盘启动到桌面，出现登录窗、Dock、Finder、Safari 与 Chrome，macOS 与 Linux 进程同核并行。限制明确：仅 arm64、需要 PAC 与 4K 页、16GB 以上内存并预留 8GB；启动耗时 31-48 秒；在 NVIDIA DGX Spark 上只能 CPU 渲染；需自行准备 macOS 安装盘，仓库不含 Apple 二进制。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "601（Hacker News points）",
+     "comments": "244",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "XNU Linux: Full OS X GUI Userspace on Linux（HN 讨论）",
+     "url": "https://news.ycombinator.com/item?id=50607261",
+     "publisher": "Hacker News",
+     "date": "2026-11-23",
+     "relation": "一手"
+    },
+    {
+     "title": "AFK-surf/xnulinux",
+     "url": "https://github.com/AFK-surf/xnulinux",
+     "publisher": "GitHub",
+     "date": "2026-11-23",
+     "relation": "一手"
+    },
+    {
+     "title": "XNU Linux Loads macOS's Kernel Into Linux and Boots a Desktop in 31 to 48 Seconds",
+     "url": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars",
+     "publisher": "The Terminal",
+     "date": "2026-11-23",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "这是一个「演示价值远大于实用价值」的项目，但它回答了一个真问题：两个内核能不能共享同一批 CPU。对国内读者的看点是许可证与安全——XNU 侧是 APSL、Linux 侧是 GPL，xnu.ko 还标了 Proprietary 会污染内核，加上补丁掉 AMFI 和 SIP，这不是能装在工作机上的东西。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 45,
+   "readyFile": "2026-11-24-xnu-linux.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "glm-5-4",
+   "sourceItemId": "ac630ebb5fa7c20b",
+   "sourceTitle": "智谱发布 GLM-5.4：750B 基座 28 层循环两轮，新增视觉与“泛 Coding”",
+   "sourceUrl": "https://www.163.com/dy/article/LCFAJ8E00552GIEM.html",
+   "sourcePlatform": "网易",
+   "publishedAt": "2026-11-23T20:00:00+08:00",
+   "region": "国内",
+   "type": "resource",
+   "verification": "部分核实",
+   "verificationNote": "“智能水平达2-3T级”“部署成本增幅可控”均为厂商说法，无第三方评测；权重尚未开源，仅称“计划开放”，不可写成已开源；实际编码效果需自行验证。",
+   "summary": "11月23日，智谱发布旗舰模型GLM-5.4，称其为第一代采用Loop Transformer架构的旗舰模型：在已预训练的GLM-5基座上，将28层改造为一次前向内循环两轮，参数不增而有效计算深度增加；并以逐token门控、KV Cache“全局共享+滑窗独立”、复用第一轮稀疏索引控制成本。模型新增视觉能力，支持1M上下文，官方称非高峰最高200 token/s、高峰70至80。已向GLM Coding Plan全量开放，接入ZCode、Trae、WorkBuddy等，V2/V3与团队版额度提至1.5倍；独立API与权重的开放仍在计划中。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "智谱发布GLM-5.4：循环架构与泛Coding并行",
+     "url": "https://www.itbear.com.cn/html/2026-11/1592735.html",
+     "publisher": "ITBear",
+     "date": "2026-11-23",
+     "relation": "二手"
+    },
+    {
+     "title": "Grok遭美国两州起诉、黄仁勋重返英伟达，Claude可参与代码审核｜AI早班车",
+     "url": "https://news.qq.com/rain/a/20261124A03L2D00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "国产模型这轮不再比参数量，改比“同样的参数怎么想得更久”。Loop Transformer 的关键取舍在于：权重共享省钱，但同等算力下效果不如不共享，所以只能站在已有基座上改——这是一条务实的工程路线，而不是架构炫技。写作时应把“厂商自称”和“可验证项”分开。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 37,
+   "readyFile": "2026-11-24-glm-5-4.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "james-jersey",
+   "sourceItemId": "26746e1d1b58ee7e",
+   "sourceTitle": "虎扑热议：詹姆斯湖人球衣退役该不该按奥尼尔的规格",
+   "sourceUrl": "https://voice.hupu.com/bbs/641385384",
+   "sourcePlatform": "虎扑",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "帖子发布时间未在页面显示，按热榜聚合页归入11月24日话题；经纪人“同规格”说法为该帖转述，未取得原始采访链接；页面互动数字不可见。",
+   "summary": "虎扑社区11月24日出现多条相关讨论帖。一帖援引湖人老板珍妮·巴斯接受Sportskeeda采访的表态：她“毫不怀疑”詹姆斯退役并入选名人堂后，其湖人球衣将被悬挂在球馆穹顶，“这一点毫无疑问”。同批讨论还涉及经纪人观点——詹姆斯与奥尼尔均效力湖人8年，应获同规格致敬，以及关于其生涯抢七数据与历史地位的评价争议。分歧集中在：球衣退役标准究竟是效力年限、冠军数量，还是影响力。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "全网热榜聚合日报2026-11-24（周二）",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd",
+     "publisher": "微信公众号",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "体育话题里少见的“标准之争”：争论对象不是球员强弱，而是仪式门槛。年限派拿奥尼尔的8年做标尺，冠军派拿1冠说话，影响力派认为斯台普斯的上座与转播价值本身就是答案。这类讨论适合做“规则是怎么被一次次特例改写”的观察。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 37,
+   "readyFile": "2026-11-24-james-jersey.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "claude-bughunter",
+   "sourceItemId": "7e5093a1213a3587",
+   "sourceTitle": "GitHub Trending：Claude-BugHunter 单日新增 1,716 星，Agent 技能类项目占据榜单前列",
+   "sourceUrl": "https://github.com/trending?since=daily",
+   "sourcePlatform": "GitHub",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "resource",
+   "verification": "部分核实",
+   "verificationNote": "星标与当日新增为榜单快照，随时间变动；项目描述取自仓库自述，未审查代码质量、安全性与许可证；榜单为国际站点，条目内容以英文为主",
+   "summary": "11月23日上午的 GitHub Trending 日榜：elementalsouls/Claude-BugHunter 以17,748星、当日新增1,716星居首，自述为面向漏洞挖掘与红队工作的 Claude Code 技能包，含82个 skill；obra/superpowers（Agent 技能框架）+788星、HKUDS/CLI-Anything +699星分列其后。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "17,748 stars，当日新增 1,716（榜单值，2026-11-23 09:00 抓取）",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter",
+     "publisher": "GitHub",
+     "date": null,
+     "relation": "一手"
+    },
+    {
+     "title": "GitHub Trending（当日榜）",
+     "url": "https://github.com/trending?since=daily",
+     "publisher": "GitHub",
+     "date": "2026-11-23",
+     "relation": "一手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "榜单结构很清楚：前十里大半是“给 AI 编程工具装技能”的项目，说明生态正在从模型转向工作流与技能包。安全类项目登顶也提示另一面——Agent 的攻防工具同样在快速商品化。做选题时讲“技能包是什么、怎么用”比罗列星数更有价值。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 37,
+   "readyFile": "2026-11-24-claude-bughunter.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "nv-npc",
+   "sourceItemId": "f37fc9ced416aacb",
+   "sourceTitle": "中戏同学成顶流男演员却当NPC",
+   "sourceUrl": "https://tophub.today/n/KqndgxeLl9",
+   "sourcePlatform": "微博",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "待核实",
+   "verificationNote": "榜单快照、未取得原链接。人物身份、班级、作品与收入数字均来自搜索摘要层面的转述，未获当事人或媒体一手采访，任何具体数字都不可写入成稿",
+   "summary": "微博热搜榜（榜单快照，2026-11-23 上午）第7位为“中戏同学成顶流男演员却当NPC”，榜单显示热度15万。榜单只提供词条与热度，未提供原帖、当事人自述与视频来源；该话题指向一名中央戏剧学院表演系毕业生在景区从事 NPC（角色扮演互动）工作、与同班已成名演员形成对照所引发的职业落差讨论。当事人姓名、从业经历、收入与“半年只接到4天拍摄”等说法均未取得原始出处，本条目不作事实认定。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "榜单第7位，热度15万（榜单值，2026-11-23 08:5x 快照）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "微博热搜榜（榜单页，词条“中戏同学成顶流男演员却当NPC”第7位）",
+     "url": "https://tophub.today/n/KqndgxeLl9",
+     "publisher": "今日热榜（聚合页）",
+     "date": "2026-11-23",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "",
+   "angle": "这是典型的“榜单先行、事实滞后”条目：能确认的只有“这句话今天很热”，不能确认的是那个人到底经历了什么。若要做，必须先找到本人采访或正规媒体稿件，否则只能写成“一个词条为什么戳中人”的舆论观察。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 30,
+   "readyFile": "2026-11-24-nv-npc.json",
+   "auditScore": 100
+  }
+ ],
+ "syncedAt": "2026-11-24T09:54:47+08:00"
+}

@@ -1,70 +1,103 @@
 {
+  "builtAt": "2026-11-24T09:20:55+08:00",
   "jobs": [
     {
-      "slug": "riemann",
+      "slug": "elderly-child-policy",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=Mzk5MDAxNTYxMg==&mid=2247488587&idx=1&sn=5118b93370945e4baeb948870a55d85a",
-        "https://finance.sina.cn/2026-11-23/detail-inizrtku2608007.d.html",
-        "https://www.toutiao.com/a7711136404964688434"
+        "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
+        "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml"
       ]
     },
     {
-      "slug": "linjunyang",
+      "slug": "crowdstrike-zscaler",
       "urls": [
-        "https://36kr.com/p/4080757699958660",
-        "https://www.36kr.com/p/4081573022552962"
+        "https://www.thepaper.cn/newsDetail_forward_34540984",
+        "https://news.qq.com/rain/a/20261123A0DY9Y00",
+        "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion"
       ]
     },
     {
-      "slug": "neon",
+      "slug": "pangdonglai-close",
       "urls": [
-        "https://www.v2ex.com/t/1258877",
-        "https://www.v2ex.com/t/1258877"
+        "https://post.smzdm.com/p/ae65w9qz/",
+        "https://www.topicbeat.com/news/article-1795450947029810233",
+        "http://hk.szhk.com/2026/11/24/31808467247209808.html"
       ]
     },
     {
-      "slug": "sspai",
+      "slug": "pc-price-rise",
       "urls": [
-        "https://sspai.com/post/118153",
-        "https://sspai.com/post/118153"
+        "https://m.thepaper.cn/newsDetail_forward_34539526",
+        "https://diy.zol.com.cn/1276/12763571.html",
+        "https://post.smzdm.com/p/ad7zgddz"
       ]
     },
     {
-      "slug": "bughunter",
+      "slug": "riemann-day3",
       "urls": [
-        "https://github.com/elementalsouls/Claude-BugHunter",
-        "https://www.cnblogs.com/wflynn/p/23744129",
-        "https://appndo.com/github-trending"
+        "https://finance.sina.cn/2026-11-24/detail-inizutpn7831891.d.html",
+        "https://news.ifeng.com/c/8yIYRlUj3Yr",
+        "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0"
       ]
     },
     {
-      "slug": "harvard",
+      "slug": "shenzhou-24-crew",
       "urls": [
-        "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted",
-        "https://www.oschina.net/news/503706/harvard-researchers-find-ai-coding-agents-shifted"
+        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119",
+        "https://www.chinanews.com/gn/2026/11-24/10736761.shtml",
+        "https://news.qq.com/rain/a/20261124A03WND00"
       ]
     },
     {
-      "slug": "mockreel",
+      "slug": "treetree-chicken",
       "urls": [
-        "https://www.producthunt.com/products/mockreel",
-        "https://www.producthunt.com/products/mockreel",
-        "https://www.producthunt.com/"
+        "https://dy.163.com/article/LCG3C5MU0556Q1AQ.html",
+        "https://www.163.com/dy/article/LCFC4S2O051492LM.html",
+        "https://news.hubeidaily.net/pc/c_6194155.html"
       ]
     },
     {
-      "slug": "smartkbs",
+      "slug": "shaoxing-paint",
       "urls": [
-        "https://gitee.com/youufis/smartkbs",
-        "https://gitee.com/youufis/smartkbs",
-        "https://gitee.com/explore"
+        "https://www.thepaper.cn/newsDetail_forward_34544166",
+        "https://news.qq.com/rain/a/20261123A0DMER00",
+        "https://www.sohu.com/a/1105512470_162758"
       ]
     },
     {
-      "slug": "bci",
+      "slug": "miit-app-popup",
       "urls": [
-        "https://www.163.com/dy/article/LCB6R7UE0511B8LM.html",
-        "https://www.163.com/dy/article/LCB6R7UE0511B8LM.html"
+        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=1721625810146432636&channelId=1119",
+        "https://news.qq.com/rain/a/20261124A02TJ900",
+        "https://www.toutiao.com/article/7711390526307222056"
+      ]
+    },
+    {
+      "slug": "xnu-linux",
+      "urls": [
+        "https://news.ycombinator.com/item?id=50607261",
+        "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars"
+      ]
+    },
+    {
+      "slug": "glm-5-4",
+      "urls": [
+        "https://news.qq.com/rain/a/20261124A03L2D00",
+        "https://www.163.com/dy/article/LCFAJ8E00552GIEM.html",
+        "https://www.itbear.com.cn/html/2026-11/1592735.html"
+      ]
+    },
+    {
+      "slug": "james-jersey",
+      "urls": [
+        "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd",
+        "https://voice.hupu.com/bbs/641385384"
+      ]
+    },
+    {
+      "slug": "nv-npc",
+      "urls": [
+        "https://tophub.today/n/KqndgxeLl9"
       ]
     }
   ]

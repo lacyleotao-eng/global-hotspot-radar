@@ -1,0 +1,85 @@
+{
+  "slug": "elderly-child-policy",
+  "date": "2026-11-24",
+  "builtAt": "2026-11-24T09:28:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/elderly-child-policy/raw-1.png",
+      "bytes": 204979,
+      "w": 1080,
+      "h": 750,
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/ZU7oTo70fbUdo47ANjceia9sPmQnsQWcdZG4KMuEVtAy7cmXBQRWXdn1JhjPBH2Aiao7nMOWWQqNRDoZ1Gm50kvjrSy7enzk07vhSc6Qv0YYU/640?from=appmsg#imgIndex=1",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
+      "alt": "图片",
+      "md5": "c3a3f7162d0c5773ba1e49d26036e8f7",
+      "status": "approved",
+      "reason": "发改委官网通知截图为政策原文，其余为栏目图与基金广告",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/elderly-child-policy/raw-2.jpeg",
+      "bytes": 34894,
+      "w": 900,
+      "h": 382,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/ZU7oTo70fbVOwV6jxBNG95AnYPiaqCw8Gdic3l6o5ZKPR7wr7UqQoo7Jyibia9mEZquD3DmgNGbXxYj5iapH6OLd9elm7aDYibyzxqOMe5DKk9n8Y/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
+      "alt": "",
+      "md5": "7b04a0fcab0e14de0bb73e3624a93160",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/elderly-child-policy/raw-3.png",
+      "bytes": 590755,
+      "w": 1125,
+      "h": 402,
+      "url": "https://rls3.cj.sina.com.cn/products/202611/a7927bc14515a0057c7d7d787dcdd6e9.png",
+      "page": "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml",
+      "alt": "",
+      "md5": "d5e24d49ff1f6971484994f6fdfff354",
+      "status": "drop",
+      "reason": "人工淘汰：发改委官网通知截图为政策原文，其余为栏目图与基金广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 4,
+      "file": "assets/source/elderly-child-policy/raw-4.png",
+      "bytes": 774861,
+      "w": 1125,
+      "h": 402,
+      "url": "https://rls3.cj.sina.com.cn/products/202611/0ea785f6f72ded63f1e76b6eff2e87c7.png",
+      "page": "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml",
+      "alt": "",
+      "md5": "95d1959d2c33275170afb52a40200b2b",
+      "status": "drop",
+      "reason": "人工淘汰：发改委官网通知截图为政策原文，其余为栏目图与基金广告",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/elderly-child-policy/raw-1.png",
+      "bytes": 204979,
+      "w": 1080,
+      "h": 750,
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/ZU7oTo70fbUdo47ANjceia9sPmQnsQWcdZG4KMuEVtAy7cmXBQRWXdn1JhjPBH2Aiao7nMOWWQqNRDoZ1Gm50kvjrSy7enzk07vhSc6Qv0YYU/640?from=appmsg#imgIndex=1",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
+      "alt": "图片",
+      "md5": "c3a3f7162d0c5773ba1e49d26036e8f7",
+      "status": "approved",
+      "reason": "发改委官网通知截图为政策原文，其余为栏目图与基金广告",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-24T09:28:50+08:00"
+}
