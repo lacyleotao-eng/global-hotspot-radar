@@ -1,0 +1,729 @@
+[
+  {
+    "title": "Ladybird 浏览器发布首个 Alpha：自研内核，macOS 与 Linux 可直接下载",
+    "summary": "11 月 23 日，Ladybird 项目负责人 Andreas Kling 在官网宣布浏览器进入 Alpha，提供 macOS 与 Linux 安装包，用户不再需要自行编译。官方称引擎完全自研、并非 Chromium/WebKit/Gecko 的分支，浏览器本体「朴素但可用」。这是滚动更新通道，会自动推送新版本；支持 WebDriver 与 Firefox DevTools 协议，方便开发者做自动化测试。官方同时明确：部分网站会打不开、会崩溃，且「今天不对安全性作任何承诺」，并公开邀请安全研究者来攻破。Windows 版本留到后续阶段，移动端「不是当前重点」。",
+    "type": "news",
+    "subtype": "科技/浏览器",
+    "region": "海外",
+    "platform": "Ladybird 官方博客",
+    "url": "https://ladybird.org/posts/alpha/",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "1405（Hacker News points）",
+        "comments": "330",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "核对 ladybird.org 官方公告原文，并用 Hacker News Algolia 接口核对提交时间（2026-11-23T16:13:12Z）、points 与评论数",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "官方仓库同样注明仅有开发者自行构建版本、Releases 为空，与「已发布 Alpha」存在表述差异；性能与安全表现无官方数据。"
+    },
+    "citations": [
+      {
+        "title": "Ladybird is now in alpha",
+        "url": "https://ladybird.org/posts/alpha/",
+        "publisher": "Ladybird Browser Initiative",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Ladybird is now in alpha（HN 讨论）",
+        "url": "https://news.ycombinator.com/item?id=50614249",
+        "publisher": "Hacker News",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Ladybird Ships Its First Alpha for macOS and Linux, With No Security Promises",
+        "url": "https://theterminal.space/software/ladybird-alpha-macos-linux-no-security-promises",
+        "publisher": "The Terminal",
+        "date": "2026-11-23",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "浏览器内核是十年一遇的长周期赛道，这次 Alpha 真正的变化不是功能，而是分发方式——从「自己编译」变成「下载即用」。对国内读者的价值在于对照：一个靠捐赠与赞助养活的非营利团队，如何在 Chromium 事实垄断下走完第四年。但官方自己说了不对安全作承诺，现阶段只适合放进测试流水线，不适合当日常浏览器。",
+      "community": "Hacker News 讨论集中在三点：没有安全承诺就装浏览器是否合理、网站兼容性究竟能撑住多少、以及独立内核在商业上如何持续。也有第三方实测指出其 UA 中带有 Chrome 标识，做 UA 嗅探的站点会把它当 Chrome 处理。",
+      "sentiment": "正面",
+      "source": "官方公告 + Hacker News 讨论 + 第三方实测"
+    },
+    "tags": ["浏览器", "开源", "Ladybird", "自研内核", "WebDriver", "Hacker News 首页"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "不用 Chromium 也能上网：这个新浏览器刚刚放出第一个可用版本",
+        "angle": "用「终于能下载了」这个具体变化切入，讲清自研内核意味着什么、普通用户现在能不能用",
+        "outline": [
+          "它是什么：一个从零写引擎、不是 Chrome 换皮的浏览器，现在有 macOS 和 Linux 安装包",
+          "为什么值得关注：过去四年只能自己编译，如今进入自动更新的 Alpha 通道",
+          "现在能用吗：官方承认会崩、有网站打不开、不作安全承诺，只适合测试",
+          "对普通人的意义：浏览器内核长期只剩三家，多一个玩家意味着什么",
+          "接下来看什么：Windows 版本、兼容性榜单与首批漏洞披露"
+        ],
+        "audience": "普通科技爱好者、前端与测试从业者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "不可写成「可以替代 Chrome」，须保留官方「不作安全承诺」的表述",
+        "basis": "Ladybird 官方 Alpha 公告：可下载平台、滚动更新、WebDriver 支持、安全问题免责；Hacker News 首页 1405 分"
+      }
+    ]
+  },
+  {
+    "title": "智谱发布 GLM-5.4：首个 Loop Transformer，主打「泛 Coding」",
+    "summary": "11 月 23 日晚，Z.ai（智谱）发布旗舰模型 GLM-5.4，首次采用 Loop Transformer 架构：让一组共享权重的网络层循环执行，在不增加参数量的前提下加深有效计算。官方称基座约 750B 参数，智能水平对标 2 万亿至 3 万亿参数级模型，支持 100 万 token 上下文，闲时可达 200 tokens/s、高峰 70-80 tokens/s。模型已向 GLM Coding Plan 全量用户开放，同步上线 ZCode、Trae、WorkBuddy、Qoder，API 待安全评估后开放，权重计划后续开源。官方还演示了用代码生成视频、完整游戏、3D 建模与机械臂 CAD 设计等「代码之外」的任务。",
+    "type": "news",
+    "subtype": "科技/AI 大模型",
+    "region": "海外",
+    "platform": "Z.ai 官方博客",
+    "url": "https://z.ai/blog/glm-5.4",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "核对 z.ai 官方博客与智谱中文技术页，交叉比对上海证券报·中国证券网、重庆日报报道中的参数与开放范围",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "「对标 2-3 万亿参数」为厂商自述；完整跑分未公布，第三方独立评测缺失；媒体报道中的 750B 与官方博文表述需以官方口径为准。"
+    },
+    "citations": [
+      {
+        "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+        "url": "https://z.ai/blog/glm-5.4",
+        "publisher": "Z.ai",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "GLM-5.4：瞄向泛 Coding，首个 Loop Transformer 带来的惊喜",
+        "url": "https://www.zhipuai.cn/zh/research/164",
+        "publisher": "智谱 AI",
+        "date": "2026-11-23",
+        "relation": "官方"
+      },
+      {
+        "title": "智谱发布 GLM-5.4 首次引入 Loop Transformer 架构",
+        "url": "https://www.cnstock.com/commonDetail/832288",
+        "publisher": "上海证券报·中国证券网",
+        "date": "2026-11-23",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这条的技术含义比参数更有意思：在先进算力受限的现实下，「用循环换深度」是一条明显更省卡的路线，和单纯堆参数是两个方向。但它同时暴露了国产模型发布的老问题——官方口径先行、完整跑分缺席、第三方复现要等几天。写作时应把「官方称」和「已测」严格分开。",
+      "community": "开发者讨论集中在两点：循环到底是把思维链搬进网络结构，还是只是变相加深度；以及超长「马拉松思考」在按量计费的 Coding Plan 里会不会吃掉额度。r/LocalLLaMA 方面在权重发布前仍把它视为不可本地部署。",
+      "sentiment": "正面",
+      "source": "官方博客 + 中文科技媒体 + 开发者社区转述"
+    },
+    "tags": ["AI", "大模型", "GLM-5.4", "Loop Transformer", "智谱", "Coding"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "不堆参数，改「循环」：国产大模型换了一条省算力的路",
+        "angle": "从架构选择切入算力约束，解释「共享权重循环」为什么能在不加参数的情况下变强，以及它对开发者的实际影响",
+        "outline": [
+          "先把概念讲白：Loop Transformer 是让同一组层跑两遍，用计算深度换参数规模",
+          "官方给出的三个数字：约 750B 基座、对标 2-3 万亿、100 万 token 上下文",
+          "代价在哪：推理链变长、按量计费下成本不可控，「过度思考」是已知问题",
+          "对开发者的现实意义：已进 Coding Plan 与主流编码工具，但 API 与权重尚未开放",
+          "冷静一笔：完整跑分未公布，第三方复现前不宜下结论"
+        ],
+        "audience": "开发者、AI 产品经理、技术决策者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "「对标 2-3 万亿」必须标注为厂商自述，不可写成实测结论；避免与具体竞品做高低判断",
+        "basis": "Z.ai 官方博客与智谱技术页：Loop 架构说明、上下文与吞吐、开放范围、权重计划开源"
+      }
+    ]
+  },
+  {
+    "title": "XNU Linux：把 macOS 内核当模块装进 Linux，能启动完整 macOS 桌面",
+    "summary": "开源项目 AFK-surf/xnulinux 把 Apple 公开源码的 XNU 内核编译成 Linux 内核模块 xnu.ko，再配一个接口模块 fki.ko 借用 Linux 的内存、定时器、文件、网络与 GPU，中间没有虚拟机监控器。在未改动的 arm64 Ubuntu 内核上，加载模块后可将用户自备的 macOS 27 系统盘启动到桌面，出现登录窗、Dock、Finder、Safari 与 Chrome，macOS 与 Linux 进程同核并行。限制明确：仅 arm64、需要 PAC 与 4K 页、16GB 以上内存并预留 8GB；启动耗时 31-48 秒；在 NVIDIA DGX Spark 上只能 CPU 渲染；需自行准备 macOS 安装盘，仓库不含 Apple 二进制。",
+    "type": "resource",
+    "subtype": "开源项目/操作系统",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50607261",
+    "publishedAt": "2026-11-23T03:49:24Z",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "601（Hacker News points）",
+        "comments": "244",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "用 Hacker News Algolia 接口核对提交时间与互动数；项目仓库地址与 README 描述由多家技术媒体一致引用",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "性能与兼容性数据来自项目自述与第三方转述，无独立基准；项目对 AMFI 打补丁、放宽 SIP，安全影响未评估。"
+    },
+    "citations": [
+      {
+        "title": "XNU Linux: Full OS X GUI Userspace on Linux（HN 讨论）",
+        "url": "https://news.ycombinator.com/item?id=50607261",
+        "publisher": "Hacker News",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "AFK-surf/xnulinux",
+        "url": "https://github.com/AFK-surf/xnulinux",
+        "publisher": "GitHub",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "XNU Linux Loads macOS's Kernel Into Linux and Boots a Desktop in 31 to 48 Seconds",
+        "url": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars",
+        "publisher": "The Terminal",
+        "date": "2026-11-23",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这是一个「演示价值远大于实用价值」的项目，但它回答了一个真问题：两个内核能不能共享同一批 CPU。对国内读者的看点是许可证与安全——XNU 侧是 APSL、Linux 侧是 GPL，xnu.ko 还标了 Proprietary 会污染内核，加上补丁掉 AMFI 和 SIP，这不是能装在工作机上的东西。",
+      "community": "讨论分成两派：一派惊叹于无 hypervisor 的双内核共存，一派盯着安全边界与实用性，认为没有 GPU 直通就只是 CPU 渲染的桌面演示。也有人拿它和 GNUstep、Darling 等老路线做对比。",
+      "sentiment": "争议",
+      "source": "GitHub 仓库 + Hacker News 讨论 + 技术媒体"
+    },
+    "tags": ["开源", "macOS", "Linux", "内核", "虚拟化", "Hacker News 首页"],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "上线 9 年的开源笔记应用 FSNotes 被苹果从欧盟区 App Store 下架",
+    "summary": "11 月 23 日，FSNotes 开发者在 GitHub 讨论区发布公开信：这款 macOS/iOS 开源笔记应用被苹果从所有欧盟区 App Store 下架，未获明确解释。起因是 10 月的销售分成未到账；开发者先后于 11 月 5 日与 11 月 17 日提交两个支持工单，称至今未收到任何回复。他表示已按《数字服务法》要求在 App Store Connect 完成商家信息，并提交了乌克兰工商登记文件。应用仍以 MIT 许可开源、约 7600 stars，源码与免费构建在 GitHub 可下载。",
+    "type": "news",
+    "subtype": "科技/平台生态",
+    "region": "海外",
+    "platform": "GitHub",
+    "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "504（Hacker News points）",
+        "comments": "107（Hacker News）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "核对 GitHub 讨论原帖内容，并用 Hacker News Algolia 接口核对讨论热度（2026-11-23T18:48:10Z 提交，504 分）",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "苹果未公开置评，下架原因、是否仅限欧盟区、两个工单的实际状态均无第三方确认；所有损失描述均为开发者单方陈述。"
+    },
+    "citations": [
+      {
+        "title": "Apple removed my open-source app from EU App Stores after 9 years",
+        "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+        "publisher": "GitHub（FSNotes 开发者）",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Apple removed my open-source app from EU App Stores after 9 years（HN 讨论）",
+        "url": "https://news.ycombinator.com/item?id=50616933",
+        "publisher": "Hacker News",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Apple pulls open-source FSNotes from EU App Stores after 9 years",
+        "url": "https://codingislove.com/fsnotes-removed-eu-app-store",
+        "publisher": "Coding is Love",
+        "date": "2026-11-23",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这是一份很典型的平台依赖风险样本：九年、MIT、七千多星，仍然可以在一夜之间失去主要收入通道，且连一个理由都拿不到。更值得写的是合规的另一面——DSA 要求平台核验商家身份，本意是保护消费者，但当核验流程自动化、申诉无人应答时，成本全落在一个人身上。注意别把它写成「苹果迫害乌克兰开发者」，原帖的情绪化表述要剥离。",
+      "community": "Hacker News 上的讨论从个案迅速扩展到结构问题：应用商店的分发垄断、DSA 商家核验的执行质量、以及独立开发者该不该自建下载渠道。也有评论提醒，分成异常往往与税务或银行信息变更有关，具体原因仍未确认。",
+      "sentiment": "负面",
+      "source": "GitHub 公开信 + Hacker News 讨论 + 科技博客"
+    },
+    "tags": ["苹果", "App Store", "独立开发", "DSA", "开源", "平台风险"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "九年、七千颗星，一个开源应用在欧盟消失了，没人给理由",
+        "angle": "以个案讲平台依赖：当分发、收款、申诉都在同一个人手里，独立开发者到底承担了什么风险",
+        "outline": [
+          "先把时间线摆清：分成未到账、两个工单、欧盟区全面下架",
+          "开发者的自救：补齐 DSA 商家信息、提交工商登记文件，然后继续等",
+          "为什么是欧盟：DSA 商家核验规则如何把合规成本前置到小开发者",
+          "个案背后的结构：商店排名与搜索可见度是不可逆资产，恢复上架也补不回来",
+          "给开发者的三条实操建议：自建下载、留好提交凭证、把用户关系握在自己手里"
+        ],
+        "audience": "独立开发者、出海应用团队、产品经理",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "苹果未回应，下架原因不明，不可断言「因 DSA 违规被罚」；开发者关于乌克兰的表述属个人观点，不宜放大",
+        "basis": "GitHub 公开信原文的时间线与文件提交说明；Hacker News 504 分讨论"
+      }
+    ]
+  },
+  {
+    "title": "蚂蚁百灵开源医疗大模型 LingSante-3.1-flash：560B 总参数、100 万上下文、MIT 许可",
+    "summary": "11 月 23 日，蚂蚁集团旗下 inclusionAI 在 Hugging Face 以 MIT 许可开放医疗健康模型权重。LingSante-3.1-flash 基于 Ling-3.1-flash，MoE 架构总参数 560B、每 token 激活约 25B，支持最长 100 万 token 上下文，面向复杂医学推理、证据检索与多轮工具调用；同批开源的 LingSante-3.1-air-VL 为 124B/激活 5.5B 的原生多模态模型，支持文字、图片与视频输入。模型卡称仅供研究与评估、不是医疗器械，不得作为诊断、处方或治疗的唯一依据；示例部署需 8 张 H200，量化版约 313GB。",
+    "type": "resource",
+    "subtype": "AI/开源模型/医疗",
+    "region": "海外",
+    "platform": "Hugging Face",
+    "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "114（Hugging Face likes）",
+        "comments": "1（Hugging Face 讨论）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "核对 Hugging Face 模型页的参数、许可证、上下文与安全声明；交叉比对界面新闻、环球网报道中的开源范围",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "「InclusionMed 开源第一」「HealthBench Professional 65.72」均为厂商自评，未见独立评测；模型页标注参数 572B，与正文 560B 存在口径差；下载量为上月 397 次。"
+    },
+    "citations": [
+      {
+        "title": "inclusionAI/LingSante-3.1-flash",
+        "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+        "publisher": "Hugging Face",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "蚂蚁百灵医疗健康大模型家族全面开源",
+        "url": "https://news.qq.com/rain/a/20261123A07HBZ00",
+        "publisher": "界面新闻（腾讯新闻转载）",
+        "date": "2026-11-23",
+        "relation": "二手"
+      },
+      {
+        "title": "LingSante-3.1-flash: Ant's 560B Open-Weight Medical Model Lands Under MIT",
+        "url": "https://curiouslm.com/blog/lingsante-3-1-flash-open-weights-medical-model-mit-license",
+        "publisher": "CuriousLM",
+        "date": "2026-11-23",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "医疗是少数「数据不能出院、模型必须进院」的场景，所以 560B 开放权重这件事的意义不在榜单，而在部署边界：医院能不能在自己机房跑起来。MIT 许可把商用与修改的门槛降到很低，但模型卡又把临床用途堵死，这个张力就是所有医疗 AI 报道都该讲清的地方。另外「笔记本可跑」说的是 124B 的多模态小模型，不是 560B 那个。",
+      "community": "Hugging Face 页面互动量仍低（114 likes、1 条讨论），说明热度主要来自国内发布会而非海外开发者自发使用；技术社区更关注 25B 激活参数在 1M 上下文下的实际推理成本。",
+      "sentiment": "中性",
+      "source": "Hugging Face 模型卡 + 界面新闻报道"
+    },
+    "tags": ["医疗AI", "开源模型", "蚂蚁集团", "LingSante", "Hugging Face", "MIT 许可"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "医院能自己跑的大模型来了：5600 亿参数，代码和权重全公开",
+        "angle": "从「数据不出院」这个真实痛点切入，讲清开源医疗模型能做什么、不能做什么",
+        "outline": [
+          "它是什么：蚂蚁开源的两个医疗模型，一个管复杂推理，一个能看图看报告",
+          "为什么医院在意：权重可下载意味着病历数据不必上传第三方",
+          "硬门槛在哪：560B 版本要 8 张 H200，小一点的 124B 才能在单机部署",
+          "官方自己划的红线：仅供研究评估，不是医疗器械，不能替代医生诊断",
+          "普通人该关心什么：AI 看体检报告越来越准，但结论仍需医生签字"
+        ],
+        "audience": "医疗从业者、医院信息科、普通健康关注者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "涉及医疗，必须强调「非医疗器械、不构成诊断建议」；不得引用未经独立验证的榜单排名作为疗效证据",
+        "basis": "Hugging Face 模型卡的参数、许可证与使用限制；界面新闻对四款开源模型的报道"
+      }
+    ]
+  },
+  {
+    "title": "沃尔玛开放 Agent Gateway：Meta 的 Muse 可代用户买黑五商品",
+    "summary": "据 The Verge 11 月 23 日报道，沃尔玛将上线 Agent Gateway 的实况版本，首个接入的消费级 AI 代理是 Meta 的 Muse。用户可以让 Muse 找黑五优惠、比价、组购物车，并在对话内完成结账；首次加购时会在沃尔玛账户内生成专属 Agent Profile，可设消费上限、逐笔审批、查看代购记录，代理看不到银行卡号与历史订单。成交价与 Walmart.com 一致，退货政策照常适用。亚马逊与 eBay 已封堵 AI 代理浏览，沃尔玛称支持 Muse「只是开始」。报道更新称上线时间推迟 24 小时至 11 月 24 日。",
+    "type": "news",
+    "subtype": "商业/AI 电商",
+    "region": "海外",
+    "platform": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "核对 The Verge 原文与其文末更新说明，交叉比对沃尔玛 10 月 21 日公告及 TechCrunch 对 MCP 网关的报道",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "上线日期存在冲突：The Verge 正文写 11 月 24 日并附「推迟 24 小时」更新，部分二手报道写 11 月 23 日已上线；沃尔玛未披露接入代理数量与交易数据。"
+    },
+    "citations": [
+      {
+        "title": "Meta Muse can do your Black Friday shopping at Walmart",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+        "publisher": "The Verge",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Walmart Agent Gateway goes live with Meta Muse",
+        "url": "https://frontiernow.dev/en/news/walmart-agent-gateway",
+        "publisher": "Frontier Now",
+        "date": "2026-11-23",
+        "relation": "二手"
+      },
+      {
+        "title": "沃尔玛开放 AI 代理购物，Muse 可代买黑五商品",
+        "url": "https://www.163.com/dy/article/LCEM0HG805561FZO_pdya11y.html",
+        "publisher": "网易（转载）",
+        "date": "2026-11-23",
+        "relation": "转载"
+      }
+    ],
+    "evaluation": {
+      "editor": "这件事的真正看点不是「AI 帮你买电视」，而是三家平台对代理给出了三种态度：沃尔玛开门并做权限隔离，亚马逊和 eBay 直接封堵，Shopify 则放开结账。谁掌握代理的身份证、额度和审计日志，谁就掌握下一代流量入口。对国内读者，这套「代理档案 + 消费上限 + 逐笔审批」的设计比模型能力更有参考价值。",
+      "community": "海外讨论集中在两点：一是 Muse 此前的隐私争议（员工测试中出现串消息、引用他人信息），二是「让代理替我花钱」在心理上仍难跨过；也有观点认为 MCP 网关会让电商页面本身变得不重要。",
+      "sentiment": "争议",
+      "source": "The Verge 报道 + 沃尔玛公告转述"
+    },
+    "tags": ["AI代理", "电商", "沃尔玛", "Meta Muse", "MCP", "黑五"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "AI 替你下单：沃尔玛开了门，亚马逊把门关上了",
+        "angle": "用同一件事上的三种平台态度，讲清「代理购物」的规则之争与普通人的钱袋子",
+        "outline": [
+          "发生了什么：Muse 可以在沃尔玛找黑五优惠、组购物车、在对话里结账",
+          "沃尔玛的控制设计：专属代理档案、消费上限、逐笔审批、看不到卡号",
+          "为什么亚马逊和 eBay 要封：代理绕过页面，等于绕过了广告与推荐位",
+          "对国内电商的参照：MCP 网关式的「代理通道」会不会成为标配",
+          "普通人的风险清单：授权范围、退货责任、以及代理「没按你意思买」怎么办"
+        ],
+        "audience": "电商从业者、产品经理、关注 AI 消费的普通读者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "上线时间口径不一，需写「据 The Verge，上线时间一度推迟」；不要虚构成交额或用户数",
+        "basis": "The Verge 原文对 Agent Profile、消费上限、审批与退货规则的描述；亚马逊、eBay 封堵代理的对比"
+      }
+    ]
+  },
+  {
+    "title": "CrowdStrike 以 439 亿美元全股票收购 Zscaler，剑指 AI 智能体安全",
+    "summary": "11 月 23 日，CrowdStrike 与 Zscaler 宣布签署最终协议，前者以全股票方式收购后者，交易企业价值约 439 亿美元。换股比例为 1 股 Zscaler 换 1.135 股 CrowdStrike，按 11 月 20 日收盘价计算隐含每股 260.41 美元，溢价约 34%。交易完成后 CrowdStrike 原股东持有约 84.1% 股份，合并公司年度经常性收入将超过 100 亿美元，预计在 CrowdStrike 2028 财年下半年完成，仍需股东与监管批准。双方称合并是把终端安全与零信任网络接入合成一个平台，以便企业安全地引入 AI 智能体。",
+    "type": "news",
+    "subtype": "商业/网络安全",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+    "publishedAt": "2026-11-23T16:20:00Z",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "核对 TechCrunch 报道，并与证券时报、澎湃新闻对同一公告的换股比例、溢价、股权结构与完成时间的表述交叉比对",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "439 亿美元为企业价值口径，部分中文报道写作「2926 亿元人民币」；协同收入与 TAM 目标均为公司指引，非既成事实。"
+    },
+    "citations": [
+      {
+        "title": "CrowdStrike to acquire Zscaler for $44 billion",
+        "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+        "publisher": "TechCrunch",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "439 亿美元！网络安全行业史上最大并购有望诞生，瞄准 AI 智能体安全",
+        "url": "https://www.thepaper.cn/newsDetail_forward_34540984",
+        "publisher": "澎湃新闻",
+        "date": "2026-11-23",
+        "relation": "二手"
+      },
+      {
+        "title": "CrowdStrike 拟 439 亿美元收购 Zscaler",
+        "url": "https://news.qq.com/rain/a/20261123A0DY9Y00",
+        "publisher": "财联社（腾讯新闻转载）",
+        "date": "2026-11-23",
+        "relation": "转载"
+      }
+    ],
+    "evaluation": {
+      "editor": "这是网络安全行业少见的一次「渠道合并」：一个管设备，一个管连接，合起来正好覆盖 AI 智能体在企业里跑动时需要经过的两个关口。对国内读者更有用的角度是定价逻辑——34% 溢价买的是交叉销售，8000 家 Zscaler 客户没买过 CrowdStrike，这是可以算出来的账。风险也清楚：平台越大，单点故障的爆炸半径越大。",
+      "community": "市场第一反应分裂：Zscaler 盘前大涨、CrowdStrike 下跌，属于典型收购方折价；分析师关注点集中在监管审查时长与两家产品线重叠度，也有声音提醒 CrowdStrike 2024 年那次全球蓝屏事故的教训。",
+      "sentiment": "中性",
+      "source": "TechCrunch + 中文财经媒体交叉核对"
+    },
+    "tags": ["网络安全", "并购", "CrowdStrike", "Zscaler", "AI 智能体", "美股"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "439 亿美元的合并：AI 智能体把网络安全逼成了大并购",
+        "angle": "从「AI 代理要进企业，安全必须先合起来」这条因果链讲这桩交易，落到中国安全厂商的镜像处境",
+        "outline": [
+          "交易结构：全股票、1.135 换股比、34% 溢价、84% 对 16% 的股权分配",
+          "两家到底补什么：终端侧的 Falcon 与连接侧的 Zero Trust Exchange",
+          "为什么是现在：智能体自动调用系统，传统防火墙与 VPN 看不清流量",
+          "算得清的账：8000 家未交叉客户、100 亿美元 ARR、10 亿美元收入协同目标",
+          "另一面：平台越大越像单点，2024 年那次全球宕机是前车之鉴"
+        ],
+        "audience": "企业 IT 与安全负责人、关注美股与并购的读者",
+        "timeliness": "当日",
+        "priority": "中",
+        "risk": "协同收入、TAM 均为公司指引，须标明「公司预计」；交易尚未完成，不可写成已交割",
+        "basis": "TechCrunch 对交易金额与战略表述的报道；澎湃新闻对换股比例、溢价与时间表的核对"
+      }
+    ]
+  },
+  {
+    "title": "《以撒的结合》更新被扒出 Suno 生成音乐，Steam 近期好评率跌至 8%",
+    "summary": "11 月 19 日，《以撒的结合：忏悔+》推送更新，加入致敬 GTA 的每日挑战 Crime Mode。玩家随后在音频文件元数据中发现 Suno 的引用与链接，而该 DLC 的 Steam 页面并未按 Valve 要求披露生成式 AI 内容。Steam 近期约 1700 条评价中好评仅约 8%，评级跌至「差评如潮」，同时也有玩家反馈联机与模组兼容问题。系列创作者 Edmund McMillen 称事先不知情，发行商 Nicalis 于 11 月 21 日发布补丁移除相关音乐，并向微软、任天堂、索尼提交主机版更新。",
+    "type": "hotspot",
+    "subtype": "社会/游戏与 AI 版权",
+    "region": "海外",
+    "platform": "PC Gamer",
+    "url": "https://www.pcgamer.com/uk/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled",
+    "publishedAt": "2026-11-21",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "成熟",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "约 1700 条 Steam 近期评价",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "比对 PC Gamer 与 IGN 中国对同一事件的报道，并核对发行商补丁说明与创作者公开表态",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "「8% 好评」来自 Steam 近期评价区，会随新评价变动；谁批准使用 AI 音乐、如何进入正式版本，发行商与创作者均未说明。事件起于 11 月 19 日更新，11 月 21 日集中爆发，11 月 23 日仍在传播。"
+    },
+    "citations": [
+      {
+        "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure",
+        "url": "https://www.pcgamer.com/uk/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled",
+        "publisher": "PC Gamer",
+        "date": "2026-11-21",
+        "relation": "一手"
+      },
+      {
+        "title": "《以撒的结合》开发商移除了游戏内的 AI 音乐",
+        "url": "https://www.ign.com.cn/ysdjhgame/64204/yi-sa-de-jie-he-kai-fa-shang-yi-chu-liao-you-xi-nei-de-aiyin-le",
+        "publisher": "IGN 中国",
+        "date": "2026-11-21",
+        "relation": "二手"
+      },
+      {
+        "title": "The Binding of Isaac Removes AI-Generated Music Following Steam Review Backlash",
+        "url": "https://zero1gaming.com/news/binding-of-isaac-removes-ai-generated-music-steam-backlash",
+        "publisher": "Zero1 Gaming",
+        "date": "2026-11-21",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "玩家抵制的其实不是 AI 音乐本身，而是「没披露」。Valve 的披露规则把选择权交给消费者，绕过去就等于把玩家当外行。这件事给国内内容行业的提示很直接：AI 参与创作不是原罪，隐瞒才是。另一个细节值得写——创作者本人长期公开批评生成式 AI，结果自家 IP 的更新里被塞进了 Suno 曲目，说明工具链下游的失控比立场更难管。",
+      "community": "Steam 差评集中在「往成熟作品里塞 AI 垃圾」「要求退款」；也有玩家把矛头指向发行商而非创作者本人。Reddit 上最初发现证据的帖子获得大量转发，讨论延伸到游戏行业 AI 披露的执行力度。",
+      "sentiment": "负面",
+      "source": "PC Gamer + IGN 中国 + 社区讨论转述"
+    },
+    "tags": ["AI 音乐", "游戏", "Steam", "Suno", "内容披露", "玩家抵制"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "游戏里偷用 AI 音乐，玩家用差评把它投了下去",
+        "angle": "以一次具体的玩家反击，讲清 AI 内容披露为什么是条不能踩的线",
+        "outline": [
+          "事情经过：更新上线一天，玩家在音频文件里发现 Suno 元数据",
+          "问题的关键不是 AI，而是没披露：Steam 页面照旧，规则要求写明",
+          "代价有多大：近期约 1700 条评价，好评只剩 8%，评级跌到差评如潮",
+          "谁该负责：创作者称不知情，发行商发补丁移除，主机版还在送审",
+          "给内容行业的提醒：AI 可以用，但要让人知道用了"
+        ],
+        "audience": "游戏玩家、内容创作者、品牌与公关从业者",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "「8% 好评」为动态数据，需注明时间与样本区间；不可断言发行商「故意欺骗」，其动机未获证实",
+        "basis": "PC Gamer 对元数据证据、Steam 评价与补丁移除的报道；IGN 中国对创作者表态的转述"
+      }
+    ]
+  },
+  {
+    "title": "Product Hunt 当日第 7：Inkling 2 Mini，26B 循环模型放笔记本上写代码",
+    "summary": "11 月 23 日的 Product Hunt 日榜上，Inkling 2 Mini 位列第 7，一句简介是「26B looped model for coding on your laptop」，分类为开源、AI 与开发工具。榜单页显示该产品获得 119 票、3 条评论。产品页未在榜单摘要中给出参数细节、量化格式、显存占用或许可条款，能力描述主要来自团队自述。同日前三名为 Letter Visitors（323 票）、Gauth Personal Study Agent（247 票）、Motionflare（234 票）。",
+    "type": "resource",
+    "subtype": "资源/开发工具/本地 AI",
+    "region": "海外",
+    "platform": "Product Hunt",
+    "url": "https://www.producthunt.com/products/tinker-2",
+    "publishedAt": "2026-11-23",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "119（Product Hunt 日榜显示值）",
+        "comments": "3（Product Hunt 日榜显示值）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "待核实",
+      "method": "核对 Product Hunt 2026 年 11 月 23 日日榜页面上的排名、简介与票数",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "产品页与榜单页均未给出参数规模以外的技术细节、许可证与实测数据；票数与评论数为发布首日数据，产品自述能力未经独立测试。"
+    },
+    "citations": [
+      {
+        "title": "Best of Product Hunt: November 23, 2026",
+        "url": "https://www.producthunt.com/leaderboard/daily/2026/11/23",
+        "publisher": "Product Hunt",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "Inkling 2 Mini",
+        "url": "https://www.producthunt.com/products/tinker-2",
+        "publisher": "Product Hunt",
+        "date": "2026-11-23",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "「26B + 循环架构 + 笔记本」这三个词放在一起，正好接上了本周 GLM-5.4 那条主线：大家都在用循环换有效深度，好让消费级硬件跑得动。但产品页几乎没给可验证的东西，票数也远低于当日头部，现阶段只适合当趋势信号，不适合当购买或部署建议。",
+      "community": "榜单评论很少，讨论度远不及同日的营销类产品；技术社区对「笔记本跑 26B 写代码」的可行性普遍持观望态度，关注点集中在量化和实际 tokens/s。",
+      "sentiment": "中性",
+      "source": "Product Hunt 日榜"
+    },
+    "tags": ["本地AI", "开源模型", "Product Hunt", "循环架构", "编码助手"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "26B 的写代码模型塞进笔记本，本地 AI 又往前挪了一步",
+        "angle": "以一个小产品为切口，讲「循环架构 + 量化」为什么让本地跑大模型变成可能，以及它的真实门槛",
+        "outline": [
+          "它是什么：Product Hunt 上线的 26B 循环架构编码模型，主打笔记本本地跑",
+          "为什么现在能跑：循环复用权重压住显存，量化再砍一刀",
+          "和云端比差在哪：上下文、速度与代码库规模，本地仍有明显上限",
+          "谁真的需要它：涉密代码、断网环境、长期按量付费吃不消的团队",
+          "别急着装：产品页没有实测数据，等第三方跑分再决定"
+        ],
+        "audience": "程序员、独立开发者、企业内网 AI 使用者",
+        "timeliness": "本周",
+        "priority": "低",
+        "risk": "产品能力为团队自述，未经验证；不可给出具体硬件要求或速度数字",
+        "basis": "Product Hunt 日榜第 7 名的产品简介、票数与分类；同周 GLM-5.4 的循环架构路线作为背景"
+      }
+    ]
+  },
+  {
+    "title": "腾讯混元团队 Reddit AMA：Hy4 自评 AGI 2.5 级，下一代规模显著扩大",
+    "summary": "北京时间 11 月 21 日凌晨，腾讯首席 AI 科学家姚顺雨与混元团队在 Reddit 的 r/LocalLLaMA 进行约 120 分钟 AMA，回应 300 多条提问。团队介绍 Hy4 总参数约 770B、Hy4 flash 为 224B（含 64B Engram 参数，每 token 激活约 12B），后者单任务成本约为前者的 1/20。团队确认下一代 Hy 模型规模将「进一步显著扩大」，Hy4-mini 与面向 24GB 显存的版本已在路线图，llama.cpp 适配正在进行；并承认「过度思考」是后训练阶段最难改善的行为。被问及 AGI 分级时，团队给出 2.5 级的判断。",
+    "type": "discussion",
+    "subtype": "科技/AI 社区问答",
+    "region": "海外",
+    "platform": "Reddit",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/",
+    "publishedAt": "2026-11-21",
+    "collectedAt": "2026-11-24T01:25:00Z",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "300+（据中文媒体报道，Reddit 页面计数未取到）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "核对 Reddit 原帖地址与主题，交叉比对量子位、第一财经、智东西等对问答内容的多方转述",
+      "verifiedAt": "2026-11-24T01:25:00Z",
+      "notes": "Reddit 对匿名访问有拦截，帖子分数与评论数未能直接读取；问答内容以中文媒体译文为主，团队账号身份未公开，具体表述可能有删节。"
+    },
+    "citations": [
+      {
+        "title": "Tencent HY team (Shunyu Yao) here, ask us anything!",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y15w4a/tencent_hy_team_shunyu_yao_here_ask_us_anything/",
+        "publisher": "Reddit r/LocalLLaMA",
+        "date": "2026-11-21",
+        "relation": "一手"
+      },
+      {
+        "title": "姚顺雨和混元团队上 Reddit 答网友，Hy 小模型已进路线图",
+        "url": "https://news.qq.com/rain/a/20261123A05AAJ00",
+        "publisher": "量子位（腾讯新闻转载）",
+        "date": "2026-11-23",
+        "relation": "二手"
+      },
+      {
+        "title": "腾讯混元团队 Reddit 答问 120 分钟：不刻意刷榜，下一代模型规模将显著扩大",
+        "url": "https://news.aibase.com/zh/news/32460",
+        "publisher": "AIBase",
+        "date": "2026-11-22",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这场 AMA 的信息密度高于发布会：承认推理链过长、承认 AGI 只有 2.5 级、承认下一代还得继续做大，这三点拼起来是一个很诚实的自我定位——小模型负责成本，大模型负责上限，两条腿走。对国内读者的价值在于，它把「算力受限怎么办」这个问题摊到了海外开发者面前，而不是只在国内讲。",
+      "community": "海外开发者追问集中在三点：为什么还在 700B 量级而不跟进 3T、能否在消费级显卡上跑、以及开源权重与安全限制的边界。团队对本地部署给出了具体配置口径，也被视为对开源社区较友好的信号。",
+      "sentiment": "中性",
+      "source": "Reddit AMA + 中文科技媒体转述"
+    },
+    "tags": ["腾讯混元", "Hy4", "Reddit AMA", "开源模型", "本地部署", "AGI"],
+    "needs": [],
+    "leads": []
+  }
+]

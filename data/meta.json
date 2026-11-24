@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-23T09:01:26+08:00",
-  "total": 74,
+  "updatedAt": "2026-11-24T09:19:47+08:00",
+  "total": 94,
   "byType": {
-    "news": 23,
-    "discussion": 12,
-    "demand": 7,
-    "idea": 8,
-    "hotspot": 7,
-    "resource": 17
+    "news": 31,
+    "demand": 8,
+    "idea": 9,
+    "hotspot": 10,
+    "discussion": 15,
+    "resource": 21
   },
   "sources": [
     "12306 / 自贡网",
@@ -24,24 +24,33 @@
     "Hacker News / MIT OCW",
     "Hacker News（经 AgentBeam 整理）",
     "Hacker News（经 Frontier Daily 整理）",
+    "Hugging Face",
     "IT之家",
     "IT之家（引微信公众号·北京昌平）",
+    "Ladybird 官方博客",
     "LinkedIn（经 Daily 8 报道）",
     "LinkedIn（经 Discoverable 整理）",
     "Lobste.rs",
     "OSCHINA",
+    "PC Gamer",
     "Product Hunt",
     "Product Hunt（经 Productlist 整理）",
+    "Reddit",
     "Reddit + X（经 Ideas Radar 整理）",
+    "TechCrunch",
+    "The Verge",
     "V2EX",
     "X（经 DeAI News 整理）",
     "X（经 Ideas Radar 整理）",
+    "Z.ai 官方博客",
     "中国经济网",
     "中央气象台 / 央视新闻",
+    "什么值得买",
     "今日头条",
     "今日头条热榜（经公众号夜间简报整理）",
     "今日头条（引中国地震台网）",
     "今日头条（引工信部）",
+    "凤凰网",
     "北京日报 / 中国南水北调集团",
     "央视新闻",
     "少数派",
@@ -63,13 +72,15 @@
     "知乎热榜（经热浪榜聚合）",
     "知乎热榜（经热点导航聚合）",
     "社交媒体 / 自贡网",
+    "网易",
     "网易号·365资讯简报",
-    "自贡网（媒体汇总）"
+    "自贡网（媒体汇总）",
+    "虎扑"
   ],
-  "leadsTotal": 46,
+  "leadsTotal": 62,
   "byTarget": {
-    "公众号": 32,
-    "今日头条": 14
+    "公众号": 40,
+    "今日头条": 22
   },
-  "lastBatch": 12
+  "lastBatch": 20
 }
