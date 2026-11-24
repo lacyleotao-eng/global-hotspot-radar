@@ -1,0 +1,258 @@
+[
+  {
+    "title": "CrowdStrike 以约439亿美元全股票收购 Zscaler，把零信任网络纳入 Falcon 平台",
+    "summary": "CrowdStrike 与 Zscaler 于 11 月 23 日发布官方公告，双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，企业价值约 439 亿美元；每股 Zscaler 股票换 1.135 股 CrowdStrike 股票，按 11 月 20 日收盘价折算约 260.41 美元、溢价约 34%。双方称合并后将把端点保护与零信任访问打通，面向 AI 智能体的连接做“最后一公里”防护，合并公司起步 ARR 预计超过 100 亿美元。交易需 Zscaler 股东与监管批准，预计在 CrowdStrike 2028 财年下半年完成，交割前两家公司独立运营。",
+    "type": "news",
+    "subtype": "财经/网络安全/并购",
+    "region": "海外",
+    "platform": "CrowdStrike 官方公告",
+    "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/",
+    "publishedAt": "2026-11-23T00:00:00-06:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "已核实", "method": "读取双方公司官方新闻稿正文，并以 TechCrunch 报道交叉核对", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "价格、换股比例、时间表均为官方披露；合并后市场与协同效应为公司预测，非既成事实"},
+    "citations": [
+      {"title": "CrowdStrike to acquire Zscaler for $44 billion", "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion", "publisher": "TechCrunch", "date": "2026-11-23", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "安全行业从“端点”与“网络”两套采购，转向把智能体身份、访问策略与设备状态合到同一平台；对企业来说更现实的问题是：两套装好的系统能否真正执行一条统一策略，以及议价空间会不会变小。", "community": "海外安全与财经讨论集中在并购规模、换股估值波动和客户集中度，尚无独立机构对协同效应作评估。", "sentiment": "中性", "source": "官方公告 + 媒体报道"},
+    "tags": ["网络安全", "并购", "AI智能体", "零信任", "海外商业"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "439亿美元买下“零信任”：网络安全巨头把 AI 智能体当作下一个客户入口", "angle": "从一笔并购看懂：当智能体开始访问企业系统，安全采购的单位从“人”变成“人+代理”。", "outline": ["交易条款与官方口径", "端点保护与零信任各自解决什么", "智能体访问为什么需要新控制点", "国内企业可借鉴的权限与审计思路", "仍待验证的整合与监管风险"], "audience": "企业安全、IT 采购与科技行业读者", "timeliness": "本周", "priority": "高", "risk": "不得写成投资建议；协同效应属公司预测，需标明", "basis": "官方公告披露的439亿美元交易、8,000家客户与‘Zero Trust for AI Safety’表述"},
+      {"target": "今日头条", "headline": "439亿美元换股收购：两家网络安全公司宣布合并，AI 智能体安全成新卖点", "angle": "用直白语言解释这笔交易和普通人关心的企业数据安全关系。", "outline": ["谁买谁、花多少钱", "什么是零信任", "为什么 AI 智能体带来新安全问题", "交易还需要哪些审批"], "audience": "关注科技财经的普通读者", "timeliness": "当日", "priority": "中", "risk": "避免股价预测", "basis": "官方公告中的换股比例、估值与交割条件"}
+    ]
+  },
+  {
+    "title": "客服智能体公司 Sierra 完成17.5亿美元F轮融资，估值半年翻倍至300亿美元",
+    "summary": "Sierra 于 11 月 23 日发布官方博客宣布完成 17.5 亿美元 F 轮融资，估值 300 亿美元，由 Greenoaks 与 Lightspeed 领投，Benchmark、Sequoia、GV、Tiger Global 等原有领投方继续跟投。公司称成立两年多 ARR 已超过 4 亿美元，采用按“解决的问题”计费而非按席位或 token 计费的模式，客户包括 BNY、JPMorganChase、Wells Fargo、HSBC、Singtel 等老牌企业。公司称资金将用于智能体平台与销售团队；TechCrunch 补充其称服务近一半《财富》50 强企业，上述经营数字均为公司自述。",
+    "type": "news",
+    "subtype": "财经/人工智能/融资",
+    "region": "海外",
+    "platform": "Sierra 官方博客",
+    "url": "https://sierra.ai/blog/series-f-30b",
+    "publishedAt": "2026-11-23T00:00:00-07:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 Sierra 官方博客原文，TechCrunch 报道交叉核对融资额与客户范围", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "融资额与估值来自公司官方发布；ARR、客户覆盖率为公司自述，未经审计"},
+    "citations": [
+      {"title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off", "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off", "publisher": "TechCrunch", "date": "2026-11-23", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "比估值更值得迁移到国内语境的是计费方式：按解决结果收费把“AI 替你省了多少人力”变成合同语言，但前提是双方对什么算“解决”达成一致。", "community": "海外讨论集中在估值倍数与 ARR 自述，部分评论认为客服是企业智能体少数已有真实营收的场景。", "sentiment": "中性", "source": "公司官方博客 + 媒体报道"},
+    "tags": ["融资", "客服AI", "智能体", "结果计费", "海外商业"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "半年估值翻倍到300亿美元：这家公司卖的不是 AI 客服，是“按结果付费”", "angle": "拆解结果计费为什么可能成为企业智能体的定价范式，以及它难在哪里。", "outline": ["融资与估值事实", "按结果计费怎么运作", "老牌企业为何愿意买单", "‘什么算解决’的谈判难点", "对国内客服与SaaS团队的启示"], "audience": "SaaS 创业者、企业服务与客服行业从业者", "timeliness": "本周", "priority": "高", "risk": "ARR 与客户数为公司自述，需标明；不含投资建议", "basis": "Sierra 官方博客的17.5亿美元融资、超4亿美元ARR与按结果计费表述"},
+      {"target": "今日头条", "headline": "半年估值从150亿到300亿美元，AI客服公司 Sierra 完成大额融资", "angle": "从融资新闻切入，讲清 AI 客服为什么突然值钱。", "outline": ["融资金额与投资方", "公司自称的客户与收入", "按结果付费是什么", "行业竞争与风险"], "audience": "关注 AI 与创业的普通读者", "timeliness": "当日", "priority": "中", "risk": "不得暗示值得投资", "basis": "Sierra 官方博客与 TechCrunch 报道"}
+    ]
+  },
+  {
+    "title": "Anthropic 推出 Claude Ship：智能体可审查、修复并按团队策略批准代码变更",
+    "summary": "Anthropic 于 11 月 23 日推出 Claude Ship，面向 Claude Team 与 Enterprise 的 GitHub 仓库。Code Review 已正式可用，新增的 PR Steward 与 Claude Approvals 处于 beta：前者处理 CI 失败、合并冲突与评审反馈并说明每次改动及回滚方式，后者依据团队写入仓库的自然语言策略，对例行变更自动给出批准，复杂变更仍可升级给人工。The Verge 与 TechCrunch 均报道，Anthropic 建议先在观察模式运行审批功能；公司称其 Claude Code 团队 6 至 9 月合并 PR 数量翻倍以上、回滚比例下降逾40%，该数据为公司自述。",
+    "type": "resource",
+    "subtype": "开源工具/产品发布/开发者",
+    "region": "海外",
+    "platform": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+    "publishedAt": "2026-11-23T00:00:00-05:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "已核实", "method": "两家科技媒体分别报道并引用 Anthropic 产品说明，功能状态与限制相互一致", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "效率数字来自 Anthropic 自述；ZDR/HIPAA 等限制条款以官方文档为准"},
+    "citations": [
+      {"title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes", "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/", "publisher": "TechCrunch", "date": "2026-11-23", "relation": "二手"},
+      {"title": "Claude Ship", "url": "https://news.ycombinator.com/item?id=50618513", "publisher": "Hacker News", "date": "2026-11-23", "relation": "转载"}
+    ],
+    "evaluation": {"editor": "写代码已经自动化，瓶颈移到“谁签字放行”。把审批规则写成仓库里可审计的文件，比让模型凭感觉判断更接近工程现实，但 beta 阶段不宜直接放权。", "community": "开发者讨论聚焦审批策略的可审计性、回滚路径与合规限制（如零数据保留配置不可用）。", "sentiment": "中性", "source": "媒体报道 + 产品说明"},
+    "tags": ["AI编程", "代码审查", "审批", "Anthropic", "开发工具"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "当 AI 开始替你签字：Claude Ship 把代码审批权交给了智能体", "angle": "从“写代码”到“批准上线”，解释工程流程里最后一道人工闸门正在变化。", "outline": ["Claude Ship 的三个组件", "审批策略如何写在仓库里", "为什么观察模式很重要", "效率数据与公司自述边界", "团队落地前该准备的审计与回滚"], "audience": "研发负责人、工程师与技术管理者", "timeliness": "本周", "priority": "高", "risk": "注明 beta 与适用范围，不鼓吹无人化发布", "basis": "The Verge 与 TechCrunch 对 PR Steward、Claude Approvals 及 beta 状态的报道"},
+      {"target": "今日头条", "headline": "AI 不仅能写代码，还能批准代码合并：Anthropic 新工具上线", "angle": "用流程变化解释这款开发者工具做了什么。", "outline": ["产品做什么", "哪些功能还是测试版", "人工审核会不会消失", "企业需要注意什么限制"], "audience": "科技爱好者与开发者", "timeliness": "当日", "priority": "中", "risk": "避免写成‘AI 完全取代程序员’", "basis": "The Verge 报道中 Code Review 已可用、另两个 agent 处于 beta 的事实"}
+    ]
+  },
+  {
+    "title": "Google 搜索 AI Mode 接入 Wallet 与 Drive，回答可调用用户自己的账单和文件",
+    "summary": "Google 于 11 月 23 日宣布，将 Search 中 AI Mode 的 Personal Intelligence 扩展至 Google Wallet、Drive 和 Gemini 应用；此前已可连接 Gmail、Calendar 与 Photos。Wallet 连接为只读，AI Mode 可以读取账户与消费信息用于设定财务目标、减少开支和信用卡权益建议，但不能转移、管理或投资资金。Drive 连接后可基于用户的文档与表格给出更具体的回答，Gemini 与搜索之间可共享上下文；连接为 opt-in，用户可随时关闭。Google 称后续会在回答下方加入“Personalization”图标显示所用上下文，该功能尚未上线。",
+    "type": "news",
+    "subtype": "科技/AI产品/隐私",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "publishedAt": "2026-11-23T00:00:00-07:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "已核实", "method": "读取 TechCrunch 报道，并用多家媒体对 Google 官方公告的转述核对 opt-in、只读与上线节奏", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "Drive 与 Gemini 接入为‘未来几周’，Personalization 图标尚未上线，勿写成已全部可用"},
+    "citations": [
+      {"title": "Google AI Mode can now read your Google Wallet, and Drive and Gemini chats come next", "url": "https://www.maketecheasier.com/google-ai-mode-wallet-drive-gemini-connections", "publisher": "Make Tech Easier", "date": "2026-11-23", "relation": "二手"},
+      {"title": "Google links Wallet and Drive to Search personalization", "url": "https://cortexplor.com/en/google-search-ai-mode-personal-intelligence-wallet-drive", "publisher": "Cortexplor", "date": "2026-11-23", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "搜索的竞争正从“网页更大”转向“你的数据更近”。对个人用户，真正需要看清的不是个性化是否好用，而是哪条回答用了哪份文件——Google 自己也把透明度图标排在待上线清单里。", "community": "海外评论呈现两派：一派看重免于重复输入上下文的便利，另一派担心钱包与文档数据被纳入回答来源。", "sentiment": "争议", "source": "媒体报道 + 官方公告转述"},
+    "tags": ["Google", "AI搜索", "个性化", "隐私", "产品动态"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "搜索开始读你的钱包和网盘：AI 个性化便利的代价是什么", "angle": "从 opt-in 与只读边界切入，讨论个人数据进入 AI 回答后的可见性与控制权。", "outline": ["Google 宣布了什么", "Wallet 只读边界与 Drive 文件调用", "哪些功能还没上线", "个性化与隐私的取舍", "用户可以立刻检查的设置"], "audience": "关注 AI 与个人隐私的城市读者", "timeliness": "本周", "priority": "中", "risk": "不要写成‘Google 已能直接动用你的钱’", "basis": "TechCrunch 关于 Wallet 只读、连接可选和 Personalization 图标待上线的报道"}
+    ]
+  },
+  {
+    "title": "沃尔玛 Agent Gateway 上线：Meta Muse 可在对话中代用户挑选并结算黑五商品",
+    "summary": "The Verge 报道，沃尔玛 11 月 23 日上线上月公布的 Agent Gateway 实际版本，首批接入 Meta 的 AI 助手 Muse。用户可在对话中让 Muse 找黑五优惠、浏览商品并加入购物车；首次加购时在沃尔玛账户内建立 Agent Profile，设置消费上限，之后用账户内已存卡片在对话中完成结算，价格与 Walmart.com 一致，退换货政策同样适用。沃尔玛称对 Muse 的支持只是开始，更多 AI 助手与购物体验将陆续接入；文中注明上线时间曾一度推迟 24 小时，随后又确认当天推出。亚马逊与 eBay 此前阻止 AI 助手浏览其平台。",
+    "type": "news",
+    "subtype": "商业/电商/生活方式",
+    "region": "海外",
+    "platform": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "publishedAt": "2026-11-23T00:00:00-05:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 The Verge 原文及多家媒体对沃尔玛官方博客的转述；功能以媒体报道为准", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "上线日期在报道内两次更新；MCP 技术细节与更多助手接入计划来自沃尔玛自述"},
+    "citations": [
+      {"title": "Meta Muse Can Shop Walmart for Black Friday, Live Nov 24", "url": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday", "publisher": "himiao.ai", "date": "2026-11-23", "relation": "二手"},
+      {"title": "Walmart Agent Gateway 官方说明（经二手报道转述）", "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday", "publisher": "The Verge", "date": "2026-11-23", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "这是“AI 代下单”从演示走向真实结算的一个样本：额度、独立账户、逐笔确认与统一退货政策，比模型会不会挑商品更决定用户敢不敢用。与亚马逊、eBay 的封锁形成鲜明对照。", "community": "海外讨论关注代理购物权限边界，以及零售商是否愿意把交易入口让给第三方助手。", "sentiment": "正面", "source": "媒体报道 + 公司自述"},
+    "tags": ["电商", "AI购物", "智能体支付", "沃尔玛", "黑五"],
+    "needs": [],
+    "leads": [
+      {"target": "今日头条", "headline": "老外双十一新玩法：AI 助手直接帮你逛沃尔玛并付款，还能设消费上限", "angle": "把黑五代购物流程讲给国内读者，对比国内电商的 AI 助手现状。", "outline": ["沃尔玛开放了什么", "Muse 代购物的三步流程", "Agent Profile 与消费上限怎么管", "为什么有的平台拒绝 AI 助手", "国内用户会接受吗"], "audience": "关注电商与 AI 应用的普通读者", "timeliness": "当日", "priority": "中", "risk": "不夸大覆盖范围；上线时间曾有反复需如实说明", "basis": "The Verge 报道的 Agent Profile、消费上限、对话内结算与平台对比"}
+    ]
+  },
+  {
+    "title": "亚马逊收购 Decart 芯片优化技术与团队，报道称作价约75亿美元",
+    "summary": "亚马逊 11 月 23 日宣布，将收购以色列初创公司 Decart 的优化技术栈（DOS）及其创始人与研究工程团队，相关交易仍需满足包括监管审批在内的交割条件。DOS 可帮助 AI 模型在英伟达、亚马逊与谷歌等不同硬件上高效运行；亚马逊称双方自 2025 年起合作，技术将用于提升 Trainium、Inferentia 等自研芯片上的推理表现。亚马逊未披露价格，TechCrunch 援引彭博社称约 75 亿美元。亚马逊此前主要在自家数据中心使用 Trainium，正准备对外销售该芯片以与英伟达竞争。Decart 以其实时世界模型与视频生成工具知名，但这些模型本身不在交易范围内。",
+    "type": "news",
+    "subtype": "财经/人工智能/芯片",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips",
+    "publishedAt": "2026-11-23T00:00:00-07:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 TechCrunch 报道，并以多家媒体转述的亚马逊官方公告核对交易范围", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "75亿美元为彭博社引述知情人士的报道数字，亚马逊未确认；交易范围不含 Decart 模型"},
+    "citations": [
+      {"title": "Amazon to purchase Decart's AI optimization technology（官方公告，经二手报道引用）", "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization", "publisher": "Amazon", "date": "2026-11-23", "relation": "官方"},
+      {"title": "Amazon Signs Deal for Decart’s AI Optimization Tech, Reported at $7.5 Billion", "url": "https://xcybernow.com/amazon-decart-ai-optimization-stack-deal", "publisher": "XCyberNow", "date": "2026-11-24", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "芯片竞争的重心正在从峰值算力转向“同样算力能跑出多少有效推理”。亚马逊买的是让客户愿意从英伟达迁到 Trainium 的软件桥，但价格与交割均未定案。", "community": "海外讨论关注“买技术+聘团队”的避审查结构与 AI 基础设施人才争夺。", "sentiment": "中性", "source": "媒体报道 + 官方公告转述"},
+    "tags": ["AI芯片", "亚马逊", "Trainium", "推理优化", "并购"],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "Hacker News 热议智谱 GLM-5.4：循环 Transformer 引发“无基准分数”争论",
+    "summary": "Z.ai（智谱）11 月 23 日发布 GLM-5.4，将其 GLM-5 基座中的 28 层共享权重并循环执行两次，官方称在 7500 亿参数规模上达到 2 万亿至 3 万亿参数模型的水平，支持 100 万 token 上下文与视觉输入，目前向 GLM Coding Plan 用户、ZCode 与 Z.ai Chat 开放。该发布登上 Hacker News 首页，页面可见 1042 分、339 条评论（采集时点）。讨论中，一部分开发者质疑旗舰模型未公布自身基准分数，无法验证性能；另一部分认为不追榜是好事；循环层是否影响推理可读性、以及“长思考”耗时也有大量争论。API 与权重尚未开放。",
+    "type": "discussion",
+    "subtype": "科技/AI模型/社区讨论",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50609685",
+    "publishedAt": "2026-11-23T00:00:00+00:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "339", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 Hacker News 讨论页可见分数与评论数，并以多家媒体转述的官方博客核对模型规格", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "1042分/339评论为页面可见数据；‘达到2T-3T水平’为公司主张，旗舰模型未公布基准分数"},
+    "citations": [
+      {"title": "GLM-5.4: Toward generalized coding with our first loop transformer（官方博客）", "url": "https://z.ai/blog/glm-5.4", "publisher": "Z.ai", "date": "2026-11-23", "relation": "官方"},
+      {"title": "GLM-5.4 Breakdown: How 750B Parameters Produce a 2–3T-Level Model Through Looping", "url": "https://dev.to/4sapi/glm-54-breakdown-how-750b-parameters-produce-a-2-3t-level-model-through-looping-9bg", "publisher": "DEV Community", "date": "2026-11-24", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "海外开发者的反应比发布文案更值得看：架构创新要被接受，不能只靠“相当于更大模型”的说法，独立基准和开放 API 才是验证门槛。", "community": "讨论分四派：无分数不可信、不追榜值得肯定、循环层影响推理可见性、长思考耗时明显。", "sentiment": "争议", "source": "社区讨论 + 官方博客转述"},
+    "tags": ["GLM-5.4", "循环Transformer", "Hacker News", "AI编程", "模型评测"],
+    "needs": [],
+    "leads": [
+      {"target": "今日头条", "headline": "国产大模型发布登上海外技术论坛热榜，开发者却卡在“没有分数”上", "angle": "用海外社区的真实质疑，讲清一个模型发布要过哪些验证关。", "outline": ["GLM-5.4 发布了什么", "Hacker News 上的主要争论", "循环层为什么引发好奇", "没有基准分数意味着什么", "API 与权重何时开放"], "audience": "关注国产 AI 与技术趋势的读者", "timeliness": "本周", "priority": "中", "risk": "公司性能主张必须标注为自述，不能写成独立评测结论", "basis": "Hacker News 讨论页可见争议与官方博客转述的规格"}
+    ]
+  },
+  {
+    "title": "GitHub 趋势榜：CLI-Anything 让没有 API 的软件也能被 AI 智能体调用",
+    "summary": "GitHub 11 月 24 日趋势榜中，HKUDS/CLI-Anything 位列前列；榜单镜像显示当日新增约 790 星（榜单数据，采集时间 11 月 24 日 09:00 UTC）。该项目主页自述目标是把各类软件改造成“agent-native”：为应用自动生成结构化命令行接口与 CLI-Hub，使智能体可发现、安装并直接调用软件能力，适用于缺少原生 API 或程序化控制入口的桌面与 enterprise 软件。项目为公开仓库；其功能定位与效果来自项目自述，尚无独立评测。",
+    "type": "resource",
+    "subtype": "开源工具/开发者/AI智能体",
+    "region": "海外",
+    "platform": "GitHub",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "publishedAt": null,
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "上升", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 GitHub 公开仓库页面确认项目定位，并以榜单镜像页确认趋势榜位置", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "当日新增星数来自第三方榜单镜像，非仓库页面直接可见数据，故未写入 heat.signals；项目效果为自述"},
+    "citations": [
+      {"title": "GitHub 热榜项目：日榜（2026-11-24）", "url": "https://segmentfault.com/a/1190000048422315", "publisher": "SegmentFault", "date": "2026-11-24", "relation": "二手"},
+      {"title": "GitHub Trending 今日热榜", "url": "https://hotrepo.ai/", "publisher": "HotRepo", "date": "2026-11-24", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "大量企业软件没有给智能体准备 API，让代理像人一样点界面既慢又脆。把软件能力先编译成可调用的命令行接口，是一条成本更低、也更可审计的路，但目前仍是早期项目。", "community": "开源社区关注其对老软件与无 API 工具的适配范围，以及生成接口的稳定性。", "sentiment": "中性", "source": "项目自述 + 榜单镜像"},
+    "tags": ["GitHub", "开源工具", "AI智能体", "CLI", "开发者效率"],
+    "needs": [],
+    "leads": [
+      {"target": "公众号", "headline": "没有 API 的软件怎么交给 AI 用？这个上榜开源项目给了一个笨办法", "angle": "从“智能体缺的不是模型，而是可调用的手”切入，解释 CLI 化为何重新有价值。", "outline": ["项目在趋势榜上的位置", "CLI-Anything 要解决什么问题", "自动生成接口的基本思路", "适合与不适合的软件类型", "引入前需要做的验证"], "audience": "开发者、工具控与企业自动化从业者", "timeliness": "本周", "priority": "中", "risk": "项目效果为自述，不要写成经过广泛验证", "basis": "GitHub 仓库公开描述与 Trending 榜单镜像"}
+    ]
+  },
+  {
+    "title": "Product Hunt 当日榜首类新品 Letter Visitors：把访客与 AI 爬虫直接显示在网站上",
+    "summary": "Product Hunt 11 月 23 日上线的 Letter Visitors 打出“在自己的网站上看见访客”的定位：展示访问者姓名、职位、公司、来源（如 LinkedIn、Google Ads、ChatGPT），按行业与规模归类公司，并单独标出哪些 AI 智能体或爬虫读过页面、读了哪些路径，支持会话回放与将符合目标客户画像的访客加入邮件序列。产品页 maker 留言称上线数小时内一度排名第一；第三方汇总提到当日票数居前，但不同页面数字不一致，本条不采用具体票数。产品自述称需访客同意才记录，识别准确率与合规边界未在原文中说明。",
+    "type": "resource",
+    "subtype": "产品工具/营销/数据分析",
+    "region": "海外",
+    "platform": "Product Hunt",
+    "url": "https://www.producthunt.com/posts/letter-visitors",
+    "publishedAt": "2026-11-23T00:00:00-07:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": {"url": "https://ph-files.imgix.net/launch-image-uploads/22ce08b5-2542-43b5-bfeb-c1f777286e02/e94d096ce934bfef672b2468f913403532378e63bbc47ba26cf1b0c8213fe657.gif", "caption": "Product Hunt 产品页展示图：See website visitors on your website itself", "rights": "图片来自 Product Hunt 产品页，仅记录链接与描述，不下载不转存，版权归发布者"},
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "部分核实", "method": "读取 Product Hunt 产品页与 maker 公开留言，并用第三方汇总交叉核对产品定位", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "票数在不同汇总页不一致，故一律不写具体数字；识别能力与隐私承诺均为厂商自述"},
+    "citations": [
+      {"title": "Product Hunt Launches Recap: AI Agents, Dev Tools and More (Nov 24)", "url": "https://startupcorners.com/digest/product-digest-2026-11-24", "publisher": "Startup Corners", "date": "2026-11-24", "relation": "二手"},
+      {"title": "Letter Visitors: see which companies and AI agents read your website", "url": "https://www.hackrlife.com/p/letter-visitors-ai-agent-traffic", "publisher": "HackrLife", "date": "2026-11-24", "relation": "二手"}
+    ],
+    "evaluation": {"editor": "把“谁在看我的网站”和“哪些 AI 抓走了我的内容”合并成一个界面，切中了内容站与 B2B 网站的真实焦虑；但个人识别涉及隐私合规，不能只听厂商一面之词。", "community": "海外评论肯定 AI 爬虫视角的实用性，同时提醒识别准确率、同意机制与数据保护法要求。", "sentiment": "争议", "source": "产品页 + 第三方评测"},
+    "tags": ["Product Hunt", "网站分析", "AI爬虫", "营销工具", "隐私合规"],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "OpenAI 与 Cisco 开源 Shirudo：在不重启服务的情况下为未打补丁的 Linux 系统加防护",
+    "summary": "OpenAI 于 11 月 23 日公开宣布与 Cisco 推出开源 Linux 运行时 Shirudo，目标是让防守方在补丁逐步部署期间保护仍在运行的系统，无需停机等待补丁或重启。技术路线基于 eBPF，在内核特定执行点运行小程序；官方称在受控测试中，由 Codex 生成的防护规则拦截了一次针对 Elasticsearch 的 Java4Shell 利用尝试。项目源自 Cisco 的 Tetragon，GitHub 仓库标注为预发布版本，生产环境需要兼容内核与 TPM 2.0，采用 BSD 2-Clause 许可。Hacker News 也有相关讨论帖。",
+    "type": "resource",
+    "subtype": "开源工具/网络安全/运维",
+    "region": "海外",
+    "platform": "X",
+    "url": "https://x.com/OpenAI/status/2124980590717911527",
+    "publishedAt": "2026-11-23T00:00:00+00:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "不可见", "shares": "不可见"}},
+    "verification": {"status": "已核实", "method": "读取 X 上 OpenAI 官方账号发布信息，并以 OpenAI 官方博客与 Cisco 新闻稿转述核对功能细节与预发布状态", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "测试结果为官方受控环境描述，非真实生产统计；第三方汇总中的互动数字未采用"},
+    "citations": [
+      {"title": "Introducing Shirudo", "url": "https://openai.com/index/introducing-shirudo/", "publisher": "OpenAI", "date": "2026-11-23", "relation": "官方"},
+      {"title": "Shirudo: OpenAI and Cisco's open-source runtime for shielding unpatched Linux", "url": "https://news.ycombinator.com/item?id=50619630", "publisher": "Hacker News", "date": "2026-11-23", "relation": "转载"}
+    ],
+    "evaluation": {"editor": "AI 让漏洞发现速度变快，补丁窗口反而更危险。把防护做成可在运行时加载的临时盾牌，是对这一时间差的正面回应；但项目仍是预发布，不宜当作成熟方案。", "community": "运维与安全的讨论集中在内核兼容要求、与现有 eBPF 安全栈的差异，以及能否真正缩短暴露窗口。", "sentiment": "中性", "source": "官方发布 + 社区讨论"},
+    "tags": ["开源", "Linux", "eBPF", "安全补丁", "AI智能体"],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "Hacker News 讨论：LLM 操作电脑，该看截图还是读可访问性树",
+    "summary": "11 月 23 日 Hacker News 上一篇关于“How should an LLM see a computer?”的文章引发 56 分、25 条评论的讨论（采集时页面可见）。讨论围绕智能体操作图形界面的感知方式展开：截图视觉输入与使用可访问性树、按元素 ID 点击的可靠性之争；有评论引用文章结论称暴露 a11y tree 并按 ID 点击能提升一致性，也有人认为视觉模型已能直接定位元素。另有讨论指出，模型响应存在 1–2 秒延迟时，屏幕状态已经变化，会带来因果关系与短期视觉记忆问题；多条评论认为 CLI/API 通常比模拟人点界面更高效，并延伸到隔离运行环境与权限边界。",
+    "type": "discussion",
+    "subtype": "观点讨论/开发者/AI智能体",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50615520",
+    "publishedAt": "2026-11-23T00:00:00+00:00",
+    "collectedAt": "2026-11-24T22:25:00+08:00",
+    "image": null,
+    "heat": {"stage": "新出现", "signals": {"views": "不可见", "likes": "不可见", "comments": "25", "shares": "不可见"}},
+    "verification": {"status": "已核实", "method": "读取 Hacker News 讨论页可见分数、评论数与评论内容；原文观点按评论区转述处理", "verifiedAt": "2026-11-24T22:25:00+08:00", "notes": "文章正文未直接读取，涉及原文结论处按评论转述标注；不引用任何用户 ID"},
+    "citations": [
+      {"title": "How should an LLM see a computer?（原文站点，经 Hacker News 讨论页链接）", "url": "https://news.ycombinator.com/item?id=50615520", "publisher": "Greptile / Hacker News", "date": "2026-11-23", "relation": "转载"}
+    ],
+    "evaluation": {"editor": "对做“电脑操作智能体”的团队，这个争论的本质是接口设计：给人看的界面未必适合机器，给机器留一条结构化通道可能比堆视觉模型更省事。", "community": "评论总体偏向结构化输入与 API 优先，但对视觉方案的进步也存在分歧。", "sentiment": "争议", "source": "公开讨论页"},
+    "tags": ["AI智能体", "GUI自动化", "可访问性", "观点讨论", "开发者"],
+    "needs": [],
+    "leads": []
+  }
+]

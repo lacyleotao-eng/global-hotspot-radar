@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-24T22:08:53+08:00",
-  "total": 114,
+  "updatedAt": "2026-11-24T22:18:03+08:00",
+  "total": 125,
   "byType": {
-    "news": 40,
+    "news": 45,
+    "resource": 26,
+    "discussion": 19,
     "hotspot": 16,
-    "discussion": 17,
-    "resource": 22,
     "idea": 10,
     "demand": 9
   },
@@ -13,6 +13,7 @@
     "12306 / 自贡网",
     "36氪",
     "AI Paper Digest",
+    "CrowdStrike 官方公告",
     "DEV Community",
     "DEV Community（引 Reddit 社区规则）",
     "GitHub",
@@ -37,9 +38,11 @@
     "Product Hunt（经 Productlist 整理）",
     "Reddit",
     "Reddit + X（经 Ideas Radar 整理）",
+    "Sierra 官方博客",
     "TechCrunch",
     "The Verge",
     "V2EX",
+    "X",
     "X（经 DeAI News 整理）",
     "X（经 Ideas Radar 整理）",
     "Z.ai 官方博客",
@@ -87,10 +90,10 @@
     "虎扑",
     "青浦区政府网（来源“绿色青浦”微信公众号）"
   ],
-  "leadsTotal": 81,
+  "leadsTotal": 91,
   "byTarget": {
-    "公众号": 49,
-    "今日头条": 32
+    "公众号": 54,
+    "今日头条": 37
   },
-  "lastBatch": 8
+  "lastBatch": 11
 }
