@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-25T21:02:32+08:00",
-  "total": 137,
+  "updatedAt": "2026-11-25T22:18:27+08:00",
+  "total": 147,
   "byType": {
-    "news": 50,
+    "news": 55,
+    "discussion": 23,
+    "resource": 29,
+    "idea": 11,
     "hotspot": 19,
-    "resource": 27,
-    "discussion": 21,
-    "demand": 10,
-    "idea": 10
+    "demand": 10
   },
   "sources": [
     "12306 / 自贡网",
@@ -44,8 +44,10 @@
     "The Verge",
     "V2EX",
     "X",
+    "X / Twitter",
     "X（经 DeAI News 整理）",
     "X（经 Ideas Radar 整理）",
+    "YouTube",
     "Z.ai 官方博客",
     "上海热线（引闵行警方）",
     "中国经济网",
@@ -94,10 +96,10 @@
     "虎扑",
     "青浦区政府网（来源“绿色青浦”微信公众号）"
   ],
-  "leadsTotal": 102,
+  "leadsTotal": 119,
   "byTarget": {
-    "公众号": 59,
-    "今日头条": 43
+    "公众号": 69,
+    "今日头条": 50
   },
-  "lastBatch": 12
+  "lastBatch": 10
 }
