@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-11-24T22:25:48+08:00",
+  "updatedAt": "2026-11-25T17:37:19+08:00",
   "rows": [
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "viralSample": 17,
-      "selfSample": 10,
+      "viralSample": 20,
+      "selfSample": 13,
       "viral": {
-        "wordCount": 2082,
-        "images": 11,
-        "subheads": 0
+        "wordCount": 2353.5,
+        "images": 11.0,
+        "subheads": 0.0
       },
       "mine": {
-        "wordCount": 1507.5,
-        "images": 5.0,
-        "subheads": 6.0
+        "wordCount": 1540,
+        "images": 5,
+        "subheads": 6
       },
       "verdict": "字数偏少",
       "advice": "同一事件做「第二落点」：隔三五天用新进展再写一次，比跟第一条更省力也更容易出彩"
@@ -23,16 +23,16 @@
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
       "viralSample": 7,
-      "selfSample": 10,
+      "selfSample": 13,
       "viral": {
         "wordCount": 400,
         "images": 9,
         "subheads": 0
       },
       "mine": {
-        "wordCount": 408.0,
-        "images": 6.0,
-        "subheads": 4.0
+        "wordCount": 401,
+        "images": 6,
+        "subheads": 0
       },
       "verdict": "字数达标",
       "advice": "贴图封面决定 90% 点击，先定封面再做内容，固定 2-3 类模板形成视觉记忆"
@@ -40,17 +40,17 @@
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "viralSample": 6,
-      "selfSample": 12,
+      "viralSample": 9,
+      "selfSample": 16,
       "viral": {
-        "wordCount": 1066.0,
-        "images": 1.5,
-        "subheads": 0.0
+        "wordCount": 1339,
+        "images": 3,
+        "subheads": 0
       },
       "mine": {
-        "wordCount": 1188.5,
+        "wordCount": 1189.5,
         "images": 1.0,
-        "subheads": 6.5
+        "subheads": 5.0
       },
       "verdict": "字数达标",
       "advice": "政策解读要先翻译成'这和我有什么关系'，用注销场景切入比讲法条有效"
@@ -58,19 +58,19 @@
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "viralSample": 4,
-      "selfSample": 12,
+      "viralSample": 6,
+      "selfSample": 16,
       "viral": {
-        "wordCount": 541.0,
+        "wordCount": 419.5,
         "images": 1.0,
         "subheads": 0.0
       },
       "mine": {
-        "wordCount": 319.5,
+        "wordCount": 321.0,
         "images": 1.0,
         "subheads": 0.0
       },
-      "verdict": "字数明显不足",
+      "verdict": "字数偏少",
       "advice": "微头条靠一个具体画面开头，不要铺垫"
     }
   ]
