@@ -1,81 +1,74 @@
 {
-  "updatedAt": "2026-11-24T01:27:08.607Z",
+  "updatedAt": "2026-11-24T20:53:59.208Z",
   "items": {
-    "elderly-child-policy": [
+    "7": [
       {
-        "file": "assets/source/elderly-child-policy/raw-1.png",
-        "bytes": 204979,
-        "url": "https://mmbiz.qpic.cn/mmbiz_png/ZU7oTo70fbUdo47ANjceia9sPmQnsQWcdZG4KMuEVtAy7cmXBQRWXdn1JhjPBH2Aiao7nMOWWQqNRDoZ1Gm50kvjrSy7enzk07vhSc6Qv0YYU/640?from=appmsg#imgIndex=1",
+        "file": "assets/source/7/raw-1.png",
+        "bytes": 881626,
+        "url": "https://rls3.cj.sina.com.cn/products/202611/4ba97cea9a0c71c41e3dbebe29d86c7d.png",
+        "w": 1125,
+        "h": 402,
+        "alt": "",
+        "from": "img",
+        "page": "https://finance.sina.com.cn/wm/2026-11-24/doc-inizuxvk7847706.shtml"
+      }
+    ],
+    "55": [],
+    "e1-e2da06": [
+      {
+        "file": "assets/source/e1-e2da06/raw-1.jpeg",
+        "bytes": 72609,
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/J06hTQibibib5XPhdwcpqic8GjMjEiatf17Y7UfvmejoIjIP0IyQqdJ7fXqcwXhxhstWxs1nONlBvP0NmiajibgjibAiaSlPLTUHpuYdpG37QXjx49Yg/640?wx_fmt=jpeg&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1#imgIndex=1",
         "w": 1080,
-        "h": 750,
+        "h": 810,
         "alt": "图片",
         "from": "img",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd"
+        "page": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d"
       },
       {
-        "file": "assets/source/elderly-child-policy/raw-2.jpeg",
-        "bytes": 34894,
-        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/ZU7oTo70fbVOwV6jxBNG95AnYPiaqCw8Gdic3l6o5ZKPR7wr7UqQoo7Jyibia9mEZquD3DmgNGbXxYj5iapH6OLd9elm7aDYibyzxqOMe5DKk9n8Y/0?wx_fmt=jpeg",
+        "file": "assets/source/e1-e2da06/raw-2.jpeg",
+        "bytes": 60136,
+        "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/RvpSS0kx5E3sNibORHeP4e5QkfvFNEk7FYltUq9v8UZKZPIgdQPUOfce6F1ONPPxSiaQc6oENKhzEicQRGwQcZowNfplibbpxM3icibuQkL9BqPQU/0?wx_fmt=jpeg",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd"
+        "page": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d"
       },
       {
-        "file": "assets/source/elderly-child-policy/raw-3.png",
-        "bytes": 590755,
-        "url": "https://rls3.cj.sina.com.cn/products/202611/a7927bc14515a0057c7d7d787dcdd6e9.png",
-        "w": 1125,
-        "h": 402,
-        "alt": "",
+        "file": "assets/source/e1-e2da06/raw-3.webp",
+        "bytes": 36646,
+        "url": "https://inews.gtimg.com/om_bt/OLQVofpg7BTmZCEmRnaKtVxnX0Ocz5XfoTrQAEOreSAA4AA/641",
+        "w": 960,
+        "h": 720,
+        "alt": "图片",
         "from": "img",
-        "page": "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml"
+        "page": "https://news.qq.com/rain/a/20261124A0CE8W00"
       },
       {
-        "file": "assets/source/elderly-child-policy/raw-4.png",
-        "bytes": 774861,
-        "url": "https://rls3.cj.sina.com.cn/products/202611/0ea785f6f72ded63f1e76b6eff2e87c7.png",
-        "w": 1125,
-        "h": 402,
-        "alt": "",
-        "from": "img",
-        "page": "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml"
-      }
-    ],
-    "crowdstrike-zscaler": [
-      {
-        "file": "assets/source/crowdstrike-zscaler/raw-1.png",
+        "file": "assets/source/e1-e2da06/raw-4.png",
         "bytes": 209236,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DY9Y00"
+        "page": "https://news.qq.com/rain/a/20261124A0CE8W00"
       },
       {
-        "file": "assets/source/crowdstrike-zscaler/raw-2.png",
+        "file": "assets/source/e1-e2da06/raw-5.png",
         "bytes": 180546,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DY9Y00"
-      },
+        "page": "https://news.qq.com/rain/a/20261124A0CE8W00"
+      }
+    ],
+    "439-ai": [
       {
-        "file": "assets/source/crowdstrike-zscaler/raw-3.webp",
-        "bytes": 37642,
-        "url": "https://inews.gtimg.com/om_bt/O3b0NxuyfaT3UFxNoR9DPTijPlpSlKh-OOjz7fAt-tsNoAA/641",
-        "w": 960,
-        "h": 394,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DY9Y00"
-      },
-      {
-        "file": "assets/source/crowdstrike-zscaler/raw-4.webp",
+        "file": "assets/source/439-ai/raw-1.webp",
         "bytes": 44330,
         "url": "https://techcrunch.com/wp-content/uploads/2026/11/crowdstrike-2162041873.jpg?resize=1200,800",
         "w": 0,
@@ -85,115 +78,83 @@
         "page": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion"
       }
     ],
-    "pangdonglai-close": [
+    "ai-claude-ship": [
       {
-        "file": "assets/source/pangdonglai-close/raw-1.jpeg",
-        "bytes": 284781,
-        "url": "https://www.topicbeat.com/uploads/newimg/2026/11/24/41ac0ef2c7807fa9035bb0e75e83772a-wm.jpg",
+        "file": "assets/source/ai-claude-ship/raw-1.jpeg",
+        "bytes": 388575,
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
         "w": 0,
         "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://www.topicbeat.com/news/article-1795450947029810233"
+        "alt": "Sponsor Logo",
+        "from": "img",
+        "page": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
       }
     ],
-    "pc-price-rise": [
+    "e4-4b02be": [
       {
-        "file": "assets/source/pc-price-rise/raw-1.jpeg",
-        "bytes": 90827,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261123/d4a8c9f5-d54b-44de-9bdd-d8aa04de0d8e.jpg",
-        "w": 1080,
-        "h": 877,
-        "alt": "大跳水！“月初还要2万元，现在只要1.6万元”！业内称今明两年非刚需不建议入手",
+        "file": "assets/source/e4-4b02be/raw-1.png",
+        "bytes": 209236,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://m.thepaper.cn/newsDetail_forward_34539526"
+        "page": "https://news.qq.com/rain/a/20261124A05J0200"
       },
       {
-        "file": "assets/source/pc-price-rise/raw-2.webp",
-        "bytes": 127404,
-        "url": "https://a.zdmimg.com/202611/24/6b04c8e59c8fa4994.jpg_e1080.jpg",
-        "w": 1080,
-        "h": 1227,
-        "alt": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
+        "file": "assets/source/e4-4b02be/raw-2.png",
+        "bytes": 180546,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://post.smzdm.com/p/ad7zgddz"
+        "page": "https://news.qq.com/rain/a/20261124A05J0200"
       },
       {
-        "file": "assets/source/pc-price-rise/raw-3.webp",
-        "bytes": 122670,
-        "url": "https://a.zdmimg.com/202611/24/6b04c8e5ec9074994.jpg_e1080.jpg",
-        "w": 1080,
-        "h": 718,
-        "alt": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
-        "from": "img",
-        "page": "https://post.smzdm.com/p/ad7zgddz"
-      },
-      {
-        "file": "assets/source/pc-price-rise/raw-4.webp",
-        "bytes": 37416,
-        "url": "https://a.zdmimg.com/202611/24/6b04c8e5ac53a4994.png_e1080.jpg",
-        "w": 1080,
-        "h": 680,
-        "alt": "显卡降的是5090，涨的是你的内存条：现在装机，顺序该倒过来",
-        "from": "img",
-        "page": "https://post.smzdm.com/p/ad7zgddz"
-      },
-      {
-        "file": "assets/source/pc-price-rise/raw-5.webp",
-        "bytes": 122090,
-        "url": "https://a.zdmimg.com/202611/24/6b04c8e403dcd545.jpg_e1080.jpg",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://post.smzdm.com/p/ad7zgddz"
-      }
-    ],
-    "riemann-day3": [
-      {
-        "file": "assets/source/riemann-day3/raw-1.png",
-        "bytes": 617230,
-        "url": "https://x0.ifengimg.com/ucms/2026_48/E95B543FB8FF767832248EC3568048B6A3D002E7_size797_w975_h549.png",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://news.ifeng.com/c/8yIYRlUj3Yr"
-      },
-      {
-        "file": "assets/source/riemann-day3/raw-2.jpeg",
-        "bytes": 1662122,
-        "url": "https://static.bjd.com.cn/dams-res/editing/image/202611/23/6b042c5fd5de433b7d8e5931.png",
-        "w": 1080,
-        "h": 810,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0"
-      },
-      {
-        "file": "assets/source/riemann-day3/raw-3.jpeg",
-        "bytes": 29249,
-        "url": "https://static.bjd.com.cn/dams-res/editing/image/202610/27/6ae0afbcd5de433b7d8258c1.jpg",
-        "w": 1080,
+        "file": "assets/source/e4-4b02be/raw-3.jpeg",
+        "bytes": 343485,
+        "url": "https://pgdt.gtimg.cn/141/20204/snscosdownload/SZ/reserved/6a2fb74f0007a7f10ca67303bf4988090000008d00004eec?ck=b35d97525f3f8d7d71e2b090c953dc84&m=b35d97525f3f8d7d71e2b090c953dc84&sha256=3e52be980f3e62676ed7257b85bfa898cb75e916b8557a7e3c9d68c7d29a5027",
+        "w": 960,
         "h": 540,
-        "alt": "图片",
+        "alt": "Thumbplayer Poster Plugin Image",
         "from": "img",
-        "page": "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0"
+        "page": "https://news.qq.com/rain/a/20261124A05J0200"
       }
     ],
-    "shenzhou-24-crew": [
+    "shenzhou-24-launch": [
       {
-        "file": "assets/source/shenzhou-24-crew/raw-1.jpeg",
-        "bytes": 759502,
-        "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/ba259697bc1a4e808b836c18855fb1ae.jpg",
-        "w": 1620,
-        "h": 1080,
+        "file": "assets/source/shenzhou-24-launch/raw-1.jpeg",
+        "bytes": 761741,
+        "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/5f67ccd931e947a2857f1a61a9a2ff65.jpg",
+        "w": 1080,
+        "h": 1920,
         "alt": "",
         "from": "img",
         "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119"
       },
       {
-        "file": "assets/source/shenzhou-24-crew/raw-2.jpeg",
+        "file": "assets/source/shenzhou-24-launch/raw-2.jpeg",
+        "bytes": 749825,
+        "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/8e11bea740214f5a8cd927e87353ec62.jpg",
+        "w": 1080,
+        "h": 1920,
+        "alt": "",
+        "from": "img",
+        "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119"
+      },
+      {
+        "file": "assets/source/shenzhou-24-launch/raw-3.jpeg",
+        "bytes": 766640,
+        "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/1cdc704893e541908754f96622de7aba.jpg",
+        "w": 1080,
+        "h": 1920,
+        "alt": "",
+        "from": "img",
+        "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119"
+      },
+      {
+        "file": "assets/source/shenzhou-24-launch/raw-4.jpeg",
         "bytes": 29258,
         "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/415875d96f56423995c3e2544d9011d8.jpeg",
         "w": 0,
@@ -203,7 +164,7 @@
         "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119"
       },
       {
-        "file": "assets/source/shenzhou-24-crew/raw-3.png",
+        "file": "assets/source/shenzhou-24-launch/raw-5.png",
         "bytes": 209236,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
         "w": 1020,
@@ -213,7 +174,7 @@
         "page": "https://news.qq.com/rain/a/20261124A03WND00"
       },
       {
-        "file": "assets/source/shenzhou-24-crew/raw-4.png",
+        "file": "assets/source/shenzhou-24-launch/raw-6.png",
         "bytes": 180546,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
         "w": 1020,
@@ -223,7 +184,7 @@
         "page": "https://news.qq.com/rain/a/20261124A03WND00"
       },
       {
-        "file": "assets/source/shenzhou-24-crew/raw-5.webp",
+        "file": "assets/source/shenzhou-24-launch/raw-7.webp",
         "bytes": 69694,
         "url": "https://inews.gtimg.com/om_bt/O4Da6H2v0c7xVzz3Jw9CEDFG4qic9IJDU36Br3QibKvwIAA/641",
         "w": 960,
@@ -233,7 +194,7 @@
         "page": "https://news.qq.com/rain/a/20261124A03WND00"
       },
       {
-        "file": "assets/source/shenzhou-24-crew/raw-6.webp",
+        "file": "assets/source/shenzhou-24-launch/raw-8.webp",
         "bytes": 28450,
         "url": "https://inews.gtimg.com/om_ls/OJ53EGm9k-wDOc6XoF6ZYRmKLNjDKhng4YyR64YDUeQ-sAA_330330/0",
         "w": 0,
@@ -243,307 +204,229 @@
         "page": "https://news.qq.com/rain/a/20261124A03WND00"
       }
     ],
-    "treetree-chicken": [],
-    "shaoxing-paint": [
+    "300-ai": [
       {
-        "file": "assets/source/shaoxing-paint/raw-1.jpeg",
-        "bytes": 311280,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261124/ac5cb7f4-e31a-4abd-b327-11ed74d7c169.jpg",
-        "w": 1080,
-        "h": 1920,
-        "alt": "女子自费7.3万元给对面楼栋刷漆，物业：在她房子视线内，太老旧了她看不惯，此前楼栋大门老旧她也出钱刷了新漆",
-        "from": "img",
-        "page": "https://www.thepaper.cn/newsDetail_forward_34544166"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-2.jpeg",
-        "bytes": 136799,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261124/2197ae2c-5b3e-4e00-a6ca-c72e0203adc9.jpg",
-        "w": 1080,
-        "h": 809,
-        "alt": "女子自费7.3万元给对面楼栋刷漆，物业：在她房子视线内，太老旧了她看不惯，此前楼栋大门老旧她也出钱刷了新漆",
-        "from": "img",
-        "page": "https://www.thepaper.cn/newsDetail_forward_34544166"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-3.webp",
-        "bytes": 175156,
-        "url": "https://inews.gtimg.com/om_bt/O199emg6GPGMMDR3b3-hvEcyVjPS28dr1G4R0XOfW7F24AA/641",
-        "w": 960,
-        "h": 1707,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-4.webp",
-        "bytes": 110234,
-        "url": "https://inews.gtimg.com/om_bt/OkuhN-nu0wP4tGCt8pNBiApJ0tcLHTyOy9VWLcJZfWXQQAA/641",
-        "w": 960,
-        "h": 1524,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-5.webp",
-        "bytes": 114296,
-        "url": "https://inews.gtimg.com/om_bt/Ocnu5X9wDLdaK5rW2bpD7ipXiWTiQotKlbxRltvfrkkgwAA/641",
-        "w": 960,
-        "h": 1512,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-6.webp",
-        "bytes": 61934,
-        "url": "https://inews.gtimg.com/om_bt/OB0mTE-i6RIBDUSLqJpjJpC8H1hIeI6WEnlzzah6K1jocAA/641",
-        "w": 960,
-        "h": 1281,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-7.webp",
-        "bytes": 80716,
-        "url": "https://inews.gtimg.com/om_bt/OPtHG8sR8aGJaBEPc5u-TokhisBthKO9S0i7zdcKFOogoAA/641",
-        "w": 960,
-        "h": 719,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-8.webp",
-        "bytes": 69208,
-        "url": "https://inews.gtimg.com/om_bt/OzSa2CiZUH0_hV_9FhS6TnfZW1NKB-WV9I191tI3_EKckAA/641",
-        "w": 960,
-        "h": 719,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-9.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261123A0DMER00"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-10.webp",
-        "bytes": 171048,
-        "url": "https://q0.itc.cn/q_70/images03/20261124/b45c1aa8f69f471ca08af607df23652e.jpeg",
-        "w": 1080,
-        "h": 1920,
-        "alt": "文章配图-1",
-        "from": "img",
-        "page": "https://www.sohu.com/a/1105512470_162758"
-      },
-      {
-        "file": "assets/source/shaoxing-paint/raw-11.webp",
-        "bytes": 73656,
-        "url": "https://q9.itc.cn/q_70/images03/20261124/0e626f3fce4148c09e26f1155e2ab77a.jpeg",
-        "w": 1080,
-        "h": 809,
-        "alt": "文章配图-1",
-        "from": "img",
-        "page": "https://www.sohu.com/a/1105512470_162758"
-      }
-    ],
-    "miit-app-popup": [
-      {
-        "file": "assets/source/miit-app-popup/raw-1.png",
-        "bytes": 940770,
-        "url": "https://cms-emer-res.cctvnews.cctv.com/cctv/video/20261124/20261124065808306.png",
-        "w": 1080,
-        "h": 460,
-        "alt": "",
-        "from": "img",
-        "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=1721625810146432636&channelId=1119"
-      },
-      {
-        "file": "assets/source/miit-app-popup/raw-2.png",
-        "bytes": 437550,
-        "url": "https://cms-emer-res.cctvnews.cctv.com/cctv/video/20261124/20261124065811197.png",
+        "file": "assets/source/300-ai/raw-1.webp",
+        "bytes": 40156,
+        "url": "https://techcrunch.com/wp-content/uploads/2022/10/AP22166762816752.jpg?w=1200",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=1721625810146432636&channelId=1119"
+        "page": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off"
       },
       {
-        "file": "assets/source/miit-app-popup/raw-3.png",
+        "file": "assets/source/300-ai/raw-2.webp",
+        "bytes": 172666,
+        "url": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F6d45483341dd07019f9afc51fe10ba8e351d2bf1-2400x1260.png&width=1200&quality=75",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://sierra.ai/blog/series-f-30b"
+      }
+    ],
+    "mate-x8-12999-iphone": [
+      {
+        "file": "assets/source/mate-x8-12999-iphone/raw-1.png",
         "bytes": 209236,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A02TJ900"
+        "page": "https://news.qq.com/rain/a/20261124A0CCFU00"
       },
       {
-        "file": "assets/source/miit-app-popup/raw-4.png",
+        "file": "assets/source/mate-x8-12999-iphone/raw-2.png",
         "bytes": 180546,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A02TJ900"
+        "page": "https://news.qq.com/rain/a/20261124A0CCFU00"
       },
       {
-        "file": "assets/source/miit-app-popup/raw-5.webp",
-        "bytes": 78950,
-        "url": "https://inews.gtimg.com/om_bt/OzBo05p68Tu0glawm8-VD7jTrq626eLvxhntVoJLOZWlMAA/641",
-        "w": 900,
-        "h": 383,
-        "alt": "图片",
+        "file": "assets/source/mate-x8-12999-iphone/raw-3.png",
+        "bytes": 209236,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A02TJ900"
+        "page": "https://news.qq.com/rain/a/20261124A0C1NR00"
       },
       {
-        "file": "assets/source/miit-app-popup/raw-6.webp",
-        "bytes": 27534,
-        "url": "https://inews.gtimg.com/om_ls/O5QvetFgzdeWTzm8ybIo1suBlVyfuYnBgQrACAKYt5bB4AA_330330/0",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://news.qq.com/rain/a/20261124A02TJ900"
-      },
-      {
-        "file": "assets/source/miit-app-popup/raw-7.jpeg",
-        "bytes": 119582,
-        "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/81222c7b8bb44665955d007079d2ccee~tplv-tt-origin-web:gif.jpeg?_iz=58558&from=article.pc_detail&lk3s=953192f4&x-expires=1796088325&x-signature=FQbpqEXYFfngmpAalgimc9H%2BWoM%3D",
-        "w": 1200,
-        "h": 676,
-        "alt": "",
+        "file": "assets/source/mate-x8-12999-iphone/raw-4.png",
+        "bytes": 180546,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://www.toutiao.com/article/7711390526307222056"
-      },
-      {
-        "file": "assets/source/miit-app-popup/raw-8.jpeg",
-        "bytes": 76076,
-        "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/9ae037009f28453998f2eb743436b87a~tplv-tt-origin-web:gif.jpeg?_iz=58558&from=article.pc_detail&lk3s=953192f4&x-expires=1796088325&x-signature=pcaWdDqwCvctYXYq2zPO0bqumYQ%3D",
-        "w": 1080,
-        "h": 544,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.toutiao.com/article/7711390526307222056"
-      },
-      {
-        "file": "assets/source/miit-app-popup/raw-9.jpeg",
-        "bytes": 26205,
-        "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/ef7ede8c4ed74ea09cd0da7659b4b108~tplv-tt-shrink-asy2-web:640:0:5aS05p2hQOWkruW5v-e9kQ==:gif.jpeg?_iz=58558&from=article.pc_detail&lk3s=953192f4&x-expires=1796088326&x-signature=qkISI0JoOgRi4f5D0kLwhC32MC0%3D",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://www.toutiao.com/article/7711390526307222056"
+        "page": "https://news.qq.com/rain/a/20261124A0C1NR00"
       }
     ],
-    "xnu-linux": [
+    "22-53": [
       {
-        "file": "assets/source/xnu-linux/raw-1.png",
-        "bytes": 72114,
-        "url": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars/opengraph-image",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars"
-      }
-    ],
-    "glm-5-4": [
-      {
-        "file": "assets/source/glm-5-4/raw-1.webp",
+        "file": "assets/source/22-53/raw-1.jpeg",
         "bytes": 88002,
-        "url": "https://inews.gtimg.com/news_bt/Oqzulf-QCxMVHr3IVeabtndu17IdyWPrjxMlyBFXx08mEAA/1000",
-        "w": 1000,
-        "h": 1085,
-        "alt": "图片",
+        "url": "https://pgdt.gtimg.cn/141/20204/snscosdownload/SZ/reserved/6aede999000aa16327aa36bbc563bc1e0000008d00004eec?ck=e2028b5f48711a40ac42ca29cfb9c33b&m=e2028b5f48711a40ac42ca29cfb9c33b&sha256=998e7a79ecd05b663aea42dd7fe0b5392d6d9c8f1da63f60dc77e00e2dee1ebb",
+        "w": 1280,
+        "h": 720,
+        "alt": "Thumbplayer Poster Plugin Image",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
+        "page": "https://news.qq.com/rain/a/20261124A0BAW100"
       },
       {
-        "file": "assets/source/glm-5-4/raw-2.webp",
-        "bytes": 46086,
-        "url": "https://inews.gtimg.com/news_bt/OoURQGB_bqgi6j861SeGxe5tAAO6a0eCdQLyZ1RslcEV0AA/1000",
-        "w": 1000,
-        "h": 667,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
+        "file": "assets/source/22-53/raw-2.jpeg",
+        "bytes": 77490,
+        "url": "http://n.sinaimg.cn/sinakd20261124ac/771/w1010h561/20261124/5f21-221b9fd44cf1e26c35e128032b549202.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://cj.sina.com.cn/articles/view/1652484947/m627eeb5303302319e"
       },
       {
-        "file": "assets/source/glm-5-4/raw-3.webp",
-        "bytes": 48746,
-        "url": "https://inews.gtimg.com/news_bt/OXQZunXZ455yC39viLa03Xads8kXboTetuNDDZrZl-fN4AA/641",
-        "w": 960,
-        "h": 681,
+        "file": "assets/source/22-53/raw-3.webp",
+        "bytes": 36514,
+        "url": "https://inews.gtimg.com/om_bt/OufEYZMLlTrSjhxU5CcAFpO3r3qXWzcRjf7ml7kcXu_jAAA/641",
+        "w": 744,
+        "h": 800,
         "alt": "图片",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
+        "page": "https://new.qq.com/rain/a/20261124A0A31J00"
       },
       {
-        "file": "assets/source/glm-5-4/raw-4.webp",
-        "bytes": 35320,
-        "url": "https://inews.gtimg.com/news_bt/OQ_HY9QaLXDAvUHSnMTZPo88CUylJflusmzV-AOiQtbDYAA/641",
-        "w": 960,
-        "h": 640,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
-      },
-      {
-        "file": "assets/source/glm-5-4/raw-5.png",
+        "file": "assets/source/22-53/raw-4.png",
         "bytes": 209236,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
+        "page": "https://new.qq.com/rain/a/20261124A0A31J00"
       },
       {
-        "file": "assets/source/glm-5-4/raw-6.png",
+        "file": "assets/source/22-53/raw-5.png",
         "bytes": 180546,
         "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
         "w": 1020,
         "h": 573,
         "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A03L2D00"
+        "page": "https://new.qq.com/rain/a/20261124A0A31J00"
       },
       {
-        "file": "assets/source/glm-5-4/raw-7.jpeg",
-        "bytes": 193831,
-        "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F1124%2F763769cdj00toyt1r0059d200u000mig02dc01s0.jpg&thumbnail=660%3Ci%3E%3C/i%3Ex2147483647&quality=80&type=jpg",
-        "w": 1080,
-        "h": 810,
-        "alt": "",
+        "file": "assets/source/22-53/raw-6.png",
+        "bytes": 197418,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793268429979.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
         "from": "img",
-        "page": "https://www.itbear.com.cn/html/2026-11/1592735.html"
+        "page": "https://new.qq.com/rain/a/20261124A0A31J00"
+      },
+      {
+        "file": "assets/source/22-53/raw-7.webp",
+        "bytes": 38586,
+        "url": "https://inews.gtimg.com/om_bt/OxuJxXhHnpwksl0So1ixZ7h5SFrxubisZdfgVvLGIW_rQAA/641",
+        "w": 800,
+        "h": 534,
+        "alt": "图片",
+        "from": "img",
+        "page": "https://new.qq.com/rain/a/20261124A0A31J00"
       }
     ],
-    "james-jersey": [
+    "ai": [
       {
-        "file": "assets/source/james-jersey/raw-1.jpeg",
-        "bytes": 68262,
-        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/F2n6G5J11oFlzN65ookt3yu8dnRCmdQs0fiadnc48WKTIBFoeCa9Cr7016KnTxCTehHJzugHQvZ45F5Zz0uAO2Qiawyia2NYF7dTpYcjjqRe58/0?wx_fmt=jpeg",
+        "file": "assets/source/ai/raw-1.webp",
+        "bytes": 186418,
+        "url": "https://himiao.ai/api/v1/img/59ea1fe88e16c4fc28aae94b.webp",
+        "w": 1280,
+        "h": 720,
+        "alt": "A shopper with a cart holds up a phone showing a shopping list in a sunlit supermarket aisle with red sale banners overh",
+        "from": "img",
+        "page": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday"
+      },
+      {
+        "file": "assets/source/ai/raw-2.jpeg",
+        "bytes": 323030,
+        "url": "https://himiao.ai/api/v1/img/59ea1fe88e16c4fc28aae94b.og.jpg",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd"
+        "page": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday"
+      },
+      {
+        "file": "assets/source/ai/raw-3.webp",
+        "bytes": 49028,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
       }
     ],
-    "nv-npc": []
+    "u17-2-0-2-2-11-26": [
+      {
+        "file": "assets/source/u17-2-0-2-2-11-26/raw-1.jpeg",
+        "bytes": 41460,
+        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/Mbia2x47rZMwKkS2XHeibuq05H81tOtzxX11sAOHnsqc9iaMqcas0pYc2Q7SiaP59xYYJPcA2WP3EnNlnbFyJNyYIylL0G3O05WGG4jtb7GibGTo/0?wx_fmt=jpeg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492067&idx=1&sn=a5611f4fb5ccf245f6a0bc4d188bd158"
+      }
+    ],
+    "e12-45a138": [
+      {
+        "file": "assets/source/e12-45a138/raw-1.jpeg",
+        "bytes": 35310,
+        "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/9c213e45bf364ffebd948b1faa10beaf.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119"
+      }
+    ],
+    "29-6-50-22": [
+      {
+        "file": "assets/source/29-6-50-22/raw-1.webp",
+        "bytes": 65956,
+        "url": "https://inews.gtimg.com/om_bt/O6mDqgJNItu9U3jwccnU_HxqWYkG6Az0AaAnGfSo_1zO0AA/641",
+        "w": 960,
+        "h": 1045,
+        "alt": "图片",
+        "from": "img",
+        "page": "https://news.qq.com/rain/a/20261124A098LK00"
+      },
+      {
+        "file": "assets/source/29-6-50-22/raw-2.png",
+        "bytes": 209236,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
+        "from": "img",
+        "page": "https://news.qq.com/rain/a/20261124A098LK00"
+      },
+      {
+        "file": "assets/source/29-6-50-22/raw-3.png",
+        "bytes": 180546,
+        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+        "w": 1020,
+        "h": 573,
+        "alt": "趣玩游戏",
+        "from": "img",
+        "page": "https://news.qq.com/rain/a/20261124A098LK00"
+      }
+    ]
   }
 }

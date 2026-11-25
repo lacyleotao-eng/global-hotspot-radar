@@ -1,25 +1,14 @@
 {
-  "updatedAt": "2026-11-23T03:44:46.576Z",
+  "updatedAt": "2026-11-25T00:39:14.051Z",
   "results": [
     {
-      "name": "shenzhou-24",
+      "name": "7",
       "ok": true,
       "outs": [
-        "assets/images/sz-ai-1.png"
+        "assets/images/7-cg-1.png"
       ],
       "bytes": [
-        2109619
-      ],
-      "error": ""
-    },
-    {
-      "name": "margin-ratio",
-      "ok": true,
-      "outs": [
-        "assets/images/mgn-ai-1.png"
-      ],
-      "bytes": [
-        2116023
+        3524577
       ],
       "error": ""
     }

@@ -1,79 +1,93 @@
 {
   "results": [
     {
-      "name": "elderly-child-policy",
-      "prompt": "纪实摄影：中国城市社区日间照料中心，几位老人在护理员陪同下做手工，房间明亮整洁，画面中没有任何文字、标牌与 logo，16:9 横构图",
+      "name": "ai-claude-ship",
+      "prompt": "摄影：软件工程团队协作办公场景，桌面上有笔记本电脑与代码编辑器界面但屏幕内容完全模糊不可读，几位工程师在白板前讨论，白板全空白，冷色调，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/elderly-child-policy-db-1.jpeg"
+        "assets/images/ai-claude-ship-db-1.jpeg",
+        "assets/images/ai-claude-ship-db-2.jpeg",
+        "assets/images/ai-claude-ship-db-3.jpeg",
+        "assets/images/ai-claude-ship-db-4.jpeg"
       ],
       "urls": [
-        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/6faba06a0960467a982c2bd88c54a1ea.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExTDI3VWZtUklzNU8=.png?lk3s=8e244e95&rcl=2026112409503558F119FC61FCBC4CA124&rrcfp=d623987c&x-expires=2111709035&x-signature=%2FcKnV9kPVsHtJAeM0YNny%2BibdMQ%3D"
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/5213100b003044138e73e1e8c94e30c7.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXJVc2hsYnJlWHA=.png?lk3s=8e244e95&rcl=20261125083315E173388B0BF442D1F015&rrcfp=d623987c&x-expires=2111790795&x-signature=lXW4OdXFw45NENw0Qnc85LGOMOg%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/b04e826dfaea48d9a98bc95796ac093e.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXJVc2hsYnJlWHA=.png?lk3s=8e244e95&rcl=20261125083315E173388B0BF442D1F015&rrcfp=d623987c&x-expires=2111790795&x-signature=NXDeLhQCWkJDWbsz%2BMqfvkz6Ipc%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/5c136c55a5114a9b99f6a25b41126062.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXJVc2hsYnJlWHA=.png?lk3s=8e244e95&rcl=20261125083315E173388B0BF442D1F015&rrcfp=d623987c&x-expires=2111790795&x-signature=QEmUBNpTVGY6oIhP3nZTDrYu7jE%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/dac19f3110d047008836cbe9475cd157.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXJVc2hsYnJlWHA=.png?lk3s=8e244e95&rcl=20261125083315E173388B0BF442D1F015&rrcfp=d623987c&x-expires=2111790795&x-signature=zFKcLsnnPeVVllrD%2Bk0IW2hN8jE%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        3870422
+        2868137,
+        2974149,
+        3269056,
+        3790845
       ]
     },
     {
-      "name": "crowdstrike-zscaler",
-      "prompt": "摄影：企业并购签约场景俯拍，长桌上摆着签字笔与文件，两侧座椅空着，会议厅落地窗透进冷光，画面中没有任何可辨认的文字、品牌标识与 logo，16:9 横构图",
+      "name": "300-ai",
+      "prompt": "纪实摄影：现代企业客服中心，座席人员戴着耳机面对电脑，背景是柔和虚化的办公区，画面安静专业，画面中没有任何文字、字幕、标牌与 logo，16:9 横构图",
       "outs": [
-        "assets/images/crowdstrike-zscaler-db-1.jpeg"
+        "assets/images/300-ai-db-1.jpeg",
+        "assets/images/300-ai-db-2.jpeg",
+        "assets/images/300-ai-db-3.jpeg"
       ],
       "urls": [
-        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/0591ff76c8e446508e712ec59a899178.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExMnE5QWtYVW1pNlM=.png?lk3s=8e244e95&rcl=202611240951018B4B813111C6A66B3AB3&rrcfp=d623987c&x-expires=2111709061&x-signature=M6Qit9aZ2chGrk3QBygp5BvJT0s%3D"
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/b3d65cc050bf4c678c18b90b92492cb3.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODh5MjhEclpqOWQ=.png?lk3s=8e244e95&rcl=202611250833557ACFAA2809970C7E1AD8&rrcfp=d623987c&x-expires=2111790835&x-signature=Iap0NsDFKcH753t2267buusKGFI%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/75ee3e547b91410fb1d1bbe9118aef48.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODh5MjhEclpqOWQ=.png?lk3s=8e244e95&rcl=202611250833557ACFAA2809970C7E1AD8&rrcfp=d623987c&x-expires=2111790835&x-signature=gIEwx5VTQ%2BMsDEIFgyIcJvEmY7o%3D",
+        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/09cc9f36c19f4fe68c33cfb43f0516f7.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExODh5MjhEclpqOWQ=.png?lk3s=8e244e95&rcl=202611250833557ACFAA2809970C7E1AD8&rrcfp=d623987c&x-expires=2111790835&x-signature=dVEkK%2BJmhmY99b1z2Q%2BY25vpWz4%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        2787052
+        2825354,
+        2475188,
+        2837126
       ]
     },
     {
-      "name": "pangdonglai-close",
-      "prompt": "纪实摄影：商场扶梯上行的视角，两侧是服装店铺橱窗，顾客背影稀疏，暖白灯光，画面中没有任何文字、招牌字与 logo，16:9 横构图",
+      "name": "shenzhou-24-launch",
+      "prompt": "纪实摄影：黎明前的航天发射场，白色火箭矗立在发射塔架旁，塔架灯光明亮，天空深蓝，地面有水汽，没人，画面中没有任何文字、国旗、标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/pangdonglai-close-db-1.jpeg"
+        "assets/images/shenzhou-24-launch-db-1.jpeg",
+        "assets/images/shenzhou-24-launch-db-2.jpeg",
+        "assets/images/shenzhou-24-launch-db-3.jpeg"
       ],
       "urls": [
-        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/917d634044654212b7878d52703877bc.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExR0pqcUNyRE9WdWQ=.png?lk3s=8e244e95&rcl=20261124095126CCD2F7247D8327FE95A0&rrcfp=d623987c&x-expires=2111709086&x-signature=tJYIgeyr9v3Ug0ml2oQFh8Lr4ks%3D"
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/d7ee4a36e242422ba552c81d47be8a64.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExSlNPV2EzanZsVkk=.png?lk3s=8e244e95&rcl=20261125083426B566656E671CD4EC55BD&rrcfp=d623987c&x-expires=2111790866&x-signature=DE5kP464MOZ59avJKQ9yGCycaQY%3D",
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/8387ded61fe14572b915c426483ea76c.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExSlNPV2EzanZsVkk=.png?lk3s=8e244e95&rcl=20261125083426B566656E671CD4EC55BD&rrcfp=d623987c&x-expires=2111790866&x-signature=u445d1jwKLaxqDfuBzUBjnNIaA4%3D",
+        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/159718b593b0435f9803835a877b6453.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExSlNPV2EzanZsVkk=.png?lk3s=8e244e95&rcl=20261125083426B566656E671CD4EC55BD&rrcfp=d623987c&x-expires=2111790866&x-signature=zCH0b3N%2F1XSRzJlVX5d%2FI7qo1HI%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        4044678
+        3153725,
+        3338055,
+        3362367
       ]
     },
     {
-      "name": "riemann-day3",
-      "prompt": "摄影：深夜书桌上的数学手稿特写，纸页写满符号与推导，台灯侧照，旁边放着铅笔与凉掉的茶，画面中没有任何可辨认的文字与 logo，16:9 横构图",
+      "name": "mate-x8-12999-iphone",
+      "prompt": "产品摄影：一台无品牌的深色折叠屏手机半展开放在简洁桌面上，金属铰链与屏幕边缘特写，的背景虚化的城市夜景，冷调高端质感，画面中没有任何文字、数字、品牌标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/riemann-day3-db-1.jpeg"
+        "assets/images/mate-x8-12999-iphone-db-1.jpeg"
       ],
       "urls": [
-        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/a3e3eedb43694d20bee8b506ef6e9561.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExVHUxbWY4c1AyVw==.png?lk3s=8e244e95&rcl=202611240951594E7CC284D78D3D4A4A4E&rrcfp=d623987c&x-expires=2111709119&x-signature=Nds6S4rx1m7X11vtJ7BRbmb3b4c%3D"
+        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c57517ae08734b64aa252ad9b9a07ba4.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExSzZyN2VLa2FtUnQ=.png?lk3s=8e244e95&rcl=202611250835010D9EE114AF45A68634DC&rrcfp=d623987c&x-expires=2111790901&x-signature=elUtUZYzhtuSxMy1mO00zvQ3OGk%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        2953343
+        2188948
       ]
     },
     {
-      "name": "shenzhou-24-crew",
-      "prompt": "摄影：航天指挥大厅内景，成排的工位与大屏幕泛着蓝光，工作人员背影专注，画面中没有任何可辨认的文字、标语与 logo，16:9 横构图",
-      "outs": [
-        "assets/images/shenzhou-24-crew-db-1.jpeg"
-      ],
-      "urls": [
-        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/5980cf8ed0af4fa59deba6a1d884b365.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOHAyNUhEM0l6ZEo=.png?lk3s=8e244e95&rcl=2026112409522276808E99A620FD546A51&rrcfp=d623987c&x-expires=2111709143&x-signature=Ob9JUsf2ROGqUBQXP0lhtSlkYJk%3D"
-      ],
-      "ok": true,
-      "error": null,
-      "bytes": [
-        5543336
-      ]
+      "name": "7",
+      "prompt": "纪实摄影：南方乡村甘蔗田近景，阳光下的甘蔗植株整齐排列，远处有田埂与农人模糊身影，画面中没有文字、标语、标牌与 logo，16:9 横构图",
+      "outs": [],
+      "urls": [],
+      "ok": false,
+      "error": "180 秒内没抓到新生成图"
     }
   ]
 }

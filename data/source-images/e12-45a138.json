@@ -1,0 +1,24 @@
+{
+  "slug": "e12-45a138",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e12-45a138/raw-1.jpeg",
+      "bytes": 35310,
+      "w": 300,
+      "h": 300,
+      "url": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/9c213e45bf364ffebd948b1faa10beaf.jpg",
+      "page": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119",
+      "alt": "",
+      "md5": "03a7729b95667da6bb5b3ea215e6777b",
+      "status": "drop",
+      "reason": "像素不足 300x300",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}

@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "date": "2026-11-25",
+  "slug": "e4-4b02be",
+  "sourceItemId": "4b02beb2d32db1a5",
+  "sourceTitle": "深圳致市民感谢信：“感谢你们全妆出街，盛情礼迎八方”刷屏",
+  "sourceUrl": "https://news.qq.com/rain/a/20261124A05J0200",
+  "sourcePlatform": "腾讯新闻",
+  "verification": "已核实",
+  "verificationNote": "感谢信为官方表述，其中“每三辆车一辆停驶”等为信中自述数据，未见独立统计来源。",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "城市观察",
+      "title": "“全妆出街”写进感谢信：但深圳这封信，其实赢在细节？",
+      "digest": "一句“感谢你们全妆出街，盛情礼迎八方”让深圳的感谢信刷屏。宏大活动之后，城市怎样把感谢说到普通人心里？",
+      "images": [
+        {
+          "src": "assets/images/e4-4b02be-db-1.jpeg",
+          "caption": "AI 生成示意图：南方滨海城市街头黄昏（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/e4-4b02be-db-2.jpeg",
+          "caption": "AI 生成示意图：南方滨海城市街头黄昏（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/e4-4b02be-db-3.jpeg",
+          "caption": "AI 生成示意图：南方滨海城市街头黄昏（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/e4-4b02be-db-4.jpeg",
+          "caption": "AI 生成示意图：南方滨海城市街头黄昏（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/e4-4b02be-cg-1.png",
+          "caption": "AI 生成示意图：城市志愿服务站外（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，11月24日“深圳发布”发布的一封感谢信被很多人转发。信的全名是《你们是城市的荣光——致广大市民朋友的感谢信》，背景是 APEC 第三十三次领导人非正式会议的承办工作。"
+        },
+        {
+          "type": "para",
+          "text": "真正让这封信出圈的，是一句很口语的话：“感谢你们全妆出街，盛情礼迎八方。”它不像公文里常见的套话，更像在街边跟人说了一句谢谢。"
+        },
+        {
+          "type": "para",
+          "text": "信里还写了几个具体细节：每三辆粤B车就有一辆主动停驶，1360名会议志愿者和数以万计的城市志愿者参与服务。需要说明，这些数字出自感谢信自述，目前未见独立统计来源。"
+        },
+        {
+          "type": "para",
+          "text": "为什么这些细节会被记住？因为大型活动的叙事通常很大，而普通人能做的往往很小：化个妆出门、少开一天车、在岗位上多站几个小时。把小动作写进官方文本，感谢才有了落点。"
+        },
+        {
+          "type": "para",
+          "text": "从城市沟通的角度看，这封信提供的是一种可复制的方法：先说具体行为，再说共同荣誉。与其堆叠形容词，不如写清楚市民到底做了什么，谁在什么时候给了配合。"
+        },
+        {
+          "type": "para",
+          "text": "当然，一封信不等于全部。相关表述在社交平台引发讨论，也说明大家对官方文本的期待在变：少一点宏大，多一点可见的生活细节。这里只谈城市传播方式，不展开其他议题。"
+        }
+      ],
+      "imageNote": "5 张配图：豆包生成4 张、ChatGPT 生成1 张"
+    }
+  ]
+}

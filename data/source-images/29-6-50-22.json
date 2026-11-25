@@ -1,0 +1,70 @@
+{
+  "slug": "29-6-50-22",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/29-6-50-22/raw-1.webp",
+      "bytes": 65956,
+      "w": 960,
+      "h": 1045,
+      "url": "https://inews.gtimg.com/om_bt/O6mDqgJNItu9U3jwccnU_HxqWYkG6Az0AaAnGfSo_1zO0AA/641",
+      "page": "https://news.qq.com/rain/a/20261124A098LK00",
+      "alt": "图片",
+      "md5": "35bcecc86a111cc329376b9b2dfdd379",
+      "status": "approved",
+      "reason": "#1为教室献花现场新闻图，叠加的标题文字与右下角媒体标属原报道署名保留；#2/#3游戏广告",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/29-6-50-22/raw-2.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261124A098LK00",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：#1为教室献花现场新闻图，叠加的标题文字与右下角媒体标属原报道署名保留；#2/#3游戏广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/29-6-50-22/raw-3.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261124A098LK00",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：#1为教室献花现场新闻图，叠加的标题文字与右下角媒体标属原报道署名保留；#2/#3游戏广告",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/29-6-50-22/raw-1.webp",
+      "bytes": 65956,
+      "w": 960,
+      "h": 1045,
+      "url": "https://inews.gtimg.com/om_bt/O6mDqgJNItu9U3jwccnU_HxqWYkG6Az0AaAnGfSo_1zO0AA/641",
+      "page": "https://news.qq.com/rain/a/20261124A098LK00",
+      "alt": "图片",
+      "md5": "35bcecc86a111cc329376b9b2dfdd379",
+      "status": "approved",
+      "reason": "#1为教室献花现场新闻图，叠加的标题文字与右下角媒体标属原报道署名保留；#2/#3游戏广告",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-25T04:55:39+08:00"
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "7",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:11+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/7/raw-1.png",
+      "bytes": 881626,
+      "w": 1125,
+      "h": 402,
+      "url": "https://rls3.cj.sina.com.cn/products/202611/4ba97cea9a0c71c41e3dbebe29d86c7d.png",
+      "page": "https://finance.sina.com.cn/wm/2026-11-24/doc-inizuxvk7847706.shtml",
+      "alt": "",
+      "md5": "57ec68aafa411d7997e68fc2d4e7edf1",
+      "status": "drop",
+      "reason": "人工淘汰：#1是家电股票投资广告，与甘蔗谣言行拘案无关；原文图不可用，留给豆包补",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}

@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "date": "2026-11-25",
+  "slug": "300-ai",
+  "sourceItemId": "4bcddec42924e53f",
+  "sourceTitle": "客服智能体公司 Sierra 完成17.5亿美元F轮融资，估值半年翻倍至300亿美元",
+  "sourceUrl": "https://sierra.ai/blog/series-f-30b",
+  "sourcePlatform": "Sierra 官方博客",
+  "verification": "部分核实",
+  "verificationNote": "融资额与估值来自公司官方发布；ARR、客户覆盖率为公司自述，未经审计",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "商业观察",
+      "title": "半年估值翻到300亿美元：但这家公司，其实按“结果”收费",
+      "digest": "Sierra 完成17.5亿美元F轮，估值300亿美元。它卖的不是按席位计费的客服软件，而是按“解决的问题”收费的智能体——难点也在那里。",
+      "images": [
+        {
+          "src": "assets/source/300-ai/raw-1.webp",
+          "caption": "原文刊发的现场画面（图源：Sierra 官方博客）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/300-ai/raw-2.webp",
+          "caption": "原文刊发的现场画面（图源：Sierra 官方博客）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/300-ai-db-1.jpeg",
+          "caption": "AI 生成示意图：现代企业客服中心（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/300-ai-db-2.jpeg",
+          "caption": "AI 生成示意图：现代企业客服中心（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/300-ai-db-3.jpeg",
+          "caption": "AI 生成示意图：现代企业客服中心（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，11月23日 Sierra 官方博客宣布完成17.5亿美元F轮融资，估值300亿美元。Greenoaks 与 Lightspeed 领投，Benchmark、Sequoia、GV、Tiger Global 等原有领投方跟投。"
+        },
+        {
+          "type": "para",
+          "text": "公司称成立两年多 ARR 已超过4亿美元，资金将用于智能体平台与销售团队。这些经营数字是公司自述，未经审计，不能当成已核实的财务事实。"
+        },
+        {
+          "type": "para",
+          "text": "真正有意思的是计费方式：按“解决的问题”收费，而不是按席位或 token 收费。客户名单包括 BNY、JPMorganChase、Wells Fargo、HSBC、Singtel 等老牌企业；TechCrunch 补充其称服务近一半《财富》50强，同样属于公司说法。"
+        },
+        {
+          "type": "para",
+          "text": "为什么老牌企业愿意买单？按结果付费把风险从采购方挪了一部分给供应商：系统没解决问题，理论上就不该收那么多钱。这个逻辑对预算审批者很有吸引力。"
+        },
+        {
+          "type": "para",
+          "text": "难点也在这里：“什么算解决”要在合同里说清楚。是用户不再转人工，还是问题被判定处理完毕？判定由谁做、争议怎么算，公开信息里不可见。"
+        },
+        {
+          "type": "para",
+          "text": "还有一点要留意：融资额和估值是官方发布的事实，ARR 与客户覆盖率则是公司自述。两者混写，容易把预期读成业绩；把两类信息分开写，是避免误读的最低成本办法。"
+        },
+        {
+          "type": "para",
+          "text": "对国内客服与 SaaS 团队，可借鉴的不是估值，而是定价实验：先选一个能被双方共同验证的结果口径，再谈自动化率。融资额和估值已经公开，效果如何仍待时间检验。"
+        }
+      ],
+      "imageNote": "5 张配图：原文图2 张、豆包生成3 张"
+    }
+  ]
+}

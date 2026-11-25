@@ -1,0 +1,54 @@
+{
+  "slug": "e4-4b02be",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e4-4b02be/raw-1.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261124A05J0200",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：#1/#2游戏广告、#3美食探店广告，均与深圳感谢信无关；原文图不可用，留给豆包补",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/e4-4b02be/raw-2.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261124A05J0200",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：#1/#2游戏广告、#3美食探店广告，均与深圳感谢信无关；原文图不可用，留给豆包补",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/e4-4b02be/raw-3.jpeg",
+      "bytes": 343485,
+      "w": 960,
+      "h": 540,
+      "url": "https://pgdt.gtimg.cn/141/20204/snscosdownload/SZ/reserved/6a2fb74f0007a7f10ca67303bf4988090000008d00004eec?ck=b35d97525f3f8d7d71e2b090c953dc84&m=b35d97525f3f8d7d71e2b090c953dc84&sha256=3e52be980f3e62676ed7257b85bfa898cb75e916b8557a7e3c9d68c7d29a5027",
+      "page": "https://news.qq.com/rain/a/20261124A05J0200",
+      "alt": "Thumbplayer Poster Plugin Image",
+      "md5": "b35d97525f3f8d7d71e2b090c953dc84",
+      "status": "drop",
+      "reason": "人工淘汰：#1/#2游戏广告、#3美食探店广告，均与深圳感谢信无关；原文图不可用，留给豆包补",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}

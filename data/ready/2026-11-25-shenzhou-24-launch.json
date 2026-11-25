@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "date": "2026-11-25",
+  "slug": "shenzhou-24-launch",
+  "sourceItemId": "fabfc190082e9be4",
+  "sourceTitle": "神舟二十四号瞄准11月25日08时18分发射，乘组含首位外籍航天员",
+  "sourceUrl": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=5312856043623816131&channelId=1119",
+  "sourcePlatform": "央视新闻",
+  "verification": "已核实",
+  "verificationNote": "乘组名单与发射窗口属于官方发布会口径；任务细节（如短期驻留时长）以官方后续通报为准。",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "航天速递",
+      "title": "8时18分发射：神舟二十四号里，原来有一位外籍航天员",
+      "digest": "今天08时18分，神舟二十四号瞄准发射。三人乘组里，有三次到访天宫的指令长、首次飞行的航天飞行工程师，还有首位到访中国空间站的外籍航天员。",
+      "images": [
+        {
+          "src": "assets/source/shenzhou-24-launch/raw-1.jpeg",
+          "caption": "原文刊发的现场画面（图源：央视新闻）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/shenzhou-24-launch/raw-7.webp",
+          "caption": "原文刊发的现场画面（图源：央视新闻）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-1.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-2.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-3.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "今天，11月25日08时18分，神舟二十四号载人飞行任务瞄准这一窗口发射。11月24日上午，酒泉举行任务新闻发布会，发言人张静波公布了这一时间。"
+        },
+        {
+          "type": "para",
+          "text": "乘组三个人：汤洪波任指令长，是航天驾驶员；武毅是航天飞行工程师，首次飞行；穆罕默德·齐尚·阿里来自巴基斯坦，是载荷专家。三人的岗位分工在发布会上已经明确。"
+        },
+        {
+          "type": "para",
+          "text": "汤洪波曾执行神舟十二号、十七号任务，这次将成为首位三次到访“天宫”的中国航天员。武毅首飞，阿里则是首位到访中国空间站的外籍航天员。"
+        },
+        {
+          "type": "para",
+          "text": "还有一个容易被漏掉的“第一次”：按照阿里短期驻留后返回的安排，朱杨柱将成为我国首位在轨驻留一年的航天员。这是两个不同维度的记录，别混在一起看。"
+        },
+        {
+          "type": "para",
+          "text": "想收藏这张信息卡，记住四件事就够：时间08时18分、地点酒泉、三名乘组、两个“第一次”。任务细节如短期驻留时长，以官方后续通报和直播为准。"
+        },
+        {
+          "type": "para",
+          "text": "发射窗口是“瞄准”时间，不等于已经完成发射。任务时序以官方直播为准，转载稿里的预测性描述不宜当成定论。"
+        },
+        {
+          "type": "para",
+          "text": "发布会上没有公布的信息，这里也不补。舱外安排、具体实验项目等若未获官方确认，就先留白——看发射最重要的一点，是跟官方节奏走。"
+        }
+      ],
+      "imageNote": "5 张配图：原文图2 张、豆包生成3 张"
+    }
+  ]
+}

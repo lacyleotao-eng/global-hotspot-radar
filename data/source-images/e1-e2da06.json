@@ -1,0 +1,100 @@
+{
+  "slug": "e1-e2da06",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:11+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e1-e2da06/raw-1.jpeg",
+      "bytes": 72609,
+      "w": 1080,
+      "h": 810,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/J06hTQibibib5XPhdwcpqic8GjMjEiatf17Y7UfvmejoIjIP0IyQqdJ7fXqcwXhxhstWxs1nONlBvP0NmiajibgjibAiaSlPLTUHpuYdpG37QXjx49Yg/640?wx_fmt=jpeg&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1#imgIndex=1",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
+      "alt": "图片",
+      "md5": "8cffc960fc568f9e8dc4ca43c2e243b5",
+      "status": "approved",
+      "reason": "#1国家疾控局新闻发布会现场，官方背景牌与台标属发布署名保留；#2与#1同一场景近重复；#3体积仅35KB偏小；#4/#5游戏广告与本文无关",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/e1-e2da06/raw-2.jpeg",
+      "bytes": 60136,
+      "w": 811,
+      "h": 810,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/RvpSS0kx5E3sNibORHeP4e5QkfvFNEk7FYltUq9v8UZKZPIgdQPUOfce6F1ONPPxSiaQc6oENKhzEicQRGwQcZowNfplibbpxM3icibuQkL9BqPQU/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
+      "alt": "",
+      "md5": "847b80969532f44a6f0c4e6f1c7b9706",
+      "status": "drop",
+      "reason": "人工淘汰：#1国家疾控局新闻发布会现场，官方背景牌与台标属发布署名保留；#2与#1同一场景近重复；#3体积仅35KB偏小；#4/#5游戏广告与本文无关",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/e1-e2da06/raw-3.webp",
+      "bytes": 36646,
+      "w": 960,
+      "h": 720,
+      "url": "https://inews.gtimg.com/om_bt/OLQVofpg7BTmZCEmRnaKtVxnX0Ocz5XfoTrQAEOreSAA4AA/641",
+      "page": "https://news.qq.com/rain/a/20261124A0CE8W00",
+      "alt": "图片",
+      "md5": "3fb33a524142988520651557fd9cd433",
+      "status": "drop",
+      "reason": "与前面近似重复（同一场景）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 4,
+      "file": "assets/source/e1-e2da06/raw-4.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261124A0CE8W00",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：#1国家疾控局新闻发布会现场，官方背景牌与台标属发布署名保留；#2与#1同一场景近重复；#3体积仅35KB偏小；#4/#5游戏广告与本文无关",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 5,
+      "file": "assets/source/e1-e2da06/raw-5.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261124A0CE8W00",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：#1国家疾控局新闻发布会现场，官方背景牌与台标属发布署名保留；#2与#1同一场景近重复；#3体积仅35KB偏小；#4/#5游戏广告与本文无关",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/e1-e2da06/raw-1.jpeg",
+      "bytes": 72609,
+      "w": 1080,
+      "h": 810,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/J06hTQibibib5XPhdwcpqic8GjMjEiatf17Y7UfvmejoIjIP0IyQqdJ7fXqcwXhxhstWxs1nONlBvP0NmiajibgjibAiaSlPLTUHpuYdpG37QXjx49Yg/640?wx_fmt=jpeg&from=appmsg&tp=wxpic&wxfrom=5&wx_lazy=1#imgIndex=1",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
+      "alt": "图片",
+      "md5": "8cffc960fc568f9e8dc4ca43c2e243b5",
+      "status": "approved",
+      "reason": "#1国家疾控局新闻发布会现场，官方背景牌与台标属发布署名保留；#2与#1同一场景近重复；#3体积仅35KB偏小；#4/#5游戏广告与本文无关",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-25T04:55:37+08:00"
+}

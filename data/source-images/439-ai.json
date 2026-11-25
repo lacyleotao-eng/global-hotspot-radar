@@ -1,0 +1,40 @@
+{
+  "slug": "439-ai",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:11+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/439-ai/raw-1.webp",
+      "bytes": 44330,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/crowdstrike-2162041873.jpg?resize=1200,800",
+      "page": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+      "alt": "",
+      "md5": "ff627c5e274835dec3b0b43345caf019",
+      "status": "approved",
+      "reason": "#1为CrowdStrike公司总部标识实拍，与收购方直接相关，无水印无角标，来自CrowdStrike官方公告页",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/439-ai/raw-1.webp",
+      "bytes": 44330,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/crowdstrike-2162041873.jpg?resize=1200,800",
+      "page": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+      "alt": "",
+      "md5": "ff627c5e274835dec3b0b43345caf019",
+      "status": "approved",
+      "reason": "#1为CrowdStrike公司总部标识实拍，与收购方直接相关，无水印无角标，来自CrowdStrike官方公告页",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-25T04:55:37+08:00"
+}

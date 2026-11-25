@@ -1,0 +1,85 @@
+{
+  "slug": "ai",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/ai/raw-1.webp",
+      "bytes": 186418,
+      "w": 1280,
+      "h": 720,
+      "url": "https://himiao.ai/api/v1/img/59ea1fe88e16c4fc28aae94b.webp",
+      "page": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
+      "alt": "A shopper with a cart holds up a phone showing a shopping list in a sunlit supermarket aisle with red sale banners overh",
+      "md5": "2559325673248f069a1fe828d378a143",
+      "status": "approved",
+      "reason": "#1为Meta Muse黑五在沃尔玛购物宣传图，#3为沃尔玛Agent授权页截图，均来自The Verge原文；#2与#1近重复",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/ai/raw-2.jpeg",
+      "bytes": 323030,
+      "w": 1280,
+      "h": 720,
+      "url": "https://himiao.ai/api/v1/img/59ea1fe88e16c4fc28aae94b.og.jpg",
+      "page": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
+      "alt": "",
+      "md5": "40ad761bf9e7550e4fa40c43ee7caec2",
+      "status": "drop",
+      "reason": "与前面近似重复（同一场景）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/ai/raw-3.webp",
+      "bytes": 49028,
+      "w": 1200,
+      "h": 624,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "alt": "",
+      "md5": "450e0f46c3ab4a32d11cf40e7b819ed3",
+      "status": "approved",
+      "reason": "#1为Meta Muse黑五在沃尔玛购物宣传图，#3为沃尔玛Agent授权页截图，均来自The Verge原文；#2与#1近重复",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/ai/raw-1.webp",
+      "bytes": 186418,
+      "w": 1280,
+      "h": 720,
+      "url": "https://himiao.ai/api/v1/img/59ea1fe88e16c4fc28aae94b.webp",
+      "page": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
+      "alt": "A shopper with a cart holds up a phone showing a shopping list in a sunlit supermarket aisle with red sale banners overh",
+      "md5": "2559325673248f069a1fe828d378a143",
+      "status": "approved",
+      "reason": "#1为Meta Muse黑五在沃尔玛购物宣传图，#3为沃尔玛Agent授权页截图，均来自The Verge原文；#2与#1近重复",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/ai/raw-3.webp",
+      "bytes": 49028,
+      "w": 1200,
+      "h": 624,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "alt": "",
+      "md5": "450e0f46c3ab4a32d11cf40e7b819ed3",
+      "status": "approved",
+      "reason": "#1为Meta Muse黑五在沃尔玛购物宣传图，#3为沃尔玛Agent授权页截图，均来自The Verge原文；#2与#1近重复",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}

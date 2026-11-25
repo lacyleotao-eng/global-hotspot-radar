@@ -1,0 +1,70 @@
+{
+  "slug": "300-ai",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/300-ai/raw-1.webp",
+      "bytes": 40156,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2022/10/AP22166762816752.jpg?w=1200",
+      "page": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
+      "alt": "",
+      "md5": "8b351e1afe8809e37c7fe1eab6d0c922",
+      "status": "approved",
+      "reason": "#1为Sierra创始人肖像、#2为官方Series F融资金额图，均来自Sierra官方博客，无平台水印",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/300-ai/raw-2.webp",
+      "bytes": 172666,
+      "w": 1200,
+      "h": 630,
+      "url": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F6d45483341dd07019f9afc51fe10ba8e351d2bf1-2400x1260.png&width=1200&quality=75",
+      "page": "https://sierra.ai/blog/series-f-30b",
+      "alt": "",
+      "md5": "4b41d4082625b19039ec65ad03fecbd0",
+      "status": "approved",
+      "reason": "#1为Sierra创始人肖像、#2为官方Series F融资金额图，均来自Sierra官方博客，无平台水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/300-ai/raw-1.webp",
+      "bytes": 40156,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2022/10/AP22166762816752.jpg?w=1200",
+      "page": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
+      "alt": "",
+      "md5": "8b351e1afe8809e37c7fe1eab6d0c922",
+      "status": "approved",
+      "reason": "#1为Sierra创始人肖像、#2为官方Series F融资金额图，均来自Sierra官方博客，无平台水印",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/300-ai/raw-2.webp",
+      "bytes": 172666,
+      "w": 1200,
+      "h": 630,
+      "url": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F6d45483341dd07019f9afc51fe10ba8e351d2bf1-2400x1260.png&width=1200&quality=75",
+      "page": "https://sierra.ai/blog/series-f-30b",
+      "alt": "",
+      "md5": "4b41d4082625b19039ec65ad03fecbd0",
+      "status": "approved",
+      "reason": "#1为Sierra创始人肖像、#2为官方Series F融资金额图，均来自Sierra官方博客，无平台水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}

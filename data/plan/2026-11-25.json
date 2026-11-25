@@ -1,0 +1,843 @@
+{
+ "date": "2026-11-25",
+ "generatedAt": "2026-11-25T04:46:00+08:00",
+ "windowHours": 40,
+ "rule": "一条情报 = 一篇稿 = 一个平台 = 一种形态；同一 sourceItemId 不得出现第二次",
+ "quota": {
+  "gzh-article": 3,
+  "gzh-poster": 3,
+  "tt-article": 4,
+  "tt-micro": 4
+ },
+ "events": [
+  {
+   "slug": "e1-e2da06",
+   "sourceItemId": "e2da06ccc48cc63a",
+   "sourceTitle": "国家疾控局：流感已进入流行季，呼吁及时预约接种疫苗",
+   "sourceUrl": "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
+   "sourcePlatform": "微信公众号",
+   "publishedAt": "2026-11-24T11:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "毒株占比取自中国流感监测周报时点数据，会随周次变动；疫苗接种禁忌与用药方案属医疗建议，须遵医嘱，本条不作诊疗指导。",
+   "summary": "11月24日，国家疾控局举行新闻发布会通报，流感等急性呼吸道传染病已进入流行季；中国疾控中心监测显示，流感活动呈波动上升、整体达中流行水平，甲型H1N1、甲型H3N2与乙型Victoria系三种毒株同时活跃。中国流感监测周报显示，当前阳性样本中H1N1占56.2%、H3N2占15.5%、Victoria系占28.3%，5—14岁儿童为阳性率最高年龄组。今年针对农村“一老一小”、职工医保参保人及近亲属、新就业形态劳动者等，出台了流感疫苗免费或支持性政策。",
+   "heat": {
+    "stage": "缓慢起量",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "国家疾控局：近期三种毒株同时活跃，流感活动呈波动上升趋势！感染后，仍可能再次中招",
+     "url": "https://m.gmw.cn/2026-11/24/content_1304588921.htm",
+     "publisher": "光明网",
+     "date": "2026-11-24",
+     "relation": "官方"
+    },
+    {
+     "title": "科学与健康|流感季来临 疾控专家支招科学应对",
+     "url": "https://www.163.com/dy/article/LCH9I5TN05346RC6.html",
+     "publisher": "新华社（网易转载）",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "国家疾控局：流感已进入流行季 及时接种流感疫苗",
+     "url": "https://www.ce.cn/xwzx/kj/202611/t20261124_3304538.shtml",
+     "publisher": "新华社（中国经济网转载）",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "国家疾控局：流感已进入流行季 及时接种流感疫苗",
+     "url": "https://news.qq.com/rain/a/20261124A0CE8W00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "流感进入流行季：这四类人有免费或支持性接种政策，接种前先看这几条",
+   "angle": "把发布会信息整理成家庭可执行清单，重点讲谁被政策覆盖、去哪打、出现症状怎么办。",
+   "outline": [
+    "发布会口径：流感已进入流行季，蚊媒与诺如风险同时提示",
+    "政策覆盖：农村“一老一小”、职工医保参保人及近亲属、新就业形态劳动者",
+    "便民措施：周末接种、专场接种，以当地通知为准",
+    "日常防护：通风、洗手、保暖，重点人群监测健康状况",
+    "就医提示：发热咽痛咳嗽请及时就医，切勿自行盲目用药"
+   ],
+   "audience": "家庭照护者、老人与儿童家长、新就业形态劳动者",
+   "risk": "健康内容必须标注来源与“以当地政策/医生建议为准”，不得写成诊疗建议或承诺疫苗效果。",
+   "basis": "11月24日国家疾控局发布会，新华社与中国经济网通稿。",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-25-e1-e2da06.json",
+   "auditScore": 87.4
+  },
+  {
+   "slug": "439-ai",
+   "sourceItemId": "103d5478657e1b4c",
+   "sourceTitle": "CrowdStrike 以约439亿美元全股票收购 Zscaler，把零信任网络纳入 Falcon 平台",
+   "sourceUrl": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/",
+   "sourcePlatform": "CrowdStrike 官方公告",
+   "publishedAt": "2026-11-23T00:00:00-06:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "价格、换股比例、时间表均为官方披露；合并后市场与协同效应为公司预测，非既成事实",
+   "summary": "CrowdStrike 与 Zscaler 于 11 月 23 日发布官方公告，双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，企业价值约 439 亿美元；每股 Zscaler 股票换 1.135 股 CrowdStrike 股票，按 11 月 20 日收盘价折算约 260.41 美元、溢价约 34%。双方称合并后将把端点保护与零信任访问打通，面向 AI 智能体的连接做“最后一公里”防护，合并公司起步 ARR 预计超过 100 亿美元。交易需 Zscaler 股东与监管批准，预计在 CrowdStrike 2028 财年下半年完成，交割前两家公司独立运营。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "CrowdStrike to acquire Zscaler for $44 billion",
+     "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+     "publisher": "TechCrunch",
+     "date": "2026-11-23",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "439亿美元买下“零信任”：网络安全巨头把 AI 智能体当作下一个客户入口",
+   "angle": "从一笔并购看懂：当智能体开始访问企业系统，安全采购的单位从“人”变成“人+代理”。",
+   "outline": [
+    "交易条款与官方口径",
+    "端点保护与零信任各自解决什么",
+    "智能体访问为什么需要新控制点",
+    "国内企业可借鉴的权限与审计思路",
+    "仍待验证的整合与监管风险"
+   ],
+   "audience": "企业安全、IT 采购与科技行业读者",
+   "risk": "不得写成投资建议；协同效应属公司预测，需标明",
+   "basis": "官方公告披露的439亿美元交易、8,000家客户与‘Zero Trust for AI Safety’表述",
+   "hasLead": true,
+   "score": 76,
+   "readyFile": "2026-11-25-439-ai.json",
+   "auditScore": 87.4
+  },
+  {
+   "slug": "ai-claude-ship",
+   "sourceItemId": "515884bc626f8880",
+   "sourceTitle": "Anthropic 推出 Claude Ship：智能体可审查、修复并按团队策略批准代码变更",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-23T00:00:00-05:00",
+   "region": "海外",
+   "type": "resource",
+   "verification": "已核实",
+   "verificationNote": "效率数字来自 Anthropic 自述；ZDR/HIPAA 等限制条款以官方文档为准",
+   "summary": "Anthropic 于 11 月 23 日推出 Claude Ship，面向 Claude Team 与 Enterprise 的 GitHub 仓库。Code Review 已正式可用，新增的 PR Steward 与 Claude Approvals 处于 beta：前者处理 CI 失败、合并冲突与评审反馈并说明每次改动及回滚方式，后者依据团队写入仓库的自然语言策略，对例行变更自动给出批准，复杂变更仍可升级给人工。The Verge 与 TechCrunch 均报道，Anthropic 建议先在观察模式运行审批功能；公司称其 Claude Code 团队 6 至 9 月合并 PR 数量翻倍以上、回滚比例下降逾40%，该数据为公司自述。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+     "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+     "publisher": "TechCrunch",
+     "date": "2026-11-23",
+     "relation": "二手"
+    },
+    {
+     "title": "Claude Ship",
+     "url": "https://news.ycombinator.com/item?id=50618513",
+     "publisher": "Hacker News",
+     "date": "2026-11-23",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "当 AI 开始替你签字：Claude Ship 把代码审批权交给了智能体",
+   "angle": "从“写代码”到“批准上线”，解释工程流程里最后一道人工闸门正在变化。",
+   "outline": [
+    "Claude Ship 的三个组件",
+    "审批策略如何写在仓库里",
+    "为什么观察模式很重要",
+    "效率数据与公司自述边界",
+    "团队落地前该准备的审计与回滚"
+   ],
+   "audience": "研发负责人、工程师与技术管理者",
+   "risk": "注明 beta 与适用范围，不鼓吹无人化发布",
+   "basis": "The Verge 与 TechCrunch 对 PR Steward、Claude Approvals 及 beta 状态的报道",
+   "hasLead": true,
+   "score": 76,
+   "readyFile": "2026-11-25-ai-claude-ship.json",
+   "auditScore": 87.6
+  },
+  {
+   "slug": "e4-4b02be",
+   "sourceItemId": "4b02beb2d32db1a5",
+   "sourceTitle": "深圳致市民感谢信：“感谢你们全妆出街，盛情礼迎八方”刷屏",
+   "sourceUrl": "https://news.qq.com/rain/a/20261124A05J0200",
+   "sourcePlatform": "腾讯新闻",
+   "publishedAt": "2026-11-24T14:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "感谢信为官方表述，其中“每三辆车一辆停驶”等为信中自述数据，未见独立统计来源。",
+   "summary": "11月24日，“深圳发布”微信公众号发布《你们是城市的荣光——致广大市民朋友的感谢信》，感谢市民在APEC第三十三次领导人非正式会议承办期间的支持。信中写道“感谢你们全妆出街，盛情礼迎八方”，并提到每三辆粤B车就有一辆主动停驶、1360名会议志愿者和数以万计城市志愿者参与服务等内容，相关表述在社交平台引发广泛讨论。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "37万（微博热搜快照值，非本页数据）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "热榜11月24日虚惊一场，老黄回来AI圈稳了",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzA3MTU5NzM4MQ==&mid=2648439842&idx=1&sn=07854ae340f62323fe26ff0396160e90",
+     "publisher": "微信公众号",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "“感谢你们全妆出街”：深圳这封感谢信，为什么让人愿意读完",
+   "angle": "从一句口语化表达切入，分析大型活动之后城市如何把宏大叙事落回普通人的具体付出。",
+   "outline": [
+    "事件：11月24日深圳发布致市民感谢信",
+    "被记住的细节：全妆出街、绿色出行、岗位坚守、志愿服务",
+    "治理视角：柔性施策与市民配合如何形成双向沟通",
+    "传播视角：官方文本为何需要具体生活细节",
+    "边界：不扩大解读外交议题，只谈城市沟通方式"
+   ],
+   "audience": "城市观察者、本地生活读者、政务传播从业者",
+   "risk": "仅讨论城市传播与治理细节，不评论外交议题；信中自述数据需标注来源。",
+   "basis": "腾讯新闻转载的深圳市委市政府感谢信全文。",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-25-e4-4b02be.json",
+   "auditScore": 89.8
+  },
+  {
+   "slug": "shenzhou-24-launch",
+   "sourceItemId": "fabfc190082e9be4",
+   "sourceTitle": "神舟二十四号瞄准11月25日08时18分发射，乘组含首位外籍航天员",
+   "sourceUrl": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=5312856043623816131&channelId=1119",
+   "sourcePlatform": "央视新闻",
+   "publishedAt": "2026-11-24T09:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "乘组名单与发射窗口属于官方发布会口径；任务细节（如短期驻留时长）以官方后续通报为准。",
+   "summary": "11月24日上午，神舟二十四号载人飞行任务新闻发布会在酒泉举行，发言人张静波表示瞄准11月25日08时18分发射。乘组由汤洪波、武毅和巴基斯坦航天员穆罕默德·齐尚·阿里组成，汤洪波任指令长，三人分别为航天驾驶员、航天飞行工程师与载荷专家。汤洪波曾执行神舟十二号、十七号任务，将成首位三次到访“天宫”者；武毅首飞；阿里是首位到访中国空间站的外籍航天员。按其短期驻留后返回的安排，朱杨柱将成为我国首位在轨驻留一年的航天员。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "神舟二十四航天员乘组确定 “天宫”将迎来首位外籍航天员",
+     "url": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119",
+     "publisher": "央视新闻",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "神舟二十四号乘组阵容公布：汤洪波、武毅和巴基斯坦航天员穆罕默德·齐尚·阿里",
+     "url": "https://www.chinanews.com/gn/2026/11-24/10736761.shtml",
+     "publisher": "中国新闻网",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "神二十四乘组名单、发射窗口公布",
+     "url": "https://news.qq.com/rain/a/20261124A03WND00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "神舟二十四号明早8时18分发射，乘组里有一位巴基斯坦航天员",
+   "angle": "以“明早几点发、谁上去、这次和以往有什么不一样”三问切入，把首发信息做成可收藏的实用贴，而不是通稿复述。",
+   "outline": [
+    "发射窗口：11月25日08时18分，酒泉，长二F遥二十四火箭",
+    "乘组分工：汤洪波（指令长，三访天宫）、武毅（首飞）、穆罕默德·齐尚·阿里（首位外籍航天员）",
+    "两个“第一次”：中国载人航天首个含外籍航天员的乘组；朱杨柱将成首位在轨驻留一年的中国航天员",
+    "看点清单：交会对接、六人同时在轨、外籍航天员短期驻留后如何返回"
+   ],
+   "audience": "泛大众、家长与学生、航天爱好者",
+   "risk": "不得推测未公布的舱外活动、实验项目；任务时序以官方直播为准。",
+   "basis": "央视新闻11月24日发布会稿：瞄准25日08时18分发射，乘组为汤洪波、武毅、穆罕默德·齐尚·阿里；央视另一稿确认朱杨柱留轨一年。",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-25-shenzhou-24-launch.json",
+   "auditScore": 89.8
+  },
+  {
+   "slug": "300-ai",
+   "sourceItemId": "4bcddec42924e53f",
+   "sourceTitle": "客服智能体公司 Sierra 完成17.5亿美元F轮融资，估值半年翻倍至300亿美元",
+   "sourceUrl": "https://sierra.ai/blog/series-f-30b",
+   "sourcePlatform": "Sierra 官方博客",
+   "publishedAt": "2026-11-23T00:00:00-07:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "融资额与估值来自公司官方发布；ARR、客户覆盖率为公司自述，未经审计",
+   "summary": "Sierra 于 11 月 23 日发布官方博客宣布完成 17.5 亿美元 F 轮融资，估值 300 亿美元，由 Greenoaks 与 Lightspeed 领投，Benchmark、Sequoia、GV、Tiger Global 等原有领投方继续跟投。公司称成立两年多 ARR 已超过 4 亿美元，采用按“解决的问题”计费而非按席位或 token 计费的模式，客户包括 BNY、JPMorganChase、Wells Fargo、HSBC、Singtel 等老牌企业。公司称资金将用于智能体平台与销售团队；TechCrunch 补充其称服务近一半《财富》50 强企业，上述经营数字均为公司自述。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+     "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
+     "publisher": "TechCrunch",
+     "date": "2026-11-23",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "半年估值翻倍到300亿美元：这家公司卖的不是 AI 客服，是“按结果付费”",
+   "angle": "拆解结果计费为什么可能成为企业智能体的定价范式，以及它难在哪里。",
+   "outline": [
+    "融资与估值事实",
+    "按结果计费怎么运作",
+    "老牌企业为何愿意买单",
+    "‘什么算解决’的谈判难点",
+    "对国内客服与SaaS团队的启示"
+   ],
+   "audience": "SaaS 创业者、企业服务与客服行业从业者",
+   "risk": "ARR 与客户数为公司自述，需标明；不含投资建议",
+   "basis": "Sierra 官方博客的17.5亿美元融资、超4亿美元ARR与按结果计费表述",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-25-300-ai.json",
+   "auditScore": 89.8
+  },
+  {
+   "slug": "mate-x8-12999-iphone",
+   "sourceItemId": "666e04cc89984bd1",
+   "sourceTitle": "华为Mate X8发布：12999元起，余承东称iPhone用户可考虑双持",
+   "sourceUrl": "https://m.thepaper.cn/newsDetail_forward_34548397",
+   "sourcePlatform": "澎湃新闻",
+   "publishedAt": "2026-11-24T16:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "价格档位、厚度、芯片型号、开售时间经上海证券报、南方+、新京报贝壳财经三篇现场稿交叉核对一致；“内存成本上涨2000元”为余承东发布会口述，无第三方成本核算佐证；鸿蒙设备1亿台为华为口径。",
+   "summary": "11月24日，华为在上海发布新一代大折叠Mate X8，全系搭载麒麟9050Pro与鸿蒙新版本，整机性能较上代提升31%；6.54英寸外屏、8.2英寸内屏，展开态厚4.2毫米、折叠态8.95毫米，为华为史上最薄大折叠。12GB+256GB售价12999元，16GB+2TB典藏版20999元，11月24日18:08预售、12月4日开售。余承东称单机内存成本上涨约2000元但未涨价，并称iPhone用户可考虑与Mate X8双持使用。同场宣布鸿蒙5/6/7手机、平板、电脑设备数突破1亿台，华为折叠屏国内份额70%、大折叠全球发货超1200万台。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "7178.7万（今日头条热榜快照值，非本页数据）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "华为新一代大折叠Mate X8正式发布 售价12999元起",
+     "url": "https://www.cnstock.com/commonDetail/832841",
+     "publisher": "上海证券报·中国证券网",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "华为发布大折叠Mate X8，余承东：没涨价，非常有诚意",
+     "url": "https://www.nfnews.com/content/16VLnpk1yr.html",
+     "publisher": "南方+",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "华为史上最薄大折叠发布，Mate X8起售价12999元",
+     "url": "https://news.qq.com/rain/a/20261124A0CCFU00",
+     "publisher": "新京报贝壳财经（腾讯新闻）",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "华为Mate X8刷屏热搜榜！起售价没涨：网友直呼香爆了",
+     "url": "https://news.qq.com/rain/a/20261124A0C1NR00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "华为Mate X8售价12999元起，余承东：iPhone用户可以考虑双持",
+   "angle": "把“价格没涨”作为主线，讲清配置变化、典藏版涨价和跨系统互联三个读者最关心的问题。",
+   "outline": [
+    "价格：12999元起，典藏版15999元起、顶配20999元",
+    "配置：麒麟9050 Pro、展开态约4.2毫米、四卡三待",
+    "生态：HarmonyOS 5/6/7设备数破1亿，应用与服务超46万",
+    "余承东对iPhone用户的“双持”建议及其跨系统互联依据",
+    "购买提示：以官方渠道与实机体验为准"
+   ],
+   "audience": "数码消费者、华为与苹果用户、行业观察者",
+   "risk": "不构成购买建议；参数与价格以华为官方页面为准，典藏版口径需再核。",
+   "basis": "澎湃新闻发布会稿与腾讯新闻报道：起售价12999元、余承东双持表述、鸿蒙设备数破亿。",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-25-mate-x8-12999-iphone.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "22-53",
+   "sourceItemId": "33fccf51f2b21179",
+   "sourceTitle": "跨年度“三连超级月亮”首轮登场，11月24日22时53分最圆",
+   "sourceUrl": "https://new.qq.com/rain/a/20261124A0A31J00",
+   "sourcePlatform": "腾讯新闻",
+   "publishedAt": "2026-11-24T15:00:00+08:00",
+   "region": "国内",
+   "type": "resource",
+   "verification": "已核实",
+   "verificationNote": "各地可见程度受天气影响；拍摄参数为媒体建议，非硬性标准。",
+   "summary": "11月24日晚超级月亮现身夜空，最圆时刻为22时53分。中国天文学会会员修立鹏介绍，2026年全年共有3次超级月亮，分别在1月3日、11月24日、12月24日，与2027年1月的满月构成跨年度“三连超级月亮”。本次月亮运行至金牛座遮掩昴星团，上演“月掩昴星团”；满月光亮较强，肉眼只能看到朦胧亮斑，借助小型天文望远镜观察更佳。多篇报道还给出赏月地图与手机拍摄建议。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "646.7万（百度热搜快照值，非本页数据）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "“三连超级月亮”要来了！",
+     "url": "https://news.qq.com/rain/a/20261124A0BAW100",
+     "publisher": "新华社（腾讯新闻转载）",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "今晚能看到XXL月亮",
+     "url": "https://cj.sina.com.cn/articles/view/1652484947/m627eeb5303302319e",
+     "publisher": "新浪财经（央视频/人民日报素材）",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "今晚22时53分最圆：三连超级月亮首场来了，附赏月地图和拍摄要点",
+   "angle": "做成当晚可用的一页式指南：几点看、哪里看、怎么拍、彩蛋是什么。",
+   "outline": [
+    "时间：11月24日22时53分最圆，日落后即可观赏",
+    "成因：近地点满月视直径比远地点大约14%",
+    "彩蛋：月掩昴星团，肉眼为朦胧亮斑，望远镜更佳",
+    "地点：按报道给出的全国赏月地图判断当地天气",
+    "拍摄：中长焦、蓝调时刻、地标同框与水面的倒影"
+   ],
+   "audience": "泛大众、摄影爱好者、亲子家庭",
+   "risk": "观测与拍摄效果受天气影响；不编造未报道的天象参数。",
+   "basis": "新华社科普稿与腾讯网赏月指南：最圆时刻、三连超级月亮、月掩昴星团与拍摄建议。",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-25-22-53.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "7",
+   "sourceItemId": "696f03067ab52aac",
+   "sourceTitle": "编造“免费采摘甘蔗”谣言被行拘7日，公安部网安局公布网络普法案例",
+   "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_34540968",
+   "sourcePlatform": "澎湃新闻",
+   "publishedAt": "2026-11-23T18:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "种植户损失金额未见权威口径，不要采用网传数字；不等同于“AI造谣”全部案例，本条为虚构信息引流。",
+   "summary": "福建莆田仙游县一自媒体账号发布信息，谎称鲤南镇象林村有片甘蔗田可以免费采摘，导致大量被误导的网民前往采摘，给种植户造成经济损失。经查发布人邱某娟为博取关注、吸粉引流虚构信息，属地公安机关依法对其处以行政拘留7日。该案例由公安部网安局发布，11月24日经中国互联网联合辟谣平台、澎湃新闻等多渠道传播；同批辟谣还纠正了“大模型经过中医类别医师资格考试试题测试”的不实说法。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "686万（百度热搜快照值，非本页数据）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "【网络普法】编造发布“免费采摘甘蔗”谣言，邱某娟被行拘",
+     "url": "https://finance.sina.com.cn/wm/2026-11-24/doc-inizuxvk7847706.shtml",
+     "publisher": "公安部网安局（新浪财经转载）",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "辟谣｜“大模型经过中医类别医师资格考试试题测试”不实",
+     "url": "https://www.zjjubao.com/a/html/80114927",
+     "publisher": "浙江省互联网违法和不良信息举报中心",
+     "date": "2026-11-24",
+     "relation": "官方"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "一句“免费摘甘蔗”让农户田里四天被摘光，发布者被行拘7日",
+   "angle": "从农户损失和处罚依据两个角度写清“玩梗转发”的法律代价。",
+   "outline": [
+    "事件：仙游县自媒体谎称甘蔗田免费采摘，网民前往造成损失",
+    "处罚：发布人被行政拘留7日，来源公安部网安局",
+    "法条：治安管理处罚法中散布谣言、扰乱公共秩序的处罚",
+    "辨识：遇到“免费领/免费摘”信息如何三步核实",
+    "边界：不写未经证实的损失金额，不扩散谣言原文"
+   ],
+   "audience": "泛大众、内容创作者与社群运营者",
+   "risk": "不得复述谣言原文引导转发；损失金额未见权威口径，不写具体数字。",
+   "basis": "公安部网安局案例经澎湃新闻、新浪财经转载；浙江省举报中心同批辟谣。",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-25-7.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "ai",
+   "sourceItemId": "7ee1fb27fc7a83f6",
+   "sourceTitle": "沃尔玛 Agent Gateway 上线：Meta Muse 可在对话中代用户挑选并结算黑五商品",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-23T00:00:00-05:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "上线日期在报道内两次更新；MCP 技术细节与更多助手接入计划来自沃尔玛自述",
+   "summary": "The Verge 报道，沃尔玛 11 月 23 日上线上月公布的 Agent Gateway 实际版本，首批接入 Meta 的 AI 助手 Muse。用户可在对话中让 Muse 找黑五优惠、浏览商品并加入购物车；首次加购时在沃尔玛账户内建立 Agent Profile，设置消费上限，之后用账户内已存卡片在对话中完成结算，价格与 Walmart.com 一致，退换货政策同样适用。沃尔玛称对 Muse 的支持只是开始，更多 AI 助手与购物体验将陆续接入；文中注明上线时间曾一度推迟 24 小时，随后又确认当天推出。亚马逊与 eBay 此前阻止 AI 助手浏览其平台。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Meta Muse Can Shop Walmart for Black Friday, Live Nov 24",
+     "url": "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
+     "publisher": "himiao.ai",
+     "date": "2026-11-23",
+     "relation": "二手"
+    },
+    {
+     "title": "Walmart Agent Gateway 官方说明（经二手报道转述）",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+     "publisher": "The Verge",
+     "date": "2026-11-23",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "老外双十一新玩法：AI 助手直接帮你逛沃尔玛并付款，还能设消费上限",
+   "angle": "把黑五代购物流程讲给国内读者，对比国内电商的 AI 助手现状。",
+   "outline": [
+    "沃尔玛开放了什么",
+    "Muse 代购物的三步流程",
+    "Agent Profile 与消费上限怎么管",
+    "为什么有的平台拒绝 AI 助手",
+    "国内用户会接受吗"
+   ],
+   "audience": "关注电商与 AI 应用的普通读者",
+   "risk": "不夸大覆盖范围；上线时间曾有反复需如实说明",
+   "basis": "The Verge 报道的 Agent Profile、消费上限、对话内结算与平台对比",
+   "hasLead": true,
+   "score": 67,
+   "readyFile": "2026-11-25-ai.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "u17-2-0-2-2-11-26",
+   "sourceItemId": "3ba6900a82be7457",
+   "sourceTitle": "U17世界杯中国队2:2战平摩洛哥，赵松源双响后补时被绝平",
+   "sourceUrl": "https://s.weibo.com/weibo?q=U17%E5%9B%BD%E8%B6%B3%E6%88%98%E6%91%A9%E6%B4%9B%E5%93%A5",
+   "sourcePlatform": "微博",
+   "publishedAt": "2026-11-24T08:00:00+08:00",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "微博链接为话题聚合页，榜单快照、未取得原链接；进球分钟与积分以赛事官方数据为准。",
+   "summary": "北京时间11月24日凌晨，U17男足世界杯小组赛H组第二轮，中国队由赵松源在第2分钟和第57分钟破门，一度2:0领先摩洛哥队；第64分钟对手罚进点球，伤停补时第9分钟再入一球，最终2:2战平。两轮过后中国队1平1负积1分列小组第三，11月26日将对阵斐济队。该话题当日登上微博热搜与百度热搜，赵松源就读清华附中的信息也被大量转发。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "21万（微博热搜快照值，非本页数据）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "网络热点速览·2026年11月24日",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492067&idx=1&sn=a5611f4fb5ccf245f6a0bc4d188bd158",
+     "publisher": "微信公众号",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "全网热搜速览7平台70条·11月24日20点",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzkwNTIyNDI3Mw==&mid=2247483905&idx=1&sn=df66bff2690b8cb8d8dbc7df475d235c",
+     "publisher": "微信公众号",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "U17国足2:0领先被2:2绝平，赵松源独中两元，下一场11月26日战斐济",
+   "angle": "按“领先—被追平—积分形势—下一场”顺序还原，避免情绪化归因。",
+   "outline": [
+    "比赛进程：第2、57分钟赵松源破门，第64分钟对手点球，补时第9分钟被绝平",
+    "积分形势：两轮1平1负积1分列小组第三",
+    "下一场：11月26日对阵斐济队",
+    "观察点：青训球员个人能力与比赛末段体能分配"
+   ],
+   "audience": "球迷、家长与青少年足球关注者",
+   "risk": "比分与进球时间以赛事官方数据为准；“时隔21年获积分”等说法未见官方依据，先不用。",
+   "basis": "微博话题页与11月24日两份热榜快照对比赛进程、积分与下一场对手的记述。",
+   "hasLead": true,
+   "score": 67,
+   "readyFile": "2026-11-25-u17-2-0-2-2-11-26.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "e12-45a138",
+   "sourceItemId": "45a138a55b4a21d2",
+   "sourceTitle": "中英教育部长磋商会时隔九年重启，签署覆盖数字与AI教育等九大领域框架协议",
+   "sourceUrl": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119",
+   "sourcePlatform": "央视新闻",
+   "publishedAt": "2026-11-24T18:28:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "协议文本未公开，签署层级、有效期、是否涉及学历互认与签证便利等关键条款均未见披露。",
+   "summary": "11月24日，中英教育部长磋商会时隔九年再次举办，两国教育部部长签署《关于加强教育领域合作的框架协议》。据央视新闻报道，这是中英教育领域新的全方位合作协议，涵盖学前教育、基础教育与教师培训、职业教育与培训、高等教育、跨境教育、终身学习、特殊教育、语言教学、数字与人工智能教育九大领域。协议全文与具体执行安排尚未公布。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "中英签署新的教育领域合作框架协议",
+     "url": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119",
+     "publisher": "央视新闻",
+     "date": "2026-11-24",
+     "relation": "一手"
+    },
+    {
+     "title": "中英签署新的教育领域合作框架协议，涵盖数字与人工智能教育等九大领域",
+     "url": "https://www.thepaper.cn/newsDetail_forward_34548139",
+     "publisher": "澎湃新闻",
+     "date": "2026-11-24",
+     "relation": "转载"
+    },
+    {
+     "title": "中英签署新的教育领域合作框架协议",
+     "url": "https://www.stcn.com/article/detail/4350913.html",
+     "publisher": "证券时报网",
+     "date": "2026-11-24",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "中英教育合作停了九年，这次重启签了九大领域",
+   "angle": "快讯式梳理，重点讲清楚“签了什么、没说什么”",
+   "outline": [
+    "时隔九年重启磋商会",
+    "九大领域逐条列出，突出数字与AI教育",
+    "没公开的部分：协议全文、有效期、学历互认安排",
+    "对留学生和职教群体的现实影响待观察"
+   ],
+   "audience": "关注教育与留学的泛资讯读者",
+   "risk": "不夸大协议效力，不使用“重大突破”等定性词",
+   "basis": "央视新闻11月24日报道",
+   "hasLead": true,
+   "score": 66,
+   "readyFile": "2026-11-25-e12-45a138.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "55",
+   "sourceItemId": "e18e4165bfa49ab8",
+   "sourceTitle": "广西藤县一公交司机突发身体不适，连撞2辆小车和1辆摩托车后死亡",
+   "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_34548355",
+   "sourcePlatform": "藤县公安局（经澎湃新闻刊发）",
+   "publishedAt": "2026-11-24T18:48:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "通报未披露司机既往病史、驾驶时长与车辆载客情况；事故原因以交警最终认定为准。",
+   "summary": "11月24日9时许，广西藤县藤州大桥路段，55岁驾驶人魏某某驾驶公交客车由藤州镇河东往河西方向行驶时突发身体不适，车辆先后与2辆小型汽车、1辆普通二轮摩托车发生碰撞，造成4车不同程度受损，无其他人员受伤；魏某某经抢救无效死亡。藤县公安局当日傍晚发布警情通报，初步检测已排除酒驾、毒驾嫌疑，事故调查和处置工作正在进行。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "广西藤县一公交车与2辆小汽车、1辆摩托车碰撞：公交司机突发身体不适引起，经抢救无效死亡",
+     "url": "https://www.thepaper.cn/newsDetail_forward_34548355",
+     "publisher": "澎湃新闻",
+     "date": "2026-11-24",
+     "relation": "官方"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "55岁公交司机突然失控：城市公交的“带病上岗”该怎么防",
+   "angle": "从个案转向行业机制：司机体检谁来做、多久一次、异常能否停班，排班强度与年龄结构",
+   "outline": [
+    "通报里的事实：时间、路段、4车受损、司机死亡、排除酒毒驾",
+    "为什么公交司机是“隐性高危职业”：长时间驾驶、久坐、心血管风险",
+    "体检与停班机制在现实中卡在哪：缺人、怕扣钱、怕被辞",
+    "可落地的三道防线：年度体检加心血管专项、班前健康问询、异常即停班的成本由谁承担"
+   ],
+   "audience": "城市通勤族、公交从业者、关注公共安全的中年读者",
+   "risk": "不猜测司机病史、不评价其驾驶操作，不对事故责任下结论",
+   "basis": "藤县公安局11月24日警情通报",
+   "hasLead": true,
+   "score": 58,
+   "readyFile": "2026-11-25-55.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "29-6-50-22",
+   "sourceItemId": "d65cd03e17201d61",
+   "sourceTitle": "上海29岁女教师值守晚自习猝死：每天6:50到校、22点离校，在校超15小时",
+   "sourceUrl": "https://news.qq.com/rain/a/20261124A098LK00",
+   "sourcePlatform": "潮新闻（经腾讯新闻转载）",
+   "publishedAt": "2026-11-24T15:00:00+08:00",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "死因系死亡医学证明“推断”，非尸检结论；工亡待遇与15万元补偿来自家属陈述及媒体报道，未见官方通报全文；学校尚未公开回应排班安排。",
+   "summary": "据九派新闻、大河报等报道，上海尚德实验学校29岁数学教师徐思凝（化名）今年5月11日晚在教室值守晚自习时突然倒地，21时35分宣告死亡，死亡医学证明推断死因为“猝死（心源性可能）”。她教两个班数学，兼任班主任、备课组长，还负责初高中衔接班出题与带班，每天6:50前到校、通常22时离校，在校时间超15小时。人社部门已认定工亡，家属获工亡待遇113万余元，校方另提15万元人道主义补偿未达成一致。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "潮评丨别把“超长待机”当成优秀教师标配",
+     "url": "https://news.qq.com/rain/a/20261124A098LK00",
+     "publisher": "潮新闻（腾讯新闻）",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "30岁女教师猝死 倒下时正在监考 距离生日还有13天",
+     "url": "https://www.163.com/dy/article/LCGJC7430514CFC7.html",
+     "publisher": "闪电新闻（网易号）",
+     "date": "2026-11-24",
+     "relation": "二手"
+    },
+    {
+     "title": "猝死女教师学校已成立23年 过度劳累引发悲剧",
+     "url": "https://news.china.com/socialgd/10000169/20261124/49901892_all.html",
+     "publisher": "中华网",
+     "date": "2026-11-24",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "29岁女教师在校猝死：每天6:50到校，22点才走",
+   "angle": "事实梳理+一句追问，控制在微头条体量",
+   "outline": [
+    "时间与死因表述（推断为心源性猝死）",
+    "在校超15小时的具体日程",
+    "工亡认定与赔偿进展",
+    "一句追问：为什么“好累”没人接住"
+   ],
+   "audience": "泛社会资讯读者",
+   "risk": "不透露化名以外的个人信息，不做医学因果判断",
+   "basis": "闪电新闻、九派新闻11月24日报道",
+   "hasLead": true,
+   "score": 58,
+   "readyFile": "2026-11-25-29-6-50-22.json",
+   "auditScore": 100
+  }
+ ],
+ "syncedAt": "2026-11-25T08:39:26+08:00"
+}

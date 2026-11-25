@@ -1,243 +1,372 @@
 {
- "updatedAt": "2026-11-24T01:52:31.963Z",
- "items": {
-  "ai-server-price": [
-   {
-    "src": "assets/images/ais-a-1.jpeg",
-    "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
-    "bytes": 4133576
-   },
-   {
-    "src": "assets/images/ais-a-2.jpeg",
-    "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
-    "bytes": 3571748
-   },
-   {
-    "src": "assets/images/ais-a-3.jpeg",
-    "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
-    "bytes": 3299014
-   },
-   {
-    "src": "assets/images/ais-b-1.jpeg",
-    "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
-    "bytes": 3882636
-   },
-   {
-    "src": "assets/images/ais-b-2.jpeg",
-    "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
-    "bytes": 6067718
-   },
-   {
-    "src": "assets/images/ais-b-3.jpeg",
-    "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
-    "bytes": 4320914
-   }
-  ],
-  "margin-ratio": [
-   {
-    "src": "assets/images/mgn-a-2.jpeg",
-    "prompt": "纪实摄影：中国城市证券营业部大厅，墙上悬挂的大屏幕行情板发出红绿光，屏幕内容虚化不可辨，室内无人，冷调光线，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 4283202
-   },
-   {
-    "src": "assets/images/mgn-a-3.jpeg",
-    "prompt": "纪实摄影：中国城市证券营业部大厅，墙上悬挂的大屏幕行情板发出红绿光，屏幕内容虚化不可辨，室内无人，冷调光线，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 3843984
-   },
-   {
-    "src": "assets/images/mgn-b-1.jpeg",
-    "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 4356942
-   },
-   {
-    "src": "assets/images/mgn-b-2.jpeg",
-    "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 6211481
-   },
-   {
-    "src": "assets/images/mgn-b-3.jpeg",
-    "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 5216390
-   }
-  ],
-  "orchard-livestream": [
-   {
-    "src": "assets/images/orc-a-1.jpeg",
-    "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
-    "bytes": 5128708
-   },
-   {
-    "src": "assets/images/orc-a-2.jpeg",
-    "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
-    "bytes": 6803541
-   },
-   {
-    "src": "assets/images/orc-a-3.jpeg",
-    "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
-    "bytes": 6376989
-   },
-   {
-    "src": "assets/images/orc-b-1.jpeg",
-    "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
-    "bytes": 5939982
-   },
-   {
-    "src": "assets/images/orc-b-2.jpeg",
-    "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
-    "bytes": 5676093
-   },
-   {
-    "src": "assets/images/orc-b-3.jpeg",
-    "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
-    "bytes": 6838245
-   }
-  ],
-  "property-fee": [
-   {
-    "src": "assets/images/prf-a-1.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 7058106
-   },
-   {
-    "src": "assets/images/prf-a-2.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 3680181
-   },
-   {
-    "src": "assets/images/prf-a-3.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 3356257
-   },
-   {
-    "src": "assets/images/prf-b-1.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 3162029
-   },
-   {
-    "src": "assets/images/prf-b-2.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 5782228
-   },
-   {
-    "src": "assets/images/prf-b-3.jpeg",
-    "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
-    "bytes": 5468183
-   }
-  ],
-  "elderly-child-policy": [
-   {
-    "src": "assets/images/elderly-child-policy-db-1.jpeg",
-    "prompt": "纪实摄影：中国城市社区日间照料中心，几位老人在护理员陪同下做手工，房间明亮整洁，画面中没有任何文字、标牌与 logo，16:9 横构图",
-    "bytes": 3870422
-   },
-   {
-    "src": "assets/images/elderly-child-policy-db-2.jpeg",
-    "prompt": "",
-    "bytes": 3701225
-   },
-   {
-    "src": "assets/images/elderly-child-policy-db-3.jpeg",
-    "prompt": "",
-    "bytes": 3222972
-   }
-  ],
-  "crowdstrike-zscaler": [
-   {
-    "src": "assets/images/crowdstrike-zscaler-db-1.jpeg",
-    "prompt": "摄影：企业并购签约场景俯拍，长桌上摆着签字笔与文件，两侧座椅空着，会议厅落地窗透进冷光，画面中没有任何可辨认的文字、品牌标识与 logo，16:9 横构图",
-    "bytes": 2787052
-   },
-   {
-    "src": "assets/images/crowdstrike-zscaler-db-2.jpeg",
-    "prompt": "",
-    "bytes": 3955438
-   }
-  ],
-  "pangdonglai-close": [
-   {
-    "src": "assets/images/pangdonglai-close-db-1.jpeg",
-    "prompt": "纪实摄影：商场扶梯上行的视角，两侧是服装店铺橱窗，顾客背影稀疏，暖白灯光，画面中没有任何文字、招牌字与 logo，16:9 横构图",
-    "bytes": 4044678
-   },
-   {
-    "src": "assets/images/pangdonglai-close-db-2.jpeg",
-    "prompt": "",
-    "bytes": 4421347
-   },
-   {
-    "src": "assets/images/pangdonglai-close-db-3.jpeg",
-    "prompt": "",
-    "bytes": 3732080
-   }
-  ],
-  "pc-price-rise": [
-   {
-    "src": "assets/images/pc-price-rise-db-1.jpeg",
-    "prompt": "产品静物摄影：电脑内存条与固态硬盘摆放在深色桌面上，金属散热马甲反光，浅景深，画面中没有任何文字、标签与 logo，16:9 横构图",
-    "bytes": 3111537
-   }
-  ],
-  "riemann-day3": [
-   {
-    "src": "assets/images/riemann-day3-db-1.jpeg",
-    "prompt": "摄影：深夜书桌上的数学手稿特写，纸页写满符号与推导，台灯侧照，旁边放着铅笔与凉掉的茶，画面中没有任何可辨认的文字与 logo，16:9 横构图",
-    "bytes": 2953343
-   },
-   {
-    "src": "assets/images/riemann-day3-db-2.jpeg",
-    "prompt": "",
-    "bytes": 4477374
-   },
-   {
-    "src": "assets/images/riemann-day3-db-3.jpeg",
-    "prompt": "",
-    "bytes": 3714042
-   }
-  ],
-  "shenzhou-24-crew": [
-   {
-    "src": "assets/images/shenzhou-24-crew-db-1.jpeg",
-    "prompt": "摄影：航天指挥大厅内景，成排的工位与大屏幕泛着蓝光，工作人员背影专注，画面中没有任何可辨认的文字、标语与 logo，16:9 横构图",
-    "bytes": 5543336
-   },
-   {
-    "src": "assets/images/shenzhou-24-crew-db-2.jpeg",
-    "prompt": "",
-    "bytes": 3372880
-   },
-   {
-    "src": "assets/images/shenzhou-24-crew-db-3.jpeg",
-    "prompt": "",
-    "bytes": 4120990
-   }
-  ],
-  "miit-app-popup": [
-   {
-    "src": "assets/images/miit-app-popup-db-1.jpeg",
-    "prompt": "纪实摄影：一只手握着智能手机，屏幕上同时浮起多个半透明的弹窗卡片，界面元素抽象模糊不可读，深色背景，画面中没有任何可辨认的文字与 logo，16:9 横构图",
-    "bytes": 2099410
-   }
-  ],
-  "treetree-chicken": [
-   {
-    "src": "assets/images/treetree-chicken-db-1.jpeg",
-    "prompt": "纪实摄影：夜晚街边小吃店门面，卷帘门半拉下，门口排着几把塑料凳，暖黄灯箱光晕，街道湿冷，画面中没有任何可辨认的文字、招牌字与 logo，16:9 横构图",
-    "bytes": 3566396
-   }
-  ],
-  "claude-bughunter": [
-   {
-    "src": "assets/images/claude-bughunter-db-1.jpeg",
-    "prompt": "摄影特写：深色终端窗口的抽象特写，密密麻麻的字符行快速滚动，屏幕发出冷蓝光，旁边放着一杯凉掉的咖啡，画面中没有任何可辨认的文字与 logo，16:9 横构图",
-    "bytes": 3034363
-   }
-  ],
-  "nv-npc": [
-   {
-    "src": "assets/images/nv-npc-db-1.jpeg",
-    "prompt": "摄影：剧场舞台侧幕的视角，一名演员的背影站在追光边缘，台下座椅区一片昏暗，红丝绒幕布，画面中没有任何文字与 logo，16:9 横构图",
-    "bytes": 2356156
-   }
-  ]
- }
+  "updatedAt": "2026-11-25T00:38:09.550Z",
+  "items": {
+    "ai-server-price": [
+      {
+        "src": "assets/images/ais-a-1.jpeg",
+        "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
+        "bytes": 4133576
+      },
+      {
+        "src": "assets/images/ais-a-2.jpeg",
+        "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
+        "bytes": 3571748
+      },
+      {
+        "src": "assets/images/ais-a-3.jpeg",
+        "prompt": "纪实摄影：深夜数据中心机房，成排黑色服务器机柜，指示灯密集闪烁，冷蓝色调，地面有反光，画面中没有任何文字与logo，16:9 横构图，深度报道配图",
+        "bytes": 3299014
+      },
+      {
+        "src": "assets/images/ais-b-1.jpeg",
+        "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
+        "bytes": 3882636
+      },
+      {
+        "src": "assets/images/ais-b-2.jpeg",
+        "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
+        "bytes": 6067718
+      },
+      {
+        "src": "assets/images/ais-b-3.jpeg",
+        "prompt": "微距摄影：服务器主板上密集的 GPU 加速卡与散热鳍片，金色触点反光，深色背景，冷白与蓝色光源，画面中没有任何文字与logo，16:9 横构图",
+        "bytes": 4320914
+      }
+    ],
+    "margin-ratio": [
+      {
+        "src": "assets/images/mgn-a-2.jpeg",
+        "prompt": "纪实摄影：中国城市证券营业部大厅，墙上悬挂的大屏幕行情板发出红绿光，屏幕内容虚化不可辨，室内无人，冷调光线，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 4283202
+      },
+      {
+        "src": "assets/images/mgn-a-3.jpeg",
+        "prompt": "纪实摄影：中国城市证券营业部大厅，墙上悬挂的大屏幕行情板发出红绿光，屏幕内容虚化不可辨，室内无人，冷调光线，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 3843984
+      },
+      {
+        "src": "assets/images/mgn-b-1.jpeg",
+        "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 4356942
+      },
+      {
+        "src": "assets/images/mgn-b-2.jpeg",
+        "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 6211481
+      },
+      {
+        "src": "assets/images/mgn-b-3.jpeg",
+        "prompt": "夜景摄影：城市金融区高层写字楼玻璃幕墙，映出对面交易屏幕的红绿反光，雨后湿润街道，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 5216390
+      }
+    ],
+    "orchard-livestream": [
+      {
+        "src": "assets/images/orc-a-1.jpeg",
+        "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
+        "bytes": 5128708
+      },
+      {
+        "src": "assets/images/orc-a-2.jpeg",
+        "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
+        "bytes": 6803541
+      },
+      {
+        "src": "assets/images/orc-a-3.jpeg",
+        "prompt": "纪实摄影：秋日苹果园，红苹果挂满枝头，清晨薄雾与侧逆光，果树成排，无人，自然色调，画面中没有任何文字，16:9 横构图",
+        "bytes": 6376989
+      },
+      {
+        "src": "assets/images/orc-b-1.jpeg",
+        "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
+        "bytes": 5939982
+      },
+      {
+        "src": "assets/images/orc-b-2.jpeg",
+        "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
+        "bytes": 5676093
+      },
+      {
+        "src": "assets/images/orc-b-3.jpeg",
+        "prompt": "纪实摄影：果园里的手机直播三脚架与补光灯，背景是挂满苹果的果树，设备空置无人，自然光，画面中没有任何文字，16:9 横构图",
+        "bytes": 6838245
+      }
+    ],
+    "property-fee": [
+      {
+        "src": "assets/images/prf-a-1.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 7058106
+      },
+      {
+        "src": "assets/images/prf-a-2.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 3680181
+      },
+      {
+        "src": "assets/images/prf-a-3.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区地下停车场入口，抬起的道闸与减速带，日光灯冷白照明，混凝土墙面，无车无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 3356257
+      },
+      {
+        "src": "assets/images/prf-b-1.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 3162029
+      },
+      {
+        "src": "assets/images/prf-b-2.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 5782228
+      },
+      {
+        "src": "assets/images/prf-b-3.jpeg",
+        "prompt": "纪实摄影：中国城市住宅小区内部道路与单元门口，绿化带、电动车棚，阴天柔和光线，无人，画面中没有任何可读文字，16:9 横构图",
+        "bytes": 5468183
+      }
+    ],
+    "elderly-child-policy": [
+      {
+        "src": "assets/images/elderly-child-policy-db-1.jpeg",
+        "prompt": "纪实摄影：中国城市社区日间照料中心，几位老人在护理员陪同下做手工，房间明亮整洁，画面中没有任何文字、标牌与 logo，16:9 横构图",
+        "bytes": 3870422
+      },
+      {
+        "src": "assets/images/elderly-child-policy-db-2.jpeg",
+        "prompt": "",
+        "bytes": 3701225
+      },
+      {
+        "src": "assets/images/elderly-child-policy-db-3.jpeg",
+        "prompt": "",
+        "bytes": 3222972
+      }
+    ],
+    "crowdstrike-zscaler": [
+      {
+        "src": "assets/images/crowdstrike-zscaler-db-1.jpeg",
+        "prompt": "摄影：企业并购签约场景俯拍，长桌上摆着签字笔与文件，两侧座椅空着，会议厅落地窗透进冷光，画面中没有任何可辨认的文字、品牌标识与 logo，16:9 横构图",
+        "bytes": 2787052
+      },
+      {
+        "src": "assets/images/crowdstrike-zscaler-db-2.jpeg",
+        "prompt": "",
+        "bytes": 3955438
+      }
+    ],
+    "pangdonglai-close": [
+      {
+        "src": "assets/images/pangdonglai-close-db-1.jpeg",
+        "prompt": "纪实摄影：商场扶梯上行的视角，两侧是服装店铺橱窗，顾客背影稀疏，暖白灯光，画面中没有任何文字、招牌字与 logo，16:9 横构图",
+        "bytes": 4044678
+      },
+      {
+        "src": "assets/images/pangdonglai-close-db-2.jpeg",
+        "prompt": "",
+        "bytes": 4421347
+      },
+      {
+        "src": "assets/images/pangdonglai-close-db-3.jpeg",
+        "prompt": "",
+        "bytes": 3732080
+      }
+    ],
+    "pc-price-rise": [
+      {
+        "src": "assets/images/pc-price-rise-db-1.jpeg",
+        "prompt": "产品静物摄影：电脑内存条与固态硬盘摆放在深色桌面上，金属散热马甲反光，浅景深，画面中没有任何文字、标签与 logo，16:9 横构图",
+        "bytes": 3111537
+      }
+    ],
+    "riemann-day3": [
+      {
+        "src": "assets/images/riemann-day3-db-1.jpeg",
+        "prompt": "摄影：深夜书桌上的数学手稿特写，纸页写满符号与推导，台灯侧照，旁边放着铅笔与凉掉的茶，画面中没有任何可辨认的文字与 logo，16:9 横构图",
+        "bytes": 2953343
+      },
+      {
+        "src": "assets/images/riemann-day3-db-2.jpeg",
+        "prompt": "",
+        "bytes": 4477374
+      },
+      {
+        "src": "assets/images/riemann-day3-db-3.jpeg",
+        "prompt": "",
+        "bytes": 3714042
+      }
+    ],
+    "shenzhou-24-crew": [
+      {
+        "src": "assets/images/shenzhou-24-crew-db-1.jpeg",
+        "prompt": "摄影：航天指挥大厅内景，成排的工位与大屏幕泛着蓝光，工作人员背影专注，画面中没有任何可辨认的文字、标语与 logo，16:9 横构图",
+        "bytes": 5543336
+      },
+      {
+        "src": "assets/images/shenzhou-24-crew-db-2.jpeg",
+        "prompt": "",
+        "bytes": 3372880
+      },
+      {
+        "src": "assets/images/shenzhou-24-crew-db-3.jpeg",
+        "prompt": "",
+        "bytes": 4120990
+      }
+    ],
+    "miit-app-popup": [
+      {
+        "src": "assets/images/miit-app-popup-db-1.jpeg",
+        "prompt": "纪实摄影：一只手握着智能手机，屏幕上同时浮起多个半透明的弹窗卡片，界面元素抽象模糊不可读，深色背景，画面中没有任何可辨认的文字与 logo，16:9 横构图",
+        "bytes": 2099410
+      }
+    ],
+    "treetree-chicken": [
+      {
+        "src": "assets/images/treetree-chicken-db-1.jpeg",
+        "prompt": "纪实摄影：夜晚街边小吃店门面，卷帘门半拉下，门口排着几把塑料凳，暖黄灯箱光晕，街道湿冷，画面中没有任何可辨认的文字、招牌字与 logo，16:9 横构图",
+        "bytes": 3566396
+      }
+    ],
+    "claude-bughunter": [
+      {
+        "src": "assets/images/claude-bughunter-db-1.jpeg",
+        "prompt": "摄影特写：深色终端窗口的抽象特写，密密麻麻的字符行快速滚动，屏幕发出冷蓝光，旁边放着一杯凉掉的咖啡，画面中没有任何可辨认的文字与 logo，16:9 横构图",
+        "bytes": 3034363
+      }
+    ],
+    "nv-npc": [
+      {
+        "src": "assets/images/nv-npc-db-1.jpeg",
+        "prompt": "摄影：剧场舞台侧幕的视角，一名演员的背影站在追光边缘，台下座椅区一片昏暗，红丝绒幕布，画面中没有任何文字与 logo，16:9 横构图",
+        "bytes": 2356156
+      }
+    ],
+    "439-ai": [
+      {
+        "src": "assets/images/439-ai-db-1.jpeg",
+        "prompt": "纪实摄影：现代化网络安全运营中心，深色屏幕上是抽象的蓝色数据流与节点连线，无人，冷色调，画面中没有任何文字、字母、数字、标牌与 logo，16:9 横构图",
+        "bytes": 3697359
+      },
+      {
+        "src": "assets/images/439-ai-db-2.jpeg",
+        "prompt": "纪实摄影：现代化网络安全运营中心，深色屏幕上是抽象的蓝色数据流与节点连线，无人，冷色调，画面中没有任何文字、字母、数字、标牌与 logo，16:9 横构图",
+        "bytes": 4307474
+      },
+      {
+        "src": "assets/images/439-ai-db-3.jpeg",
+        "prompt": "纪实摄影：现代化网络安全运营中心，深色屏幕上是抽象的蓝色数据流与节点连线，无人，冷色调，画面中没有任何文字、字母、数字、标牌与 logo，16:9 横构图",
+        "bytes": 4018515
+      },
+      {
+        "src": "assets/images/439-ai-db-4.jpeg",
+        "prompt": "纪实摄影：现代化网络安全运营中心，深色屏幕上是抽象的蓝色数据流与节点连线，无人，冷色调，画面中没有任何文字、字母、数字、标牌与 logo，16:9 横构图",
+        "bytes": 3559813
+      }
+    ],
+    "e1-e2da06": [
+      {
+        "src": "assets/images/e1-e2da06-db-1.jpeg",
+        "prompt": "纪实摄影：城市社区卫生服务中心接种门诊，护士为老人准备疫苗注射，候诊区有家长带着孩子，光线明亮柔和，画面中没有任何文字、标语、标牌与 logo，16:9 横构图",
+        "bytes": 3354635
+      },
+      {
+        "src": "assets/images/e1-e2da06-db-2.jpeg",
+        "prompt": "纪实摄影：城市社区卫生服务中心接种门诊，护士为老人准备疫苗注射，候诊区有家长带着孩子，光线明亮柔和，画面中没有任何文字、标语、标牌与 logo，16:9 横构图",
+        "bytes": 4201429
+      },
+      {
+        "src": "assets/images/e1-e2da06-db-3.jpeg",
+        "prompt": "纪实摄影：城市社区卫生服务中心接种门诊，护士为老人准备疫苗注射，候诊区有家长带着孩子，光线明亮柔和，画面中没有任何文字、标语、标牌与 logo，16:9 横构图",
+        "bytes": 3691956
+      },
+      {
+        "src": "assets/images/e1-e2da06-db-4.jpeg",
+        "prompt": "纪实摄影：城市社区卫生服务中心接种门诊，护士为老人准备疫苗注射，候诊区有家长带着孩子，光线明亮柔和，画面中没有任何文字、标语、标牌与 logo，16:9 横构图",
+        "bytes": 2797271
+      }
+    ],
+    "e4-4b02be": [
+      {
+        "src": "assets/images/e4-4b02be-db-1.jpeg",
+        "prompt": "纪实摄影：南方滨海城市街头黄昏，整洁街道与地铁站口，行人衣着整洁有序通行，志愿者穿着亮色马甲在路口指引，城市灯光温暖，画面中没有任何文字、标语、招牌与 logo，16:9 横构图",
+        "bytes": 3177779
+      },
+      {
+        "src": "assets/images/e4-4b02be-db-2.jpeg",
+        "prompt": "纪实摄影：南方滨海城市街头黄昏，整洁街道与地铁站口，行人衣着整洁有序通行，志愿者穿着亮色马甲在路口指引，城市灯光温暖，画面中没有任何文字、标语、招牌与 logo，16:9 横构图",
+        "bytes": 3150941
+      },
+      {
+        "src": "assets/images/e4-4b02be-db-3.jpeg",
+        "prompt": "纪实摄影：南方滨海城市街头黄昏，整洁街道与地铁站口，行人衣着整洁有序通行，志愿者穿着亮色马甲在路口指引，城市灯光温暖，画面中没有任何文字、标语、招牌与 logo，16:9 横构图",
+        "bytes": 4212372
+      },
+      {
+        "src": "assets/images/e4-4b02be-db-4.jpeg",
+        "prompt": "纪实摄影：南方滨海城市街头黄昏，整洁街道与地铁站口，行人衣着整洁有序通行，志愿者穿着亮色马甲在路口指引，城市灯光温暖，画面中没有任何文字、标语、招牌与 logo，16:9 横构图",
+        "bytes": 4153721
+      }
+    ],
+    "ai-claude-ship": [
+      {
+        "src": "assets/images/ai-claude-ship-db-1.jpeg",
+        "prompt": "摄影：软件工程团队协作办公场景，桌面上有笔记本电脑与代码编辑器界面但屏幕内容完全模糊不可读，几位工程师在白板前讨论，白板全空白，冷色调，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
+        "bytes": 2868137
+      },
+      {
+        "src": "assets/images/ai-claude-ship-db-2.jpeg",
+        "prompt": "摄影：软件工程团队协作办公场景，桌面上有笔记本电脑与代码编辑器界面但屏幕内容完全模糊不可读，几位工程师在白板前讨论，白板全空白，冷色调，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
+        "bytes": 2974149
+      },
+      {
+        "src": "assets/images/ai-claude-ship-db-3.jpeg",
+        "prompt": "摄影：软件工程团队协作办公场景，桌面上有笔记本电脑与代码编辑器界面但屏幕内容完全模糊不可读，几位工程师在白板前讨论，白板全空白，冷色调，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
+        "bytes": 3269056
+      },
+      {
+        "src": "assets/images/ai-claude-ship-db-4.jpeg",
+        "prompt": "摄影：软件工程团队协作办公场景，桌面上有笔记本电脑与代码编辑器界面但屏幕内容完全模糊不可读，几位工程师在白板前讨论，白板全空白，冷色调，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
+        "bytes": 3790845
+      }
+    ],
+    "300-ai": [
+      {
+        "src": "assets/images/300-ai-db-1.jpeg",
+        "prompt": "纪实摄影：现代企业客服中心，座席人员戴着耳机面对电脑，背景是柔和虚化的办公区，画面安静专业，画面中没有任何文字、字幕、标牌与 logo，16:9 横构图",
+        "bytes": 2825354
+      },
+      {
+        "src": "assets/images/300-ai-db-2.jpeg",
+        "prompt": "纪实摄影：现代企业客服中心，座席人员戴着耳机面对电脑，背景是柔和虚化的办公区，画面安静专业，画面中没有任何文字、字幕、标牌与 logo，16:9 横构图",
+        "bytes": 2475188
+      },
+      {
+        "src": "assets/images/300-ai-db-3.jpeg",
+        "prompt": "纪实摄影：现代企业客服中心，座席人员戴着耳机面对电脑，背景是柔和虚化的办公区，画面安静专业，画面中没有任何文字、字幕、标牌与 logo，16:9 横构图",
+        "bytes": 2837126
+      }
+    ],
+    "shenzhou-24-launch": [
+      {
+        "src": "assets/images/shenzhou-24-launch-db-1.jpeg",
+        "prompt": "纪实摄影：黎明前的航天发射场，白色火箭矗立在发射塔架旁，塔架灯光明亮，天空深蓝，地面有水汽，没人，画面中没有任何文字、国旗、标识与 logo，16:9 横构图",
+        "bytes": 3153725
+      },
+      {
+        "src": "assets/images/shenzhou-24-launch-db-2.jpeg",
+        "prompt": "纪实摄影：黎明前的航天发射场，白色火箭矗立在发射塔架旁，塔架灯光明亮，天空深蓝，地面有水汽，没人，画面中没有任何文字、国旗、标识与 logo，16:9 横构图",
+        "bytes": 3338055
+      },
+      {
+        "src": "assets/images/shenzhou-24-launch-db-3.jpeg",
+        "prompt": "纪实摄影：黎明前的航天发射场，白色火箭矗立在发射塔架旁，塔架灯光明亮，天空深蓝，地面有水汽，没人，画面中没有任何文字、国旗、标识与 logo，16:9 横构图",
+        "bytes": 3362367
+      }
+    ],
+    "mate-x8-12999-iphone": [
+      {
+        "src": "assets/images/mate-x8-12999-iphone-db-1.jpeg",
+        "prompt": "产品摄影：一台无品牌的深色折叠屏手机半展开放在简洁桌面上，金属铰链与屏幕边缘特写，的背景虚化的城市夜景，冷调高端质感，画面中没有任何文字、数字、品牌标识与 logo，16:9 横构图",
+        "bytes": 2188948
+      }
+    ]
+  }
 }

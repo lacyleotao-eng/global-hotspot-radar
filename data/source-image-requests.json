@@ -1,47 +1,38 @@
 {
-  "builtAt": "2026-11-24T09:20:55+08:00",
+  "builtAt": "2026-11-25T04:48:05+08:00",
   "jobs": [
     {
-      "slug": "elderly-child-policy",
+      "slug": "e1-e2da06",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzkzMTY4MTgyMA==&mid=2247686659&idx=1&sn=d427c3bcf645f549f311f4046ee8493a&chksm=c3632f8b888f1950f14b98295db33e3e3bfa7edf64e6f98cedd4f979813f76adfd6f34f019c5#rd",
-        "https://finance.sina.com.cn/roll/2026-11-24/doc-inizuhxq2039976.shtml"
+        "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
+        "https://www.163.com/dy/article/LCH9I5TN05346RC6.html",
+        "https://news.qq.com/rain/a/20261124A0CE8W00"
       ]
     },
     {
-      "slug": "crowdstrike-zscaler",
+      "slug": "439-ai",
       "urls": [
-        "https://www.thepaper.cn/newsDetail_forward_34540984",
-        "https://news.qq.com/rain/a/20261123A0DY9Y00",
-        "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion"
+        "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
+        "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/"
       ]
     },
     {
-      "slug": "pangdonglai-close",
+      "slug": "ai-claude-ship",
       "urls": [
-        "https://post.smzdm.com/p/ae65w9qz/",
-        "https://www.topicbeat.com/news/article-1795450947029810233",
-        "http://hk.szhk.com/2026/11/24/31808467247209808.html"
+        "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+        "https://news.ycombinator.com/item?id=50618513",
+        "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
       ]
     },
     {
-      "slug": "pc-price-rise",
+      "slug": "e4-4b02be",
       "urls": [
-        "https://m.thepaper.cn/newsDetail_forward_34539526",
-        "https://diy.zol.com.cn/1276/12763571.html",
-        "https://post.smzdm.com/p/ad7zgddz"
+        "http://mp.weixin.qq.com/s?__biz=MzA3MTU5NzM4MQ==&mid=2648439842&idx=1&sn=07854ae340f62323fe26ff0396160e90",
+        "https://news.qq.com/rain/a/20261124A05J0200"
       ]
     },
     {
-      "slug": "riemann-day3",
-      "urls": [
-        "https://finance.sina.cn/2026-11-24/detail-inizutpn7831891.d.html",
-        "https://news.ifeng.com/c/8yIYRlUj3Yr",
-        "https://pc.bjd.com.cn/detail?id=s6b04d65fe4b039a8e2f3f8d0"
-      ]
-    },
-    {
-      "slug": "shenzhou-24-crew",
+      "slug": "shenzhou-24-launch",
       "urls": [
         "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119",
         "https://www.chinanews.com/gn/2026/11-24/10736761.shtml",
@@ -49,55 +40,69 @@
       ]
     },
     {
-      "slug": "treetree-chicken",
+      "slug": "300-ai",
       "urls": [
-        "https://dy.163.com/article/LCG3C5MU0556Q1AQ.html",
-        "https://www.163.com/dy/article/LCFC4S2O051492LM.html",
-        "https://news.hubeidaily.net/pc/c_6194155.html"
+        "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
+        "https://sierra.ai/blog/series-f-30b"
       ]
     },
     {
-      "slug": "shaoxing-paint",
+      "slug": "mate-x8-12999-iphone",
       "urls": [
-        "https://www.thepaper.cn/newsDetail_forward_34544166",
-        "https://news.qq.com/rain/a/20261123A0DMER00",
-        "https://www.sohu.com/a/1105512470_162758"
+        "https://m.thepaper.cn/newsDetail_forward_34548397",
+        "https://news.qq.com/rain/a/20261124A0CCFU00",
+        "https://news.qq.com/rain/a/20261124A0C1NR00"
       ]
     },
     {
-      "slug": "miit-app-popup",
+      "slug": "22-53",
       "urls": [
-        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=1721625810146432636&channelId=1119",
-        "https://news.qq.com/rain/a/20261124A02TJ900",
-        "https://www.toutiao.com/article/7711390526307222056"
+        "https://news.qq.com/rain/a/20261124A0BAW100",
+        "https://cj.sina.com.cn/articles/view/1652484947/m627eeb5303302319e",
+        "https://new.qq.com/rain/a/20261124A0A31J00"
       ]
     },
     {
-      "slug": "xnu-linux",
+      "slug": "7",
       "urls": [
-        "https://news.ycombinator.com/item?id=50607261",
-        "https://theterminal.space/software/xnu-linux-macos-kernel-inside-linux-kernel-1900-stars"
+        "https://www.thepaper.cn/newsDetail_forward_34540968",
+        "https://finance.sina.com.cn/wm/2026-11-24/doc-inizuxvk7847706.shtml",
+        "https://www.zjjubao.com/a/html/80114927"
       ]
     },
     {
-      "slug": "glm-5-4",
+      "slug": "ai",
       "urls": [
-        "https://news.qq.com/rain/a/20261124A03L2D00",
-        "https://www.163.com/dy/article/LCFAJ8E00552GIEM.html",
-        "https://www.itbear.com.cn/html/2026-11/1592735.html"
+        "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
+        "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
       ]
     },
     {
-      "slug": "james-jersey",
+      "slug": "u17-2-0-2-2-11-26",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzkwNzYwMDEwNw==&mid=2247489112&idx=1&sn=da1b0d975eca6b721c8f8368e15523a9&chksm=c13774de00d0a0131c3fa5e4844a2834a99aa16400e21d8b5b5767fc36304f2a8d77111d4ef6#rd",
-        "https://voice.hupu.com/bbs/641385384"
+        "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492067&idx=1&sn=a5611f4fb5ccf245f6a0bc4d188bd158"
       ]
     },
     {
-      "slug": "nv-npc",
+      "slug": "e12-45a138",
       "urls": [
-        "https://tophub.today/n/KqndgxeLl9"
+        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119",
+        "https://www.thepaper.cn/newsDetail_forward_34548139",
+        "https://www.stcn.com/article/detail/4350913.html"
+      ]
+    },
+    {
+      "slug": "55",
+      "urls": [
+        "https://www.thepaper.cn/newsDetail_forward_34548355"
+      ]
+    },
+    {
+      "slug": "29-6-50-22",
+      "urls": [
+        "https://news.qq.com/rain/a/20261124A098LK00",
+        "https://www.163.com/dy/article/LCGJC7430514CFC7.html",
+        "https://news.china.com/socialgd/10000169/20261124/49901892_all.html"
       ]
     }
   ]

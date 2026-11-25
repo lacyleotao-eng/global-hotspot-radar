@@ -1,0 +1,24 @@
+{
+  "slug": "u17-2-0-2-2-11-26",
+  "date": "2026-11-25",
+  "builtAt": "2026-11-25T04:54:12+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/u17-2-0-2-2-11-26/raw-1.jpeg",
+      "bytes": 41460,
+      "w": 900,
+      "h": 382,
+      "url": "https://mmbiz.qpic.cn/mmbiz_jpg/Mbia2x47rZMwKkS2XHeibuq05H81tOtzxX11sAOHnsqc9iaMqcas0pYc2Q7SiaP59xYYJPcA2WP3EnNlnbFyJNyYIylL0G3O05WGG4jtb7GibGTo/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492067&idx=1&sn=a5611f4fb5ccf245f6a0bc4d188bd158",
+      "alt": "",
+      "md5": "ad4fc01c29d32064417cff719676db72",
+      "status": "drop",
+      "reason": "人工淘汰：#1为'网络热点速览'栏目片头图，非比赛画面；原文图不可用，留给豆包补",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-25T04:55:38+08:00"
+}
