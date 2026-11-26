@@ -1,38 +1,38 @@
 {
-  "updatedAt": "2026-11-25T17:37:19+08:00",
+  "updatedAt": "2026-11-26T17:37:18+08:00",
   "rows": [
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "viralSample": 20,
-      "selfSample": 13,
+      "viralSample": 23,
+      "selfSample": 16,
       "viral": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "mine": {
-        "wordCount": 1540,
-        "images": 5,
-        "subheads": 6
+        "wordCount": 1573.5,
+        "images": 5.0,
+        "subheads": 5.0
       },
-      "verdict": "字数偏少",
+      "verdict": "字数明显不足",
       "advice": "同一事件做「第二落点」：隔三五天用新进展再写一次，比跟第一条更省力也更容易出彩"
     },
     {
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
       "viralSample": 7,
-      "selfSample": 13,
+      "selfSample": 16,
       "viral": {
         "wordCount": 400,
         "images": 9,
         "subheads": 0
       },
       "mine": {
-        "wordCount": 401,
-        "images": 6,
-        "subheads": 0
+        "wordCount": 401.5,
+        "images": 6.0,
+        "subheads": 0.0
       },
       "verdict": "字数达标",
       "advice": "贴图封面决定 90% 点击，先定封面再做内容，固定 2-3 类模板形成视觉记忆"
@@ -40,15 +40,15 @@
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "viralSample": 9,
-      "selfSample": 16,
+      "viralSample": 12,
+      "selfSample": 20,
       "viral": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "mine": {
-        "wordCount": 1189.5,
+        "wordCount": 1208.5,
         "images": 1.0,
         "subheads": 5.0
       },
@@ -58,15 +58,15 @@
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "viralSample": 6,
-      "selfSample": 16,
+      "viralSample": 8,
+      "selfSample": 20,
       "viral": {
         "wordCount": 419.5,
         "images": 1.0,
         "subheads": 0.0
       },
       "mine": {
-        "wordCount": 321.0,
+        "wordCount": 324.5,
         "images": 1.0,
         "subheads": 0.0
       },
