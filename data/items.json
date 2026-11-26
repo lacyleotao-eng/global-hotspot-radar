@@ -2,6 +2,812 @@
   "version": 2,
   "items": [
     {
+      "title": "Product Hunt 上新：Superframes 用“AI 导演”统一剪辑整条视频",
+      "summary": "Product Hunt 页面显示，AI 视频编辑工具 Superframes 于 11 月 25 日上线，产品自述为“给 AI 导演下指令，让它剪完整条视频”。该条目把剪辑流程包装为面向导演角色的自然语言任务，而非逐段手动操作。页面投票与评论数字不可见，产品效果为厂商自述，尚未经第三方验证。",
+      "type": "resource",
+      "subtype": "产品工具/AI 视频",
+      "region": "海外",
+      "platform": "Product Hunt",
+      "url": "https://www.producthunt.com/products/superframes-ai-video-editor",
+      "publishedAt": "2026-11-25T21:09:09-08:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Product Hunt 官方 Atom feed 可核对条目与时间；产品页对抓取返回 403，功能为厂商自述",
+        "verifiedAt": "2026-11-26T22:20:00+08:00",
+        "notes": "未验证成片质量与定价"
+      },
+      "citations": [],
+      "evaluation": {
+        "editor": "“AI 导演”是当下视频工具常见的叙事封装，真正的看点是能否把多段素材的叙事一致性交给模型。适合作为短视频创作者工具观察的样本。",
+        "community": "不可见",
+        "sentiment": "未知",
+        "source": "Product Hunt 产品自述"
+      },
+      "tags": [
+        "AI 视频",
+        "剪辑工具",
+        "Product Hunt",
+        "创作者工具"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "32a43b7e29183fd3"
+    },
+    {
+      "title": "Anthropic CEO Amodei 回应“把自由意志交给 AI”指控：这一说法荒谬",
+      "summary": "The Verge 11 月 25 日报道，Anthropic CEO Dario Amodei 在 X 发布约 1000 词长文，回应 Axios 所报道的同行暗示——即 Anthropic 主张人类应把自由意志交给 AI。他称这一表述“荒谬”，强调自己一直主张把治理权交给 AI 是坏主意；并把“整体让渡自由意志”与“在具体任务上更高自动化”区分开，举例包括自动驾驶、抗癌药设计与端到端编写软件。报道称他还批评部分竞争者的“人类控制权”表态与实际产品取向并无实质差异。",
+      "type": "discussion",
+      "subtype": "观点/AI 治理",
+      "region": "海外",
+      "platform": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai",
+      "publishedAt": "2026-11-25T20:49:14+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "The Verge 原文直接读取；原始 X 长文与 Axios 报道未取得可直达链接",
+        "verifiedAt": "2026-11-26T22:25:00+08:00",
+        "notes": "内容为媒体转述，未逐字核对 X 原帖"
+      },
+      "citations": [],
+      "evaluation": {
+        "editor": "这场争论的实质不是“要不要自动化”，而是边界画在哪里：递归自我改进与具体任务自动化被有意区分。同行之间的表态也带有竞争叙事成分，适合做成观点辨析稿。",
+        "community": "不可见",
+        "sentiment": "争议",
+        "source": "The Verge 对 X 长文的转述"
+      },
+      "tags": [
+        "Anthropic",
+        "Dario Amodei",
+        "AI 治理",
+        "自由意志",
+        "AI 安全"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "“把自由意志交给 AI”是误解，还是行业话术？",
+          "angle": "拆分“任务自动化”与“治理权让渡”两个概念，辨析 AI 公司公开表态与产品实际取向的差距",
+          "outline": [
+            "Amodei 回应了什么",
+            "同行担忧的来源",
+            "自动化与治理权如何区分",
+            "为什么递归自我改进是争议焦点",
+            "对国内 AI 产品叙事的启发"
+          ],
+          "audience": "AI 行业从业者与科技观点读者",
+          "timeliness": "本周",
+          "priority": "中",
+          "risk": "注明为媒体转述，避免写成 Anthropic 官方声明原文",
+          "basis": "The Verge 原文：Amodei 称让渡自由意志荒谬、区分具体任务自动化"
+        }
+      ],
+      "id": "2686c9a7c13dc8e2"
+    },
+    {
+      "title": "纽约州签署五年禁令：暂停制造、销售带 AI 聊天功能的儿童玩具",
+      "summary": "The Verge 11 月 25 日报道，纽约州州长 Kathy Hochul 签署法案，对制造、分发、销售带 AI 聊天功能的儿童玩具实施五年暂停，范围覆盖可联网对话的毛绒玩具、玩偶与机器人。报道指出，这距离该州上月限制聊天机器人与未成年人互动仅一个月。TechCrunch 与州长办公室公告提到，法律将在 90 天后生效，违规可处最高每日 1.5 万美元民事罚款；该罚则由官方公告与媒体转述提供。",
+      "type": "news",
+      "subtype": "社会/儿童安全/监管",
+      "region": "海外",
+      "platform": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1042261/new-york-bans-ai-chatbot-toys-for-kids",
+      "publishedAt": "2026-11-25T17:50:09+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "The Verge 原文直接读取；罚款与生效日期由州长办公室公告及 TechCrunch 转述补充",
+        "verifiedAt": "2026-11-26T22:25:00+08:00",
+        "notes": "五年暂停的法律文本细节未逐条核对，仅按公开报道口径"
+      },
+      "citations": [
+        {
+          "title": "Governor Hochul Signs Five-Year Ban on AI Chatbot Toys",
+          "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
+          "publisher": "New York Governor",
+          "date": "2026-11-25",
+          "relation": "官方"
+        },
+        {
+          "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+          "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+          "publisher": "TechCrunch",
+          "date": "2026-11-25",
+          "relation": "二手"
+        }
+      ],
+      "evaluation": {
+        "editor": "AI 陪伴类硬件最早落在儿童场景的监管冲突上：地方立法速度快于联邦规则，厂商将面对分州差异化合规。对国内语境，可讨论儿童 AI 玩具的边界与家长知情权。",
+        "community": "不可见",
+        "sentiment": "争议",
+        "source": "The Verge + 州长办公室公告"
+      },
+      "tags": [
+        "AI 玩具",
+        "儿童安全",
+        "纽约州",
+        "监管",
+        "AI 陪伴"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "纽约给 AI 儿童玩具按下五年暂停键：陪伴类硬件的边界在哪里",
+          "angle": "从儿童 AI 玩具的具体风险出发，讨论技术迭代与未成年人保护之间的制度空白",
+          "outline": [
+            "禁令覆盖哪些产品",
+            "五年暂停与 90 天生效意味着什么",
+            "此前各州对聊天机器人与未成年人的限制",
+            "厂商与家长分别要面对什么",
+            "可迁移到国内市场的合规议题"
+          ],
+          "audience": "家长、教育从业者、AI 硬件创业者",
+          "timeliness": "本周",
+          "priority": "高",
+          "risk": "不夸大禁令范围，不写成全美禁令",
+          "basis": "The Verge 原文：五年暂停、覆盖联网对话玩具；州长公告：90 天后生效与罚款"
+        },
+        {
+          "target": "今日头条",
+          "headline": "纽约州五年禁令落地：会聊天的 AI 玩具，90 天后不能卖了",
+          "angle": "以家长最关心的“我买的玩具会不会聊天”切入，讲清政策对象与时间点",
+          "outline": [
+            "哪些玩具被禁",
+            "生效时间与处罚",
+            "为何在圣诞购物季前出台",
+            "AI 玩具的争议焦点",
+            "国内消费者应如何看待"
+          ],
+          "audience": "泛大众与家长群体",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "罚款数字注明为公告口径",
+          "basis": "州长办公室公告与 TechCrunch 转述的罚款、生效时间"
+        }
+      ],
+      "id": "77184528b2a201a3"
+    },
+    {
+      "title": "FCC 批准 SpaceX 部署最多 100 万颗 AI 数据中心卫星（Starmind）",
+      "summary": "美国联邦通信委员会（FCC）11 月 25 日宣布，批准 SpaceX 部署最多 100 万颗搭载 AI 芯片的卫星，作为其 Starmind 计划的一部分。批复要求 2033 年前至少发射 1 颗、2040 年前达到 100 万颗；FCC 暂缓批准 SpaceX 关于 600 公里以上卫星进入“墓地轨道”的处置请求，称材料不足。SpaceX 称 Starmind 拟在太空采集太阳能为地面 AI 算力供电，通过 Starlink 激光链路回传数据，芯片将由 Terafab 工厂生产。Google 与 Blue Origin 也在推进类似项目。",
+      "type": "news",
+      "subtype": "科技/航天/算力基础设施",
+      "region": "海外",
+      "platform": "The Verge",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "publishedAt": "2026-11-25T17:44:51+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "The Verge 原文页面直接读取，发布时间与正文可见；FCC 决定为其转述",
+        "verifiedAt": "2026-11-26T22:25:00+08:00",
+        "notes": "批准数量为许可上限，不代表卫星已发射；审批条件与时间表来自媒体报道口径"
+      },
+      "citations": [
+        {
+          "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+          "publisher": "CNBC",
+          "date": "2026-11-25",
+          "relation": "二手"
+        }
+      ],
+      "evaluation": {
+        "editor": "审批通过不等于工程落地，100 万颗的时间表延伸到 2040 年；太空散热、轨道碎片与天文观测争议仍是后续变量。对国内读者可对比地面数据中心的占地与用电压力。",
+        "community": "不可见",
+        "sentiment": "中性",
+        "source": "The Verge 科技报道"
+      },
+      "tags": [
+        "SpaceX",
+        "FCC",
+        "AI 数据中心",
+        "卫星计算",
+        "算力"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "把数据中心搬上天：FCC 批了 100 万颗卫星，离真正运行还有多远",
+          "angle": "从审批条件、时间表与工程难题切入，讨论太空算力是否会成为地面 AI 基建的替代路线",
+          "outline": [
+            "FCC 批准了什么、附带哪些条件",
+            "Starmind 的技术设想：太阳能、激光链路、Terafab 芯片",
+            "2033/2040 时间表意味着什么",
+            "碎片、散热、天文观测的反对意见",
+            "对国内算力建设的启示"
+          ],
+          "audience": "科技与 AI 产业读者",
+          "timeliness": "本周",
+          "priority": "高",
+          "risk": "不要把许可上限写成已部署数量",
+          "basis": "The Verge 原文：FCC 授权最多 100 万颗、2033 年前至少 1 颗、2040 年前达标，SpaceX 称用太阳能与激光回传"
+        },
+        {
+          "target": "今日头条",
+          "headline": "SpaceX 获批部署百万颗 AI 卫星，2033 年前至少要发一颗",
+          "angle": "用清晰数字讲清批准范围与落地门槛，避免“太空数据中心已建成”的误读",
+          "outline": [
+            "FCC 批准的核心内容",
+            "关键时间节点",
+            "SpaceX 的方案与配套工厂",
+            "Google、Blue Origin 的同类计划",
+            "尚待解决的工程与监管问题"
+          ],
+          "audience": "泛科技读者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "无",
+          "basis": "同上：批复要求与竞争方项目均见原文"
+        }
+      ],
+      "id": "8df9ea610244c0fb"
+    },
+    {
+      "title": "42 位州总检察长反对 Character.AI 破产拍卖用户私密聊天记录",
+      "summary": "TechCrunch 11 月 25 日报道，42 位美国州及地区总检察长介入 Character.AI 破产程序，反对该公司出售用户敏感数据。各州公告称数据集包含超过 2100 万个美国账户的聊天记录，其中逾 210 万个属于未成年人，另含 IP 地址。Character.AI 十月申请破产保护，此前曾告知用户个人信息不会出售。目前披露的唯一买家 Smirks and Pangs Acquisition LLC 于 11 月 13 日在特拉华注册，14 日被选为 12 月 1 日拍卖的基础出价方，用途不明。检察长称买家无需遵守原隐私政策。",
+      "type": "news",
+      "subtype": "社会/数据隐私/法律",
+      "region": "海外",
+      "platform": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "publishedAt": "2026-11-25T17:35:00+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "TechCrunch 原文直接读取，且引用多州总检察长官方公告",
+        "verifiedAt": "2026-11-26T22:22:00+08:00",
+        "notes": "拍卖结果未定，买家意图不明"
+      },
+      "citations": [
+        {
+          "title": "Attorney General Bonta Opposes Asset Sale of Character.AI",
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+          "publisher": "California Attorney General",
+          "date": "2026-11-23",
+          "relation": "官方"
+        },
+        {
+          "title": "Minnesota AG press release on Character.AI",
+          "url": "https://www.ag.state.mn.us/Office/Communications/2026/11/23_CharacterAI.asp",
+          "publisher": "Minnesota Attorney General",
+          "date": "2026-11-23",
+          "relation": "官方"
+        }
+      ],
+      "evaluation": {
+        "editor": "这是 AI 公司破产时数据资产如何处置的标志性案例：隐私承诺能否随资产转移，是监管者与破产法院的核心分歧。可迁移到国内讨论用户数据能否被当作可拍卖资产。",
+        "community": "不可见",
+        "sentiment": "负面",
+        "source": "TechCrunch + 多州总检察长公告"
+      },
+      "tags": [
+        "Character.AI",
+        "数据隐私",
+        "破产",
+        "未成年人保护",
+        "监管"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "AI 公司破产后，你的聊天记录会被拍卖吗？",
+          "angle": "以数据资产处置为切口，讨论隐私承诺在破产程序中的效力与未成年人数据的特殊保护",
+          "outline": [
+            "42 位检察长反对什么",
+            "2100 万账户与 210 万未成年账户",
+            "买家身份与拍卖时间",
+            "隐私承诺能否随资产转移",
+            "国内用户数据权益的对照思考"
+          ],
+          "audience": "关注隐私与 AI 产品风险的读者",
+          "timeliness": "本周",
+          "priority": "高",
+          "risk": "不渲染猎奇细节，避免涉及未成年人具体聊天内容",
+          "basis": "TechCrunch 原文与加州总检察长公告中的账户数字、拍卖安排"
+        }
+      ],
+      "id": "48ede1a1cca55185"
+    },
+    {
+      "title": "亚马逊与 Meta 据报就解除 AI 购物代理 Muse 的封锁展开谈判",
+      "summary": "TechCrunch 11 月 25 日报道，援引 Fortune 当天消息称，亚马逊与 Meta 已就让 Meta 的 AI 代理 Muse 接入亚马逊商店进行多轮谈判。九月 Muse 用户发现无法在亚马逊下单并收到报错。谈判焦点是搜索结果如何呈现与广告如何处理；亚马逊担心第三方购物代理削弱其与消费者的直接关系、冲击广告业务，也可能因代理下错单而承担售后压力。任何协议据报需两家 CEO 批准；两家公司尚未回应置评请求。",
+      "type": "news",
+      "subtype": "商业/AI 代理/电商",
+      "region": "海外",
+      "platform": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "publishedAt": "2026-11-25T14:10:00+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "TechCrunch 原文经页面读取；其消息源为 Fortune 引用知情人士，双方未公开确认",
+        "verifiedAt": "2026-11-26T22:22:00+08:00",
+        "notes": "谈判内容属未证实消息，不可写成已达成协议"
+      },
+      "citations": [
+        {
+          "title": "Amazon and Meta reportedly in talks to end Muse AI shopping block",
+          "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+          "publisher": "The Verge",
+          "date": "2026-11-25",
+          "relation": "二手"
+        },
+        {
+          "title": "Fortune 独家报道（TechCrunch 引用）",
+          "url": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+          "publisher": "Fortune",
+          "date": "2026-11-25",
+          "relation": "二手"
+        }
+      ],
+      "evaluation": {
+        "editor": "核心问题是代理电商会不会变成开放层，还是被平台切成围墙花园。搜索与广告的分配方式决定了代理能否真正替用户下单，这一矛盾在国内电商同样存在。",
+        "community": "不可见",
+        "sentiment": "中性",
+        "source": "TechCrunch 转述 Fortune"
+      },
+      "tags": [
+        "亚马逊",
+        "Meta",
+        "Muse",
+        "AI 代理",
+        "电商"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "今日头条",
+          "headline": "亚马逊与 Meta 谈和解：AI 购物代理能不能替你下单？",
+          "angle": "用一个具体购物场景解释平台与 AI 代理的权力博弈",
+          "outline": [
+            "Muse 被封锁的经过",
+            "谈判卡在搜索与广告",
+            "亚马逊担心的售后与广告收入",
+            "谁在开放代理、谁在自建助手",
+            "对普通用户意味着什么"
+          ],
+          "audience": "电商从业者与泛科技读者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "写明“据报谈判”，不得写成已达成协议",
+          "basis": "TechCrunch 原文：多轮谈判、两项焦点、需 CEO 批准"
+        }
+      ],
+      "id": "286e59b5afad9535"
+    },
+    {
+      "title": "Anthropic 研究：企业用 AI 最大的阻力不是“不会用工具”，而是审核与协作摩擦",
+      "summary": "The Decoder 11 月 25 日报道，Anthropic 发布“Working with AI”定性研究：在 58 家美国公司做了 66 场面对面访谈，覆盖法律、建筑、金融、医疗、制造等行业，涉及近 300 个真实部署案例。受访者称 55% 的部署提高了产出或质量，但约 19% 仍无业务价值；最常见的障碍是需要人工核查的 AI 输出量（49 次提及），其次是员工抵触（43 次）与专家复核测试（42 次）。报告称样本均为 Anthropic 客户，不具代表性。",
+      "type": "discussion",
+      "subtype": "观点/企业 AI 落地",
+      "region": "海外",
+      "platform": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+      "publishedAt": "2026-11-25T13:14:27+00:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "The Decoder 原文直接读取，数据来自其对 Anthropic 报告的转述；报告样本局限由报道明确说明",
+        "verifiedAt": "2026-11-26T22:25:00+08:00",
+        "notes": "样本全部为 Anthropic 客户，结论不可外推为全行业统计"
+      },
+      "citations": [
+        {
+          "title": "Working with AI — Anthropic Research",
+          "url": "https://www.anthropic.com/research/working-with-ai",
+          "publisher": "Anthropic",
+          "date": "2026-11-25",
+          "relation": "官方"
+        }
+      ],
+      "evaluation": {
+        "editor": "这份研究把“AI 落地难”从工具培训问题改写为组织流程问题：审核负担、员工抵触与部门节奏不同步才是瓶颈。对国内企业管理者很有迁移价值，但要注意样本偏差。",
+        "community": "不可见",
+        "sentiment": "中性",
+        "source": "The Decoder 转述 Anthropic 报告"
+      },
+      "tags": [
+        "Anthropic",
+        "企业 AI",
+        "组织协作",
+        "AI 落地",
+        "职场"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "公众号",
+          "headline": "企业上了 AI 却没提效？Anthropic 访谈 58 家公司后发现真正的瓶颈",
+          "angle": "把“学不会工具”的常见归因转向审核成本与组织摩擦，给出可落地的过程改进思路",
+          "outline": [
+            "研究怎么做的：66 场访谈、58 家公司",
+            "55% 有效与 19% 无价值的反差",
+            "人工核查量、抵触、专家复核三大瓶颈",
+            "部门节奏不同步的典型案例",
+            "管理者可借鉴的调整方向"
+          ],
+          "audience": "企业管理者、AI 项目负责人",
+          "timeliness": "本周",
+          "priority": "高",
+          "risk": "注明样本均为 Anthropic 客户、不具行业代表性",
+          "basis": "The Decoder 原文：55%/19% 比例与 49/43/42 次提及的障碍排序"
+        },
+        {
+          "target": "今日头条",
+          "headline": "AI 提效没那么简单：近两成项目没带来业务价值",
+          "angle": "用直观数字解释 AI 项目为什么卡在内部流程，而非员工不会用",
+          "outline": [
+            "调查覆盖哪些行业",
+            "有效与无效的比例",
+            "最耗时的环节是什么",
+            "一个翻译功能被关掉的故事",
+            "对普通职场人的影响"
+          ],
+          "audience": "职场读者与企业管理者",
+          "timeliness": "本周",
+          "priority": "中",
+          "risk": "不要把访谈研究写成大样本统计",
+          "basis": "同上：19% 无业务价值、翻译 10 种语言后客服跟不上"
+        }
+      ],
+      "id": "56a8522393111673"
+    },
+    {
+      "title": "Product Hunt 上新：Kagi Mail 主打“隐私邮箱 + 重要的人优先”",
+      "summary": "Product Hunt 页面显示，Kagi Mail 于 11 月 24 日上线，产品自述定位为“把真正需要你的人放在前面”的私密邮件服务。Kagi 此前以独立搜索引擎为人所知，此次将产品线扩展到邮箱。Product Hunt 页面未展示可核实的投票与评论数字，本次采集记为不可见；产品能力描述均来自厂商自述，尚待实际体验验证。",
+      "type": "resource",
+      "subtype": "产品工具/邮件",
+      "region": "海外",
+      "platform": "Product Hunt",
+      "url": "https://www.producthunt.com/products/kagi",
+      "publishedAt": "2026-11-24T23:24:38-08:00",
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "新出现",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Product Hunt 官方 Atom feed 条目与产品页链接可核对，页面本身对抓取返回 403；功能为厂商自述",
+        "verifiedAt": "2026-11-26T22:20:00+08:00",
+        "notes": "互动数字不可见，产品实际表现未验证"
+      },
+      "citations": [],
+      "evaluation": {
+        "editor": "搜索公司做邮箱，本质是把“筛选信息”的能力迁移到收件箱。可迁移到国内语境讨论邮件与消息过载，但不要替厂商兑现隐私承诺。",
+        "community": "不可见",
+        "sentiment": "未知",
+        "source": "Product Hunt 产品自述"
+      },
+      "tags": [
+        "Kagi",
+        "邮箱",
+        "隐私",
+        "Product Hunt",
+        "效率工具"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "今日头条",
+          "headline": "做搜索引擎的 Kagi 开始做邮箱了：想让重要的人先看到你",
+          "angle": "从信息过载切入，介绍海外独立软件公司把排序理念带进邮箱的新尝试",
+          "outline": [
+            "Kagi 是谁、为什么做邮箱",
+            "产品自述的优先级理念",
+            "隐私邮箱的基本卖点",
+            "与主流邮箱的差异",
+            "对国内用户的可借鉴之处"
+          ],
+          "audience": "效率工具与独立软件爱好者",
+          "timeliness": "本周",
+          "priority": "中",
+          "risk": "功能均为厂商自述，不做效果承诺",
+          "basis": "Product Hunt feed 条目：Kagi Mail 描述为私密邮件、把需要你的人放在前面"
+        }
+      ],
+      "id": "d5083fb7fca97444"
+    },
+    {
+      "title": "Hacker News 热议：Nfs2root 被指为 Linux NFS 服务端 12 年老漏洞",
+      "summary": "Hacker News 11 月 25—26 日的热门条目指向安全研究者发布的分析 Nfs2root，称 Linux 内核 NFS 服务端存在已存在 12 年的预认证远程 root 漏洞，编号 CVE-2026-99362。条目页显示该话题进入当日榜单前列，但本次抓取未取得原文细节、评分与评论数。漏洞成因、影响版本与修复状态均需在原文或官方公告中进一步确认，本条仅按公开标题与描述记录。",
+      "type": "news",
+      "subtype": "安全/开源基础设施",
+      "region": "海外",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50647161",
+      "publishedAt": null,
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "待核实",
+        "method": "Hacker News 榜单页直接读取标题与条目编号；原始博客对抓取返回 403，未核对正文",
+        "verifiedAt": "2026-11-26T22:18:00+08:00",
+        "notes": "CVE 编号、影响范围、修复版本都需要原文或发行版公告确认；不提供利用细节"
+      },
+      "citations": [
+        {
+          "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+          "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+          "publisher": "opensec.in",
+          "date": "2026-11-25",
+          "relation": "一手"
+        }
+      ],
+      "evaluation": {
+        "editor": "如果标题成立，这是底层基础设施的长尾安全问题：暴露在外的 NFS 服务与内核更新节奏会成为运维焦点。当前只做线索登记，不写成已确认漏洞。",
+        "community": "不可见",
+        "sentiment": "未知",
+        "source": "Hacker News 榜单条目"
+      },
+      "tags": [
+        "Linux",
+        "NFS",
+        "安全漏洞",
+        "CVE",
+        "Hacker News"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "2975d6c1325f9305"
+    },
+    {
+      "title": "1Password 披露安全事件：员工 GitHub 账号被入侵，部分客户账户信息被复制",
+      "summary": "1Password 官方博客公告称，11 月 19 日开始调查 attacker 访问其员工企业 GitHub 账号的迹象；攻击者利用该账号访问源码并向后端服务推送恶意代码，下载了部分客户的账户记录。被复制信息包括账户与用户标识、创建与最近登录时间、公钥、SRP 协议参数、邀请/配置/恢复邮件链接中的令牌及其他账户元数据。公司称保险库数据、其中的条目与保护密钥未受影响，已遏制并恢复干净服务版本、轮换内部凭据，用户无需更新账户，但应警惕钓鱼邮件。",
+      "type": "news",
+      "subtype": "安全/密码管理",
+      "region": "海外",
+      "platform": "1Password 官方博客",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "publishedAt": null,
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "上升",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "公司官方公告原文直接读取",
+        "verifiedAt": "2026-11-26T22:20:00+08:00",
+        "notes": "受影响客户范围公告称是子集，未给出具体数量；发布时间页面未明确标注"
+      },
+      "citations": [
+        {
+          "title": "1Password Security Incident（Hacker News 讨论）",
+          "url": "https://news.ycombinator.com/item?id=50644817",
+          "publisher": "Hacker News",
+          "date": "2026-11-25",
+          "relation": "二手"
+        }
+      ],
+      "evaluation": {
+        "editor": "事件入口是员工 GitHub 账号与 CI/CD，而不是密码库本身：这是典型的开发链路供应链风险。对国内团队，可讨论密钥轮换、最少权限与邀请链接令牌的有效期管理。",
+        "community": "不可见",
+        "sentiment": "负面",
+        "source": "1Password 官方公告"
+      },
+      "tags": [
+        "1Password",
+        "安全事件",
+        "GitHub",
+        "CI/CD",
+        "密码管理"
+      ],
+      "needs": [],
+      "leads": [
+        {
+          "target": "今日头条",
+          "headline": "1Password 确认被入侵：密码没泄露，但这几类信息被复制了",
+          "angle": "区分“密码库安全”和“账户元数据泄露”，提醒用户警惕伪装成邀请与恢复的钓鱼邮件",
+          "outline": [
+            "攻击从哪里进入",
+            "哪些数据被复制",
+            "哪些数据没有受影响",
+            "公司已做的处置",
+            "用户现在应该做什么"
+          ],
+          "audience": "密码管理器用户与职场读者",
+          "timeliness": "当日",
+          "priority": "高",
+          "risk": "不要写成密码泄露，不做恐慌式标题",
+          "basis": "1Password 官方公告：源码与部分客户账户记录被复制、保险库与密钥未受影响"
+        }
+      ],
+      "id": "272297cceb9161ae"
+    },
+    {
+      "title": "X 帖子称 OpenAI 调整 GPT-6.2 用量：Astra 更快触及上限",
+      "summary": "X 账号 @thsottiaux 发帖称，OpenAI 调整了 GPT-6.2 的使用额度：Astra 模型比此前快约 40% 触达上限，Sol 快约 25%。该帖被 Hacker News 收录并进入当日讨论列表（条目 50651117）。截至采集时未找到 OpenAI 官方公告或帮助页佐证，比例数字无法独立核实；帖子原文互动数据不可见。本条仅作为用户侧观察线索登记。",
+      "type": "discussion",
+      "subtype": "观点/AI 产品额度",
+      "region": "海外",
+      "platform": "X",
+      "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+      "publishedAt": null,
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "未知",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "待核实",
+        "method": "Hacker News 列表页可见指向该 X 帖的标题与链接；X 原帖与 OpenAI 官方说明未取得可核对内容",
+        "verifiedAt": "2026-11-26T22:18:00+08:00",
+        "notes": "40%/25% 为用户帖口径，不能写成官方调整幅度"
+      },
+      "citations": [
+        {
+          "title": "Hacker News 讨论条目 50651117",
+          "url": "https://news.ycombinator.com/item?id=50651117",
+          "publisher": "Hacker News",
+          "date": "2026-11-26",
+          "relation": "二手"
+        }
+      ],
+      "evaluation": {
+        "editor": "额度与限流是 AI 订阅体验的高敏感点，用户体感差异可能来自推送批次不同。作为线索保留，成稿必须以官方帮助页或实测复核为前提。",
+        "community": "不可见",
+        "sentiment": "争议",
+        "source": "X 用户帖，经 Hacker News 收录"
+      },
+      "tags": [
+        "OpenAI",
+        "GPT-6.2",
+        "额度",
+        "订阅",
+        "X"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "92e89f50a24b3266"
+    },
+    {
+      "title": "GitHub Trending 快照：AI 编码代理与开源工具继续占据榜单",
+      "summary": "GitHub Trending 榜单页在 11 月 26 日 22 时采集时的可见项目包括 elementalsouls/Claude-BugHunter、obra/superpowers、HKUDS/CLI-Anything、Tracer-Cloud/opensre、firecrawl/firecrawl、openvinotoolkit/openvino、cathrynlavery/diagram-design、toeverything/AFFiNE 等。榜单以 AI 编码代理、技能封装与开源效率工具为主。本条为榜单聚合页，不是单个项目发布；页面未展示可稳定核对的当日 star 增量，记为不可见。",
+      "type": "resource",
+      "subtype": "开源工具/榜单",
+      "region": "海外",
+      "platform": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "publishedAt": null,
+      "collectedAt": "2026-11-26T22:30:00+08:00",
+      "image": null,
+      "heat": {
+        "stage": "未知",
+        "signals": {
+          "views": "不可见",
+          "likes": "不可见",
+          "comments": "不可见",
+          "shares": "不可见"
+        }
+      },
+      "verification": {
+        "status": "已核实",
+        "method": "GitHub Trending 榜单页直接读取，项目名为页面可见；star 数字未逐项核对",
+        "verifiedAt": "2026-11-26T22:16:00+08:00",
+        "notes": "榜单随时变化，本条仅为采集时刻快照"
+      },
+      "citations": [],
+      "evaluation": {
+        "editor": "榜单结构说明开发者注意力仍集中在“让代理干活”的工具链上：调试、技能、代码库映射与浏览器能力。适合做趋势归纳，不适合写成某个项目的融资或发布日期。",
+        "community": "不可见",
+        "sentiment": "中性",
+        "source": "GitHub Trending 榜单页"
+      },
+      "tags": [
+        "GitHub",
+        "开源",
+        "AI 编码代理",
+        "趋势榜单"
+      ],
+      "needs": [],
+      "leads": [],
+      "id": "95a5d2485ab88748"
+    },
+    {
       "title": "金价跌破3500美元后金店客流上升，今日头条热榜热议\"抄底\"账本",
       "summary": "今日头条11月26日文章称，国际金价持续回落、国内品牌足金零售价集体下调，深圳水贝等黄金市场客流增加。光明网转引人民日报客户端报道：现货黄金25日晚跌破3500美元/盎司，26日17时报3573美元/盎司，日内跌0.4%；26日周大福金饰每克1068元，较一月前跌130元。上海黄金交易所与多家银行已提示贵金属波动风险。头条文章中的具体抢购数字为自媒体自述。",
       "type": "news",
