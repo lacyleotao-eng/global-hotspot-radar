@@ -1,0 +1,15 @@
+{
+ "slug": "gpu-sandbox-channel",
+ "url": "https://news.ycombinator.com/item?id=50637686",
+ "ok": true,
+ "source": "ego",
+ "cjk": 0,
+ "words": 13090,
+ "paras": 761,
+ "subheads": 0,
+ "images": 2,
+ "mdChars": 84454,
+ "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed | Hacker News",
+ "note": "crawl4ai 失败，ego 兜底成功",
+ "fetchedAt": "2026-11-26T01:32:30.577Z"
+}

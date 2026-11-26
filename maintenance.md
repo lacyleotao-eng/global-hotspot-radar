@@ -244,3 +244,24 @@
 
 ### 不做什么
 不把 crawl4ai 塞进 21:00/22:15 采集，不进 17:30 爆款主流程（那里已用 ego 实测），不为了它改 venv 之外的全局 Python。
+
+### 补齐第二步（同日追加）：两条腿 + 一个可核查的钩子
+
+第一版只做了 crawl4ai 一条腿，实测当天 14 条计划只成 5 条（36%）。补齐后：
+
+| 环节 | 做法 | 结果 |
+|---|---|---|
+| 主抓 | `scripts/fetch_fulltext.py`（crawl4ai，headless，1–2 秒/页） | 9/14 |
+| 兜底 | `scripts/fetch_fulltext_ego.js`（ego 真浏览器 + 登录态，只重试失败项） | +5 → **14/14** |
+| 校验 | `audit_ready.py` 新增 `[fulltext]` 行（只统计不扣分） | 当天 14/14 有底稿 |
+
+顺带修掉三个坑：
+
+1. **英文站被误判"正文过短"**：判据原来是"汉字数 < 60"，英文正文汉字恒为 0，TechCrunch/The Verge 全被判死。改成 `汉字数 + 英文词数 < 100` 才算失败。
+2. **plan 的 slug 与 ready 的 slug 不一致**（plan: `gpu` / ready: `gpu-sandbox-channel`），写稿端按自己的 slug 查不到 → 改成优先按 `data/ready/*.json` 建任务，plan 只作无稿时的退路。
+3. **plan 里的 citation URL 有截断**（TechCrunch 那条少了 `-slop-inundates-music-str...`，ego 打开是 404）。ready 的 `sourceUrl` 是完整的，所以第 2 条改动顺带修掉了这个问题。
+
+### 还没闭环的一环（如实记）
+`[fulltext]` 只是**报告**，不是闸门：写稿 agent 到底跑没跑那条命令，目前依赖 brief 的自觉，没有强制。
+不设硬闸门的理由：抓取失败率高且随站点策略波动（今天 5 条要靠 ego 才成），拿它扣分会把能发的稿卡死。
+判断标准改为：08:10 收口看 `[fulltext]` 数字，明显偏低就人工补跑 ego，而不是自动判废。

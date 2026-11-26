@@ -69,6 +69,26 @@ def url_of(event: dict) -> str:
     return ""
 
 
+def ready_jobs(date: str, want: set[str]) -> list[dict]:
+    """优先按 data/ready 的 slug 建任务：写稿 agent 只知道自己的 ready slug，
+    而 plan 里的 slug 常常与它不同（plan: gpu / ready: gpu-sandbox-channel），
+    以 ready 为准才能让写稿端一条命令对上号。"""
+    jobs = []
+    for f in sorted((DATA / "ready").glob(f"{date}-*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        slug = d.get("slug") or f.stem[len(date) + 1:]
+        if want and slug not in want:
+            continue
+        urls = [d.get("sourceUrl") or ""] + [c.get("url") for c in (d.get("citations") or []) if isinstance(c, dict)]
+        url = next((u for u in urls if u and u.startswith("http")), "")
+        if url:
+            jobs.append({"slug": slug, "url": url, "origin": "ready"})
+    return jobs
+
+
 def html_img_count(html: str) -> int:
     """从 HTML 数正文图片：优先 data-src（微信/头条懒加载），再去重。"""
     urls = set()
@@ -88,8 +108,13 @@ def md_stats(md: str) -> dict:
         if not l.startswith(("#", "|", "!", "```", "- ", "* ", ">", "1.", "2.", "3.", "4.", "5."))
     ]
     subs = [l for l in lines if l.startswith(("## ", "### "))]
+    cjk = len(CJK.findall(md))
+    words = len(re.findall(r"[A-Za-z][A-Za-z'-]+", md))
     return {
-        "cjk": len(CJK.findall(md)),
+        "cjk": cjk,
+        "words": words,
+        # 长度判据不能用纯汉字数：英文站 cjk=0 但正文完全正常（2026-11-26 踩过）
+        "lenScore": cjk + words,
         "paras": len(paras),
         "subheads": len(subs),
         "mdChars": len(md),
@@ -116,7 +141,7 @@ async def crawl(jobs: list[dict], out_dir: Path, date: str) -> list[dict]:
             try:
                 r = await c.arun(url=url, config=run)
                 md = r.markdown.raw_markdown if r.success else ""
-                if not r.success or len(CJK.findall(md)) < 60:
+                if not r.success or (len(CJK.findall(md)) + len(re.findall(r"[A-Za-z][A-Za-z'-]+", md))) < 100:
                     note = (str(r.error_message)[:120] if not r.success else "正文过短（可能被拦或页面改版）")
                     index.append({"slug": slug, "url": url, "ok": False, "note": note})
                     print(f"[fail] {slug}: {note}")
@@ -129,7 +154,7 @@ async def crawl(jobs: list[dict], out_dir: Path, date: str) -> list[dict]:
                     json.dumps({**row, "fetchedAt": datetime.now(SH).isoformat(timespec="seconds")},
                                ensure_ascii=False, indent=1), encoding="utf-8")
                 index.append(row)
-                print(f"[ok]   {slug}: 汉字 {st['cjk']} / 段 {st['paras']} / 小标题 {st['subheads']} / 图 {imgs}")
+                print(f"[ok]   {slug}: 汉字 {st['cjk']} / 英文词 {st['words']} / 段 {st['paras']} / 小标题 {st['subheads']} / 图 {imgs}")
             except Exception as e:  # noqa: BLE001
                 index.append({"slug": slug, "url": url, "ok": False, "note": f"{type(e).__name__}: {e}"[:160]})
                 print(f"[err]  {slug}: {type(e).__name__} {str(e)[:100]}")
@@ -168,11 +193,18 @@ def main() -> None:
         jobs = viral_jobs(a.viral)
     else:
         want = {s.strip() for s in a.slug.split(",") if s.strip()}
-        jobs = [{"slug": e["slug"], "url": url_of(e)} for e in plan_events(a.date)
-                if (not want or e["slug"] in want) and url_of(e)]
-        missing = [e["slug"] for e in plan_events(a.date) if (not want or e["slug"] in want) and not url_of(e)]
-        if missing:
-            print(f"[warn] 无可用链接，跳过：{', '.join(missing)}")
+        jobs = ready_jobs(a.date, want)
+        if not jobs:  # 还没有 ready 稿（比如 04:45 排计划阶段）就退回 plan
+            jobs = [{"slug": e["slug"], "url": url_of(e)} for e in plan_events(a.date)
+                    if (not want or e["slug"] in want) and url_of(e)]
+            missing = [e["slug"] for e in plan_events(a.date)
+                       if (not want or e["slug"] in want) and not url_of(e)]
+            if missing:
+                print(f"[warn] 无可用链接，跳过：{', '.join(missing)}")
+        else:
+            missing = [s for s in want if s not in {j["slug"] for j in jobs}]
+            if missing:
+                print(f"[warn] 这些 slug 没有 ready 稿，跳过：{', '.join(sorted(missing))}")
     if a.limit:
         jobs = jobs[: a.limit]
     if not jobs:

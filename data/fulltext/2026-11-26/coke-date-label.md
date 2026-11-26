@@ -1,5 +1,5 @@
 [![](https://whatshot.top/brand/whatshot-flame-30.png?v=20261003)**什么火了**](https://whatshot.top/)[首页](https://whatshot.top/)[热点](https://whatshot.top/events)[热榜](https://whatshot.top/news)[快讯](https://whatshot.top/newsflash)[社媒](https://whatshot.top/social)[金价](https://whatshot.top/gold)
-[](https://whatshot.top/my "收藏")切换到深色切换到浅色2026-11-2609:18:18
+[](https://whatshot.top/my "收藏")切换到深色切换到浅色2026-11-2609:31:34
 #### 热点
   * [今日热点](https://whatshot.top/events)
   * [AI 热点](https://whatshot.top/events/ai-tech)
@@ -181,114 +181,114 @@
 [综合**实时热榜**](https://whatshot.top/news/weibo?view=detail)[ 综合**社会榜**](https://whatshot.top/news/weibo?type=social&view=detail)[ 娱乐**文娱榜**](https://whatshot.top/entertainment/weibo?type=entertainment&view=detail)[ 生活**生活榜**](https://whatshot.top/life/weibo?type=life&view=detail)[ 综合**体育榜**](https://whatshot.top/news/weibo?type=sport&view=detail)[ 科技**科技榜**](https://whatshot.top/tech/weibo?type=technology&view=detail)[ 游戏**ACG榜**](https://whatshot.top/game/weibo?type=acg&view=detail)[返回全部榜单](https://whatshot.top/news/weibo)
 [全部](https://whatshot.top/)/[综合](https://whatshot.top/news)/实时热榜
 #  微博实时热搜榜
-6分钟前更新[查看今天上过榜的热搜 →](https://whatshot.top/news/weibo/today)
-[实时榜 **50** 条](https://whatshot.top/news/weibo?view=detail)[今日全部 **153** 条统计中](https://whatshot.top/news/weibo/today)
+刚刚更新[查看今天上过榜的热搜 →](https://whatshot.top/news/weibo/today)
+[实时榜 **50** 条](https://whatshot.top/news/weibo?view=detail)[今日全部 **162** 条统计中](https://whatshot.top/news/weibo/today)
 今日全部：今天 00:00 起上过榜的每条热搜，含最高排名与在榜时长近 30 天历史展开
 HISTORY**近 30 天历史** 柱高表示当天去重热搜数量
 ← 更早 30 天更近 30 天 →实时榜
 收起
-[54328](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-28 "2026年10月28日 · 543 不同热搜")[56529](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-29 "2026年10月29日 · 565 不同热搜")[57030](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-30 "2026年10月30日 · 570 不同热搜")[57131](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-31 "2026年10月31日 · 571 不同热搜")[57601](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-01 "2026年11月1日 · 576 不同热搜")[53402](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-02 "2026年11月2日 · 534 不同热搜")[55303](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-03 "2026年11月3日 · 553 不同热搜")[56104](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-04 "2026年11月4日 · 561 不同热搜")[56905](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-05 "2026年11月5日 · 569 不同热搜")[53406](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-06 "2026年11月6日 · 534 不同热搜")[51607](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-07 "2026年11月7日 · 516 不同热搜")[54108](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-08 "2026年11月8日 · 541 不同热搜")[59909](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-09 "2026年11月9日 · 599 不同热搜")[54010](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-10 "2026年11月10日 · 540 不同热搜")[53511](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-11 "2026年11月11日 · 535 不同热搜")[51912](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-12 "2026年11月12日 · 519 不同热搜")[50113](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-13 "2026年11月13日 · 501 不同热搜")[52614](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-14 "2026年11月14日 · 526 不同热搜")[53915](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-15 "2026年11月15日 · 539 不同热搜")[57416](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-16 "2026年11月16日 · 574 不同热搜")[52217](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-17 "2026年11月17日 · 522 不同热搜")[51818](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-18 "2026年11月18日 · 518 不同热搜")[56519](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-19 "2026年11月19日 · 565 不同热搜")[57620](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-20 "2026年11月20日 · 576 不同热搜")[52821](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-21 "2026年11月21日 · 528 不同热搜")[53922](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-22 "2026年11月22日 · 539 不同热搜")[56323](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-23 "2026年11月23日 · 563 不同热搜")[54924](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-24 "2026年11月24日 · 549 不同热搜")[51225](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-25 "2026年11月25日 · 512 不同热搜")[153今天](https://whatshot.top/news/weibo/today "2026年11月26日 · 153 不同热搜")
+[54328](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-28 "2026年10月28日 · 543 不同热搜")[56529](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-29 "2026年10月29日 · 565 不同热搜")[57030](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-30 "2026年10月30日 · 570 不同热搜")[57131](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-10-31 "2026年10月31日 · 571 不同热搜")[57601](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-01 "2026年11月1日 · 576 不同热搜")[53402](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-02 "2026年11月2日 · 534 不同热搜")[55303](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-03 "2026年11月3日 · 553 不同热搜")[56104](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-04 "2026年11月4日 · 561 不同热搜")[56905](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-05 "2026年11月5日 · 569 不同热搜")[53406](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-06 "2026年11月6日 · 534 不同热搜")[51607](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-07 "2026年11月7日 · 516 不同热搜")[54108](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-08 "2026年11月8日 · 541 不同热搜")[59909](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-09 "2026年11月9日 · 599 不同热搜")[54010](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-10 "2026年11月10日 · 540 不同热搜")[53511](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-11 "2026年11月11日 · 535 不同热搜")[51912](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-12 "2026年11月12日 · 519 不同热搜")[50113](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-13 "2026年11月13日 · 501 不同热搜")[52614](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-14 "2026年11月14日 · 526 不同热搜")[53915](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-15 "2026年11月15日 · 539 不同热搜")[57416](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-16 "2026年11月16日 · 574 不同热搜")[52217](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-17 "2026年11月17日 · 522 不同热搜")[51818](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-18 "2026年11月18日 · 518 不同热搜")[56519](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-19 "2026年11月19日 · 565 不同热搜")[57620](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-20 "2026年11月20日 · 576 不同热搜")[52821](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-21 "2026年11月21日 · 528 不同热搜")[53922](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-22 "2026年11月22日 · 539 不同热搜")[56323](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-23 "2026年11月23日 · 563 不同热搜")[54924](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-24 "2026年11月24日 · 549 不同热搜")[51225](https://whatshot.top/news/weibo?view=detail&snapshotDate=2026-11-25 "2026年11月25日 · 512 不同热搜")[162今天](https://whatshot.top/news/weibo/today "2026年11月26日 · 162 不同热搜")
 10/28—11/26 有历史数据
-  * 01318.6万热度
+  * 01320.1万热度
 [蔡磊已进渐冻症终末期](https://s.weibo.com/weibo?q=%23%E8%94%A1%E7%A3%8A%E5%B7%B2%E8%BF%9B%E6%B8%90%E5%86%BB%E7%97%87%E7%BB%88%E6%9C%AB%E6%9C%9F%23 "蔡磊已进渐冻症终末期")热
-  * 02109.2万热度
-[妻子与蔡磊见面全程没说话](https://s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E4%B8%8E%E8%94%A1%E7%A3%8A%E8%A7%81%E9%9D%A2%E5%85%A8%E7%A8%8B%E6%B2%A1%E8%AF%B4%E8%AF%9D%23 "妻子与蔡磊见面全程没说话")新
-  * 0388.8万热度
-[神24乘组进驻天宫](https://s.weibo.com/weibo?q=%23%E7%A5%9E24%E4%B9%98%E7%BB%84%E8%BF%9B%E9%A9%BB%E5%A4%A9%E5%AE%AB%23 "神24乘组进驻天宫")
-  * 0478.7万热度
+  * 02112.6万热度
 [美术生不是被AI干掉的](https://s.weibo.com/weibo?q=%23%E7%BE%8E%E6%9C%AF%E7%94%9F%E4%B8%8D%E6%98%AF%E8%A2%ABAI%E5%B9%B2%E6%8E%89%E7%9A%84%23 "美术生不是被AI干掉的")新
-  * 0577.0万热度
-[梁文锋成全球最富AI模型创始人](https://s.weibo.com/weibo?q=%23%E6%A2%81%E6%96%87%E9%94%8B%E6%88%90%E5%85%A8%E7%90%83%E6%9C%80%E5%AF%8CAI%E6%A8%A1%E5%9E%8B%E5%88%9B%E5%A7%8B%E4%BA%BA%23 "梁文锋成全球最富AI模型创始人")新
-  * 0656.0万热度
-[小城良方合照都比赞不告诉倪大红](https://s.weibo.com/weibo?q=%23%E5%B0%8F%E5%9F%8E%E8%89%AF%E6%96%B9%E5%90%88%E7%85%A7%E9%83%BD%E6%AF%94%E8%B5%9E%E4%B8%8D%E5%91%8A%E8%AF%89%E5%80%AA%E5%A4%A7%E7%BA%A2%23 "小城良方合照都比赞不告诉倪大红")热
-  * 0751.7万热度
+  * 0397.2万热度
+[神24乘组进驻天宫](https://s.weibo.com/weibo?q=%23%E7%A5%9E24%E4%B9%98%E7%BB%84%E8%BF%9B%E9%A9%BB%E5%A4%A9%E5%AE%AB%23 "神24乘组进驻天宫")
+  * 0488.0万热度
+[妻子与蔡磊见面全程没说话](https://s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E4%B8%8E%E8%94%A1%E7%A3%8A%E8%A7%81%E9%9D%A2%E5%85%A8%E7%A8%8B%E6%B2%A1%E8%AF%B4%E8%AF%9D%23 "妻子与蔡磊见面全程没说话")新
+  * 0553.7万热度
 [白小纯 天霸](https://s.weibo.com/weibo?q=%23%E7%99%BD%E5%B0%8F%E7%BA%AF%20%E5%A4%A9%E9%9C%B8%23 "白小纯 天霸")新
-  * 0847.1万热度
-[jkl BLG](https://s.weibo.com/weibo?q=%23jkl%20BLG%23 "jkl BLG")新
-  * 0946.0万热度
-[小米SU7 Ultra上工信部](https://s.weibo.com/weibo?q=%23%E5%B0%8F%E7%B1%B3SU7%20Ultra%E4%B8%8A%E5%B7%A5%E4%BF%A1%E9%83%A8%23 "小米SU7 Ultra上工信部")
-  * 1044.4万热度
-[大量英伟达GPU涌入转售市场](https://s.weibo.com/weibo?q=%23%E5%A4%A7%E9%87%8F%E8%8B%B1%E4%BC%9F%E8%BE%BEGPU%E6%B6%8C%E5%85%A5%E8%BD%AC%E5%94%AE%E5%B8%82%E5%9C%BA%23 "大量英伟达GPU涌入转售市场")新
-  * 1144.3万热度
-[网友抵制王玉雯代言皮草](https://s.weibo.com/weibo?q=%23%E7%BD%91%E5%8F%8B%E6%8A%B5%E5%88%B6%E7%8E%8B%E7%8E%89%E9%9B%AF%E4%BB%A3%E8%A8%80%E7%9A%AE%E8%8D%89%23 "网友抵制王玉雯代言皮草")热
-  * 1243.8万热度
-[婚检发现同居多年男友是女的](https://s.weibo.com/weibo?q=%23%E5%A9%9A%E6%A3%80%E5%8F%91%E7%8E%B0%E5%90%8C%E5%B1%85%E5%A4%9A%E5%B9%B4%E7%94%B7%E5%8F%8B%E6%98%AF%E5%A5%B3%E7%9A%84%23 "婚检发现同居多年男友是女的")新
-  * 1343.1万热度
-[曝爽全直播说白小纯想回天霸](https://s.weibo.com/weibo?q=%23%E6%9B%9D%E7%88%BD%E5%85%A8%E7%9B%B4%E6%92%AD%E8%AF%B4%E7%99%BD%E5%B0%8F%E7%BA%AF%E6%83%B3%E5%9B%9E%E5%A4%A9%E9%9C%B8%23 "曝爽全直播说白小纯想回天霸")新
-  * 1442.7万热度
-[炒股亏钱最对不起的是家人](https://s.weibo.com/weibo?q=%23%E7%82%92%E8%82%A1%E4%BA%8F%E9%92%B1%E6%9C%80%E5%AF%B9%E4%B8%8D%E8%B5%B7%E7%9A%84%E6%98%AF%E5%AE%B6%E4%BA%BA%23 "炒股亏钱最对不起的是家人")
-  * 1542.4万热度
-[疑似文吉儿朋友圈辟谣办婚礼](https://s.weibo.com/weibo?q=%23%E7%96%91%E4%BC%BC%E6%96%87%E5%90%89%E5%84%BF%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BE%9F%E8%B0%A3%E5%8A%9E%E5%A9%9A%E7%A4%BC%23 "疑似文吉儿朋友圈辟谣办婚礼")
-  * 1641.7万热度
-[王玉雯到底咋想的](https://s.weibo.com/weibo?q=%23%E7%8E%8B%E7%8E%89%E9%9B%AF%E5%88%B0%E5%BA%95%E5%92%8B%E6%83%B3%E7%9A%84%23 "王玉雯到底咋想的")新
-  * 1741.5万热度
-[郭子睿 子承父业](https://s.weibo.com/weibo?q=%23%E9%83%AD%E5%AD%90%E7%9D%BF%20%E5%AD%90%E6%89%BF%E7%88%B6%E4%B8%9A%23 "郭子睿 子承父业")新
-  * 1841.2万热度
-[天霸老板](https://s.weibo.com/weibo?q=%23%E5%A4%A9%E9%9C%B8%E8%80%81%E6%9D%BF%23 "天霸老板")新
-  * 1928.3万热度
-[马伯庸回应两京十五日争议](https://s.weibo.com/weibo?q=%23%E9%A9%AC%E4%BC%AF%E5%BA%B8%E5%9B%9E%E5%BA%94%E4%B8%A4%E4%BA%AC%E5%8D%81%E4%BA%94%E6%97%A5%E4%BA%89%E8%AE%AE%23 "马伯庸回应两京十五日争议")新
-  * 2027.7万热度
-[詹姆斯25分10板12助](https://s.weibo.com/weibo?q=%23%E8%A9%B9%E5%A7%86%E6%96%AF25%E5%88%8610%E6%9D%BF12%E5%8A%A9%23 "詹姆斯25分10板12助")新
-  * 2127.6万热度
+  * 0653.4万热度
+[梁文锋成全球最富AI模型创始人](https://s.weibo.com/weibo?q=%23%E6%A2%81%E6%96%87%E9%94%8B%E6%88%90%E5%85%A8%E7%90%83%E6%9C%80%E5%AF%8CAI%E6%A8%A1%E5%9E%8B%E5%88%9B%E5%A7%8B%E4%BA%BA%23 "梁文锋成全球最富AI模型创始人")
+  * 0748.2万热度
+[吴青峰张钧甯想上后会友期](https://s.weibo.com/weibo?q=%23%E5%90%B4%E9%9D%92%E5%B3%B0%E5%BC%A0%E9%92%A7%E7%94%AF%E6%83%B3%E4%B8%8A%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%23 "吴青峰张钧甯想上后会友期")新
+  * 0842.6万热度
 [巴基斯坦电视主持人激动播报](https://s.weibo.com/weibo?q=%23%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E7%94%B5%E8%A7%86%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%BF%80%E5%8A%A8%E6%92%AD%E6%8A%A5%23 "巴基斯坦电视主持人激动播报")
-  * 2227.3万热度
-[感恩节](https://s.weibo.com/weibo?q=%23%E6%84%9F%E6%81%A9%E8%8A%82%23 "感恩节")新
-  * 2327.2万热度
+  * 0941.7万热度
+[jkl BLG](https://s.weibo.com/weibo?q=%23jkl%20BLG%23 "jkl BLG")
+  * 1040.4万热度
+[小米SU7 Ultra上工信部](https://s.weibo.com/weibo?q=%23%E5%B0%8F%E7%B1%B3SU7%20Ultra%E4%B8%8A%E5%B7%A5%E4%BF%A1%E9%83%A8%23 "小米SU7 Ultra上工信部")
+  * 1140.4万热度
+[小城良方合照都比赞不告诉倪大红](https://s.weibo.com/weibo?q=%23%E5%B0%8F%E5%9F%8E%E8%89%AF%E6%96%B9%E5%90%88%E7%85%A7%E9%83%BD%E6%AF%94%E8%B5%9E%E4%B8%8D%E5%91%8A%E8%AF%89%E5%80%AA%E5%A4%A7%E7%BA%A2%23 "小城良方合照都比赞不告诉倪大红")
+  * 1240.3万热度
+[网友抵制王玉雯代言皮草](https://s.weibo.com/weibo?q=%23%E7%BD%91%E5%8F%8B%E6%8A%B5%E5%88%B6%E7%8E%8B%E7%8E%89%E9%9B%AF%E4%BB%A3%E8%A8%80%E7%9A%AE%E8%8D%89%23 "网友抵制王玉雯代言皮草")热
+  * 1340.3万热度
+[郭子睿 子承父业](https://s.weibo.com/weibo?q=%23%E9%83%AD%E5%AD%90%E7%9D%BF%20%E5%AD%90%E6%89%BF%E7%88%B6%E4%B8%9A%23 "郭子睿 子承父业")新
+  * 1440.2万热度
+[婚检发现同居多年男友是女的](https://s.weibo.com/weibo?q=%23%E5%A9%9A%E6%A3%80%E5%8F%91%E7%8E%B0%E5%90%8C%E5%B1%85%E5%A4%9A%E5%B9%B4%E7%94%B7%E5%8F%8B%E6%98%AF%E5%A5%B3%E7%9A%84%23 "婚检发现同居多年男友是女的")新
+  * 1540.2万热度
+[曝爽全直播说白小纯想回天霸](https://s.weibo.com/weibo?q=%23%E6%9B%9D%E7%88%BD%E5%85%A8%E7%9B%B4%E6%92%AD%E8%AF%B4%E7%99%BD%E5%B0%8F%E7%BA%AF%E6%83%B3%E5%9B%9E%E5%A4%A9%E9%9C%B8%23 "曝爽全直播说白小纯想回天霸")新
+  * 1640.1万热度
+[罗马2比2巴黎](https://s.weibo.com/weibo?q=%23%E7%BD%97%E9%A9%AC2%E6%AF%942%E5%B7%B4%E9%BB%8E%23 "罗马2比2巴黎")新
+  * 1740.0万热度
+[王玉雯路人缘](https://s.weibo.com/weibo?q=%23%E7%8E%8B%E7%8E%89%E9%9B%AF%E8%B7%AF%E4%BA%BA%E7%BC%98%23 "王玉雯路人缘")新
+  * 1840.0万热度
+[天霸老板](https://s.weibo.com/weibo?q=%23%E5%A4%A9%E9%9C%B8%E8%80%81%E6%9D%BF%23 "天霸老板")新
+  * 1939.9万热度
+[疑似文吉儿朋友圈辟谣办婚礼](https://s.weibo.com/weibo?q=%23%E7%96%91%E4%BC%BC%E6%96%87%E5%90%89%E5%84%BF%E6%9C%8B%E5%8F%8B%E5%9C%88%E8%BE%9F%E8%B0%A3%E5%8A%9E%E5%A9%9A%E7%A4%BC%23 "疑似文吉儿朋友圈辟谣办婚礼")
+  * 2039.9万热度
+[詹姆斯25分10板12助](https://s.weibo.com/weibo?q=%23%E8%A9%B9%E5%A7%86%E6%96%AF25%E5%88%8610%E6%9D%BF12%E5%8A%A9%23 "詹姆斯25分10板12助")新
+  * 2139.9万热度
+[炒股亏钱最对不起的是家人](https://s.weibo.com/weibo?q=%23%E7%82%92%E8%82%A1%E4%BA%8F%E9%92%B1%E6%9C%80%E5%AF%B9%E4%B8%8D%E8%B5%B7%E7%9A%84%E6%98%AF%E5%AE%B6%E4%BA%BA%23 "炒股亏钱最对不起的是家人")
+  * 2239.4万热度
 [付智恩 真皮草](https://s.weibo.com/weibo?q=%23%E4%BB%98%E6%99%BA%E6%81%A9%20%E7%9C%9F%E7%9A%AE%E8%8D%89%23 "付智恩 真皮草")新
-  * 2426.9万热度
-[问界M9圆线电机遭质疑](https://s.weibo.com/weibo?q=%23%E9%97%AE%E7%95%8CM9%E5%9C%86%E7%BA%BF%E7%94%B5%E6%9C%BA%E9%81%AD%E8%B4%A8%E7%96%91%23 "问界M9圆线电机遭质疑")新
-  * 2526.7万热度
-[肖战三部开了研讨会的爆剧](https://s.weibo.com/weibo?q=%23%E8%82%96%E6%88%98%E4%B8%89%E9%83%A8%E5%BC%80%E4%BA%86%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%9A%84%E7%88%86%E5%89%A7%23 "肖战三部开了研讨会的爆剧")新
-  * 2626.6万热度
-[郭子睿回应自己为什么进圈](https://s.weibo.com/weibo?q=%23%E9%83%AD%E5%AD%90%E7%9D%BF%E5%9B%9E%E5%BA%94%E8%87%AA%E5%B7%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9B%E5%9C%88%23 "郭子睿回应自己为什么进圈")
-  * 2726.0万热度
+  * 2337.5万热度
 [蔡磊语言功能已彻底丧失](https://s.weibo.com/weibo?q=%23%E8%94%A1%E7%A3%8A%E8%AF%AD%E8%A8%80%E5%8A%9F%E8%83%BD%E5%B7%B2%E5%BD%BB%E5%BA%95%E4%B8%A7%E5%A4%B1%23 "蔡磊语言功能已彻底丧失")新
-  * 2824.8万热度
-[热火vs76人](https://s.weibo.com/weibo?q=%23%E7%83%AD%E7%81%ABvs76%E4%BA%BA%23 "热火vs76人")
-  * 2924.2万热度
+  * 2433.4万热度
 [田淼直播说徐若晗演戏不用心](https://s.weibo.com/weibo?q=%23%E7%94%B0%E6%B7%BC%E7%9B%B4%E6%92%AD%E8%AF%B4%E5%BE%90%E8%8B%A5%E6%99%97%E6%BC%94%E6%88%8F%E4%B8%8D%E7%94%A8%E5%BF%83%23 "田淼直播说徐若晗演戏不用心")新
-  * 3023.8万热度
-[手把手教你关掉手机相册权限](https://s.weibo.com/weibo?q=%23%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%85%B3%E6%8E%89%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%E6%9D%83%E9%99%90%23 "手把手教你关掉手机相册权限")
-  * 3123.7万热度
-[肖战生动演绎了瞬间瞳孔地震](https://s.weibo.com/weibo?q=%23%E8%82%96%E6%88%98%E7%94%9F%E5%8A%A8%E6%BC%94%E7%BB%8E%E4%BA%86%E7%9E%AC%E9%97%B4%E7%9E%B3%E5%AD%94%E5%9C%B0%E9%9C%87%23 "肖战生动演绎了瞬间瞳孔地震")
-  * 3220.7万热度
-[鹿晗帮李晨吹蜡烛猜歌名](https://s.weibo.com/weibo?q=%23%E9%B9%BF%E6%99%97%E5%B8%AE%E6%9D%8E%E6%99%A8%E5%90%B9%E8%9C%A1%E7%83%9B%E7%8C%9C%E6%AD%8C%E5%90%8D%23 "鹿晗帮李晨吹蜡烛猜歌名")新
-  * 3320.7万热度
-[鲍蕾带着贝儿去和郑恺打招呼](https://s.weibo.com/weibo?q=%23%E9%B2%8D%E8%95%BE%E5%B8%A6%E7%9D%80%E8%B4%9D%E5%84%BF%E5%8E%BB%E5%92%8C%E9%83%91%E6%81%BA%E6%89%93%E6%8B%9B%E5%91%BC%23 "鲍蕾带着贝儿去和郑恺打招呼")新
-  * 3418.2万热度
-[中国最宜居城市青岛个个在榜](https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%AE%9C%E5%B1%85%E5%9F%8E%E5%B8%82%E9%9D%92%E5%B2%9B%E4%B8%AA%E4%B8%AA%E5%9C%A8%E6%A6%9C%23 "中国最宜居城市青岛个个在榜")
-  * 3518.0万热度
-[医生建议将婚检前置至恋爱阶段](https://s.weibo.com/weibo?q=%23%E5%8C%BB%E7%94%9F%E5%BB%BA%E8%AE%AE%E5%B0%86%E5%A9%9A%E6%A3%80%E5%89%8D%E7%BD%AE%E8%87%B3%E6%81%8B%E7%88%B1%E9%98%B6%E6%AE%B5%23 "医生建议将婚检前置至恋爱阶段")新
-  * 3617.6万热度
-[金价收复3500美元](https://s.weibo.com/weibo?q=%23%E9%87%91%E4%BB%B7%E6%94%B6%E5%A4%8D3500%E7%BE%8E%E5%85%83%23 "金价收复3500美元")新
-  * 3716.4万热度
-[白头发是身体在发出压力警告](https://s.weibo.com/weibo?q=%23%E7%99%BD%E5%A4%B4%E5%8F%91%E6%98%AF%E8%BA%AB%E4%BD%93%E5%9C%A8%E5%8F%91%E5%87%BA%E5%8E%8B%E5%8A%9B%E8%AD%A6%E5%91%8A%23 "白头发是身体在发出压力警告")
-  * 3816.3万热度
-[饮水机禁止泡面标饿了坑里有热乎的](https://s.weibo.com/weibo?q=%23%E9%A5%AE%E6%B0%B4%E6%9C%BA%E7%A6%81%E6%AD%A2%E6%B3%A1%E9%9D%A2%E6%A0%87%E9%A5%BF%E4%BA%86%E5%9D%91%E9%87%8C%E6%9C%89%E7%83%AD%E4%B9%8E%E7%9A%84%23 "饮水机禁止泡面标饿了坑里有热乎的")
-  * 3914.9万热度
-[许飞乐意看厉娜哭还有后半句](https://s.weibo.com/weibo?q=%23%E8%AE%B8%E9%A3%9E%E4%B9%90%E6%84%8F%E7%9C%8B%E5%8E%89%E5%A8%9C%E5%93%AD%E8%BF%98%E6%9C%89%E5%90%8E%E5%8D%8A%E5%8F%A5%23 "许飞乐意看厉娜哭还有后半句")
-  * 4014.9万热度
-[玄彬郑丽媛青龙奖合体](https://s.weibo.com/weibo?q=%23%E7%8E%84%E5%BD%AC%E9%83%91%E4%B8%BD%E5%AA%9B%E9%9D%92%E9%BE%99%E5%A5%96%E5%90%88%E4%BD%93%23 "玄彬郑丽媛青龙奖合体")
-  * 4114.5万热度
-[马天宇完全就是无法选中之人](https://s.weibo.com/weibo?q=%23%E9%A9%AC%E5%A4%A9%E5%AE%87%E5%AE%8C%E5%85%A8%E5%B0%B1%E6%98%AF%E6%97%A0%E6%B3%95%E9%80%89%E4%B8%AD%E4%B9%8B%E4%BA%BA%23 "马天宇完全就是无法选中之人")新
-  * 4214.4万热度
-[美军本土引爆5吨含铅剧毒起爆药](https://s.weibo.com/weibo?q=%23%E7%BE%8E%E5%86%9B%E6%9C%AC%E5%9C%9F%E5%BC%95%E7%88%865%E5%90%A8%E5%90%AB%E9%93%85%E5%89%A7%E6%AF%92%E8%B5%B7%E7%88%86%E8%8D%AF%23 "美军本土引爆5吨含铅剧毒起爆药")
-  * 4314.1万热度
-[刘耀文对宋亚轩鼓脸颊完全没抵抗力](https://s.weibo.com/weibo?q=%23%E5%88%98%E8%80%80%E6%96%87%E5%AF%B9%E5%AE%8B%E4%BA%9A%E8%BD%A9%E9%BC%93%E8%84%B8%E9%A2%8A%E5%AE%8C%E5%85%A8%E6%B2%A1%E6%8A%B5%E6%8A%97%E5%8A%9B%23 "刘耀文对宋亚轩鼓脸颊完全没抵抗力")新
-  * 4413.8万热度
-[treetree炸鸡老板点赞熬夜补救视频](https://s.weibo.com/weibo?q=%23treetree%E7%82%B8%E9%B8%A1%E8%80%81%E6%9D%BF%E7%82%B9%E8%B5%9E%E7%86%AC%E5%A4%9C%E8%A1%A5%E6%95%91%E8%A7%86%E9%A2%91%23 "treetree炸鸡老板点赞熬夜补救视频")新
-  * 4512.6万热度
-[朝玉阶造型](https://s.weibo.com/weibo?q=%23%E6%9C%9D%E7%8E%89%E9%98%B6%E9%80%A0%E5%9E%8B%23 "朝玉阶造型")
-  * 4611.9万热度
+  * 2529.8万热度
+[马伯庸回应两京十五日争议](https://s.weibo.com/weibo?q=%23%E9%A9%AC%E4%BC%AF%E5%BA%B8%E5%9B%9E%E5%BA%94%E4%B8%A4%E4%BA%AC%E5%8D%81%E4%BA%94%E6%97%A5%E4%BA%89%E8%AE%AE%23 "马伯庸回应两京十五日争议")新
+  * 2626.8万热度
 [皮草](https://s.weibo.com/weibo?q=%23%E7%9A%AE%E8%8D%89%23 "皮草")新
-  * 4711.5万热度
-[爱奇艺 云包场](https://s.weibo.com/weibo?q=%23%E7%88%B1%E5%A5%87%E8%89%BA%20%E4%BA%91%E5%8C%85%E5%9C%BA%23 "爱奇艺 云包场")
-  * 4811.2万热度
-[最帅保洁大叔宣布辞职](https://s.weibo.com/weibo?q=%23%E6%9C%80%E5%B8%85%E4%BF%9D%E6%B4%81%E5%A4%A7%E5%8F%94%E5%AE%A3%E5%B8%83%E8%BE%9E%E8%81%8C%23 "最帅保洁大叔宣布辞职")
-  * 4910.6万热度
-[谷爱凌伤情待医生判断](https://s.weibo.com/weibo?q=%23%E8%B0%B7%E7%88%B1%E5%87%8C%E4%BC%A4%E6%83%85%E5%BE%85%E5%8C%BB%E7%94%9F%E5%88%A4%E6%96%AD%23 "谷爱凌伤情待医生判断")
-  * 5010.5万热度
+  * 2725.3万热度
+[大量英伟达GPU涌入转售市场](https://s.weibo.com/weibo?q=%23%E5%A4%A7%E9%87%8F%E8%8B%B1%E4%BC%9F%E8%BE%BEGPU%E6%B6%8C%E5%85%A5%E8%BD%AC%E5%94%AE%E5%B8%82%E5%9C%BA%23 "大量英伟达GPU涌入转售市场")新
+  * 2824.7万热度
+[问界M9圆线电机遭质疑](https://s.weibo.com/weibo?q=%23%E9%97%AE%E7%95%8CM9%E5%9C%86%E7%BA%BF%E7%94%B5%E6%9C%BA%E9%81%AD%E8%B4%A8%E7%96%91%23 "问界M9圆线电机遭质疑")新
+  * 2921.0万热度
+[饮水机禁止泡面标饿了坑里有热乎的](https://s.weibo.com/weibo?q=%23%E9%A5%AE%E6%B0%B4%E6%9C%BA%E7%A6%81%E6%AD%A2%E6%B3%A1%E9%9D%A2%E6%A0%87%E9%A5%BF%E4%BA%86%E5%9D%91%E9%87%8C%E6%9C%89%E7%83%AD%E4%B9%8E%E7%9A%84%23 "饮水机禁止泡面标饿了坑里有热乎的")
+  * 3020.3万热度
+[手把手教你关掉手机相册权限](https://s.weibo.com/weibo?q=%23%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%85%B3%E6%8E%89%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%E6%9D%83%E9%99%90%23 "手把手教你关掉手机相册权限")
+  * 3120.3万热度
+[感恩节](https://s.weibo.com/weibo?q=%23%E6%84%9F%E6%81%A9%E8%8A%82%23 "感恩节")新
+  * 3220.2万热度
+[詹姆斯76人生涯首个三双](https://s.weibo.com/weibo?q=%23%E8%A9%B9%E5%A7%86%E6%96%AF76%E4%BA%BA%E7%94%9F%E6%B6%AF%E9%A6%96%E4%B8%AA%E4%B8%89%E5%8F%8C%23 "詹姆斯76人生涯首个三双")新
+  * 3319.6万热度
+[鲍蕾带着贝儿去和郑恺打招呼](https://s.weibo.com/weibo?q=%23%E9%B2%8D%E8%95%BE%E5%B8%A6%E7%9D%80%E8%B4%9D%E5%84%BF%E5%8E%BB%E5%92%8C%E9%83%91%E6%81%BA%E6%89%93%E6%8B%9B%E5%91%BC%23 "鲍蕾带着贝儿去和郑恺打招呼")新
+  * 3419.6万热度
+[肖战三部开了研讨会的爆剧](https://s.weibo.com/weibo?q=%23%E8%82%96%E6%88%98%E4%B8%89%E9%83%A8%E5%BC%80%E4%BA%86%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%9A%84%E7%88%86%E5%89%A7%23 "肖战三部开了研讨会的爆剧")新
+  * 3519.2万热度
+[郭子睿回应自己为什么进圈](https://s.weibo.com/weibo?q=%23%E9%83%AD%E5%AD%90%E7%9D%BF%E5%9B%9E%E5%BA%94%E8%87%AA%E5%B7%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9B%E5%9C%88%23 "郭子睿回应自己为什么进圈")
+  * 3618.5万热度
+[鹿晗帮李晨吹蜡烛猜歌名](https://s.weibo.com/weibo?q=%23%E9%B9%BF%E6%99%97%E5%B8%AE%E6%9D%8E%E6%99%A8%E5%90%B9%E8%9C%A1%E7%83%9B%E7%8C%9C%E6%AD%8C%E5%90%8D%23 "鹿晗帮李晨吹蜡烛猜歌名")新
+  * 3718.2万热度
+[曼联2比2葡体判罚争议](https://s.weibo.com/weibo?q=%23%E6%9B%BC%E8%81%942%E6%AF%942%E8%91%A1%E4%BD%93%E5%88%A4%E7%BD%9A%E4%BA%89%E8%AE%AE%23 "曼联2比2葡体判罚争议")新
+  * 3818.1万热度
+[NBA回应詹姆斯76人生涯首次三双](https://s.weibo.com/weibo?q=%23NBA%E5%9B%9E%E5%BA%94%E8%A9%B9%E5%A7%86%E6%96%AF76%E4%BA%BA%E7%94%9F%E6%B6%AF%E9%A6%96%E6%AC%A1%E4%B8%89%E5%8F%8C%23 "NBA回应詹姆斯76人生涯首次三双")新
+  * 3917.4万热度
+[肖战生动演绎了瞬间瞳孔地震](https://s.weibo.com/weibo?q=%23%E8%82%96%E6%88%98%E7%94%9F%E5%8A%A8%E6%BC%94%E7%BB%8E%E4%BA%86%E7%9E%AC%E9%97%B4%E7%9E%B3%E5%AD%94%E5%9C%B0%E9%9C%87%23 "肖战生动演绎了瞬间瞳孔地震")
+  * 4016.3万热度
+[金价收复3500美元](https://s.weibo.com/weibo?q=%23%E9%87%91%E4%BB%B7%E6%94%B6%E5%A4%8D3500%E7%BE%8E%E5%85%83%23 "金价收复3500美元")
+  * 4115.7万热度
+[Bin谈BLG新AD](https://s.weibo.com/weibo?q=%23Bin%E8%B0%88BLG%E6%96%B0AD%23 "Bin谈BLG新AD")新
+  * 4215.2万热度
+[刘耀文对宋亚轩鼓脸颊完全没抵抗力](https://s.weibo.com/weibo?q=%23%E5%88%98%E8%80%80%E6%96%87%E5%AF%B9%E5%AE%8B%E4%BA%9A%E8%BD%A9%E9%BC%93%E8%84%B8%E9%A2%8A%E5%AE%8C%E5%85%A8%E6%B2%A1%E6%8A%B5%E6%8A%97%E5%8A%9B%23 "刘耀文对宋亚轩鼓脸颊完全没抵抗力")新
+  * 4315.1万热度
 [一诺说不赚一个亿不下播](https://s.weibo.com/weibo?q=%23%E4%B8%80%E8%AF%BA%E8%AF%B4%E4%B8%8D%E8%B5%9A%E4%B8%80%E4%B8%AA%E4%BA%BF%E4%B8%8D%E4%B8%8B%E6%92%AD%23 "一诺说不赚一个亿不下播")新
+  * 4415.0万热度
+[玄彬郑丽媛青龙奖合体](https://s.weibo.com/weibo?q=%23%E7%8E%84%E5%BD%AC%E9%83%91%E4%B8%BD%E5%AA%9B%E9%9D%92%E9%BE%99%E5%A5%96%E5%90%88%E4%BD%93%23 "玄彬郑丽媛青龙奖合体")
+  * 4514.7万热度
+[中国最宜居城市青岛个个在榜](https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%AE%9C%E5%B1%85%E5%9F%8E%E5%B8%82%E9%9D%92%E5%B2%9B%E4%B8%AA%E4%B8%AA%E5%9C%A8%E6%A6%9C%23 "中国最宜居城市青岛个个在榜")
+  * 4614.6万热度
+[医生建议将婚检前置至恋爱阶段](https://s.weibo.com/weibo?q=%23%E5%8C%BB%E7%94%9F%E5%BB%BA%E8%AE%AE%E5%B0%86%E5%A9%9A%E6%A3%80%E5%89%8D%E7%BD%AE%E8%87%B3%E6%81%8B%E7%88%B1%E9%98%B6%E6%AE%B5%23 "医生建议将婚检前置至恋爱阶段")新
+  * 4712.9万热度
+[美军本土引爆5吨含铅剧毒起爆药](https://s.weibo.com/weibo?q=%23%E7%BE%8E%E5%86%9B%E6%9C%AC%E5%9C%9F%E5%BC%95%E7%88%865%E5%90%A8%E5%90%AB%E9%93%85%E5%89%A7%E6%AF%92%E8%B5%B7%E7%88%86%E8%8D%AF%23 "美军本土引爆5吨含铅剧毒起爆药")
+  * 4812.6万热度
+[热火vs76人](https://s.weibo.com/weibo?q=%23%E7%83%AD%E7%81%ABvs76%E4%BA%BA%23 "热火vs76人")
+  * 4912.5万热度
+[许飞乐意看厉娜哭还有后半句](https://s.weibo.com/weibo?q=%23%E8%AE%B8%E9%A3%9E%E4%B9%90%E6%84%8F%E7%9C%8B%E5%8E%89%E5%A8%9C%E5%93%AD%E8%BF%98%E6%9C%89%E5%90%8E%E5%8D%8A%E5%8F%A5%23 "许飞乐意看厉娜哭还有后半句")
+  * 5012.4万热度
+[白头发是身体在发出压力警告](https://s.weibo.com/weibo?q=%23%E7%99%BD%E5%A4%B4%E5%8F%91%E6%98%AF%E8%BA%AB%E4%BD%93%E5%9C%A8%E5%8F%91%E5%87%BA%E5%8E%8B%E5%8A%9B%E8%AD%A6%E5%91%8A%23 "白头发是身体在发出压力警告")
 
 
 [![](https://whatshot.top/brand/whatshot-flame-30.png?v=20261003)**什么火了**](https://whatshot.top/)

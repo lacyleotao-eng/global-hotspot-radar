@@ -4,7 +4,7 @@
 去阅读
 在公众号小说中沉浸阅读
 在载人飞船与空间站组合体成功交会对接后，神舟二十四号航天员乘组从飞船返回舱顺利进入轨道舱。北京时间2026年11月25日14时35分，在轨执行任务的神舟二十三号航天员乘组顺利打开“家门”，欢迎远道而来的3名航天员入驻中国空间站，中外航天员实现首次“太空握手”。这是中国航天史上第9次“太空会师”，也是“天宫”首次迎来外籍航天员。随后，6名航天员合影留念，记录下这一历史性时刻。后续，6名航天员将在空间站进行在轨轮换‌。
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/zfmGljvUBM801IuemicdIO8jdVga0mXbCGaawkIMwSMGW8KiaoRia18X40xjtmNMyEfFwichEpORKnPJYRKiaMAhUdVZbSfaiagB03yJPMchISedA/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0)  
+![图片](data:image/svg+xml,%3C%3Fxml%20version='1.0'%20encoding='UTF-8'%3F%3E%3Csvg%20width='1px'%20height='1px'%20viewBox='0%200%201%201'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%20fill-opacity='0'%3E%3Cg%20transform='translate\(-249.000000,%20-126.000000\)'%20fill='%23FFFFFF'%3E%3Crect%20x='249'%20y='126'%20width='1'%20height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)  
 ![图片](data:image/svg+xml,%3C%3Fxml%20version='1.0'%20encoding='UTF-8'%3F%3E%3Csvg%20width='1px'%20height='1px'%20viewBox='0%200%201%201'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%20fill-opacity='0'%3E%3Cg%20transform='translate\(-249.000000,%20-126.000000\)'%20fill='%23FFFFFF'%3E%3Crect%20x='249'%20y='126'%20width='1'%20height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 几千年来，跨越喀喇昆仑的山河丝路映照着人类文明交流互鉴的坚定脚步；如今，浩瀚无垠宇宙的灿烂星河连接着人类和平利用太空、建设“太空家园”的共同梦想。中国空间站永远值得期待！中国“天宫”欢迎世界各地的伙伴们到访！
   

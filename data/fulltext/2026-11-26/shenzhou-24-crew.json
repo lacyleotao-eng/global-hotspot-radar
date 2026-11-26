@@ -1,12 +1,14 @@
 {
- "slug": "9",
+ "slug": "shenzhou-24-crew",
  "url": "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd",
  "ok": true,
  "images": 9,
  "cjk": 714,
+ "words": 208,
+ "lenScore": 922,
  "paras": 69,
  "subheads": 1,
- "mdChars": 2593,
+ "mdChars": 2905,
  "note": "",
- "fetchedAt": "2026-11-26T09:18:13+08:00"
+ "fetchedAt": "2026-11-26T09:31:43+08:00"
 }

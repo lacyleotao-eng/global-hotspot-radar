@@ -19,6 +19,7 @@ import json
 import os
 import re
 import statistics
+from pathlib import Path
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -440,6 +441,25 @@ def main() -> None:
         print(f"[dedupe] {len(dup_rows)} 篇属于同一选题的重复形态（一选题只应出一篇）：" +
               "；".join(f"《{str(d['title'])[:20]}》{d['formLabel']}" for d in dup_rows[:6]))
 
+    # 全文底稿覆盖：写稿该读原文全文，而不是摘要。这里只统计、不扣分（2026-11-26 新增）
+    ft_have, ft_missing, ft_total = 0, [], 0
+    for p in pieces_out:
+        if not str(p.get("file") or "").startswith(today_iso):
+            continue  # 只看当天的稿，历史批次不追溯
+        ft_total += 1
+        doc = next((d for d in docs if p["file"] == f"{d.get('date')}-{d.get('slug')}.json"), None) or {}
+        date = doc.get("date") or (p.get("file") or "")[:10]
+        slug = doc.get("slug") or (p.get("file") or "")[11:-5]
+        md = Path(ROOT) / "data" / "fulltext" / str(date) / f"{slug}.md"
+        if md.exists() and md.stat().st_size > 400:
+            ft_have += 1
+        else:
+            ft_missing.append(p["file"])
+    out_ft = {"have": ft_have, "total": ft_total, "missing": ft_missing}
+    if ft_total:
+        print(f"[fulltext] 原文全文底稿 {ft_have}/{ft_total} 篇" +
+              ("" if not ft_missing else "；缺 " + "、".join(x[11:-5] for x in ft_missing[:5])))
+
     cov = coverage_report(docs)
     if cov:
         missing_rows = [m for r in cov["byTarget"] for m in r["missing"]]
@@ -449,6 +469,7 @@ def main() -> None:
     out = {
         "updatedAt": now_iso(),
         "coverage": cov,
+        "fulltext": out_ft,
         "duplicates": dup_rows,
         "benchmarkUpdatedAt": bench.get("updatedAt"),
         "total": len(pieces_out),

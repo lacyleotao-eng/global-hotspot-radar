@@ -1,163 +1,199 @@
 {
  "date": "2026-11-26",
- "generatedAt": "2026-11-26T09:18:57+08:00",
+ "generatedAt": "2026-11-26T01:32:30.577Z",
  "rows": [
   {
-   "slug": "seed-20261122-黄金首饰每克300元的工费，",
-   "url": "https://www.toutiao.com/a7710783752208728585",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "seed-20261122-清晨一个惊喜！我的文章悄悄1",
-   "url": "https://www.toutiao.com/article/7708528277236761142",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "seed-20261122-新规征求！无论你怎么上网，老",
-   "url": "https://www.toutiao.com/a7710697022239687183",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "seed-20261122-演都不演了，全红婵再破天花板",
-   "url": "http://xkshenghuo.xingkong.net/xkshenghuo/20261108/0840683.html",
-   "ok": false,
-   "note": "Unexpected error in _crawl_web at line 799 in _crawl_web (../../.wb-tools/crawl4ai-venv/lib/python3.13/site-packages/cra"
-  },
-  {
-   "slug": "seed-20261122-全红婵有了新头衔：没站上跳台",
-   "url": "https://yule.sohu.com/a/1100753469_122049102",
-   "ok": false,
-   "note": "Unexpected error in _crawl_web at line 799 in _crawl_web (../../.wb-tools/crawl4ai-venv/lib/python3.13/site-packages/cra"
-  },
-  {
-   "slug": "seed-20261122-黄金首饰每克300元的工费，",
-   "url": "https://www.toutiao.com/a7710783752208728585",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "seed-20261122-93年，31岁，拥有三份收入",
-   "url": "https://www.toutiao.com/article/7706019908915692066/",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "seed-20261122-暴雨中，他把伞给了陌生人，自",
-   "url": "https://www.toutiao.com/",
-   "ok": false,
-   "note": "强反爬/需登录，改用 ego-browser"
-  },
-  {
-   "slug": "wechat-feeds-20261122-夜里，我偷偷用“千问AI小剧",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzU0NDEwMTc1MA==&mid=2247526850&idx=1&sn=2cd3c1e530e59266149c1873fa9f1852",
-   "ok": false,
-   "note": "正文过短（可能被拦或页面改版）"
-  },
-  {
-   "slug": "wechat-feeds-20261122-Anthropic正式敲钟上",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623565&idx=1&sn=30615c2bc21d1307c702fb700550da46",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34615 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-斯坦福Agent工程课开源：",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623545&idx=1&sn=d27c9653f0a6252229a5c1c5bb200e0f",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34619 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-莫言：高明的作家都有一个强大",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495736&idx=1&sn=82335ffef2cb51b9e2524172c376c21a",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34061 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-莫言：我几乎尝遍了田野里的百",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495725&idx=1&sn=ebfb144df22da593680f813d065c86b3",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34061 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-2026年6月长赢投资计划（",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412874&idx=1&sn=cb15a63f24e34c97339834acb1b1ccab",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34061 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-2026年6月长赢投资计划（",
-   "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412822&idx=1&sn=c4a29e8e877e7d65ba1ff8e57c025a5f",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34060 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-从《我看见的世界》里品出的育",
-   "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314046&idx=1&sn=5ccc37c3e90e66f928be68f2a0fa11df",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34061 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-feeds-20261122-Garak-大语言模型脆弱性",
-   "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314038&idx=1&sn=7e1abbb07e76b5277b66851dc6518eba",
-   "ok": false,
-   "note": "Blocked by anti-bot protection: Structural: minimal_text, no_content_elements, script_heavy_shell (34061 bytes, 47 chars"
-  },
-  {
-   "slug": "wechat-poster-20261122-控制你的固定支出",
-   "url": "https://mp.weixin.qq.com/s/jVxBF-ei1TDPcW2gcqEnlA",
+   "slug": "6-5000",
+   "url": "https://www.toutiao.com/w/1882745765052428/",
    "ok": true,
-   "images": 4,
-   "cjk": 860,
+   "note": "crawl4ai 失败，ego 兜底成功",
+   "source": "ego",
+   "cjk": 1439,
+   "words": 9,
+   "paras": 78,
+   "subheads": 0,
+   "images": 36,
+   "mdChars": 1977,
+   "title": "2",
+   "fetchedAt": "2026-11-26T01:32:01.561Z"
+  },
+  {
+   "slug": "650",
+   "url": "https://www.toutiao.com/article/7711775218607424054/",
+   "ok": true,
+   "note": "crawl4ai 失败，ego 兜底成功",
+   "source": "ego",
+   "cjk": 2815,
+   "words": 15,
+   "paras": 149,
+   "subheads": 0,
+   "images": 30,
+   "mdChars": 3743,
+   "title": "网友直呼天塌了，“我都是一箱一箱买”！深圳卫健委提醒：每磨损1克释放650万个微塑料，千万别再随便用了",
+   "fetchedAt": "2026-11-26T01:32:08.815Z"
+  },
+  {
+   "slug": "ai-ai",
+   "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+   "ok": true,
+   "images": 6,
+   "cjk": 0,
+   "words": 1785,
+   "lenScore": 1785,
+   "paras": 84,
+   "subheads": 3,
+   "mdChars": 16922,
+   "note": ""
+  },
+  {
+   "slug": "anthropic-ai",
+   "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+   "ok": true,
+   "images": 12,
+   "cjk": 0,
+   "words": 1390,
+   "lenScore": 1390,
+   "paras": 98,
+   "subheads": 11,
+   "mdChars": 12938,
+   "note": ""
+  },
+  {
+   "slug": "ceo-20-7",
+   "url": "https://36kr.com/p/4084960167111300",
+   "ok": true,
+   "note": "crawl4ai 失败，ego 兜底成功",
+   "source": "ego",
+   "cjk": 1769,
+   "words": 11,
    "paras": 27,
    "subheads": 0,
-   "mdChars": 1545,
-   "note": ""
+   "images": 3,
+   "mdChars": 2302,
+   "title": "“并购之王”华兴资本换帅，葛小波出任CEO",
+   "fetchedAt": "2026-11-26T01:32:15.587Z"
   },
   {
-   "slug": "wechat-poster2-20261122-一觉醒来，天塌了！！！",
-   "url": "https://mp.weixin.qq.com/s/jabcBJx5VD33Mi0bfk36Gg",
+   "slug": "coke-date-label",
+   "url": "https://whatshot.top/news/weibo?view=detail",
    "ok": true,
-   "images": 4,
-   "cjk": 429,
-   "paras": 18,
-   "subheads": 0,
-   "mdChars": 1021,
-   "note": ""
-  },
-  {
-   "slug": "wechat-poster3-20261122-盘后，利好爆发了",
-   "url": "https://mp.weixin.qq.com/s/vGLX7wre_TKQ7HvezQeocw",
-   "ok": true,
-   "images": 4,
-   "cjk": 475,
-   "paras": 16,
-   "subheads": 0,
-   "mdChars": 1117,
-   "note": ""
-  },
-  {
-   "slug": "wechat-poster4-20261122-周末，超级大瓜！",
-   "url": "https://mp.weixin.qq.com/s/YX3xzxEFM4Pz40agMiBBCQ",
-   "ok": true,
-   "images": 4,
-   "cjk": 407,
-   "paras": 18,
-   "subheads": 0,
-   "mdChars": 1000,
-   "note": ""
-  },
-  {
-   "slug": "wechat-poster5-20261122-疯传的小道消息！",
-   "url": "https://mp.weixin.qq.com/s/h6P8BRN-YvlwppSzoJ-PHg",
-   "ok": true,
-   "images": 4,
-   "cjk": 433,
-   "paras": 21,
+   "images": 21,
+   "cjk": 2595,
+   "words": 1763,
+   "lenScore": 4358,
+   "paras": 114,
    "subheads": 1,
-   "mdChars": 1004,
+   "mdChars": 22085,
+   "note": ""
+  },
+  {
+   "slug": "diagram-design",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "ok": true,
+   "images": 69,
+   "cjk": 1,
+   "words": 9453,
+   "lenScore": 9454,
+   "paras": 480,
+   "subheads": 57,
+   "mdChars": 82478,
+   "note": ""
+  },
+  {
+   "slug": "doubao-shopping",
+   "url": "https://news.qq.com/rain/a/20261125A0C2S700",
+   "ok": true,
+   "images": 17,
+   "cjk": 1799,
+   "words": 426,
+   "lenScore": 2225,
+   "paras": 82,
+   "subheads": 0,
+   "mdChars": 5560,
+   "note": ""
+  },
+  {
+   "slug": "e13-8b5c36",
+   "url": "https://hot.online.sh.cn/content/2026-11/24/content_10506721.htm",
+   "ok": true,
+   "note": "crawl4ai 失败，ego 兜底成功",
+   "source": "ego",
+   "cjk": 984,
+   "words": 8,
+   "paras": 53,
+   "subheads": 0,
+   "images": 17,
+   "mdChars": 1457,
+   "title": "“我想尝尝拘留所的饭”，上海警方：安排！男子发贴称“千万名表遗失，拾获者赠268平房产”，被刑拘→",
+   "fetchedAt": "2026-11-26T01:32:22.338Z"
+  },
+  {
+   "slug": "gpu-sandbox-channel",
+   "url": "https://news.ycombinator.com/item?id=50637686",
+   "ok": true,
+   "note": "crawl4ai 失败，ego 兜底成功",
+   "source": "ego",
+   "cjk": 0,
+   "words": 13090,
+   "paras": 761,
+   "subheads": 0,
+   "images": 2,
+   "mdChars": 84454,
+   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed | Hacker News",
+   "fetchedAt": "2026-11-26T01:32:30.577Z"
+  },
+  {
+   "slug": "meta-muse-instagram",
+   "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+   "ok": true,
+   "images": 7,
+   "cjk": 0,
+   "words": 1697,
+   "lenScore": 1697,
+   "paras": 108,
+   "subheads": 3,
+   "mdChars": 15072,
+   "note": ""
+  },
+  {
+   "slug": "pboc-5000-8000",
+   "url": "https://eu.36kr.com/zh/p/4084431441488260",
+   "ok": true,
+   "images": 7,
+   "cjk": 6068,
+   "words": 258,
+   "lenScore": 6326,
+   "paras": 88,
+   "subheads": 0,
+   "mdChars": 9583,
+   "note": ""
+  },
+  {
+   "slug": "shenzhou-24-crew",
+   "url": "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd",
+   "ok": true,
+   "images": 9,
+   "cjk": 714,
+   "words": 208,
+   "lenScore": 922,
+   "paras": 69,
+   "subheads": 1,
+   "mdChars": 2905,
+   "note": ""
+  },
+  {
+   "slug": "vibe-coding-firmware",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+   "ok": true,
+   "images": 8,
+   "cjk": 0,
+   "words": 3591,
+   "lenScore": 3591,
+   "paras": 129,
+   "subheads": 5,
+   "mdChars": 29089,
    "note": ""
   }
- ]
+ ],
+ "egoRetryAt": "2026-11-26T01:32:30.577Z"
 }

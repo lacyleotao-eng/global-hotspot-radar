@@ -7,6 +7,7 @@
 北京日报客户端
 搜索
 趣玩
+游戏
 网页设置
 [Skills服务NEW](https://news.qq.com/exchange?scene=appkey)
 登录
@@ -52,6 +53,7 @@ AI产品在个人智能体方向的探索正从完成单次任务，延伸到持
 **记者：孙奇茹**
 免责声明：本内容来自腾讯平台创作者，不代表腾讯新闻或腾讯网的观点和立场。
 ![](https://inews.gtimg.com/newsapp_bt/0/1012205723968_6694/0)举报
+[![](https://inews.gtimg.com/news_bt/Oafhqc3dHNqH3F7zVLfFX23FvljSX26Kzts0v-nFkBgbAAA)AI趋势榜](https://h5.news.qq.com/qqfile/activity/pages-fl23gn/penguin-trend.html)
 评论 0文明上网理性发言，请遵守[《新闻评论服务协议》](https://h5.news.qq.com/static/coralinfo.htm)
 ![](http://inews.gtimg.com/newsapp_ls/0/12597139796/0)
 请先登录后发表评论~
@@ -75,6 +77,29 @@ Copyright © 1998 - 2026 Tencent. All Rights Reserved
 腾讯新闻·电脑版
 全网热点早知道
 点击下载
+作者其他文章
+![](https://inews.gtimg.com/om_ls/OHJpPH8uUrSr5Orqyx6P5vLfbi37lAStL6i-ye__lCmC4AA_870492/0)
+00:38
+大熊猫表演倒挂金钩
+7分钟前
+![](https://inews.gtimg.com/om_ls/OX19YOVXEv74SW-aUdpLA5NmJrZpryhwXERrfP1Dlz0TkAA_294195/0)
+太好吃啦！北京这美食吃不够！有1家还能边吃边看京剧！
+21分钟前
+热点榜榜单规则说明
+换一换
+  * _0_[坚持把依规治党当作管党治党基本方式](https://news.qq.com/rain/a/20261125A0CONT00 "坚持把依规治党当作管党治党基本方式")
+  * _1_[上海市长：坚决拥护党中央决定](https://news.qq.com/rain/a/20261125A0DHUW00 "上海市长：坚决拥护党中央决定")
+  * _2_[现场！歼-16两次升级驱离外机](https://news.qq.com/rain/a/20261126A048YE00 "现场！歼-16两次升级驱离外机")
+  * _3_[照护“一老一小”，服务体系如何搭建](https://news.qq.com/rain/a/20261125A01B9800 "照护“一老一小”，服务体系如何搭建")
+  * _4_[多家国有大行密集表态](https://news.qq.com/rain/a/20261125A0FXCO00 "多家国有大行密集表态")
+  * _5_[中国专利申请量居全球首位](https://news.qq.com/rain/a/20261126A04A3F00 "中国专利申请量居全球首位")
+  * _6_[国产装备爆单 订单排到2029年](https://news.qq.com/rain/a/20261125A0AREH00 "国产装备爆单 订单排到2029年")
+  * _7_[中国剧集正在全球吸粉](https://news.qq.com/rain/a/20261126A04DU500 "中国剧集正在全球吸粉")
+  * _8_[十万年前的华南存多种古人类](https://news.qq.com/rain/a/20261126A0005K00 "十万年前的华南存多种古人类")
+  * _9_[冲锋衣“有氟”≠不好](https://news.qq.com/rain/a/20261126A04F0400 "冲锋衣“有氟”≠不好")
+  * _10_[服用精神科药物，会让人变得麻木？](https://news.qq.com/rain/a/20261125A0C27V00 "服用精神科药物，会让人变得麻木？")![](http://inews.gtimg.com/newsapp_ls/0/14797022909/0)
+
+
 ![腾讯新闻·电脑版](https://inews.gtimg.com/newsapp_bt/0/0618200405157_4887/0)
 腾讯新闻·电脑版
 24小时陪你追热点
