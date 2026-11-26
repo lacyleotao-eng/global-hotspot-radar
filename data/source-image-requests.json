@@ -1,108 +1,98 @@
 {
-  "builtAt": "2026-11-25T04:48:05+08:00",
+  "builtAt": "2026-11-26T04:46:50+08:00",
   "jobs": [
     {
-      "slug": "e1-e2da06",
+      "slug": "9",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzA4NzUzNTcxMw==&mid=2652882210&idx=2&sn=02c529fdde1e00f3a02d55fd5904cc8d",
-        "https://www.163.com/dy/article/LCH9I5TN05346RC6.html",
-        "https://news.qq.com/rain/a/20261124A0CE8W00"
+        "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd",
+        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9993066209676108471&channelId=1215",
+        "https://news.qq.com/rain/a/20261125A04R1100"
       ]
     },
     {
-      "slug": "439-ai",
+      "slug": "ai-vibe-coding-firmware",
       "urls": [
-        "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion",
-        "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/"
+        "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
       ]
     },
     {
-      "slug": "ai-claude-ship",
+      "slug": "ai-meta-muse-instagram",
       "urls": [
-        "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
-        "https://news.ycombinator.com/item?id=50618513",
-        "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests"
+        "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+        "https://www.theverge.com/",
+        "https://nexgadgets.com/muse-instagram-dms-roll-out-in-five-markets"
       ]
     },
     {
-      "slug": "e4-4b02be",
+      "slug": "doubao-shopping",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzA3MTU5NzM4MQ==&mid=2648439842&idx=1&sn=07854ae340f62323fe26ff0396160e90",
-        "https://news.qq.com/rain/a/20261124A05J0200"
+        "https://www.163.com/dy/article/LCIQ39C505566WT8.html",
+        "https://news.qq.com/rain/a/20261125A0C2S700",
+        "https://dzrb.dzng.com/general/0/NEWS3842601GRMXBAKCTSMPX"
       ]
     },
     {
-      "slug": "shenzhou-24-launch",
+      "slug": "e5-81d6ed",
       "urls": [
-        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=9635468700153354161&channelId=1119",
-        "https://www.chinanews.com/gn/2026/11-24/10736761.shtml",
-        "https://news.qq.com/rain/a/20261124A03WND00"
+        "https://news.qq.com/rain/a/20261125A0EJZG00",
+        "https://m.gmw.cn/2026-11/25/content_1304589214.htm",
+        "https://pc.bjd.com.cn/detail?id=s6b069613e4b039a8e2f40771"
       ]
     },
     {
-      "slug": "300-ai",
+      "slug": "gpu",
       "urls": [
-        "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off",
-        "https://sierra.ai/blog/series-f-30b"
+        "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+        "https://news.ycombinator.com/item?id=50637686"
       ]
     },
     {
-      "slug": "mate-x8-12999-iphone",
+      "slug": "ai-ai",
       "urls": [
-        "https://m.thepaper.cn/newsDetail_forward_34548397",
-        "https://news.qq.com/rain/a/20261124A0CCFU00",
-        "https://news.qq.com/rain/a/20261124A0C1NR00"
+        "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+        "https://www.theverge.com/"
       ]
     },
     {
-      "slug": "22-53",
+      "slug": "650",
       "urls": [
-        "https://news.qq.com/rain/a/20261124A0BAW100",
-        "https://cj.sina.com.cn/articles/view/1652484947/m627eeb5303302319e",
-        "https://new.qq.com/rain/a/20261124A0A31J00"
+        "https://news.qq.com/rain/a/20261125A0515100",
+        "https://www.cnr.cn/china/yaowen/20261124/t20261124_527881621.shtml",
+        "https://www.jfdaily.com/staticsg/res/html/web/sgh/sghNewsDetail.html?id=4100502"
       ]
     },
     {
-      "slug": "7",
+      "slug": "anthropic-ai",
       "urls": [
-        "https://www.thepaper.cn/newsDetail_forward_34540968",
-        "https://finance.sina.com.cn/wm/2026-11-24/doc-inizuxvk7847706.shtml",
-        "https://www.zjjubao.com/a/html/80114927"
+        "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+        "https://www.bloomberg.com/"
       ]
     },
     {
-      "slug": "ai",
+      "slug": "ceo-20-7",
       "urls": [
-        "https://himiao.ai/en/news/2026-11-23-walmart-muse-black-friday",
-        "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
+        "https://36kr.com/p/4084960167111300"
       ]
     },
     {
-      "slug": "u17-2-0-2-2-11-26",
+      "slug": "pboc-5000-8000",
       "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492067&idx=1&sn=a5611f4fb5ccf245f6a0bc4d188bd158"
+        "https://www.cnr.cn/jingji/ycbd/20261125/t20261125_527882321.shtml",
+        "https://36kr.com/newsflashes/",
+        "https://eu.36kr.com/zh/p/4084431441488260"
       ]
     },
     {
-      "slug": "e12-45a138",
+      "slug": "e13-8b5c36",
       "urls": [
-        "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=14120409956206016636&channelId=1119",
-        "https://www.thepaper.cn/newsDetail_forward_34548139",
-        "https://www.stcn.com/article/detail/4350913.html"
+        "https://news.qq.com/rain/a/20261124A0E3UQ00",
+        "https://hot.online.sh.cn/content/2026-11/24/content_10506721.htm"
       ]
     },
     {
-      "slug": "55",
+      "slug": "6-5000",
       "urls": [
-        "https://www.thepaper.cn/newsDetail_forward_34548355"
-      ]
-    },
-    {
-      "slug": "29-6-50-22",
-      "urls": [
-        "https://news.qq.com/rain/a/20261124A098LK00",
-        "https://www.163.com/dy/article/LCGJC7430514CFC7.html",
-        "https://news.china.com/socialgd/10000169/20261124/49901892_all.html"
+        "https://www.toutiao.com/w/1882745765052428/"
       ]
     }
   ]

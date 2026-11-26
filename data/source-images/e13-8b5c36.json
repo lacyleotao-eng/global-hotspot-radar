@@ -1,0 +1,39 @@
+{
+  "slug": "e13-8b5c36",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:20+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e13-8b5c36/raw-1.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261124A0E3UQ00",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：原文图不可用：两张候选均为游戏广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/e13-8b5c36/raw-2.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261124A0E3UQ00",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：原文图不可用：两张候选均为游戏广告",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-26T04:53:46+08:00"
+}

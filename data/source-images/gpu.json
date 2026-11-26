@@ -1,0 +1,24 @@
+{
+  "slug": "gpu",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:19+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/gpu/raw-1.webp",
+      "bytes": 25264,
+      "w": 1200,
+      "h": 648,
+      "url": "https://res.cloudinary.com/lesswrong-2-0/image/upload/c_limit,w_1200,q_auto,f_jpg/f_auto,q_auto/v1/mirroredImages/7wzWuLP3HhyBLmKfo/ilkdsamuxja1dvu4uah2",
+      "page": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "alt": "",
+      "md5": "2610d618dedfed481eecb767b3a3ad3a",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-26T04:53:45+08:00"
+}

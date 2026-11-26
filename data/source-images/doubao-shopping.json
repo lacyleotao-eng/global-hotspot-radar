@@ -1,0 +1,70 @@
+{
+  "slug": "doubao-shopping",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:19+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/doubao-shopping/raw-1.jpeg",
+      "bytes": 67273,
+      "w": 960,
+      "h": 1501,
+      "url": "https://inews.gtimg.com/om_bt/OV5Z3lYzR65QITH0SYYVVeIoJwq6WvrK67Te_d36ynjQIAA/641",
+      "page": "https://news.qq.com/rain/a/20261125A0C2S700",
+      "alt": "图片",
+      "md5": "134875a579d03742dc80059bc4fb1dc0",
+      "status": "approved",
+      "reason": "腾讯新闻原文截图，可见豆包App侧边栏豆包购物入口；2-3为游戏广告",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/doubao-shopping/raw-2.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261125A0C2S700",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：腾讯新闻原文截图，可见豆包App侧边栏豆包购物入口；2-3为游戏广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/doubao-shopping/raw-3.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261125A0C2S700",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：腾讯新闻原文截图，可见豆包App侧边栏豆包购物入口；2-3为游戏广告",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/doubao-shopping/raw-1.jpeg",
+      "bytes": 67273,
+      "w": 960,
+      "h": 1501,
+      "url": "https://inews.gtimg.com/om_bt/OV5Z3lYzR65QITH0SYYVVeIoJwq6WvrK67Te_d36ynjQIAA/641",
+      "page": "https://news.qq.com/rain/a/20261125A0C2S700",
+      "alt": "图片",
+      "md5": "134875a579d03742dc80059bc4fb1dc0",
+      "status": "approved",
+      "reason": "腾讯新闻原文截图，可见豆包App侧边栏豆包购物入口；2-3为游戏广告",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-26T04:53:45+08:00"
+}

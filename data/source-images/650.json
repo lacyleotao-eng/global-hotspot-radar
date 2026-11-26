@@ -1,0 +1,100 @@
+{
+  "slug": "650",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:18+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/650/raw-1.jpeg",
+      "bytes": 121008,
+      "w": 1280,
+      "h": 720,
+      "url": "https://pgdt.gtimg.cn/141/20204/snscosdownload/SZ/reserved/6af3c91300012b1c1afd8cc8c4fb01150000008d00004eec?ck=15b69b2c5375db55af3f74af78e62392&m=15b69b2c5375db55af3f74af78e62392&sha256=5de4f1699f8a9986d267cb211441b5c3613f6fffb8f65865f71efc59fda0c70a",
+      "page": "https://news.qq.com/rain/a/20261125A0515100",
+      "alt": "Thumbplayer Poster Plugin Image",
+      "md5": "15b69b2c5375db55af3f74af78e62392",
+      "status": "drop",
+      "reason": "人工淘汰：原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/650/raw-2.png",
+      "bytes": 209236,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
+      "page": "https://news.qq.com/rain/a/20261125A0515100",
+      "alt": "趣玩游戏",
+      "md5": "16b9cd0f51a20bb15529d523713408a9",
+      "status": "drop",
+      "reason": "人工淘汰：原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/650/raw-3.png",
+      "bytes": 180546,
+      "w": 1020,
+      "h": 573,
+      "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
+      "page": "https://news.qq.com/rain/a/20261125A0515100",
+      "alt": "趣玩游戏",
+      "md5": "ba4d692490d8dece3cc12a70bd8cb543",
+      "status": "drop",
+      "reason": "人工淘汰：原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 4,
+      "file": "assets/source/650/raw-4.jpeg",
+      "bytes": 1912722,
+      "w": 1600,
+      "h": 786,
+      "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/c2b374227cd44e8a955aba56d28edd7210.png?auth=8acbee4df7e0dec3b734c29f7793e976&scale=2.03",
+      "page": "https://www.cnr.cn/china/yaowen/20261124/t20261124_527881621.shtml",
+      "alt": "",
+      "md5": "1654771d0062e25f9a747cdd7d168e7f",
+      "status": "drop",
+      "reason": "人工淘汰：原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 5,
+      "file": "assets/source/650/raw-5.png",
+      "bytes": 459022,
+      "w": 850,
+      "h": 567,
+      "url": "https://sghimages.shobserver.cn/img/sgh/20261125/YLYaSeW2oo/c6350e6f7b134736b5391707e1d202c0.png",
+      "page": "https://www.jfdaily.com/staticsg/res/html/web/sgh/sghNewsDetail.html?id=4100502",
+      "alt": "",
+      "md5": "1b5fc7918fec5aac288e368a64d6f004",
+      "status": "approved",
+      "reason": "原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 5,
+      "file": "assets/source/650/raw-5.png",
+      "bytes": 459022,
+      "w": 850,
+      "h": 567,
+      "url": "https://sghimages.shobserver.cn/img/sgh/20261125/YLYaSeW2oo/c6350e6f7b134736b5391707e1d202c0.png",
+      "page": "https://www.jfdaily.com/staticsg/res/html/web/sgh/sghNewsDetail.html?id=4100502",
+      "alt": "",
+      "md5": "1b5fc7918fec5aac288e368a64d6f004",
+      "status": "approved",
+      "reason": "原文报道的纳米海绵洗碗场景图；1为WorkBuddy标识、2模糊网页截图、3游戏广告、4魔力擦商品广告",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-26T04:53:46+08:00"
+}

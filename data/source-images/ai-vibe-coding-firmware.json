@@ -1,0 +1,55 @@
+{
+  "slug": "ai-vibe-coding-firmware",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:19+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/ai-vibe-coding-firmware/raw-1.jpeg",
+      "bytes": 276616,
+      "w": 1600,
+      "h": 1056,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C2.0451339915374%2C100%2C95.909732016925&w=2400",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "alt": "vibe_coding_synths_",
+      "md5": "7092e16d3f45a31db9765b0004cdfceb",
+      "status": "approved",
+      "reason": "The Verge 原文音乐硬件配图，无叠加水印；2与1为同类合成器素材近重复弃用",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/ai-vibe-coding-firmware/raw-2.webp",
+      "bytes": 108350,
+      "w": 1200,
+      "h": 625,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C12.339110464558%2C100%2C75.321779070884&w=1200",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "alt": "",
+      "md5": "d786908031191782e436838f38e1af97",
+      "status": "drop",
+      "reason": "人工淘汰：The Verge 原文音乐硬件配图，无叠加水印；2与1为同类合成器素材近重复弃用",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/ai-vibe-coding-firmware/raw-1.jpeg",
+      "bytes": 276616,
+      "w": 1600,
+      "h": 1056,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C2.0451339915374%2C100%2C95.909732016925&w=2400",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "alt": "vibe_coding_synths_",
+      "md5": "7092e16d3f45a31db9765b0004cdfceb",
+      "status": "approved",
+      "reason": "The Verge 原文音乐硬件配图，无叠加水印；2与1为同类合成器素材近重复弃用",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-26T04:53:45+08:00"
+}

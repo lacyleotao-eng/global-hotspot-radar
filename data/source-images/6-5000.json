@@ -1,0 +1,39 @@
+{
+  "slug": "6-5000",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:20+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/6-5000/raw-1.webp",
+      "bytes": 83112,
+      "w": 750,
+      "h": 1274,
+      "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/a4960f839c7ecfcf25be45e506f9b938~tplv-obj:750:1274.image?_iz=97245&bid=15&from=post&gid=1882745765052428&lk3s=06827d14&x-expires=1803340800&x-signature=m9uffEsNi7WEQzylhIXlJJ7OoAQ%3D",
+      "page": "https://www.toutiao.com/w/1882745765052428/",
+      "alt": "",
+      "md5": "e05793f810eb951fb00ab82574f3aea8",
+      "status": "drop",
+      "reason": "像素不足 750x1274",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/6-5000/raw-2.jpeg",
+      "bytes": 52950,
+      "w": 1000,
+      "h": 523,
+      "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/a0c385b0f3f48ce680e69ad857be9674~tplv-obj:1000:523.image?_iz=97245&bid=15&from=post&gid=1882745765052428&lk3s=06827d14&x-expires=1803340800&x-signature=C3SAgHr0K947vc67u92Rj21FpO4%3D",
+      "page": "https://www.toutiao.com/w/1882745765052428/",
+      "alt": "",
+      "md5": "1edc27beb17cb156f7de3c2221fbe8e6",
+      "status": "drop",
+      "reason": "人工淘汰：原文图不可用：1为论坛页面截图尺寸不足，2为浴室自拍与金顶通勤主题无关",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-26T04:53:46+08:00"
+}

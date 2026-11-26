@@ -1,0 +1,24 @@
+{
+  "slug": "anthropic-ai",
+  "date": "2026-11-26",
+  "builtAt": "2026-11-26T04:52:20+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/anthropic-ai/raw-1.webp",
+      "bytes": 45888,
+      "w": 594,
+      "h": 396,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594",
+      "page": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "alt": "",
+      "md5": "053e4a1743869b181a7039c8742d8a9a",
+      "status": "drop",
+      "reason": "像素不足 594x396",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-26T04:53:46+08:00"
+}

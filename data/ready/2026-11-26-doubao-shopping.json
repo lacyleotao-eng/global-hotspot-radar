@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "date": "2026-11-26",
+  "slug": "doubao-shopping",
+  "sourceItemId": "044c0ecf5ef4e41c",
+  "sourceTitle": "豆包App灰度测试“豆包购物”，小豆个人助理同步开启公测",
+  "sourceUrl": "https://news.qq.com/rain/a/20261125A0C2S700",
+  "sourcePlatform": "腾讯新闻",
+  "verification": "部分核实",
+  "verificationNote": "功能处于灰度测试，页面可见范围有限；待核问题：字节官方公告、功能全量时间与授权范围。",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "产品速递",
+      "title": "1个一级入口，豆包购物却还在灰度：先别当成全量上线",
+      "digest": "侧边栏多了一个入口，点进去是抖音电商提供的类商城页。AI 比价、找货、下单连成一条线，但灰度状态和授权边界还没说清。",
+      "images": [
+        {
+          "src": "assets/source/doubao-shopping/raw-1.jpeg",
+          "caption": "原文刊发的现场画面（图源：腾讯新闻）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/doubao-shopping-db-1.jpeg",
+          "caption": "AI 生成示意图：电商概念摄影：快递纸箱与购物袋摆在浅色桌面上（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/doubao-shopping-db-2.jpeg",
+          "caption": "AI 生成示意图：电商概念摄影：快递纸箱与购物袋摆在浅色桌面上（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/doubao-shopping-db-3.jpeg",
+          "caption": "AI 生成示意图：电商概念摄影：快递纸箱与购物袋摆在浅色桌面上（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/doubao-shopping-db-4.jpeg",
+          "caption": "AI 生成示意图：手机放在购物袋旁（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/doubao-shopping-db-5.jpeg",
+          "caption": "AI 生成示意图：手机放在购物袋旁（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，腾讯新闻11月25日的报道说，部分用户豆包 App 侧边栏出现了“豆包购物”一级入口；前一天，个人 AI 助理“小豆”刚开启公测。"
+        },
+        {
+          "type": "para",
+          "text": "入口的位置值得注意：一级入口意味着它和常用功能并列，而不是藏在二级页面里。点进去之后，页面由抖音电商提供，形态接近商城。对产品来说，这是把对话能力接到现成交易场景上；对用户来说，先要确认自己看到的是不是灰度版本。"
+        },
+        {
+          "type": "para",
+          "text": "链路是这样走的：用对话描述需求，由 AI 比价、找商品，然后下单。报道没有给出参与商品范围、价格数据来源和下单成功率，这些细节不可见，也不该从“能下单”三个字推成“什么都能买”。"
+        },
+        {
+          "type": "para",
+          "text": "“小豆”这边，报道列出的演示场景包括定时提醒、代打电话，以及经授权后跟进补货。注意“经授权”这个前提：它决定了代执行动作能不能发生。这里不演示任何需要登录或授权的个人数据操作。"
+        },
+        {
+          "type": "para",
+          "text": "边界要说清楚：豆包购物处于灰度测试，截至报道发稿，字节官方未就最新进展作出回应。功能处于灰度、页面可见范围有限，官方公告、全量时间与授权范围都还没确认。所以这是“部分用户可见的测试”，不是全量上线。"
+        },
+        {
+          "type": "para",
+          "text": "如果你想判断自己有没有被覆盖，只能看 App 里是否出现那个入口。没有看到，不等于功能下线；看到了，也不等于所有能力都已开放。后续以官方公告为准，在此之前把“尚未得到官方确认”留在结论里。"
+        }
+      ],
+      "imageNote": "6 张配图：原文图1 张、豆包生成5 张"
+    }
+  ]
+}
