@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T09:32:42+08:00",
+  "updatedAt": "2026-11-27T08:35:11+08:00",
   "coverage": {
     "date": "2026-11-26",
     "total": 14,
@@ -21,34 +21,37 @@
     ]
   },
   "fulltext": {
-    "have": 14,
+    "have": 12,
     "total": 14,
-    "missing": []
+    "missing": [
+      "2026-11-27-3500.json",
+      "2026-11-27-e13-384cae.json"
+    ]
   },
   "duplicates": [],
-  "benchmarkUpdatedAt": "2026-11-25T17:37:19+08:00",
-  "total": 72,
-  "avgScore": 90.7,
+  "benchmarkUpdatedAt": "2026-11-26T17:37:18+08:00",
+  "total": 86,
+  "avgScore": 90.6,
   "grades": {
-    "达标": 66,
-    "接近": 6,
-    "不达标": 0
+    "达标": 50,
+    "接近": 35,
+    "不达标": 1
   },
   "byForm": [
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "count": 16,
-      "avgScore": 83.2,
-      "min": 71.2,
-      "max": 87.9,
+      "count": 19,
+      "avgScore": 81.5,
+      "min": 68.0,
+      "max": 89.9,
       "grade": "接近"
     },
     {
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
-      "count": 16,
-      "avgScore": 95.2,
+      "count": 19,
+      "avgScore": 95.8,
       "min": 85.8,
       "max": 100,
       "grade": "达标"
@@ -56,17 +59,17 @@
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "count": 20,
-      "avgScore": 86.5,
-      "min": 85.3,
-      "max": 86.9,
+      "count": 24,
+      "avgScore": 86.6,
+      "min": 83.6,
+      "max": 100,
       "grade": "达标"
     },
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "count": 20,
-      "avgScore": 97.4,
+      "count": 24,
+      "avgScore": 97.8,
       "min": 91.3,
       "max": 100,
       "grade": "达标"
@@ -80,14 +83,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "277 户只约 100 家交物业费：900 元车位费卡住的，不只是道闸",
-      "score": 71.2,
-      "grade": "接近",
-      "viralSample": 20,
+      "score": 68.0,
+      "grade": "不达标",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1522,
@@ -108,23 +111,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.0,
+          "score": 16.1,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1522,
           "notes": [
-            "为基准的 65%"
+            "为基准的 58%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -132,7 +135,7 @@
           "label": "结构",
           "score": 15.0,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 8,
           "notes": [
             "小标题 8 个，分节清晰",
@@ -171,13 +174,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1522 字 / 基准 2354 字，差 832 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1522 字 / 基准 2625 字，差 1103 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -188,14 +191,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "合同签了、货没到，价格涨了 45%：这轮 AI 服务器涨价涨在哪",
-      "score": 75.0,
+      "score": 72.0,
       "grade": "接近",
-      "viralSample": 20,
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1426,
@@ -216,23 +219,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 16.8,
+          "score": 15.1,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1426,
           "notes": [
-            "为基准的 61%"
+            "为基准的 54%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -240,7 +243,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -279,13 +282,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1426 字 / 基准 2354 字，差 928 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1426 字 / 基准 2625 字，差 1199 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -296,14 +299,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "1740 万行 Lean 代码之后：黎曼猜想到底被证明了没有？",
-      "score": 81.1,
+      "score": 78.2,
       "grade": "接近",
-      "viralSample": 20,
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1259,
@@ -324,23 +327,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 14.9,
+          "score": 13.3,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1259,
           "notes": [
-            "为基准的 53%"
+            "为基准的 48%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -348,7 +351,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 7,
           "notes": [
             "小标题 7 个，分节清晰",
@@ -387,13 +390,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1259 字 / 基准 2354 字，差 1094 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1259 字 / 基准 2625 字，差 1366 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -404,14 +407,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "439亿美元买一张AI入场券：CrowdStrike这步棋，其实在赌什么",
-      "score": 81.2,
+      "score": 78.2,
       "grade": "接近",
-      "viralSample": 20,
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1540,
@@ -432,23 +435,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.2,
+          "score": 16.3,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1540,
           "notes": [
-            "为基准的 65%"
+            "为基准的 59%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 13.0,
+          "score": 11.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 4,
           "notes": [
-            "为基准的 36%"
+            "为基准的 33%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -456,7 +459,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -495,13 +498,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1540 字 / 基准 2354 字，差 814 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1540 字 / 基准 2625 字，差 1085 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "4 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "4 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -512,14 +515,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "羽绒服售价529元、进货价476.6元：胖东来把成本印上吊牌，但不是清仓",
-      "score": 81.9,
+      "score": 78.8,
       "grade": "接近",
-      "viralSample": 20,
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1599,
@@ -540,23 +543,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.9,
+          "score": 16.9,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1599,
           "notes": [
-            "为基准的 68%"
+            "为基准的 61%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 13.0,
+          "score": 11.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 4,
           "notes": [
-            "为基准的 36%"
+            "为基准的 33%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -564,7 +567,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -603,13 +606,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1599 字 / 基准 2354 字，差 754 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1599 字 / 基准 2625 字，差 1026 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "4 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "4 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -620,14 +623,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "四部门发文：幼儿园可办2岁托班，但家长最关心的3件事还没答案",
-      "score": 82.4,
+      "score": 79.3,
       "grade": "接近",
-      "viralSample": 20,
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1645,
@@ -648,23 +651,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 19.4,
+          "score": 17.4,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1645,
           "notes": [
-            "为基准的 70%"
+            "为基准的 63%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 13.0,
+          "score": 11.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 4,
           "notes": [
-            "为基准的 36%"
+            "为基准的 33%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -672,7 +675,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -711,13 +714,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1645 字 / 基准 2354 字，差 708 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1645 字 / 基准 2625 字，差 980 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "4 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "4 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -728,14 +731,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "439亿美元买下零信任：但真正落地，其实要等到2028年",
-      "score": 85.0,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 81.7,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1590,
@@ -756,23 +759,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.8,
+          "score": 16.8,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1590,
           "notes": [
-            "为基准的 68%"
+            "为基准的 61%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -780,7 +783,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -819,13 +822,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1590 字 / 基准 2354 字，差 764 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1590 字 / 基准 2625 字，差 1035 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -836,14 +839,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "流感进入流行季：56.2%是H1N1，但免费接种名单你得先看",
-      "score": 85.0,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 81.7,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1592,
@@ -864,23 +867,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.8,
+          "score": 16.8,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1592,
           "notes": [
-            "为基准的 68%"
+            "为基准的 61%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -888,7 +891,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -927,13 +930,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1592 字 / 基准 2354 字，差 762 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1592 字 / 基准 2625 字，差 1033 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -944,14 +947,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "6到9月PR翻倍？Claude Ship先让AI签字，但真相在回滚率",
-      "score": 85.1,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 81.8,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1601,
@@ -972,23 +975,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.9,
+          "score": 16.9,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1601,
           "notes": [
-            "为基准的 68%"
+            "为基准的 61%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -996,7 +999,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1035,13 +1038,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1601 字 / 基准 2354 字，差 752 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1601 字 / 基准 2625 字，差 1024 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1052,14 +1055,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "5个市场先上线：Muse住进私信，但功能却少了",
-      "score": 85.2,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 81.9,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1609,
@@ -1080,23 +1083,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 19.0,
+          "score": 17.0,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1609,
           "notes": [
-            "为基准的 68%"
+            "为基准的 61%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1104,7 +1107,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1143,13 +1146,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1609 字 / 基准 2354 字，差 744 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1609 字 / 基准 2625 字，差 1016 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1160,14 +1163,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "4家厂商开源固件，为什么Elektron却先说“不”？",
-      "score": 85.3,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 82.0,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1618,
@@ -1188,23 +1191,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 19.1,
+          "score": 17.1,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1618,
           "notes": [
-            "为基准的 69%"
+            "为基准的 62%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1212,7 +1215,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1251,13 +1254,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1618 字 / 基准 2354 字，差 736 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1618 字 / 基准 2625 字，差 1007 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1268,14 +1271,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "第9次太空会师，原来多了一位外籍同行",
-      "score": 85.5,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 82.2,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1635,
@@ -1296,23 +1299,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 19.3,
+          "score": 17.3,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1635,
           "notes": [
-            "为基准的 69%"
+            "为基准的 62%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 16.2,
+          "score": 14.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 5,
           "notes": [
-            "为基准的 45%"
+            "为基准的 42%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1320,7 +1323,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1359,13 +1362,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1635 字 / 基准 2354 字，差 718 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1635 字 / 基准 2625 字，差 990 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "5 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1376,14 +1379,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "「不保留数据」的标签说撤就撤：AI 服务的隐私承诺怎么验证？",
-      "score": 86.2,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 82.9,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1418,
@@ -1404,23 +1407,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 16.7,
+          "score": 15.0,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1418,
           "notes": [
-            "为基准的 60%"
+            "为基准的 54%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 19.5,
+          "score": 17.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 6,
           "notes": [
-            "为基准的 55%"
+            "为基准的 50%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1428,7 +1431,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1467,13 +1470,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1418 字 / 基准 2354 字，差 936 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1418 字 / 基准 2625 字，差 1207 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "6 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "6 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1484,14 +1487,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "AI 证明了黎曼猜想？先别急，这件事还差最关键一步",
-      "score": 86.4,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 83.1,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1436,
@@ -1512,23 +1515,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 16.9,
+          "score": 15.2,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1436,
           "notes": [
-            "为基准的 61%"
+            "为基准的 55%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 19.5,
+          "score": 17.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 6,
           "notes": [
-            "为基准的 55%"
+            "为基准的 50%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1536,7 +1539,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -1575,13 +1578,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1436 字 / 基准 2354 字，差 918 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1436 字 / 基准 2625 字，差 1189 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "6 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "6 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1592,14 +1595,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "2 小时、3 元训练一个小模型？先把这句话的前提读完整",
-      "score": 87.1,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 83.7,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1493,
@@ -1620,23 +1623,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 17.6,
+          "score": 15.8,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1493,
           "notes": [
-            "为基准的 63%"
+            "为基准的 57%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 19.5,
+          "score": 17.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 6,
           "notes": [
-            "为基准的 55%"
+            "为基准的 50%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1644,7 +1647,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1683,13 +1686,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1493 字 / 基准 2354 字，差 860 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1493 字 / 基准 2625 字，差 1132 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "6 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "6 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -1700,14 +1703,14 @@
       "formLabel": "微信公众号 · 文章",
       "target": "公众号",
       "title": "羽绒服清库存：今年买之前，先算清这 3 笔账",
-      "score": 87.9,
-      "grade": "达标",
-      "viralSample": 20,
+      "score": 84.4,
+      "grade": "接近",
+      "viralSample": 23,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 2353.5,
-        "images": 11.0,
-        "subheads": 0.0
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
       },
       "metrics": {
         "wordCount": 1557,
@@ -1728,23 +1731,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 18.4,
+          "score": 16.5,
           "weight": 25,
-          "target": 2353.5,
+          "target": 2625,
           "value": 1557,
           "notes": [
-            "为基准的 66%"
+            "为基准的 59%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 19.5,
+          "score": 17.9,
           "weight": 25,
-          "target": 11.0,
+          "target": 12,
           "value": 6,
           "notes": [
-            "为基准的 55%"
+            "为基准的 50%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -1752,7 +1755,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0.0,
+          "target": 0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -1791,13 +1794,332 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1557 字 / 基准 2354 字，差 796 字",
-          "fix": "补到 2235–2941 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1557 字 / 基准 2625 字，差 1068 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "6 张 / 基准 11 张",
-          "fix": "补到 11 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "6 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-27-character-ai-chat-auction.json",
+      "date": "2026-11-27",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "42 位检察长出手，聊天记录拍卖前先问三个问题？",
+      "score": 89.0,
+      "grade": "达标",
+      "viralSample": 23,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 2282,
+        "images": 5,
+        "subheads": 7,
+        "paragraphs": 22,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 43,
+        "firstParaLen": 75,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 104,
+        "imageCaptions": 5
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 24.1,
+          "weight": 25,
+          "target": 2625,
+          "value": 2282,
+          "notes": [
+            "为基准的 87%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 14.9,
+          "weight": 25,
+          "target": 12,
+          "value": 5,
+          "notes": [
+            "为基准的 42%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 7,
+          "notes": [
+            "小标题 7 个，分节清晰",
+            "段落 22 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "42 位检察长出手，聊天记录拍卖前先问三个问题？",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 75,
+          "notes": [
+            "首段 75 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "字数",
+          "gap": "2282 字 / 基准 2625 字，差 343 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
+        },
+        {
+          "dim": "配图",
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-27-fcc-100.json",
+      "date": "2026-11-27",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "FCC 批了 100 万颗 AI 卫星，但先别当成已上天",
+      "score": 89.2,
+      "grade": "达标",
+      "viralSample": 23,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 2296,
+        "images": 5,
+        "subheads": 7,
+        "paragraphs": 22,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 36,
+        "firstParaLen": 74,
+        "firstParaAnchor": true,
+        "titleLen": 14,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 104,
+        "imageCaptions": 5
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 24.3,
+          "weight": 25,
+          "target": 2625,
+          "value": 2296,
+          "notes": [
+            "为基准的 87%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 14.9,
+          "weight": 25,
+          "target": 12,
+          "value": 5,
+          "notes": [
+            "为基准的 42%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 7,
+          "notes": [
+            "小标题 7 个，分节清晰",
+            "段落 22 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "FCC 批了 100 万颗 AI 卫星，但先别当成已上天",
+          "notes": [
+            "标题 14 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 74,
+          "notes": [
+            "首段 74 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "字数",
+          "gap": "2296 字 / 基准 2625 字，差 329 字",
+          "fix": "补到 2493–3281 字：优先加具体案例、逐条解释、反方观点与回应"
+        },
+        {
+          "dim": "配图",
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-27-ny-ai-toy-ban.json",
+      "date": "2026-11-27",
+      "form": "gzh-article",
+      "formLabel": "微信公众号 · 文章",
+      "target": "公众号",
+      "title": "纽约给 AI 玩具按下五年暂停键，但禁令边界在哪？",
+      "score": 89.9,
+      "grade": "达标",
+      "viralSample": 23,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 2625,
+        "images": 12,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 2370,
+        "images": 5,
+        "subheads": 7,
+        "paragraphs": 20,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 20,
+        "firstParaLen": 73,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 118,
+        "imageCaptions": 5
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 2625,
+          "value": 2370,
+          "notes": [
+            "为基准的 90%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 14.9,
+          "weight": 25,
+          "target": 12,
+          "value": 5,
+          "notes": [
+            "为基准的 42%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 7,
+          "notes": [
+            "小标题 7 个，分节清晰",
+            "段落 20 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "纽约给 AI 玩具按下五年暂停键，但禁令边界在哪？",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 73,
+          "notes": [
+            "首段 73 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "5 张 / 基准 12 张",
+          "fix": "补到 12 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -3038,6 +3360,315 @@
       ]
     },
     {
+      "file": "2026-11-27-3500.json",
+      "date": "2026-11-27",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "金价跌破 3500 美元，金店排队真相先算三笔账",
+      "score": 98.8,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 474,
+        "images": 6,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 13,
+        "firstParaLen": 53,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 79,
+        "imageCaptions": 6
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 474,
+          "notes": [
+            "为基准的 118%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 23.8,
+          "weight": 25,
+          "target": 9,
+          "value": 6,
+          "notes": [
+            "为基准的 67%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "配图 6 张，符合贴图多图形态",
+            "段落 6 段，节奏合适",
+            "平均每段 79 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "金价跌破 3500 美元，金店排队真相先算三笔账",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 53,
+          "notes": [
+            "首段 53 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "6 张 / 基准 9 张",
+          "fix": "补到 9 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-27-shenzhou-24-space-handshake.json",
+      "date": "2026-11-27",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "6 名航天员在轨合影，这次会师先看清三个细节",
+      "score": 98.8,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 476,
+        "images": 6,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 11,
+        "firstParaLen": 67,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 79,
+        "imageCaptions": 6
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 476,
+          "notes": [
+            "为基准的 119%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 23.8,
+          "weight": 25,
+          "target": 9,
+          "value": 6,
+          "notes": [
+            "为基准的 67%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "配图 6 张，符合贴图多图形态",
+            "段落 6 段，节奏合适",
+            "平均每段 79 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "6 名航天员在轨合影，这次会师先看清三个细节",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 67,
+          "notes": [
+            "首段 67 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "6 张 / 基准 9 张",
+          "fix": "补到 9 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-27-yab-browser.json",
+      "date": "2026-11-27",
+      "form": "gzh-poster",
+      "formLabel": "微信公众号 · 贴图",
+      "target": "公众号",
+      "title": "开源浏览器 Yab 接棒 Arc？先看清还没核实的部分",
+      "score": 98.8,
+      "grade": "达标",
+      "viralSample": 7,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 400,
+        "images": 9,
+        "subheads": 0
+      },
+      "metrics": {
+        "wordCount": 408,
+        "images": 6,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 8,
+        "firstParaLen": 65,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 68,
+        "imageCaptions": 6
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 400,
+          "value": 408,
+          "notes": [
+            "为基准的 102%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 23.8,
+          "weight": 25,
+          "target": 9,
+          "value": 6,
+          "notes": [
+            "为基准的 67%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0,
+          "value": 0,
+          "notes": [
+            "配图 6 张，符合贴图多图形态",
+            "段落 6 段，节奏合适",
+            "平均每段 68 字，适合截图阅读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "开源浏览器 Yab 接棒 Arc？先看清还没核实的部分",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 65,
+          "notes": [
+            "首段 65 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "6 张 / 基准 9 张",
+          "fix": "补到 9 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
       "file": "2026-11-22-downjacket.json",
       "date": "2026-11-22",
       "form": "gzh-poster",
@@ -3432,14 +4063,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "5414万热度背后：黎曼猜想到底算不算被证明？",
-      "score": 85.3,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.6,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1129,
@@ -3460,23 +4091,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 23.4,
+          "score": 24.7,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1129,
           "notes": [
-            "为基准的 84%"
+            "为基准的 89%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -3484,7 +4115,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -3523,13 +4154,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1129 字 / 基准 1339 字，差 210 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1129 字 / 基准 1270 字，差 140 字",
+          "fix": "补到 1206–1586 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -3540,14 +4171,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "125个AI接口被撤销隐私标记，问题到底出在哪一跳？",
-      "score": 85.4,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.7,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1132,
@@ -3568,23 +4199,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 23.5,
+          "score": 24.8,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1132,
           "notes": [
-            "为基准的 85%"
+            "为基准的 89%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -3592,7 +4223,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 4,
           "notes": [
             "小标题 4 个，分节清晰",
@@ -3631,13 +4262,13 @@
       "gaps": [
         {
           "dim": "字数",
-          "gap": "1132 字 / 基准 1339 字，差 207 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
+          "gap": "1132 字 / 基准 1270 字，差 138 字",
+          "fix": "补到 1206–1586 字：优先加具体案例、逐条解释、反方观点与回应"
         },
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -3648,14 +4279,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "羽绒服市场从抢货转向清库存，500元以下到底能不能买？",
-      "score": 85.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1155,
@@ -3676,23 +4307,23 @@
       "checks": {
         "wordCount": {
           "label": "字数",
-          "score": 24.0,
+          "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1155,
           "notes": [
-            "为基准的 86%"
+            "为基准的 91%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -3700,7 +4331,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 4,
           "notes": [
             "小标题 4 个，分节清晰",
@@ -3738,770 +4369,9 @@
       },
       "gaps": [
         {
-          "dim": "字数",
-          "gap": "1155 字 / 基准 1339 字，差 184 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-25-mate-x8-12999-iphone.json",
-      "date": "2026-11-25",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "12999元没涨，但华为Mate X8这3个细节要先看",
-      "score": 85.9,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1156,
-        "images": 1,
-        "subheads": 5,
-        "paragraphs": 12,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 57,
-        "firstParaLen": 59,
-        "firstParaAnchor": true,
-        "titleLen": 13,
-        "titleHasNumber": true,
-        "titleHasQuestion": false,
-        "avgParaLen": 96,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.0,
-          "weight": 25,
-          "target": 1339,
-          "value": 1156,
-          "notes": [
-            "为基准的 86%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 5,
-          "notes": [
-            "小标题 5 个，分节清晰",
-            "段落 12 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "12999元没涨，但华为Mate X8这3个细节要先看",
-          "notes": [
-            "标题 13 字，长度合适",
-            "标题带具体数字，有确定感",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 59,
-          "notes": [
-            "首段 59 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1156 字 / 基准 1339 字，差 183 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-23-model-split.json",
-      "date": "2026-11-23",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "AI 订阅拆成四份：几十万行代码的活，到底该怎么分工？",
-      "score": 86.0,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1163,
-        "images": 1,
-        "subheads": 8,
-        "paragraphs": 20,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 4,
-        "firstParaLen": 64,
-        "firstParaAnchor": true,
-        "titleLen": 21,
-        "titleHasNumber": false,
-        "titleHasQuestion": true,
-        "avgParaLen": 58,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.1,
-          "weight": 25,
-          "target": 1339,
-          "value": 1163,
-          "notes": [
-            "为基准的 87%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 8,
-          "notes": [
-            "小标题 8 个，分节清晰",
-            "段落 20 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "AI 订阅拆成四份：几十万行代码的活，到底该怎么分工？",
-          "notes": [
-            "标题 21 字，长度合适",
-            "标题带疑问，制造信息缺口",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 64,
-          "notes": [
-            "首段 64 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1163 字 / 基准 1339 字，差 176 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-23-smartkbs.json",
-      "date": "2026-11-23",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "60 多个功能、还能完全离线，这个开源教学平台真敢让学校用？",
-      "score": 86.0,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1162,
-        "images": 1,
-        "subheads": 9,
-        "paragraphs": 20,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 6,
-        "firstParaLen": 47,
-        "firstParaAnchor": true,
-        "titleLen": 24,
-        "titleHasNumber": true,
-        "titleHasQuestion": true,
-        "avgParaLen": 58,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.1,
-          "weight": 25,
-          "target": 1339,
-          "value": 1162,
-          "notes": [
-            "为基准的 87%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 9,
-          "notes": [
-            "小标题 9 个，分节清晰",
-            "段落 20 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "60 多个功能、还能完全离线，这个开源教学平台真敢让学校用？",
-          "notes": [
-            "标题 24 字，长度合适",
-            "标题带疑问，制造信息缺口",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 47,
-          "notes": [
-            "首段 47 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1162 字 / 基准 1339 字，差 177 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-23-bughunter.json",
-      "date": "2026-11-23",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "17748 星的安全技能包：把漏洞挖掘塞进 Claude Code，真能挖洞吗？",
-      "score": 86.5,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1184,
-        "images": 1,
-        "subheads": 9,
-        "paragraphs": 20,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 10,
-        "firstParaLen": 18,
-        "firstParaAnchor": true,
-        "titleLen": 19,
-        "titleHasNumber": true,
-        "titleHasQuestion": true,
-        "avgParaLen": 59,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.6,
-          "weight": 25,
-          "target": 1339,
-          "value": 1184,
-          "notes": [
-            "为基准的 88%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 9,
-          "notes": [
-            "小标题 9 个，分节清晰",
-            "段落 20 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "17748 星的安全技能包：把漏洞挖掘塞进 Claude Code，真能挖洞吗？",
-          "notes": [
-            "标题 19 字，长度合适",
-            "标题带疑问，制造信息缺口",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 18,
-          "notes": [
-            "首段 18 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1184 字 / 基准 1339 字，差 155 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-25-7.json",
-      "date": "2026-11-25",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "一句“免费摘甘蔗”换来行拘7日，但很多人还不知道错在哪？",
-      "score": 86.5,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1188,
-        "images": 1,
-        "subheads": 4,
-        "paragraphs": 12,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 7,
-        "firstParaLen": 73,
-        "firstParaAnchor": true,
-        "titleLen": 23,
-        "titleHasNumber": true,
-        "titleHasQuestion": true,
-        "avgParaLen": 99,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.6,
-          "weight": 25,
-          "target": 1339,
-          "value": 1188,
-          "notes": [
-            "为基准的 89%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 4,
-          "notes": [
-            "小标题 4 个，分节清晰",
-            "段落 12 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "一句“免费摘甘蔗”换来行拘7日，但很多人还不知道错在哪？",
-          "notes": [
-            "标题 23 字，长度合适",
-            "标题带疑问，制造信息缺口",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 73,
-          "notes": [
-            "首段 73 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1188 字 / 基准 1339 字，差 151 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-24-xnu-linux.json",
-      "date": "2026-11-24",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "31秒启动完整macOS，这个项目却劝你别装在工作机上",
-      "score": 86.6,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1193,
-        "images": 1,
-        "subheads": 7,
-        "paragraphs": 18,
-        "lists": 2,
-        "quotes": 0,
-        "numbers": 28,
-        "firstParaLen": 36,
-        "firstParaAnchor": true,
-        "titleLen": 19,
-        "titleHasNumber": true,
-        "titleHasQuestion": false,
-        "avgParaLen": 66,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.7,
-          "weight": 25,
-          "target": 1339,
-          "value": 1193,
-          "notes": [
-            "为基准的 89%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 7,
-          "notes": [
-            "小标题 7 个，分节清晰",
-            "段落 18 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "31秒启动完整macOS，这个项目却劝你别装在工作机上",
-          "notes": [
-            "标题 19 字，长度合适",
-            "标题带具体数字，有确定感",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 36,
-          "notes": [
-            "首段 36 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1193 字 / 基准 1339 字，差 146 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
-        }
-      ]
-    },
-    {
-      "file": "2026-11-25-22-53.json",
-      "date": "2026-11-25",
-      "form": "tt-article",
-      "formLabel": "今日头条 · 文章",
-      "target": "今日头条",
-      "title": "22时53分最圆，但这次超级月亮真正稀罕的是啥？",
-      "score": 86.6,
-      "grade": "达标",
-      "viralSample": 9,
-      "benchmarkReliable": true,
-      "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
-      },
-      "metrics": {
-        "wordCount": 1191,
-        "images": 1,
-        "subheads": 4,
-        "paragraphs": 12,
-        "lists": 1,
-        "quotes": 0,
-        "numbers": 38,
-        "firstParaLen": 69,
-        "firstParaAnchor": true,
-        "titleLen": 18,
-        "titleHasNumber": true,
-        "titleHasQuestion": true,
-        "avgParaLen": 99,
-        "imageCaptions": 1
-      },
-      "checks": {
-        "wordCount": {
-          "label": "字数",
-          "score": 24.7,
-          "weight": 25,
-          "target": 1339,
-          "value": 1191,
-          "notes": [
-            "为基准的 89%"
-          ],
-          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
-        },
-        "images": {
-          "label": "配图",
-          "score": 11.9,
-          "weight": 25,
-          "target": 3,
-          "value": 1,
-          "notes": [
-            "为基准的 33%"
-          ],
-          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
-        },
-        "structure": {
-          "label": "结构",
-          "score": 20,
-          "weight": 20,
-          "target": 0,
-          "value": 4,
-          "notes": [
-            "小标题 4 个，分节清晰",
-            "段落 12 段，节奏可读",
-            "有列表/引用块，信息可扫读"
-          ],
-          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
-        },
-        "title": {
-          "label": "标题",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": "22时53分最圆，但这次超级月亮真正稀罕的是啥？",
-          "notes": [
-            "标题 18 字，长度合适",
-            "标题带疑问，制造信息缺口",
-            "标题有转折/悬念词"
-          ],
-          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
-        },
-        "hook": {
-          "label": "开头钩子",
-          "score": 15,
-          "weight": 15,
-          "target": null,
-          "value": 69,
-          "notes": [
-            "首段 69 字，开场利落",
-            "首段有具体事实/数字锚点",
-            "首段有时间锚，贴近热点"
-          ],
-          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
-        }
-      },
-      "gaps": [
-        {
-          "dim": "字数",
-          "gap": "1191 字 / 基准 1339 字，差 148 字",
-          "fix": "补到 1272–1673 字：优先加具体案例、逐条解释、反方观点与回应"
-        },
-        {
-          "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -4512,14 +4382,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "GitHub 热榜项目称 2 小时、3 元训小模型，原文限定条件是什么？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1263,
@@ -4542,21 +4412,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1263,
           "notes": [
-            "为基准的 94%"
+            "为基准的 99%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -4564,7 +4434,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -4603,8 +4473,317 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-23-bughunter.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "17748 星的安全技能包：把漏洞挖掘塞进 Claude Code，真能挖洞吗？",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1184,
+        "images": 1,
+        "subheads": 9,
+        "paragraphs": 20,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 10,
+        "firstParaLen": 18,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 59,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1184,
+          "notes": [
+            "为基准的 93%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 9,
+          "notes": [
+            "小标题 9 个，分节清晰",
+            "段落 20 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "17748 星的安全技能包：把漏洞挖掘塞进 Claude Code，真能挖洞吗？",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 18,
+          "notes": [
+            "首段 18 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-23-model-split.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "AI 订阅拆成四份：几十万行代码的活，到底该怎么分工？",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1163,
+        "images": 1,
+        "subheads": 8,
+        "paragraphs": 20,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 4,
+        "firstParaLen": 64,
+        "firstParaAnchor": true,
+        "titleLen": 21,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 58,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1163,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 8,
+          "notes": [
+            "小标题 8 个，分节清晰",
+            "段落 20 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "AI 订阅拆成四份：几十万行代码的活，到底该怎么分工？",
+          "notes": [
+            "标题 21 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 64,
+          "notes": [
+            "首段 64 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-23-smartkbs.json",
+      "date": "2026-11-23",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "60 多个功能、还能完全离线，这个开源教学平台真敢让学校用？",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1162,
+        "images": 1,
+        "subheads": 9,
+        "paragraphs": 20,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 6,
+        "firstParaLen": 47,
+        "firstParaAnchor": true,
+        "titleLen": 24,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 58,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1162,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 9,
+          "notes": [
+            "小标题 9 个，分节清晰",
+            "段落 20 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "60 多个功能、还能完全离线，这个开源教学平台真敢让学校用？",
+          "notes": [
+            "标题 24 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 47,
+          "notes": [
+            "首段 47 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -4615,14 +4794,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "一篇综述从选题到录用：AI 用在五个环节，哪一步绝不能交出去？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1240,
@@ -4645,21 +4824,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1240,
           "notes": [
-            "为基准的 93%"
+            "为基准的 98%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -4667,7 +4846,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 11,
           "notes": [
             "小标题 11 个，分节清晰",
@@ -4706,8 +4885,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -4718,14 +4897,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "关不掉的弹窗被点名：23款App和SDK，整改之后呢？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1247,
@@ -4748,21 +4927,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1247,
           "notes": [
-            "为基准的 93%"
+            "为基准的 98%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -4770,7 +4949,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -4809,8 +4988,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -4821,14 +5000,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "自费7.3万刷了对面楼的墙，这笔钱到底该谁出？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1282,
@@ -4851,21 +5030,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1282,
           "notes": [
-            "为基准的 96%"
+            "为基准的 101%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -4873,7 +5052,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 6,
           "notes": [
             "小标题 6 个，分节清晰",
@@ -4912,8 +5091,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -4924,14 +5103,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "3分钟卖空一天备货，这对夫妻却贴出停业通知",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1283,
@@ -4954,21 +5133,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1283,
           "notes": [
-            "为基准的 96%"
+            "为基准的 101%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -4976,7 +5155,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 7,
           "notes": [
             "小标题 7 个，分节清晰",
@@ -5015,8 +5194,317 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-24-xnu-linux.json",
+      "date": "2026-11-24",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "31秒启动完整macOS，这个项目却劝你别装在工作机上",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1193,
+        "images": 1,
+        "subheads": 7,
+        "paragraphs": 18,
+        "lists": 2,
+        "quotes": 0,
+        "numbers": 28,
+        "firstParaLen": 36,
+        "firstParaAnchor": true,
+        "titleLen": 19,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 66,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1193,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 7,
+          "notes": [
+            "小标题 7 个，分节清晰",
+            "段落 18 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "31秒启动完整macOS，这个项目却劝你别装在工作机上",
+          "notes": [
+            "标题 19 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 36,
+          "notes": [
+            "首段 36 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-25-22-53.json",
+      "date": "2026-11-25",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "22时53分最圆，但这次超级月亮真正稀罕的是啥？",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1191,
+        "images": 1,
+        "subheads": 4,
+        "paragraphs": 12,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 38,
+        "firstParaLen": 69,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 99,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1191,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 4,
+          "notes": [
+            "小标题 4 个，分节清晰",
+            "段落 12 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "22时53分最圆，但这次超级月亮真正稀罕的是啥？",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 69,
+          "notes": [
+            "首段 69 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-25-7.json",
+      "date": "2026-11-25",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "一句“免费摘甘蔗”换来行拘7日，但很多人还不知道错在哪？",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1188,
+        "images": 1,
+        "subheads": 4,
+        "paragraphs": 12,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 7,
+        "firstParaLen": 73,
+        "firstParaAnchor": true,
+        "titleLen": 23,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 99,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1188,
+          "notes": [
+            "为基准的 94%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 4,
+          "notes": [
+            "小标题 4 个，分节清晰",
+            "段落 12 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "一句“免费摘甘蔗”换来行拘7日，但很多人还不知道错在哪？",
+          "notes": [
+            "标题 23 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 73,
+          "notes": [
+            "首段 73 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -5027,14 +5515,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "11月23日AI开始替人逛沃尔玛，但3个前提要先看清",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1298,
@@ -5057,21 +5545,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1298,
           "notes": [
-            "为基准的 97%"
+            "为基准的 102%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -5079,7 +5567,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -5118,8 +5606,111 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+        }
+      ]
+    },
+    {
+      "file": "2026-11-25-mate-x8-12999-iphone.json",
+      "date": "2026-11-25",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "12999元没涨，但华为Mate X8这3个细节要先看",
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1156,
+        "images": 1,
+        "subheads": 5,
+        "paragraphs": 12,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 57,
+        "firstParaLen": 59,
+        "firstParaAnchor": true,
+        "titleLen": 13,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 96,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1156,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 8.9,
+          "weight": 25,
+          "target": 4.0,
+          "value": 1,
+          "notes": [
+            "为基准的 25%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 12 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "12999元没涨，但华为Mate X8这3个细节要先看",
+          "notes": [
+            "标题 13 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 59,
+          "notes": [
+            "首段 59 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": [
+        {
+          "dim": "配图",
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -5130,14 +5721,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "魔力擦磨损1克释放650万个微塑料？别急，专家这样说",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1237,
@@ -5160,21 +5751,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1237,
           "notes": [
-            "为基准的 92%"
+            "为基准的 97%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -5182,7 +5773,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -5221,8 +5812,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -5233,14 +5824,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "数百万首AI歌要被下架？12月9日执行，但有个例外",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1313,
@@ -5263,21 +5854,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1313,
           "notes": [
-            "为基准的 98%"
+            "为基准的 103%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -5285,7 +5876,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -5324,8 +5915,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -5336,14 +5927,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "Anthropic跌破83美元发行价，但AI高估值故事没完？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1224,
@@ -5366,21 +5957,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1224,
           "notes": [
-            "为基准的 91%"
+            "为基准的 96%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -5388,7 +5979,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -5427,8 +6018,8 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
     },
@@ -5439,14 +6030,14 @@
       "formLabel": "今日头条 · 文章",
       "target": "今日头条",
       "title": "一天涨1133星，这个开源项目却专治AI图表丑？",
-      "score": 86.9,
-      "grade": "达标",
-      "viralSample": 9,
+      "score": 83.9,
+      "grade": "接近",
+      "viralSample": 12,
       "benchmarkReliable": true,
       "bench": {
-        "wordCount": 1339,
-        "images": 3,
-        "subheads": 0
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
       },
       "metrics": {
         "wordCount": 1244,
@@ -5469,21 +6060,21 @@
           "label": "字数",
           "score": 25,
           "weight": 25,
-          "target": 1339,
+          "target": 1269.5,
           "value": 1244,
           "notes": [
-            "为基准的 93%"
+            "为基准的 98%"
           ],
           "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
         },
         "images": {
           "label": "配图",
-          "score": 11.9,
+          "score": 8.9,
           "weight": 25,
-          "target": 3,
+          "target": 4.0,
           "value": 1,
           "notes": [
-            "为基准的 33%"
+            "为基准的 25%"
           ],
           "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
         },
@@ -5491,7 +6082,7 @@
           "label": "结构",
           "score": 20,
           "weight": 20,
-          "target": 0,
+          "target": 1.0,
           "value": 5,
           "notes": [
             "小标题 5 个，分节清晰",
@@ -5530,10 +6121,398 @@
       "gaps": [
         {
           "dim": "配图",
-          "gap": "1 张 / 基准 3 张",
-          "fix": "补到 3 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
+          "gap": "1 张 / 基准 4 张",
+          "fix": "补到 4 张左右：一张封面 + 每 2–3 段一张场景图，图间要有信息递进而非重复"
         }
       ]
+    },
+    {
+      "file": "2026-11-27-1password.json",
+      "date": "2026-11-27",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "1Password确认被入侵：密码没事，但这6类信息被复制了",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1239,
+        "images": 3,
+        "subheads": 5,
+        "paragraphs": 12,
+        "lists": 2,
+        "quotes": 0,
+        "numbers": 15,
+        "firstParaLen": 45,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 103,
+        "imageCaptions": 3
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1239,
+          "notes": [
+            "为基准的 98%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 4.0,
+          "value": 3,
+          "notes": [
+            "为基准的 75%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 12 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "1Password确认被入侵：密码没事，但这6类信息被复制了",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 45,
+          "notes": [
+            "首段 45 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-anthropic-ai-adoption-study.json",
+      "date": "2026-11-27",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "58家公司调查：19%没价值，AI的卡点却在审核环节",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1166,
+        "images": 3,
+        "subheads": 5,
+        "paragraphs": 15,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 29,
+        "firstParaLen": 40,
+        "firstParaAnchor": true,
+        "titleLen": 17,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 78,
+        "imageCaptions": 3
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1166,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 4.0,
+          "value": 3,
+          "notes": [
+            "为基准的 75%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 15 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "58家公司调查：19%没价值，AI的卡点却在审核环节",
+          "notes": [
+            "标题 17 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 40,
+          "notes": [
+            "首段 40 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-anthropic-free-will.json",
+      "date": "2026-11-27",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "1000词长文否认交出自由意志：自动化却不等于让渡治理权",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1163,
+        "images": 3,
+        "subheads": 5,
+        "paragraphs": 14,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 4,
+        "firstParaLen": 37,
+        "firstParaAnchor": true,
+        "titleLen": 23,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 83,
+        "imageCaptions": 3
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1163,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 4.0,
+          "value": 3,
+          "notes": [
+            "为基准的 75%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 14 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "1000词长文否认交出自由意志：自动化却不等于让渡治理权",
+          "notes": [
+            "标题 23 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 37,
+          "notes": [
+            "首段 37 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-meta-ai.json",
+      "date": "2026-11-27",
+      "form": "tt-article",
+      "formLabel": "今日头条 · 文章",
+      "target": "今日头条",
+      "title": "亚马逊与Meta谈解封Muse：2个月僵局却卡在广告",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 12,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 1269.5,
+        "images": 4.0,
+        "subheads": 1.0
+      },
+      "metrics": {
+        "wordCount": 1168,
+        "images": 3,
+        "subheads": 5,
+        "paragraphs": 13,
+        "lists": 1,
+        "quotes": 0,
+        "numbers": 5,
+        "firstParaLen": 46,
+        "firstParaAnchor": true,
+        "titleLen": 16,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 90,
+        "imageCaptions": 3
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 1269.5,
+          "value": 1168,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 4.0,
+          "value": 3,
+          "notes": [
+            "为基准的 75%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 1.0,
+          "value": 5,
+          "notes": [
+            "小标题 5 个，分节清晰",
+            "段落 13 段，节奏可读",
+            "有列表/引用块，信息可扫读"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "亚马逊与Meta谈解封Muse：2个月僵局却卡在广告",
+          "notes": [
+            "标题 16 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 46,
+          "notes": [
+            "首段 46 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
     },
     {
       "file": "2026-11-23-shenzhou-24.json",
@@ -5544,7 +6523,7 @@
       "title": "神舟二十四号完成最后一次全区合练：离点火还差哪几步？",
       "score": 91.3,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -5652,7 +6631,7 @@
       "title": "录屏套进 3D 手机还免注册：Mockreel 上了 Product Hunt，能活多久？",
       "score": 94.5,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -5755,7 +6734,7 @@
       "title": "羽绒服从抢货变清库存了，500元以下的到底能不能买？说说我的看法",
       "score": 95.0,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -5858,7 +6837,7 @@
       "title": "AI 说它证明了黎曼猜想，热榜 5414 万，但数学界还没点头",
       "score": 95.9,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -5961,7 +6940,7 @@
       "title": "脑机接口企业从 800 家涨到 1175 家，这波增长能落到产品上吗？",
       "score": 95.9,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6064,7 +7043,7 @@
       "title": "718 家公司、72 万人：AI 编程的瓶颈真是代码审查吗？",
       "score": 95.9,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6167,7 +7146,7 @@
       "title": "125 个 AI 接口的「不保留数据」标签说撤就撤，问题出在哪？",
       "score": 96.1,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6270,7 +7249,7 @@
       "title": "热搜第 7 位的中戏同学，为什么没人说清他是谁？",
       "score": 96.2,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6373,7 +7352,7 @@
       "title": "单日涨 1716 星登顶：82 个技能的包，真能帮人挖漏洞？",
       "score": 96.3,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6476,7 +7455,7 @@
       "title": "750B 基座没加参数，GLM-5.4 却把 28 层跑了两遍",
       "score": 96.3,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6579,7 +7558,7 @@
       "title": "2 小时、3 元训一个小模型？GitHub 热榜这个项目，原文其实写清了前提",
       "score": 96.7,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6682,7 +7661,7 @@
       "title": "效力 8 年就该挂穹顶？詹姆斯球衣退役卡在一把尺子上",
       "score": 97.6,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6785,7 +7764,7 @@
       "title": "29岁女教师在校超15小时，工亡认定了，但那句好累谁接住？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6882,7 +7861,7 @@
       "title": "55岁公交司机发车后不适，4车受损，但谁在管他们的身体？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -6979,7 +7958,7 @@
       "title": "停了九年的中英教育磋商重启，一次列9个领域，但关键条款没公开",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7076,7 +8055,7 @@
       "title": "2:0领先却被2:2绝平，U17国足这1分该怎么看？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7173,7 +8152,7 @@
       "title": "通勤6小时工资不到5000，峨眉山这份工作真相是什么？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7270,7 +8249,7 @@
       "title": "华兴资本换帅，其实先要分清哪块收入降了20.7%",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7367,7 +8346,7 @@
       "title": "编造“1900万名表送房”被刑拘，边界到底在哪？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7464,7 +8443,7 @@
       "title": "央行同日投放5000亿和8000亿，别急着当涨跌信号？",
       "score": 100,
       "grade": "达标",
-      "viralSample": 6,
+      "viralSample": 8,
       "benchmarkReliable": true,
       "bench": {
         "wordCount": 419.5,
@@ -7551,7 +8530,395 @@
         }
       },
       "gaps": []
+    },
+    {
+      "file": "2026-11-27-chow-tai-fook-stores.json",
+      "date": "2026-11-27",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "周大福门店跌破5000家？但这个数字先别急着信",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 8,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 419.5,
+        "images": 1.0,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 383,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 4,
+        "firstParaLen": 54,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 64,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 419.5,
+          "value": 383,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1.0,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 54 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "周大福门店跌破5000家？但这个数字先别急着信",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 54,
+          "notes": [
+            "首段 54 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-e11-aac1ec.json",
+      "date": "2026-11-27",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "十余家机器人公司出清，但融资额超千亿，真相在哪？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 8,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 419.5,
+        "images": 1.0,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 382,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 31,
+        "firstParaLen": 59,
+        "firstParaAnchor": true,
+        "titleLen": 21,
+        "titleHasNumber": false,
+        "titleHasQuestion": true,
+        "avgParaLen": 64,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 419.5,
+          "value": 382,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1.0,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 59 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "十余家机器人公司出清，但融资额超千亿，真相在哪？",
+          "notes": [
+            "标题 21 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 59,
+          "notes": [
+            "首段 59 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-e13-384cae.json",
+      "date": "2026-11-27",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "8.7万热度追问相册权限，但官方入口才是答案",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 8,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 419.5,
+        "images": 1.0,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 380,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 1,
+        "firstParaLen": 60,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": false,
+        "avgParaLen": 63,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 419.5,
+          "value": 380,
+          "notes": [
+            "为基准的 91%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1.0,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 60 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "8.7万热度追问相册权限，但官方入口才是答案",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带具体数字，有确定感",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 60,
+          "notes": [
+            "首段 60 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
+    },
+    {
+      "file": "2026-11-27-zhuan-ren-gong.json",
+      "date": "2026-11-27",
+      "form": "tt-micro",
+      "formLabel": "今日头条 · 微头条",
+      "target": "今日头条",
+      "title": "“转人工”热度781万，但真正的问题不是客服态度？",
+      "score": 100,
+      "grade": "达标",
+      "viralSample": 8,
+      "benchmarkReliable": true,
+      "bench": {
+        "wordCount": 419.5,
+        "images": 1.0,
+        "subheads": 0.0
+      },
+      "metrics": {
+        "wordCount": 387,
+        "images": 1,
+        "subheads": 0,
+        "paragraphs": 6,
+        "lists": 0,
+        "quotes": 0,
+        "numbers": 1,
+        "firstParaLen": 56,
+        "firstParaAnchor": true,
+        "titleLen": 18,
+        "titleHasNumber": true,
+        "titleHasQuestion": true,
+        "avgParaLen": 64,
+        "imageCaptions": 1
+      },
+      "checks": {
+        "wordCount": {
+          "label": "字数",
+          "score": 25,
+          "weight": 25,
+          "target": 419.5,
+          "value": 387,
+          "notes": [
+            "为基准的 92%"
+          ],
+          "fix": "补具体案例与逐条解释，不要靠形容词堆字数"
+        },
+        "images": {
+          "label": "配图",
+          "score": 25,
+          "weight": 25,
+          "target": 1.0,
+          "value": 1,
+          "notes": [
+            "为基准的 100%"
+          ],
+          "fix": "封面定调 + 每 2–3 段一张场景图，图要有信息增量"
+        },
+        "structure": {
+          "label": "结构",
+          "score": 20,
+          "weight": 20,
+          "target": 0.0,
+          "value": 0,
+          "notes": [
+            "段落 6 段，符合短讯节奏",
+            "首段 56 字，开口干脆",
+            "有配图"
+          ],
+          "fix": "长文按 3–5 个小标题分节，每节一个结论；贴图控制短段、多图"
+        },
+        "title": {
+          "label": "标题",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": "“转人工”热度781万，但真正的问题不是客服态度？",
+          "notes": [
+            "标题 18 字，长度合适",
+            "标题带疑问，制造信息缺口",
+            "标题有转折/悬念词"
+          ],
+          "fix": "标题 12–30 字，带数字或疑问，再加一个转折词"
+        },
+        "hook": {
+          "label": "开头钩子",
+          "score": 15,
+          "weight": 15,
+          "target": null,
+          "value": 56,
+          "notes": [
+            "首段 56 字，开场利落",
+            "首段有具体事实/数字锚点",
+            "首段有时间锚，贴近热点"
+          ],
+          "fix": "首段 120 字内给出时间锚 + 具体事实，别先讲道理"
+        }
+      },
+      "gaps": []
     }
   ],
-  "viralTotal": 42
+  "viralTotal": 50
 }

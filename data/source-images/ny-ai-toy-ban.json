@@ -1,0 +1,40 @@
+{
+  "slug": "ny-ai-toy-ban",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:56:59+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/ny-ai-toy-ban/raw-1.webp",
+      "bytes": 54762,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2237660127.jpg?resize=1200,800",
+      "page": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "alt": "",
+      "md5": "fddc8114d59259f3dd0c9fb5360e7a58",
+      "status": "approved",
+      "reason": "原文配图：小女孩与粉红对话机器人，紧扣纽约州AI儿童玩具禁令；无水印或角标，州长公告/The Verge来源。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/ny-ai-toy-ban/raw-1.webp",
+      "bytes": 54762,
+      "w": 1200,
+      "h": 800,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2237660127.jpg?resize=1200,800",
+      "page": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "alt": "",
+      "md5": "fddc8114d59259f3dd0c9fb5360e7a58",
+      "status": "approved",
+      "reason": "原文配图：小女孩与粉红对话机器人，紧扣纽约州AI儿童玩具禁令；无水印或角标，州长公告/The Verge来源。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-27T04:57:50+08:00"
+}

@@ -1,581 +1,339 @@
 {
-  "updatedAt": "2026-11-25T20:52:08.572Z",
+  "updatedAt": "2026-11-26T20:56:48.498Z",
   "items": {
-    "9": [
+    "3500": [
       {
-        "file": "assets/source/9/raw-1.jpeg",
-        "bytes": 163269,
-        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zfmGljvUBM801IuemicdIO8jdVga0mXbCGaawkIMwSMGW8KiaoRia18X40xjtmNMyEfFwichEpORKnPJYRKiaMAhUdVZbSfaiagB03yJPMchISedA/640?wx_fmt=jpeg&from=appmsg#imgIndex=0",
-        "w": 1080,
-        "h": 607,
-        "alt": "图片",
+        "file": "assets/source/3500/raw-1.jpeg",
+        "bytes": 125037,
+        "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/3967705287210220867.jpg",
+        "w": 1024,
+        "h": 697,
+        "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
         "from": "img",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd"
+        "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm"
       },
       {
-        "file": "assets/source/9/raw-2.jpeg",
-        "bytes": 165609,
-        "url": "https://mmbiz.qpic.cn/mmbiz_jpg/zfmGljvUBM9zMCU5jr8OJcapJxkEe6fOojONJylnNxRyzW3UozXwD2tYGruQeAyjibHKv5r79ibGHUkxbeJMz7qIQTKichw1cHsRlic9JmUnG14/640?wx_fmt=jpeg&from=appmsg#imgIndex=1",
-        "w": 1080,
-        "h": 601,
-        "alt": "图片",
+        "file": "assets/source/3500/raw-2.jpeg",
+        "bytes": 109389,
+        "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/1377393568859733930.jpg",
+        "w": 1024,
+        "h": 683,
+        "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
         "from": "img",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd"
-      },
+        "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm"
+      }
+    ],
+    "ny-ai-toy-ban": [
       {
-        "file": "assets/source/9/raw-3.jpeg",
-        "bytes": 30264,
-        "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/zfmGljvUBMicrg5czRETDYffewEsEpR3pNFT5xibDU66zmHVQUNDbRibXl8AWhOgAqTVrMiaS4pxdFHMSfUq55FtcffpyLem52ibn0RaBAOdEu9Q/0?wx_fmt=jpeg",
+        "file": "assets/source/ny-ai-toy-ban/raw-1.webp",
+        "bytes": 54762,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2237660127.jpg?resize=1200,800",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "http://mp.weixin.qq.com/s?__biz=MzI0NTU3MTk1Nw==&mid=2247574307&idx=1&sn=ba230b3f5e6a663b2ff3bd23447f1f04&chksm=e8ab94c5f3b88fc82ca4f0b5c194e26e360fff78336c6ee671010c5b2481e90eba082297522d#rd"
-      },
-      {
-        "file": "assets/source/9/raw-4.jpeg",
-        "bytes": 63709,
-        "url": "https://inews.gtimg.com/om_bt/OuYhs7UrC7Q2D5MWnIqs6gqoJ4eda-Bi58TGYuJQT3nfcAA/641",
-        "w": 960,
-        "h": 1487,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A04R1100"
-      },
-      {
-        "file": "assets/source/9/raw-5.jpeg",
-        "bytes": 81751,
-        "url": "https://inews.gtimg.com/om_bt/OrjuNgbn_wsNakmZXX0RJ0kAF9lR1HRbocf9hXJxa8F5YAA/641",
-        "w": 960,
-        "h": 1275,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A04R1100"
-      },
-      {
-        "file": "assets/source/9/raw-6.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A04R1100"
-      },
-      {
-        "file": "assets/source/9/raw-7.png",
-        "bytes": 180546,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A04R1100"
+        "page": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"
       }
     ],
-    "650": [
+    "fcc-100": [
       {
-        "file": "assets/source/650/raw-1.jpeg",
-        "bytes": 121008,
-        "url": "https://pgdt.gtimg.cn/141/20204/snscosdownload/SZ/reserved/6af3c91300012b1c1afd8cc8c4fb01150000008d00004eec?ck=15b69b2c5375db55af3f74af78e62392&m=15b69b2c5375db55af3f74af78e62392&sha256=5de4f1699f8a9986d267cb211441b5c3613f6fffb8f65865f71efc59fda0c70a",
-        "w": 1280,
-        "h": 720,
-        "alt": "Thumbplayer Poster Plugin Image",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0515100"
-      },
-      {
-        "file": "assets/source/650/raw-2.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0515100"
-      },
-      {
-        "file": "assets/source/650/raw-3.png",
-        "bytes": 180546,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0515100"
-      },
-      {
-        "file": "assets/source/650/raw-4.png",
-        "bytes": 1912722,
-        "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/c2b374227cd44e8a955aba56d28edd7210.png?auth=8acbee4df7e0dec3b734c29f7793e976&scale=2.03",
-        "w": 2000,
-        "h": 983,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.cnr.cn/china/yaowen/20261124/t20261124_527881621.shtml"
-      },
-      {
-        "file": "assets/source/650/raw-5.png",
-        "bytes": 459022,
-        "url": "https://sghimages.shobserver.cn/img/sgh/20261125/YLYaSeW2oo/c6350e6f7b134736b5391707e1d202c0.png",
-        "w": 850,
-        "h": 567,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.jfdaily.com/staticsg/res/html/web/sgh/sghNewsDetail.html?id=4100502"
-      }
-    ],
-    "ai-vibe-coding-firmware": [
-      {
-        "file": "assets/source/ai-vibe-coding-firmware/raw-1.webp",
-        "bytes": 276616,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C2.0451339915374%2C100%2C95.909732016925&w=2400",
-        "w": 934,
-        "h": 617,
-        "alt": "vibe_coding_synths_",
-        "from": "img",
-        "page": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
-      },
-      {
-        "file": "assets/source/ai-vibe-coding-firmware/raw-2.webp",
-        "bytes": 108350,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C12.339110464558%2C100%2C75.321779070884&w=1200",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
-      }
-    ],
-    "ai-meta-muse-instagram": [
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-1.png",
-        "bytes": 82944,
-        "url": "https://techcrunch.com/wp-content/uploads/2025/11/MuseCharm.png?w=1200",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-2.webp",
-        "bytes": 87410,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/duokeyboard1.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 496,
-        "alt": "<em>By attaching to the keyboard using MagSafe, the iPhone Duo can be easily removed and used on its own as needed.</em>",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-3.webp",
-        "bytes": 109522,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/masha-malitskaya-central-masha-malitskaya-14.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 470,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-4.webp",
-        "bytes": 129070,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/miro-vesterinen-ctrl-r-preorder-world-09.jpeg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-5.webp",
-        "bytes": 135766,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/jose-antonio-zapata-josez-rooftop-canyon-005.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-6.webp",
-        "bytes": 64398,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/nazareno-urbano-nazareno-urbano-zone-hiss-05.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-7.webp",
-        "bytes": 91016,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/raja-ghosh-mold-arena-approach-18.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-8.webp",
-        "bytes": 139518,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/brecht-sohier-brecht-sinkhole-17.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-9.webp",
-        "bytes": 108002,
-        "url": "https://nexgadgets.com/wp-content/uploads/2026/11/paper-3941882_1280.jpg",
-        "w": 1280,
-        "h": 720,
-        "alt": "Close-up of a stack of printed documents and booklets on a desk",
-        "from": "img",
-        "page": "https://nexgadgets.com/muse-instagram-dms-roll-out-in-five-markets"
-      },
-      {
-        "file": "assets/source/ai-meta-muse-instagram/raw-10.webp",
-        "bytes": 174936,
-        "url": "https://nexgadgets.com/wp-content/uploads/2026/11/map-of-the-world-2401458_1280.jpg",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://nexgadgets.com/muse-instagram-dms-roll-out-in-five-markets"
-      }
-    ],
-    "doubao-shopping": [
-      {
-        "file": "assets/source/doubao-shopping/raw-1.jpeg",
-        "bytes": 67273,
-        "url": "https://inews.gtimg.com/om_bt/OV5Z3lYzR65QITH0SYYVVeIoJwq6WvrK67Te_d36ynjQIAA/641",
-        "w": 960,
-        "h": 1501,
-        "alt": "图片",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0C2S700"
-      },
-      {
-        "file": "assets/source/doubao-shopping/raw-2.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0C2S700"
-      },
-      {
-        "file": "assets/source/doubao-shopping/raw-3.png",
-        "bytes": 180546,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0C2S700"
-      }
-    ],
-    "e5-81d6ed": [
-      {
-        "file": "assets/source/e5-81d6ed/raw-1.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0EJZG00"
-      },
-      {
-        "file": "assets/source/e5-81d6ed/raw-2.png",
-        "bytes": 180546,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261125A0EJZG00"
-      },
-      {
-        "file": "assets/source/e5-81d6ed/raw-3.jpeg",
-        "bytes": 334661,
-        "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261125/1941878149530403582.jpg",
-        "w": 1080,
-        "h": 1884,
-        "alt": "瓶身不再标生产日期？可口可乐回应",
-        "from": "img",
-        "page": "https://m.gmw.cn/2026-11/25/content_1304589214.htm"
-      },
-      {
-        "file": "assets/source/e5-81d6ed/raw-4.jpeg",
-        "bytes": 328073,
-        "url": "https://static.bjd.com.cn/dams-res/editing/image/202611/25/pvzscraikya2ped9ofzvglat_m.jpg",
-        "w": 1920,
-        "h": 1440,
-        "alt": "",
-        "from": "img",
-        "page": "https://pc.bjd.com.cn/detail?id=s6b069613e4b039a8e2f40771"
-      },
-      {
-        "file": "assets/source/e5-81d6ed/raw-5.jpeg",
-        "bytes": 129653,
-        "url": "https://static.bjd.com.cn/dams-res/editing/image/202610/28/vi6krjdxpbw4brgz03tqmkyb.jpeg",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://pc.bjd.com.cn/detail?id=s6b069613e4b039a8e2f40771"
-      }
-    ],
-    "gpu": [
-      {
-        "file": "assets/source/gpu/raw-1.webp",
-        "bytes": 25264,
-        "url": "https://res.cloudinary.com/lesswrong-2-0/image/upload/c_limit,w_1200,q_auto,f_jpg/f_auto,q_auto/v1/mirroredImages/7wzWuLP3HhyBLmKfo/ilkdsamuxja1dvu4uah2",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
-      }
-    ],
-    "ai-ai": [
-      {
-        "file": "assets/source/ai-ai/raw-1.webp",
-        "bytes": 87410,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/duokeyboard1.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 496,
-        "alt": "<em>By attaching to the keyboard using MagSafe, the iPhone Duo can be easily removed and used on its own as needed.</em>",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-2.webp",
-        "bytes": 109522,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/masha-malitskaya-central-masha-malitskaya-14.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 470,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-3.webp",
-        "bytes": 129070,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/miro-vesterinen-ctrl-r-preorder-world-09.jpeg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-4.webp",
-        "bytes": 135766,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/jose-antonio-zapata-josez-rooftop-canyon-005.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-5.webp",
-        "bytes": 64398,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/nazareno-urbano-nazareno-urbano-zone-hiss-05.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-6.webp",
-        "bytes": 91016,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/raja-ghosh-mold-arena-approach-18.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      },
-      {
-        "file": "assets/source/ai-ai/raw-7.webp",
-        "bytes": 139518,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/brecht-sohier-brecht-sinkhole-17.jpg?quality=90&strip=all&w=2400",
-        "w": 744,
-        "h": 418,
-        "alt": "Concept art from the video game Control Resonant.",
-        "from": "img",
-        "page": "https://www.theverge.com/"
-      }
-    ],
-    "anthropic-ai": [
-      {
-        "file": "assets/source/anthropic-ai/raw-1.webp",
-        "bytes": 45888,
-        "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
-      }
-    ],
-    "ceo-20-7": [
-      {
-        "file": "assets/source/ceo-20-7/raw-1.jpeg",
-        "bytes": 86794,
-        "url": "https://img.36krcdn.com/hsossms/20261125/v2_78942e5dc59c45d9b728a7ec2fdb0811@000000_oswg329588oswg1080oswg790_img_000?x-oss-process=image/format,jpg/interlace,1",
-        "w": 1080,
-        "h": 790,
-        "alt": "",
-        "from": "img",
-        "page": "https://36kr.com/p/4084960167111300"
-      },
-      {
-        "file": "assets/source/ceo-20-7/raw-2.jpeg",
-        "bytes": 49439,
-        "url": "https://img.36krcdn.com/hsossms/20261125/v2_7bb1d3326b534c6baec66175b12b142b@000000_oswg124518oswg1080oswg464_img_000?x-oss-process=image/format,jpg/interlace,1",
-        "w": 1080,
-        "h": 464,
-        "alt": "",
-        "from": "img",
-        "page": "https://36kr.com/p/4084960167111300"
-      },
-      {
-        "file": "assets/source/ceo-20-7/raw-3.jpeg",
-        "bytes": 47233,
-        "url": "https://img.36krcdn.com/hsossms/20261125/v2_2f7e59860dec4395926970b46e366de4@000000_oswg102582oswg1080oswg393_img_000?x-oss-process=image/format,jpg/interlace,1",
-        "w": 1080,
-        "h": 393,
-        "alt": "",
-        "from": "img",
-        "page": "https://36kr.com/p/4084960167111300"
-      },
-      {
-        "file": "assets/source/ceo-20-7/raw-4.jpeg",
-        "bytes": 31289,
-        "url": "https://img.36krcdn.com/hsossms/20261125/v2_a4335f154d1a44a1986efdffe268a752@000000@ai_oswg778251oswg2304oswg1728_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://36kr.com/p/4084960167111300"
-      }
-    ],
-    "pboc-5000-8000": [
-      {
-        "file": "assets/source/pboc-5000-8000/raw-1.jpeg",
-        "bytes": 89969,
-        "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/2ae02342029242c5a326b4adfcab553b10.jpg?auth=08d5b19a3784d15c75fc01708359b461&scale=2.04",
-        "w": 1280,
-        "h": 627,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.cnr.cn/jingji/ycbd/20261125/t20261125_527882321.shtml"
-      },
-      {
-        "file": "assets/source/pboc-5000-8000/raw-2.jpeg",
-        "bytes": 84894,
-        "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/cd3e602b6c2e46fe81e436ef8a9ac08210.jpg?auth=6c0e99872315684d11d80ac3deb556af&scale=1.97",
-        "w": 1235,
-        "h": 626,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.cnr.cn/jingji/ycbd/20261125/t20261125_527882321.shtml"
-      },
-      {
-        "file": "assets/source/pboc-5000-8000/raw-3.jpeg",
-        "bytes": 80214,
-        "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/bf9930637bfa44eb99d5c6c8ca068f2b10.jpg?auth=85d49794121c6d25ece8c990989086c6&scale=2.30",
-        "w": 1280,
-        "h": 557,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.cnr.cn/jingji/ycbd/20261125/t20261125_527882321.shtml"
-      },
-      {
-        "file": "assets/source/pboc-5000-8000/raw-4.jpeg",
-        "bytes": 76640,
-        "url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/1124/f4b9986c5d7a40dd9dba461d21e03bef10.jpg?auth=922b391a1a8b97298ea0709bee72fa7d&scale=2.55",
-        "w": 1279,
-        "h": 501,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.cnr.cn/jingji/ycbd/20261125/t20261125_527882321.shtml"
-      },
-      {
-        "file": "assets/source/pboc-5000-8000/raw-5.jpeg",
-        "bytes": 83166,
-        "url": "https://staticx.36krcdn.com/36kr-web/static/krSpace.7efbe7d3.jpg",
-        "w": 900,
-        "h": 900,
-        "alt": "",
-        "from": "img",
-        "page": "https://36kr.com/newsflashes/"
-      },
-      {
-        "file": "assets/source/pboc-5000-8000/raw-6.jpeg",
-        "bytes": 31833,
-        "url": "https://img.36krcdn.com/hsossms/20261125/v2_1316e597ab9647fc83b9fefa5a612be4@5667365_oswg82810oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://eu.36kr.com/zh/p/4084431441488260"
-      }
-    ],
-    "e13-8b5c36": [
-      {
-        "file": "assets/source/e13-8b5c36/raw-1.png",
-        "bytes": 209236,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793199373638.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A0E3UQ00"
-      },
-      {
-        "file": "assets/source/e13-8b5c36/raw-2.png",
-        "bytes": 180546,
-        "url": "https://mat1.gtimg.com/qqcdn/tupload/1793252832637.png",
-        "w": 1020,
-        "h": 573,
-        "alt": "趣玩游戏",
-        "from": "img",
-        "page": "https://news.qq.com/rain/a/20261124A0E3UQ00"
-      }
-    ],
-    "6-5000": [
-      {
-        "file": "assets/source/6-5000/raw-1.webp",
-        "bytes": 83112,
-        "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/a4960f839c7ecfcf25be45e506f9b938~tplv-obj:750:1274.image?_iz=97245&bid=15&from=post&gid=1882745765052428&lk3s=06827d14&x-expires=1803340800&x-signature=m9uffEsNi7WEQzylhIXlJJ7OoAQ%3D",
+        "file": "assets/source/fcc-100/raw-1.jpeg",
+        "bytes": 48336,
+        "url": "https://image.cnbcfm.com/api/v1/image/108559452-17956258221795625820-49856285423-1080pnbcnews.jpg?v=1795625821&w=750&h=422&vtcrop=y",
         "w": 750,
-        "h": 1274,
-        "alt": "",
+        "h": 422,
+        "alt": "FCC authorizes SpaceX to deploy 1 million data centers in space",
         "from": "img",
-        "page": "https://www.toutiao.com/w/1882745765052428/"
+        "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
       },
       {
-        "file": "assets/source/6-5000/raw-2.jpeg",
-        "bytes": 52950,
-        "url": "https://p3-sign.toutiaoimg.com/tos-cn-i-tjoges91tu/a0c385b0f3f48ce680e69ad857be9674~tplv-obj:1000:523.image?_iz=97245&bid=15&from=post&gid=1882745765052428&lk3s=06827d14&x-expires=1803340800&x-signature=C3SAgHr0K947vc67u92Rj21FpO4%3D",
-        "w": 1000,
-        "h": 523,
+        "file": "assets/source/fcc-100/raw-2.jpeg",
+        "bytes": 141574,
+        "url": "https://image.cnbcfm.com/api/v1/image/108368728-1790601399956-Screenshot_2026-09-28_at_91434_AM.png?v=1790601411&w=1920&h=1080",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
+      },
+      {
+        "file": "assets/source/fcc-100/raw-3.webp",
+        "bytes": 50784,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+      }
+    ],
+    "character-ai-chat-auction": [
+      {
+        "file": "assets/source/character-ai-chat-auction/raw-1.jpeg",
+        "bytes": 298239,
+        "url": "https://oag.ca.gov/sites/default/files/og-link-card-24.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns"
+      },
+      {
+        "file": "assets/source/character-ai-chat-auction/raw-2.jpeg",
+        "bytes": 46932,
+        "url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+      }
+    ],
+    "shenzhou-24-space-handshake": [],
+    "yab-browser": [
+      {
+        "file": "assets/source/yab-browser/raw-1.webp",
+        "bytes": 153414,
+        "url": "https://cdnfile.sspai.com/2026/11/20/5e9c6884bf2a0d0de14dbb9c51cfa19c.jpg?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 840,
         "alt": "",
         "from": "img",
-        "page": "https://www.toutiao.com/w/1882745765052428/"
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-2.webp",
+        "bytes": 148442,
+        "url": "https://cdnfile.sspai.com/2026/11/20/2ade8a03bdfdbe3ba26d5d8d08b66ba1.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 771,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-3.webp",
+        "bytes": 190040,
+        "url": "https://cdnfile.sspai.com/2026/11/20/718bea8d43342391f74f428113e1ac40.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 771,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-4.webp",
+        "bytes": 61112,
+        "url": "https://cdnfile.sspai.com/2026/11/20/59d68aef3759bbab8ad0d60a2ee95f3a.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 740,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-5.webp",
+        "bytes": 49042,
+        "url": "https://cdnfile.sspai.com/2026/11/20/47ea6b599f152c6a31d389bdfc95c327.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 740,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-6.webp",
+        "bytes": 85366,
+        "url": "https://cdnfile.sspai.com/2026/11/20/db2f90830fc6cb065d583c888f10cfc0.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 740,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-7.webp",
+        "bytes": 71954,
+        "url": "https://cdnfile.sspai.com/2026/11/20/ce36500edfa610ca40b3126fc8e94e80.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 740,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
+      },
+      {
+        "file": "assets/source/yab-browser/raw-8.webp",
+        "bytes": 234678,
+        "url": "https://cdnfile.sspai.com/2026/11/20/5c527756c388b8db16d191ded671bf05.png?imageView2/2/format/webp",
+        "w": 1120,
+        "h": 713,
+        "alt": "",
+        "from": "img",
+        "page": "https://sspai.com/post/119310"
       }
-    ]
+    ],
+    "1password": [
+      {
+        "file": "assets/source/1password/raw-1.webp",
+        "bytes": 28358,
+        "url": "https://images.ctfassets.net/3091ajzcmzlr/3yu0DTU3edoU7HK8MxkW54/c5e7801fb8c0d7d52295da96af7e8013/business_2x.webp",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://1password.com/blog/update-on-nov-2026-security-incident"
+      }
+    ],
+    "meta-ai": [
+      {
+        "file": "assets/source/meta-ai/raw-1.webp",
+        "bytes": 28122,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+      },
+      {
+        "file": "assets/source/meta-ai/raw-2.webp",
+        "bytes": 32914,
+        "url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2296209094_cc3633-e1795590650418.jpg?resize=1200,600",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/"
+      },
+      {
+        "file": "assets/source/meta-ai/raw-3.webp",
+        "bytes": 29830,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg",
+        "w": 921,
+        "h": 483,
+        "alt": "Meta Muse mascot sitting at laptop",
+        "from": "img",
+        "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+      },
+      {
+        "file": "assets/source/meta-ai/raw-4.jpeg",
+        "bytes": 98542,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+      }
+    ],
+    "anthropic-ai-adoption-study": [
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-1.webp",
+        "bytes": 115172,
+        "url": "https://assets.claude.com/2cfb3389391d51357b0fcf4b360e0e20faaabaff.png?w=3840&q=75&fm=webp&fit=max",
+        "w": 868,
+        "h": 802,
+        "alt": "",
+        "from": "img",
+        "page": "https://www.anthropic.com/research/working-with-ai"
+      },
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-2.webp",
+        "bytes": 209110,
+        "url": "https://assets.claude.com/c31ec00df169743b88562ec419df063053313cfd.png?w=3840&q=75&fm=webp&fit=max",
+        "w": 896,
+        "h": 729,
+        "alt": "",
+        "from": "img",
+        "page": "https://www.anthropic.com/research/working-with-ai"
+      },
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-3.webp",
+        "bytes": 112576,
+        "url": "https://assets.claude.com/b8a511edb078752c5aa30a54fcb1f882a39d5a2f.png?w=3840&q=75&fm=webp&fit=max",
+        "w": 868,
+        "h": 671,
+        "alt": "",
+        "from": "img",
+        "page": "https://www.anthropic.com/research/working-with-ai"
+      },
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-4.webp",
+        "bytes": 131338,
+        "url": "https://assets.claude.com/91b8f4998c83a5b4af153c6d8ea6737c71a9e2f2.png?w=3840&q=75&fm=webp&fit=max",
+        "w": 868,
+        "h": 527,
+        "alt": "",
+        "from": "img",
+        "page": "https://www.anthropic.com/research/working-with-ai"
+      },
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-5.jpeg",
+        "bytes": 177681,
+        "url": "https://assets.claude.com/cd30ce2e82eb423476801098073b39e025839018.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.anthropic.com/research/working-with-ai"
+      },
+      {
+        "file": "assets/source/anthropic-ai-adoption-study/raw-6.png",
+        "bytes": 1337725,
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/ai_office_paper-1200x675.png",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/"
+      }
+    ],
+    "anthropic-free-will": [
+      {
+        "file": "assets/source/anthropic-free-will/raw-1.webp",
+        "bytes": 45792,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot_20261125-153847.png?quality=90&strip=all&crop=0%2C23.625752568742%2C100%2C52.748494862516&w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai"
+      }
+    ],
+    "e11-aac1ec": [
+      {
+        "file": "assets/source/e11-aac1ec/raw-1.jpeg",
+        "bytes": 483086,
+        "url": "https://imgpai.thepaper.cn/pphimage/20261104/ccddb226-1570-438d-8ed1-c84da9cc717d.jpg",
+        "w": 750,
+        "h": 1158,
+        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+        "from": "img",
+        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
+      },
+      {
+        "file": "assets/source/e11-aac1ec/raw-2.jpeg",
+        "bytes": 483472,
+        "url": "https://imgpai.thepaper.cn/pphimage/20261104/03e0e53c-1be7-42c4-bbaa-eb03a88e5f8d.jpg",
+        "w": 750,
+        "h": 944,
+        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+        "from": "img",
+        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
+      },
+      {
+        "file": "assets/source/e11-aac1ec/raw-3.jpeg",
+        "bytes": 154154,
+        "url": "https://imgpai.thepaper.cn/pphimage/20261104/17d9b825-fdf6-4624-a069-bebb523f535d.jpg",
+        "w": 750,
+        "h": 562,
+        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+        "from": "img",
+        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
+      }
+    ],
+    "chow-tai-fook-stores": [],
+    "e13-384cae": [],
+    "zhuan-ren-gong": []
   }
 }

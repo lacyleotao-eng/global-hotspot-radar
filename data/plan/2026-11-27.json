@@ -1,0 +1,754 @@
+{
+ "date": "2026-11-27",
+ "generatedAt": "2026-11-27T04:45:38+08:00",
+ "windowHours": 40,
+ "rule": "一条情报 = 一篇稿 = 一个平台 = 一种形态；同一 sourceItemId 不得出现第二次",
+ "quota": {
+  "gzh-article": 3,
+  "gzh-poster": 3,
+  "tt-article": 4,
+  "tt-micro": 4
+ },
+ "events": [
+  {
+   "slug": "ny-ai-toy-ban",
+   "sourceItemId": "77184528b2a201a3",
+   "sourceTitle": "纽约州签署五年禁令：暂停制造、销售带 AI 聊天功能的儿童玩具",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1042261/new-york-bans-ai-chatbot-toys-for-kids",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-25T17:50:09+00:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "五年暂停的法律文本细节未逐条核对，仅按公开报道口径",
+   "summary": "The Verge 11 月 25 日报道，纽约州州长 Kathy Hochul 签署法案，对制造、分发、销售带 AI 聊天功能的儿童玩具实施五年暂停，范围覆盖可联网对话的毛绒玩具、玩偶与机器人。报道指出，这距离该州上月限制聊天机器人与未成年人互动仅一个月。TechCrunch 与州长办公室公告提到，法律将在 90 天后生效，违规可处最高每日 1.5 万美元民事罚款；该罚则由官方公告与媒体转述提供。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Governor Hochul Signs Five-Year Ban on AI Chatbot Toys",
+     "url": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
+     "publisher": "New York Governor",
+     "date": "2026-11-25",
+     "relation": "官方"
+    },
+    {
+     "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+     "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+     "publisher": "TechCrunch",
+     "date": "2026-11-25",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "纽约给 AI 儿童玩具按下五年暂停键：陪伴类硬件的边界在哪里",
+   "angle": "从儿童 AI 玩具的具体风险出发，讨论技术迭代与未成年人保护之间的制度空白",
+   "outline": [
+    "禁令覆盖哪些产品",
+    "五年暂停与 90 天生效意味着什么",
+    "此前各州对聊天机器人与未成年人的限制",
+    "厂商与家长分别要面对什么",
+    "可迁移到国内市场的合规议题"
+   ],
+   "audience": "家长、教育从业者、AI 硬件创业者",
+   "risk": "不夸大禁令范围，不写成全美禁令",
+   "basis": "The Verge 原文：五年暂停、覆盖联网对话玩具；州长公告：90 天后生效与罚款",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-27-ny-ai-toy-ban.json",
+   "auditScore": 89.9
+  },
+  {
+   "slug": "fcc-100",
+   "sourceItemId": "8df9ea610244c0fb",
+   "sourceTitle": "FCC 批准 SpaceX 部署最多 100 万颗 AI 数据中心卫星（Starmind）",
+   "sourceUrl": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-25T17:44:51+00:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "批准数量为许可上限，不代表卫星已发射；审批条件与时间表来自媒体报道口径",
+   "summary": "美国联邦通信委员会（FCC）11 月 25 日宣布，批准 SpaceX 部署最多 100 万颗搭载 AI 芯片的卫星，作为其 Starmind 计划的一部分。批复要求 2033 年前至少发射 1 颗、2040 年前达到 100 万颗；FCC 暂缓批准 SpaceX 关于 600 公里以上卫星进入“墓地轨道”的处置请求，称材料不足。SpaceX 称 Starmind 拟在太空采集太阳能为地面 AI 算力供电，通过 Starlink 激光链路回传数据，芯片将由 Terafab 工厂生产。Google 与 Blue Origin 也在推进类似项目。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+     "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+     "publisher": "CNBC",
+     "date": "2026-11-25",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "把数据中心搬上天：FCC 批了 100 万颗卫星，离真正运行还有多远",
+   "angle": "从审批条件、时间表与工程难题切入，讨论太空算力是否会成为地面 AI 基建的替代路线",
+   "outline": [
+    "FCC 批准了什么、附带哪些条件",
+    "Starmind 的技术设想：太阳能、激光链路、Terafab 芯片",
+    "2033/2040 时间表意味着什么",
+    "碎片、散热、天文观测的反对意见",
+    "对国内算力建设的启示"
+   ],
+   "audience": "科技与 AI 产业读者",
+   "risk": "不要把许可上限写成已部署数量",
+   "basis": "The Verge 原文：FCC 授权最多 100 万颗、2033 年前至少 1 颗、2040 年前达标，SpaceX 称用太阳能与激光回传",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-27-fcc-100.json",
+   "auditScore": 89.2
+  },
+  {
+   "slug": "character-ai-chat-auction",
+   "sourceItemId": "48ede1a1cca55185",
+   "sourceTitle": "42 位州总检察长反对 Character.AI 破产拍卖用户私密聊天记录",
+   "sourceUrl": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-25T17:35:00+00:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "拍卖结果未定，买家意图不明",
+   "summary": "TechCrunch 11 月 25 日报道，42 位美国州及地区总检察长介入 Character.AI 破产程序，反对该公司出售用户敏感数据。各州公告称数据集包含超过 2100 万个美国账户的聊天记录，其中逾 210 万个属于未成年人，另含 IP 地址。Character.AI 十月申请破产保护，此前曾告知用户个人信息不会出售。目前披露的唯一买家 Smirks and Pangs Acquisition LLC 于 11 月 13 日在特拉华注册，14 日被选为 12 月 1 日拍卖的基础出价方，用途不明。检察长称买家无需遵守原隐私政策。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Attorney General Bonta Opposes Asset Sale of Character.AI",
+     "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+     "publisher": "California Attorney General",
+     "date": "2026-11-23",
+     "relation": "官方"
+    },
+    {
+     "title": "Minnesota AG press release on Character.AI",
+     "url": "https://www.ag.state.mn.us/Office/Communications/2026/11/23_CharacterAI.asp",
+     "publisher": "Minnesota Attorney General",
+     "date": "2026-11-23",
+     "relation": "官方"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "done",
+   "leadHeadline": "AI 公司破产后，你的聊天记录会被拍卖吗？",
+   "angle": "以数据资产处置为切口，讨论隐私承诺在破产程序中的效力与未成年人数据的特殊保护",
+   "outline": [
+    "42 位检察长反对什么",
+    "2100 万账户与 210 万未成年账户",
+    "买家身份与拍卖时间",
+    "隐私承诺能否随资产转移",
+    "国内用户数据权益的对照思考"
+   ],
+   "audience": "关注隐私与 AI 产品风险的读者",
+   "risk": "不渲染猎奇细节，避免涉及未成年人具体聊天内容",
+   "basis": "TechCrunch 原文与加州总检察长公告中的账户数字、拍卖安排",
+   "hasLead": true,
+   "score": 76,
+   "readyFile": "2026-11-27-character-ai-chat-auction.json",
+   "auditScore": 89.0
+  },
+  {
+   "slug": "3500",
+   "sourceItemId": "320ef90942a034f1",
+   "sourceTitle": "金价跌破3500美元后金店客流上升，今日头条热榜热议\"抄底\"账本",
+   "sourceUrl": "https://www.toutiao.com/a1882886449756168",
+   "sourcePlatform": "今日头条",
+   "publishedAt": "2026-11-26T10:24:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "价格点位以光明网稿为准；\"售罄\"\"85万元刷卡\"\"每克760元\"等为自媒体描述，待核问题：现场销量与个别交易数字无一手凭证",
+   "summary": "今日头条11月26日文章称，国际金价持续回落、国内品牌足金零售价集体下调，深圳水贝等黄金市场客流增加。光明网转引人民日报客户端报道：现货黄金25日晚跌破3500美元/盎司，26日17时报3573美元/盎司，日内跌0.4%；26日周大福金饰每克1068元，较一月前跌130元。上海黄金交易所与多家银行已提示贵金属波动风险。头条文章中的具体抢购数字为自媒体自述。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "金价继续下跌，消费者购金热情高涨！提醒→",
+     "url": "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
+     "publisher": "光明网/人民日报客户端",
+     "date": "2026-11-26",
+     "relation": "二手/转载"
+    },
+    {
+     "title": "金价坐上\"过山车\" 黄金从避险资产变成风险资产？",
+     "url": "https://www.sohu.com/a/1106633237_121426544",
+     "publisher": "搜狐财经",
+     "date": "2026-11-26",
+     "relation": "二手/转载"
+    },
+    {
+     "title": "金价扛不住了！全线跳水大跌，有人连夜抄底",
+     "url": "https://www.toutiao.com/a7712247825421124139",
+     "publisher": "今日头条",
+     "date": "2026-11-26",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "金价跌破3500美元，金店却排起队：买金前先算清三笔账",
+   "angle": "从挂牌价、工费、回收价的区别解释\"越跌越买\"现象",
+   "outline": [
+    "现货黄金与品牌金饰报价分别跌了多少",
+    "金店客流上升的公开报道与自述数字要分开看",
+    "挂牌价、工费、回收价的差异",
+    "交易所与银行的波动风险提示"
+   ],
+   "audience": "关注家庭消费与资产配置的普通读者",
+   "risk": "不得给出买卖建议或预测点位；自媒体现场数字须标注来源或不用；成稿注明不构成投资建议",
+   "basis": "光明网转引人民日报客户端价格数据与头条原文对金店排队的描述",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-27-3500.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "shenzhou-24-space-handshake",
+   "sourceItemId": "4c8d6579068c09d3",
+   "sourceTitle": "神舟二十四号乘组进驻天宫，中外航天员首次\"太空会师\"登上多平台热榜",
+   "sourceUrl": "http://mp.weixin.qq.com/s?__biz=MzkzMTI0MzY0Nw==&mid=2247486267&idx=1&sn=7e3087ce7442d9a43a7eefe3c21843b4&chksm=c393276b4de6a5ccfc5385f10e16e71519e2831484b6e398b603cec66026241cf49606de1ca3#rd",
+   "sourcePlatform": "微信公众号",
+   "publishedAt": "2026-11-26T00:00:00+08:00",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "会师时刻、食品库品类等数字来自二次汇总，待核问题：以中国载人航天工程办公室/央视原稿为准",
+   "summary": "微信公众号\"每日热点速览\"11月26日汇总：11月25日神舟二十四号载人飞船在酒泉发射并完成自主快速交会对接，14时35分神舟二十三号乘组开门迎接新乘组，6名航天员在舱内合影。这是中国航天史上第9次\"太空会师\"，天宫首次迎来外籍航天员（来自巴基斯坦）。报道还提到为巴方航天员准备100多个品类食品库、定向研制7款巴基斯坦风味航天食品。微博同日出现\"中国航天第9次太空会师纪实\"话题。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "每日热点速览 2026年11月26日",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzkzMTI0MzY0Nw==&mid=2247486267&idx=1&sn=7e3087ce7442d9a43a7eefe3c21843b4&chksm=c393276b4de6a5ccfc5385f10e16e71519e2831484b6e398b603cec66026241cf49606de1ca3#rd",
+     "publisher": "微信公众号",
+     "date": "2026-11-26",
+     "relation": "一手"
+    },
+    {
+     "title": "中国航天第9次太空会师纪实",
+     "url": "https://s.weibo.com/weibo?q=%23%E4%B8%AD%E5%9B%BD%E8%88%AA%E5%A4%A9%E7%AC%AC9%E6%AC%A1%E5%A4%AA%E7%A9%BA%E4%BC%9A%E5%B8%88%E7%BA%AA%E5%AE%9E%23&t=31&band_rank=1&Refer=top",
+     "publisher": "微博",
+     "date": "2026-11-26",
+     "relation": "转载"
+    },
+    {
+     "title": "中外航天员在中国空间站\"太空会师\"",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzAwMTM0MTI2Ng==&mid=2451416751&idx=2&sn=f8df1c4fdccbfc2d85f53098a4d5e898&chksm=8c8e6b3ed4cdad129bd3b1589f7d79ca8a1f6cb2dc90f086ad2f260069fb496f385947d14cb5#rd",
+     "publisher": "微信公众号",
+     "date": "2026-11-26",
+     "relation": "转载"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "6名航天员在轨合影：神舟二十四号这次会师，值得看懂的三个细节",
+   "angle": "从发射对接同日完成、外籍航天员驻留保障、第9次会师三个可核验事实切入",
+   "outline": [
+    "11月25日发射、对接、进驻的时间线",
+    "第9次太空会师与首次外籍航天员进驻的意义",
+    "100多个品类食品库与7款定制食品的后勤细节",
+    "仍需以官方原稿确认的数字与表述"
+   ],
+   "audience": "关注中国航天与科技工程的读者",
+   "risk": "会师时刻与食品库数字为媒体转述，成稿前须回到央视或中国载人航天工程办公室原稿；不使用未经证实的\"首次\"表述",
+   "basis": "公众号汇总原文所述发射、14时35分会师、6人合影与食品库细节",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-27-shenzhou-24-space-handshake.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "yab-browser",
+   "sourceItemId": "c43d2af6923e399c",
+   "sourceTitle": "少数派首页推荐开源双内核浏览器 Yab，面向 Arc 用户",
+   "sourceUrl": "https://sspai.com/post/119310",
+   "sourcePlatform": "少数派",
+   "publishedAt": "2026-11-25T14:59:00+08:00",
+   "region": "国内",
+   "type": "resource",
+   "verification": "部分核实",
+   "verificationNote": "待核问题：文章内具体功能、开源协议与项目仓库地址未核对；发布时间按首页显示的相对时间推算",
+   "summary": "少数派首页今日仍推荐一篇 App+1 文章，介绍 Yab：一款开源、AI 友好的双内核浏览器，定位给舍不得 Arc 的用户。文章作者显示为宛潼，首页标注发布时间为 11 月 25 日 14:59。本次只记录标题、定位与首页展示信息，开源协议、具体功能与兼容情况未逐项核对，不写成已验证结论。",
+   "heat": {
+    "stage": "未知",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "少数派首页（含该文推荐位与时间）",
+     "url": "https://sspai.com/",
+     "publisher": "少数派",
+     "date": "2026-11-26",
+     "relation": "一手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "done",
+   "leadHeadline": "开源双内核浏览器 Yab：给舍不得 Arc 的用户一个新选择",
+   "angle": "从 Arc 用户迁移需求切入，介绍开源浏览器 Yab 的定位与尚未核实的点",
+   "outline": [
+    "少数派首页推荐与发布时间",
+    "Yab 的双内核、AI 友好定位",
+    "开源协议与项目仓库地址未核对",
+    "适合谁尝试与需要注意什么"
+   ],
+   "audience": "浏览器重度用户、数码爱好者",
+   "risk": "功能、协议与仓库未核对，不写成已验证结论",
+   "basis": "少数派首页条目与文章链接",
+   "hasLead": false,
+   "score": 75,
+   "readyFile": "2026-11-27-yab-browser.json",
+   "auditScore": 98.8
+  },
+  {
+   "slug": "1password",
+   "sourceItemId": "272297cceb9161ae",
+   "sourceTitle": "1Password 披露安全事件：员工 GitHub 账号被入侵，部分客户账户信息被复制",
+   "sourceUrl": "https://1password.com/blog/update-on-nov-2026-security-incident",
+   "sourcePlatform": "1Password 官方博客",
+   "publishedAt": "",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "受影响客户范围公告称是子集，未给出具体数量；发布时间页面未明确标注",
+   "summary": "1Password 官方博客公告称，11 月 19 日开始调查 attacker 访问其员工企业 GitHub 账号的迹象；攻击者利用该账号访问源码并向后端服务推送恶意代码，下载了部分客户的账户记录。被复制信息包括账户与用户标识、创建与最近登录时间、公钥、SRP 协议参数、邀请/配置/恢复邮件链接中的令牌及其他账户元数据。公司称保险库数据、其中的条目与保护密钥未受影响，已遏制并恢复干净服务版本、轮换内部凭据，用户无需更新账户，但应警惕钓鱼邮件。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "1Password Security Incident（Hacker News 讨论）",
+     "url": "https://news.ycombinator.com/item?id=50644817",
+     "publisher": "Hacker News",
+     "date": "2026-11-25",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "1Password 确认被入侵：密码没泄露，但这几类信息被复制了",
+   "angle": "区分“密码库安全”和“账户元数据泄露”，提醒用户警惕伪装成邀请与恢复的钓鱼邮件",
+   "outline": [
+    "攻击从哪里进入",
+    "哪些数据被复制",
+    "哪些数据没有受影响",
+    "公司已做的处置",
+    "用户现在应该做什么"
+   ],
+   "audience": "密码管理器用户与职场读者",
+   "risk": "不要写成密码泄露，不做恐慌式标题",
+   "basis": "1Password 官方公告：源码与部分客户账户记录被复制、保险库与密钥未受影响",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-27-1password.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "meta-ai",
+   "sourceItemId": "286e59b5afad9535",
+   "sourceTitle": "亚马逊与 Meta 据报就解除 AI 购物代理 Muse 的封锁展开谈判",
+   "sourceUrl": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-25T14:10:00+00:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "谈判内容属未证实消息，不可写成已达成协议",
+   "summary": "TechCrunch 11 月 25 日报道，援引 Fortune 当天消息称，亚马逊与 Meta 已就让 Meta 的 AI 代理 Muse 接入亚马逊商店进行多轮谈判。九月 Muse 用户发现无法在亚马逊下单并收到报错。谈判焦点是搜索结果如何呈现与广告如何处理；亚马逊担心第三方购物代理削弱其与消费者的直接关系、冲击广告业务，也可能因代理下错单而承担售后压力。任何协议据报需两家 CEO 批准；两家公司尚未回应置评请求。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Amazon and Meta reportedly in talks to end Muse AI shopping block",
+     "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+     "publisher": "The Verge",
+     "date": "2026-11-25",
+     "relation": "二手"
+    },
+    {
+     "title": "Fortune 独家报道（TechCrunch 引用）",
+     "url": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+     "publisher": "Fortune",
+     "date": "2026-11-25",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "亚马逊与 Meta 谈和解：AI 购物代理能不能替你下单？",
+   "angle": "用一个具体购物场景解释平台与 AI 代理的权力博弈",
+   "outline": [
+    "Muse 被封锁的经过",
+    "谈判卡在搜索与广告",
+    "亚马逊担心的售后与广告收入",
+    "谁在开放代理、谁在自建助手",
+    "对普通用户意味着什么"
+   ],
+   "audience": "电商从业者与泛科技读者",
+   "risk": "写明“据报谈判”，不得写成已达成协议",
+   "basis": "TechCrunch 原文：多轮谈判、两项焦点、需 CEO 批准",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-27-meta-ai.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "anthropic-ai-adoption-study",
+   "sourceItemId": "56a8522393111673",
+   "sourceTitle": "Anthropic 研究：企业用 AI 最大的阻力不是“不会用工具”，而是审核与协作摩擦",
+   "sourceUrl": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+   "sourcePlatform": "The Decoder",
+   "publishedAt": "2026-11-25T13:14:27+00:00",
+   "region": "海外",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "样本全部为 Anthropic 客户，结论不可外推为全行业统计",
+   "summary": "The Decoder 11 月 25 日报道，Anthropic 发布“Working with AI”定性研究：在 58 家美国公司做了 66 场面对面访谈，覆盖法律、建筑、金融、医疗、制造等行业，涉及近 300 个真实部署案例。受访者称 55% 的部署提高了产出或质量，但约 19% 仍无业务价值；最常见的障碍是需要人工核查的 AI 输出量（49 次提及），其次是员工抵触（43 次）与专家复核测试（42 次）。报告称样本均为 Anthropic 客户，不具代表性。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Working with AI — Anthropic Research",
+     "url": "https://www.anthropic.com/research/working-with-ai",
+     "publisher": "Anthropic",
+     "date": "2026-11-25",
+     "relation": "官方"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "AI 提效没那么简单：近两成项目没带来业务价值",
+   "angle": "用直观数字解释 AI 项目为什么卡在内部流程，而非员工不会用",
+   "outline": [
+    "调查覆盖哪些行业",
+    "有效与无效的比例",
+    "最耗时的环节是什么",
+    "一个翻译功能被关掉的故事",
+    "对普通职场人的影响"
+   ],
+   "audience": "职场读者与企业管理者",
+   "risk": "不要把访谈研究写成大样本统计",
+   "basis": "同上：19% 无业务价值、翻译 10 种语言后客服跟不上",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-27-anthropic-ai-adoption-study.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "anthropic-free-will",
+   "sourceItemId": "2686c9a7c13dc8e2",
+   "sourceTitle": "Anthropic CEO Amodei 回应“把自由意志交给 AI”指控：这一说法荒谬",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-25T20:49:14+00:00",
+   "region": "海外",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "内容为媒体转述，未逐字核对 X 原帖",
+   "summary": "The Verge 11 月 25 日报道，Anthropic CEO Dario Amodei 在 X 发布约 1000 词长文，回应 Axios 所报道的同行暗示——即 Anthropic 主张人类应把自由意志交给 AI。他称这一表述“荒谬”，强调自己一直主张把治理权交给 AI 是坏主意；并把“整体让渡自由意志”与“在具体任务上更高自动化”区分开，举例包括自动驾驶、抗癌药设计与端到端编写软件。报道称他还批评部分竞争者的“人类控制权”表态与实际产品取向并无实质差异。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "done",
+   "leadHeadline": "Anthropic CEO 否认“把自由意志交给 AI”：区分任务自动化与治理权",
+   "angle": "拆分“任务自动化”与“治理权让渡”，辨析 AI 公司公开表态与产品取向的差距",
+   "outline": [
+    "Amodei 回应了什么",
+    "同行担忧的来源",
+    "自动化与治理权如何区分",
+    "为什么递归自我改进是争议焦点",
+    "对国内 AI 产品叙事的启发"
+   ],
+   "audience": "AI 行业从业者与科技观点读者",
+   "risk": "注明为媒体转述，未逐字核对 X 原帖，避免写成官方声明原文",
+   "basis": "The Verge 原文：Amodei 称让渡自由意志荒谬、区分具体任务自动化",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-27-anthropic-free-will.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "e11-aac1ec",
+   "sourceItemId": "aac1ec0be313df3d",
+   "sourceTitle": "知乎热议：机器人赛道融资火热，为何近两年多家公司进入破产清算",
+   "sourceUrl": "https://www.zhihu.com/question/21088630070485913288",
+   "sourcePlatform": "知乎",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "待核问题：\"两年近30家\"来自问题陈述，报道口径为\"2026年以来十余家\"；不要把两者当成同一统计",
+   "summary": "知乎11月26日热榜问题提到\"多家机器人公司进入破产清算，两年近30家机器人公司倒闭\"。澎湃新闻转载红星资本局报道称，2026年以来已有十余家机器人相关企业进入清算、破产或停摆状态，达闼机器人、深兰机器人等被提及；报道把共性归为商业化闭环断裂、现金流与成本失控、战略失焦，并提醒框架订单不等于已实现收入。\"近30家\"为问题陈述，未独立核实。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "1710万（榜单值，晚间快照，非页面可见浏览量）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "机器人赛道\"换血\"：破产清算与百亿融资同时发生，出清才刚开始",
+     "url": "https://m.thepaper.cn/newsDetail_forward_34407303",
+     "publisher": "澎湃新闻/红星资本局",
+     "date": "2026-11-26",
+     "relation": "二手/转载"
+    },
+    {
+     "title": "机器人很热 这两家公司却在破产清算",
+     "url": "https://new.qq.com/rain/a/20261110A07LDS00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-10",
+     "relation": "二手/转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "机器人赛道一边融资一边出清，问题出在哪？",
+   "angle": "从调查报道中的具体案例解释行业分化",
+   "outline": [
+    "多家企业进入清算、破产或停摆的报道",
+    "交付验收与回款难点",
+    "融资向头部集中的趋势",
+    "判断企业经营状况的公开信号"
+   ],
+   "audience": "关注新兴产业与普通就业的读者",
+   "risk": "避免给个股、具体公司下结论；数字注明出处与口径",
+   "basis": "澎湃新闻调查稿与知乎热榜问题",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-27-e11-aac1ec.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "chow-tai-fook-stores",
+   "sourceItemId": "1e36b31f953a9675",
+   "sourceTitle": "快手热榜：周大福门店数量跌破5000家",
+   "sourceUrl": "https://whatshot.top/news/kuaishou?view=detail",
+   "sourcePlatform": "快手",
+   "publishedAt": "2026-11-25T21:06:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "待核实",
+   "verificationNote": "榜单快照、未取得原链接；待核问题：门店数来源、统计口径、企业公告与是否含加盟店。",
+   "summary": "榜单快照、未取得原链接：11月25日快手热榜出现“周大福门店跌破5000家”，聚合页显示榜内靠前位置。话题涉及珠宝品牌门店规模变化；聚合页只展示标题，未取得原始视频、统计口径说明和企业公告，具体门店数、统计时间与关店原因均需核实。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见（榜单快照、未取得原链接）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "快手热榜：周大福门店数量跌破5000家，口径待核",
+   "angle": "以榜单话题为线索，说明门店数字要看统计口径与企业公告",
+   "outline": [
+    "热榜话题与可见信息",
+    "门店数来源与统计口径待核",
+    "加盟与直营是否计入",
+    "如何核对品牌门店规模"
+   ],
+   "audience": "泛资讯读者、消费与零售关注者",
+   "risk": "仅为榜单快照，门店数、统计时间与原因均未核实，不写成定论",
+   "basis": "快手热榜聚合页",
+   "hasLead": false,
+   "score": 60,
+   "readyFile": "2026-11-27-chow-tai-fook-stores.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "e13-384cae",
+   "sourceItemId": "384cae53e16a6fee",
+   "sourceTitle": "微博热议手机相册权限关闭设置，隐私保护成当日实用需求",
+   "sourceUrl": "https://s.weibo.com/weibo?q=%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%85%B3%E6%8E%89%E6%89%8B%E6%9C%BA%E7%9B%B8%E5%86%8C%E6%9D%83%E9%99%90",
+   "sourcePlatform": "微博",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "demand",
+   "verification": "待核实",
+   "verificationNote": "待核问题：具体教程作者与操作步骤未取得，不同系统版本路径可能不同",
+   "summary": "微博热搜11月26日在榜话题\"手把手教你关掉手机相册权限\"，话题页显示其当日最高排名进入前十，热度值在早间快照中约7.5万至8.7万（榜单值）。话题围绕相册访问权限的关闭与设置，属于用户可感知的隐私操作需求；本次只取得话题聚合页，未取得教程原文与逐步操作说明，不转述具体步骤。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "8.7万（榜单值，早间快照，非页面可见浏览量）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "全网热榜聚合页（微博热搜条目）",
+     "url": "https://jesseovo.github.io/last30days-skill-cn/",
+     "publisher": "热榜聚合页",
+     "date": "2026-11-26",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "手机相册权限怎么收回？这个热搜话题很多人都在找答案",
+   "angle": "直接回应搜索需求，写清权限管理的基本思路与核实来源",
+   "outline": [
+    "话题当日登上微博热搜",
+    "相册权限与照片可见范围的关系",
+    "按官方帮助页核对设置入口",
+    "定期检查授权列表的习惯"
+   ],
+   "audience": "手机用户与中老年读者",
+   "risk": "不得凭空写具体按钮路径；以厂商官方说明为准",
+   "basis": "微博公开话题页与热榜快照",
+   "hasLead": true,
+   "score": 53,
+   "readyFile": "2026-11-27-e13-384cae.json",
+   "auditScore": 100
+  },
+  {
+   "slug": "zhuan-ren-gong",
+   "sourceItemId": "25f3f080066db421",
+   "sourceTitle": "百度热搜：“转人工转人工 给我转人工”引发客服体验讨论",
+   "sourceUrl": "https://whatshot.top/news/baidu?type=realtime&view=detail",
+   "sourcePlatform": "百度热搜",
+   "publishedAt": "2026-11-25T21:06:00+08:00",
+   "region": "国内",
+   "type": "demand",
+   "verification": "待核实",
+   "verificationNote": "榜单快照、未取得原链接；待核问题：原始视频/帖子出处、涉事企业、用户诉求与企业回应均未核实，不写成具体事件。",
+   "summary": "榜单快照、未取得原链接：11月25日百度热搜出现“转人工转人工 给我转人工”，聚合页显示榜单热度约781万。话题指向用户在智能客服流程中反复寻求人工服务的体验；聚合页仅提供话题标题与热度，未提供可直达的原始帖子或事件详情，具体涉及哪家企业、起因与处理结果未取得一手信息。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "约781万（百度榜单值，榜单快照、未取得原链接）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "done",
+   "leadHeadline": "百度热搜“转人工”：智能客服该给人留一条路",
+   "angle": "从热搜话题切入讨论智能客服转人工体验，不涉及具体企业与事件",
+   "outline": [
+    "话题在榜与可见信息",
+    "智能客服的常见问题",
+    "转人工入口设计的差异",
+    "企业与用户各自可做什么"
+   ],
+   "audience": "普通消费者、客服行业从业者",
+   "risk": "原始帖子、涉事企业与诉求均未核实，只谈话题不写成具体事件",
+   "basis": "百度热搜聚合页",
+   "hasLead": false,
+   "score": 68,
+   "readyFile": "2026-11-27-zhuan-ren-gong.json",
+   "auditScore": 100
+  }
+ ],
+ "syncedAt": "2026-11-27T08:35:15+08:00"
+}

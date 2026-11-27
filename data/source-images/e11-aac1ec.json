@@ -1,0 +1,52 @@
+{
+  "slug": "e11-aac1ec",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:57:01+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e11-aac1ec/raw-1.jpeg",
+      "bytes": 483086,
+      "w": 607,
+      "h": 937,
+      "url": "https://imgpai.thepaper.cn/pphimage/20261104/ccddb226-1570-438d-8ed1-c84da9cc717d.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_34407303",
+      "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+      "md5": "7f3f4c8c465a6357e9f65582d6632cb7",
+      "status": "drop",
+      "reason": "像素不足 607x937",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/e11-aac1ec/raw-2.jpeg",
+      "bytes": 483472,
+      "w": 604,
+      "h": 760,
+      "url": "https://imgpai.thepaper.cn/pphimage/20261104/03e0e53c-1be7-42c4-bbaa-eb03a88e5f8d.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_34407303",
+      "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+      "md5": "89827cfcd93264eca422e0dfafda2610",
+      "status": "drop",
+      "reason": "像素不足 604x760",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/e11-aac1ec/raw-3.jpeg",
+      "bytes": 154154,
+      "w": 1080,
+      "h": 809,
+      "url": "https://imgpai.thepaper.cn/pphimage/20261104/17d9b825-fdf6-4624-a069-bebb523f535d.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_34407303",
+      "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
+      "md5": "d531f248be9142f171f83728f4abc702",
+      "status": "candidate",
+      "reason": "",
+      "crop": "",
+      "approved": false
+    }
+  ]
+}

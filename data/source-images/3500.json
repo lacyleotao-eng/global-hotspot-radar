@@ -1,0 +1,70 @@
+{
+  "slug": "3500",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:56:59+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/3500/raw-1.jpeg",
+      "bytes": 125037,
+      "w": 1024,
+      "h": 697,
+      "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/3967705287210220867.jpg",
+      "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
+      "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+      "md5": "3fe3de89100c2eeaf41c2a6d6ee9924c",
+      "status": "approved",
+      "reason": "金店客流现场图与金饰柜台图，均直接对应金价回落报道，1024px宽且无平台角标/二维码。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/3500/raw-2.jpeg",
+      "bytes": 109389,
+      "w": 1024,
+      "h": 683,
+      "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/1377393568859733930.jpg",
+      "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
+      "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+      "md5": "ce60a6a035c9d4397605b4e8ecdc45bc",
+      "status": "approved",
+      "reason": "金店客流现场图与金饰柜台图，均直接对应金价回落报道，1024px宽且无平台角标/二维码。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/3500/raw-1.jpeg",
+      "bytes": 125037,
+      "w": 1024,
+      "h": 697,
+      "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/3967705287210220867.jpg",
+      "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
+      "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+      "md5": "3fe3de89100c2eeaf41c2a6d6ee9924c",
+      "status": "approved",
+      "reason": "金店客流现场图与金饰柜台图，均直接对应金价回落报道，1024px宽且无平台角标/二维码。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/3500/raw-2.jpeg",
+      "bytes": 109389,
+      "w": 1024,
+      "h": 683,
+      "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/1377393568859733930.jpg",
+      "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
+      "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+      "md5": "ce60a6a035c9d4397605b4e8ecdc45bc",
+      "status": "approved",
+      "reason": "金店客流现场图与金饰柜台图，均直接对应金价回落报道，1024px宽且无平台角标/二维码。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-27T04:57:51+08:00"
+}

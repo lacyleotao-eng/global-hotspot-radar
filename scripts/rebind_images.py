@@ -33,7 +33,7 @@ CGPT_MAP = ROOT / "data" / "chatgpt-map.json"
 CARDS = ROOT / "data" / "card-specs"
 SH = timezone(timedelta(hours=8))
 
-COUNT = {"gzh-article": 5, "gzh-poster": 6, "tt-article": 1, "tt-micro": 1}
+COUNT = {"gzh-article": 5, "gzh-poster": 6, "tt-article": 3, "tt-micro": 1}  # 2026-11-27：头条文章基准配图 4 张，1 张自检不过 85
 STRIP = re.compile(r"^(纪实摄影|摄影|微距摄影|夜景摄影|插画|图片)[:：]\s*")
 ORIGIN_LABEL = {"source": "原文图", "doubao": "豆包生成", "chatgpt": "ChatGPT 生成", "card": "自制信息卡"}
 

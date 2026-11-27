@@ -1,0 +1,67 @@
+{
+  "slug": "meta-ai",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:57:00+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/meta-ai/raw-1.webp",
+      "bytes": 28122,
+      "w": 1200,
+      "h": 627,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+      "page": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "alt": "",
+      "md5": "2e764c69892a0195e0e6e65f73a8f7a8",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/meta-ai/raw-2.webp",
+      "bytes": 32914,
+      "w": 1200,
+      "h": 600,
+      "url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2296209094_cc3633-e1795590650418.jpg?resize=1200,600",
+      "page": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+      "alt": "",
+      "md5": "af05f708cff0e1efcc35f0bdf6faf1cc",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/meta-ai/raw-3.webp",
+      "bytes": 29830,
+      "w": 1080,
+      "h": 567,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg",
+      "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "alt": "Meta Muse mascot sitting at laptop",
+      "md5": "fbcad916c5cce8e9846982e528675374",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 4,
+      "file": "assets/source/meta-ai/raw-4.jpeg",
+      "bytes": 98542,
+      "w": 1200,
+      "h": 630,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+      "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "alt": "",
+      "md5": "408b8fbcd029c8bc11ddc6e04da9f9e5",
+      "status": "drop",
+      "reason": "与前面近似重复（同一场景）",
+      "crop": "",
+      "approved": false
+    }
+  ]
+}

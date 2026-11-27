@@ -1,0 +1,70 @@
+{
+  "slug": "character-ai-chat-auction",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:56:59+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/character-ai-chat-auction/raw-1.jpeg",
+      "bytes": 298239,
+      "w": 1200,
+      "h": 628,
+      "url": "https://oag.ca.gov/sites/default/files/og-link-card-24.jpg",
+      "page": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+      "alt": "",
+      "md5": "6d97966e1aa276f68de5da834fd742e3",
+      "status": "approved",
+      "reason": "#1加州司法部新闻发布页（官方署名保留），#2 Character.AI应用界面图，均直接相关且无水印。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/character-ai-chat-auction/raw-2.jpeg",
+      "bytes": 46932,
+      "w": 1200,
+      "h": 675,
+      "url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+      "page": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "alt": "",
+      "md5": "8cd43cebee17e28ff7fbed811b68fd9b",
+      "status": "approved",
+      "reason": "#1加州司法部新闻发布页（官方署名保留），#2 Character.AI应用界面图，均直接相关且无水印。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/character-ai-chat-auction/raw-1.jpeg",
+      "bytes": 298239,
+      "w": 1200,
+      "h": 628,
+      "url": "https://oag.ca.gov/sites/default/files/og-link-card-24.jpg",
+      "page": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+      "alt": "",
+      "md5": "6d97966e1aa276f68de5da834fd742e3",
+      "status": "approved",
+      "reason": "#1加州司法部新闻发布页（官方署名保留），#2 Character.AI应用界面图，均直接相关且无水印。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/character-ai-chat-auction/raw-2.jpeg",
+      "bytes": 46932,
+      "w": 1200,
+      "h": 675,
+      "url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+      "page": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "alt": "",
+      "md5": "8cd43cebee17e28ff7fbed811b68fd9b",
+      "status": "approved",
+      "reason": "#1加州司法部新闻发布页（官方署名保留），#2 Character.AI应用界面图，均直接相关且无水印。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-27T04:57:50+08:00"
+}

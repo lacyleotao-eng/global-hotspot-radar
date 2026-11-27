@@ -1,0 +1,85 @@
+{
+  "slug": "fcc-100",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:56:59+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/fcc-100/raw-1.jpeg",
+      "bytes": 48336,
+      "w": 750,
+      "h": 422,
+      "url": "https://image.cnbcfm.com/api/v1/image/108559452-17956258221795625820-49856285423-1080pnbcnews.jpg?v=1795625821&w=750&h=422&vtcrop=y",
+      "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "alt": "FCC authorizes SpaceX to deploy 1 million data centers in space",
+      "md5": "8f62f85cae64ded4285d167880244cfb",
+      "status": "drop",
+      "reason": "像素不足 750x422",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 2,
+      "file": "assets/source/fcc-100/raw-2.jpeg",
+      "bytes": 142120,
+      "w": 1600,
+      "h": 900,
+      "url": "https://image.cnbcfm.com/api/v1/image/108368728-1790601399956-Screenshot_2026-09-28_at_91434_AM.png?v=1790601411&w=1920&h=1080",
+      "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "alt": "",
+      "md5": "63c56269bbc9f1e2da4e61a69663aa1b",
+      "status": "approved",
+      "reason": "#1为CNBC节目截图（台标与字幕条属节目署名），但宽度仅750px不足900，丢弃；#2卫星在轨图、#3 SpaceX厂房标牌图与报道直接相关，保留。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/fcc-100/raw-3.webp",
+      "bytes": 50784,
+      "w": 1200,
+      "h": 624,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
+      "page": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "alt": "",
+      "md5": "1810e272c5c696a889a785e528f51e37",
+      "status": "approved",
+      "reason": "#1为CNBC节目截图（台标与字幕条属节目署名），但宽度仅750px不足900，丢弃；#2卫星在轨图、#3 SpaceX厂房标牌图与报道直接相关，保留。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 2,
+      "file": "assets/source/fcc-100/raw-2.jpeg",
+      "bytes": 142120,
+      "w": 1600,
+      "h": 900,
+      "url": "https://image.cnbcfm.com/api/v1/image/108368728-1790601399956-Screenshot_2026-09-28_at_91434_AM.png?v=1790601411&w=1920&h=1080",
+      "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "alt": "",
+      "md5": "63c56269bbc9f1e2da4e61a69663aa1b",
+      "status": "approved",
+      "reason": "#1为CNBC节目截图（台标与字幕条属节目署名），但宽度仅750px不足900，丢弃；#2卫星在轨图、#3 SpaceX厂房标牌图与报道直接相关，保留。",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/fcc-100/raw-3.webp",
+      "bytes": 50784,
+      "w": 1200,
+      "h": 624,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
+      "page": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "alt": "",
+      "md5": "1810e272c5c696a889a785e528f51e37",
+      "status": "approved",
+      "reason": "#1为CNBC节目截图（台标与字幕条属节目署名），但宽度仅750px不足900，丢弃；#2卫星在轨图、#3 SpaceX厂房标牌图与报道直接相关，保留。",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-27T04:57:50+08:00"
+}

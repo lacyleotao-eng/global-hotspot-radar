@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "date": "2026-11-27",
+  "slug": "yab-browser",
+  "sourceItemId": "c43d2af6923e399c",
+  "sourceTitle": "少数派首页推荐开源双内核浏览器 Yab，面向 Arc 用户",
+  "sourceUrl": "https://sspai.com/post/119310",
+  "sourcePlatform": "少数派",
+  "verification": "部分核实",
+  "verificationNote": "文章内具体功能、开源协议与项目仓库地址未逐项核对；文章提到的 Arc 关停日期、双内核与 Agent 能力均为作者描述，发布时间按首页显示推算",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "工具速览",
+      "title": "开源浏览器 Yab 接棒 Arc？先看清还没核实的部分",
+      "digest": "少数派首页推荐的双内核浏览器 Yab，定位给舍不得 Arc 的用户。功能描述与未核对项分开看。",
+      "images": [
+        {
+          "src": "assets/source/yab-browser/raw-4.jpeg",
+          "caption": "原文刊发的现场画面（图源：少数派）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/yab-browser/raw-5.jpeg",
+          "caption": "原文刊发的现场画面（图源：少数派）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/yab-browser/raw-6.jpeg",
+          "caption": "原文刊发的现场画面（图源：少数派）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/source/yab-browser/raw-7.jpeg",
+          "caption": "原文刊发的现场画面（图源：少数派）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/yab-browser-db-1.jpeg",
+          "caption": "AI 生成示意图：科技纪实摄影：昏暗工作室里一台笔记本电脑打开着抽象模糊的浏览器窗口（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/yab-browser-db-2.jpeg",
+          "caption": "AI 生成示意图：科技纪实摄影：昏暗工作室里一台笔记本电脑打开着抽象模糊的浏览器窗口（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，少数派首页仍在推荐一篇 11 月 25 日 14:59 发布的 App+1 文章，介绍开源、AI 友好的双内核浏览器 Yab，定位是给舍不得 Arc 的用户一个新选择。首页可见的信息主要是标题与推荐位。"
+        },
+        {
+          "type": "para",
+          "text": "文章作者写道，The Browser Company 宣布 Arc 将于今年 12 月 22 日关停。这个日期来自文章转述，尚未独立核对；它解释了为什么最近会出现一批面向 Arc 用户的替代产品。"
+        },
+        {
+          "type": "para",
+          "text": "按作者描述，Yab 保留了侧边栏、Spaces、Peek 预览、分屏与命令面板，还能导入 Arc 的 Spaces、标签页和浏览记录。这些是文章里的使用体验，不等于我们已经逐项验证过兼容效果。"
+        },
+        {
+          "type": "para",
+          "text": "双内核是文章强调的第二点：主要基于 WebKit 引擎，同时内置一套 Chromium 内核，遇到兼容问题可以切换。作者还提到 MCP 与 Agent 能力，让外部 AI 工具在授权下操作已登录页面，敏感动作仍需人工确认。"
+        },
+        {
+          "type": "para",
+          "text": "第三点是来源。文章称 Yab 由一名独立开发者配合大量 AI Agent 开发，并于今年 11 月开源；但开源协议、项目仓库地址与具体功能清单，本次没有逐项核对，因此不写成已验证结论。"
+        },
+        {
+          "type": "para",
+          "text": "适合谁试？如果你在意 Arc 那套侧边栏工作流，或者想找一个能让 AI 接管网页操作入口的工具，可以自己去看项目页；如果要求稳定迁移全部插件与使用习惯，文章作者也提醒这款软件还很年轻，双内核切换与 Agent 稳定性都有打磨空间。"
+        }
+      ],
+      "imageNote": "6 张配图：原文图4 张、豆包生成2 张"
+    }
+  ]
+}

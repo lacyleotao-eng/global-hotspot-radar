@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "date": "2026-11-27",
+  "slug": "shenzhou-24-space-handshake",
+  "sourceItemId": "4c8d6579068c09d3",
+  "sourceTitle": "神舟二十四号乘组进驻天宫，中外航天员首次\"太空会师\"登上多平台热榜",
+  "sourceUrl": "http://mp.weixin.qq.com/s?__biz=MzkzMTI0MzY0Nw==&mid=2247486267&idx=1&sn=7e3087ce7442d9a43a7eefe3c21843b4&chksm=c393276b4de6a5ccfc5385f10e16e71519e2831484b6e398b603cec66026241cf49606de1ca3#rd",
+  "sourcePlatform": "微信公众号",
+  "verification": "部分核实",
+  "verificationNote": "会师时刻、食品库品类等数字来自二次汇总，尚未得到中国载人航天工程办公室或央视原稿逐项确认；不使用未经证实的“首次”表述",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "航天现场",
+      "title": "6 名航天员在轨合影，这次会师先看清三个细节",
+      "digest": "发射、对接、进驻同日完成，第 9 次会师与外籍航天员保障细节：哪些来自汇总稿，哪些还要等官方原稿。",
+      "images": [
+        {
+          "src": "assets/images/9-db-1.jpeg",
+          "caption": "AI 生成示意图：太空摄影：中国空间站的天和核心舱外部（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/9-db-2.jpeg",
+          "caption": "AI 生成示意图：太空摄影：中国空间站的天和核心舱外部（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/9-db-3.jpeg",
+          "caption": "AI 生成示意图：太空摄影：中国空间站的天和核心舱外部（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-1.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-2.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/shenzhou-24-launch-db-3.jpeg",
+          "caption": "AI 生成示意图：黎明前的航天发射场（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "para",
+          "text": "这两天，11 月 25 日神舟二十四号载人飞船在酒泉发射，并完成自主快速交会对接；14 时 35 分，神舟二十三号乘组开门迎接新乘组，6 名航天员在舱内合影。多个平台出现相关话题。"
+        },
+        {
+          "type": "para",
+          "text": "第一个细节是时间线。公众号汇总稿写的是：发射、对接、进驻在同一天完成，新乘组 3 人入住，两批乘组共 6 人合影。整个过程被压缩在一天之内，这是这条消息最直观的信息。"
+        },
+        {
+          "type": "para",
+          "text": "第二个细节是第 9 次“太空会师”。汇总稿称，这是中国航天史上第 9 次太空会师；同一段还提到，天宫首次迎来外籍航天员，其中一位来自巴基斯坦。“首次”这一表述来自汇总稿，尚未得到官方原稿逐项确认，这里按来源照录，不当作定论。"
+        },
+        {
+          "type": "para",
+          "text": "第三个细节是后勤。汇总稿提到，为巴方航天员准备了 100 多个品类的专属食品库，并定向研发 7 款巴基斯坦特色航天食品，轮换期还安排了六人会餐。品类数与口味数同样属于二次汇总口径，具体表述仍应以中国载人航天工程办公室或央视原稿为准。"
+        },
+        {
+          "type": "para",
+          "text": "为什么值得看这三点？发射与对接同日完成，检验的是流程衔接；两批乘组在轨交接，检验的是长期驻留的组织能力；食品与餐食安排，检验的是多国乘组共同生活的细节。它们都比一张合影包含更多信息。"
+        },
+        {
+          "type": "para",
+          "text": "最后提醒一句：会师时刻、食品品类和“首次”表述都来自二次汇总，本文没有把它们写成官方发布原文。等官方材料公开后再做对照，才是对这类热点更稳的读法。"
+        }
+      ],
+      "imageNote": "6 张配图：豆包生成6 张"
+    }
+  ]
+}

@@ -1,112 +1,103 @@
 {
   "results": [
     {
-      "name": "doubao-shopping",
-      "prompt": "微距摄影：手机放在购物袋旁，手指点击屏幕但界面内容完全模糊不可读，背景是虚化的快递纸箱，柔和自然光，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
+      "name": "anthropic-free-will",
+      "prompt": "科技纪实摄影：安静的现代办公室里一台笔记本电脑屏幕发出柔和蓝光，屏幕内容模糊不可读，桌上一叠白皮书与一杯冷水，无人，冷调光线，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/doubao-shopping-db-4.jpeg",
-        "assets/images/doubao-shopping-db-5.jpeg"
+        "assets/images/anthropic-free-will-db-1.jpeg",
+        "assets/images/anthropic-free-will-db-2.jpeg",
+        "assets/images/anthropic-free-will-db-3.jpeg"
       ],
       "urls": [
-        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/21270c2805e240858c5e1e2c430315c7.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExR1JRbWZBRmZsSVE=.png?lk3s=8e244e95&rcl=20261126082448EEF276277DF03053658E&rrcfp=d623987c&x-expires=2111876688&x-signature=FEAV04AokbjLK6I8ZJBDdUk%2Fffo%3D",
-        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/b962835d9b0b493aa7ce279ce93c24c7.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExR1JRbWZBRmZsSVE=.png?lk3s=8e244e95&rcl=20261126082448EEF276277DF03053658E&rrcfp=d623987c&x-expires=2111876688&x-signature=bhH2u6d4ON4%2F%2F%2B8DgLXMdYpgAhk%3D"
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/21f367795ea24900a8f12dbc1be977f2.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRENFZ1d3QjRkZzY=.png?lk3s=8e244e95&rcl=202611270832598F1C08F3D9144277175B&rrcfp=d623987c&x-expires=2111963579&x-signature=sbPFedIrW516ERYPvMYJ%2FbKj4s0%3D",
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/1d568e6263cd4498bf46c9b2e9f3f6d8.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRENFZ1d3QjRkZzY=.png?lk3s=8e244e95&rcl=202611270832598F1C08F3D9144277175B&rrcfp=d623987c&x-expires=2111963579&x-signature=d%2FsRU62wv4NpH83BHG1setyv6W8%3D",
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/0d83230f721148edb3af5e7334b708ef.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRENFZ1d3QjRkZzY=.png?lk3s=8e244e95&rcl=202611270832598F1C08F3D9144277175B&rrcfp=d623987c&x-expires=2111963579&x-signature=2dh5LnuCMMHxI6UKU%2BT9QRTq6u0%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        1909845,
-        1885400
+        2005245,
+        2145671,
+        2143752
       ]
     },
     {
-      "name": "e5-81d6ed",
-      "prompt": "超市货架特写：多瓶无字饮料瓶整齐排列，瓶盖与瓶身有冷凝水珠，货架标签纸全部空白，冷白光，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
+      "name": "ny-ai-toy-ban",
+      "prompt": "生活方式摄影：儿童房木质地板上一只未拆封的毛绒玩具与一根断开的数据线，柔和窗光，无人在画面中，画面中没有任何文字、字母、数字、品牌与 logo，16:9 横构图",
       "outs": [
-        "assets/images/e5-81d6ed-db-3.jpeg",
-        "assets/images/e5-81d6ed-db-4.jpeg"
+        "assets/images/ny-ai-toy-ban-db-4.jpeg",
+        "assets/images/ny-ai-toy-ban-db-5.jpeg"
       ],
       "urls": [
-        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c4ad9bd2fd6f48159e55305bc1f97226.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExR1JRbWZBRmZsSVE=.png?lk3s=8e244e95&rcl=20261126082448EEF276277DF03053658E&rrcfp=d623987c&x-expires=2111876688&x-signature=gVBA%2FL7iNHHkbpS73NWNmQZYTnc%3D",
-        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/700f5f6e5fbe4196a0b8618242e53fc9.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXNBZHlLWFo5TDU=.png?lk3s=8e244e95&rcl=20261126082520F3631D6036D6375DA9E5&rrcfp=d623987c&x-expires=2111876720&x-signature=z28oAzlXa4kyh%2FNcoe%2B7VF1%2FmbQ%3D"
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/98aae4445fd84428a8fdf40e1f80c640.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQVlvVktGbjZ2Y3U=.png?lk3s=8e244e95&rcl=20261127083321B648331B924975703CA9&rrcfp=d623987c&x-expires=2111963601&x-signature=6j7lGkcYxN%2BbUGBfxilk9Qu7fT8%3D",
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/c18091cdd28344ce90f2855783f531d3.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQVlvVktGbjZ2Y3U=.png?lk3s=8e244e95&rcl=20261127083321B648331B924975703CA9&rrcfp=d623987c&x-expires=2111963601&x-signature=AV9vA4vB17CioaK3GR0aMplBM6s%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        2216947,
-        4175629
+        2726823,
+        2891339
       ]
     },
     {
-      "name": "gpu",
-      "prompt": "微距摄影：服务器主板上的加速卡与金手指触点，冷蓝与暖金光线交替，背景完全虚化，板卡上没有丝印文字，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
+      "name": "chow-tai-fook-stores",
+      "prompt": "商业纪实摄影：现代化珠宝店柜台里整齐排列的无标识金饰展示托盘，玻璃反光，店内顾客只是模糊背影，暖色灯光，画面中没有任何文字、字母、数字、价签、品牌与 logo，16:9 横构图",
       "outs": [
-        "assets/images/gpu-db-5.jpeg",
-        "assets/images/gpu-db-6.jpeg"
+        "assets/images/chow-tai-fook-stores-db-1.jpeg"
       ],
       "urls": [
-        "https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/d65f3a9a182641b9908d2235b50132f9.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXNBZHlLWFo5TDU=.png?lk3s=8e244e95&rcl=20261126082520F3631D6036D6375DA9E5&rrcfp=d623987c&x-expires=2111876720&x-signature=zKOdZkIlO63dpi9B7%2FEV%2Fz2o5OI%3D",
-        "https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/cf6fdd46d02b49159d11780906888b38.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNUpuMXduZ1cwRm4=.png?lk3s=8e244e95&rcl=202611260825559C30ED75C696A85C316F&rrcfp=d623987c&x-expires=2111876755&x-signature=81G5E3Bl7Zaam30W8as8tOucxj8%3D"
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/7a2c2f692c66467c8a9d2cad8ab583eb.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNlFwWDJxQ3RjR3k=.png?lk3s=8e244e95&rcl=20261127083344DE2C691AA2BB5DC0C86E&rrcfp=d623987c&x-expires=2111963624&x-signature=rhwWEgGclBLm0osZ9rlGo0ykww4%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        4307461,
-        3888110
+        3555782
       ]
     },
     {
-      "name": "anthropic-ai",
-      "prompt": "金融概念摄影：现代城市金融区玻璃幕墙大楼仰拍，阴天冷色调，街面行人只是模糊剪影，建筑上没有招牌，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
+      "name": "e11-aac1ec",
+      "prompt": "工业纪实摄影：机器人产业园厂房里一排静止的机械臂与测试台，冷白灯光，地面整洁反光，无人，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/anthropic-ai-db-1.jpeg"
+        "assets/images/e11-aac1ec-db-1.jpeg"
       ],
       "urls": [
-        "https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/2c93a7ee80d14e10b2bee5fcbca573f4.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExNUpuMXduZ1cwRm4=.png?lk3s=8e244e95&rcl=202611260825559C30ED75C696A85C316F&rrcfp=d623987c&x-expires=2111876755&x-signature=S2cPh3e2dEW%2BIekVaU%2ByYSDCbX0%3D"
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/014d86d903db40fd822fe4ee81668f35.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExQTBuWU9EVVNpZWI=.png?lk3s=8e244e95&rcl=2026112708340655E7D36CA6476BC375AC&rrcfp=d623987c&x-expires=2111963646&x-signature=WLnwQ6Pj1uP4SjPKQtqSzynDP6A%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        4235172
+        4526292
       ]
     },
     {
-      "name": "diagram-design",
-      "prompt": "抽象视觉：深色背景上由发光线条和几何节点组成的流程图结构，线条干净但没有字符，蓝紫色调，科技感，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
+      "name": "e13-384cae",
+      "prompt": "生活方式摄影：一只手拿着智能手机站在窗边，手机屏幕上是完全模糊不可读的权限弹窗界面，背景城市虚化，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
       "outs": [
-        "assets/images/diagram-design-db-1.jpeg"
+        "assets/images/e13-384cae-db-1.jpeg"
       ],
       "urls": [
-        "https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/700f5f6e5fbe4196a0b8618242e53fc9.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExOXNBZHlLWFo5TDU=.png?lk3s=8e244e95&rcl=20261126082520F3631D6036D6375DA9E5&rrcfp=d623987c&x-expires=2111876720&x-signature=z28oAzlXa4kyh%2FNcoe%2B7VF1%2FmbQ%3D"
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/ae43c7f1229942b8ab6c10534339f14e.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRjlleGhHeERLQ1Q=.png?lk3s=8e244e95&rcl=2026112708343117A301A660DA8F6208B4&rrcfp=d623987c&x-expires=2111963672&x-signature=VLAcBIq%2F4EV82iWeruje3eIUqpA%3D"
       ],
       "ok": true,
       "error": null,
       "bytes": [
-        4175629
+        2605172
       ]
     },
     {
-      "name": "pboc-5000-8000",
-      "prompt": "金融建筑摄影：庄严的金融机构大厅空镜，大理石柱廊与高挑天花，光线柔和，墙面没有牌匾，无人，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
-      "outs": [],
-      "urls": [],
-      "ok": false,
-      "error": "180 秒内没抓到新生成图"
-    },
-    {
-      "name": "e13-8b5c36",
-      "prompt": "城市夜景纪实：夜晚街边一盏路灯下的空长椅与人行道，远处车流灯光虚化成光斑，无人，色调冷静，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
-      "outs": [],
-      "urls": [],
-      "ok": false,
-      "error": "180 秒内没抓到新生成图"
-    },
-    {
-      "name": "6-5000",
-      "prompt": "山景纪实摄影：清晨高山观景平台上的栏杆与云雾，远处山峰层叠，一位穿素色冲锋衣的游客背影站在栏杆前，衣服上没有字，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。",
-      "outs": [],
-      "urls": [],
-      "ok": false,
-      "error": "180 秒内没抓到新生成图"
+      "name": "zhuan-ren-gong",
+      "prompt": "服务场景纪实摄影：安静的客服工位上一副头戴式耳机与键盘，屏幕内容完全模糊不可读，旁边有一杯水，柔和自然光，无人，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图",
+      "outs": [
+        "assets/images/zhuan-ren-gong-db-1.jpeg"
+      ],
+      "urls": [
+        "https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc_gen_image/d04e2e8ef31941e3a6972e4b5bcf59c6.jpeg~tplv-a9rns2rl98-cgen_wm0_hflow:RGIwMjExTkExRGdSUVZ0dFZEZEU=.png?lk3s=8e244e95&rcl=20261127083456D633E5F9718E09BCE8A6&rrcfp=d623987c&x-expires=2111963696&x-signature=rHv%2F95jxb7T0d%2FXZIv0e9pkL7Xk%3D"
+      ],
+      "ok": true,
+      "error": null,
+      "bytes": [
+        2115718
+      ]
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "slug": "anthropic-free-will",
+  "date": "2026-11-27",
+  "builtAt": "2026-11-27T04:57:01+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/anthropic-free-will/raw-1.webp",
+      "bytes": 45792,
+      "w": 1199,
+      "h": 619,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot_20261125-153847.png?quality=90&strip=all&crop=0%2C23.625752568742%2C100%2C52.748494862516&w=1200",
+      "page": "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai",
+      "alt": "",
+      "md5": "b870e197ab0c66054f9e98319da92544",
+      "status": "candidate",
+      "reason": "",
+      "crop": "",
+      "approved": false
+    }
+  ]
+}
