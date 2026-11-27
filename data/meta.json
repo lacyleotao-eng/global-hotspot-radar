@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-26T22:17:53+08:00",
-  "total": 171,
+  "updatedAt": "2026-11-27T21:02:32+08:00",
+  "total": 183,
   "byType": {
-    "resource": 33,
-    "discussion": 28,
-    "news": 63,
-    "hotspot": 22,
-    "demand": 12,
-    "idea": 13
+    "news": 65,
+    "resource": 35,
+    "idea": 15,
+    "demand": 13,
+    "hotspot": 25,
+    "discussion": 30
   },
   "sources": [
     "12306 / 自贡网",
@@ -34,6 +34,7 @@
     "LinkedIn（经 Daily 8 报道）",
     "LinkedIn（经 Discoverable 整理）",
     "Lobste.rs",
+    "NGA",
     "OSCHINA",
     "PC Gamer",
     "Product Hunt",
@@ -92,6 +93,7 @@
     "知乎热榜（经热浪榜聚合）",
     "知乎热榜（经热点导航聚合）",
     "社交媒体 / 自贡网",
+    "稀土掘金",
     "网易",
     "网易号·365资讯简报",
     "腾讯新闻",
@@ -100,10 +102,10 @@
     "虎扑",
     "青浦区政府网（来源“绿色青浦”微信公众号）"
   ],
-  "leadsTotal": 140,
+  "leadsTotal": 150,
   "byTarget": {
-    "公众号": 79,
-    "今日头条": 61
+    "公众号": 84,
+    "今日头条": 66
   },
   "lastBatch": 12
 }
