@@ -119,9 +119,10 @@
     state.audit = window.__AUDIT__ || null;
     state.issue = window.__ISSUE__ || null;
     state.yt = window.__YT__ || { docs: [], total: 0 };
+    state.tb = window.__TB__ || { items: [], calendar: [], counts: {} };
     initControls();
     // 深链：#view=picks|audit|benchmark|feed|leads|videos 直接打开某个视图
-    var vm = /^#view=(issue|picks|audit|benchmark|feed|leads|videos)$/.exec(location.hash || '');
+    var vm = /^#view=(issue|picks|audit|benchmark|feed|leads|videos|sourcing)$/.exec(location.hash || '');
     if (vm) state.view = vm[1];
     applyView();
     renderPipe();
@@ -173,14 +174,16 @@
     var isAudit = state.view === 'audit';
     var isIssue = state.view === 'issue';
     var isVideos = state.view === 'videos';
+    var isTb = state.view === 'sourcing';
     document.getElementById('issuePanel').hidden = !isIssue;
     document.getElementById('benchPanel').hidden = !isBench;
     document.getElementById('auditPanel').hidden = !isAudit;
     document.getElementById('picksPanel').hidden = !isPicks;
     document.getElementById('videoPanel').hidden = !isVideos;
-    var fullPanel = isPicks || isBench || isAudit || isIssue || isVideos;
+    document.getElementById('tbPanel').hidden = !isTb;
+    var fullPanel = isPicks || isBench || isAudit || isIssue || isVideos || isTb;
     document.getElementById('mainToolbar').hidden = fullPanel;
-    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit || isIssue || isVideos;
+    document.getElementById('typeChips').hidden = fullPanel;
     document.getElementById('leadBar').hidden = !isLeads;
     document.querySelector('.resultbar').hidden = fullPanel;
     document.getElementById('grid').hidden = fullPanel;
@@ -198,7 +201,8 @@
     audit: '第 4 步｜闸门：按爆款基准打分，≥85 进发布池，＜85 直接淘汰',
     issue: '第 5 步｜通过自检的成品，复制全文 + 下载图片就能发',
     benchmark: '参照系｜每天采 10 篇真爆款（公众号 5 · 头条 5），拆成标尺；它不参与生产，只决定自检的及格线',
-    videos: '把 YouTube 长视频读成时间轴，重写成一步步能照做的攻略，配图只用原片截帧'
+    videos: '把 YouTube 长视频读成时间轴，重写成一步步能照做的攻略，配图只用原片截帧',
+    sourcing: '选品线｜每条候选都要有 1688 核价、淘宝价带、定价分档和上架窗口，最后给做/观望/放弃'
   };
 
   function setText(id, txt) {
@@ -245,6 +249,16 @@
       var vt = ((state.viral || {}).meta || {}).total || 0;
       pnViralNote.textContent = '样本库 ' + vt + ' 篇 · 每天新增约 10 篇（公 5 · 头 5）';
     }
+    var tb = state.tb || {};
+    var tbc = tb.counts || {};
+    setText('pnTb', tbc.total ? (tbc.do || 0) + ' 做 / ' + tbc.total + ' 张' : '—');
+    var pnTbNote = document.querySelector('.pnode[data-view="sourcing"] small');
+    if (pnTbNote) {
+      var liveCal = (tb.calendar || []).filter(function (x) { return x.inWindow; });
+      pnTbNote.textContent = liveCal.length
+        ? '在窗口内：' + liveCal.map(function (x) { return x.name + ' 剩 ' + x.days + ' 天'; }).join('、')
+        : '本页含成本结构，仅自用';
+    }
     var ytDocs = (state.yt || {}).docs || [];
     setText('pnVideo', ytDocs.length ? ytDocs.length + ' 篇' : '—');
     var pnVideoNote = document.querySelector('.pnode[data-view="videos"] small');
@@ -286,7 +300,8 @@
         renderPipe();
         if (state.view === 'issue') renderIssue();
         if (state.view === 'videos') renderVideos();
-        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit' || state.view === 'issue' || state.view === 'videos';
+        if (state.view === 'sourcing') renderTb();
+        document.querySelector('.legend').hidden = state.view !== 'feed';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
         render();
       };
@@ -1120,6 +1135,185 @@
 
   function platOf(d) { return d.source === 'bilibili' ? 'B站' : 'YouTube'; }
 
+  // ---------- 选品情报（1688 选品线）----------
+  var tbVerdict = '', tbSortKey = 'score';
+
+  function tbMoney(v) {
+    if (v === null || v === undefined || v === '' || isNaN(v)) return '—';
+    var n = Math.round(Number(v) * 100) / 100;
+    return '¥' + (n % 1 === 0 ? String(n) : n.toFixed(2));
+  }
+
+  // 价带要挤在四格之一里，用紧凑写法：≈¥29.9–69
+  function tbRange(lo, hi, approx) {
+    if (lo === null || lo === undefined || hi === null || hi === undefined) return '—';
+    var f = function (v) { var n = Math.round(Number(v) * 100) / 100; return String(n); };
+    return (approx ? '≈' : '') + '¥' + f(lo) + '–' + f(hi);
+  }
+
+  function tbMaxRate(x) {
+    var r = 0;
+    (x.pricing || []).forEach(function (p) { if (p.rate != null && p.rate > r) r = p.rate; });
+    return r;
+  }
+
+  function tbCard(x, staleDays) {
+    var vmap = { '做': 'do', '观望': 'watch', '放弃': 'drop' };
+    var vcls = vmap[x.verdict] || 'watch';
+    var m = x.market || {};
+    var top = m.top || {};
+    var approx = x.priceApprox ? '≈' : '';
+    var sp = x.scoreParts || {};
+
+    var badges = [];
+    if (x.pendingCost) badges.push('<span class="tb-tag warn">成本待核</span>');
+    if (x.stale) badges.push('<span class="tb-tag gray">' + (x.shotDaysAgo || '—') + ' 天前核价</span>');
+    if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
+    if (x.windowPassed) badges.push('<span class="tb-tag red">窗口已过</span>');
+
+    var srcRows = (x.sources || []).map(function (s) {
+      var pend = /^待/.test(s.shop || '');
+      return '<tr' + (pend ? ' class="pend"' : '') + '>' +
+        '<td>' + esc(s.shop || '—') + '</td>' +
+        '<td>' + esc(s.city || '—') + '</td>' +
+        '<td class="num">' + tbMoney(s.price) + '</td>' +
+        '<td class="num">' + tbMoney(s.freight) + '</td>' +
+        '<td class="num"><b>' + tbMoney((Number(s.price) || 0) + (Number(s.freight) || 0)) + '</b></td>' +
+        '<td class="num">' + esc(s.sold || '—') + '</td>' +
+        '<td class="num">' + (s.repeat ? s.repeat + '%' : '—') + '</td></tr>';
+    }).join('');
+
+    var priceRows = (x.pricing || []).map(function (p) {
+      return '<tr><td>' + esc(p.sku || '') + '</td>' +
+        '<td class="num">' + tbMoney(p.price) + '</td>' +
+        '<td class="num">' + tbMoney(p.cost) + '</td>' +
+        '<td class="num">' + (p.gross == null ? '—' : tbMoney(p.gross)) + '</td>' +
+        '<td class="num">' + (p.rate == null ? '—' : Math.round(p.rate * 100) + '%') + '</td>' +
+        '<td><span class="tb-role">' + esc(p.role || '—') + '</span></td></tr>';
+    }).join('');
+
+    var why = (x.why || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
+    var plays = (x.plays || []).map(function (p) {
+      return '<li><b>' + esc(p.when || '') + '</b><span>' + esc(p.do || '') + '</span></li>';
+    }).join('');
+
+    return '<article class="tb-card ' + vcls + (x.stale ? ' stale' : '') + '">' +
+      '<div class="tb-card-top">' +
+        '<span class="tb-verdict ' + vcls + '">' + esc(x.verdict || '—') + '</span>' +
+        '<span class="tb-rank">#' + (x.rank || '') + '</span>' +
+        '<span class="tb-cat">' + esc(x.cat || '') + '</span>' +
+        '<span class="tb-peak">' + (x.daysToPeak != null ? '距峰值 ' + x.daysToPeak + ' 天' : '') + '</span>' +
+      '</div>' +
+      '<h3>' + esc(x.name || '') + '</h3>' +
+      (badges.length ? '<div class="tb-badges">' + badges.join('') + '</div>' : '') +
+      '<div class="tb-score"><b>' + (x.score != null ? x.score : '—') + '</b><span>适配分</span>' +
+        '<em>供需 ' + (sp.sd != null ? sp.sd : '—') + ' · 转化 ' + (sp.cvr != null ? Math.round(sp.cvr * 100) + '%' : '—') +
+        ' · 猫系 ' + (sp.tmall != null ? Math.round(sp.tmall * 100) + '%' : '—') + '</em></div>' +
+      '<p class="tb-scorewhy">' + esc(x.scoreWhy || '') + '</p>' +
+      '<div class="tb-nums">' +
+        '<div><span>到手成本</span><b>' + (x.landed != null ? tbMoney(x.landed) : '待核') + '</b></div>' +
+        '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b></div>' +
+        '<div><span>价带</span><b title="' + esc(tbMoney(m.lo) + ' – ' + tbMoney(m.hi)) + '">' + tbRange(m.lo, m.hi, x.priceApprox) + '</b></div>' +
+        '<div><span>榜首</span><b>' + approx + tbMoney(top.price) + '</b><i>' + esc(top.sold || '') + '</i></div>' +
+      '</div>' +
+      '<table class="tb-price"><thead><tr><th>SKU</th><th>售价</th><th>成本</th><th>毛利</th><th>率</th><th>角色</th></tr></thead>' +
+        '<tbody>' + priceRows + '</tbody></table>' +
+      '<details class="tb-more"><summary>完整论证：货源比价 / 为什么是它 / 怎么打 / 翻车点</summary>' +
+        '<h4>1688 货源比价</h4>' +
+        (srcRows ? '<table class="tb-src"><thead><tr><th>店铺</th><th>城市</th><th>货价</th><th>运费</th><th>到手</th><th>销量</th><th>回头率</th></tr></thead><tbody>' + srcRows + '</tbody></table>'
+                 : '<p class="tb-none">还没核价。</p>') +
+        '<h4>为什么判断它是爆款</h4><ul class="tb-why">' + (why || '<li>—</li>') + '</ul>' +
+        '<h4>怎么打</h4><ul class="tb-plays">' + (plays || '<li>—</li>') + '</ul>' +
+        '<h4>最容易翻车的地方</h4><p class="tb-risk">' + esc(x.risk || '—') + '</p>' +
+        '<h4>结论</h4><p class="tb-vwhy"><b>' + esc(x.verdict || '') + '</b>　' + esc(x.verdictWhy || '') + '</p>' +
+      '</details>' +
+      '<div class="tb-card-foot">' +
+        '<span>核价 ' + esc(x.shotAt || '—') + '</span>' +
+        '<span>' + (x.stale ? '已超 ' + staleDays + ' 天，需复核' : '在有效期内') + '</span>' +
+        '<span>' + esc(x.shelfFrom || '') + ' → ' + esc(x.shelfTo || '') + '</span>' +
+      '</div></article>';
+  }
+
+  function renderTb() {
+    var tb = state.tb || {};
+    var items = (tb.items || []).slice();
+    var c = tb.counts || {};
+    var staleDays = tb.staleAfterDays || 14;
+
+    setText('tbFormula', (tb.model || {}).formula || '—');
+    setText('tbStaleDays', String(staleDays));
+
+    var stat = document.getElementById('tbStat');
+    if (stat) {
+      stat.innerHTML = '<b>' + (c.total || 0) + '</b> 张候选　做 <b>' + (c.do || 0) + '</b> / 观望 ' + (c.watch || 0) + ' / 放弃 ' + (c.drop || 0) +
+        '<br>窗口内 <b>' + (c.inWindow || 0) + '</b>　待复核 <b>' + (c.stale || 0) + '</b>　成本待核 <b>' + (c.pendingCost || 0) + '</b>' +
+        '<br>数据截至 ' + esc(tb.dataAsOf || '—');
+    }
+
+    var cal = tb.calendar || [];
+    var live = cal.filter(function (x) { return x.inWindow; });
+    var next = cal.filter(function (x) { return !x.inWindow && !x.passed; })[0];
+    var st = document.getElementById('tbStatus');
+    if (st) {
+      var bits = ['<b>今天 ' + fmt(new Date()).slice(0, 10) + '</b>'];
+      bits.push(live.length
+        ? '在窗口内：<b>' + live.map(function (x) { return esc(x.name) + '（剩 ' + x.days + ' 天）'; }).join('、') + '</b>'
+        : '当前没有节点在备货窗口内');
+      if (next) bits.push('下一个：<b>' + esc(next.name) + '</b> ' + esc(next.shelfFrom) + ' 开窗，还有 ' + next.days + ' 天');
+      if (c.pendingCost) bits.push('<b>' + c.pendingCost + '</b> 张卡成本未核实，结论只作方向');
+      st.innerHTML = bits.join('<i>·</i>');
+    }
+
+    var calEl = document.getElementById('tbCal');
+    if (calEl) {
+      calEl.innerHTML = cal.map(function (x) {
+        var cls = 'tb-cal-item' + (x.inWindow ? ' live' : '') + (x.passed ? ' past' : '');
+        return '<div class="' + cls + '">' +
+          '<span class="tb-tier t' + esc(x.tier || 'C') + '">' + esc(x.tier || '—') + '</span>' +
+          '<b>' + esc(x.name) + '</b>' +
+          '<em>' + (x.days == null ? '' : (x.days >= 0 ? '还有 ' + x.days + ' 天' : '已过 ' + Math.abs(x.days) + ' 天')) + '</em>' +
+          '<small>' + esc(x.shelfFrom) + ' → ' + esc(x.shelfTo) + '</small>' +
+          '<i>' + esc(x.note || '') + '</i></div>';
+      }).join('');
+    }
+
+    var chipsEl = document.getElementById('tbChips');
+    if (chipsEl) {
+      var opts = [['', '全部 ' + items.length], ['做', '做 ' + (c.do || 0)], ['观望', '观望 ' + (c.watch || 0)], ['放弃', '放弃 ' + (c.drop || 0)]];
+      chipsEl.innerHTML = opts.map(function (o) {
+        return '<button class="yt-chip' + (tbVerdict === o[0] ? ' on' : '') + '" data-v="' + o[0] + '">' + o[1] + '</button>';
+      }).join('');
+      Array.prototype.forEach.call(chipsEl.querySelectorAll('.yt-chip'), function (b) {
+        b.onclick = function () { tbVerdict = b.getAttribute('data-v'); renderTb(); };
+      });
+    }
+
+    var sortEl = document.getElementById('tbSort');
+    if (sortEl) {
+      sortEl.value = tbSortKey;
+      sortEl.onchange = function () { tbSortKey = sortEl.value; renderTb(); };
+    }
+
+    var rows = items.filter(function (x) { return !tbVerdict || x.verdict === tbVerdict; });
+    rows.sort(function (a, b) {
+      if (tbSortKey === 'peak') return (a.daysToPeak == null ? 9999 : a.daysToPeak) - (b.daysToPeak == null ? 9999 : b.daysToPeak);
+      if (tbSortKey === 'landed') return (a.landed == null ? 99999 : a.landed) - (b.landed == null ? 99999 : b.landed);
+      if (tbSortKey === 'margin') return tbMaxRate(b) - tbMaxRate(a);
+      return (b.score || 0) - (a.score || 0);
+    });
+
+    var grid = document.getElementById('tbGrid');
+    var emptyEl = document.getElementById('tbEmpty');
+    if (!grid) return;
+    if (!rows.length) {
+      grid.innerHTML = '';
+      if (emptyEl) emptyEl.hidden = false;
+      return;
+    }
+    if (emptyEl) emptyEl.hidden = true;
+    grid.innerHTML = rows.map(function (x) { return tbCard(x, staleDays); }).join('');
+  }
+
   function renderVideos() {
     var wrap = document.getElementById('videoPanel');
     var docs = (state.yt || {}).docs || [];
@@ -1225,6 +1419,7 @@
     if (state.view === 'audit') { renderAudit(); return; }
     if (state.view === 'picks') { renderPicks(); return; }
     if (state.view === 'videos') { renderVideos(); return; }
+    if (state.view === 'sourcing') { renderTb(); return; }
     var rows = state.view === 'leads' ? filteredLeads() : filtered();
     document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
     document.getElementById('empty').hidden = rows.length > 0;

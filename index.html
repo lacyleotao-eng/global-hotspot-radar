@@ -94,6 +94,15 @@
         <small>每天 10 篇 + B 站 1 篇：把长视频拆成一步步能照做的攻略</small>
       </button>
     </div>
+    <div class="pipe-ref pipe-tb">
+      <span class="pipe-ref-label">电商选品线 · 另一条业务线</span>
+      <button class="pnode tb" data-view="sourcing">
+        <span class="pn-num">¥</span>
+        <b>选品情报</b>
+        <em id="pnTb">—</em>
+        <small>1688 核价 · 定价分档 · 上架窗口</small>
+      </button>
+    </div>
   </div>
   <p class="viewhint" id="viewHint">今日发布 = 通过自检的最终成品，直接复制就能发</p>
 
@@ -176,6 +185,37 @@
     <div class="yt-cats" id="ytCats"></div>
     <div class="yt-grid" id="ytGrid"></div>
     <div class="empty" id="ytEmpty" hidden>还没有视频拆解稿，今天的任务跑完就会出现在这里。</div>
+  </section>
+
+  <section class="tbpanel" id="tbPanel" hidden>
+    <div class="tb-head">
+      <div>
+        <h2>选品情报 · 现在该上什么，拿货多少，能卖多少，怎么打</h2>
+        <p>不是商品清单，是<b>决策依据</b>。每条候选必须回答四个问题：<b>为什么现在做</b>（节点 + 适配分）、<b>拿货多少钱</b>（1688 多家比价）、<b>能卖多少钱</b>（淘宝同款价带）、<b>怎么打</b>（定价分档 + 分阶段动作），最后给一个明确结论：<b>做 / 观望 / 放弃</b>。</p>
+        <p class="tb-formula"><b>排序口径</b>：<span id="tbFormula">—</span></p>
+        <p class="tb-private">本页含供应链成本与毛利结构，仅自用，请勿转发外链。</p>
+      </div>
+      <div class="tb-stat" id="tbStat">—</div>
+    </div>
+    <div class="tb-status" id="tbStatus"></div>
+    <div class="tb-cal-wrap">
+      <div class="tb-cal-label">节点日历 · 到点就上，过点就撤</div>
+      <div class="tb-cal" id="tbCal"></div>
+    </div>
+    <div class="tb-bar">
+      <div class="tb-chips" id="tbChips"></div>
+      <label class="tb-sort">排序
+        <select id="tbSort" aria-label="选品排序方式">
+          <option value="score">适配分</option>
+          <option value="peak">距峰值天数</option>
+          <option value="margin">毛利率</option>
+          <option value="landed">到手成本</option>
+        </select>
+      </label>
+    </div>
+    <div class="tb-grid" id="tbGrid"></div>
+    <div class="empty" id="tbEmpty" hidden>选品数据还没生成，先跑 scripts/taobao_build_index.py。</div>
+    <p class="tb-foot">核价与价带必须是抓来的真实数字，估算值一律带 <b>≈</b> 且不参与结论判断。核价超过 <span id="tbStaleDays">14</span> 天的卡片会标灰，决定上架前必须复核；窗口一过就改「放弃」，不留着占位。</p>
   </section>
 
   <section class="pickspanel" id="picksPanel">
@@ -289,6 +329,7 @@
 <script src="data/viral-embed.js"></script>
 <script src="data/audit-embed.js"></script>
 <script src="data/yt-embed.js"></script>
-<script src="app.js?v=1127a"></script>
+<script src="data/taobao-embed.js"></script>
+<script src="app.js?v=1127c"></script>
 </body>
 </html>
