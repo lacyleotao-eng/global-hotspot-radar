@@ -1,0 +1,752 @@
+[
+  {
+    "title": "英伟达据报暂停向东南亚四国发运 AI 服务器，核验区域伙伴出口合规",
+    "summary": "TechCrunch 11 月 26 日援引《华尔街日报》报道称，英伟达已要求戴尔、超微等制造合作伙伴暂停向马来西亚、新加坡、泰国和印尼发运服务器，暂停期未说明，理由是评估区域伙伴是否满足美国出口要求。报道指出，中国企业此前可远程使用这些数据中心里的英伟达芯片，美国商务部本月早些时候收紧了这一路径。智库 Institute for Progress 估计，此类远程数据中心约提供中国 24% 的 AI 算力。英伟达方面未在报道中给出新的公开声明。",
+    "type": "news",
+    "subtype": "科技/商业/芯片供应链",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "publishedAt": "2026-11-26T20:03:54Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "TechCrunch 原文可读并含 WSJ 原文链接；WSJ 正文在付费墙内未直接读取，故按媒体转述处理",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "暂停范围、期限与执行细节均来自 TechCrunch 转述 WSJ；英伟达无一手公告。24% 算力占比为智库估算，非官方统计。"
+    },
+    "citations": [
+      {
+        "title": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
+        "url": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+        "publisher": "The Wall Street Journal",
+        "date": "2026-11-26",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "把芯片管制从『卖不卖』推进到『在哪里用』，东南亚数据中心的中转角色被直接点名，对国内算力租赁与云厂商的供给预期有现实影响。",
+      "community": "公开评论区互动数字不可见；同主题在 Hacker News 与多家科技媒体同步出现。",
+      "sentiment": "负面",
+      "source": "TechCrunch 转述 WSJ，含 NBC、华盛顿邮报背景链接"
+    },
+    "tags": [
+      "英伟达",
+      "AI芯片",
+      "出口管制",
+      "东南亚",
+      "数据中心"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "英伟达按下暂停键：AI 芯片的「境外绕行」通道正在被收紧",
+        "angle": "从区域数据中心被要求暂停交付切入，解释算力获取从买卡转向买合规路径的变化",
+        "outline": [
+          "暂停涉及哪些国家与合作方",
+          "远程使用云算力这一路径为何被盯上",
+          "24% 算力估算意味着什么",
+          "对企业采购与算力租赁的启示",
+          "哪些细节尚无官方确认"
+        ],
+        "audience": "关注 AI 基础设施与算力采购的行业读者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "出口管制话题需严格按外媒报道表述，不添加政策预测；数字注明为智库估算",
+        "basis": "原文称英伟达要求戴尔、超微暂停向马来西亚、新加坡、泰国、印尼发运服务器，并引用 Institute for Progress 约 24% 的估算"
+      },
+      {
+        "target": "今日头条",
+        "headline": "英伟达要求合作伙伴暂停向东南亚发运 AI 服务器，原因是出口合规核查",
+        "angle": "用问答式梳理事件链条：谁被要求暂停、涉及哪些国家、为什么是这些国家",
+        "outline": [
+          "事件来源与报道口径",
+          "四个国家与两家合作方",
+          "远程调用芯片的路径被收紧",
+          "对算力供应的可能影响",
+          "尚未确认的部分"
+        ],
+        "audience": "关注科技与产业动态的普通读者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "不得写成已生效的全面禁运；注明为媒体转述",
+        "basis": "TechCrunch 原文明确写为『按暂停键』『评估是否满足出口要求』，且援引 WSJ 报道"
+      }
+    ]
+  },
+  {
+    "title": "X 上线青少年家长控制：13–17 岁默认保护模式，家长看不到私信",
+    "summary": "TechCrunch 11 月 26 日报道，运营 20 年后，X 面向 13–17 岁用户的家庭推出家长控制功能。青少年账号默认进入保护模式，不展示敏感内容、不投放定向广告；家长可查看每周使用时长、设置每日上限、要求新关注者获批、限制推荐与视频来源、过滤关键词、管理私信对象并查看私信往来账号名单。X 安全负责人 Michael O'Herlihy 表示，家长获得的是护栏而非查看青少年私人生活的窗口；家长不能读私信、查搜索或浏览记录，也不能代替孩子发帖。每项改动对青少年可见，双方需同意才能建立监护关系。",
+    "type": "news",
+    "subtype": "社会/平台治理/青少年保护",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
+    "publishedAt": "2026-11-26T19:31:50Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "TechCrunch 原文可读，且引用 X 安全账号官方公告帖，官方帖正文公开可读",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "官方帖页面显示发布时间为 2026-11-25， TechCrunch 报道为 11-26；以报道发布日为准，功能上线时间按官方帖表述。"
+    },
+    "citations": [
+      {
+        "title": "X 官方安全账号：Parental Controls 公告",
+        "url": "https://x.com/Safety/status/2125709760066670625",
+        "publisher": "X Safety",
+        "date": "2026-11-25",
+        "relation": "官方"
+      }
+    ],
+    "evaluation": {
+      "editor": "与国内常见的家长监护方案相比，X 把『可见但不越界』写进产品设计：家长能看时长与联系人，却看不到内容本身。这个边界感是可迁移到国内家庭教育讨论的角度。",
+      "community": "原文提到该功能出台前 X 长期面临未成年人与 AI 生成内容方面的批评；页面互动数字不可见。",
+      "sentiment": "中性",
+      "source": "TechCrunch 报道 + X 官方公告帖"
+    },
+    "tags": [
+      "X",
+      "青少年保护",
+      "家长控制",
+      "隐私",
+      "平台治理"
+    ],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "一个月折叠 iPhone Duo 体验：双屏习惯改变用法，长焦与 Face ID 仍有取舍",
+    "summary": "TechCrunch 作者 Sarah Perez 11 月 26 日发布使用 iPhone Duo 近一个月的体验。她称折叠形态改变了自己的应用习惯：拖动即可分屏，常把 X 与新闻、邮件或 Slack 并排使用；合上时像小屏 iPhone，便于单手回复消息与看导航，展开后更适合看视频、购物与阅读。她提到苹果 11 月中表示已有超过 20 万个 Duo 适配应用，自己常用的 Gmail、Drive 仍有黑边。作者仍偶尔怀念长焦镜头与 Face ID，但表示系统更新带来了面部解锁功能；她还因内外屏差异重新安排了主屏幕与阅读习惯，并把手机当作可替代 Kindle 的阅读设备。以上均为作者个人体验。",
+    "type": "hotspot",
+    "subtype": "生活方式/产品体验",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+    "publishedAt": "2026-11-26T17:00:00Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "TechCrunch 原文完整可读；内容明确为记者个人体验，20 万适配应用为文中转述苹果说法",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "体验结论属作者主观评价，不能写成普遍事实；价格等信息本文未直接给出。"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "相比参数测评，这篇更像一份『使用行为变化报告』：折叠屏真正改变的是分屏、阅读和主屏幕组织方式，这一点对国内折叠屏内容的选题很有迁移价值。",
+      "community": "页面互动数字不可见；文中提到社交平台上出现大量 Duo 手机壳与个性化搭配讨论。",
+      "sentiment": "正面",
+      "source": "TechCrunch 作者实机体验"
+    },
+    "tags": [
+      "iPhone Duo",
+      "折叠屏",
+      "手机体验",
+      "生活方式",
+      "阅读"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "折叠 iPhone 用满一个月后，我最怀念的不是长焦",
+        "angle": "从『使用场景被重写』而不是硬件参数切入，谈折叠屏如何改变日常习惯",
+        "outline": [
+          "分屏为何从噱头变成日常",
+          "合上是小屏、展开是大屏的行为分工",
+          "应用适配的真实进度与遗留问题",
+          "阅读替代Kindle的意外收获",
+          "仍存在的取舍"
+        ],
+        "audience": "关注手机与数字生活的都市读者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "标明是一家外媒记者的个人体验，不写成评测结论",
+        "basis": "原文作者详细描述了分屏、内外屏分工、20 万适配应用说法与 Kindle 替代体验"
+      }
+    ]
+  },
+  {
+    "title": "观点：GTA VI 与 Anthropic 上市同周，「低效」为何仍是作品的护城河",
+    "summary": "TechCrunch 11 月 26 日刊发评论文章。文中列出：GTA VI 发售后成为 Metacritic 评分最高的游戏，首发日零售销售额 37.9 亿美元；约 5000 人投入十余年制作，全程未使用生成式 AI，并制作了 3 万个有独特外观与性格的 NPC。同期 Anthropic 完成 813 亿美元 IPO，成为首家上市的大型 AI 实验室。文章引用前 Take-Two CEO Ben Feder 的观点称，这类作品需要试错、删改与延期，而删改本身昂贵且天然不高效；Take-Two CEO Strauss Zelnick 此前也反对「按按钮就能生成爆款」的说法。文章认为，效率至上的 AI 叙事与需要长期打磨的创意作品之间存在张力。文中数字多来自商业新闻稿与既有报道。",
+    "type": "discussion",
+    "subtype": "观点/AI与创意产业",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+    "publishedAt": "2026-11-26T16:00:00Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "TechCrunch 原文可读；37.9 亿美元来自 Business Wire 稿件，813 亿美元 IPO 来自本站此前报道，属媒体与新闻稿数据",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "本文为评论，核心论点属作者与受访者观点；游戏销售额为新闻稿口径，不等于审计口径收入。"
+    },
+    "citations": [
+      {
+        "title": "GTA VI 首日零售销售额新闻稿",
+        "url": "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-%243.79-Billion-in-Day-One-Retail-Sales",
+        "publisher": "Business Wire",
+        "date": "2026-11-20",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这是一个很适合国内内容市场的话题：当 AI 把生产成本压低，慢工出细活的内容反而更稀缺。可写成创意产业观察，避免变成 AI 立场辩论。",
+      "community": "页面互动数字不可见；文章引用多位行业高管与游戏开发者的公开表态。",
+      "sentiment": "争议",
+      "source": "TechCrunch 评论 + Business Wire 新闻稿"
+    },
+    "tags": [
+      "GTA VI",
+      "Anthropic",
+      "AI与创意",
+      "游戏产业",
+      "效率叙事"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "当 GTA VI 撞上 Anthropic 上市：低效，可能是作品最贵的护城河",
+        "angle": "用同周发生的两件事对照，讨论创意生产中「浪费」的价值",
+        "outline": [
+          "同周两个纪录的对照",
+          "5000 人十余年与 3 万个 NPC",
+          "受访者为什么说删改昂贵但必要",
+          "效率叙事的边界",
+          "对内容行业的启发"
+        ],
+        "audience": "关注 AI 与创意产业的读者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "明确观点来自评论文章与受访者；不把销售额写成审计收入",
+        "basis": "原文写明 GTA VI 未使用生成式 AI、约 5000 人制作十余年，并引用 Ben Feder 关于删改成本的表述"
+      }
+    ]
+  },
+  {
+    "title": "The Verge 实测 Android「Create My Widget」：AI 生成小组件能玩，但不擅长实时信息",
+    "summary": "The Verge 11 月 27 日发布对 Android「Create My Widget」功能的体验。该功能在谷歌 I/O 公布，属于 Gemini Intelligence 套件，目前处于 beta，本月早些时候开始向 Pixel 手机推送。记者 Allison Johnson 尝试制作公交实时到站、散步打卡、天气提示等小组件，发现多数成品更像 Gemini 的提示词快捷入口：点击后在桌面唤起 Gemini，由其搜索或生成结果，而非独立刷新的小应用。她用模板做出了倒计时、球队比分等组件，但公交到站组件只给出文字化时刻说明，无法满足实时需求。作者结论是功能有趣、可玩性高，但目前仍属模板化实现。",
+    "type": "resource",
+    "subtype": "产品工具/AI功能实测",
+    "region": "海外",
+    "platform": "The Verge",
+    "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+    "publishedAt": "2026-11-27T14:00:00-04:00",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "The Verge 原文可直接访问（HTTP 200），内容为记者上手体验",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "功能处于 beta 且分批推送，不同机型与地区表现可能不同；体验结论为记者主观判断。"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "「AI 生成小组件」听起来像应用形态革新，实测却是提示词入口，这个落差本身就很适合写成产品观察，也能延伸到国内桌面小组件生态。",
+      "community": "页面互动数字不可见；文章强调作者对『什么算应用』这一问题的兴趣。",
+      "sentiment": "中性",
+      "source": "The Verge 记者上手体验"
+    },
+    "tags": [
+      "Android",
+      "Gemini",
+      "小组件",
+      "AI功能",
+      "Pixel"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "安卓能用 AI 生成小组件了，实测：能玩，但别指望它查实时公交",
+        "angle": "用实测落差讲清新功能的真实能力边界",
+        "outline": [
+          "功能是什么、哪些机型可用",
+          "记者做了哪些小组件",
+          "为什么多数成品像提示词入口",
+          "实时信息场景为什么失败",
+          "现阶段适合怎么用"
+        ],
+        "audience": "安卓手机用户与 AI 工具爱好者",
+        "timeliness": "当日",
+        "priority": "中",
+        "risk": "功能处于 beta，需写明推送范围有限",
+        "basis": "原文写明功能为 beta、本月起向 Pixel 推送，公交到站组件只返回文字说明"
+      }
+    ]
+  },
+  {
+    "title": "Keychron G6 HE 磁轴鼠标实测：价格不到罗技一半，但按键手感与触发点脱节",
+    "summary": "The Verge 11 月 27 日发布 Keychron G6 HE 游戏鼠标体验。该鼠标售价 90 美元，采用霍尔效应磁轴，可通过浏览器端 Keychron Launcher 调整触发深度，重量 49 克（含电池），支持可更换电池，充电底座兼作无线接收器。记者 Antonio G. Di Benedetto 表示，左右键使用的 MagOptic 开关同时具备磁性与光学特性，但点击手感不随触发点变化：设置过浅会在听到或感觉到点击前就触发，设置过深则先有点击感才触发。联合创始人 Fab Chan 解释称，许多用户仍偏好传统点击感，且震动马达会增加重量，公司计划推出带触觉反馈的稍重型号。作者认为它作为普通鼠标有轻量、低价和换电优势。",
+    "type": "news",
+    "subtype": "产品/数码硬件",
+    "region": "海外",
+    "platform": "The Verge",
+    "url": "https://www.theverge.com/games/1043028/keychron-g6-he-hall-effect-magoptic-gaming-mouse-impressions",
+    "publishedAt": "2026-11-27T14:00:00-04:00",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "The Verge 原文可直接访问（HTTP 200），含厂商联合创始人具名回应",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "价格与重量为页面可见的产品信息；手感评价为记者主观体验。"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "磁轴/可调触发点在国产外设里已经是热门卖点，这篇提供了反向案例：硬件参数到位，但触觉反馈没跟上，用户会感到『幽灵点击』。适合做消费电子选购避坑内容。",
+      "community": "页面互动数字不可见；厂商称后续会推出带触觉反馈的型号。",
+      "sentiment": "争议",
+      "source": "The Verge 上手体验 + 厂商具名回应"
+    },
+    "tags": [
+      "Keychron",
+      "磁轴鼠标",
+      "游戏外设",
+      "数码测评",
+      "罗技"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "90 美元的磁轴鼠标，为什么「按下去」和「感觉到」对不上？",
+        "angle": "用可调触发点失效的现象，讲清磁轴鼠标的关键体验指标",
+        "outline": [
+          "产品规格与价格对比",
+          "MagOptic 开关的问题表现",
+          "厂商给出的设计解释",
+          "作为普通鼠标的优势",
+          "选购时应关注什么"
+        ],
+        "audience": "游戏外设与数码消费者",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "体验结论来自单篇外媒评测，不写成质量定论",
+        "basis": "原文记录了浅触发先于点击感、深触发晚于点击感，以及 Fab Chan 具名解释"
+      }
+    ]
+  },
+  {
+    "title": "Hacker News 热议：AI 让自托管重新变好玩，但「能做」不等于「该做」",
+    "summary": "Hacker News 11 月 26 日的讨论帖指向博主 Jan-Lukas Else 同日文章。作者称自己多年自托管，热情一度消退；近几个月因 AI 编码代理重新愿意折腾。他的基础设施配置主要放在 Git 仓库，多为 Docker Compose 与脚本，AI 代理可像普通软件项目一样修改；他借此更深入使用 NixOS，为 VPS 构建 Debian bootc 镜像，并称该项配置原先可能要一周、有 AI 帮助仍花了半天。他还用 Renovate + GitHub/Forgejo Actions 自动更新部署，并自己做了下载发票、电子报刊等小工具。作者同时提醒：AI 生成代码仍有 bug、安全问题与技术债，代理改了配置不代表自己不必理解；实现变容易后，更该先问是否值得做。",
+    "type": "discussion",
+    "subtype": "技术观点/自托管",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50660180",
+    "publishedAt": "2026-11-26T21:47:45Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "869 分（HN 页面可见）",
+        "comments": "421 条（页面可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "HN 讨论页与原文均可访问；分数与评论数来自 HN 公开索引接口",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "原文为个人经验自述，效率对比为作者估算；社区评论未逐条核实，不做观点归纳以外的引用。"
+    },
+    "citations": [
+      {
+        "title": "AI made self-hosting fun again",
+        "url": "https://janlukas.blog/posts/ai-self-hosting",
+        "publisher": "janlukas.blog",
+        "date": "2026-11-26",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这条的讨论价值在于把 AI 编码代理放在『降低启动摩擦』而非『替代思考』的位置，与国内 NAS/自托管爱好者的处境高度相似；结尾的克制反思也很适合做结尾。",
+      "community": "HN 页面显示 869 分、421 条评论，讨论热度在该日首页前列；具体内容未逐条归纳。",
+      "sentiment": "正面",
+      "source": "Hacker News 讨论 + 作者原文"
+    },
+    "tags": [
+      "自托管",
+      "AI编码代理",
+      "NixOS",
+      "Docker",
+      "DevOps"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "AI 降低了动手门槛，但更该先问：这件事值得做吗？",
+        "angle": "从自托管热潮切入，讨论低成本实现带来的选择过载",
+        "outline": [
+          "实现成本下降带来的行为变化",
+          "把配置写进 Git 的意义",
+          "自动化后的隐性维护成本",
+          "AI 生成代码的安全与技术债",
+          "『能做』与『该做』的取舍"
+        ],
+        "audience": "技术管理者与独立开发者",
+        "timeliness": "长期",
+        "priority": "中",
+        "risk": "不上升为对 AI 工具的整体判断",
+        "basis": "原文结尾明确写到 AI 生成软件不豁免 bug 与安全问题，实现变容易后更需自问是否值得"
+      }
+    ]
+  },
+  {
+    "title": "Hacker News 热议黑五硬盘价格：20TB 外置盘两年从 249.99 美元涨到 549.99 美元",
+    "summary": "Hacker News 11 月 27 日讨论指向博主 Alex Kretzschmar 11 月 26 日文章。作者依据自己 2018 年以来的购买收据对比：同款 WD EasyStore 20TB 在 2024 年 11 月为 249.99 美元，2026 年黑五为 549.99 美元，折合每 TB 从 12.50 美元升至 27.50 美元。他列举 2024 年与 2026 年再认证企业级盘报价，称每 TB 涨幅至少 58%、最高 218%，部分已售罄；四块 20TB 组 NAS 的盘位成本从 999.96 美元升至 2199.96 美元。文章梳理了硬盘厂商从多家整合到希捷、西部数据、东芝三家的过程，并提到 2011 年泰国洪水与供应链价格操纵案。作者认为涨价与行业集中有关，并考虑把十块盘缩减为五块 20TB。以上价格与判断均为作者记录与观点。",
+    "type": "discussion",
+    "subtype": "社会话题/消费电子价格",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50661646",
+    "publishedAt": "2026-11-27T01:13:49Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "440 分（HN 页面可见）",
+        "comments": "386 条（页面可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "HN 讨论页与原文均可访问；原文列有收据表格与零售商链接",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "价格为作者个人购买记录与页面截图口径，未做实时比价；关于厂商勾结的表述是作者观点，不是监管结论。"
+    },
+    "citations": [
+      {
+        "title": "Hard Drive pricing has gotten bad.",
+        "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+        "publisher": "blog.ktz.me",
+        "date": "2026-11-26",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "存储涨价不只影响装机玩家，也直接影响 AI 数据留存与家庭 NAS 决策。可以写成消费观察：黑五折扣为什么越来越不像折扣。",
+      "community": "HN 页面显示 440 分、386 条评论，讨论集中在家庭存储成本；具体评论未逐条引用。",
+      "sentiment": "负面",
+      "source": "Hacker News 讨论 + 作者收据对比文章"
+    },
+    "tags": [
+      "硬盘",
+      "黑五",
+      "NAS",
+      "存储涨价",
+      "消费"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "黑五硬盘比两年前贵一倍：AI 时代的「存储税」谁在买单",
+        "angle": "以具体价格曲线切入，讨论存储涨价对普通用户和小团队的影响",
+        "outline": [
+          "同款 20TB 两年价格对比",
+          "再认证企业盘也同步上涨",
+          "三家厂商格局的形成过程",
+          "家庭 NAS 的成本变化",
+          "普通用户该如何取舍"
+        ],
+        "audience": "关注数码消费与家庭存储的读者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "价格注明为作者记录；不把作者『勾结』判断写成事实",
+        "basis": "原文表格显示 20TB EasyStore 从 249.99 美元升至 549.99 美元，四盘 NAS 成本从 999.96 美元升至 2199.96 美元"
+      },
+      {
+        "target": "今日头条",
+        "headline": "20TB 硬盘两年涨了 300 美元，黑五折扣为何越来越不划算？",
+        "angle": "用价格数字做开头，解释背后的市场集中与产能问题",
+        "outline": [
+          "今年黑五价格实况",
+          "作者八年收据对比",
+          "企业级盘同步涨价",
+          "为什么换盘周期被拉长",
+          "购买建议与不确定因素"
+        ],
+        "audience": "准备装机或扩容的消费者",
+        "timeliness": "当日",
+        "priority": "中",
+        "risk": "不构成投资建议；不预测后续价格走势",
+        "basis": "原文明确列出 2024 与 2026 年同款产品报价及每 TB 单价变化"
+      }
+    ]
+  },
+  {
+    "title": "Hacker News 热玩：一句提示词让 AI「建群吐槽自己」，引发聊天记录隐私讨论",
+    "summary": "Hacker News 11 月 27 日的讨论帖指向 construct22.com 页面。页面给出一个提示词：让 ChatGPT 等助手『曝光一个隐藏的 WhatsApp 群聊，AI 模型在背后议论我』。据页面描述，模型会基于已有对话记忆虚构一个群聊，让多个模型互相调侃用户；页面同时展示了一段经作者翻译、隐去身份信息的真实用户输出，其中包含对用户购买决策、项目规划等习惯的拟人化描述。作者声明自己与 OpenAI 无关联，并称这可能是病毒式营销创意，强调输出为虚构内容，鼓励匿名分享。该玩法在 HN 引发关于聊天记忆如何被呈现、以及输出是否可靠的讨论；页面数字与具体个人细节均不宜外推。",
+    "type": "hotspot",
+    "subtype": "AI玩法/隐私讨论",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50663595",
+    "publishedAt": "2026-11-27T06:44:34Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "438 分（HN 页面可见）",
+        "comments": "190 条（页面可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "待核实",
+      "method": "HN 讨论页与原页面均公开可读；效果演示为作者自述与经处理的单例输出",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "输出由模型生成、内容为虚构；不能据此判断模型真实『看法』或记忆机制。作者自称可能与营销活动有关。"
+    },
+    "citations": [
+      {
+        "title": "The group chat where your AI talks behind your back",
+        "url": "https://construct22.com/",
+        "publisher": "construct22.com",
+        "date": "2026-11-27",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "传播点很强，但要写清楚这是提示词扮演而非模型真实意见。可迁移到国内语境的角度是：当对话历史越来越多，用户对自己被记住了什么其实缺乏直观感受。",
+      "community": "HN 页面显示 438 分、190 条评论；讨论偏向玩法分享与隐私调侃，不做逐条引用。",
+      "sentiment": "中性",
+      "source": "Hacker News 讨论 + 原页面提示词与示例"
+    },
+    "tags": [
+      "ChatGPT",
+      "提示词",
+      "聊天记忆",
+      "AI玩法",
+      "隐私"
+    ],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "GitHub Trending：obra/superpowers 把 TDD、代码审查与子代理流程打包成 coding agent 技能集",
+    "summary": "GitHub Trending 11 月 27 日日榜中，obra/superpowers 位列前列，页面显示当日新增约 916 星。项目 README 自述是给编码代理使用的『完整软件开发方法论』：代理在动手前先通过 brainstorming 澄清需求并产出设计，经批准后用 using-git-worktrees 建隔离工作区，再由 writing-plans 拆成含路径、代码与验证步骤的小任务，执行时强制 RED-GREEN-REFACTOR 的 TDD 流程，并按严重程度做代码审查，最后给出合并/PR/保留/丢弃选项。README 强调这些是强制流程而非建议，并列出 Claude Code、Codex、Cursor、Gemini CLI、Kimi Code、Qwen Code 等多种安装方式；许可证为 MIT。页面显示最近版本 v7.0.2，提交日期 11 月 3 日。",
+    "type": "resource",
+    "subtype": "开源工具/AI 开发工作流",
+    "region": "海外",
+    "platform": "GitHub Trending",
+    "url": "https://github.com/obra/superpowers",
+    "publishedAt": null,
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "约 916 星/日（GitHub Trending 页面可见，采集时点）",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "GitHub Trending 页面与仓库 README 均可直接访问（HTTP 200）",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "星标增量为抓取时点页面可见数据，会随时间变化；流程效果为项目自述，未做独立验证。"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "国内 AI 编码讨论多集中在模型能力，这个项目把重点放在流程约束：先设计、再计划、强制测试、子代理审查。适合写成『给 AI 程序员立规矩』的方法论内容。",
+      "community": "当日进入 GitHub Trending 前列；页面显示的星标增量仅反映抓取时点热度。",
+      "sentiment": "正面",
+      "source": "GitHub Trending 页面 + 项目 README"
+    },
+    "tags": [
+      "开源工具",
+      "Coding Agent",
+      "TDD",
+      "工作流",
+      "GitHub Trending"
+    ],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "Product Hunt 新品 Woomool 2.0：主打「陪想」而非「代想」的 AI 思考画布",
+    "summary": "Product Hunt 11 月 26 日（美西时间）上线 Woomool 2.0，产品定位为用于创意发想、知识管理与实时协作的 AI 画布，页面标注免费。创作者 Minki Jung 在发布页说明自己全职开发三个月，产品名在韩语中意为『井』，寓意帮助用户挖深自己的想法、得到属于自己的洞见，而不是把思考交给 AI。页面讨论区有用户询问与 Notion 的差异、能否接入 Claude Code、使用哪种模型以及团队能否自选模型等，作者称会在当天回复评论。以上产品能力来自创作者自述与页面展示，未见第三方实测。",
+    "type": "resource",
+    "subtype": "产品工具/知识管理",
+    "region": "海外",
+    "platform": "Product Hunt",
+    "url": "https://www.producthunt.com/products/woomool",
+    "publishedAt": "2026-11-26T21:09:46-08:00",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Product Hunt 产品页可通过 WebFetch 读取，发布时间来自官方 Atom feed",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "功能描述与开发时长为创作者自述；页面未展示可核验的投票与评论数字，故标不可见。"
+    },
+    "citations": [
+      {
+        "title": "Product Hunt 官方 Atom feed",
+        "url": "https://www.producthunt.com/feed",
+        "publisher": "Product Hunt",
+        "date": "2026-11-27",
+        "relation": "官方"
+      }
+    ],
+    "evaluation": {
+      "editor": "『AI 不替你想，而是陪你想』这个定位与国内笔记工具的产品方向有呼应，但需要注意目前只有 maker 自述，缺乏第三方体验支撑。",
+      "community": "页面评论集中在与 Notion 的差异、模型选择和团队协作能力；互动数字不可见。",
+      "sentiment": "中性",
+      "source": "Product Hunt 产品页与官方 feed"
+    },
+    "tags": [
+      "Product Hunt",
+      "AI画布",
+      "知识管理",
+      "新产品",
+      "协作"
+    ],
+    "needs": [],
+    "leads": []
+  },
+  {
+    "title": "Tom's Hardware：AI 光互连需求挤压磷化铟供应链，材料端成新瓶颈",
+    "summary": "Tom's Hardware 11 月 26 日报道，AI 集群从铜互连转向光互连，使磷化铟（InP）这类用于激光器、调制器与探测器的材料供应趋紧。文章称 InP 衬底产能高度集中：住友电工与 AXT 合计约占全球八成，JX Advanced Metals 另约占一成；AXT 多数衬底由其北京子公司生产，出口需许可，中国约占全球精炼铟产量七成。Lumentum 管理层今年 7 月表示其 InP 工厂出货仍比客户需求低 30% 以上；Coherent 把 InP 产能称为其收发器业务的首要约束。文章还提到英伟达已分别向 Lumentum 与 Coherent 投资 20 亿美元并附带采购承诺；共封装光学虽缩短电路径，但仍多依赖外置 InP 连续波激光。上述份额与产能表述均来自该报道及其引用的公司公开信息。",
+    "type": "news",
+    "subtype": "科技/产业链",
+    "region": "海外",
+    "platform": "Tom's Hardware",
+    "url": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+    "publishedAt": "2026-11-26T16:00:00Z",
+    "collectedAt": "2026-11-27T22:18:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "缓慢起量",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Tom's Hardware 原文可直接访问（HTTP 200）；关键数字来自报道引用的公司财报电话会与行业数据",
+      "verifiedAt": "2026-11-27T22:18:00+08:00",
+      "notes": "供应份额与出货缺口为报道口径，未逐一核验一手财报；涉及出口许可的表述需保持中性。"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "AI 算力瓶颈的讨论常停在 GPU 和电力，这篇把视线拉到光模块上游材料，且与中国供应链直接相关，适合做产业链科普而非投资判断。",
+      "community": "页面互动数字不可见；同主题被多家科技媒体二次转述。",
+      "sentiment": "中性",
+      "source": "Tom's Hardware 报道及其引用的公司公开表述"
+    },
+    "tags": [
+      "磷化铟",
+      "光互连",
+      "AI基础设施",
+      "供应链",
+      "光模块"
+    ],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "AI 算力卡在一种叫磷化铟的材料上：光模块为什么突然不够用了",
+        "angle": "从材料端解释 AI 数据中心的网络瓶颈",
+        "outline": [
+          "铜线为什么不够用",
+          "磷化铟在光模块中的作用",
+          "供应集中在哪里",
+          "厂商说的缺口有多大",
+          "扩容为什么慢"
+        ],
+        "audience": "关注 AI 产业与科技的读者",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "不构成投资建议；出口许可表述保持报道口径",
+        "basis": "原文写明住友电工与 AXT 合计约占八成衬底产能，Lumentum 出货低于需求 30% 以上"
+      }
+    ]
+  }
+]

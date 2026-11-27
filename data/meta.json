@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-27T21:02:32+08:00",
-  "total": 183,
+  "updatedAt": "2026-11-27T22:19:41+08:00",
+  "total": 195,
   "byType": {
-    "news": 65,
-    "resource": 35,
+    "resource": 38,
+    "news": 69,
+    "hotspot": 27,
+    "discussion": 33,
     "idea": 15,
-    "demand": 13,
-    "hotspot": 25,
-    "discussion": 30
+    "demand": 13
   },
   "sources": [
     "12306 / 自贡网",
@@ -45,6 +45,7 @@
     "TechCrunch",
     "The Decoder",
     "The Verge",
+    "Tom's Hardware",
     "V2EX",
     "X",
     "X / Twitter",
@@ -102,10 +103,10 @@
     "虎扑",
     "青浦区政府网（来源“绿色青浦”微信公众号）"
   ],
-  "leadsTotal": 150,
+  "leadsTotal": 160,
   "byTarget": {
-    "公众号": 84,
-    "今日头条": 66
+    "公众号": 89,
+    "今日头条": 71
   },
   "lastBatch": 12
 }
