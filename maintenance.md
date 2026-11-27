@@ -351,3 +351,40 @@
 - `python3 scripts/yt_check_digest.py`：今天 4 篇全部 ok（图 10–11 张、图注齐、时间戳 44–141 个、步数一致）。
 - `python3 scripts/yt_plan_next.py --stats`：正确报 `0 / 10`（今天的 4 篇是计划之外的旧稿，不计入计划进度）。
 - 站点 `/10` 已随本次 commit 上线。
+
+## 2026-11-27 晚 · 查清 B 站 AI 字幕「错配」的真正原因（推翻此前结论）
+
+### 事由
+
+用户质疑：字幕错配是不是因为同时开了太多 ego space / 太多视频页面（截图里 9 个空间同时在跑）。
+
+### 结论（三次实验，逐层排除）
+
+| 假设 | 实验 | 结果 |
+|---|---|---|
+| 并发 space 串号（页面 A 的状态被当页面 B 用） | 关掉全部 B 站空间，只留 1 个空间、1 个标签页、间隔 4 秒连发 6 次同一请求 | **错配照旧**：1 次对、3 次返回别人的、2 次空 → 与并发无关 |
+| 是我抓错归属（把 A 的字幕记到 B 的标题上） | 用官方 `x/web-interface/view` 拿 aid/cid，与页面自报 aid/cid 比对（旧做法的 `match: true`） | 页面身份确实一致，但**这项校验证明不了字幕归属**，旧论证有漏洞 |
+| B 站字幕库内容本身是错的 | 解析 `subtitle_url` 路径：`/bfs/ai_subtitle/prod/**<aid><cid>**<hash>`，用请求的 aid+cid 做前缀校验 | 错配时路径里嵌的是**另一条视频的 aid+cid**（如蔬菜切法 `114250811048162/29148450116` 拿到 `113383579915592/265004026`）→ 是接口返回了别人的字幕文件，不是文件内容错 |
+
+**最终判定**：`api.bilibili.com/x/player/v2` 返回的 `ai-zh.subtitle_url` 本身不稳定，实测约 40% 本视频 / 40% 别的视频 / 20% 空；换 ego 的 `page.fetch` 取更差（不带 cookie，5 次全空），不是客户端可修的。这是 B 站接口/缓存侧行为，与开多少 space、开多少视频页无关。
+
+### 修正后的做法
+
+1. **归属校验**：`subtitle_url` 必须匹配 `/ai_subtitle/prod/<aid><cid>` 前缀；不匹配或为空就重试，实测 3–5 次内必中（8 次上限）。
+2. **人工上传轨不采信**：`/bfs/subtitle/<hash>.json` 路径不含 aid，无从校验，直接跳过。
+3. **命中后仍要做内容自检**：实测命中即内容正确——蔬菜切法首句「如何最快速的获取茄丁」，与本地 ASR 的 161 段完全吻合；手机续航首句「好久不见啊」也合理。但 AI 字幕仍有错字（「不用死心」应为「不用死记」），**价格、数字必须回画面交叉验证**，事实源优先用本地 ASR。
+4. 新增脚本 `scripts/bili_subtitle.js`：读 `/tmp/bili-sub-job.json`（`{bvs,out}`）→ 逐条重试到归属匹配 → 写 `data/bili-probe/subtitles.json`（auth_key 已 redact，只留可复核的前缀）。
+
+### 连带要修的旧结论
+
+- 此前写的「B 站 AI 字幕覆盖率约 70%」**不可信**：那次普查把「接口返回空 / 返回别人的」都算成了「无字幕」，覆盖率被低估。要从可信 BV 列表重测。
+- 此前写的「用官方 cid 校验过 match: true，所以是 B 站字幕库本身的问题」——结论方向对（不是我抓错），**论据错**（match 只校验页面身份）。已在本文更正，避免下次照抄错论证。
+
+### 验证
+
+```
+ego-browser nodejs < scripts/bili_subtitle.js
+[ok] BV15gZzYXE4N attempts=5 lines=169 | 蔬菜切法指南…（stats: other 3, empty 1）
+[ok] BV1tnZqYTEx6 attempts=3 lines=527 | 手机续航大横评…（stats: empty 1, 人工轨 1 跳过）
+[attribution_failed] BV17WZ4YsEiX attempts=8（stats: empty 5, other 3）→ 待复核是否真无字幕
+```

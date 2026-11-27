@@ -13,3 +13,6 @@ __pycache__/
 *.tmp
 *.tmp.jpeg
 *.tmp.png
+
+# B 站探测产物与登录态导出（含会话信息，不入库）
+data/bili-probe/
