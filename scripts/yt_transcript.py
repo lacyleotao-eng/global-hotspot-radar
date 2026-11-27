@@ -60,10 +60,43 @@ def fetch_meta(url: str, cookies: str | None) -> dict:
         "uploadDate": d.get("upload_date"),
         "description": d.get("description") or "",
         "chapters": [{"start": c.get("start_time"), "title": c.get("title")} for c in (d.get("chapters") or [])],
+        "language": d.get("language") or "",
         "subLangs": sorted((d.get("subtitles") or {}).keys()),
         "autoLangs": sorted((d.get("automatic_captions") or {}).keys())[:20],
         "webpage": d.get("webpage_url") or url,
     }
+
+
+def candidate_langs(meta: dict, override: str) -> list[str]:
+    """按「人工轨 → 原语言自动轨 → 英文」排优先级，逐个试。
+
+    坑：以前默认 `yue,zh-Hans,zh-Hant,zh,en` 一起要，YouTube 会为缺失语言现场做机器翻译，
+    翻译轨端点会被 429 限流，整条指令直接失败。现在一次只要一种语言，且优先原轨。
+    """
+    if override:
+        return [x.strip() for x in override.split(",") if x.strip()]
+    man = meta.get("subLangs") or []
+    auto = meta.get("autoLangs") or []
+    orig = (meta.get("language") or "").split("-")[0].lower()
+    out: list[str] = []
+    out += man[:2]
+    if orig:
+        for a in auto:
+            al = a.lower()
+            if al == orig or al.startswith(orig + "-"):
+                out.append(a)
+                break
+    if "en" in auto:
+        out.append("en")
+    out += [a for a in auto if a.lower().startswith("zh")][:2]
+    if not out:
+        out = ["en"]
+    seen, uniq = set(), []
+    for x in out:
+        if x not in seen:
+            seen.add(x)
+            uniq.append(x)
+    return uniq
 
 
 def fetch_subs(url: str, cookies: str | None, langs: str, out_dir: Path) -> list[Path]:
@@ -116,7 +149,21 @@ def main() -> None:
     out_dir = Path(a.out) if a.out else ROOT / "data" / "yt-digest" / (meta["id"] or "video")
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    files = fetch_subs(a.url, a.cookies or None, a.langs, out_dir)
+    files: list[Path] = []
+    last_err = ""
+    for lang in candidate_langs(meta, a.langs):
+        try:
+            files = fetch_subs(a.url, a.cookies or None, lang, out_dir)
+            if files:
+                print(f"[subs] 命中语言轨：{lang}")
+                break
+        except SystemExit as e:
+            last_err = str(e)
+            print(f"[subs] {lang} 失败：{last_err[:120]}")
+        if "Requested format" in last_err:
+            break
+    if not files:
+        raise SystemExit(f"[fail] 所有语言轨都没拿到：{last_err[:300]}")
     # 优先人工字幕：文件名里含 yue/zh 且不带 .auto
     rows, used = [], None
     for f in files:

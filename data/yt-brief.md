@@ -230,3 +230,24 @@ python3 scripts/yt_plan_next.py --n 2      # 取下一批（已弃的自动跳�
 **选题侧已经提前挡掉两类**：
 1. 字幕探测：每条候选跑一次 `yt-dlp --list-subs`（约 5 秒），没字幕的直接不进计划——这一条就能挡掉实测 2/5 的死亡。
 2. 人物风险排序：`health / fashion / pet / parenting / life` 这五类基本是「人对着镜头讲」，排计划时放最后，缺口优先落在它们身上。
+
+---
+
+## 十、storyboard 探针（选题阶段就挡掉「全片一张脸」）
+
+写稿轮次最贵的浪费是「抽完帧才发现整片都是主持人」。YouTube 虽然关了视频流，但**还给 storyboard**：`sb0` 是 20 张 960×540 的均匀抽帧（一个 mhtml 约 700KB，10 秒下完）。
+
+```bash
+python3 scripts/yt_storyboard.py --plan --limit 15    # 给计划里 pending 的条目各出一张联络表
+```
+产出 `data/yt-digest/inbox/probe/<slug>.jpg`，用图片查看工具看：
+
+- 人物/脸占比 **> 50%**，或几乎全是文字卡/界面 → 直接 `--abandon <slug> --reason "storyboard 探针：人物占比过高"`
+- 有街景、店面、菜品、工具、房间、产品、风景等客观镜头 → 留着写
+
+**实测对照**（11-27）：
+- `$200k side hustle`：20 帧里 17 帧同一主持人 → 写不出 8 张客观图（已弃）
+- `student guide to personal finance`：15 帧里 13 帧同一主持人 → 已弃
+- `東京近郊一日來回`：车站、列车、街道、食物、店铺占一半以上 → 可写
+
+这一条能把「死在配图不足」的比例从约 1/3 压到很低，代价是选题任务多花 2–3 分钟。
