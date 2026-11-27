@@ -97,5 +97,14 @@
  "cjk": 0,
  "segments": 501,
  "usedSubtitle": "C0M5tUQSaps.en.vtt",
- "fetchedAt": "2026-11-27T12:35:57"
+ "fetchedAt": "2026-11-27T12:35:57",
+ "category": "手工 / 维修 / 改造",
+ "categoryKey": "diy",
+ "guideTitle": "车身锈洞修复：0.6mm薄板5步焊补，24小时固化",
+ "dek": "先止漏再切锈：0.6mm 薄板的工具、参数、点焊与分段焊流程，按视频字幕整理成 5 步。",
+ "city": "汽车 · 车身地板",
+ "steps": 10,
+ "images": 11,
+ "cover": "img/01-rust-hole-floor.jpg",
+ "digestAt": "2026-11-27"
 }

@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-27T13:47:13",
- "total": 3,
+ "updatedAt": "2026-11-27T15:48:48",
+ "total": 4,
  "docs": [
   {
    "slug": "2026-11-27-tokyo-5d",
@@ -38,6 +38,25 @@
    "steps": 10,
    "images": 11,
    "cover": "data/yt-digest/2026-11-27-shamian-yumcha/img/01-hotel-entrance.jpg",
+   "digestAt": "2026-11-27"
+  },
+  {
+   "slug": "2026-11-27-rust-hole-repair",
+   "url": "data/yt-digest/2026-11-27-rust-hole-repair/article.html",
+   "title": "车身锈洞修复：0.6mm薄板5步焊补，24小时固化",
+   "dek": "先止漏再切锈：0.6mm 薄板的工具、参数、点焊与分段焊流程，按视频字幕整理成 5 步。",
+   "category": "手工 / 维修 / 改造",
+   "categoryKey": "diy",
+   "place": "汽车 · 车身地板",
+   "channel": "ChrisFix",
+   "videoId": "C0M5tUQSaps",
+   "videoUrl": "https://www.youtube.com/watch?v=C0M5tUQSaps",
+   "duration": 2048,
+   "views": 9358621,
+   "publishedAt": "20200429",
+   "steps": 10,
+   "images": 11,
+   "cover": "data/yt-digest/2026-11-27-rust-hole-repair/img/01-rust-hole-floor.jpg",
    "digestAt": "2026-11-27"
   },
   {

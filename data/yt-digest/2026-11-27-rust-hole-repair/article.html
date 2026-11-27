@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>车身锈洞修复：0.6mm薄板5步焊补，24小时固化</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#9c2b1f; --accent-soft:#f6ece9; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(156,43,31,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">手工 / 维修 / 改造</span>
+    <span>车身地板 · 薄板焊补</span><span>·</span><span>5 步流程 + 决策表</span>
+  </div>
+  <h1>车身锈洞修复：0.6mm薄板5步焊补，24小时固化</h1>
+  <p class="lede">一辆敞篷车的地板锈穿后，视频先拆顶篷换密封条止水，再拆座椅、划线切除坏金属，最后用 0.6mm 薄板对接焊补并封漆。下面按可照做的顺序整理：先决定怎么切、怎么焊，再动手。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《How to PROPERLY Repair a Rust Hole in your Car or Truck (DIY for Beginners)》</b>（频道「ChrisFix」）</span>
+    <span>时长 <b>34:08</b></span><span>发布 <b>2020-04-29</b></span><span>播放 <b>约 936 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-rust-hole-floor.jpg" alt="车身地板锈蚀破洞，绿色划线标出切割范围" loading="lazy">
+    <figcaption><b>先看范围：绿线绕开锈区，外圈留能焊的好金属。</b><span class="ts">视频截帧 00:09:30</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：先止漏，再切割，焊接排在后面</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">2 颗 <span class="ts">00:03:01</span></div><div class="l">拆顶篷后固定密封条的十字螺丝数量</div></div>
+  <div class="kpi"><div class="n">0.6mm <span class="ts">00:19:01</span></div><div class="l">视频中待焊铁皮厚度，即 24 gauge</div></div>
+  <div class="kpi"><div class="n">100 / 200 美元 <span class="ts">00:18:04</span></div><div class="l">药芯焊机与气保 MIG 的大致起步价<span class="ts">00:18:42</span></div></div>
+  <div class="kpi"><div class="n">24 小时 <span class="ts">00:32:34</span></div><div class="l">第二层漆后的固化观察时间</div></div>
+</div>
+<p><b>适合谁：</b>车底或地板出现小面积锈穿、愿意先查进水原因、能用电钻和角磨机、并且肯在废料上练焊的人。视频的处理顺序是：止漏 → 拆内饰 → 切锈 → 配板 → 焊补与封漆<span class="ts">00:02:30</span>。</p>
+<p><b>不适合谁：</b>没找到漏水点就想直接焊的人；只想快速盖住破洞、不接受反复试装的人。视频说对接焊「是最好的焊法，但最花时间」<span class="ts">00:14:51</span><span class="ts">00:14:59</span>。</p>
+<p><b>视频里没说：</b>整项 repairs 的总工时和总花费。只说了整块板分段焊约 <b>30 分钟</b><span class="ts">00:27:37</span>，以及两种焊机的大致价格<span class="ts">00:18:04</span><span class="ts">00:18:42</span>。</p>
+
+<h2><span class="num">1</span>怎么开始：备齐工具、铁皮和防护</h2>
+<p>按视频的工具清单准备：焊机、带钢丝轮的角磨机、电钻、钣金剪（sheet metal nibbler）、<b>12mm</b> 套筒和防锈漆<span class="ts">00:00:55</span><span class="ts">00:01:17</span><span class="ts">00:01:19</span><span class="ts">00:01:29</span>。视频说「工具其实不多」，难的是切割那一步<span class="ts">00:01:06</span><span class="ts">00:01:07</span>。</p>
+<figure>
+  <img src="img/02-welder-machine.jpg" alt="工作台上的焊机、气瓶与工具车" loading="lazy">
+  <figcaption><b>焊机与配套气瓶：作者后面会按板厚解释为什么选这台。</b><span class="ts">视频截帧 00:01:00</span></figcaption>
+</figure>
+<p>铁皮有三条路：找拆车件或同款旧车件<span class="ts">00:01:37</span>；买厚度相近的板材自己下料<span class="ts">00:01:45</span>；破洞太大或整块地板都烂了，就按年份车型找售后地板件<span class="ts">00:01:55</span><span class="ts">00:02:01</span>。视频没给具体板材牌号或采购链接。</p>
+<figure>
+  <img src="img/03-replacement-sheet.jpg" alt="带孔的银色替换铁皮，平放在工作台上" loading="lazy">
+  <figcaption><b>替换用铁皮：先按孔洞形状粗剪，再逐步修到贴合。</b><span class="ts">视频截帧 00:01:42</span></figcaption>
+</figure>
+<p>防护别省：护目镜加 <b>N95</b> 口罩是底线<span class="ts">00:05:54</span>；作者更推荐全脸面罩配 <b>P100</b> 滤芯，说它能过滤 <b>99.97%</b> 的粉尘<span class="ts">00:06:07</span><span class="ts">00:06:24</span>。车内打磨时用 <b>6 英寸</b> 软管接风机做负压排尘<span class="ts">00:06:45</span><span class="ts">00:06:53</span>。</p>
+<figure>
+  <img src="img/04-door-sill-rust.jpg" alt="车身门槛内饰板边缘的锈蚀与打磨轮" loading="lazy">
+  <figcaption><b>门槛附近的锈迹：先找到水从哪来，再决定切哪里。</b><span class="ts">视频截帧 00:03:36</span></figcaption>
+</figure>
+
+<h2><span class="num">2</span>关键决策点：怎么焊、用什么焊机</h2>
+<table>
+  <tr><th>要决定的事</th><th>视频里的说法</th><th>照着做</th></tr>
+  <tr><td>对接焊还是搭接焊</td><td>对接焊让两块金属边缘贴合、无接缝，作者说最不易再生锈，但最费时<span class="ts">00:14:43</span><span class="ts">00:14:51</span><span class="ts">00:14:59</span></td><td>地板和翼子板优先对接；愿意多花时间反复试装</td></tr>
+  <tr><td>什么情况下搭接</td><td>搭接是上下叠放再焊四边，快且简单，但两层之间可能进水生锈、表面不平整<span class="ts">00:15:08</span><span class="ts">00:15:20</span><span class="ts">00:15:37</span></td><td>视频承认原厂也用搭接，但要多涂漆和密封胶<span class="ts">00:15:51</span>；作者示范的是对接</td></tr>
+  <tr><td>药芯焊机能用吗</td><td>约 <b>100 美元</b>、不用气瓶<span class="ts">00:18:04</span>；最细焊丝 <b>0.030 英寸</b>，只能焊到 22 gauge / <b>0.8mm</b><span class="ts">00:18:22</span><span class="ts">00:18:26</span></td><td>视频里的 <b>0.6mm</b> 板比它适用的更薄，作者不推荐<span class="ts">00:18:33</span></td></tr>
+  <tr><td>选气保 MIG</td><td>约 <b>200 美元</b>、需要气瓶，可调电压和送丝，能配 <b>0.025 英寸</b> 焊丝<span class="ts">00:18:42</span><span class="ts">00:18:55</span></td><td>用 <b>25% CO₂ + 75% 氩气</b><span class="ts">00:20:01</span>，流量调到 <b>10 L/min</b>（约 20 CFH）<span class="ts">00:20:22</span></td></tr>
+  <tr><td>焊前清理范围</td><td>接缝两侧约 <b>0.5–1 英寸</b> 磨到裸金属<span class="ts">00:17:00</span></td><td>密封胶、漆、镀锌层、锈和底涂都要避开焊缝<span class="ts">00:16:21</span><span class="ts">00:16:27</span></td></tr>
+  <tr><td>焊后要不要密封胶</td><td>对接焊后不必再打密封胶<span class="ts">00:32:58</span></td><td>两面都涂防锈漆，把焊缝封住<span class="ts">00:33:12</span></td></tr>
+</table>
+<figure>
+  <img src="img/09-welder-chart.jpg" alt="焊机参数建议表，显示 24 gauge 对应的电压与送丝速度" loading="lazy">
+  <figcaption><b>参数表：24 gauge / 0.6mm 对应 3V、送丝 25，这是视频的起始值。</b><span class="ts">视频截帧 00:19:12</span></figcaption>
+</figure>
+
+<h2><span class="num">3</span>第 1 步：先找漏水点，换掉密封条</h2>
+<p>动手切之前，先弄清锈是怎么来的。作者说多数情况是水进去后积着，时间久了就锈<span class="ts">00:02:37</span>；他这辆敞篷车的水来自密封条，画面里能看到前一天下雨后往下渗水<span class="ts">00:02:45</span><span class="ts">00:02:49</span>。</p>
+<p>拆下顶篷才能碰到密封条，它由<b>两颗十字螺丝</b>固定<span class="ts">00:03:01</span>。视频说有些车会用胶粘，多数只是压在凸缘上，能直接剥下来<span class="ts">00:03:13</span>。</p>
+<p>装新条之前，先处理沿途的锈：用钢丝轮磨到露出亮金属、不留一点锈<span class="ts">00:03:32</span><span class="ts">00:03:36</span>，再喷专用防锈漆并等干<span class="ts">00:03:43</span>。最后把新密封条压回凸缘、拧紧两颗螺丝<span class="ts">00:04:03</span><span class="ts">00:04:17</span>。</p>
+<figure>
+  <img src="img/05-roof-weatherstrip.jpg" alt="拆开后的车顶密封条与金属压条" loading="lazy">
+  <figcaption><b>车顶密封条位置：止水做不好，补完还会再锈。</b><span class="ts">视频截帧 00:03:01</span></figcaption>
+</figure>
+
+<h2><span class="num">4</span>第 2 步：拆座椅和地毯，露出锈洞</h2>
+<p>先拆<b>两颗 12mm</b> 前螺栓<span class="ts">00:04:42</span>，把座椅往前滑，再拆后两颗螺栓和安全带螺栓<span class="ts">00:04:46</span>。取出座椅后拿掉脚垫，门坎饰板直接撬出<span class="ts">00:04:55</span><span class="ts">00:05:00</span>。</p>
+<p>地毯从后储物箱下面抽出来，再让开中央扶手<span class="ts">00:05:02</span><span class="ts">00:05:08</span>。视频用弹力绳把地毯绑到方向盘上，防止切割或焊接时掉下来挡事、甚至着火<span class="ts">00:05:13</span><span class="ts">00:05:17</span>。</p>
+<figure>
+  <img src="img/06-carpet-removed.jpg" alt="拆掉地毯后的车内地板，可见固定孔与中央扶手" loading="lazy">
+  <figcaption><b>地毯掀开后的车内地板：这时才看得到锈的真实范围。</b><span class="ts">视频截帧 00:05:02</span></figcaption>
+</figure>
+
+<h2><span class="num">5</span>第 3 步：整片打磨、划线，切掉坏金属</h2>
+<p>别只磨洞边。视频强调整块地板都要用钢丝轮扫一遍，因为可能藏着别的锈<span class="ts">00:07:20</span><span class="ts">00:07:25</span>；焊缝附近的原厂密封胶要用一字螺丝刀或刮刀铲掉，才能看到下面有没有烂<span class="ts">00:07:35</span><span class="ts">00:07:44</span>。</p>
+<p>车底也要处理：把底涂磨掉，范围要比锈洞多出几英寸，因为锈会沿着底涂下面爬<span class="ts">00:08:22</span><span class="ts">00:08:28</span>。视频里正面看着还好的地方，从车底能看到已经穿孔<span class="ts">00:08:44</span>。</p>
+<p>划线时把锈全部圈进去，外沿留一圈好金属来焊<span class="ts">00:09:12</span>。作者用「能不能一戳就穿」判断好坏：一处还结实，另一处一戳就破<span class="ts">00:09:30</span><span class="ts">00:09:37</span>；只有表面锈的金属可以保留并直接焊<span class="ts">00:09:42</span>。</p>
+<p>切割工具他选钣金剪，靠电钻带动，一点一点冲剪，能任意方向走线<span class="ts">00:10:00</span><span class="ts">00:10:07</span><span class="ts">00:10:13</span>；视频说从车底操作更好施展<span class="ts">00:10:44</span>。边缘不齐先用锉刀修，这个阶段不必追求完美<span class="ts">00:10:57</span>。</p>
+<figure>
+  <img src="img/07-sheet-metal-cut.jpg" alt="竖直摆放的银色铁皮，带有预冲小孔和切割线" loading="lazy">
+  <figcaption><b>新铁皮粗剪后的样子：边缘还可以再修，先保证形状对。</b><span class="ts">视频截帧 00:12:18</span></figcaption>
+</figure>
+
+<h2><span class="num">6</span>第 4 步：配新铁皮，试装到贴合</h2>
+<p>把新板裁成和洞一样的形状。第一刀先粗剪，宁可稍大，后面还能再修<span class="ts">00:11:38</span><span class="ts">00:12:02</span>；描线后下刀要留一点余量，因为「金属切掉容易，加回来难」<span class="ts">00:12:46</span><span class="ts">00:12:51</span>。</p>
+<p>在新板上画跨过边缘的参考线，对齐旧板后再切，这样每次都能放回同一位置<span class="ts">00:13:01</span><span class="ts">00:13:06</span>。反复「小修 → 试装」<span class="ts">00:13:30</span>；只剩薄薄一层要去掉时改用锉刀，别再用剪<span class="ts">00:14:14</span>。</p>
+<figure>
+  <img src="img/08-fit-marks.jpg" alt="白色新铁皮边缘的绿色划线，与锈蚀旧板贴合" loading="lazy">
+  <figcaption><b>对接焊前的试装：边缘贴得越紧，后面越省事。</b><span class="ts">视频截帧 00:15:03</span></figcaption>
+</figure>
+<p>接缝不必毫无瑕疵。视频承认试装后仍可能留下小孔，说焊接时可以处理<span class="ts">00:13:51</span><span class="ts">00:14:28</span>；目标是整圈尽量贴合<span class="ts">00:13:58</span>。</p>
+
+<h2><span class="num">7</span>第 5 步：焊前清洁、试焊、分段焊，再验漏封漆</h2>
+<p><b>先清洁。</b>接缝两侧磨到裸金属，可以只磨要焊的地方，不必整片重磨<span class="ts">00:16:52</span>；两面都要处理，每侧约 <b>0.5–1 英寸</b><span class="ts">00:17:00</span><span class="ts">00:17:12</span>。最后用异丙醇或丙酮擦掉油和脏东西<span class="ts">00:17:24</span>。</p>
+<p><b>再定参数。</b>用数显卡尺量板厚，视频里约 <b>0.6mm</b><span class="ts">00:19:20</span><span class="ts">00:19:33</span>；参数表给的起始值是 <b>3V</b>、送丝 <b>25</b><span class="ts">00:19:42</span>。焊丝伸出喷嘴一点点即可<span class="ts">00:20:59</span>。</p>
+<figure>
+  <img src="img/11-metal-scraps.jpg" alt="工作台上的薄金属条、红色角尺与锉刀" loading="lazy">
+  <figcaption><b>工作台上的薄板试样：作者先在废料上练，再上车。</b><span class="ts">视频截帧 00:21:51</span></figcaption>
+</figure>
+<p><b>试焊不能跳。</b>戴好焊接面罩和手套、旁边放灭火器<span class="ts">00:21:18</span>，在切下的废料上试。送丝 <b>35</b> 仍有明显问题，升到 <b>45</b> 后声音像「煎培根」，不再烧穿<span class="ts">00:21:26</span><span class="ts">00:21:33</span><span class="ts">00:21:43</span>。合格标准是焊透但不烧穿<span class="ts">00:21:59</span><span class="ts">00:22:05</span>。</p>
+<p><b>上车前先断电。</b>拆掉电瓶负极线，防止电流伤到电脑和传感器<span class="ts">00:22:12</span><span class="ts">00:22:19</span>；铺防火毯、保持通风<span class="ts">00:22:29</span>；地线夹要夹在焊接处附近的干净金属或螺栓上，视频用了安全带固定点<span class="ts">00:22:42</span><span class="ts">00:22:56</span>。</p>
+<p><b>点焊固定。</b>每个点焊约一秒，把两块板先连起来，沿四周布几个点<span class="ts">00:23:04</span><span class="ts">00:23:13</span>。不齐的地方用上下两把锤子配合找平<span class="ts">00:23:38</span>。</p>
+<figure>
+  <img src="img/10-tack-weld.jpg" alt="薄板接缝处一个圆形的点焊焊点" loading="lazy">
+  <figcaption><b>点焊特写：焊点要小而集中，能熔透两块板。</b><span class="ts">视频截帧 00:23:20</span></figcaption>
+</figure>
+<p><b>分段焊，别一口气拉长弧。</b>连续焊会让薄板变形、烧穿，所以从一个点到另一个点，再跳到对面，把热量散开<span class="ts">00:24:12</span><span class="ts">00:24:17</span><span class="ts">00:24:36</span>。每次加丝约一秒，等熔池从亮橙变成暗橙再焊下一点<span class="ts">00:25:27</span><span class="ts">00:25:18</span><span class="ts">00:25:21</span>；发现烧穿就停下来冷却约 <b>15–20 秒</b><span class="ts">00:26:20</span><span class="ts">00:26:51</span>。</p>
+<p><b>有缝隙就垫散热片。</b>把压扁的铜管、铜片或铝片垫在缝下，用千斤顶或磁铁顶住；金属不粘焊，还能吸走多余热量<span class="ts">00:28:14</span><span class="ts">00:28:32</span><span class="ts">00:29:24</span>。</p>
+<p><b>验漏别靠肉眼。</b>夜里从车底往上看有没有漏光，或用开孔的盒子罩住强光手电，白天也能找出针孔<span class="ts">00:29:46</span><span class="ts">00:29:53</span>。视频用这招发现了两个小孔并补上<span class="ts">00:30:13</span>。</p>
+<p><b>最后封漆。</b>用 <b>80 目</b> 砂纸打磨<span class="ts">00:31:08</span>，吸净灰尘并用酒精擦拭<span class="ts">00:31:17</span><span class="ts">00:31:23</span>；漆倒进小杯里用，别直接从罐里蘸<span class="ts">00:31:34</span>。第一层薄涂，<b>4 小时</b>后第二层<span class="ts">00:32:23</span>，<b>24 小时</b>后检查<span class="ts">00:32:34</span>。视频说这种漆能隔绝对金属的空气和水分<span class="ts">00:32:47</span>；对接焊不必再打密封胶<span class="ts">00:32:58</span>，但要两面都涂<span class="ts">00:33:12</span>，并把原厂孔装回橡胶圈<span class="ts">00:33:14</span>。</p>
+
+<h2><span class="num">8</span>避坑清单：这 8 个坑视频里点过名</h2>
+<table>
+  <tr><th>坑</th><th>怎么避</th></tr>
+  <tr><td>不查漏源直接焊</td><td>先找为什么会锈<span class="ts">00:02:30</span>；视频这辆车的进水点是密封条<span class="ts">00:02:45</span></td></tr>
+  <tr><td>只磨洞边、不铲密封胶</td><td>整块地板都磨<span class="ts">00:07:20</span>；缝封胶要铲掉才能看清下面<span class="ts">00:07:44</span></td></tr>
+  <tr><td>只看正面判断锈范围</td><td>车底底涂也要磨开几英寸<span class="ts">00:08:22</span>；视频里正面看着好，底下已穿孔<span class="ts">00:08:44</span></td></tr>
+  <tr><td>切割线贴着洞画</td><td>绕开全部锈区，外圈留好金属<span class="ts">00:09:12</span>；用「一戳就穿」判断<span class="ts">00:09:37</span></td></tr>
+  <tr><td>新板一次剪到位</td><td>先粗剪留余量<span class="ts">00:12:46</span>，画参考线多次小修<span class="ts">00:13:01</span></td></tr>
+  <tr><td>焊前不清接缝</td><td>两侧 0.5–1 英寸见裸金属<span class="ts">00:17:00</span>，再用酒精／丙酮擦<span class="ts">00:17:24</span></td></tr>
+  <tr><td>不断负极就上车焊</td><td>先拆电瓶负极<span class="ts">00:22:12</span>，避免电流伤电脑和传感器<span class="ts">00:22:19</span></td></tr>
+  <tr><td>连续长焊或大缝硬焊</td><td>分段跳焊散热量<span class="ts">00:24:36</span>，大缝垫铜／铝散热片<span class="ts">00:28:14</span></td></tr>
+</table>
+<div class="box warn">
+  <h3>有争议的说法：只记录，不下结论</h3>
+  <p>视频说这次修复「会陪这辆车用到报废」<span class="ts">00:33:41</span>，属于对效果的判断，本文不采信为承诺；视频开头提到想靠涡轮套件把马力翻倍<span class="ts">00:00:34</span>，与锈洞修复无关，也不作为施工依据。视频还演示用压缩空气罐置换漆罐里的氧气以延长保存<span class="ts">00:31:57</span><span class="ts">00:32:08</span>，涉及化学品与容器处理，本文只记录视频原话，不评价安全与合规性。</p>
+</div>
+
+<h2><span class="num">9</span>一页速查：带着走的 12 行</h2>
+<ul>
+  <li>先查进水原因<span class="ts">00:02:30</span>；密封条由 <b>2 颗</b> 十字螺丝固定<span class="ts">00:03:01</span>。</li>
+  <li>旧密封条处的锈磨到裸金属、喷防锈漆，再装新条<span class="ts">00:03:32</span><span class="ts">00:03:43</span>。</li>
+  <li>拆座椅：<b>12mm</b> 前螺栓两颗<span class="ts">00:04:42</span>，再拆后螺栓和安全带螺栓<span class="ts">00:04:46</span>。</li>
+  <li>地毯用弹力绳固定，别让它挡住切割或焊接<span class="ts">00:05:13</span>。</li>
+  <li>护目镜 + <b>N95</b> 起步<span class="ts">00:05:54</span>；更推荐全脸面罩 + <b>P100</b><span class="ts">00:06:24</span>。</li>
+  <li>整片地板都打磨<span class="ts">00:07:20</span>，铲掉焊缝密封胶<span class="ts">00:07:44</span>，车底多磨几英寸<span class="ts">00:08:22</span>。</li>
+  <li>切割线绕锈走，外沿留好金属<span class="ts">00:09:12</span>；钣金剪配任何方向<span class="ts">00:10:13</span>。</li>
+  <li>新板先粗剪留余量<span class="ts">00:12:46</span>，画参考线反复小修<span class="ts">00:13:01</span>。</li>
+  <li>对接焊最不易再生锈但最费时<span class="ts">00:14:51</span><span class="ts">00:14:59</span>；搭接快但层间可能进水<span class="ts">00:15:37</span>。</li>
+  <li><b>0.6mm</b> 板用气保 MIG、<b>0.025</b> 焊丝<span class="ts">00:19:01</span>；起始 <b>3V / 送丝 25</b><span class="ts">00:19:42</span>。</li>
+  <li>先断负极<span class="ts">00:22:12</span>，废料试焊到「煎培根」声<span class="ts">00:21:43</span>，再点焊 + 分段焊<span class="ts">00:24:12</span>。</li>
+  <li>验漏找针孔<span class="ts">00:29:53</span>；<b>80 目</b> 打磨<span class="ts">00:31:08</span>，<b>4 小时</b> 第二层<span class="ts">00:32:23</span>，<b>24 小时</b> 固化<span class="ts">00:32:34</span>。</li>
+</ul>
+
+<footer>
+  <p><b>事实来源：</b>YouTube 视频《How to PROPERLY Repair a Rust Hole in your Car or Truck (DIY for Beginners)》，频道 ChrisFix，2020-04-29 发布，时长 34:08，播放约 936 万。文中所有工具、尺寸、价格、参数和时间均来自该视频人工英文字幕，时间戳对应原片；数值为视频录制时的说法。未写出的总工时、总费用、板材牌号和产品型号，原文为「视频里没说」。</p>
+  <p><b>未采信：</b>「修复会陪车用到报废」<span class="ts">00:33:41</span>、涡轮马力翻倍<span class="ts">00:00:34</span>属于夸张或无关表述；漆罐充气保存法<span class="ts">00:31:57</span>只作记录，不背书；搭接焊「能用很久」<span class="ts">00:15:51</span>仅作为对比，不替换本文推荐的对接焊。</p>
+  <p><b>配图说明：</b>11 张均为原片截帧，只保留锈蚀地板、工具、替换铁皮、参数表和焊点等客观镜头；已裁掉频道角标、字幕条和所有手部画面，未使用博主出镜、自拍或 AI 生成图。</p>
+</footer>
+
+</div>
+</body>
+</html>
