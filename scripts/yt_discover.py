@@ -32,6 +32,12 @@ COOKIES = "/tmp/yt_cookies.txt"
 
 # 每天要发的篇数（站点、选题、质检都读这个口径）
 DAILY_TARGET = 10
+# 备胎数量：实测约 1/3 的候选会死在「无字幕 / 全片人物出镜 / 凑不到 8 张客观镜头」，
+# 所以计划要比目标多排几条，写稿轮次才有得换。
+PLAN_BUFFER = 5
+# 人物出镜风险高的类型：健身、穿搭、宠物训练、亲子、人生感悟基本都是「人对着镜头讲」，
+# 客观镜头（物件/招牌/场景）少，排计划时放后面，缺口留给它们。
+PERSON_RISK = {"health", "fashion", "pet", "parenting", "life"}
 
 # 类型 → 搜索词（每条给 2–4 个角度，避免每次都是同一批片子）
 QUERIES = {
@@ -108,15 +114,43 @@ def run_search(query, n, cookie_args):
     return data.get("entries") or []
 
 
-def used_video_ids():
-    """已经出过稿的 videoId，选题时排除，避免同一支片子被拆两次。"""
-    if not INDEX.exists():
-        return set()
+def probe_subs(url, cookie_args):
+    """探一下这支片子有没有字幕轨（人工或自动）。实测 5 秒/条，比写完稿才发现没字幕便宜得多。"""
+    cmd = ["yt-dlp", "--list-subs", "--skip-download", "--no-warnings", *cookie_args, url]
     try:
-        data = json.loads(INDEX.read_text("utf-8"))
-    except Exception:
-        return set()
-    return {d.get("videoId") for d in (data.get("docs") or []) if d.get("videoId")}
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+    except subprocess.TimeoutExpired:
+        return None
+    txt = (out.stdout or "") + (out.stderr or "")
+    if "has no subtitles" in txt and "has no automatic captions" in txt:
+        return False
+    if "Available subtitles" in txt or "Available automatic captions" in txt:
+        return True
+    return None
+
+
+def used_video_ids():
+    """已经出过稿、或当天已被判死的 videoId，选题时一律排除。
+
+    「判死」= 计划里 status=abandoned（无字幕 / 全片人物出镜 / 凑不到 8 张客观镜头）。
+    不排除的话每次重跑都会把它们又排进来，白占名额。
+    """
+    ids = set()
+    if INDEX.exists():
+        try:
+            data = json.loads(INDEX.read_text("utf-8"))
+            ids |= {d.get("videoId") for d in (data.get("docs") or []) if d.get("videoId")}
+        except Exception:
+            pass
+    plan_path = INBOX / f"{ymd(date.today())}-plan.json"
+    if plan_path.exists():
+        try:
+            plan = json.loads(plan_path.read_text("utf-8"))
+            ids |= {it.get("videoId") for it in (plan.get("items") or [])
+                    if it.get("status") == "abandoned" and it.get("videoId")}
+        except Exception:
+            pass
+    return ids
 
 
 def slugify(text, maxlen=42):
@@ -131,7 +165,9 @@ def main():
     ap.add_argument("--types", default="", help="逗号分隔的类型 key，默认按日期轮换 10 类")
     ap.add_argument("--n-types", type=int, default=DAILY_TARGET, help="轮换多少个类型（=每天篇数）")
     ap.add_argument("--per", type=int, default=4, help="每个类型保留几条候选")
-    ap.add_argument("--plan", action="store_true", help="产出选题计划 inbox/<日期>-plan.json（每个类型 1 条）")
+    ap.add_argument("--plan", action="store_true", help="产出选题计划 inbox/<日期>-plan.json")
+    ap.add_argument("--no-probe", dest="probe", action="store_false", help="跳过字幕探测（快，但会把没字幕的片子排进计划）")
+    ap.set_defaults(probe=True)
     ap.add_argument("--min-views", type=int, default=10000)
     ap.add_argument("--max-days", type=int, default=45, help="只要最近 N 天发布的（0 = 不限）")
     ap.add_argument("--min-dur", type=int, default=360)
@@ -204,9 +240,23 @@ def main():
             r["score"] = title_score(r["title"])
         # 先看是不是攻略型，再看播放量：纯热度会把 vlog 顶上来，抽帧时全是博主出镜
         rows.sort(key=lambda x: (x["score"], x["views"]), reverse=True)
-        for r in rows[: args.per]:
+
+        kept = 0
+        probed = 0
+        for r in rows:
+            if kept >= args.per or probed >= args.per * 3:
+                break
+            if args.probe:
+                probed += 1
+                has = probe_subs(r["url"], cookie_args)
+                if has is False:
+                    print(f"    [skip] 无字幕：{r['title'][:36]}")
+                    seen.add(r["videoId"])
+                    continue
+                r["hasSubs"] = has
             seen.add(r["videoId"])
             picks.append(r)
+            kept += 1
 
     INBOX.mkdir(parents=True, exist_ok=True)
     today = date.today()
@@ -237,7 +287,12 @@ def plan_slug(today, item):
 
 
 def write_plan(today, picks, types):
-    """每个类型取播放最高的一条，凑成当天计划；已有计划则合并（不覆盖已写的进度）。"""
+    """排当天计划：先给每个类型 1 条，再补到「目标 + 备胎」。
+
+    - 类型按人物出镜风险排序（person-risk 的放后面），缺口优先落在这些类型上。
+    - 计划条数 = DAILY_TARGET + PLAN_BUFFER，给写稿轮次留替换余地。
+    - 已有计划时保留原 slug 与 status（不覆盖当天已写/已弃的进度）。
+    """
     path = INBOX / f"{ymd(today)}-plan.json"
     old = {}
     if path.exists():
@@ -246,30 +301,68 @@ def write_plan(today, picks, types):
                 old[it.get("videoId")] = it
         except Exception:
             pass
+
+    by_type = {}
+    for p in picks:
+        by_type.setdefault(p["categoryKey"], []).append(p)
+    ordered = sorted(types, key=lambda t: (t in PERSON_RISK, t))
+
+    want = DAILY_TARGET + PLAN_BUFFER
+    chosen = []
+    taken = set()
+
+    # 第一轮：每个类型 1 条
+    for t in ordered:
+        if len(chosen) >= want:
+            break
+        for c in by_type.get(t, []):
+            if c["videoId"] in taken:
+                continue
+            chosen.append(c)
+            taken.add(c["videoId"])
+            break
+
+    # 后续轮：按类型轮流补备胎
+    while len(chosen) < want:
+        added = False
+        for t in ordered:
+            if len(chosen) >= want:
+                break
+            for c in by_type.get(t, []):
+                if c["videoId"] in taken:
+                    continue
+                chosen.append(c)
+                taken.add(c["videoId"])
+                added = True
+                break
+        if not added:
+            break
+
     items = []
-    for t in types:
-        cand = [p for p in picks if p["categoryKey"] == t]
-        if not cand:
-            continue
-        best = cand[0]
-        prev = old.get(best["videoId"]) or {}
+    for c in chosen:
+        prev = old.get(c["videoId"]) or {}
         items.append({
-            **best,
-            "slug": prev.get("slug") or plan_slug(today, best),
+            **c,
+            "slug": prev.get("slug") or plan_slug(today, c),
             "status": prev.get("status", "pending"),
+            "notes": prev.get("notes", ""),
+            "buffer": 1 if len(items) >= DAILY_TARGET else 0,
         })
+
     plan = {
         "date": ymd(today),
         "target": DAILY_TARGET,
+        "buffer": max(0, len(items) - DAILY_TARGET),
         "planned": len(items),
         "items": items,
     }
     path.write_text(json.dumps(plan, ensure_ascii=False, indent=1), "utf-8")
-    print(f"[plan] {len(items)} 条选题（目标 {DAILY_TARGET} 篇）→ {path.relative_to(ROOT)}")
+    print(f"[plan] {len(items)} 条（目标 {DAILY_TARGET} + 备胎 {len(items) - DAILY_TARGET}）→ {path.relative_to(ROOT)}")
     for it in items:
-        print(f"  · [{it['categoryKey']}] {it['title'][:56]}")
+        tag = "备胎" if it["buffer"] else "正选"
+        print(f"  · [{tag}][{it['categoryKey']}] {it['title'][:52]}")
     if len(items) < DAILY_TARGET:
-        print(f"[warn] 只排到 {len(items)} 条，缺 {DAILY_TARGET - len(items)} 条，需要换类型重跑")
+        print(f"[warn] 正选只排到 {len(items)} 条，缺 {DAILY_TARGET - len(items)} 条，需要换类型重跑")
         return 1
     return 0
 

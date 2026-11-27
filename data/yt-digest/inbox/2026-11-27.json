@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generatedAt": "2026-11-27T16:01:38",
+ "generatedAt": "2026-11-27T16:35:49",
  "types": [
   "travel",
   "film",
@@ -15,59 +15,40 @@
  ],
  "candidates": [
   {
-   "videoId": "fKjgRlBiK9A",
-   "url": "https://www.youtube.com/watch?v=fKjgRlBiK9A",
-   "title": "【保姆級】手把手帶你半價曼谷一日遊，自助純玩大皇宮、臥佛寺、玉佛寺、鄭王廟、河口寺、ICONSIAM、摩天輪夜市7大曼谷地標，實拍揭秘熱門景點三大騙術，曼谷一日遊避雷指南 I 路客Luke",
-   "channel": "路客Luke",
-   "duration": 1907,
-   "views": 108771,
+   "videoId": "9JaMFdCy4hI",
+   "url": "https://www.youtube.com/watch?v=9JaMFdCy4hI",
+   "title": "如何便宜玩東京近郊？一日來回！日幣萬元以下！無須自駕超輕鬆！一起去看東京沒有的原風景💚 小川町・埼玉縣小鎮【2025旅遊攻略🇯🇵】",
+   "channel": "MaoMao TV",
+   "duration": 1465,
+   "views": 228113,
    "publishedAt": "",
    "categoryKey": "travel",
-   "score": 4
+   "score": 4,
+   "hasSubs": true
   },
   {
-   "videoId": "rmFbUzDyZ-U",
-   "url": "https://www.youtube.com/watch?v=rmFbUzDyZ-U",
-   "title": "花5天时间把广州玩了个遍，总结了这份保姆级旅行攻略！交通住宿｜Citywalk路线｜行程安排｜花费参考",
-   "channel": "大橘小狸环游记",
-   "duration": 952,
-   "views": 460873,
+   "videoId": "2GU-jQCnJ-4",
+   "url": "https://www.youtube.com/watch?v=2GU-jQCnJ-4",
+   "title": "【醉日本】九州｜福岡近郊一日遊攻略 小倉門司港美食景點交通一次看｜門司港 小倉城 唐戶市場",
+   "channel": "醉旅宿 Merry Journey",
+   "duration": 1332,
+   "views": 322697,
    "publishedAt": "",
    "categoryKey": "travel",
-   "score": 2
+   "score": 2,
+   "hasSubs": true
   },
   {
-   "videoId": "irhXS2mluZw",
-   "url": "https://www.youtube.com/watch?v=irhXS2mluZw",
-   "title": "大阪市中心 超強25景地圖路線規劃懶人包 完全順路 不怕迷路 從路線安排 避雷景點 在地美食 #梅田 #本町 #難波 完整攻略 有這一篇 什麼旅遊書都不用買了 過年省錢 出去玩 大阪自由行",
-   "channel": "部屋隆的生活頻道",
-   "duration": 1187,
-   "views": 166600,
+   "videoId": "7_6tWTKiNPg",
+   "url": "https://www.youtube.com/watch?v=7_6tWTKiNPg",
+   "title": "【金澤一日遊懶人包】只有一天怎麼玩北陸小京都？市場、美食、茶屋街與金箔冰全攻略！",
+   "channel": "吉田社長 Japan TV",
+   "duration": 1413,
+   "views": 314612,
    "publishedAt": "",
    "categoryKey": "travel",
-   "score": 2
-  },
-  {
-   "videoId": "6nLRZ5codHU",
-   "url": "https://www.youtube.com/watch?v=6nLRZ5codHU",
-   "title": "How to Write a Documentary Script in 3 Steps",
-   "channel": "Luc Forsyth",
-   "duration": 632,
-   "views": 432540,
-   "publishedAt": "",
-   "categoryKey": "film",
-   "score": 4
-  },
-  {
-   "videoId": "thqw_XSyEO0",
-   "url": "https://www.youtube.com/watch?v=thqw_XSyEO0",
-   "title": "Making a Documentary From Start to Finish - Beginner Tips",
-   "channel": "Luc Forsyth",
-   "duration": 755,
-   "views": 254601,
-   "publishedAt": "",
-   "categoryKey": "film",
-   "score": 4
+   "score": 2,
+   "hasSubs": true
   },
   {
    "videoId": "7tNTh6KlXXU",
@@ -75,54 +56,71 @@
    "title": "The Vietnam War Explained In 25 Minutes | Vietnam War Documentary",
    "channel": "The Life Guide",
    "duration": 1716,
-   "views": 14107195,
+   "views": 14107237,
    "publishedAt": "",
    "categoryKey": "film",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
-   "videoId": "5iHQDUvR_vc",
-   "url": "https://www.youtube.com/watch?v=5iHQDUvR_vc",
-   "title": "How to Design an Effective Workout Plan: Ultimate Guide for Beginners | Joanna Soh",
-   "channel": "Joanna Soh Official",
-   "duration": 789,
-   "views": 2535293,
+   "videoId": "6CcdXcuO9D0",
+   "url": "https://www.youtube.com/watch?v=6CcdXcuO9D0",
+   "title": "How to Edit a Documentary Film",
+   "channel": "Mark Johansson",
+   "duration": 703,
+   "views": 126254,
+   "publishedAt": "",
+   "categoryKey": "film",
+   "score": 2,
+   "hasSubs": null
+  },
+  {
+   "videoId": "xPyGPju3M_E",
+   "url": "https://www.youtube.com/watch?v=xPyGPju3M_E",
+   "title": "How to Film Dynamic Documentary Scenes (FULL BREAKDOWN)",
+   "channel": "Austin Meyer",
+   "duration": 1845,
+   "views": 37501,
+   "publishedAt": "",
+   "categoryKey": "film",
+   "score": 2,
+   "hasSubs": null
+  },
+  {
+   "videoId": "msshuOvxoTg",
+   "url": "https://www.youtube.com/watch?v=msshuOvxoTg",
+   "title": "How To Start Calisthenics | Full Beginners Bodyweight Workout Guide and Routine",
+   "channel": "Browney",
+   "duration": 848,
+   "views": 770883,
    "publishedAt": "",
    "categoryKey": "health",
-   "score": 6
+   "score": 8,
+   "hasSubs": null
   },
   {
-   "videoId": "AzV3EA-1-yM",
-   "url": "https://www.youtube.com/watch?v=AzV3EA-1-yM",
-   "title": "20 Min Full Body Workout Routine for Beginners (Follow Along) | No Gym",
-   "channel": "Fit Tuber",
-   "duration": 1225,
-   "views": 22857710,
+   "videoId": "Wa4f7f5y7uQ",
+   "url": "https://www.youtube.com/watch?v=Wa4f7f5y7uQ",
+   "title": "How to Create the Perfect Workout Plan | Beginner Guide",
+   "channel": "Magnus Method",
+   "duration": 490,
+   "views": 867967,
    "publishedAt": "",
    "categoryKey": "health",
-   "score": 4
+   "score": 6,
+   "hasSubs": null
   },
   {
-   "videoId": "U9ENCvFf9yQ",
-   "url": "https://www.youtube.com/watch?v=U9ENCvFf9yQ",
-   "title": "Step by Step Beginner Gym Guide (Full Training Plan + All You Need To Know)",
-   "channel": "trainer winny",
-   "duration": 734,
-   "views": 4254633,
+   "videoId": "vNaYoV2g2Zc",
+   "url": "https://www.youtube.com/watch?v=vNaYoV2g2Zc",
+   "title": "Build Body at Home Fast (easy tips) | Full HOME WORKOUT PLAN for Beginners",
+   "channel": "ReBorn Mindset",
+   "duration": 440,
+   "views": 6167232,
    "publishedAt": "",
    "categoryKey": "health",
-   "score": 4
-  },
-  {
-   "videoId": "cjk5UgpLRZs",
-   "url": "https://www.youtube.com/watch?v=cjk5UgpLRZs",
-   "title": "What Does a Luxury Home Remodel Cost - High End Home Renovation Cost Breakdown, Home Remodel Tips",
-   "channel": "Elisa Covington | Transform Real Estate",
-   "duration": 745,
-   "views": 19282,
-   "publishedAt": "",
-   "categoryKey": "home",
-   "score": 4
+   "score": 4,
+   "hasSubs": null
   },
   {
    "videoId": "4Ik10LP9GX8",
@@ -133,7 +131,8 @@
    "views": 373111,
    "publishedAt": "",
    "categoryKey": "home",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "rhWf3-qNakg",
@@ -144,18 +143,20 @@
    "views": 72728,
    "publishedAt": "",
    "categoryKey": "home",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
-   "videoId": "WOspqFGkrfs",
-   "url": "https://www.youtube.com/watch?v=WOspqFGkrfs",
-   "title": "如何提升效率做更多事？建立高效工作流程？我的個人效率系統大公開！只用免費工具（不是Notion）｜Apple Notes備忘錄｜IOS日曆｜iPhone提醒事項｜Milanote",
-   "channel": "Brayden Chen",
-   "duration": 961,
-   "views": 73036,
+   "videoId": "HPljYsGcJF4",
+   "url": "https://www.youtube.com/watch?v=HPljYsGcJF4",
+   "title": "How Much Does It REALLY Cost to Renovate a Victorian Terraced House? | London Renovation 2025",
+   "channel": "ARki app",
+   "duration": 372,
+   "views": 39161,
    "publishedAt": "",
-   "categoryKey": "work",
-   "score": 2
+   "categoryKey": "home",
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "-5GS67QxC_o",
@@ -166,7 +167,8 @@
    "views": 367051,
    "publishedAt": "",
    "categoryKey": "work",
-   "score": 0
+   "score": 0,
+   "hasSubs": null
   },
   {
    "videoId": "cVPD2AFlLIs",
@@ -174,10 +176,23 @@
    "title": "最强开源AI工作流n8n，上千插件+模板，效率起飞",
    "channel": "技术爬爬虾  TechShrimp",
    "duration": 1194,
-   "views": 215534,
+   "views": 215552,
    "publishedAt": "",
    "categoryKey": "work",
-   "score": 0
+   "score": 0,
+   "hasSubs": null
+  },
+  {
+   "videoId": "ACaNotQZSGg",
+   "url": "https://www.youtube.com/watch?v=ACaNotQZSGg",
+   "title": "打造個人化AI助理！零基礎學會最紅的AI工具n8n🤖工作效率馬上翻倍！｜Kelly Tsai",
+   "channel": "Kelly Tsai",
+   "duration": 1247,
+   "views": 206008,
+   "publishedAt": "",
+   "categoryKey": "work",
+   "score": 0,
+   "hasSubs": null
   },
   {
    "videoId": "LCO58Qvm3ig",
@@ -188,7 +203,8 @@
    "views": 2986057,
    "publishedAt": "",
    "categoryKey": "money",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "XFh3tRObiLM",
@@ -196,10 +212,11 @@
    "title": "7 Passive Income Ideas - How I Make $2,000+ Per Day!",
    "channel": "Greg Gottfried",
    "duration": 941,
-   "views": 1247266,
+   "views": 1247293,
    "publishedAt": "",
    "categoryKey": "money",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "4_MDP6TcHwU",
@@ -210,7 +227,8 @@
    "views": 978274,
    "publishedAt": "",
    "categoryKey": "money",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "ievQYzwBYgE",
@@ -221,7 +239,8 @@
    "views": 0,
    "publishedAt": "",
    "categoryKey": "pet",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "kcrBaiN2mTc",
@@ -232,7 +251,8 @@
    "views": 0,
    "publishedAt": "",
    "categoryKey": "pet",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "23YUaYjp6i8",
@@ -243,18 +263,8 @@
    "views": 0,
    "publishedAt": "",
    "categoryKey": "pet",
-   "score": 2
-  },
-  {
-   "videoId": "XrRmAEfe-S0",
-   "url": "https://www.youtube.com/watch?v=XrRmAEfe-S0",
-   "title": "Chef Reviews & Rates Premium Gadgets vs Knock-Off Dupes | Sorted Food",
-   "channel": "Sorted Food",
-   "duration": 1374,
-   "views": 716857,
-   "publishedAt": "",
-   "categoryKey": "gadget",
-   "score": 4
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "5j_5P-zsqjw",
@@ -262,10 +272,11 @@
    "title": "I Tested Temu vs Amazon Steak Gadgets",
    "channel": "Max the Meat Guy",
    "duration": 2217,
-   "views": 8187122,
+   "views": 8187991,
    "publishedAt": "",
    "categoryKey": "gadget",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "8vOt6LDOCU0",
@@ -273,10 +284,23 @@
    "title": "I Tested TikTok Shop vs Temu Kitchen Gadgets",
    "channel": "Patrick Zeinali",
    "duration": 1691,
-   "views": 3752696,
+   "views": 3752769,
    "publishedAt": "",
    "categoryKey": "gadget",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
+  },
+  {
+   "videoId": "oTuS9U0Y9HI",
+   "url": "https://www.youtube.com/watch?v=oTuS9U0Y9HI",
+   "title": "Amazon's Best Rated Vs. Worst Rated Beauty Gadget Review",
+   "channel": "BuzzFeedVideo",
+   "duration": 649,
+   "views": 193400,
+   "publishedAt": "",
+   "categoryKey": "gadget",
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "MXCvtC0HqLE",
@@ -287,7 +311,8 @@
    "views": 1161147,
    "publishedAt": "",
    "categoryKey": "invest",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "0iRbD5rM5qc",
@@ -298,7 +323,8 @@
    "views": 733485,
    "publishedAt": "",
    "categoryKey": "invest",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
    "videoId": "FXjHwQ6J_yI",
@@ -306,43 +332,47 @@
    "title": "How to start investing—responsibly | Thomas Kehl | TEDxHSGSalon",
    "channel": "TEDx Talks",
    "duration": 816,
-   "views": 271750,
+   "views": 271766,
    "publishedAt": "",
    "categoryKey": "invest",
-   "score": 2
+   "score": 2,
+   "hasSubs": null
   },
   {
-   "videoId": "afpH3XhwzxM",
-   "url": "https://www.youtube.com/watch?v=afpH3XhwzxM",
-   "title": "汽车做保养怎样最省钱？10分钟搞定，手把手教你给爱车做保养！【车二哥说车】",
-   "channel": "车二哥说车",
-   "duration": 360,
-   "views": 233120,
+   "videoId": "xbpPkusWuGc",
+   "url": "https://www.youtube.com/watch?v=xbpPkusWuGc",
+   "title": "10分钟完整学会在家换机油，做小保养！宝马E90重置保养灯方法。DIY Oil Change, Car Service  [澳洲Kendi]",
+   "channel": "KENDI的DIY频道",
+   "duration": 610,
+   "views": 93653,
    "publishedAt": "",
    "categoryKey": "car",
-   "score": 6
+   "score": 2,
+   "hasSubs": null
   },
   {
-   "videoId": "dTdwf_kvhuE",
-   "url": "https://www.youtube.com/watch?v=dTdwf_kvhuE",
-   "title": "千萬不要犯！改掉這7個開車壞習慣，讓你愛車多開20年沒問題！",
-   "channel": "自由汽車頻道",
-   "duration": 582,
-   "views": 955646,
+   "videoId": "gll_VVV78x0",
+   "url": "https://www.youtube.com/watch?v=gll_VVV78x0",
+   "title": "修理工自己的车是如何保养的？现场带你看一看，一年能省几千元！【小韩修车】",
+   "channel": "小韩修车",
+   "duration": 457,
+   "views": 54907,
    "publishedAt": "",
    "categoryKey": "car",
-   "score": 0
+   "score": 2,
+   "hasSubs": null
   },
   {
-   "videoId": "7mwccLZc_SE",
-   "url": "https://www.youtube.com/watch?v=7mwccLZc_SE",
-   "title": "[Don't Wait for a Breakdown!] 3 Most Important Things About Car Maintenance! Learn Them All at On...",
-   "channel": "buycartv",
-   "duration": 990,
-   "views": 51169,
+   "videoId": "MN1_mz6V4pg",
+   "url": "https://www.youtube.com/watch?v=MN1_mz6V4pg",
+   "title": "汽车保养不要去做这个项目！会损坏发动机，修理工告诉你为什么？【小韩修车】",
+   "channel": "小韩修车",
+   "duration": 476,
+   "views": 126270,
    "publishedAt": "",
    "categoryKey": "car",
-   "score": 0
+   "score": 0,
+   "hasSubs": null
   }
  ]
 }
