@@ -1157,6 +1157,49 @@
     return r;
   }
 
+  // 1688 采购直达：一条店铺一行，组合品按组件分组。
+  // 数据来自 scripts/t1688_links.py（1688 公开聚合页），价格是挂牌起批价，不含运费。
+  function tbPickRow(p) {
+    var meta = [];
+    if (p.moq) meta.push(p.moq);
+    if (p.repeat) meta.push('回头 ' + p.repeat + '%');
+    return '<a class="tb-pick" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"' +
+      ' title="' + esc(p.title || '') + '">' +
+      '<span class="tb-pick-main"><b>' + esc(p.shop || '店铺未见') + '</b>' +
+        '<em>' + esc(p.title || '') + '</em></span>' +
+      '<span class="tb-pick-side"><b>' + tbMoney(p.price) + '</b>' +
+        '<em>' + esc(meta.join(' · ')) + '</em></span>' +
+      '<span class="tb-pick-go">1688&nbsp;↗</span></a>';
+  }
+
+  function tbLinks(x) {
+    var rows = x.links || [];
+    var st = x.linkStats || {};
+    if (!rows.length) return '';
+    var multi = rows.length > 1;
+    var body = rows.map(function (g) {
+      var head = multi
+        ? '<div class="tb-buy-gt"><b>' + esc(g.label || '') + '</b>' +
+            (g.role ? '<em>' + esc(g.role) + '</em>' : '') +
+            (g.note ? '<i>' + esc(g.note) + '</i>' : '') + '</div>'
+        : (g.note ? '<div class="tb-buy-note">' + esc(g.note) + '</div>' : '');
+      var picks = (g.picks || []).map(tbPickRow).join('');
+      var more = g.searchUrl
+        ? '<a class="tb-buy-search" href="' + esc(g.searchUrl) + '" target="_blank" rel="noopener noreferrer">' +
+          '在 1688 搜「' + esc(g.keyword || '') + '」看全部 →</a>'
+        : '';
+      return '<div class="tb-buy-g">' + head + picks + more + '</div>';
+    }).join('');
+    var day = (st.fetchedAt || '').slice(5, 10).replace('-', '/');
+    return '<div class="tb-buy">' +
+      '<div class="tb-buy-h"><b>1688 采购直达</b>' +
+        '<span>' + (st.shops || 0) + ' 家店铺 · ' + (st.count || 0) + ' 条链接' +
+        (day ? ' · 抓于 ' + day : '') + '</span></div>' +
+      body +
+      '<p class="tb-buy-tip">挂牌价是 1688 起批价，不含运费与阶梯价；进详情页自己核规格、起订量和运费。</p>' +
+      '</div>';
+  }
+
   function tbCard(x, staleDays) {
     var vmap = { '做': 'do', '观望': 'watch', '放弃': 'drop' };
     var vcls = vmap[x.verdict] || 'watch';
@@ -1170,6 +1213,7 @@
     if (x.stale) badges.push('<span class="tb-tag gray">' + (x.shotDaysAgo || '—') + ' 天前核价</span>');
     if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
     if (x.windowPassed) badges.push('<span class="tb-tag red">窗口已过</span>');
+    if ((x.linkStats || {}).count) badges.push('<span class="tb-tag link">1688 ' + x.linkStats.shops + ' 家</span>');
 
     var srcRows = (x.sources || []).map(function (s) {
       var pend = /^待/.test(s.shop || '');
@@ -1211,13 +1255,16 @@
         ' · 猫系 ' + (sp.tmall != null ? Math.round(sp.tmall * 100) + '%' : '—') + '</em></div>' +
       '<p class="tb-scorewhy">' + esc(x.scoreWhy || '') + '</p>' +
       '<div class="tb-nums">' +
-        '<div><span>到手成本</span><b>' + (x.landed != null ? tbMoney(x.landed) : '待核') + '</b></div>' +
+        '<div><span>到手成本</span><b>' + (x.landed != null ? tbMoney(x.landed) : '待核') + '</b>' +
+          (x.landed == null && (x.linkStats || {}).mainLo != null
+            ? '<i>挂牌 ' + tbMoney(x.linkStats.mainLo) + ' 起</i>' : '') + '</div>' +
         '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b></div>' +
         '<div><span>价带</span><b title="' + esc(tbMoney(m.lo) + ' – ' + tbMoney(m.hi)) + '">' + tbRange(m.lo, m.hi, x.priceApprox) + '</b></div>' +
         '<div><span>榜首</span><b>' + approx + tbMoney(top.price) + '</b><i>' + esc(top.sold || '') + '</i></div>' +
       '</div>' +
       '<table class="tb-price"><thead><tr><th>SKU</th><th>售价</th><th>成本</th><th>毛利</th><th>率</th><th>角色</th></tr></thead>' +
         '<tbody>' + priceRows + '</tbody></table>' +
+      tbLinks(x) +
       '<details class="tb-more"><summary>完整论证：货源比价 / 为什么是它 / 怎么打 / 翻车点</summary>' +
         '<h4>1688 货源比价</h4>' +
         (srcRows ? '<table class="tb-src"><thead><tr><th>店铺</th><th>城市</th><th>货价</th><th>运费</th><th>到手</th><th>销量</th><th>回头率</th></tr></thead><tbody>' + srcRows + '</tbody></table>'

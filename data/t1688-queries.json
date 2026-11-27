@@ -1,0 +1,69 @@
+{
+ "note": "1688 采购线索。components 定义抓词（来源：www.1688.com/chanpin 公开聚合页，60 条/词）；items 里按商品挑 offer id，脚本 scripts/t1688_links.py 会把价格/店铺/已售并进去。picks 只填 offer id，别的字段一律从页面抓，不要手写价格。",
+ "components": {
+  "duilian-magnet": { "label": "磁吸对联（主件）", "keyword": "磁吸对联" },
+  "duilian-fullback": { "label": "全背磁吸对联", "keyword": "全背磁吸对联" },
+  "duilian-flock": { "label": "植绒对联/春联礼盒", "keyword": "植绒对联" },
+  "door-hanger": { "label": "门挂花环/福字挂件", "keyword": "新年门挂花环" },
+  "door-fu": { "label": "福字门贴", "keyword": "福字门贴" },
+  "fridge-magnet": { "label": "新年冰箱贴", "keyword": "新年冰箱贴" },
+  "garland": { "label": "拉花/拉旗", "keyword": "新年拉花装饰" },
+  "window-paper": { "label": "20 张装窗花/剪纸", "keyword": "窗花剪纸" },
+  "window-static": { "label": "静电窗花", "keyword": "静电窗花" },
+  "photo-prop": { "label": "拍照小道具/手持牌", "keyword": "新年拍照道具" },
+  "xmas-tree": { "label": "桌面圣诞树", "keyword": "桌面圣诞树" },
+  "fudai-tube": { "label": "福筒空桶/礼盒桶", "keyword": "福筒" }
+ },
+ "items": {
+  "door-newyear-set": [
+   { "component": "door-hanger", "role": "组件 1", "note": "套装里的门挂，优先带灯款（拍照出效果）",
+     "picks": ["999556281098", "993635570476", "811142677106"] },
+   { "component": "duilian-magnet", "role": "组件 2", "note": "磁吸对联，整套里最贵的一件",
+     "picks": ["959199812266", "1006957163530"] },
+   { "component": "door-fu", "role": "组件 3", "note": "门贴福字，凑满 39.9 客单的补位件",
+     "picks": ["992407576753", "1001609094431"] }
+  ],
+  "magnet-duilian": [
+   { "component": "duilian-magnet", "role": "主件", "note": "四家不同价位，义乌/温州/石家庄三地可对比运费",
+     "picks": ["959199812266", "1006957163530", "993386928531", "1003802447571"] }
+  ],
+  "magnet-fullback": [
+   { "component": "duilian-fullback", "role": "主件", "note": "只有这三条标题明确写了「全背/全磁吸」，普通磁吸（四角磁铁）别混进来",
+     "picks": ["997491626172", "1102347938090", "1015877476462"] }
+  ],
+  "kitchen-newyear": [
+   { "component": "fridge-magnet", "role": "主件", "note": "厨房年味的主销件，选财神/国潮款",
+     "picks": ["865024297513", "978637167231", "844425690642"] }
+  ],
+  "tvwall-set": [
+   { "component": "garland", "role": "组件 1", "note": "电视墙主体靠拉花撑面积，灯笼款最好拍",
+     "picks": ["852899687983", "1049511785753", "1001909940227"] },
+   { "component": "duilian-magnet", "role": "组件 2", "note": "部分买家会顺手加一副小的",
+     "picks": ["993386928531"] }
+  ],
+  "paper-cut": [
+   { "component": "window-paper", "role": "主件", "note": "20 张装那条是唯一和 SKU 规格对得上的，其余多是儿童 DIY 材料",
+     "picks": ["982292893207", "524524819240", "986272393317"] }
+  ],
+  "photo-props": [
+   { "component": "photo-prop", "role": "主件", "note": "手持牌 + 头饰分开买，一套拼 5 件",
+     "picks": ["656995970502", "856074805232", "1008586275123"] }
+  ],
+  "christmas-tree": [
+   { "component": "xmas-tree", "role": "主件", "note": "按 45–60cm 桌面款挑的三档：低价裸树 / 植绒带盆 / ins 毛球",
+     "picks": ["660935297295", "743530643544", "970317982301"] }
+  ],
+  "fudai": [
+   { "component": "fudai-tube", "role": "组件 1", "note": "注意：¥0.5–2.4 这段全是空桶，成品要自己装内容物",
+     "picks": ["686588701211", "808478653475"] },
+   { "component": "duilian-flock", "role": "组件 2", "note": "礼盒装植绒对联，直接塞进桶里就是成品",
+     "picks": ["747004827983", "847412347337"] },
+   { "component": "window-paper", "role": "组件 3", "note": "配一张窗花，价值感立刻上来",
+     "picks": ["982292893207"] }
+  ],
+  "static-window": [
+   { "component": "window-static", "role": "主件", "note": "龙港是窗花源头，¥0.04/张起；义乌惜贡那条适合小批量试单",
+     "picks": ["839217071361", "1005884346845", "760545373407"] }
+  ]
+ }
+}

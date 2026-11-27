@@ -23,6 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "taobao.json"
+LINKS = ROOT / "data" / "t1688-links.json"
 OUT_JSON = ROOT / "data" / "taobao-index.json"
 OUT_JS = ROOT / "data" / "taobao-embed.js"
 
@@ -50,6 +51,12 @@ def build():
     today = date.today()
     data = json.loads(SRC.read_text("utf-8"))
     stale_days = int(data.get("staleAfterDays") or 14)
+
+    # ---- 1688 采购链接（scripts/t1688_links.py 抓的，抓不到就留空）----
+    links_map, links_at = {}, None
+    if LINKS.exists():
+        lk = json.loads(LINKS.read_text("utf-8"))
+        links_map, links_at = lk.get("items") or {}, lk.get("generatedAt")
 
     # ---- 节点日历 ----
     cal = []
@@ -96,8 +103,25 @@ def build():
                 "rate": round(gross / price, 3) if (gross is not None and price) else None,
             })
 
+        rows = links_map.get(it.get("id")) or []
+        picks_all = [p for r in rows for p in (r.get("picks") or [])]
+        prices = [p["price"] for p in picks_all if p.get("price") is not None]
+        main_row = next((r for r in rows if "主件" in (r.get("role") or "")), rows[0] if rows else None)
+        main_prices = [p["price"] for p in (main_row or {}).get("picks") or [] if p.get("price") is not None]
+        link_stats = {
+            "count": len(picks_all),
+            "shops": len({p.get("shop") for p in picks_all}),
+            "groups": len(rows),
+            "lo": min(prices) if prices else None,
+            "hi": max(prices) if prices else None,
+            "mainLo": min(main_prices) if main_prices else None,
+            "fetchedAt": links_at,
+        }
+
         items.append({
             **it,
+            "links": rows,
+            "linkStats": link_stats,
             "daysToPeak": (peak - today).days if peak else None,
             "inWindow": bool(sf and st and sf <= today <= st),
             "windowPassed": bool(st and today > st),
@@ -124,6 +148,8 @@ def build():
         "expired": sum(1 for x in items if x.get("windowPassed") and x.get("verdict") != "放弃"),
         "stale": sum(1 for x in items if x.get("stale")),
         "pendingCost": sum(1 for x in items if x.get("pendingCost")),
+        "withLinks": sum(1 for x in items if (x.get("linkStats") or {}).get("count")),
+        "linkCount": sum((x.get("linkStats") or {}).get("count", 0) for x in items),
     }
 
     payload = {
@@ -147,7 +173,8 @@ def build():
 
     print(f"[ok] {counts['total']} 张候选卡 → data/taobao-index.json + data/taobao-embed.js")
     print(f"     做 {counts['do']} / 观望 {counts['watch']} / 放弃 {counts['drop']}"
-          f"｜窗口内 {counts['inWindow']}｜待复核 {counts['stale']}｜成本待核 {counts['pendingCost']}")
+          f"｜窗口内 {counts['inWindow']}｜待复核 {counts['stale']}｜成本待核 {counts['pendingCost']}"
+          f"｜1688 链接 {counts['linkCount']} 条 / {counts['withLinks']} 张卡")
     for x in items:
         flag = "做  " if x.get("verdict") == "做" else ("观望" if x.get("verdict") == "观望" else "放弃")
         tag = []
