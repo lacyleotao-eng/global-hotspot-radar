@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自己换机油：17mm螺丝、25Nm扭矩，10分钟干完</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#9c2b1f; --accent-soft:#f6ece9; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(156,43,31,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">汽车 / 用车</span>
+    <span>宝马 E90 · 小保养</span><span>·</span><span>6 步流程 + 选购表</span>
+  </div>
+  <h1>自己换机油：17mm螺丝、25Nm扭矩，10分钟干完</h1>
+  <p class="lede">视频里给一台宝马 E90 换机油：架车、放油、换机滤、加 5 升、查油位、重置保养灯，全程只用到 17mm 套筒和一把扭矩扳手。下面按能照着做的顺序拆开，写清每一步的尺寸、扭矩和判断标准。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《10分钟完整学会在家换机油，做小保养！宝马E90重置保养灯方法》</b>（频道「Kendi DIY」）</span>
+    <span>时长 <b>10:09</b></span><span>发布 <b>2022-06-17</b></span><span>播放 <b>约 9.4 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-bmw-on-jacks.jpg" alt="银色宝马E90车头，前轮下垫着安全铁支架" loading="lazy">
+    <figcaption><b>先看现场：车头抬起后落在铁支架上，千斤顶只负责抬、不负责撑。</b><span class="ts">视频截帧 00:01:36</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：一桶油、一个机滤、17mm 套筒就能开工</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">5W-30 <span class="ts">00:00:47</span></div><div class="l">这台车要求的机油粘度，买车前先翻保养手册</div></div>
+  <div class="kpi"><div class="n">17mm <span class="ts">00:02:15</span></div><div class="l">放油螺丝的套筒规格，视频里这台 E90 就是这个尺寸</div></div>
+  <div class="kpi"><div class="n">25Nm <span class="ts">00:04:26</span></div><div class="l">机滤盖的拧紧扭矩，没有扭矩扳手就凭手感稍紧</div></div>
+  <div class="kpi"><div class="n">先加 5 升 <span class="ts">00:05:37</span></div><div class="l">不确定残油量时先加到 5 升，再打火查油位</div></div>
+</div>
+<p><b>适合谁：</b>车一年该做一次小保养、愿意钻一次车底、家里有套筒和千斤顶的人。视频作者说自己做完整个流程只要 <b>5 分钟</b>，连讲解带拍视频也就十几分钟<span class="ts">00:09:33</span><span class="ts">00:09:36</span>。</p>
+<p><b>不适合谁：</b>找不到合适顶起点、地面是斜坡或软土的人；车还在质保期、不想自己动手的人。视频里反复强调的是安全：车必须落到铁支架上才能钻下去<span class="ts">00:01:36</span>。</p>
+<p><b>视频里没说：</b>这台车的具体年份型号配置、机油加注总量（只说了先加 5 升再看）、以及一次保养的总花费。下文凡是这三项，都不做补充。</p>
+
+<h2><span class="num">1</span>怎么开始：一桶油、一个机滤、四件工具</h2>
+<p>清单很短。每次换机油需要一桶机油、一个对应型号的机滤<span class="ts">00:00:26</span><span class="ts">00:00:28</span>，再加一个接油用的机油盘或水桶<span class="ts">00:00:30</span>。有漏斗更省事，倒油时不容易撒<span class="ts">00:00:33</span>；拧放油螺丝还需要车上对应规格的套筒或扳手<span class="ts">00:00:38</span>。</p>
+<figure>
+  <img src="img/02-oil-and-pan.jpg" alt="绿色机油桶、黑色机油盘和红色机滤包装盒摆在地面上" loading="lazy">
+  <figcaption><b>开工前的三件主角：5W-30 机油、接油盘、盒装的机滤。</b><span class="ts">视频截帧 00:00:30</span></figcaption>
+</figure>
+<p>机滤按车型买就行。视频里这个是在 Supercheap Auto 买的<span class="ts">00:01:17</span>，作者说所有汽配商店都能订到任何车型的机滤，去店里问店员要型号即可<span class="ts">00:01:19</span><span class="ts">00:01:22</span>。</p>
+<figure>
+  <img src="img/09-tools-closeup.jpg" alt="绿色嘉实多机油桶、黑色机油盘与红色机滤盒" loading="lazy">
+  <figcaption><b>机油盘要够深：旧油放出来是一股不小的流量，浅盘会溢。</b><span class="ts">视频截帧 00:01:08</span></figcaption>
+</figure>
+<p>买机油看两个参数：粘度和 API 等级<span class="ts">00:00:42</span><span class="ts">00:00:50</span>。粘度这台车要 5W-30<span class="ts">00:00:47</span>；API 等级对汽油车不算关键，对精密的柴油车才重要<span class="ts">00:00:53</span><span class="ts">00:00:54</span>。视频用的这桶只标了汽油机的 <b>SN</b>，所以便宜，因为它不是给柴油车设计的<span class="ts">00:00:58</span><span class="ts">00:01:00</span>。这些数据每台车都不同，保养手册上都写着，没有就上网查<span class="ts">00:01:09</span><span class="ts">00:01:11</span>。</p>
+
+<h2><span class="num">2</span>关键决策点：机油怎么挑、车怎么架</h2>
+<table>
+  <tr><th>要决定的事</th><th>视频里的说法</th><th>照着做</th></tr>
+  <tr><td>机油粘度</td><td>这台车用较稀的 <b>5W-30</b><span class="ts">00:00:47</span></td><td>以自己车的保养手册为准，别照抄别人的桶</td></tr>
+  <tr><td>要不要追全合成</td><td>作者说自己「非常不在意」，半合成就够；全合成贵一倍也不能跳过一次保养<span class="ts">00:08:23</span><span class="ts">00:08:28</span></td><td>每 1 万公里或一年换一次的人，两种油感觉不出区别<span class="ts">00:08:34</span><span class="ts">00:08:36</span></td></tr>
+  <tr><td>什么时候买油</td><td>原价 60–70 澳元，半价 30 几澳元，最便宜 <b>22 澳元</b>一桶<span class="ts">00:08:01</span><span class="ts">00:08:03</span><span class="ts">00:08:04</span></td><td>等他半价再买，作者说这类店一年里有半年在打折<span class="ts">00:08:09</span></td></tr>
+  <tr><td>架几个轮子</td><td>放油螺丝在油底壳最后边，只架车头就够<span class="ts">00:01:53</span><span class="ts">00:01:55</span></td><td>螺丝在侧面或靠前，就前后都架平，油才放得干净<span class="ts">00:01:59</span><span class="ts">00:02:03</span></td></tr>
+  <tr><td>千斤顶能不能直接钻</td><td>不行。必须落到铁支架上，千斤顶液压可能失效<span class="ts">00:01:36</span><span class="ts">00:01:40</span></td><td>铁支架撑住再进车底，作者说这样比修车厂升降机还稳<span class="ts">00:01:45</span></td></tr>
+  <tr><td>机滤盖用什么拆</td><td>有专用套筒最好，没有就用钳子夹着拧<span class="ts">00:03:01</span><span class="ts">00:03:09</span></td><td>先确认自家机滤是内胆式还是铁壳式</td></tr>
+</table>
+<figure>
+  <img src="img/03-oil-label.jpg" alt="机油桶背标上的规格说明区域" loading="lazy">
+  <figcaption><b>背标才是关键：粘度、API 等级和适用机型都印在这一面。</b><span class="ts">视频截帧 00:00:56</span></figcaption>
+</figure>
+
+<h2><span class="num">3</span>第 1 步：千斤顶抬起来，铁支架撑住</h2>
+<p>先抬车头。这台车放油螺丝在油底壳最后边，所以只架前部，油就能彻底流出来<span class="ts">00:01:50</span><span class="ts">00:01:53</span>。作者也提醒：有些车螺丝位置设计得好，根本不用架<span class="ts">00:01:31</span>。</p>
+<p>抬起来之后有一个动作不能省——把车落到铁支架上。千斤顶的液压结构可能出问题，砸下来人就没了<span class="ts">00:01:40</span><span class="ts">00:01:42</span>。作者说落到铁支架后的安全程度远高于修车厂的升降机<span class="ts">00:01:45</span>。</p>
+<p>螺丝不在最后边的车，把前后都架起来、把车放平，放油时才不会有残留<span class="ts">00:01:59</span><span class="ts">00:02:00</span><span class="ts">00:02:03</span>。</p>
+
+<h2><span class="num">4</span>第 2 步：拆 17mm 放油螺丝，先把接油盘摆好</h2>
+<p>钻到车底，先找到放油口。上面盖着一个塑料盖，打开后才能看到放油螺丝<span class="ts">00:02:08</span><span class="ts">00:02:11</span>。接油的盘或桶要在拧螺丝之前就摆好<span class="ts">00:02:13</span>。</p>
+<figure>
+  <img src="img/04-underbody-cover.jpg" alt="车底的塑料护板与放油口盖板" loading="lazy">
+  <figcaption><b>车底这块护板上的方盖，撬开就是放油口。</b><span class="ts">视频截帧 00:02:08</span></figcaption>
+</figure>
+<p>这颗螺丝是 <b>17mm</b>，用 17mm 套筒松开，机油就从下面放出来<span class="ts">00:02:15</span><span class="ts">00:02:17</span><span class="ts">00:02:20</span>。拔螺丝的时候手要稳，别让螺丝掉进下面的油桶里<span class="ts">00:02:23</span>。松开后就让它在下面漏一会儿<span class="ts">00:02:26</span>。</p>
+<p>漏油的同时去打开引擎盖，把机油加注口的盖子拧开——上面通了气，下面的油漏得更快<span class="ts">00:02:31</span><span class="ts">00:02:32</span>。</p>
+
+<h2><span class="num">5</span>第 3 步：换机滤，两个橡胶圈必须一起换</h2>
+<p>先认清自家是哪一种。这台车是内胆式，里面只有一个滤芯，不带铁壳<span class="ts">00:02:35</span><span class="ts">00:02:37</span>。另一种更常见的是带铁壳的，整个拧下来、新的拧回去就行<span class="ts">00:02:40</span><span class="ts">00:02:49</span><span class="ts">00:02:51</span>。机滤有的在上面，有的在侧面或下面，但一般都在好拆的位置<span class="ts">00:02:53</span><span class="ts">00:02:57</span><span class="ts">00:02:59</span>。</p>
+<figure>
+  <img src="img/05-engine-bay.jpg" alt="打开的发动机舱，可见机油加注口与发动机饰盖" loading="lazy">
+  <figcaption><b>机舱全貌：加注口在左侧，机滤盖在饰盖旁边那一块。</b><span class="ts">视频截帧 00:02:56</span></figcaption>
+</figure>
+<p>用专用套筒把机滤盖拧开，没有专用套筒就用钳子夹着拧<span class="ts">00:03:01</span><span class="ts">00:03:03</span><span class="ts">00:03:09</span>。取出旧滤芯时检查底部有没有残留的橡胶圈——有就一并取出来换掉<span class="ts">00:03:19</span><span class="ts">00:03:22</span><span class="ts">00:03:25</span>。</p>
+<p>旧滤芯直接放进新滤芯的盒子里，油不会渗得到处都是，整盒一起丢<span class="ts">00:03:27</span><span class="ts">00:03:30</span><span class="ts">00:03:32</span>。盖上那两个橡胶圈是一次性的，买机滤时盒里就带新的，所以没有不换的理由；不换下次可能漏油<span class="ts">00:03:37</span><span class="ts">00:03:41</span><span class="ts">00:03:44</span>。</p>
+<p>装新橡胶圈前，在圈的外侧抹一点机油<span class="ts">00:03:58</span><span class="ts">00:04:01</span>。这样拧紧时橡胶圈不会被扭得鼓起来，鼓了同样会漏<span class="ts">00:04:05</span><span class="ts">00:04:07</span>。然后把新滤芯装回位、盖子拧紧<span class="ts">00:04:09</span><span class="ts">00:04:19</span>。有条件用扭矩扳手确认，这台车是 <b>25Nm</b>；没有扭矩扳手，手感稍紧就够，这东西不需要拧太死<span class="ts">00:04:23</span><span class="ts">00:04:26</span><span class="ts">00:04:29</span><span class="ts">00:04:31</span>。</p>
+
+<h2><span class="num">6</span>第 4 步：铜垫圈换新，把放油螺丝装回去</h2>
+<p>油漏干净后把螺丝塞回去。留意螺栓上那个铜垫圈，它是一次性的，每次都要换<span class="ts">00:04:37</span><span class="ts">00:04:41</span>。机滤包装里会给新的，同样没有不换的理由<span class="ts">00:04:44</span><span class="ts">00:04:45</span>。</p>
+<p>原理很简单：拧紧的过程中铜垫圈被压变形，把这一圈彻底密封住<span class="ts">00:04:59</span><span class="ts">00:05:02</span>。不换的话，以后这里会慢慢漏油<span class="ts">00:04:55</span>。套上新垫圈，把整个螺丝拧回去，车底部分就结束了<span class="ts">00:04:47</span><span class="ts">00:04:49</span><span class="ts">00:05:04</span>。</p>
+
+<h2><span class="num">7</span>第 5 步：先加 5 升，再打火查油位</h2>
+<p>加机油前先把车落回地面，不然加完没法查油量<span class="ts">00:05:08</span><span class="ts">00:05:11</span><span class="ts">00:05:13</span>。加多少有两个参照：放出来多少（桶上有刻度就看得到），以及保养手册写的加注量，后者更准<span class="ts">00:05:17</span><span class="ts">00:05:19</span><span class="ts">00:05:22</span><span class="ts">00:05:25</span>。</p>
+<figure>
+  <img src="img/06-new-oil-can.jpg" alt="新机油桶立在发动机舱上方，桶身有刻度窗" loading="lazy">
+  <figcaption><b>桶身那一条透明刻度，就是判断「还剩多少、加了多少」的依据。</b><span class="ts">视频截帧 00:08:36</span></figcaption>
+</figure>
+<p>倒的时候把油桶反过来倒，不容易洒<span class="ts">00:05:30</span><span class="ts">00:05:32</span>。因为不确定发动机里还有没有残油，作者先加到 <b>5 升</b>左右就停<span class="ts">00:05:37</span><span class="ts">00:05:39</span>。加多了要再放出来很麻烦，又得重新架车<span class="ts">00:05:48</span><span class="ts">00:05:50</span>。</p>
+<p>这台宝马没有机油尺，只能打火之后在车里看<span class="ts">00:05:51</span><span class="ts">00:05:53</span>。要注意一个规律：不管用哪种方式查，一打火，刚才空着的机滤会吸进去大概<b>半升</b>油，液面会往下掉一点<span class="ts">00:06:00</span><span class="ts">00:06:04</span>。所以打火前看着多一点点没关系<span class="ts">00:06:06</span><span class="ts">00:06:09</span><span class="ts">00:06:11</span>。</p>
+<p>查法：插钥匙打火，在车里往下翻，找到「OIL」点进去，等一会儿就显示油量<span class="ts">00:06:12</span><span class="ts">00:06:20</span><span class="ts">00:06:22</span><span class="ts">00:06:26</span>。视频里显示在两个点之间、而且在上沿，说明加得正好，点 OK 就行<span class="ts">00:06:26</span><span class="ts">00:06:29</span><span class="ts">00:06:30</span><span class="ts">00:06:32</span>。有机油尺的车同理，只要在最高点和最低点之间就合格<span class="ts">00:06:36</span><span class="ts">00:06:39</span><span class="ts">00:06:43</span>。</p>
+<figure>
+  <img src="img/07-cluster.jpg" alt="宝马仪表盘，时速表与转速表中间的数字显示屏" loading="lazy">
+  <figcaption><b>仪表盘中间这块屏，就是没有机油尺的车唯一能读数的地方。</b><span class="ts">视频截帧 00:07:27</span></figcaption>
+</figure>
+<p>收尾用刹车清洁剂把刚才沾到的机油喷洗一下，显得干净，几秒钟就干<span class="ts">00:06:45</span><span class="ts">00:06:47</span><span class="ts">00:06:52</span><span class="ts">00:06:53</span>。</p>
+
+<h2><span class="num">8</span>第 6 步：回收旧油，再把保养灯清零</h2>
+<p>换下来的旧油倒回空机油桶<span class="ts">00:06:57</span>。垃圾站和卖机油的零售商都回收，一般买机油那家店门口就能免费倒<span class="ts">00:07:00</span><span class="ts">00:07:03</span>。别往下水道倒，机油会影响周围河道<span class="ts">00:07:06</span><span class="ts">00:07:07</span>。</p>
+<figure>
+  <img src="img/08-old-oil-recycle.jpg" alt="旧机油从接油盘倒进蓝色空桶与黑色油桶" loading="lazy">
+  <figcaption><b>旧油装回原桶再送回收点，这一步别省。</b><span class="ts">视频截帧 00:07:00</span></figcaption>
+</figure>
+<p>重置保养灯一共六个动作：</p>
+<ol>
+  <li>钥匙插进去，但不要启动车，也就是不踩离合、不踩刹车<span class="ts">00:07:13</span><span class="ts">00:07:16</span>。</li>
+  <li>按一下启动键<span class="ts">00:07:17</span>。</li>
+  <li>按住左侧平时用来重置里程表的键，按住不放<span class="ts">00:07:19</span><span class="ts">00:07:22</span>。</li>
+  <li>屏幕会显示当前各项保养状态<span class="ts">00:07:27</span><span class="ts">00:07:30</span>，用左侧的上下键切换到你要重置的项目<span class="ts">00:07:31</span><span class="ts">00:07:33</span>。</li>
+  <li>这次换的是机油，就调到机油项，按边上的键，它会问你要不要重置<span class="ts">00:07:37</span><span class="ts">00:07:40</span><span class="ts">00:07:41</span>。</li>
+  <li>再按住这个键，稍等一下，重置完成<span class="ts">00:07:43</span><span class="ts">00:07:47</span>。</li>
+</ol>
+
+<h2><span class="num">9</span>避坑清单：这 8 个坑视频里点过名</h2>
+<table>
+  <tr><th>坑</th><th>怎么避</th></tr>
+  <tr><td>千斤顶顶着就钻车底</td><td>必须落到铁支架，液压失效会砸人<span class="ts">00:01:36</span><span class="ts">00:01:40</span></td></tr>
+  <tr><td>只架车头，但螺丝在侧面或靠前</td><td>前后都架平，否则油放不干净<span class="ts">00:01:59</span><span class="ts">00:02:03</span></td></tr>
+  <tr><td>接油盘没摆就先松开螺丝</td><td>盘或桶先放好再拧<span class="ts">00:02:13</span></td></tr>
+  <tr><td>螺丝掉进油桶里</td><td>拔的时候手扶住<span class="ts">00:02:23</span></td></tr>
+  <tr><td>旧橡胶圈留在机滤座里</td><td>取旧滤芯时逐圈检查<span class="ts">00:03:19</span><span class="ts">00:03:25</span></td></tr>
+  <tr><td>橡胶圈干着装、拧到鼓起来</td><td>装前在外侧抹机油<span class="ts">00:03:58</span><span class="ts">00:04:07</span></td></tr>
+  <tr><td>铜垫圈重复用</td><td>一次性件，机滤盒里带新的<span class="ts">00:04:41</span><span class="ts">00:04:44</span></td></tr>
+  <tr><td>一次把油加满再加</td><td>先加 5 升、打火查位，少了再补<span class="ts">00:05:37</span><span class="ts">00:06:39</span></td></tr>
+</table>
+<div class="box warn">
+  <h3>有争议的说法：只记录，不下结论</h3>
+  <p>作者说全合成和半合成在「每 1 万公里或一年一保」的节奏下感觉不到区别，也不会有影响<span class="ts">00:08:34</span><span class="ts">00:08:36</span><span class="ts">00:08:38</span>，这是他个人用车经验，不是厂家规范；具体用什么油仍以自己车的保养手册为准。他还说 4S 店「很可能没给你把机滤橡胶圈装好」<span class="ts">00:09:19</span><span class="ts">00:09:21</span>，属于对同行的评价，本文不采信为普遍事实。机油价格 22–70 澳元是澳洲零售价，和国内不通用。</p>
+</div>
+
+<h2><span class="num">10</span>一页速查：带着去车库的 12 行</h2>
+<ul>
+  <li>粘度看手册，这台车 <b>5W-30</b><span class="ts">00:00:47</span>；API 等级汽油车不敏感<span class="ts">00:00:54</span>。</li>
+  <li>机滤按车型买，汽配店都能订<span class="ts">00:01:19</span>。</li>
+  <li>车头抬起后必须落铁支架<span class="ts">00:01:36</span>；螺丝在最后边才只需架车头<span class="ts">00:01:53</span>。</li>
+  <li>撬开放油口塑料盖<span class="ts">00:02:08</span>，先摆接油盘<span class="ts">00:02:13</span>。</li>
+  <li>放油螺丝 <b>17mm</b><span class="ts">00:02:15</span>，螺丝别掉桶里<span class="ts">00:02:23</span>。</li>
+  <li>同时拧开加注口盖，油漏得更快<span class="ts">00:02:32</span>。</li>
+  <li>机滤盖 <b>25Nm</b><span class="ts">00:04:26</span>；两个橡胶圈换新并抹油<span class="ts">00:03:58</span>。</li>
+  <li>放油螺丝铜垫圈一次性<span class="ts">00:04:41</span>。</li>
+  <li>车落地再加，先加 <b>5 升</b><span class="ts">00:05:37</span>。</li>
+  <li>打火后机滤吸走约<b>半升</b><span class="ts">00:06:04</span>；宝马看车内 OIL 菜单<span class="ts">00:06:20</span>。</li>
+  <li>旧油倒回原桶送回收点，别倒下下水道<span class="ts">00:07:06</span>。</li>
+  <li>重置保养灯：不启动 → 按启动键 → 长按里程表键 → 选机油 → 按键 → 再长按<span class="ts">00:07:19</span><span class="ts">00:07:47</span>。</li>
+</ul>
+
+<footer>
+  <p><b>事实来源：</b>YouTube 视频《10分钟完整学会在家换机油，做小保养！宝马E90重置保养灯方法。DIY Oil Change, Car Service》，频道 Kendi DIY，2022-06-17 发布，时长 10:09，播放约 9.4 万。文中所有尺寸、扭矩、加注量、价格与操作顺序均来自该视频中文字幕，时间戳对应原片；数值为视频录制时的说法，机油价格为澳洲零售价。未写出的车型年份、机油总加注量、总花费，原文为「视频里没说」。</p>
+  <p><b>未采信：</b>「4S 店很可能没给你装好橡胶圈」<span class="ts">00:09:21</span>属于对同行的判断；「全合成半合成没区别」<span class="ts">00:08:38</span>是作者个人经验；「比修车厂升降机还安全」<span class="ts">00:01:45</span>是主观比较。三者均只记录，不作为选购或施工依据。</p>
+  <p><b>配图说明：</b>9 张均为原片截帧，只保留车辆、车底护板、发动机舱、机油桶、接油盘、仪表盘等客观镜头；已裁掉片头标题条、频道角标、字幕条与所有手部画面，未使用博主出镜、自拍或 AI 生成图。</p>
+</footer>
+
+</div>
+</body>
+</html>

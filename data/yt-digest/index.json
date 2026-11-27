@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-27T16:31:54",
- "total": 6,
+ "updatedAt": "2026-11-27T16:54:07",
+ "total": 7,
  "targetDaily": 10,
  "docs": [
   {
@@ -96,6 +96,25 @@
    "steps": 10,
    "images": 11,
    "cover": "data/yt-digest/2026-11-27-rust-hole-repair/img/01-rust-hole-floor.jpg",
+   "digestAt": "2026-11-27"
+  },
+  {
+   "slug": "2026-11-27-car-xbppkusw",
+   "url": "data/yt-digest/2026-11-27-car-xbppkusw/article.html",
+   "title": "自己换机油：17mm螺丝、25Nm扭矩，10分钟干完",
+   "dek": "一年一次的小保养：17mm 放油螺丝、25Nm 机滤盖、先加 5 升再查油位，附宝马无油尺车型的读数与保养灯重置。",
+   "category": "汽车 / 用车",
+   "categoryKey": "car",
+   "place": "汽车 · 宝马 E90",
+   "channel": "Kendi DIY",
+   "videoId": "xbpPkusWuGc",
+   "videoUrl": "https://www.youtube.com/watch?v=xbpPkusWuGc",
+   "duration": 609,
+   "views": 93645,
+   "publishedAt": "20220617",
+   "steps": 11,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-27-car-xbppkusw/img/01-bmw-on-jacks.jpg",
    "digestAt": "2026-11-27"
   },
   {

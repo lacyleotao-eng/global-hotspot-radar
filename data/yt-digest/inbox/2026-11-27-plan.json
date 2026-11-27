@@ -32,8 +32,8 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-27-the-vietnam-war-explained-in-2",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "战争题材，涉及政治敏感，不做拆解",
    "buffer": 0
   },
   {
@@ -48,8 +48,8 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-27-i-tested-temu-vs-amazon-steak",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "字幕接口连续 HTTP 429，取不到字幕轨",
    "buffer": 0
   },
   {
@@ -96,8 +96,8 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-27-how-i-built-a-200-000-side-hus",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "全片口播+英文字幕，客观镜头不足",
    "buffer": 0
   },
   {
@@ -192,8 +192,8 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-27-how-to-edit-a-documentary-film",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "全片博主口播出镜，无客观镜头",
    "buffer": 1
   },
   {
@@ -208,8 +208,8 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-27-i-tested-tiktok-shop-vs-temu-k",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "视频 DRM 保护，取不到元数据",
    "buffer": 1
   },
   {
