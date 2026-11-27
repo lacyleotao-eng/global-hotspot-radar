@@ -682,6 +682,15 @@ table.tb-src tr.pend td{color:#98a2b3;font-style:italic}
 .tb-role{font-size:10.5px;color:#4f46e5;background:#eef2ff;border-radius:5px;padding:1px 6px;white-space:nowrap}
 .tb-tag.link{color:#4f46e5;border-color:#dcd9fb;background:#f7f6ff}
 /* 1688 采购直达 */
+
+/* 成本桥 */
+.tb-nums b.neg,table.tb-price span.neg{color:#c0392b}
+table.tb-price span.thin{color:#b7791f}
+table.tb-price td i{display:block;font-style:normal;font-size:9.5px;color:#98a2b3;margin-top:1px;white-space:nowrap}
+table.tb-price tr.loss td{background:#fdf6f4}
+.tb-bridge{margin:8px 0 0;font-size:11px;color:#5b6580;line-height:1.65;background:#f8f9fc;border:1px solid #eef1f7;border-radius:8px;padding:7px 9px}
+.tb-bridge em{font-style:normal;color:#98a2b3}
+.tb-assume{margin:6px 0 0;font-size:10.5px;color:#98a2b3;line-height:1.6}
 .tb-buy{margin-top:10px;border:1px solid #e4e9f2;border-radius:11px;overflow:hidden;background:#fcfdff}
 .tb-buy-h{display:flex;align-items:baseline;gap:8px;padding:8px 11px;background:#f2f6ff;border-bottom:1px solid #e4e9f2}
 .tb-buy-h b{font-size:12px;color:var(--ink)}
@@ -727,6 +736,17 @@ table.tb-src tr.pend td{color:#98a2b3;font-style:italic}
   .tb-nums{grid-template-columns:repeat(2,1fr)}
   .tb-stat{white-space:normal}
   .tb-head h2{font-size:17px}
+  /* SKU 表在窄屏改成「一行一个 SKU」的堆叠式，避免七列挤成竖排汉字 */
+  table.tb-price thead{display:none}
+  table.tb-price tr{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;padding:8px 0;border-bottom:1px solid #f2f4f8}
+  table.tb-price td{display:block;border:0;padding:0;text-align:left}
+  table.tb-price td:first-child{flex:1 1 100%;font-weight:600;margin-bottom:2px}
+  table.tb-price td:nth-child(2)::before{content:"售价 ";color:#98a2b3;font-size:10px}
+  table.tb-price td:nth-child(3)::before{content:"全成本 ";color:#98a2b3;font-size:10px}
+  table.tb-price td:nth-child(4)::before{content:"净利 ";color:#98a2b3;font-size:10px}
+  table.tb-price td:nth-child(5)::before{content:"率 ";color:#98a2b3;font-size:10px}
+  table.tb-price td:nth-child(6)::before{content:"保本 ";color:#98a2b3;font-size:10px}
+  table.tb-price td i{display:inline;margin-left:4px}
   .tb-pick{gap:8px;padding:7px 9px}
   .tb-pick-main em,.tb-pick-side em{display:none}
   .tb-buy-h span{display:none}

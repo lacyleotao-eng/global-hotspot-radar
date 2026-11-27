@@ -1151,6 +1151,13 @@
     return (approx ? '≈' : '') + '¥' + f(lo) + '–' + f(hi);
   }
 
+  // 数字格宽度有限：一位小数 + 去掉尾随 .0，避免 ¥31.79–33.89 被吃掉
+  function tbRange1(lo, hi) {
+    if (lo == null || hi == null) return '—';
+    var f = function (v) { return String(+(Math.round(Number(v) * 10) / 10).toFixed(1)); };
+    return lo === hi ? '¥' + f(lo) : '¥' + f(lo) + '–' + f(hi);
+  }
+
   function tbMaxRate(x) {
     var r = 0;
     (x.pricing || []).forEach(function (p) { if (p.rate != null && p.rate > r) r = p.rate; });
@@ -1207,39 +1214,61 @@
     var top = m.top || {};
     var approx = x.priceApprox ? '≈' : '';
     var sp = x.scoreParts || {};
+    var skus = x.skus || [];
+    var main = null, i;
+    for (i = 0; i < skus.length; i++) { if (skus[i].role === '主推') { main = skus[i]; break; } }
+    if (!main) main = skus[0] || null;
+
+    var hmap = { loss: ['亏钱', 'red'], thin: ['净利薄', 'warn'], ok: ['净利健康', 'live'], unknown: ['成本未核', 'warn'] };
+    var hh = hmap[x.health] || hmap.unknown;
 
     var badges = [];
-    if (x.pendingCost) badges.push('<span class="tb-tag warn">成本待核</span>');
-    if (x.stale) badges.push('<span class="tb-tag gray">' + (x.shotDaysAgo || '—') + ' 天前核价</span>');
+    badges.push('<span class="tb-tag ' + hh[1] + '">' + hh[0] + '</span>');
+    if (x.specPending) badges.push('<span class="tb-tag gray">规格待核</span>');
     if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
     if (x.windowPassed) badges.push('<span class="tb-tag red">窗口已过</span>');
-    if ((x.linkStats || {}).count) badges.push('<span class="tb-tag link">1688 ' + x.linkStats.shops + ' 家</span>');
+    if ((x.linkStats || {}).count) badges.push('<span class="tb-tag link">1688 ' + x.linkStats.shops + ' 家可点</span>');
 
-    var srcRows = (x.sources || []).map(function (s) {
-      var pend = /^待/.test(s.shop || '');
-      return '<tr' + (pend ? ' class="pend"' : '') + '>' +
-        '<td>' + esc(s.shop || '—') + '</td>' +
-        '<td>' + esc(s.city || '—') + '</td>' +
+    // SKU 表：成本必须能拆（货价 + 履约），不给一个来路不明的数字
+    var priceRows = skus.map(function (s) {
+      var cost = s.costAllIn == null
+        ? '<b>—</b><i>绑不到报价</i>'
+        : '<b>' + tbMoney(s.costAllIn) + '</b><i>货' + tbMoney(s.goods).slice(1) + '+运' + tbMoney((s.express || 0) + (s.pack || 0)).slice(1) + '</i>';
+      var net = s.net == null ? '—'
+        : '<span class="' + (s.net < 0 ? 'neg' : (s.rate < 0.15 ? 'thin' : '')) + '">' + tbMoney(s.net) + '</span>';
+      var rate = s.rate == null ? '—' : Math.round(s.rate * 100) + '%';
+      return '<tr' + (s.health === 'loss' ? ' class="loss"' : '') + '>' +
+        '<td>' + esc(s.name || '') + '<span class="tb-role">' + esc(s.role || '') + '</span></td>' +
         '<td class="num">' + tbMoney(s.price) + '</td>' +
-        '<td class="num">' + tbMoney(s.freight) + '</td>' +
-        '<td class="num"><b>' + tbMoney((Number(s.price) || 0) + (Number(s.freight) || 0)) + '</b></td>' +
-        '<td class="num">' + esc(s.sold || '—') + '</td>' +
-        '<td class="num">' + (s.repeat ? s.repeat + '%' : '—') + '</td></tr>';
+        '<td class="num">' + cost + '</td>' +
+        '<td class="num">' + net + '</td>' +
+        '<td class="num">' + rate + '</td>' +
+        '<td class="num">' + (s.breakEven == null ? '—' : tbMoney(s.breakEven)) + '</td></tr>';
     }).join('');
 
-    var priceRows = (x.pricing || []).map(function (p) {
-      return '<tr><td>' + esc(p.sku || '') + '</td>' +
-        '<td class="num">' + tbMoney(p.price) + '</td>' +
-        '<td class="num">' + tbMoney(p.cost) + '</td>' +
-        '<td class="num">' + (p.gross == null ? '—' : tbMoney(p.gross)) + '</td>' +
-        '<td class="num">' + (p.rate == null ? '—' : Math.round(p.rate * 100) + '%') + '</td>' +
-        '<td><span class="tb-role">' + esc(p.role || '—') + '</span></td></tr>';
+    var bridge = main && main.costAllIn != null
+      ? '货价 ' + tbMoney(main.goods) + ' + 快递 ' + tbMoney(main.express) + '（¥3.5×' + (x.packages || 1) + ' 包裹）+ 包装 ' +
+        tbMoney(main.pack) + ' = 全成本 ' + tbMoney(main.costAllIn) +
+        '；再扣平台 1.2%、广告 10%、退货 3%（按售价）→ 净利 ' + tbMoney(main.net)
+      : '这款还没有能点进去的报价，成本不算。';
+
+    var skuNotes = skus.filter(function (s) { return s.specNote; }).map(function (s) {
+      return '<li><b>' + esc(s.name || '') + '</b>　' + esc(s.specNote) + '</li>';
     }).join('');
 
     var why = (x.why || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
     var plays = (x.plays || []).map(function (p) {
       return '<li><b>' + esc(p.when || '') + '</b><span>' + esc(p.do || '') + '</span></li>';
     }).join('');
+
+    var numCost = (x.costLo != null && x.costHi != null) ? tbRange1(x.costLo, x.costHi) : '未核';
+    var numNet = (x.netLo != null && x.netHi != null) ? tbRange1(x.netLo, x.netHi) : '—';
+    var beLo = null, beHi = null;
+    skus.forEach(function (s) {
+      if (s.breakEven == null) return;
+      if (beLo == null || s.breakEven < beLo) beLo = s.breakEven;
+      if (beHi == null || s.breakEven > beHi) beHi = s.breakEven;
+    });
 
     return '<article class="tb-card ' + vcls + (x.stale ? ' stale' : '') + '">' +
       '<div class="tb-card-top">' +
@@ -1249,34 +1278,41 @@
         '<span class="tb-peak">' + (x.daysToPeak != null ? '距峰值 ' + x.daysToPeak + ' 天' : '') + '</span>' +
       '</div>' +
       '<h3>' + esc(x.name || '') + '</h3>' +
-      (badges.length ? '<div class="tb-badges">' + badges.join('') + '</div>' : '') +
+      '<div class="tb-badges">' + badges.join('') + '</div>' +
       '<div class="tb-score"><b>' + (x.score != null ? x.score : '—') + '</b><span>适配分</span>' +
         '<em>供需 ' + (sp.sd != null ? sp.sd : '—') + ' · 转化 ' + (sp.cvr != null ? Math.round(sp.cvr * 100) + '%' : '—') +
         ' · 猫系 ' + (sp.tmall != null ? Math.round(sp.tmall * 100) + '%' : '—') + '</em></div>' +
       '<p class="tb-scorewhy">' + esc(x.scoreWhy || '') + '</p>' +
       '<div class="tb-nums">' +
-        '<div><span>到手成本</span><b>' + (x.landed != null ? tbMoney(x.landed) : '待核') + '</b>' +
-          (x.landed == null && (x.linkStats || {}).mainLo != null
-            ? '<i>挂牌 ' + tbMoney(x.linkStats.mainLo) + ' 起</i>' : '') + '</div>' +
-        '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b></div>' +
-        '<div><span>价带</span><b title="' + esc(tbMoney(m.lo) + ' – ' + tbMoney(m.hi)) + '">' + tbRange(m.lo, m.hi, x.priceApprox) + '</b></div>' +
-        '<div><span>榜首</span><b>' + approx + tbMoney(top.price) + '</b><i>' + esc(top.sold || '') + '</i></div>' +
+        '<div><span>全成本</span><b>' + numCost + '</b><i>货价+快递+包装</i></div>' +
+        '<div><span>单件净利</span><b class="' + (x.health === 'loss' ? 'neg' : '') + '">' + numNet + '</b><i>扣完平台/广告/退货</i></div>' +
+        '<div><span>保本售价</span><b>' + (beLo == null ? '—' : tbRange1(beLo, beHi)) + '</b><i>低于此价就亏</i></div>' +
+        '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b><i>' + (m.n ? m.n + ' 个样本' : '样本 0，纯估') + '</i></div>' +
       '</div>' +
-      '<table class="tb-price"><thead><tr><th>SKU</th><th>售价</th><th>成本</th><th>毛利</th><th>率</th><th>角色</th></tr></thead>' +
+      '<table class="tb-price"><thead><tr><th>SKU</th><th>售价</th><th>全成本</th><th>净利</th><th>率</th><th>保本</th></tr></thead>' +
         '<tbody>' + priceRows + '</tbody></table>' +
+      '<p class="tb-bridge">' + esc(bridge) + '</p>' +
       tbLinks(x) +
-      '<details class="tb-more"><summary>完整论证：货源比价 / 为什么是它 / 怎么打 / 翻车点</summary>' +
-        '<h4>1688 货源比价</h4>' +
-        (srcRows ? '<table class="tb-src"><thead><tr><th>店铺</th><th>城市</th><th>货价</th><th>运费</th><th>到手</th><th>销量</th><th>回头率</th></tr></thead><tbody>' + srcRows + '</tbody></table>'
-                 : '<p class="tb-none">还没核价。</p>') +
+      '<details class="tb-more"><summary>完整论证：成本怎么算 / 规格对不对 / 淘宝对标 / 为什么 / 怎么打 / 翻车点</summary>' +
+        '<h4>成本怎么算的</h4>' +
+        '<p class="tb-bridge">' + esc(bridge) + '</p>' +
+        '<p class="tb-assume">假设（可改）：快递 ¥3.5/包裹 × <b>' + (x.packages || 1) + '</b> 个包裹' +
+          (x.packagesNote ? '（' + esc(x.packagesNote) + '）' : '') +
+          '、包装 ¥0.6、平台 1.2%、广告 10%、退货率 6% 且退回件五成报废。</p>' +
+        '<h4>规格对不对得上</h4>' +
+        (skuNotes ? '<ul class="tb-why">' + skuNotes + '</ul>' : '<p class="tb-none">报价与规格没有明显缺口。</p>') +
+        '<h4>淘宝对标</h4>' +
+        '<p class="tb-bridge">价带 ' + tbRange(m.lo, m.hi, x.priceApprox) + '（' + (m.n ? m.n + ' 个样本' : '样本 0，是估的') +
+          '）· 榜首 ' + approx + tbMoney(top.price) + ' ' + esc(top.sold || '') + ' ' + esc(top.shop || '') +
+          '　<em>快照日 ' + esc(x.shotAt || '—') + '，与 1688 报价不同源</em></p>' +
         '<h4>为什么判断它是爆款</h4><ul class="tb-why">' + (why || '<li>—</li>') + '</ul>' +
         '<h4>怎么打</h4><ul class="tb-plays">' + (plays || '<li>—</li>') + '</ul>' +
         '<h4>最容易翻车的地方</h4><p class="tb-risk">' + esc(x.risk || '—') + '</p>' +
         '<h4>结论</h4><p class="tb-vwhy"><b>' + esc(x.verdict || '') + '</b>　' + esc(x.verdictWhy || '') + '</p>' +
       '</details>' +
       '<div class="tb-card-foot">' +
-        '<span>核价 ' + esc(x.shotAt || '—') + '</span>' +
-        '<span>' + (x.stale ? '已超 ' + staleDays + ' 天，需复核' : '在有效期内') + '</span>' +
+        '<span>报价 ' + esc(((x.linkStats || {}).fetchedAt || '').slice(5, 10).replace('-', '/')) + ' 抓取</span>' +
+        '<span>淘宝快照 ' + esc(x.shotAt || '—') + (x.stale ? '（' + x.shotDaysAgo + ' 天前）' : '') + '</span>' +
         '<span>' + esc(x.shelfFrom || '') + ' → ' + esc(x.shelfTo || '') + '</span>' +
       '</div></article>';
   }
@@ -1288,13 +1324,18 @@
     var staleDays = tb.staleAfterDays || 14;
 
     setText('tbFormula', (tb.model || {}).formula || '—');
+    var a = tb.assumptions || {};
+    setText('tbAssume', '快递 ¥' + (a.express != null ? a.express : '—') + '/包裹 · 包装 ¥' + (a.pack != null ? a.pack : '—') +
+      ' · 平台 ' + (a.platformRate != null ? String(+(a.platformRate * 100).toFixed(1)) + '%' : '—') +
+      ' · 广告 ' + (a.adRate != null ? Math.round(a.adRate * 100) + '%' : '—') +
+      ' · 退货 ' + (a.refundRate != null ? Math.round(a.refundRate * 100) + '%（退回件废五成）' : '—'));
     setText('tbStaleDays', String(staleDays));
 
     var stat = document.getElementById('tbStat');
     if (stat) {
       stat.innerHTML = '<b>' + (c.total || 0) + '</b> 张候选　做 <b>' + (c.do || 0) + '</b> / 观望 ' + (c.watch || 0) + ' / 放弃 ' + (c.drop || 0) +
-        '<br>窗口内 <b>' + (c.inWindow || 0) + '</b>　待复核 <b>' + (c.stale || 0) + '</b>　成本待核 <b>' + (c.pendingCost || 0) + '</b>' +
-        '<br>数据截至 ' + esc(tb.dataAsOf || '—');
+        '<br>净利健康 <b>' + (c.healthOk || 0) + '</b>　薄利 ' + (c.healthThin || 0) + '　亏钱 <b>' + (c.healthLoss || 0) + '</b>' +
+        '<br>' + (c.skuCount || 0) + ' 个 SKU 全部按可点报价重算　' + (c.specPending || 0) + ' 款规格待核';
     }
 
     var cal = tb.calendar || [];
@@ -1307,7 +1348,9 @@
         ? '在窗口内：<b>' + live.map(function (x) { return esc(x.name) + '（剩 ' + x.days + ' 天）'; }).join('、') + '</b>'
         : '当前没有节点在备货窗口内');
       if (next) bits.push('下一个：<b>' + esc(next.name) + '</b> ' + esc(next.shelfFrom) + ' 开窗，还有 ' + next.days + ' 天');
-      if (c.pendingCost) bits.push('<b>' + c.pendingCost + '</b> 张卡成本未核实，结论只作方向');
+      if (c.healthLoss) bits.push('<b>' + c.healthLoss + '</b> 款在代发假设下亏钱，别照页面原价上');
+      if (c.healthThin) bits.push('<b>' + c.healthThin + '</b> 款净利 <15%，等于给快递和平台打工');
+      if (c.specPending) bits.push('<b>' + c.specPending + '</b> 款「报价与规格」还没对齐，下单前必须询盘');
       st.innerHTML = bits.join('<i>·</i>');
     }
 

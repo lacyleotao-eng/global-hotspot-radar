@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T23:43:49",
+ "updatedAt": "2026-11-28T00:11:41",
  "dataAsOf": "2026-11-27",
  "generatedAtSource": "2026-11-27T23:00:00",
  "staleAfterDays": 14,
@@ -7,6 +7,19 @@
   "formula": "适配分 = 100 × √供需比 × (转化率 ÷ 25%) × (1 − 猫系占比 + 0.15)",
   "why": "√供需比压住极端值；转化率决定同样访客能产多少单；猫系占比是无货源专属生死项——天猫占 85% 意味着流量入口被锁死。蓝海值问「有没有空位」，适配分问「我能不能坐进去」。"
  },
+ "assumptions": {
+  "mode": "1688 一件代发（卖家不囤货）",
+  "express": 3.5,
+  "pack": 0.6,
+  "refundRate": 0.06,
+  "refundLossRatio": 0.5,
+  "platformRate": 0.012,
+  "adRate": 0.1,
+  "why": "快递 3.5 是义乌/义乌周边小件代发均价；包装 0.6 是气泡袋+贴纸；退款 6% 且退回件五成报废；平台 1.2%=淘宝 0.6% 软件服务费 + 0.6% 支付通道；广告 10% 按 GSV 计（起步两周可先为 0，长期不可能为 0）。",
+  "warn": "这 6 个数是假设，不是抓来的。它们是「净利」和「保本价」唯一的软环节，真实值要等你出第一周广告报表和退款报表后替换。"
+ },
+ "assumptionsWhy": "快递 3.5 是义乌/义乌周边小件代发均价；包装 0.6 是气泡袋+贴纸；退款 6% 且退回件五成报废；平台 1.2%=淘宝 0.6% 软件服务费 + 0.6% 支付通道；广告 10% 按 GSV 计（起步两周可先为 0，长期不可能为 0）。",
+ "assumptionsWarn": "这 6 个数是假设，不是抓来的。它们是「净利」和「保本价」唯一的软环节，真实值要等你出第一周广告报表和退款报表后替换。",
  "calendar": [
   {
    "date": "2026-12-12",
@@ -15,7 +28,7 @@
    "shelfFrom": "2026-11-25",
    "shelfTo": "2026-12-10",
    "note": "平台大促，报名看店铺层级；新店以自降为主",
-   "days": 15,
+   "days": 14,
    "inWindow": true,
    "passed": false
   },
@@ -26,7 +39,7 @@
    "shelfFrom": "2026-12-01",
    "shelfTo": "2026-12-20",
    "note": "桌面树、门挂花环；12/20 后下单已来不及",
-   "days": 28,
+   "days": 27,
    "inWindow": false,
    "passed": false
   },
@@ -37,7 +50,7 @@
    "shelfFrom": "2026-12-10",
    "shelfTo": "2026-12-28",
    "note": "跨年数字气球、拍照道具",
-   "days": 35,
+   "days": 34,
    "inWindow": false,
    "passed": false
   },
@@ -48,7 +61,7 @@
    "shelfFrom": "2026-12-20",
    "shelfTo": "2027-01-15",
    "note": "全年最大窗口，春节前置流量",
-   "days": 54,
+   "days": 53,
    "inWindow": false,
    "passed": false
   },
@@ -59,7 +72,7 @@
    "shelfFrom": "2026-12-20",
    "shelfTo": "2027-01-28",
    "note": "春联窗花福字；1/28 后快递陆续停发",
-   "days": 71,
+   "days": 70,
    "inWindow": false,
    "passed": false
   },
@@ -70,7 +83,7 @@
    "shelfFrom": "2027-01-20",
    "shelfTo": "2027-02-08",
    "note": "与春节同档，物流冲突，慎排",
-   "days": 79,
+   "days": 78,
    "inWindow": false,
    "passed": false
   },
@@ -81,7 +94,7 @@
    "shelfFrom": "2027-02-15",
    "shelfTo": "2027-03-01",
    "note": "年后第一波，礼品包装类",
-   "days": 101,
+   "days": 100,
    "inWindow": false,
    "passed": false
   }
@@ -131,17 +144,13 @@
      "sku": "单门套装（门挂+对联+门贴）",
      "price": 39.9,
      "cost": 11.0,
-     "role": "主推",
-     "gross": 28.66,
-     "rate": 0.718
+     "role": "主推"
     },
     {
      "sku": "双门套装（加赠窗花 2 张）",
      "price": 49.9,
      "cost": 13.5,
-     "role": "拉客单",
-     "gross": 36.1,
-     "rate": 0.723
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -167,7 +176,7 @@
      "do": "有 20+ 付款人数后，再考虑 100 元/天测 3 天；止损线 300 元"
     }
    ],
-   "risk": "套装是自组，三件商品到货不同步会导致缺件发货；必须先在 1688 确认三家都能 48 小时内发。",
+   "risk": "套装是三家工厂自组：门挂、对联、门贴各一笔运费，共 10.5 元，占全成本 27.28 的 38%。任一家晚发就缺件，缺件退款等于把这单 6.95 的净利倒赔。必须先确认三家都能 48 小时内发、且能合并成两单。",
    "verdict": "做",
    "verdictWhy": "适配分第一，供给缺口最大，客单最高。唯一麻烦是要自组套装，但这一步值得做。",
    "links": [
@@ -281,15 +290,123 @@
     "mainLo": 2.88,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "单门套装（门挂+对联+门贴）",
+     "price": 39.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "门挂花环",
+       "offer": "993635570476",
+       "shop": "义乌市茵晟工艺品有限公司",
+       "qty": 1.0,
+       "price": 2.88,
+       "sub": 2.88
+      },
+      {
+       "as": "磁吸对联",
+       "offer": "959199812266",
+       "shop": "温州晶磁工艺品有限公司",
+       "qty": 1.0,
+       "price": 8.5,
+       "sub": 8.5
+      },
+      {
+       "as": "福字门贴",
+       "offer": "992407576753",
+       "shop": "义乌市封阳工艺品有限公司",
+       "qty": 1.0,
+       "price": 4.8,
+       "sub": 4.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "取的是三家最便宜那档（2.88+8.50+4.80）；要出效果得换 ¥16.5 的发光门挂和 ¥6.8 的植绒门贴，成本再多 11 元",
+     "specPending": false,
+     "goods": 16.18,
+     "express": 10.5,
+     "pack": 0.6,
+     "costAllIn": 27.28,
+     "platform": 0.48,
+     "ad": 3.99,
+     "refund": 1.2,
+     "net": 6.95,
+     "rate": 0.174,
+     "breakEven": 31.79,
+     "health": "ok"
+    },
+    {
+     "name": "双门套装（加赠窗花 2 张）",
+     "price": 49.9,
+     "role": "拉客单",
+     "parts": [
+      {
+       "as": "门挂花环",
+       "offer": "993635570476",
+       "shop": "义乌市茵晟工艺品有限公司",
+       "qty": 1.0,
+       "price": 2.88,
+       "sub": 2.88
+      },
+      {
+       "as": "磁吸对联",
+       "offer": "959199812266",
+       "shop": "温州晶磁工艺品有限公司",
+       "qty": 1.0,
+       "price": 8.5,
+       "sub": 8.5
+      },
+      {
+       "as": "福字门贴",
+       "offer": "992407576753",
+       "shop": "义乌市封阳工艺品有限公司",
+       "qty": 1.0,
+       "price": 4.8,
+       "sub": 4.8
+      },
+      {
+       "as": "窗花 20 张装",
+       "offer": "982292893207",
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "qty": 1.0,
+       "price": 1.8,
+       "sub": 1.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "窗花按整包 20 张算，实际只送 2 张——剩下的 18 张是你的库存，别当成本消失",
+     "specPending": false,
+     "goods": 17.98,
+     "express": 10.5,
+     "pack": 0.6,
+     "costAllIn": 29.08,
+     "platform": 0.6,
+     "ad": 4.99,
+     "refund": 1.5,
+     "net": 13.73,
+     "rate": 0.275,
+     "breakEven": 33.89,
+     "health": "ok"
+    }
+   ],
+   "packages": 3,
+   "packagesNote": "门挂、对联、门贴来自三家工厂，三笔运费；能合单才有得赚",
+   "mainLanded": 27.28,
+   "costLo": 27.28,
+   "costHi": 29.08,
+   "netLo": 6.95,
+   "netHi": 13.73,
+   "health": "ok",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": true,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 1
   },
@@ -355,25 +472,19 @@
      "sku": "小尺寸 0.9m",
      "price": 13.9,
      "cost": 5.9,
-     "role": "引流",
-     "gross": 7.92,
-     "rate": 0.57
+     "role": "引流"
     },
     {
      "sku": "标准 1.3m",
      "price": 15.9,
      "cost": 5.9,
-     "role": "主推",
-     "gross": 9.9,
-     "rate": 0.623
+     "role": "主推"
     },
     {
      "sku": "加大 1.6m",
      "price": 25.9,
      "cost": 9.4,
-     "role": "拉客单",
-     "gross": 16.34,
-     "rate": 0.631
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -399,9 +510,9 @@
      "do": "只在小尺寸和全背两个 SKU 上加预算，标准款不动"
     }
    ],
-   "risk": "榜首 12.94 已是价格地板，标准 1.3m 定 15.9 只能靠差异化（植绒厚度/门贴数量）撑住，撑不住就只剩 6 元毛利。",
-   "verdict": "做",
-   "verdictWhy": "确定性最高的第一款：货源已核价、价格带已实测、图片现成。用它跑通上架链路，但别指望它爆。",
+   "risk": "三档尺寸的成本现在都是「借」的：1688 那三条链接的标题都没写长度，¥3.91 是小号、¥8.5 是「一套」、¥9.0 也没标 1.6m。不先问清长度就下单，会出现「1.6m 收到 1.3m」的退款，而这一单净利只有 9 元，退一次等于白卖 3 单。",
+   "verdict": "观望",
+   "verdictWhy": "重算后主推档（1.3m，售价 15.9）净利只剩 ¥1.04——货价 8.50 + 快递 3.5 + 包装 0.6 = 12.60，再扣平台/广告/退货 15.9×14.2%≈2.26，基本等于白干。榜首 12.94 已经是价格地板，卖 15.9 没有量、卖 19.9 没有价。只有拿到 1.3m ≤¥5 的货源（现在最低 3.91 那条是小号）或改走囤货摊薄运费，这个品才成立。",
    "links": [
     {
      "component": "duilian-magnet",
@@ -463,15 +574,112 @@
     "mainLo": 3.91,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "小尺寸 0.9m",
+     "price": 13.9,
+     "role": "引流",
+     "parts": [
+      {
+       "as": "",
+       "offer": "993386928531",
+       "shop": "石家庄立珑天启工艺品有限公司",
+       "qty": 1.0,
+       "price": 3.91,
+       "sub": 3.91
+      }
+     ],
+     "missOffers": [],
+     "specNote": "石家庄立珑天启这条标题没标长度，¥3.91 大概率是小号/纸卡款；0.9m 要询盘确认",
+     "specPending": true,
+     "goods": 3.91,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 8.01,
+     "platform": 0.17,
+     "ad": 1.39,
+     "refund": 0.42,
+     "net": 3.91,
+     "rate": 0.281,
+     "breakEven": 9.34,
+     "health": "ok"
+    },
+    {
+     "name": "标准 1.3m",
+     "price": 15.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "959199812266",
+       "shop": "温州晶磁工艺品有限公司",
+       "qty": 1.0,
+       "price": 8.5,
+       "sub": 8.5
+      }
+     ],
+     "missOffers": [],
+     "specNote": "温州晶磁这条已售 1w+，¥8.5 是「一套」价但没写 1.3m；1.3m 需询盘",
+     "specPending": true,
+     "goods": 8.5,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 12.6,
+     "platform": 0.19,
+     "ad": 1.59,
+     "refund": 0.48,
+     "net": 1.04,
+     "rate": 0.065,
+     "breakEven": 14.69,
+     "health": "thin"
+    },
+    {
+     "name": "加大 1.6m",
+     "price": 25.9,
+     "role": "拉客单",
+     "parts": [
+      {
+       "as": "",
+       "offer": "1006957163530",
+       "shop": "义乌市封阳工艺品有限公司",
+       "qty": 1.0,
+       "price": 9.0,
+       "sub": 9.0
+      }
+     ],
+     "missOffers": [],
+     "specNote": "义乌封阳 ¥9.0/套起订，1.6m 加长版是否同价必须问清",
+     "specPending": true,
+     "goods": 9.0,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 13.1,
+     "platform": 0.31,
+     "ad": 2.59,
+     "refund": 0.78,
+     "net": 9.12,
+     "rate": 0.352,
+     "breakEven": 15.27,
+     "health": "ok"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 12.6,
+   "costLo": 8.01,
+   "costHi": 13.1,
+   "netLo": 1.04,
+   "netHi": 9.12,
+   "health": "thin",
+   "specPending": true,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": 5.9,
-   "landedShop": "义乌市仟明日用百货商行",
+   "legacyLanded": 5.9,
    "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 3,
    "rank": 2
   },
@@ -519,17 +727,13 @@
      "sku": "标准 1.3m 全背磁吸",
      "price": 25.9,
      "cost": 12.0,
-     "role": "主推",
-     "gross": 13.74,
-     "rate": 0.531
+     "role": "主推"
     },
     {
      "sku": "加大 1.6m 全背磁吸",
      "price": 35.9,
      "cost": 16.0,
-     "role": "拉客单",
-     "gross": 19.68,
-     "rate": 0.548
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -609,15 +813,83 @@
     "mainLo": 6.8,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "标准 1.3m 全背磁吸",
+     "price": 25.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "997491626172",
+       "shop": "温州市盒记食品有限公司",
+       "qty": 1.0,
+       "price": 6.8,
+       "sub": 6.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "温州盒记 ¥6.8/套，标题写全背磁吸但没写尺寸；另一家同厂 ¥6.8 是同款不同链接",
+     "specPending": true,
+     "goods": 6.8,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 10.9,
+     "platform": 0.31,
+     "ad": 2.59,
+     "refund": 0.78,
+     "net": 11.32,
+     "rate": 0.437,
+     "breakEven": 12.7,
+     "health": "ok"
+    },
+    {
+     "name": "加大 1.6m 全背磁吸",
+     "price": 35.9,
+     "role": "拉客单",
+     "parts": [
+      {
+       "as": "",
+       "offer": "1102347938090",
+       "shop": "石家庄喜福优嘉工艺品有限公司",
+       "qty": 1.0,
+       "price": 15.8,
+       "sub": 15.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "石家庄喜福优嘉 ¥15.8 明确写「小尺寸 70cm 植绒全背」——70cm 卖 15.8，1.6m 报价大概率翻倍，这一档成本现在算不准",
+     "specPending": true,
+     "goods": 15.8,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 19.9,
+     "platform": 0.43,
+     "ad": 3.59,
+     "refund": 1.08,
+     "net": 10.9,
+     "rate": 0.304,
+     "breakEven": 23.19,
+     "health": "ok"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 10.9,
+   "costLo": 10.9,
+   "costHi": 19.9,
+   "netLo": 10.9,
+   "netHi": 11.32,
+   "health": "ok",
+   "specPending": true,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": true,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 3
   },
@@ -665,17 +937,13 @@
      "sku": "厨房三件套",
      "price": 19.9,
      "cost": 8.5,
-     "role": "主推",
-     "gross": 11.28,
-     "rate": 0.567
+     "role": "主推"
     },
     {
      "sku": "厨房五件套",
      "price": 29.9,
      "cost": 13.0,
-     "role": "拉客单",
-     "gross": 16.72,
-     "rate": 0.559
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -701,7 +969,7 @@
      "do": "转化率高就加预算，这是少数投得起的款"
     }
    ],
-   "risk": "厨房件容易涉及食品接触（贴碗贴盘），有材质合规风险；避开直接接触食物的品类。",
+   "risk": "三件套净利 ¥0.97、五件套 ¥1.55——按页面原价卖，是在给平台和快递打工。厨房件还容易涉及食品接触（贴碗贴盘），有材质合规风险；做的话必须把三件凑到同一家、并把客单提到 29.9/39.9。",
    "verdict": "观望",
    "verdictWhy": "转化率很漂亮，但要重新找货组套，且离春节只剩 71 天，排在上两款之后。",
    "links": [
@@ -755,15 +1023,83 @@
     "mainLo": 4.0,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "厨房三件套",
+     "price": 19.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "978637167231",
+       "shop": "浦江县福曜工艺品厂",
+       "qty": 3.0,
+       "price": 4.0,
+       "sub": 12.0
+      }
+     ],
+     "missOffers": [],
+     "specNote": "浦江福曜 ¥4.0、2 个起订，三件=3 个不同图案；三件不同店就要按 3 笔运费算，这里假设同店凑单",
+     "specPending": false,
+     "goods": 12.0,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 16.1,
+     "platform": 0.24,
+     "ad": 1.99,
+     "refund": 0.6,
+     "net": 0.97,
+     "rate": 0.049,
+     "breakEven": 18.76,
+     "health": "thin"
+    },
+    {
+     "name": "厨房五件套",
+     "price": 29.9,
+     "role": "拉客单",
+     "parts": [
+      {
+       "as": "",
+       "offer": "978637167231",
+       "shop": "浦江县福曜工艺品厂",
+       "qty": 5.0,
+       "price": 4.0,
+       "sub": 20.0
+      }
+     ],
+     "missOffers": [],
+     "specNote": "同上，5 个同店凑单",
+     "specPending": false,
+     "goods": 20.0,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 24.1,
+     "platform": 0.36,
+     "ad": 2.99,
+     "refund": 0.9,
+     "net": 1.55,
+     "rate": 0.052,
+     "breakEven": 28.09,
+     "health": "thin"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 16.1,
+   "costLo": 16.1,
+   "costHi": 24.1,
+   "netLo": 0.97,
+   "netHi": 1.55,
+   "health": "thin",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": true,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 4
   },
@@ -811,17 +1147,13 @@
      "sku": "基础款（拉花+挂饰）",
      "price": 59.9,
      "cost": 19.0,
-     "role": "主推",
-     "gross": 40.54,
-     "rate": 0.677
+     "role": "主推"
     },
     {
      "sku": "豪华款（加背景布+灯串）",
      "price": 89.9,
      "cost": 29.0,
-     "role": "拉客单",
-     "gross": 60.36,
-     "rate": 0.671
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -921,15 +1253,62 @@
     "mainLo": 3.8,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "基础款（拉花+对联）",
+     "price": 59.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "灯笼拉花",
+       "offer": "852899687983",
+       "shop": "绵阳亿动科技有限公司",
+       "qty": 1.0,
+       "price": 12.5,
+       "sub": 12.5
+      },
+      {
+       "as": "磁吸对联",
+       "offer": "993386928531",
+       "shop": "石家庄立珑天启工艺品有限公司",
+       "qty": 1.0,
+       "price": 3.91,
+       "sub": 3.91
+      }
+     ],
+     "missOffers": [],
+     "specNote": "背景布、灯串没采到货源，所以「豪华款」暂时不算——这一档是唯一能算清的",
+     "specPending": false,
+     "goods": 16.41,
+     "express": 7.0,
+     "pack": 0.6,
+     "costAllIn": 24.01,
+     "platform": 0.72,
+     "ad": 5.99,
+     "refund": 1.8,
+     "net": 27.38,
+     "rate": 0.457,
+     "breakEven": 27.98,
+     "health": "ok"
+    }
+   ],
+   "packages": 2,
+   "packagesNote": "灯笼拉花 + 磁吸对联两家，两笔运费",
+   "mainLanded": 24.01,
+   "costLo": 24.01,
+   "costHi": 24.01,
+   "netLo": 27.38,
+   "netHi": 27.38,
+   "health": "ok",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": true,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 5
   },
@@ -977,17 +1356,13 @@
      "sku": "单人套（3 件）",
      "price": 12.9,
      "cost": 6.4,
-     "role": "引流",
-     "gross": 6.42,
-     "rate": 0.498
+     "role": "引流"
     },
     {
      "sku": "全家福套（8 件）",
      "price": 29.9,
      "cost": 12.0,
-     "role": "主推",
-     "gross": 17.72,
-     "rate": 0.593
+     "role": "主推"
     }
    ],
    "why": [
@@ -1013,9 +1388,9 @@
      "do": "元旦前一周是峰值，之后转春节档"
     }
    ],
-   "risk": "退货率是这类品的最大风险，且退回的道具无法二次销售。",
-   "verdict": "观望",
-   "verdictWhy": "窗口宽、成本低，但单品没利润、退货率偏高。当作补位款。",
+   "risk": "①三件跨三店 = 三笔运费，运费比货贵；②这类道具退货率天然高，退回的拍过照、折过、脏了，基本报废；③全家福套要 8 件，任一件缺货就发不出整套，售后成本远高于单件。",
+   "verdict": "放弃",
+   "verdictWhy": "这支是真亏：3 件套全成本 18.78、卖 12.9，净利 −7.71；8 件套 28.06、卖 29.9，净利 −2.41。根因是道具来自三家不同工厂，三笔运费（10.5）几乎等于货价。除非能找到一家把 3 件凑齐、或整包采购，否则这个价格带做不了。",
    "links": [
     {
      "component": "photo-prop",
@@ -1067,15 +1442,115 @@
     "mainLo": 0.8,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 35,
+   "skus": [
+    {
+     "name": "单人套（3 件）",
+     "price": 12.9,
+     "role": "引流",
+     "parts": [
+      {
+       "as": "",
+       "offer": "656995970502",
+       "shop": "义乌市戈兮电子商务商行",
+       "qty": 1.0,
+       "price": 4.0,
+       "sub": 4.0
+      },
+      {
+       "as": "",
+       "offer": "1008586275123",
+       "shop": "义乌星泽天成供应链管理有限公司",
+       "qty": 1.0,
+       "price": 2.88,
+       "sub": 2.88
+      },
+      {
+       "as": "",
+       "offer": "856074805232",
+       "shop": "义乌市快诺工艺品厂",
+       "qty": 1.0,
+       "price": 0.8,
+       "sub": 0.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "三家各一件。除非有一家能把三件凑齐，否则运费比货贵",
+     "specPending": false,
+     "goods": 7.68,
+     "express": 10.5,
+     "pack": 0.6,
+     "costAllIn": 18.78,
+     "platform": 0.15,
+     "ad": 1.29,
+     "refund": 0.39,
+     "net": -7.71,
+     "rate": -0.598,
+     "breakEven": 21.89,
+     "health": "loss"
+    },
+    {
+     "name": "全家福套（8 件）",
+     "price": 29.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "656995970502",
+       "shop": "义乌市戈兮电子商务商行",
+       "qty": 2.0,
+       "price": 4.0,
+       "sub": 8.0
+      },
+      {
+       "as": "",
+       "offer": "1008586275123",
+       "shop": "义乌星泽天成供应链管理有限公司",
+       "qty": 2.0,
+       "price": 2.88,
+       "sub": 5.76
+      },
+      {
+       "as": "",
+       "offer": "856074805232",
+       "shop": "义乌市快诺工艺品厂",
+       "qty": 4.0,
+       "price": 0.8,
+       "sub": 3.2
+      }
+     ],
+     "missOffers": [],
+     "specNote": "8 件拼装，仍是三笔运费；要么改整包采购，要么提到 49.9",
+     "specPending": false,
+     "goods": 16.96,
+     "express": 10.5,
+     "pack": 0.6,
+     "costAllIn": 28.06,
+     "platform": 0.36,
+     "ad": 2.99,
+     "refund": 0.9,
+     "net": -2.41,
+     "rate": -0.081,
+     "breakEven": 32.7,
+     "health": "loss"
+    }
+   ],
+   "packages": 3,
+   "packagesNote": "手持牌、头饰、小挂件来自三家，三笔运费——这是这款的真实死穴",
+   "mainLanded": 28.06,
+   "costLo": 18.78,
+   "costHi": 28.06,
+   "netLo": -7.71,
+   "netHi": -2.41,
+   "health": "loss",
+   "specPending": false,
+   "daysToPeak": 34,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 6
   },
@@ -1123,17 +1598,13 @@
      "sku": "45cm 裸树",
      "price": 29.9,
      "cost": 16.0,
-     "role": "主推",
-     "gross": 13.72,
-     "rate": 0.459
+     "role": "主推"
     },
     {
      "sku": "60cm 含装饰",
      "price": 49.9,
      "cost": 26.0,
-     "role": "拉客单",
-     "gross": 23.6,
-     "rate": 0.473
+     "role": "拉客单"
     }
    ],
    "why": [
@@ -1212,15 +1683,83 @@
     "mainLo": 3.92,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 28,
+   "skus": [
+    {
+     "name": "45cm 裸树",
+     "price": 29.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "660935297295",
+       "shop": "义乌市初兴工艺品有限公司",
+       "qty": 1.0,
+       "price": 3.92,
+       "sub": 3.92
+      }
+     ],
+     "missOffers": [],
+     "specNote": "义乌初兴 ¥3.92 标的是「60cm 裸树」——裸树没有装饰球和树顶星，¥29.9 卖裸树会被骂，必须搭配件或换含装饰款",
+     "specPending": true,
+     "goods": 3.92,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 8.02,
+     "platform": 0.36,
+     "ad": 2.99,
+     "refund": 0.9,
+     "net": 17.63,
+     "rate": 0.59,
+     "breakEven": 9.35,
+     "health": "ok"
+    },
+    {
+     "name": "60cm 含装饰",
+     "price": 49.9,
+     "role": "拉客单",
+     "parts": [
+      {
+       "as": "",
+       "offer": "743530643544",
+       "shop": "汕头市晶辰工艺品有限公司",
+       "qty": 1.0,
+       "price": 9.2,
+       "sub": 9.2
+      }
+     ],
+     "missOffers": [],
+     "specNote": "汕头晶辰 ¥9.2 圆木底植绒是「小树」不是 60cm，规格同样待核；淘宝中位 27.2，49.9 明显高于市场",
+     "specPending": true,
+     "goods": 9.2,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 13.3,
+     "platform": 0.6,
+     "ad": 4.99,
+     "refund": 1.5,
+     "net": 29.51,
+     "rate": 0.591,
+     "breakEven": 15.5,
+     "health": "ok"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 8.02,
+   "costLo": 8.02,
+   "costHi": 13.3,
+   "netLo": 17.63,
+   "netHi": 29.51,
+   "health": "ok",
+   "specPending": true,
+   "daysToPeak": 27,
    "inWindow": false,
    "windowPassed": false,
-   "landed": null,
-   "landedShop": null,
-   "pendingCost": true,
+   "legacyLanded": null,
+   "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 0,
    "rank": 7
   },
@@ -1268,17 +1807,13 @@
      "sku": "20 张混装",
      "price": 9.9,
      "cost": 3.6,
-     "role": "引流",
-     "gross": 6.24,
-     "rate": 0.63
+     "role": "引流"
     },
     {
      "sku": "50 张家庭装",
      "price": 15.9,
      "cost": 5.4,
-     "role": "主推",
-     "gross": 10.4,
-     "rate": 0.654
+     "role": "主推"
     }
    ],
    "why": [
@@ -1358,15 +1893,83 @@
     "mainLo": 1.35,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "20 张混装",
+     "price": 9.9,
+     "role": "引流",
+     "parts": [
+      {
+       "as": "",
+       "offer": "982292893207",
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "qty": 1.0,
+       "price": 1.8,
+       "sub": 1.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "苍南龙港泽威 ¥1.8 就是 20 张装，规格完全对得上——这是 10 款里唯一不用估的",
+     "specPending": false,
+     "goods": 1.8,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 5.9,
+     "platform": 0.12,
+     "ad": 0.99,
+     "refund": 0.3,
+     "net": 2.59,
+     "rate": 0.262,
+     "breakEven": 6.88,
+     "health": "ok"
+    },
+    {
+     "name": "50 张家庭装",
+     "price": 15.9,
+     "role": "主推",
+     "parts": [
+      {
+       "as": "",
+       "offer": "982292893207",
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "qty": 3.0,
+       "price": 1.8,
+       "sub": 5.4
+      }
+     ],
+     "missOffers": [],
+     "specNote": "按 3 包×20 张=60 张算成本，实际只发 50 张",
+     "specPending": false,
+     "goods": 5.4,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 9.5,
+     "platform": 0.19,
+     "ad": 1.59,
+     "refund": 0.48,
+     "net": 4.14,
+     "rate": 0.26,
+     "breakEven": 11.07,
+     "health": "ok"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 9.5,
+   "costLo": 5.9,
+   "costHi": 9.5,
+   "netLo": 2.59,
+   "netHi": 4.14,
+   "health": "ok",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": 2.46,
-   "landedShop": "龙港窗花厂（源头）",
+   "legacyLanded": 2.46,
    "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 1,
    "rank": 8
   },
@@ -1414,9 +2017,7 @@
      "sku": "成品福筒",
      "price": 45.9,
      "cost": 28.4,
-     "role": "形象款",
-     "gross": 17.22,
-     "rate": 0.375
+     "role": "形象款"
     }
    ],
    "why": [
@@ -1536,15 +2137,70 @@
     "mainLo": 0.55,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "成品福筒（自组）",
+     "price": 45.9,
+     "role": "形象款",
+     "parts": [
+      {
+       "as": "福桶空桶",
+       "offer": "808478653475",
+       "shop": "金华市金东区创惠塑料制品厂",
+       "qty": 1.0,
+       "price": 0.55,
+       "sub": 0.55
+      },
+      {
+       "as": "礼盒装植绒对联",
+       "offer": "747004827983",
+       "shop": "漳州年年好电子商务有限公司",
+       "qty": 1.0,
+       "price": 7.62,
+       "sub": 7.62
+      },
+      {
+       "as": "配 20 张窗花",
+       "offer": "982292893207",
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "qty": 1.0,
+       "price": 1.8,
+       "sub": 1.8
+      }
+     ],
+     "missOffers": [],
+     "specNote": "¥0.55 那个是「2 包起订」的绒布空桶，8 个起订的是 ¥2.4——起订量决定垫资，别只看单价",
+     "specPending": false,
+     "goods": 9.97,
+     "express": 10.5,
+     "pack": 0.6,
+     "costAllIn": 21.07,
+     "platform": 0.55,
+     "ad": 4.59,
+     "refund": 1.38,
+     "net": 18.31,
+     "rate": 0.399,
+     "breakEven": 24.56,
+     "health": "ok"
+    }
+   ],
+   "packages": 3,
+   "packagesNote": "空桶、礼盒对联、窗花三家，三笔运费；合单能省 7 元",
+   "mainLanded": 21.07,
+   "costLo": 21.07,
+   "costHi": 21.07,
+   "netLo": 18.31,
+   "netHi": 18.31,
+   "health": "ok",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": 28.4,
-   "landedShop": "温州包装厂（多家）",
+   "legacyLanded": 28.4,
    "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 1,
    "rank": 9
   },
@@ -1592,9 +2248,7 @@
      "sku": "单包 10 张",
      "price": 6.9,
      "cost": 3.0,
-     "role": "不做",
-     "gross": 3.86,
-     "rate": 0.559
+     "role": "不做"
     }
    ],
    "why": [
@@ -1619,7 +2273,7 @@
      "do": "—"
     }
    ],
-   "risk": "单包无利润（运费 2.4 vs 售价 6.9），卖一单亏一单。",
+   "risk": "净利只有 ¥1.42（6.9 卖价）：快递涨 1 元、或加一个 ¥1 的包装升级，这单就归零。这个品只能当「凑单件」或 9.9 三包包邮卖，单卖一包是给快递打工。",
    "verdict": "放弃",
    "verdictWhy": "已被「剪纸窗花 20 张装」替代。这条保留在案，是为了记住这个判断错误。",
    "links": [
@@ -1673,29 +2327,73 @@
     "mainLo": 0.04,
     "fetchedAt": "2026-11-27T23:42:41"
    },
-   "daysToPeak": 71,
+   "skus": [
+    {
+     "name": "单包 10 张",
+     "price": 6.9,
+     "role": "不做",
+     "parts": [
+      {
+       "as": "",
+       "offer": "839217071361",
+       "shop": "龙港文泉包装有限公司",
+       "qty": 10.0,
+       "price": 0.04,
+       "sub": 0.4
+      }
+     ],
+     "missOffers": [],
+     "specNote": "龙港文泉 ¥0.04/张、已售 1w+，10 张=0.4 元；这品的问题不在货价，在 6.9 包邮时快递吃掉全部利润",
+     "specPending": false,
+     "goods": 0.4,
+     "express": 3.5,
+     "pack": 0.6,
+     "costAllIn": 4.5,
+     "platform": 0.08,
+     "ad": 0.69,
+     "refund": 0.21,
+     "net": 1.42,
+     "rate": 0.206,
+     "breakEven": 5.24,
+     "health": "ok"
+    }
+   ],
+   "packages": 1,
+   "packagesNote": "",
+   "mainLanded": 4.5,
+   "costLo": 4.5,
+   "costHi": 4.5,
+   "netLo": 1.42,
+   "netHi": 1.42,
+   "health": "ok",
+   "specPending": false,
+   "daysToPeak": 70,
    "inWindow": false,
    "windowPassed": false,
-   "landed": 2.46,
-   "landedShop": "龙港窗花厂",
+   "legacyLanded": 2.46,
    "pendingCost": false,
    "priceApprox": false,
    "stale": true,
-   "shotDaysAgo": 17,
+   "shotDaysAgo": 18,
    "sourceCount": 1,
    "rank": 10
   }
  ],
  "counts": {
   "total": 10,
-  "do": 3,
+  "do": 2,
   "watch": 4,
-  "drop": 3,
+  "drop": 4,
   "inWindow": 0,
   "expired": 0,
   "stale": 10,
-  "pendingCost": 6,
+  "pendingCost": 0,
   "withLinks": 10,
-  "linkCount": 38
+  "linkCount": 38,
+  "healthLoss": 1,
+  "healthThin": 2,
+  "healthOk": 7,
+  "specPending": 3,
+  "skuCount": 18
  }
 }
