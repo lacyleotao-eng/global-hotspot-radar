@@ -1,0 +1,602 @@
+[
+ {
+  "t": "00:00:00",
+  "text": "What are AI agent skills and&nbsp; why have they become an open&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:00:04",
+  "text": "standard adopted by practically&nbsp; every major AI coding platform?"
+ },
+ {
+  "t": "00:00:09",
+  "text": "Well, because skills address a&nbsp; specific problem with agents."
+ },
+ {
+  "t": "00:00:14",
+  "text": "Now AI agents, they're pretty good reasoners and&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:00:19",
+  "text": "LLMs or large language models&nbsp; already know a lot of facts."
+ },
+ {
+  "t": "00:00:24",
+  "text": "They can tell you about Kubernetes&nbsp; architecture or the the history of SQL&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:00:30",
+  "text": "or the airspeed velocity of an unladen swallow,&nbsp; that part is covered but they lack something."
+ },
+ {
+  "t": "00:00:36",
+  "text": "They lack procedural knowledge."
+ },
+ {
+  "t": "00:00:41",
+  "text": "The stuff that's specific to&nbsp; how work actually gets done,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:00:47",
+  "text": "like let's say a 47-step workflow for&nbsp; generating a compliant financial report."
+ },
+ {
+  "t": "00:00:57",
+  "text": "Yeah, that would be fun."
+ },
+ {
+  "t": "00:00:59",
+  "text": "An AI agent that is running a&nbsp; large language model when it&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:01:06",
+  "text": "encounters a task like generating this&nbsp; report, it basically has two options."
+ },
+ {
+  "t": "00:01:12",
+  "text": "Either somebody needs to prompt it with every&nbsp; single step, all 47 of them, and they need&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:01:20",
+  "text": "to do that every time, or worse still, the&nbsp; agent is just going to take a guess at it."
+ },
+ {
+  "t": "00:01:26",
+  "text": "Now a skill is how you actually&nbsp; add in that procedural knowledge&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:01:34",
+  "text": "into the agent and the format of a&nbsp; skill is almost comically simple."
+ },
+ {
+  "t": "00:01:41",
+  "text": "It's simply a skill.md file."
+ },
+ {
+  "t": "00:01:46",
+  "text": "That's a markdown file in a folder."
+ },
+ {
+  "t": "00:01:50",
+  "text": "So let me draw out what a&nbsp; skill actually looks like."
+ },
+ {
+  "t": "00:01:55",
+  "text": "So at the top."
+ },
+ {
+  "t": "00:01:58",
+  "text": "Skill.md file is some YAML front letter."
+ },
+ {
+  "t": "00:02:04",
+  "text": "So let's have a look at what&nbsp; is defined in the front letter?"
+ },
+ {
+  "t": "00:02:09",
+  "text": "Well, at a minimum, there are two things."
+ },
+ {
+  "t": "00:02:13",
+  "text": "So there is a name and there is description."
+ },
+ {
+  "t": "00:02:21",
+  "text": "These are the two mandatory fields."
+ },
+ {
+  "t": "00:02:24",
+  "text": "Now the name identifies the skill,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:02:28",
+  "text": "the description that tells the agent what&nbsp; this skill does and when it should be used."
+ },
+ {
+  "t": "00:02:35",
+  "text": "Now this description is pretty important&nbsp; because it's the trigger condition that&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:02:42",
+  "text": "tells agent exactly when this skill applies,&nbsp; so maybe the skill name is PDF Builder."
+ },
+ {
+  "t": "00:02:50",
+  "text": "And the description here that says something like,&nbsp; use this when the user asks to extract a PDF."
+ },
+ {
+  "t": "00:02:57",
+  "text": "Now there are some other fields you can put&nbsp; into the front matter like author and version,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:03:02",
+  "text": "but it's name and description that are mandatory."
+ },
+ {
+  "t": "00:03:05",
+  "text": "Now below the front mater, we also have a field."
+ },
+ {
+  "t": "00:03:12",
+  "text": "Now these are the actual instructions."
+ },
+ {
+  "t": "00:03:16",
+  "text": "These are the step-by-step workflows, the&nbsp; rules, the examples of input and output,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:03:20",
+  "text": "whatever the agent needs to know to do the job."
+ },
+ {
+  "t": "00:03:23",
+  "text": "And it's just written in plain markdown."
+ },
+ {
+  "t": "00:03:27",
+  "text": "And then the skill folder can contain&nbsp; some optional folders as well."
+ },
+ {
+  "t": "00:03:32",
+  "text": "So you don't have to have&nbsp; these, but you can add them."
+ },
+ {
+  "t": "00:03:36",
+  "text": "One of those optional folders is the scripts."
+ },
+ {
+  "t": "00:03:42",
+  "text": "And this has executable JavaScript or Python&nbsp; or bash that the agent can actually run."
+ },
+ {
+  "t": "00:03:51",
+  "text": "There's also a references directory that&nbsp; contains additional documentation that&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:03:58",
+  "text": "gets loaded if the agent determines it needs it."
+ },
+ {
+  "t": "00:04:02",
+  "text": "And finally, the other optional&nbsp; directory is the assets directory&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:04:07",
+  "text": "that contains static resources&nbsp; like templates and data files."
+ },
+ {
+  "t": "00:04:12",
+  "text": "That's what an agent skill looks like, but&nbsp; agents can have lots of skills defined for them."
+ },
+ {
+  "t": "00:04:20",
+  "text": "So what happens when there are&nbsp; like hundreds of these skills?"
+ },
+ {
+  "t": "00:04:25",
+  "text": "Loading all of them into the LLM&nbsp; context window at startup would&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:04:29",
+  "text": "blow through the token budget before&nbsp; anyone even gets to ask a question."
+ },
+ {
+  "t": "00:04:34",
+  "text": "So skills use something&nbsp; called progressive disclosure."
+ },
+ {
+  "t": "00:04:41",
+  "text": "And progressive disclosure works in three tiers."
+ },
+ {
+  "t": "00:04:46",
+  "text": "So tier one is metadata only, and that applies."
+ },
+ {
+  "t": "00:04:53",
+  "text": "So at startup, the agent loads just the&nbsp; name and description from each skill."
+ },
+ {
+  "t": "00:04:58",
+  "text": "So that's just a handful of tokens per skill."
+ },
+ {
+  "t": "00:05:01",
+  "text": "So even if there are a hundred skills installed,&nbsp; the overhead isn't gonna fill the context window."
+ },
+ {
+  "t": "00:05:07",
+  "text": "And this is kind of essentially&nbsp; akin to a skills table of contents."
+ },
+ {
+  "t": "00:05:12",
+  "text": "Now tier two, this relates&nbsp; to the full instructions."
+ },
+ {
+  "t": "00:05:17",
+  "text": "When the agent sees a request that&nbsp; matches this skill's description,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:05:21",
+  "text": "it reads the complete skill.md body into context."
+ },
+ {
+  "t": "00:05:26",
+  "text": "And this tells the agent what to&nbsp; do, the skill we are teaching it."
+ },
+ {
+  "t": "00:05:31",
+  "text": "And that identification, the matching&nbsp; of a given requirement for a task to&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:05:36",
+  "text": "the skill available is something that&nbsp; happens through the LLM's own reasoning."
+ },
+ {
+  "t": "00:05:41",
+  "text": "The model decides when it&nbsp; can make use of the skill,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:05:45",
+  "text": "which is why a good skill&nbsp; description is so important."
+ },
+ {
+  "t": "00:05:50",
+  "text": "Then tier three, that's&nbsp; these optional folders here."
+ },
+ {
+  "t": "00:05:54",
+  "text": "So these are the resources that maps to the&nbsp; scripts and references and the assets folders."
+ },
+ {
+  "t": "00:06:00",
+  "text": "And they only get loaded when a&nbsp; specific task actually needs them."
+ },
+ {
+  "t": "00:06:04",
+  "text": "So the agent starts with a lightweight&nbsp; index of everything it can do."
+ },
+ {
+  "t": "00:06:09",
+  "text": "That's the name and description."
+ },
+ {
+  "t": "00:06:11",
+  "text": "It pulls in the detailed instructions&nbsp; when they're relevant, the body,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:06:15",
+  "text": "based on matching the trigger condition."
+ },
+ {
+  "t": "00:06:18",
+  "text": "And it grabs resources only at the point of need."
+ },
+ {
+  "t": "00:06:21",
+  "text": "Now skills bring a type of knowledge to agents."
+ },
+ {
+  "t": "00:06:26",
+  "text": "There are several ways to&nbsp; incorporate knowledge into an agent."
+ },
+ {
+  "t": "00:06:28",
+  "text": "So let's just briefly compare them&nbsp; because they handle different things."
+ },
+ {
+  "t": "00:06:34",
+  "text": "And the first one I just want to mention is MCP."
+ },
+ {
+  "t": "00:06:39",
+  "text": "That's Model Context Protocol."
+ },
+ {
+  "t": "00:06:42",
+  "text": "What sort of knowledge does MCP give you?"
+ },
+ {
+  "t": "00:06:45",
+  "text": "Gives you tool access."
+ },
+ {
+  "t": "00:06:47",
+  "text": "It gives agents the ability to call out to&nbsp; external APIs and to interact with services."
+ },
+ {
+  "t": "00:06:53",
+  "text": "MCP is about what the agent can reach,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:06:57",
+  "text": "but it doesn't tell the agent when to&nbsp; reach for it or what to do once it has."
+ },
+ {
+  "t": "00:07:03",
+  "text": "So that's MCP."
+ },
+ {
+  "t": "00:07:04",
+  "text": "Another one is RAG, Retrieval&nbsp; Augmented Generation,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:07:10",
+  "text": "and RAG that handles factual&nbsp; knowledge, so it pulls in..."
+ },
+ {
+  "t": "00:07:15",
+  "text": "Relevant chunks from our&nbsp; knowledge database at run time,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:07:18",
+  "text": "which is pretty handy when the&nbsp; agent needs to look something up."
+ },
+ {
+  "t": "00:07:22",
+  "text": "But RAG doesn't teach an&nbsp; agent how to do something."
+ },
+ {
+  "t": "00:07:24",
+  "text": "It's reference material."
+ },
+ {
+  "t": "00:07:27",
+  "text": "What about another one?"
+ },
+ {
+  "t": "00:07:28",
+  "text": "How about fine tuning?"
+ },
+ {
+  "t": "00:07:32",
+  "text": "What can that do for us?"
+ },
+ {
+  "t": "00:07:33",
+  "text": "Well, fine tuning bakes knowledge&nbsp; directly into the model's weights."
+ },
+ {
+  "t": "00:07:40",
+  "text": "Now that's something that's&nbsp; permanent, but it's expensive."
+ },
+ {
+  "t": "00:07:43",
+  "text": "And if the model changes the&nbsp; fine-tuning has to be redone."
+ },
+ {
+  "t": "00:07:46",
+  "text": "Now skills don't really do any of this so&nbsp; what knowledge do skills bring to agents?"
+ },
+ {
+  "t": "00:07:58",
+  "text": "Well skills handle as I mentioned&nbsp; right up front procedural knowledge."
+ },
+ {
+  "t": "00:08:05",
+  "text": "It's how to do things in what&nbsp; order and with what judgment,"
+ },
+ {
+  "t": "00:08:10",
+  "text": "and because they just files Well,&nbsp; they can be version control,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:08:14",
+  "text": "they could be easily updated and you&nbsp; can easily move them between platforms."
+ },
+ {
+  "t": "00:08:19",
+  "text": "Now, in practice, skills will&nbsp; often use some of these other&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:08:24",
+  "text": "forms of knowledge like, well, MCP for example."
+ },
+ {
+  "t": "00:08:27",
+  "text": "So MCP provides the capability to invoke something&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:08:31",
+  "text": "externally and the skill provides the&nbsp; judgment for when and how to do that."
+ },
+ {
+  "t": "00:08:37",
+  "text": "Now, one more thing to say about skills."
+ },
+ {
+  "t": "00:08:41",
+  "text": "Is that the skill.md format is an open standard,"
+ },
+ {
+  "t": "00:08:45",
+  "text": "and it's published at agent skills.io&nbsp; and that's an Apache 2.0 license project,"
+ },
+ {
+  "t": "00:08:56",
+  "text": "and it was adopted across a bunch of AI platforms&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:09:00",
+  "text": "like Claude Code and OpenAI&nbsp; Codex and many other tools."
+ },
+ {
+  "t": "00:09:05",
+  "text": "So a skill built for one platform works&nbsp; on any platform that supports this spec."
+ },
+ {
+  "t": "00:09:11",
+  "text": "Now there's a useful way to think about&nbsp; skills and it comes from cognitive science."
+ },
+ {
+  "t": "00:09:16",
+  "text": "Now humans have distinct types of memory."
+ },
+ {
+  "t": "00:09:19",
+  "text": "There's semantic memory, which are facts."
+ },
+ {
+  "t": "00:09:22",
+  "text": "So Rome is the capital of Italy."
+ },
+ {
+  "t": "00:09:25",
+  "text": "There's episodic memory, which are experiences."
+ },
+ {
+  "t": "00:09:29",
+  "text": "So, uh, I went to Rome last summer."
+ },
+ {
+  "t": "00:09:33",
+  "text": "Actually I did, and it was lovely."
+ },
+ {
+  "t": "00:09:35",
+  "text": "Uh, and then there's procedural memory, which&nbsp; are skills like how to ride a scooter on the&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:09:41",
+  "text": "streets of Rome and live to tell&nbsp; the tale, which I also did barely."
+ },
+ {
+  "t": "00:09:47",
+  "text": "Now agent architectures are&nbsp; starting to mirror this."
+ },
+ {
+  "t": "00:09:52",
+  "text": "So semantic memory, that maps&nbsp; pretty closely to retrieval,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:09:59",
+  "text": "augmented generation and knowledge bases."
+ },
+ {
+  "t": "00:10:02",
+  "text": "Episodic memory."
+ },
+ {
+  "t": "00:10:03",
+  "text": "Well, that really maps to conversational."
+ },
+ {
+  "t": "00:10:08",
+  "text": "Logs and interaction history&nbsp; and procedural memory."
+ },
+ {
+  "t": "00:10:12",
+  "text": "Well, yep, that maps quite nicely to skill files."
+ },
+ {
+  "t": "00:10:20",
+  "text": "Now, one thing that does need mentioning&nbsp; is that skills can include executable&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:10:29",
+  "text": "scripts with access to file systems&nbsp; and environment variables and API keys."
+ },
+ {
+  "t": "00:10:37",
+  "text": "That's what makes them powerful, but&nbsp; it's also what makes trust so important."
+ },
+ {
+  "t": "00:10:45",
+  "text": "Because when an agent runs one of these scripts,&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:10:50",
+  "text": "it's typically executing&nbsp; commands locally on your machine"
+ },
+ {
+  "t": "00:10:53",
+  "text": "and audits have found publicly&nbsp; available skills frequently&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:10:58",
+  "text": "contain bad stuff like prompt injection, bad stuff"
+ },
+ {
+  "t": "00:11:04",
+  "text": "like tool poisoning, bad&nbsp; stuff like hidden malware."
+ },
+ {
+  "t": "00:11:10",
+  "text": "Basically the usual suspects&nbsp; for any open ecosystem."
+ },
+ {
+  "t": "00:11:13",
+  "text": "So, so treat skill installation&nbsp; the way that any responsible&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:11:18",
+  "text": "team treats installing any software dependency,"
+ },
+ {
+  "t": "00:11:21",
+  "text": "which is to say, review it and understand what&nbsp; it does before using it on your local machine."
+ },
+ {
+  "t": "00:11:28",
+  "text": "So, So where does this leave us?"
+ },
+ {
+  "t": "00:11:30",
+  "text": "Well, skills are procedural memory for AI agents."
+ },
+ {
+  "t": "00:11:34",
+  "text": "They're defined in a markdown&nbsp; file that lives in a folder&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:11:38",
+  "text": "that teaches an agent how to do a specific job."
+ },
+ {
+  "t": "00:11:42",
+  "text": "Skills are conditionally triggered&nbsp; and they load efficiently through&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:11:48",
+  "text": "progressive disclosure and the&nbsp; format is an open standard."
+ },
+ {
+  "t": "00:11:52",
+  "text": "So an agent that already&nbsp; knows the airspeed velocity&nbsp;&nbsp;"
+ },
+ {
+  "t": "00:11:56",
+  "text": "of an unlaid and swallow, African and European,"
+ },
+ {
+  "t": "00:11:59",
+  "text": "can now also learn how to perform any&nbsp; repeatable task you define for it."
+ },
+ {
+  "t": "00:12:05",
+  "text": "So that's AI agent skills."
+ },
+ {
+  "t": "00:12:07",
+  "text": "If you're using them, let me know in the comments."
+ }
+]

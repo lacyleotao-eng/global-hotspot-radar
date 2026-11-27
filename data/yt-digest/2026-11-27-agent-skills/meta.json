@@ -1,0 +1,27 @@
+{
+ "id": "Lg-meK5IU8Q",
+ "title": "What AI Agent Skills Are and How They Work",
+ "channel": "IBM Technology",
+ "duration": 745,
+ "viewCount": 615588,
+ "uploadDate": "20260420",
+ "webpage": "https://www.youtube.com/watch?v=Lg-meK5IU8Q",
+ "category": "AI / 科技工具",
+ "categoryKey": "tech",
+ "guideTitle": "AI Agent技能：1个SKILL.md文件、3层加载",
+ "dek": "用一份 SKILL.md 给智能体补上流程知识：字段、目录、三层加载和安全审查一次讲清。",
+ "city": "软件 · 智能体开发",
+ "steps": 9,
+ "images": 10,
+ "cover": "img/01-skill-md-frontmatter.jpg",
+ "digestAt": "2026-11-27",
+ "chapters": [
+  {"start": 0, "title": "The problem with AI agents"},
+  {"start": 110, "title": "Defining an agent skill"},
+  {"start": 274, "title": "Efficient skill execution"},
+  {"start": 381, "title": "Skills vs. other methods"},
+  {"start": 551, "title": "Best practices and safety"}
+ ],
+ "usedSubtitle": "Lg-meK5IU8Q.en.vtt",
+ "fetchedAt": "2026-11-27T12:33:41"
+}

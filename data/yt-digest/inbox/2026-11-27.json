@@ -1,101 +1,111 @@
 {
  "date": "2026-11-27",
- "generatedAt": "2026-11-27T10:47:34",
+ "generatedAt": "2026-11-27T12:35:00",
  "types": [
-  "food",
-  "tech",
-  "money"
+  "study",
+  "home",
+  "diy"
  ],
  "candidates": [
   {
-   "videoId": "OSsRfVSJz8g",
-   "url": "https://www.youtube.com/watch?v=OSsRfVSJz8g",
-   "title": "老广州人才知道的顶级街头美食！这期视频一定要收藏！",
-   "channel": "渣叔爱酒",
+   "videoId": "WZQb7Rk7EeQ",
+   "url": "https://www.youtube.com/watch?v=WZQb7Rk7EeQ",
+   "title": "首战雅思8分是如何学的？ | 雅思备考经验分享 | 整体规划+每科详细介绍+额外tips | 短期雅思备考",
+   "channel": "ElenaLin_青青",
+   "duration": 840,
+   "views": 588438,
+   "publishedAt": "",
+   "categoryKey": "study"
+  },
+  {
+   "videoId": "yCoW1BPTyA0",
+   "url": "https://www.youtube.com/watch?v=yCoW1BPTyA0",
+   "title": "/讀書分享EP.4/學測超強讀書計畫｜安排讀書計畫的小訣竅💡｜適用於任何大考 長期讀書安排",
+   "channel": "Hey It's Isa!",
+   "duration": 468,
+   "views": 261521,
+   "publishedAt": "",
+   "categoryKey": "study"
+  },
+  {
+   "videoId": "y8tlbN72nSU",
+   "url": "https://www.youtube.com/watch?v=y8tlbN72nSU",
+   "title": "裝修小白必看！裝修要準備多少錢？應該找ID嗎？插頭要裝多少個？裝修風格怎樣決定？裝修前要做的功課，我用了半年去study，一次過和你分享！",
+   "channel": "欣怡的生存日記",
+   "duration": 1353,
+   "views": 92676,
+   "publishedAt": "",
+   "categoryKey": "home"
+  },
+  {
+   "videoId": "zGoohYT2Vlc",
+   "url": "https://www.youtube.com/watch?v=zGoohYT2Vlc",
+   "title": "新成屋裝修預算怎麼抓？這些設計先不要！裝潢費用立即省一半！",
+   "channel": "裝修 in Joy",
+   "duration": 767,
+   "views": 67911,
+   "publishedAt": "",
+   "categoryKey": "home"
+  },
+  {
+   "videoId": "YsneJjOyvBg",
+   "url": "https://www.youtube.com/watch?v=YsneJjOyvBg",
+   "title": "【新成屋】第一次裝修就上手！預算、付款流程一次解 首購族必看｜裝修小武郎",
+   "channel": "裝修小武郎",
+   "duration": 409,
+   "views": 19885,
+   "publishedAt": "",
+   "categoryKey": "home"
+  },
+  {
+   "videoId": "3GkhcgG7LNk",
+   "url": "https://www.youtube.com/watch?v=3GkhcgG7LNk",
+   "title": "裝修設計房子怎麼開始｜裝修設計流程｜初步洽談｜平面規劃｜設計委託｜-【室內設計Talk】【甘丹設計】",
+   "channel": "甘丹設計",
+   "duration": 492,
+   "views": 11556,
+   "publishedAt": "",
+   "categoryKey": "home"
+  },
+  {
+   "videoId": "6onP-fI3TWc",
+   "url": "https://www.youtube.com/watch?v=6onP-fI3TWc",
+   "title": "LAMINATE REPAIR DIY - How to perfectly fix a damaged laminate in 5 minutes",
+   "channel": "The Restorer TIPS",
+   "duration": 363,
+   "views": 15534431,
+   "publishedAt": "",
+   "categoryKey": "diy"
+  },
+  {
+   "videoId": "yP6GzKEKrCc",
+   "url": "https://www.youtube.com/watch?v=yP6GzKEKrCc",
+   "title": "Amazing Technique For Repairing Plastic that Nobody Thought Of!",
+   "channel": "Gaus DIY",
+   "duration": 551,
+   "views": 15220050,
+   "publishedAt": "",
+   "categoryKey": "diy"
+  },
+  {
+   "videoId": "6c-hwZ08kZk",
+   "url": "https://www.youtube.com/watch?v=6c-hwZ08kZk",
+   "title": "Intelligent Plastic Repairing Technique That Will Make You Level 100 Master",
+   "channel": "Gaus DIY",
    "duration": 698,
-   "views": 283362,
+   "views": 12036064,
    "publishedAt": "",
-   "categoryKey": "food"
+   "categoryKey": "diy"
   },
   {
-   "videoId": "ViIw6Rj3xlA",
-   "url": "https://www.youtube.com/watch?v=ViIw6Rj3xlA",
-   "title": "イスタンブールで必見のストリートフードガイド！Istanbul Street Food VLOG [4k]",
-   "channel": "奥地利的小胡 Who's'HU",
-   "duration": 504,
-   "views": 45002,
+   "videoId": "C0M5tUQSaps",
+   "url": "https://www.youtube.com/watch?v=C0M5tUQSaps",
+   "title": "How to PROPERLY Repair a Rust Hole in your Car or Truck (DIY for Beginners)",
+   "channel": "ChrisFix",
+   "duration": 2048,
+   "views": 9358621,
    "publishedAt": "",
-   "categoryKey": "food"
-  },
-  {
-   "videoId": "kdd9EMuQynQ",
-   "url": "https://www.youtube.com/watch?v=kdd9EMuQynQ",
-   "title": "那不勒斯街头美食之旅：意大利女孩的周末狂吃攻略！",
-   "channel": "意大利女孩善美",
-   "duration": 829,
-   "views": 39137,
-   "publishedAt": "",
-   "categoryKey": "food"
-  },
-  {
-   "videoId": "FwOTs4UxQS4",
-   "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4",
-   "title": "AI Agents, Clearly Explained",
-   "channel": "Jeff Su",
-   "duration": 609,
-   "views": 5836228,
-   "publishedAt": "",
-   "categoryKey": "tech"
-  },
-  {
-   "videoId": "EH5jx5qPabU",
-   "url": "https://www.youtube.com/watch?v=EH5jx5qPabU",
-   "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
-   "channel": "Futurepedia and AI Agent Lab",
-   "duration": 1558,
-   "views": 4678049,
-   "publishedAt": "",
-   "categoryKey": "tech"
-  },
-  {
-   "videoId": "zkXonmqIBFg",
-   "url": "https://www.youtube.com/watch?v=zkXonmqIBFg",
-   "title": "101 Ways To Use AI In Your Daily Life",
-   "channel": "Tina Huang",
-   "duration": 866,
-   "views": 780766,
-   "publishedAt": "",
-   "categoryKey": "tech"
-  },
-  {
-   "videoId": "o2qVt4irs9c",
-   "url": "https://www.youtube.com/watch?v=o2qVt4irs9c",
-   "title": "(一定要看，下一個中招的可能就是你！）這種新型騙局正在席捲互聯網，擺攤就能月入30萬？！背後套路深到你無法想像！[驚掉下巴 | 小烏]",
-   "channel": "驚掉下巴",
-   "duration": 607,
-   "views": 606495,
-   "publishedAt": "",
-   "categoryKey": "money"
-  },
-  {
-   "videoId": "6O6IrVFMr3U",
-   "url": "https://www.youtube.com/watch?v=6O6IrVFMr3U",
-   "title": "牛肉饼兄弟日流水过万，却被新品牌取代！两人转身楼下摆摊，联合多种小吃打通园区配送，把冷清街带成全城网红街！ #短劇 #逆襲 #drama #小吃创业 #男頻",
-   "channel": "微光漫剧",
-   "duration": 2396,
-   "views": 88318,
-   "publishedAt": "",
-   "categoryKey": "money"
-  },
-  {
-   "videoId": "rBdOGNlvjIg",
-   "url": "https://www.youtube.com/watch?v=rBdOGNlvjIg",
-   "title": "青岛小哥摆摊卖重口味小吃，20一碗要啥给啥，小摊一晚流水6000块【好食勇哥】",
-   "channel": "好食勇哥",
-   "duration": 703,
-   "views": 68069,
-   "publishedAt": "",
-   "categoryKey": "money"
+   "categoryKey": "diy"
   }
  ]
 }

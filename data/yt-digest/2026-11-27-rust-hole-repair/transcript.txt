@@ -1,0 +1,501 @@
+[00:00:00] Hey guys Chrisfix here!
+[00:00:01] and today I'm going to show you how to permanently and
+[00:00:04] Properly repair a rust hole in your car. In this case our rust hole is in the floorboard
+[00:00:09] So let's go underneath the car and let me show you the rust. We need to repair
+[00:00:12] So right here is the floor of the car. This is where your seat bolts into
+[00:00:16] This is where your feet go and this right here is a large rust hole
+[00:00:21] Not only does it go through to the interior
+[00:00:23] But right here is a structural point for the suspension it ties right into the floorboard and there's a giant hole
+[00:00:29] So that's definitely not good
+[00:00:30] This needs to be repaired. Now not only does this need to be repaired for safety reasons
+[00:00:34] But it also has to be repaired because we want to double the horsepower of this car with a turbo kit
+[00:00:39] And don't worry
+[00:00:40] There will be an in-depth DIY video on how to install your very own turbo kit with common hand tools
+[00:00:46] But before we do that
+[00:00:47] We need to fix some odds and ends to make this safe and reliable for
+[00:00:50] Double the horsepower also just for driving around in general
+[00:00:53] We need to fix that rust hole
+[00:00:55] And in order to fix that rust hole here are all the tools and products that you're going to need you are going to need
+[00:01:00] A welder, don't worry
+[00:01:01] I'll explain more about this
+[00:01:02] But you can find them as cheap as a hundred bucks and I'll get more into that as we get to the welding portion
+[00:01:06] That's not the difficult part!
+[00:01:07] The difficult part is the cutting portion and you'll see why and here's the rest of the tools that you're gonna need as
+[00:01:11] Always get those safety glasses on first and as you can see, we don't need many tools at all to get the job done
+[00:01:17] We have an angle grinder with a wire wheel attachment
+[00:01:19] We have a drill and the reason why we have a drills because we're gonna be using a sheet metal nibbler
+[00:01:24] This is really helpful for cutting sheet metal and it works great. I can't wait to show you how that works
+[00:01:29] Then we have a 12 millimeter
+[00:01:31] Socket because we need to remove the seat to get to our hole and then we have our sheet metal now the sheet metal could
+[00:01:37] Be sourced from an actual car maybe from a junkyard. Maybe somebody's parting out a car. Maybe somebody has a shell whatever it is
+[00:01:42] See if you can get some sheet metal like this and it'll fit right?
+[00:01:45] In but let's just say you can't get sheet metal like this. Well, you could go to a store and buy a sheet metal
+[00:01:50] That's a similar thickness and then you could cut out the part that you need to patch the hole
+[00:01:55] But if your holes very large or you need an entire floorboard most of the time those floorboards could be found
+[00:02:01] Aftermarket and you cut out your old floorboards and you put in the new one and you weld it in so you could search that
+[00:02:06] Online for your year, make and model no matter what method you use to get your sheet metal after watching this video
+[00:02:11] You'll be able to patch the hole in car now
+[00:02:14] The last thing to do after we patch the hole is to paint it so that we have a sealed surface
+[00:02:20] Oxygen and water can't penetrate so we don't get rust again. And that's all there is to it
+[00:02:24] Now before we go and start cutting out that old rust and welding in a new floor board the first thing you need to do
+[00:02:30] Very important. The first thing is make sure you find out why it rusted you need to stop it from rusting again
+[00:02:37] Most of the times because water gets in there it sits there and over time it rusts, especially on a car like this
+[00:02:43] Which is a convertible check this out
+[00:02:45] this seal is known to go bed since this top comes off and
+[00:02:49] As you can see there's pulling water down there rained yesterday
+[00:02:53] So you need to figure out where your water is coming from in this case?
+[00:02:56] We know it's coming from this weather stripping right here. So let's real quickly swap it out first
+[00:03:01] We need to remove the top to get to this weather stripping then it's held in by two Phillips head screws
+[00:03:05] So remove the first one and the second one
+[00:03:08] Good and then we could peel the weather stripping off the pinch weld to remove it and sometimes they use
+[00:03:13] Adhesive to hold the weather stripping on but most of the time it's just pressed on like this so it should come off pretty easily
+[00:03:19] so out with the old and
+[00:03:20] in with the new but before we install the new weather stripping we need to address some hidden rust and if we run into any
+[00:03:27] Rust like this we want to address it by sanding it down and then painting it so it doesn't rust any more
+[00:03:32] So first send away the rust using a wire wheel and make sure you remove
+[00:03:36] Every speck of rust any rust that you leave is just gonna spread again with all the rust removed now
+[00:03:41] we're down to shiny metal and we could use a
+[00:03:43] Special rust barrier paint that coats the metal and will prevent future rust so spray on that paint and let it dry
+[00:03:50] All right. So with all the rust removed to bare metal it's painted. It's sealed it won't rust again
+[00:03:57] I also did it in a couple other locations up here and a little bit down there
+[00:04:00] I removed all the rust and painted it we are ready to install
+[00:04:03] Our weather stripping so get the weather stripping in place
+[00:04:06] And all you need to do is push it onto the pinch weld like that
+[00:04:09] It's super easy and the top part just fits into the channel. So press it in all the way and we're good to go
+[00:04:17] Finally, we need to screw these last two screws that hold it in place. And that's all there is to it
+[00:04:22] All right with our new weather stripping installed. This looks awesome. Now we
+[00:04:27] Our water issues so we won't be getting any more water onto the carpet so we won't get any more rust
+[00:04:32] now what we need to do is take the seat out pull the carpeting up and get access to that rust hole so we could
+[00:04:37] Cut it out. So the first thing we need to do let's unbolt this seat to remove the seat
+[00:04:42] There are two 12 millimeter bolts in the front good and now we could slide the seat forward
+[00:04:46] Which gives us access to the two rear bolts as well as the seat belt bolt and we're gonna have to remove that
+[00:04:51] So we could pull the carpet up good and now carefully remove the seat from the car
+[00:04:55] So we don't damage anything then we could remove the floor mat
+[00:04:58] And unfortunately, my door sill trim is broken
+[00:05:00] but that just pops out and
+[00:05:02] Finally we could sneak that carpet out from underneath the rear storage bins like so and then get the center console out of the way
+[00:05:08] And then we can move the carpet to the side. All right
+[00:05:11] So with the carpet pushed up out of the way
+[00:05:13] I actually have a bungee cord to the steering wheel so we don't have to worry about the carpet falling down if we're cutting or
+[00:05:17] Welding we don't want this to catch fire or get in our way now
+[00:05:20] We could take a look at what we have to work here
+[00:05:22] And unfortunately this hole seems a little bit bigger than it looked underneath it
+[00:05:27] Looks like this is solid which is good, but it looks like we do have a bunch of rust here
+[00:05:31] Another good thing is in the front here. You can see it's all good sheet metal
+[00:05:36] I don't see any rust which is good. Hopefully this is just surface rust here
+[00:05:40] So we're gonna just go around here and see with the grinder where our surface rust is versus where our bad rust is
+[00:05:47] So let's get that done. Now since we're going to be using a grinder to grind away all this rust
+[00:05:51] It's gonna create a lot of dust so it's very important
+[00:05:54] You need to make sure you have I protect and a good dust mask now. This is an n95 dust mask
+[00:05:58] It's better than nothing
+[00:05:59] But our only filters out 95% of the particles in the air and these glasses are good because it'll prevent things from hitting your eyes
+[00:06:04] But air could get around it and dust could still get in your eyes
+[00:06:07] So what I prefer is a mask like this this works way better
+[00:06:11] It completely seals your face. So you can't get anything in your eyes. You can see here
+[00:06:15] We have a seal on the outside and we have a seal around your nose
+[00:06:19] double-sealed and this is a
+[00:06:21] p100 filter which filters out
+[00:06:24] 99.97%
+[00:06:25] Of dust in the air, which is a lot better
+[00:06:28] You don't want to be breathing this stuff in especially since we're kind of in an enclosed area
+[00:06:31] It's a good idea to find a mask or a half mask like this with the p100 filters. So that's my recommendation
+[00:06:37] And since we don't want to get dust all over the interior of the car
+[00:06:40] To breathe it in another idea that I had that you don't have to do but it's helpful is get something like this
+[00:06:45] So I bought some 6-inch ducting tube and you can see very simple
+[00:06:49] But it'll work and then a blower motor Finn and I'm gonna have negative pressure
+[00:06:53] So this is gonna suck all that
+[00:06:55] Dusty air out of the car and then you could put a filter on the end of here so you could blow it out far
+[00:06:59] away
+[00:06:59] This is about 20 feet long so I can keep it away from me get that air filtered and then we don't have to worry
+[00:07:04] About that dust getting all over the interior of the car because that would just make a mess
+[00:07:09] So just another thing that you guys can do you don't need to just giving you some ideas
+[00:07:12] So, let's see how bad this rust really is. All right moment of truth with our wire wheel
+[00:07:17] We got the vent going and let's have at it now
+[00:07:20] It's very important to send down the entire floorboard there could easily be hidden rusts
+[00:07:25] also
+[00:07:26] you want to remove as much rust as you possibly can and get down to that shiny metal and
+[00:07:30] Don't forget to get into all those nooks and crannies so you can get a good idea of what we need to cut out
+[00:07:35] Speaking of nooks and crannies. We also want to remove any seam sealer
+[00:07:39] We have near the rust so we can see if there's damage underneath that
+[00:07:42] So just grab a flathead screwdriver
+[00:07:44] Or a scraper or something like that and you want to scrape away the seam sealer
+[00:07:48] This seam sealer is used by the factory because they don't weld the entire seam
+[00:07:51] so they need to prevent moisture from getting in there which causes rust so they add this on top and
+[00:07:55] With the seam sealer removed you can see I'm hitting this area here just to see how strong it is
+[00:08:00] And this is solid which is good news
+[00:08:03] So with our seam sealer removed from all the spots where we want to check out see if there's any rust and we have this
+[00:08:08] Whole surface sanded down so we can see how bad the rust is. There's one more place
+[00:08:11] We need to check and that
+[00:08:12] Is to check underneath the car and we want to take a look under here to see how bad the rust is on this side
+[00:08:18] As well, so just like up top. We want to get to the bare metal surface
+[00:08:22] So wire wheel all the undercoating away to expose the metal and be sure to remove the undercoating a couple inches past the rust hole
+[00:08:28] Sometimes the rust creeps up underneath the undercoating and you could miss it if you don't do that
+[00:08:32] So here's what it looked like before with all the undercoating covering all the sheet metal so we couldn't see and here's the after
+[00:08:38] Now look at how much more we could see in here with removing that under coating like right here this right here
+[00:08:44] Didn't look like it was rusted through from the top, but from the bottom you could see there's holes
+[00:08:47] So we're gonna have to cut this out gonna cut along here
+[00:08:50] This metal is actually good over here, which is good and then we're gonna to come up to above here now
+[00:08:55] The nice thing is the metal up here this top part is good
+[00:08:59] This metal right here is gonna get cut out but this metal up here
+[00:09:01] We're gonna be able to butt up against it and weld right to that, which is awesome
+[00:09:05] So let's take a look at this from the other side
+[00:09:07] Now looking from the top you can see I drew a line that shows exactly
+[00:09:12] Where we're gonna cut out going around all the rust and then we have all good metal on the outside
+[00:09:17] Here that we could weld to and then paint later on and one thing I want to show you
+[00:09:21] How can you tell the difference between bad metal and good metal? Why did this line get drawn here?
+[00:09:25] Why not like all the way out here? Well this metal over here
+[00:09:30] That is solid this metal over here I
+[00:09:37] Could punch right through that so that's how I came up with that line here. This metal is still good
+[00:09:42] It's just surface rust will be able to weld right to it
+[00:09:44] So with that we know all this metal is bad and all this metal here is good
+[00:09:49] Let's go cut out the bad metal and you could cut this out a bunch of different ways
+[00:09:53] You could get a cut off wheel and just cut out this whole thing. You get a plasma cutter
+[00:09:57] You could get a saw the possibilities are endless
+[00:10:00] what I'm gonna be using is a sheet metal nibbler when you pull the trigger on the drill the end of the tool has like
+[00:10:07] A little punch that punches out the sheet metal little by little it's basically taking little nibbles out of that sheet metal
+[00:10:13] So this is super easy to use. It's a versatile tool you could cut in any direction and it's perfect for this sheet metal
+[00:10:19] So let me show you how to use it
+[00:10:20] all you have to do is put the sheet metal in the opening of the nibbler and push it in the direction you want to
+[00:10:25] Cut that's all there is to it
+[00:10:27] Like I said, you could use any tool you want to cut this metal out
+[00:10:30] But I thought this was a good tool for the job where you have good control
+[00:10:33] You can make Street even lines and it's pretty accessible to everybody
+[00:10:36] all you need is a drill also as you get more comfortable with this you could crank this baby up to full speed and get
+[00:10:41] stuff cut out even quicker overall
+[00:10:44] The tool is easy and safe to use and also doing it from under the car gives you more room to move the drill around
+[00:10:50] So it's a lot easier so you get the idea make sure you cut out all the rust
+[00:10:53] It's pretty simple and any spots that aren't clean cut like this. Don't worry
+[00:10:57] You could use a file to straighten out the edges, but at this stage, it doesn't have to be perfect
+[00:11:01] Just get it a little bit straighter like that. So there we go
+[00:11:04] that's a nice clean cut and we cleaned up all the edges with the
+[00:11:08] We could clean it up a little bit more but we might as well wait
+[00:11:10] This is gonna be a nice easy shape to cut out of our new sheet metal
+[00:11:12] So this is perfect and we got rid of all that old
+[00:11:16] Rust and we even got rid of some good material so that we know for sure the rust was cut out
+[00:11:21] I was really impressed with this sheet metal nibbler it worked perfect
+[00:11:25] The only part it was a little bit difficult to use with is when the sheet metal wasn't completely flat
+[00:11:29] It had a little indent or a valley in there. You really had to twist it and turn it with that valley
+[00:11:35] So it's level the whole time. Otherwise, it worked perfect
+[00:11:38] So now with all the rust removed
+[00:11:39] we could take our sheet metal and what we're gonna have to do is we're gonna have to cut this sheet metal the
+[00:11:43] Same shape as our hole and you can see we have some good points that we could reference such as this piece right here
+[00:11:50] Matches exactly this piece right here. So we just have to cut around that
+[00:11:54] so let's roughly mark this up on where we want to make our initial cuts and
+[00:11:57] Just compare your hole to the sheet metal and mark it up. It doesn't have to be perfect
+[00:12:02] If anything make it a little bit bigger because you could always trim more metal off later then again
+[00:12:06] This is just a rough shape. I just want to get my first cut done and then I could go match it up
+[00:12:10] Make sure I get it more accurate
+[00:12:11] So let's get this cut out and to cut out these lines on the sheet metal. I'm using the sheet metal nibbler
+[00:12:16] Remember, this is just a first rough cut
+[00:12:18] So don't go crazy trying to make it perfect and just to show you there are other tools you could use like this cutoff wheel
+[00:12:23] On an angle grinder. So use whatever you have. And then after we're done making our cuts check it out
+[00:12:28] We have a rough shape. That looks pretty good. And let's see how we did not bad now
+[00:12:34] We want to mark up the spots that we could trim to make this fit better
+[00:12:37] and the easiest way to do this is just to trace the shape of the hole onto the new metal so we know where to
+[00:12:42] Cut and with that all marked up, let's cut this metal to shape now
+[00:12:46] I want to have a little buffer between my cut and the line because I could always go back and
+[00:12:50] Easily take off more metal
+[00:12:51] But it's harder to add metal on
+[00:12:53] So leave a little bit of room between your cut and your line then we can bring it back and see how it looks
+[00:12:58] Getting better for sure, but now we need to be more precise
+[00:13:01] So let's make some reference marks which are just some lines on the new sheet metal that go over to the old sheet metal in
+[00:13:06] Different spots along the edge that way we could easily align the sheet metal to the same exact spot
+[00:13:12] When we make a new cut and then come back to see how we did. So what the reference marks made?
+[00:13:17] Let's cut this more precisely and get a tight fit
+[00:13:20] this is the most tedious but
+[00:13:22] Important part we need to cut the metal to where we think it's gonna fit up nice and tight and then we need to go
+[00:13:27] Test fit it and see how we did then
+[00:13:29] We need to cut it some more
+[00:13:30] again with the goal of getting it to fit as tight as possible and then go back and test fit it again and see how
+[00:13:36] We did you want to make small adjustments so you don't cut too much
+[00:13:39] Material away and you can see I'm getting closer and closer to that green line I drew
+[00:13:43] All right. Now Pitman is everything so spend your time on doing that. We're still not done. There's still little adjustments
+[00:13:49] I need to make I want to show you and I also want to show you it's not gonna be perfect
+[00:13:51] You see right there. There's a little bit of a gap. Well, that's what happens
+[00:13:55] There's solutions to that when we weld not a big deal
+[00:13:58] We just want to try to get a really tight edge all the way around if possible
+[00:14:03] And this looks really good. The only thing I need to do is right there
+[00:14:07] I need to sand away just a little bit of material
+[00:14:09] So I'm gonna go do that and then this should be ready to go for the fine adjustments like this
+[00:14:14] I'm using a file so we don't remove too much material and just file away a thin layer of metal and then let's test fit
+[00:14:20] it
+[00:14:21] Beautiful and this is a nice tight fit. That's exactly what we want. All right now check this out
+[00:14:26] This looks so good
+[00:14:28] All the edges are buttered up against each other nice and tight, even though we do have a couple of holes like that
+[00:14:33] I'll show you guys how to work with that
+[00:14:34] but
+[00:14:35] next what we need to do is we need to prepare both this piece of metal and this piece of metal so that we could
+[00:14:40] Weld them together and real quick. I want to mention something because it's very important
+[00:14:43] What we're doing here is called butt welding
+[00:14:45] We're taking the two pieces of metal and we're Budig them up to each other so that there's no gap and this is really good
+[00:14:51] This is the best type of welding you could do
+[00:14:52] Especially for quarter panels or floors because the metal comes right up against each other and there's no seam
+[00:14:57] There's no chance for rust
+[00:14:59] But it does take the longest because we do have to make sure this is perfectly cut
+[00:15:03] we have to go back and forth and make sure we trim it and get it to fit and
+[00:15:07] Butt up against each other nicely
+[00:15:08] But there is another method that's a lot easier and that's called a lap weld so this hole right here this circular hole
+[00:15:14] Let's just say we wanted to fill that instead of cutting it out perfectly like we did here a perfect circle
+[00:15:20] what we do is we just cut out a piece of metal doesn't have to be perfect and you place it either over or
+[00:15:25] Underneath and then you weld all the seams
+[00:15:28] You can even weld the bottom if you want this is a lot quicker because you don't have to cut a perfect circle you could
+[00:15:32] just cut a square like this and fit it in and weld it now your holes sealed the
+[00:15:37] Downside is you could get moisture in between the two pieces of metal
+[00:15:40] That'll cause rust later on and also this is not flat anymore. We have a bump here for a floorboard
+[00:15:47] That doesn't really matter you're more concerned about that rust. But hey, the factory does lap welds
+[00:15:51] So as long as you put a bunch of paint and seam sealer on it, it'll last for a good long time
+[00:15:56] But I like to show you guys the best method possible
+[00:15:59] And that is the butt weld so that's why I did it that way
+[00:16:02] But I did want to let you know you can
+[00:16:03] Lap weld something a lot quicker a lot easier and it'll get the job done. It's just not as good
+[00:16:09] Alright, so whether you're gonna butt weld your metal or you're gonna lap weld your metal
+[00:16:12] the next part is very important and that is
+[00:16:14] Prepping the surface for welding just like you need a prepper surface for painting to get the best paint job
+[00:16:19] You need to prep your metal surfaces for welding
+[00:16:21] So you could get good welds that are contaminant free what I mean by that is you can't have any seam sealer
+[00:16:27] You can't have any paint galvanization any rust and the undercoating any of that can't be?
+[00:16:33] Near where you're welding
+[00:16:35] Otherwise, you're gonna contaminate the welds and that's gonna cause welds cracking you won't get good penetration. You get porosity all bad things
+[00:16:42] So let me show you how to properly prep this so that we could get good welds
+[00:16:46] so the main thing you want to do to prep the metal surface is sand down the edge where you're gonna weld I'm using a
+[00:16:52] Wire wheel to do this and you only need to do the parts that you're welding
+[00:16:55] You don't have to waste your time sending the entire piece down and there we go
+[00:16:59] Check it out
+[00:17:00] So you can see right around the whole perimeter about a half an inch to an inch wide
+[00:17:06] We have bare metal and we have that on both sides. So this is all ready to get welded into the car
+[00:17:12] So not only do we need to do this side, but we also have to do the other side of the metal as well
+[00:17:17] so same thing sand the floor down where we're gonna weld and
+[00:17:21] Good and don't forget to do the underside as well
+[00:17:24] And then finally the last thing we want to do is we want to get some isopropyl alcohol or acetone
+[00:17:28] And then we want to wipe down our bare metal surface that we're gonna weld on
+[00:17:32] Just want to get it clean from any oils or any extra dirt and debris and this is gonna be our final prep step also
+[00:17:37] Don't forget to do the little cutout piece of metal that you have and just get all these surfaces nice and degreased good
+[00:17:44] So this is everything you need to do to prep the metal to get it ready for welding
+[00:17:47] So that mean we're ready to weld. So let me show you how to do that
+[00:17:50] And this is the thin gauge sheet metal, which makes it really difficult to well, but don't worry
+[00:17:54] I have a bunch of tips and tricks which are gonna help you
+[00:17:57] So the first thing I want to cover is what kind of welder should you use? This is a MIG welder
+[00:18:00] This is a flux core welder. Let's start here. This is a great beginner welder
+[00:18:04] It's relatively affordable at $100 and you don't need any gas now
+[00:18:09] You don't need gas because this uses flux core wire flux core wire has a hollow core and inside that core is flux
+[00:18:16] which ends up being your shielding gas so you could get good welds now the
+[00:18:20] Problem with that is you can see right here
+[00:18:22] The thinnest wire we could get for this machine is point O 3 Oh inches because it has to be hollow
+[00:18:26] And that means we could only weld down to 22 gauge or 0.8 millimeter. Our metal is even thinner than that
+[00:18:33] So technically we can't use this we could probably use it and work around a little bit
+[00:18:37] But really it's not within the scope of this machine. So what I recommend is getting something like this
+[00:18:42] This is a MIG welder is a gas welder. It's a little more expensive starts around about $200 and you need to get gas
+[00:18:48] I'll cover that in a second, but the benefit is you have a lot of flexibility
+[00:18:52] You could change your wire speed you could change your voltage and more
+[00:18:55] Importantly, we're able to get the wire we need since we're using guess we're able to get down to 0.025 inch wire
+[00:19:01] Which is really thin and if we check out our chart here, it says 24 gauge point 6 millimeter
+[00:19:07] Which is the thickness of our sheet metal we'll work with our point o2 5 wire now
+[00:19:12] Let me give you a little more information on how to use a welder so that you guys could set up your welder and get
+[00:19:17] Started at least have a basic idea of what you're doing
+[00:19:20] So the first thing you want to do to get the correct settings for your welder is grab a digital caliper
+[00:19:24] Zero it out grab a piece of your sheet metal
+[00:19:27] I already did this but you just want to see how thick your sheet metal actually is in this case
+[00:19:33] You can see it's about 0.6 millimeters thick now. We can check out the settings
+[00:19:37] We can see we have 24 gauge metal at 0.6 millimeters thick and we want to go
+[00:19:42] 3 volts and we want to have a wire speed of 25
+[00:19:46] So on our welder we could go to our voltage
+[00:19:48] We need to set this to 3 volts and then our wire speed set to 25
+[00:19:53] We can make adjustments later. Probably going to adjust the wire speed and keep the voltage the same
+[00:19:57] I'll show you how to do that. Now. Let me show you the gas
+[00:20:01] MIG welding steel you're pretty much always going to be using 25 percent co2 75 percent argon
+[00:20:05] Don't worry go to your local gas. Supply. They know exactly what you need from big welding
+[00:20:09] They'll set you up now
+[00:20:10] all you have to do is open up this bottle all
+[00:20:13] The way like so and then what we have to do is pay attention to this gauge right here
+[00:20:18] This will let us know how much air is coming out of our welding gun when we press the trigger
+[00:20:22] So let's turn this to open it and where we want to be on this gauge is at 10 liters per minute
+[00:20:28] Which is the black or 20 CF H, which is the red you can see we're up a little bit. That's fine
+[00:20:34] Let's turn the welder on and now grab your gun and you want to lightly tap the trigger
+[00:20:40] Actually, that's almost perfect and you can see how the pressure drops down as the triggers tapped
+[00:20:46] That's how much flow our nozzle has when we press the trigger and that is spot-on. I got lucky on that first shot
+[00:20:52] So that's how you dial in your air to the correct flow rate?
+[00:20:54] and then the last thing is the amount of wire you want sticking out when you start is just a
+[00:20:59] Little bit past the nozzle like that. That's perfect
+[00:21:02] So let's go practice our welding and I know you're gonna be tempted to start welding in your car right away
+[00:21:06] but don't you always have to do a few practice welds so I have some scrap sheet metal that we cut out and we're gonna
+[00:21:13] Practice on that and make sure our settings are good and also just for practice for such a thin sheet metal
+[00:21:18] So get your welding helmet on then get your welding gloves on have a fire extinguisher nearby and let's see how dialed in we are
+[00:21:26] And we are not dialed in at all. And that was pretty bad. So let's crank up the wire speed to 35
+[00:21:33] All right a little bit better, but this should sound like frying bacon that sizzling sound. So let's try a wire speed of 45 and
+[00:21:42] That's better. This seems pretty good
+[00:21:43] This sounds more like frying bacon
+[00:21:45] And we aren't blowing through and this is exactly where we need to be and now we want to inspect our weld
+[00:21:51] So when we started out we had the wrong settings
+[00:21:53] We made some fine adjustments just on wire speed until we were pretty good now to make sure we're pretty good
+[00:21:59] Yeah, check that out. See how this goes all the way through the weld penetrates through the metal, but it doesn't burn through
+[00:22:05] That's what we want
+[00:22:06] So now that we're dialed in we could go and start welding in our car and I almost forgot which is why I wrote this
+[00:22:12] Note make sure you remove the neg cable from the battery before you weld
+[00:22:15] The welder is pushing a lot of amps into the metal of the car
+[00:22:18] So removing
+[00:22:19] The negative cable helps prevent the electricity from frying the computer or sensors to remember to disconnect the negative cable from the battery
+[00:22:26] So with that negative cable removed we are ready to weld
+[00:22:29] I also have a welding blanket set up
+[00:22:32] So we don't damage any of the interior pieces and I have our vent so we don't breathe in any of the fumes
+[00:22:37] So now let's position our sheet metal into the hole. So it fits there nice and tight like so
+[00:22:42] Now one of the most important things to a successful weld is putting your ground clamp somewhere near your welding surface. That's very clean
+[00:22:49] So like a clean piece of metal or a bolt
+[00:22:51] Some people weld on the bolt to the sheet metal in this case we could just use where the seat belt connects
+[00:22:56] I'll screw this in and then now we have a really good ground clamp area like that
+[00:23:01] That's gonna allow us to have good welds
+[00:23:03] All right
+[00:23:04] Now we're ready to finally weld this piece of metal in and what we're gonna be doing is called a tack
+[00:23:08] Weld this is when you weld one spot for just a second to fuse the two pieces of metal together
+[00:23:13] You want to tack weld a few different spots around the sheetmetal that way the metal is held in place
+[00:23:18] Here's what a tack weld looks like up close
+[00:23:20] You can see the weld is small and focused in one spot and it fuses both pieces of metal together
+[00:23:25] This weld has good penetration. It's not a glob of metal on the surface and it's relatively flat
+[00:23:30] So this is exactly what a good tack looks like another thing
+[00:23:33] We need to keep an eye on as we tack weld is making sure the two pieces of sheet metal are level you can see
+[00:23:38] Here there's a large gap and the two pieces are not level
+[00:23:40] so grab two hammers one above and one below and we're gonna hammer from below the top hammers used to keep the metal level as
+[00:23:47] You hammer it up from the bottom like so and check it out this work perfect. Nice and level
+[00:23:52] Okay
+[00:23:53] So that's the process you work your way around the sheet metal tack welded in if a spot doesn't fit right?
+[00:23:58] Use a hammer to hit it in place and make it so that it's even and level
+[00:24:03] Alright, so since everything is tacked in all the way around we use that hammer to make sure all our surfaces are even we are
+[00:24:09] Ready to do something called stitch welding now
+[00:24:12] unfortunately
+[00:24:12] We can't just run a weld all the way across and down and all the way across if you do that
+[00:24:17] The metal is gonna warp. You're probably gonna blow through from adding too much heat to one section at a time
+[00:24:21] So we do something called stitch welding
+[00:24:22] For example, we'll go from this weld to this weld and stop and then we'll go find another tack-weld over here
+[00:24:28] We'll go from this weld to that weld and stop and then we'll find a tack weld over here
+[00:24:32] We'll go from this world to that weld and stop and we're spreading the heat out
+[00:24:36] So we don't blow through we don't warp this and we let these other welds cool down before we go and weld next to that
+[00:24:42] One so now you have an idea of how we're gonna stitch weld all these pieces together
+[00:24:45] The one thing we're gonna do is we're gonna ignore all the spots where there's big gaps
+[00:24:49] I'm going to show you how to fix that at the end
+[00:24:51] So don't worry about stitch welding that right now just stitch weld all the good pieces of metal that are buttered up next to each
+[00:24:56] Other so we'll start right there
+[00:24:58] so what you're looking at right now is exactly what it looks like through a welding mask what you see here is exactly
+[00:25:03] What I see, so let's stitch. Weld this you're gonna start over here at this tack
+[00:25:07] weld hold the trigger for a second then let it cool down hold the trigger for a second then let it cool down pull the
+[00:25:12] Trigger for a second and let it cool down now you can see that bright orange puddle. It's literally molten metal
+[00:25:18] You know when that puddle is cool when it has a dull orange glow
+[00:25:21] That's when you want to do the next well, then you let it cool to a dull orange
+[00:25:25] And then you start your next weld
+[00:25:27] You want to add wire to the puddle for only about a second because if it gets too hot?
+[00:25:30] You're gonna melt the surrounding super thin sheet metal and that's just gonna create holes
+[00:25:34] And I think this is a really good visual of the process
+[00:25:36] You want to repeat this until you get to the next tack weld and check this out
+[00:25:40] We started a little cold since there was no heat into the metal. But by the third or fourth weld we were perfect
+[00:25:45] So that's a good example of a stitch weld
+[00:25:47] Let's do another
+[00:25:49] So let's start at the tack weld and just like the last seam weld I'm doing short trigger pulls so we don't overheat the metal
+[00:25:56] And if you listen, you could hear a slight difference in what this weld sounds like compared to the last seam
+[00:26:00] Weld this one doesn't sound like frying bacon
+[00:26:02] So our settings are a little bit off and I think we need to increase the wire speed
+[00:26:06] Although the welds are looking pretty good. So I'm just gonna continue also take a look right in front of the puddle
+[00:26:11] You can see there's a hole forming every time I add metal that's from the metal getting too hot
+[00:26:16] So I'm gonna stop welding and let this cool
+[00:26:20] So after letting this cool for 20 seconds
+[00:26:22] Let's finish the stitch weld and I'm going to be quiet so you can listen and watch the rest of this stitch
+[00:26:44] All right, and that's pretty good
+[00:26:46] Now we did make a little bit of a change here. We did a little bit of welding it got too hot
+[00:26:51] I saw it blowing through so I decided this stop let it cool down gave it about 15 seconds. And then
+[00:26:57] Restarted and that looks pretty good and he blow through that
+[00:26:59] We had I just built the puddle up a little bit more
+[00:27:02] I focused the metal going in on that puddle rather than on the two pieces of thin sheet metal. Sure
+[00:27:07] It's not as flat as I'd like it, but it's a floorboard so not a big deal and this is solid now
+[00:27:13] Let me show you the penetration from under the car
+[00:27:15] This is a little more penetration than I like to see but this sheet metal is super thin and I really can't complain
+[00:27:20] It's definitely better to have a little too much penetration and make sure those two pieces of metal are welded solid together then not have
+[00:27:26] Enough penetration. So let me knock out the rest of these stitch welds off-camera so that I could get this done
+[00:27:31] You know how to do it you get the idea
+[00:27:32] I don't want to bore you and then we'll move on to the gaps here and I'll show you how to fix those and just
+[00:27:37] So you have an idea I stitch welded this entire panel up in about 30 minutes
+[00:27:42] alright and I am done stitch welding this entire piece in it is
+[00:27:47] Solid that's not going anywhere and remember
+[00:27:50] This is my first time welding point six millimeter thick sheet metal that is really thin for you guys out there
+[00:27:55] Anytime you're welding
+[00:27:56] The first time don't expect to weld dimes the key is to make sure you have good weld penetration
+[00:28:02] And you're bonding both pieces of metal together so that it's solid. This is a floor
+[00:28:07] Remember this is gonna get covered in paint in carpet. Nobody's gonna see it
+[00:28:10] so structural rigidity is the most important thing now to
+[00:28:14] Successfully fill all the gaps and not have any more burn through. What I'm gonna do is use a piece of copper
+[00:28:18] This is a flattened copper pipe. You could also use a sheet of copper or even aluminum aluminum is gonna work as well
+[00:28:25] Both of those metals the welds won't stick to and they act really well as a heat sink
+[00:28:29] They absorb the heat
+[00:28:30] So we're gonna do with this you're gonna place this
+[00:28:32] Underneath the gap and then you're gonna use that Jack or some magnets to hold this in place
+[00:28:36] and with that copper heatsink pressed up against the bottom of our hole that's gonna absorb any heat that we
+[00:28:42] Introduce into this and it's gonna be a lot easier to weld this hole up
+[00:28:45] Now you can see there's a lot of thick metal right here
+[00:28:47] So what I'm gonna do is I'm gonna focus the heat on this metal build up my puddle and then work along to there
+[00:28:53] Okay
+[00:28:54] let's get this gap filled so you can see I'm focusing the welding wire onto that last weld because it's thicker metal and I'm basically
+[00:29:00] growing the puddle outwards to cover the ghin
+[00:29:03] notice how I could weld for longer and if I get any burn through I just
+[00:29:06] Stop and let it cool. Then I resume and let the puddle build up again. So it covers the hole
+[00:29:15] And he saw how well our heatsink worked
+[00:29:17] You can see that the welds do not stick to this so that worked perfectly and this was very hard to let it cool down
+[00:29:24] But this absorbs the heat it prevents the weld from sticking and allows you to fill gaps just like that while still getting penetration
+[00:29:31] So I used the same exact method with the copper heatsink to fill all the large holes that were left
+[00:29:36] and now we have completely welded in our sheet metal and one way to
+[00:29:40] Verify there are no gaps because there could be pinholes that you don't see if your welds aren't perfect is you could wait till night
+[00:29:46] And then go underneath the car and then shine a light upwards and look for any light leaking through or you could grab a box
+[00:29:53] I cut a little hole in it and the box is designed to keep the light out so you can look for those pinholes
+[00:29:57] Even during the day so just get a strong LED
+[00:29:59] Light and shine it below the metal that you welded and so far so good
+[00:30:03] I don't see any light leaking through
+[00:30:05] There's no pinholes and then if I bring my light down here at the bottom where that factory hole is don't worry
+[00:30:10] We're gonna fill that with a plastic grommet when we're done. But if we bring it back here check that out
+[00:30:13] You see those two pin holes right at the bottom right there. That's what you're gonna look for
+[00:30:17] That's two small holes that we would have otherwise missed if we didn't use this method
+[00:30:21] So we need to make sure we fill those and just to give you an idea of what it looks like in the daylight
+[00:30:25] There's the first small hole and then there's the second even smaller hole right there. So it's a good little trick and now it's Fillies
+[00:30:39] And
+[00:30:41] Finally with those two simple welds we have sealed this completely off
+[00:30:44] This is welded in and we are done but not completely done. We're done welding now
+[00:30:51] What we need to do is we need to seal this we need to paint it so that we don't get rust
+[00:30:55] There's always going to be some moisture and some oxygen in the air that could cause this to rust
+[00:31:00] So painting is very important and to prep the surface for paint
+[00:31:03] We want to get rid of all that loose surface rust which we did in order to weld
+[00:31:07] So we're good with that
+[00:31:08] Then you want to grab your 80 grit sandpaper
+[00:31:10] And we want to send the metal surface to give the paint something to grab onto 80 grit is pretty aggressive
+[00:31:15] So it's gonna leave some deeper scratches
+[00:31:17] and that paint is gonna be able to adhere to that very well compared to a smooth surface then vacuum up all the dust from
+[00:31:23] sanding and finally clean off the surface with alcohol which is going to remove any oils and
+[00:31:29] On the metal so that we have a good clean surface for the paint distictive and look at all that dirt
+[00:31:33] we removed and
+[00:31:34] Now we are ready to paint but never paint out of your container because if you don't use it all the paint in the container
+[00:31:40] Is gonna go bad quicker so pour a little paint into the cup
+[00:31:43] Trying not to make a mess and a really cool trick to seal your paint can so it lasts a long time on the shelf
+[00:31:49] Grab some plastic wrap and cover the can but leave a little opening
+[00:31:53] Then grab one of these compressed air dusters and you want to slowly add air to the can
+[00:31:57] The canned air that you're adding is actually r134a a refrigerant
+[00:32:02] So it's gonna sink down to the bottom and displace the oxygen since it's heavier oxygen is what makes the paint Harden
+[00:32:08] So without the oxygen the paint is gonna be like brand-new the next time you open it now get your paint and spread a thin
+[00:32:13] Coat around the entire floorboard making sure to work it into every nook and cranny
+[00:32:17] I like to add the paint thick so it covers everything but don't leave it thick make sure you spread it out nice and thin
+[00:32:23] All right. So four hours later, we know this is dry because my finger isn't sticking to the paint
+[00:32:28] So with the new brush, let's add our second thin coat of paint. And again, make sure this layer is thin
+[00:32:34] All right and 24 hours later check this out. Now. It doesn't have to look perfect. But that does look pretty good for something
+[00:32:41] That's gonna get covered by carpet the most important thing though is how it functions and this is a special paint
+[00:32:47] That's impermeable
+[00:32:48] It goes on relatively thick and it creates a barrier between the metal and the air and moisture
+[00:32:54] That's gonna prevent rust and it seals in all of our welds as well
+[00:32:58] And since we did but welds and not lap welds we don't need to use seam sealer. So this is a job
+[00:33:02] Well done, and if you're wondering I sealed under the car as well
+[00:33:06] Not only did I paint where we welded
+[00:33:08] But I also painted past that that way it seals it off really well
+[00:33:12] So our sheet metal is sealed on both sides now
+[00:33:14] There's one more thing we need to do and that is install a rubber grommet in the factory hole
+[00:33:19] I assumed the previous owner left this undone to let the water drain out, but now we don't need that
+[00:33:24] So just push it into place and there you go
+[00:33:27] That is how you properly repair a rust hole whether it's in your quarter panel or if it's in your floor
+[00:33:32] That is the exact process that you want to follow. I mean check it out
+[00:33:36] Here's a before and after and the best thing is this repair was done properly
+[00:33:41] so it will outlast the life of this car and now we have one last thing and
+[00:33:45] That is how you repair a rust hole in your vehicle
+[00:33:49] Hopefully the video was helpful. If it was remember to give it a thumbs up. Also consider hitting that subscribe button
+[00:33:53] There are a lot of really cool videos coming up with this car
+[00:33:57] Including sound deadening it fixing the shifter the turbo kit and many more and as always
+[00:34:01] All the tools and products I used in this video are linked in the description stay tuned

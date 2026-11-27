@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Agent技能：1个SKILL.md文件、3层加载</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#9c2b1f; --accent-soft:#f6ece9; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(156,43,31,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  code{background:#f1efe9;border-radius:5px;padding:1px 6px;font-size:13.5px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">AI / 科技工具</span>
+    <span>智能体开发</span><span>·</span><span>SKILL.md 实战拆解</span>
+  </div>
+  <h1>AI Agent技能：1个SKILL.md文件、3层加载</h1>
+  <p class="lede">IBM 用 12 分钟讲清一件事：给智能体补上「怎么做」的流程知识，靠的不是再塞提示词，而是一个文件夹里的 Markdown 文件。把字幕里的字段、目录、加载层级和安全提醒，拆成能直接照做的清单。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《What AI Agent Skills Are and How They Work》</b>（频道「IBM Technology」）</span>
+    <span>时长 <b>12:25</b></span><span>发布 <b>2026-04-20</b></span><span>播放 <b>约 61.6 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-skill-md-frontmatter.jpg" alt="黑板上手写的 SKILL.md 结构：顶部是 frontmatter" loading="lazy">
+    <figcaption><b>黑板上的最小结构：一个 SKILL.md，顶部是 frontmatter。</b><span class="ts">视频截帧 00:02:13</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：技能就是一份可版本控制的文件</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">1 个文件 <span class="ts">00:01:41</span></div><div class="l">一个技能 = 一个文件夹里的 SKILL.md</div></div>
+  <div class="kpi"><div class="n">2 个字段 <span class="ts">00:02:21</span></div><div class="l">frontmatter 必填 name 与 description</div></div>
+  <div class="kpi"><div class="n">3 层 <span class="ts">00:04:41</span></div><div class="l">元数据 → 完整正文 → 按需资源</div></div>
+  <div class="kpi"><div class="n">47 步 <span class="ts">00:00:47</span></div><div class="l">视频举的流程例子：生成合规财报</div></div>
+</div>
+<p><b>适合谁：</b>要把固定流程交给智能体、又不想每次手写几十步提示词的人。技能用普通 Markdown 写，能版本控制、易更新、可跨平台迁移<span class="ts">00:08:10</span>。</p>
+<p><b>不适合谁：</b>只想让智能体查事实或调外部 API 的人——那两件事分别由 RAG 和 MCP 负责<span class="ts">00:06:45</span>。视频里没说单个技能的文件大小上限，也没给具体平台的安装路径。</p>
+
+<h2><span class="num">1</span>怎么开始：建文件夹，写一份 SKILL.md</h2>
+<p>先建一个技能文件夹，在里面放 <code>SKILL.md</code>。作者说它的格式「简单得有点好笑」：就是一个 Markdown 文件<span class="ts">00:01:41</span>，用来装流程性知识<span class="ts">00:01:26</span>。</p>
+<p>文件顶部写 YAML frontmatter<span class="ts">00:01:58</span>，至少放 <code>name</code> 和 <code>description</code> 两个字段<span class="ts">00:02:21</span>。<code>author</code>、<code>version</code> 可加，但不是必填<span class="ts">00:02:57</span>。</p>
+<figure>
+  <img src="img/02-name-description.jpg" alt="黑板上的 name 与 description 字段示例" loading="lazy">
+  <figcaption><b>必填字段只有两个：name 与 description。</b><span class="ts">视频截帧 00:02:56</span></figcaption>
+</figure>
+<p>frontmatter 下面写正文：分步工作流、规则、输入输出示例，用普通 Markdown 就够<span class="ts">00:03:16</span>。</p>
+
+<h2><span class="num">2</span>关键决策点：触发条件怎么写，资源放哪里</h2>
+<table>
+  <tr><th>要填的位置</th><th>视频里的写法</th><th>为什么这么填</th></tr>
+  <tr><td><code>name</code></td><td>示例值「PDF Builder」<span class="ts">00:02:42</span></td><td>用来标识这个技能<span class="ts">00:02:24</span></td></tr>
+  <tr><td><code>description</code></td><td>示例：「use this when the user asks to extract a PDF」<span class="ts">00:02:50</span></td><td>它是触发条件，决定技能何时被调用<span class="ts">00:02:35</span></td></tr>
+  <tr><td>正文 body</td><td>分步工作流、规则、输入输出示例<span class="ts">00:03:16</span></td><td>智能体真正执行时要读的东西</td></tr>
+  <tr><td><code>scripts/</code></td><td>放可执行的 JavaScript、Python 或 Bash<span class="ts">00:03:42</span></td><td>可选目录，智能体能直接运行</td></tr>
+  <tr><td><code>references/</code></td><td>放补充文档，智能体判断需要时才加载<span class="ts">00:03:51</span></td><td>可选目录，避免一次塞满上下文</td></tr>
+  <tr><td><code>assets/</code></td><td>放模板、数据文件等静态资源<span class="ts">00:04:02</span></td><td>可选目录，用时才取</td></tr>
+</table>
+<figure>
+  <img src="img/03-description-trigger.jpg" alt="黑板上 description 的示例：use this when the user asks to extract a PDF" loading="lazy">
+  <figcaption><b>description 写的是「什么时候用」，不是简介。</b><span class="ts">视频截帧 00:03:16</span></figcaption>
+</figure>
+<figure>
+  <img src="img/04-skill-body.jpg" alt="黑板上的 skill.md 结构，列出 frontmatter、body 和三个可选目录" loading="lazy">
+  <figcaption><b>完整结构：字段、正文，加三个按需目录。</b><span class="ts">视频截帧 00:03:58</span></figcaption>
+</figure>
+<p>别把 description 写成泛泛介绍。视频说，技能匹配由模型自己的推理完成<span class="ts">00:05:36</span>，所以好描述直接决定它会不会被用上<span class="ts">00:05:45</span>。</p>
+
+<h2><span class="num">3</span>三层加载：先目录，再正文，最后资源</h2>
+<p>作者把渐进披露拆成三层<span class="ts">00:04:41</span>。第一层只加载每个技能的 <code>name</code> 和 <code>description</code><span class="ts">00:04:53</span>，相当于一份技能目录；即使装了 <b>100 个</b> 技能，开头也不会占满上下文<span class="ts">00:05:01</span>。</p>
+<figure>
+  <img src="img/05-progressive-disclosure.jpg" alt="黑板上 Progressive Disclosure 与三层加载示意" loading="lazy">
+  <figcaption><b>渐进披露三层：元数据、正文、资源。</b><span class="ts">视频截帧 00:05:50</span></figcaption>
+</figure>
+<p>第二层：请求命中描述后，才把完整 SKILL.md 正文读进上下文<span class="ts">00:05:21</span>。第三层：<code>scripts/</code>、<code>references/</code>、<code>assets/</code> 里的资源，到具体任务真的需要时才加载<span class="ts">00:06:00</span>。</p>
+
+<h2><span class="num">4</span>选对方案：技能不是 RAG，也不是 MCP</h2>
+<table>
+  <tr><th>方案</th><th>视频里的分工</th><th>关键限制</th></tr>
+  <tr><td>MCP</td><td>工具访问、调用外部 API<span class="ts">00:06:45</span></td><td>不告诉智能体何时调用、调用后做什么<span class="ts">00:06:57</span></td></tr>
+  <tr><td>RAG</td><td>检索事实知识，运行时取相关片段<span class="ts">00:07:10</span></td><td>是参考资料，不教智能体做事<span class="ts">00:07:22</span></td></tr>
+  <tr><td>微调</td><td>把知识固化进模型权重<span class="ts">00:07:33</span></td><td>永久但昂贵，模型换了要重做<span class="ts">00:07:40</span></td></tr>
+  <tr><td>技能</td><td>流程知识：按什么顺序、带什么判断去做事<span class="ts">00:08:05</span></td><td>常和 MCP 搭配：MCP 给能力，技能给判断<span class="ts">00:08:27</span></td></tr>
+</table>
+<figure>
+  <img src="img/06-mcp-tool-access.jpg" alt="黑板上 KNOWLEDGE 与 MCP → Tool Access 的对照" loading="lazy">
+  <figcaption><b>MCP 解决「能调到什么」。</b><span class="ts">视频截帧 00:06:50</span></figcaption>
+</figure>
+<figure>
+  <img src="img/07-rag-fine-tuning.jpg" alt="黑板上的知识方案对照：RAG 事实知识、微调模型权重" loading="lazy">
+  <figcaption><b>RAG 与微调各管一块，不替代流程知识。</b><span class="ts">视频截帧 00:07:45</span></figcaption>
+</figure>
+<p>标准方面，视频说 SKILL.md 是开放标准，发布在 agent skills.io，采用 Apache <b>2.0</b> 许可<span class="ts">00:08:45</span>，并举出 Claude Code、OpenAI Codex 等已在采用<span class="ts">00:09:00</span>。</p>
+<figure>
+  <img src="img/08-knowledge-chart.jpg" alt="黑板完整对照图：MCP、RAG、微调与技能各自对应哪种知识" loading="lazy">
+  <figcaption><b>四种方案各管一类知识，技能对应程序性知识。</b><span class="ts">视频截帧 00:08:50</span></figcaption>
+</figure>
+<p>作者还用记忆做类比：语义记忆对应检索和知识库，情景记忆对应对话日志，程序性记忆对应技能文件<span class="ts">00:10:12</span>。</p>
+<figure>
+  <img src="img/09-memory-map.jpg" alt="黑板上 MEMORY 对照图：语义记忆、情景记忆、程序性记忆" loading="lazy">
+  <figcaption><b>技能 ≈ 智能体的程序性记忆。</b><span class="ts">视频截帧 00:10:50</span></figcaption>
+</figure>
+
+<h2><span class="num">5</span>安全审查：技能脚本就是本机代码</h2>
+<p>技能可以带脚本，而这些脚本能访问文件系统、环境变量和 API key<span class="ts">00:10:29</span>。作者提醒：智能体运行它时，通常是在你本机执行命令<span class="ts">00:10:50</span>。</p>
+<figure>
+  <img src="img/10-trust-risks.jpg" alt="黑板上 TRUST 与提示注入、工具投毒、恶意软件三类风险" loading="lazy">
+  <figcaption><b>三类风险：提示注入、工具投毒、隐藏恶意软件。</b><span class="ts">视频截帧 00:11:35</span></figcaption>
+</figure>
+<p>视频说公开技能审计中见过提示注入、工具投毒和隐藏恶意软件<span class="ts">00:10:58</span>。作者的建议是：像对待软件依赖一样对待技能安装，先弄懂它做什么，再在本机使用<span class="ts">00:11:18</span>。</p>
+
+<h2><span class="num">6</span>避坑清单：6 条直接照做</h2>
+<table>
+  <tr><th>坑</th><th>怎么避</th></tr>
+  <tr><td>把几百个技能全文塞进启动上下文</td><td>只在启动时放 name + description<span class="ts">00:04:53</span>；正文命中再读<span class="ts">00:05:21</span></td></tr>
+  <tr><td>description 写成泛泛介绍</td><td>写成触发条件，含「when the user asks…」这类具体场景<span class="ts">00:02:50</span></td></tr>
+  <tr><td>把补充文档和模板全塞进正文</td><td>分别放进 references/ 与 assets/，按需加载<span class="ts">00:03:51</span></td></tr>
+  <tr><td>用 RAG 教步骤、用 MCP 教流程</td><td>按分工来：RAG 查事实<span class="ts">00:07:10</span>，MCP 调工具<span class="ts">00:06:45</span>，技能写流程<span class="ts">00:08:05</span></td></tr>
+  <tr><td>为流程知识去做微调</td><td>视频说微调贵且模型变化要重做<span class="ts">00:07:40</span>；技能是普通文件，更新更容易<span class="ts">00:08:10</span></td></tr>
+  <tr><td>装公开技能不审脚本</td><td>脚本能碰文件系统、环境变量、API key<span class="ts">00:10:29</span>；装前先读懂<span class="ts">00:11:18</span></td></tr>
+</table>
+
+<h2><span class="num">7</span>有争议的说法：视频怎么说，本文不下结论</h2>
+<div class="box warn">
+  <table>
+    <tr><th>说法</th><th>视频怎么说</th><th>本文口径</th></tr>
+    <tr><td>采用范围</td><td>开场说「几乎所有主流 AI 编程平台都采用了这个开放标准」<span class="ts">00:00:04</span></td><td>视频只举了 Claude Code、OpenAI Codex 等例子<span class="ts">00:09:00</span>；「几乎所有」不下结论</td></tr>
+    <tr><td>跨平台可用</td><td>说为一个平台做的技能能用在任何支持该规范的平台<span class="ts">00:09:05</span></td><td>依赖对方是否支持规范；视频没给兼容清单，不下结论</td></tr>
+    <tr><td>公开技能风险比例</td><td>说审计发现公开技能「经常」含提示注入、工具投毒、恶意软件<span class="ts">00:10:58</span></td><td>视频未给样本量与统计出处，只采纳「装前审查」这个动作</td></tr>
+  </table>
+</div>
+
+<h2><span class="num">8</span>一页速查：带着走的 9 行</h2>
+<ul>
+  <li>一个技能 = 文件夹 + <code>SKILL.md</code><span class="ts">00:01:41</span>。</li>
+  <li>frontmatter 必填 <code>name</code> 与 <code>description</code><span class="ts">00:02:21</span>；作者、版本可选。</li>
+  <li><code>description</code> 写触发条件，不是简介<span class="ts">00:02:35</span>。</li>
+  <li>正文写分步流程、规则、输入输出示例，普通 Markdown 即可<span class="ts">00:03:16</span>。</li>
+  <li>可选目录：<code>scripts/</code> 脚本<span class="ts">00:03:42</span>、<code>references/</code> 文档<span class="ts">00:03:51</span>、<code>assets/</code> 资源<span class="ts">00:04:02</span>。</li>
+  <li>三层加载：启动时只读名称与描述<span class="ts">00:04:53</span> → 命中读正文<span class="ts">00:05:21</span> → 资源按需<span class="ts">00:06:00</span>。</li>
+  <li>MCP 管工具<span class="ts">00:06:45</span>，RAG 管事实<span class="ts">00:07:10</span>，微调管权重<span class="ts">00:07:33</span>，技能管流程<span class="ts">00:08:05</span>。</li>
+  <li>开放标准发布在 agent skills.io，Apache <b>2.0</b><span class="ts">00:08:45</span>。</li>
+  <li>脚本能访问文件系统、环境变量与 API key<span class="ts">00:10:29</span>；装前按软件依赖审查<span class="ts">00:11:18</span>。</li>
+</ul>
+
+<footer>
+  <p><b>事实来源：</b>YouTube 视频《What AI Agent Skills Are and How They Work》，频道 IBM Technology，2026-04-20 发布，时长 12:25，播放约 61.6 万。文中字段、目录、层级、时间戳均来自该视频字幕。</p>
+  <p><b>未采信：</b>「几乎所有主流平台采用」「任何支持规范的平台都能用」「公开技能经常含恶意内容」等无出处的范围性表述，只作争议说法列出；课程/认证推广链接不写入攻略。视频里没说的文件大小上限、安装路径与兼容清单，本文不补。</p>
+  <p><b>配图说明：</b>10 张均为原片截帧，只裁取不含讲师出镜、手部与粉笔的黑板信息区；未使用 AI 生成示意图或自制信息卡。</p>
+</footer>
+
+</div>
+</body>
+</html>
