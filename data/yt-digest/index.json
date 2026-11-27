@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-27T16:54:07",
- "total": 7,
+ "updatedAt": "2026-11-27T18:58:17",
+ "total": 9,
  "targetDaily": 10,
  "docs": [
   {
@@ -39,6 +39,25 @@
    "steps": 11,
    "images": 12,
    "cover": "data/yt-digest/2026-11-27-what-does-a-luxury-home-remode/img/01-front-driveway.jpg",
+   "digestAt": "2026-11-27"
+  },
+  {
+   "slug": "2026-11-27-travel-9jamfdcy",
+   "url": "data/yt-digest/2026-11-27-travel-9jamfdcy/article.html",
+   "title": "小川町一日游：830 日元直达，9:00–18:00 不自驾",
+   "dek": "从池袋 830 日元直达埼玉小川町：和服、江户古宅、道之驿、和纸体验和炭火晚餐。",
+   "category": "城市攻略 / 旅行",
+   "categoryKey": "travel",
+   "place": "日本 · 埼玉县小川町",
+   "channel": "MaoMao TV",
+   "videoId": "9JaMFdCy4hI",
+   "videoUrl": "https://www.youtube.com/watch?v=9JaMFdCy4hI",
+   "duration": 1464,
+   "views": 228115,
+   "publishedAt": "20250530",
+   "steps": 10,
+   "images": 10,
+   "cover": "data/yt-digest/2026-11-27-travel-9jamfdcy/img/01-ikebukuro-street.jpg",
    "digestAt": "2026-11-27"
   },
   {
@@ -134,6 +153,25 @@
    "steps": 9,
    "images": 10,
    "cover": "data/yt-digest/2026-11-27-agent-skills/img/01-skill-md-frontmatter.jpg",
+   "digestAt": "2026-11-27"
+  },
+  {
+   "slug": "2026-11-27-5-things-i-wish-i-knew-before",
+   "url": "data/yt-digest/2026-11-27-5-things-i-wish-i-knew-before/article.html",
+   "title": "浴室翻新 6859 美元：人工占 60%，三处能省 700",
+   "dek": "5×8 英尺小浴室翻新实花 6859 美元：人工约 60%，逐项账单与三处省钱点。",
+   "category": "家居改造 / 装修",
+   "categoryKey": "home",
+   "place": "美国 · 棕榈泉 Airbnb",
+   "channel": "Shelby Church",
+   "videoId": "4Ik10LP9GX8",
+   "videoUrl": "https://www.youtube.com/watch?v=4Ik10LP9GX8",
+   "duration": 691,
+   "views": 373112,
+   "publishedAt": "20230304",
+   "steps": 10,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-27-5-things-i-wish-i-knew-before/img/01-vanity-toilet.jpg",
    "digestAt": "2026-11-27"
   }
  ]
