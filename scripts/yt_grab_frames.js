@@ -51,6 +51,18 @@ if (!vid || cur.indexOf("v=" + vid) < 0) {
   await page.goto(URL_, { waitUntil: "domcontentloaded", timeout: 90000 });
 }
 await page.waitForSelector("video", { state: "visible", timeout: 60000 });
+// 片头广告：广告播放时 seek 会落成广告帧，先等广告播完（可跳过就点跳过）再抽。
+for (let i = 0; i < 60; i++) {
+  const ad = await page.evaluate(() => {
+    const p = document.querySelector(".html5-video-player");
+    const showing = !!(p && p.classList.contains("ad-showing"));
+    const skip = document.querySelector(".ytp-skip-ad-button, .ytp-ad-skip-button, .ytp-ad-skip-button-modern");
+    if (showing && skip) skip.click();
+    return showing;
+  }).catch(() => false);
+  if (!ad) break;
+  await page.waitForTimeout(3000);
+}
 await page.waitForTimeout(2000);
 await page.evaluate(() => {
   const v = document.querySelector("video");
@@ -59,8 +71,24 @@ await page.evaluate(() => {
 });
 
 const out = [];
+async function clearAd() {
+  for (let i = 0; i < 40; i++) {
+    const ad = await page.evaluate(() => {
+      const p = document.querySelector(".html5-video-player");
+      const showing = !!(p && p.classList.contains("ad-showing"));
+      const skip = document.querySelector(".ytp-skip-ad-button, .ytp-ad-skip-button, .ytp-ad-skip-button-modern");
+      if (showing && skip) skip.click();
+      return showing;
+    }).catch(() => false);
+    if (!ad) return;
+    await page.waitForTimeout(3000);
+  }
+}
 for (const t of TIMES) {
-  const info = await page.evaluate(async (sec) => {
+  let info = null;
+  // 中插广告会把 seek 落成广告帧：落点偏差过大就等广告结束重取。
+  for (let attempt = 0; attempt < 4; attempt++) {
+  info = await page.evaluate(async (sec) => {
     const v = document.querySelector("video");
     if (!v) return { ok: false, err: "no video" };
     const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -85,6 +113,9 @@ for (const t of TIMES) {
       return { ok: false, err: String(e) };
     }
   }, t);
+    if (info.ok && Math.abs(info.got - t) <= 2.5) break;
+    await clearAd();
+  }
 
   if (!info.ok) { out.push({ want: t, ok: false, err: info.err }); continue; }
   const buf = Buffer.from(info.data, "base64");

@@ -53,7 +53,7 @@
    "categoryKey": "home",
    "score": 4,
    "slug": "2026-11-27-what-does-a-luxury-home-remode",
-   "status": "pending"
+   "status": "done"
   },
   {
    "videoId": "WOspqFGkrfs",
@@ -66,7 +66,7 @@
    "categoryKey": "work",
    "score": 2,
    "slug": "2026-11-27-work-wospqfgk",
-   "status": "pending"
+   "status": "done"
   },
   {
    "videoId": "LCO58Qvm3ig",
@@ -133,5 +133,12 @@
    "slug": "2026-11-27-car-afph3xhw",
    "status": "pending"
   }
+ ],
+ "notes": [
+  "2026-11-27 轮次1 实测：travel fKjgRlBiK9A / car afpH3XhwzxM 无任何字幕轨（subtitles 与 automatic_captions 均为空），不可用。",
+  "film 6nLRZ5codHU 全片单一固定机位人物口播，客观镜头仅 1 帧章节文字卡，凑不到 8 张配图，不可用。",
+  "gadget XrRmAEfe-S0 全片两人出镜 + 烧入字幕 + 频道水印，无可裁的客观镜头，不可用。",
+  "health 5iHQDUvR_vc 为教练本人示范，人物出镜占比过高，未采用（字幕可用）。",
+  "已改用 home cjk5UgpLRZs 与 work WOspqFGkrfs 成稿。"
  ]
 }

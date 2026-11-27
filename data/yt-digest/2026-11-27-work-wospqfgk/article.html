@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>同时跑5个项目：每天只看1张清单的COTR四步法</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#2f6b4f; --accent-soft:#e9f2ec; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(47,107,79,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">职场 / 效率 / 管理</span>
+    <span>5 个项目并行</span><span>·</span><span>全免费工具</span>
+  </div>
+  <h1>同时跑5个项目：每天只看1张清单的COTR四步法</h1>
+  <p class="lede">一个人同时做 YouTube、电商、电子报、付费社群和宠物保姆五摊事，靠的不是更复杂的工具，而是四步固定动作：Capture 捕捉、Organize 整理、Take Action 行动、Remind 提醒。作者说这套系统全部用免费工具搭出来，每天只打开一张「今日清单」。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《如何提升效率做更多事？建立高效工作流程？我的個人效率系統大公開！》</b>（频道「Brayden Chen」）</span>
+    <span>时长 <b>16:01</b></span><span>播放 <b>约 7.3 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-milanote-overview.jpg" alt="Milanote 看板：按五个项目分列的任务卡片" loading="lazy">
+    <figcaption><b>看板全貌：Newsletter、YouTube、E-commerce、Community 各一列，卡片就是待办事项。</b><span class="ts">视频截帧 00:01:35</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：系统比工具重要，一天只看一个地方</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">5 个 <span class="ts">00:01:22</span></div><div class="l">同时并行的项目数：频道、电商、电子报、社群、宠物保姆</div></div>
+  <div class="kpi"><div class="n">1 小时 <span class="ts">00:03:12</span></div><div class="l">每周日晚上的「大脑清理」时长</div></div>
+  <div class="kpi"><div class="n">1–2 + 3–5 <span class="ts">00:05:32</span></div><div class="l">每天清单结构：1–2 个深度任务，3–5 个快任务</div></div>
+  <div class="kpi"><div class="n">5 天 <span class="ts">00:06:47</span></div><div class="l">一条视频从灵感到发布的周期</div></div>
+</div>
+<p><b>适合谁：</b>手上同时有 2 个以上项目、靠备忘录和脑记推进的人。作者的前提很明确：工具不是重点，能不能持续才是<span class="ts">00:01:22</span>。</p>
+<p><b>不适合谁：</b>需要多人审批、甘特图排期的团队项目。这套是个人系统，团队协作只覆盖到「每个人一块板」的程度<span class="ts">00:09:18</span>。</p>
+<p><b>视频里没说：</b>每个项目的具体收入、每周总工时、以及 Milanote 付费版和免费版的差别。作者只说免费版「基本功能都够用」<span class="ts">00:03:29</span>。</p>
+
+<h2><span class="num">1</span>怎么开始：先记四个字母，再挑工具</h2>
+<p>作者把自己的系统叫 COTR：Capture 捕捉、Organize 整理、Take Action 行动、Remind 提醒<span class="ts">00:01:46</span>。四步各对应一个动作和一个工具，不要一开始就想搭「完美工作台」。</p>
+<p>她试过 Notion，花一整天搭出带看板、时间追踪、目标设定、心情记录的完整空间，结果坚持不下去——「太复杂、太花时间、太难持续」<span class="ts">00:01:03</span>。这是这套系统要解决的问题。</p>
+<figure>
+  <img src="img/02-milanote-board.jpg" alt="视频中的章节卡：T 等于 Take Action 行动" loading="lazy">
+  <figcaption><b>第三步的关键词只有两个词：Take Action（行动）。四步里只有这一步产生结果。</b><span class="ts">视频截帧 00:04:45</span></figcaption>
+</figure>
+<p>顺序不要颠倒：先保证「什么都记下来」，再谈分类，最后才是排期。作者的说法是，大脑不是仓库，是处理器<span class="ts">00:02:51</span>。</p>
+
+<h2><span class="num">2</span>关键决策点：为什么是这四个免费工具</h2>
+<table>
+  <tr><th>环节</th><th>用什么</th><th>视频里的理由</th></tr>
+  <tr><td>Capture 捕捉</td><td>iPhone 备忘录 + Action Button</td><td>系统自带、零成本；Action Button 直接唤起语音记录，遛狗单手也能记<span class="ts">00:02:01</span></td></tr>
+  <tr><td>Organize 整理</td><td>Milanote</td><td>可视化像贴便利贴；免费版够用；比 Notion 简单；协作与分享免费<span class="ts">00:03:29</span></td></tr>
+  <tr><td>Take Action 行动</td><td>Apple 提醒事项</td><td>位置提醒、时间提醒、Siri 语音添加、界面简单<span class="ts">00:05:10</span></td></tr>
+  <tr><td>Remind 提醒</td><td>Apple 日历</td><td>把备忘录的截止日、提醒事项、邮件会议、短信约会汇总到一处<span class="ts">00:06:11</span></td></tr>
+  <tr><td>不要用</td><td>复杂看板类工具</td><td>作者花了整整一天搭 Notion，最后放弃：记录时还要想「放哪个板块」<span class="ts">00:01:03</span></td></tr>
+</table>
+<div class="box calm">
+  <h3>选工具的一条标准</h3>
+  <p>「你一看就懂、不需要看教程」——功能越多越容易分心，这是作者放弃 Notion、改用系统自带应用的原因<span class="ts">00:05:32</span>。</p>
+</div>
+
+<h2><span class="num">3</span>第一步 Capture：想到就倒出来，别管分类</h2>
+<p>所有想法先丢进 iPhone 备忘录，不分类、不排版<span class="ts">00:03:12</span>。作者还设了一个更省事的入口：把 Action Button 绑成「打开 ChatGPT」，按住就能语音说，遛狗时一只手也能记<span class="ts">00:02:16</span>。</p>
+<figure>
+  <img src="img/03-chatgpt-capture.jpg" alt="ChatGPT 对话界面：语音输入后被整理成条目" loading="lazy">
+  <figcaption><b>语音捕捉的界面：说完一段，让模型把口述内容整理成条目，再回填到备忘录。</b><span class="ts">视频截帧 00:07:50</span></figcaption>
+</figure>
+<p>这一步唯一的 KPI 是「记下来」。作者用自己走路摔倒举例：脑子里同时装着下一条视频、下一期电子报、要回的邮件，结果连眼前的路都没注意<span class="ts">00:02:34</span>。</p>
+
+<h2><span class="num">4</span>第二步 Organize：周日晚上一小时，把碎片归档</h2>
+<p>固定动作是周日晚上花一小时，把一周捕捉到的碎片按项目分到 Milanote 的板块里<span class="ts">00:03:12</span>。她的板块就是五个项目加一个生活区：YouTube、电商、Newsletter、社群、宠物保姆、个人生活<span class="ts">00:04:10</span>。</p>
+<figure>
+  <img src="img/04-milanote-columns.jpg" alt="Milanote 中按五个项目分组的任务卡片" loading="lazy">
+  <figcaption><b>整理后的样子：一个项目一列，右侧几列是电商与社群，卡片直接写下一步动作。</b><span class="ts">视频截帧 00:03:25</span></figcaption>
+</figure>
+<p>作者特别提醒：很多人在这一步放弃，因为想一次做到完美。她的口径是「完成比完美更重要」，分类只要自己看得懂，不必像图书馆索引<span class="ts">00:04:31</span>。</p>
+<p>她选 Milanote 用了五六年，团队也在用<span class="ts">00:03:29</span>。免费版就能满足个人和小组的基本协作。</p>
+
+<h2><span class="num">5</span>第三步 Take Action：把今日清单压到 5 条以内</h2>
+<p>每天的清单只有三层：1–2 个需要深度专注的大任务、3–5 个能快速清掉的小任务、外加回复邮件和社群互动这类日常维护<span class="ts">00:05:53</span>。早上打开只看「今天」这一个视图。</p>
+<figure>
+  <img src="img/05-apple-reminders.jpg" alt="Apple 提醒事项的「今天」清单" loading="lazy">
+  <figcaption><b>今日清单：左侧是清单分组（工作、个人、家庭），右侧只列今天要做的几条。</b><span class="ts">视频截帧 00:05:20</span></figcaption>
+</figure>
+<p>她常用三个功能：到某地提醒（位置提醒）、按时间段推送（早上推脚本类工作）、以及用 Siri 直接加任务<span class="ts">00:05:10</span>。任务不写进「今天」，就等于不存在——这是这一步的隐含规则。</p>
+
+<h2><span class="num">6</span>第四步 Remind：所有时间点汇总到一个日历</h2>
+<p>日历不是用来重复列任务的，而是把「有明确时间」的东西收拢：备忘录里的截止日、提醒事项、邮件里的会议邀请、短信里的约会<span class="ts">00:06:11</span>。作者说打开日历就能看到今天要完成什么、周末约了谁、下个月要注意什么<span class="ts">00:06:28</span>。</p>
+<figure>
+  <img src="img/06-apple-calendar.jpg" alt="Apple 日历月视图与侧边日程列表" loading="lazy">
+  <figcaption><b>月视图：左侧是当月格子，右侧列出当天与近期的日程条目。</b><span class="ts">视频截帧 00:06:25</span></figcaption>
+</figure>
+
+<h2><span class="num">7</span>五个项目怎么套进同一套系统</h2>
+<h3>YouTube：固定 5 天流程</h3>
+<p>每周更新一期，从灵感到发布约 5 天<span class="ts">00:06:47</span>。灵感进备忘录；写脚本时先把大纲丢进自制的「脚本 GPT」出框架，再用 Claude 打磨结构和长文，作者说 Claude 能写 5,000–6,000 字以上，ChatGPT 偏短<span class="ts">00:07:25</span>；成稿里再补个人经历和口语风格<span class="ts">00:08:02</span>。拍 A-roll、补 B-roll、剪辑、上传，封面在 Canva 做，标题和描述模板放在 Milanote<span class="ts">00:08:40</span>。</p>
+<figure>
+  <img src="img/07-video-workflow.jpg" alt="备忘录中的视频制作流程清单" loading="lazy">
+  <figcaption><b>流程清单：把「灵感—脚本—拍摄—剪辑—发布」写成固定条目，每期照着走。</b><span class="ts">视频截帧 00:08:40</span></figcaption>
+</figure>
+<h3>电商：三个共享板块 + 四条规则</h3>
+<p>团队共用 Milanote，分三块：定制订单、客服问题（含常见问题与 SOP）、内容素材（图片和文案放 Canva 或 Google Drive，链接汇总到 Milanote）<span class="ts">00:09:18</span>。四条规则：每个任务有明确负责人、有明确截止时间、完成后移到已完成区、遇到问题立刻在任务下留言<span class="ts">00:09:58</span>。</p>
+<figure>
+  <img src="img/08-service-sop.jpg" alt="客服话术模板：退款、延迟发货、破损、投诉四类回复" loading="lazy">
+  <figcaption><b>客服模板：退款、延迟发货、破损、投诉各一列，助理直接套用。</b><span class="ts">视频截帧 00:09:30</span></figcaption>
+</figure>
+<h3>电子报：每天 15 分钟的固定输入</h3>
+<p>每天花 15 分钟刷 Product Hunt 的新品，自己试用过再决定是做成视频还是写进电子报<span class="ts">00:10:38</span>；另外关注几个 AI 工具聚合站，泡澡时刷 X 上的推荐，看到就记进备忘录<span class="ts">00:10:55</span>。</p>
+<h3>付费社群与宠物保姆</h3>
+<p>社群每天 30 分钟答疑、每天发一个帖子<span class="ts">00:11:15</span>。宠物保姆用日历管预约，用 Milanote 建一份「狗狗 CRM」，记录精力水平、是否要喂药、每天遛几次，每次服务配一张标准检查清单<span class="ts">00:11:34</span>。</p>
+
+<h2><span class="num">8</span>按能量排班：把难事放进精力最好的时段</h2>
+<p>作者的原话是「比时间管理更重要的是能量管理」<span class="ts">00:12:14</span>。她的一天分四段：</p>
+<table>
+  <tr><th>时段</th><th>干什么</th><th>为什么</th></tr>
+  <tr><td>6:00–12:00</td><td>写脚本、构思内容</td><td>执行力最强，留给需要动脑的事<span class="ts">00:12:14</span></td></tr>
+  <tr><td>13:00–15:00</td><td>拍摄</td><td>这段时间光线好<span class="ts">00:12:38</span></td></tr>
+  <tr><td>15:00–17:00</td><td>回邮件、社群互动</td><td>沟通类任务，不需要深度专注<span class="ts">00:12:38</span></td></tr>
+  <tr><td>18:00 之后</td><td>陪狗狗客户玩等轻任务</td><td>只做不用动脑的事<span class="ts">00:13:00</span></td></tr>
+</table>
+<p>配套两个动作：一是让项目之间互相供给素材，视频精华剪成社媒内容、电子报的工具推荐变成视频选题、电商经验变成视频内容<span class="ts">00:13:21</span>；二是批量处理同类任务，所有社群回复、所有邮件集中在固定时段做<span class="ts">00:13:21</span>。</p>
+
+<h2><span class="num">9</span>避坑清单</h2>
+<table>
+  <tr><th>坑</th><th>视频里的证据</th><th>怎么避</th></tr>
+  <tr><td>先搭工具再想流程</td><td>花一整天搭 Notion，最后放弃<span class="ts">00:01:03</span></td><td>先用系统自带应用跑两周，跑不动再换工具</td></tr>
+  <tr><td>分类要做到完美</td><td>「很多人在这一步就放弃」<span class="ts">00:04:10</span></td><td>板块按项目分，够自己看懂就行</td></tr>
+  <tr><td>今日清单列十几条</td><td>她的清单固定 1–2 大 + 3–5 小<span class="ts">00:05:32</span></td><td>超出的任务挪到别的日子，不要留在今天</td></tr>
+  <tr><td>团队任务没有主责人</td><td>四条规则第一条就是「每个任务有明确负责人」<span class="ts">00:09:58</span></td><td>卡片上写人名和截止日，缺一个就不算建好</td></tr>
+  <tr><td>把时间排满却不管精力</td><td>她按 6–12、13–15、15–17 分段安排<span class="ts">00:12:14</span></td><td>先记录一周自己的精力曲线，再排难任务</td></tr>
+</table>
+
+<h2><span class="num">10</span>一页速查</h2>
+<ul>
+  <li>C：想到就记，iPhone 备忘录 + Action Button 语音<span class="ts">00:02:01</span></li>
+  <li>O：周日 1 小时，Milanote 按项目分板块<span class="ts">00:03:12</span></li>
+  <li>T：Apple 提醒事项，今日清单 = 1–2 大 + 3–5 小<span class="ts">00:05:32</span></li>
+  <li>R：Apple 日历，只放有明确时间的事<span class="ts">00:06:11</span></li>
+  <li>五个项目：YouTube（5 天流程）、电商（3 板块 4 规则）、电子报（每天 15 分钟）、社群（每天 30 分钟）、宠物保姆（CRM + 检查清单）</li>
+  <li>排班：6–12 写、13–15 拍、15–17 沟通、18 点后放松<span class="ts">00:12:14</span></li>
+  <li>每周复盘一句：哪些任务能批量、哪些要放在高能量时段</li>
+</ul>
+
+<footer>
+  <p><b>事实来源</b>：所有做法与数字取自视频字幕与画面，时间戳对应原片。原视频：<a href="https://www.youtube.com/watch?v=WOspqFGkrfs">如何提升效率做更多事？我的個人效率系統大公開</a>（Brayden Chen）。</p>
+  <p><b>未采信</b>：作者称「这套系统让我管理 5 个项目」，属于自述效果，没有给出前后对比数据；本文只记录流程，不背书效果。</p>
+  <p><b>配图说明</b>：8 张均为原片截帧，已裁掉画面顶部的频道标题条、底部烧入字幕与频道水印，只保留界面本体。</p>
+</footer>
+
+</div>
+</body>
+</html>
