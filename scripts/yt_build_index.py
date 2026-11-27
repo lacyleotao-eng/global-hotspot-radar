@@ -20,6 +20,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DIGEST = ROOT / "data" / "yt-digest"
 
+# 每天要发的篇数（写进 index.json，前端读，不在 JS 里再写死一遍）
+DAILY_TARGET = 10
+
 
 def count_steps(html: str) -> int:
     """正文里 <h2><span class="num">N</span> 的个数就是步骤数（含第 0 步结论）。"""
@@ -81,6 +84,7 @@ def build():
     payload = {
         "updatedAt": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "total": len(docs),
+        "targetDaily": DAILY_TARGET,
         "docs": docs,
     }
     (DIGEST / "index.json").write_text(

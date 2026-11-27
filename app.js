@@ -39,6 +39,12 @@
       navigator.clipboard.writeText(text).then(done).catch(fallback);
     } else fallback();
   }
+  // 每天目标篇数：真源是 data/yt-digest/index.json 的 targetDaily（yt_build_index.py 写入）
+  function ytTarget() {
+    var t = ((state.yt || {}).targetDaily) || 0;
+    return t > 0 ? t : 10;
+  }
+
   function fmt(t) {
     if (!t) return '时间未知';
     var d = new Date(t);
@@ -187,7 +193,7 @@
     audit: '第 4 步｜闸门：按爆款基准打分，≥85 进发布池，＜85 直接淘汰',
     issue: '第 5 步｜通过自检的成品，复制全文 + 下载图片就能发',
     benchmark: '参照系｜每天采 10 篇真爆款（公众号 5 · 头条 5），拆成标尺；它不参与生产，只决定自检的及格线',
-    videos: '视频拆解线｜每天 3 篇：把 YouTube 长视频读成时间轴，重写成一步步能照做的攻略，配图只用原片截帧'
+    videos: '把 YouTube 长视频读成时间轴，重写成一步步能照做的攻略，配图只用原片截帧'
   };
 
   function setText(id, txt) {
@@ -240,14 +246,18 @@
     if (pnVideoNote) {
       var today = fmt(new Date()).slice(0, 10);
       var todayN = ytDocs.filter(function (d) { return d.digestAt === today; }).length;
-      pnVideoNote.textContent = '今天 ' + todayN + ' / 3 篇 · 只用原片截帧配图';
+      pnVideoNote.textContent = '今天 ' + todayN + ' / ' + ytTarget() + ' 篇 · 只用原片截帧配图';
     }
 
     Array.prototype.forEach.call(document.querySelectorAll('.pnode'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-view') === state.view);
     });
     var hint = document.getElementById('viewHint');
-    if (hint) hint.textContent = VIEW_HINT[state.view] || '';
+    if (hint) {
+      var hintTxt = VIEW_HINT[state.view] || '';
+      if (state.view === 'videos') hintTxt = '视频拆解线｜每天 ' + ytTarget() + ' 篇：' + hintTxt;
+      hint.textContent = hintTxt;
+    }
   }
 
   function initControls() {
@@ -1114,7 +1124,7 @@
     var todayN = docs.filter(function (d) { return d.digestAt === today; }).length;
     var withImg = docs.filter(function (d) { return (d.images || 0) > 0; }).length;
     document.getElementById('ytStat').innerHTML =
-      '<b>' + docs.length + '</b> 篇攻略　·　今天 <b>' + todayN + '</b> / 3 篇</span><br>' +
+      '<b>' + docs.length + '</b> 篇攻略　·　今天 <b>' + todayN + '</b> / ' + ytTarget() + ' 篇</span><br>' +
       '全部带截帧配图：<b>' + withImg + '</b> / ' + docs.length;
 
     var catMap = {};
