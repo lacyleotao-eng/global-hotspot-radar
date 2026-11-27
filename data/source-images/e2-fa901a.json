@@ -1,0 +1,24 @@
+{
+  "slug": "e2-fa901a",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/e2-fa901a/raw-1.jpeg",
+      "bytes": 27662,
+      "w": 1080,
+      "h": 459,
+      "url": "http://mmecoa.qpic.cn/mmecoa_jpg/Iticnl7d76lE6VEKvSN4NhNicJM4t0PuN9B4Kx9fAP5HdH1GErhnvTGAHJwB9AtdmiaxsIyeOv3x3OZNXHe4b85AxUvJvAkCTOlpOuza1ZkAHI/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=Mzk0MjQxMDY1Mg==&mid=2247506152&idx=1&sn=75dc0568e25dabef1fe5d0d868e6519c&chksm=c395e8e2334aec1245d5455d3918cb310753024defa57573bd7323305dd15770ace7696b6a4a#rd",
+      "alt": "",
+      "md5": "53467bd5b355eee2215111ebe63cf756",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

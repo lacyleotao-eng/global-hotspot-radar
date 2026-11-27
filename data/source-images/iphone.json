@@ -1,0 +1,40 @@
+{
+  "slug": "iphone",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/iphone/raw-1.jpeg",
+      "bytes": 77554,
+      "w": 1024,
+      "h": 684,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/iphone-duo-GettyImages-2301595744.jpg?w=1024",
+      "page": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+      "alt": "",
+      "md5": "6e07e119695156fc1c78632b58302254",
+      "status": "approved",
+      "reason": "TechCrunch原文配图：折叠屏手机展开形态，对应iPhone Duo体验，无平台水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/iphone/raw-1.jpeg",
+      "bytes": 77554,
+      "w": 1024,
+      "h": 684,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/iphone-duo-GettyImages-2301595744.jpg?w=1024",
+      "page": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+      "alt": "",
+      "md5": "6e07e119695156fc1c78632b58302254",
+      "status": "approved",
+      "reason": "TechCrunch原文配图：折叠屏手机展开形态，对应iPhone Duo体验，无平台水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

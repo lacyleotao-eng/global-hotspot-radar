@@ -1,0 +1,730 @@
+{
+ "date": "2026-11-28",
+ "generatedAt": "2026-11-28T04:45:26+08:00",
+ "windowHours": 40,
+ "rule": "一条情报 = 一篇稿 = 一个平台 = 一种形态；同一 sourceItemId 不得出现第二次",
+ "quota": {
+  "gzh-article": 3,
+  "gzh-poster": 3,
+  "tt-article": 4,
+  "tt-micro": 4
+ },
+ "events": [
+  {
+   "slug": "nvidia-seasia-pause",
+   "sourceItemId": "f778c24c65252536",
+   "sourceTitle": "英伟达据报暂停向东南亚四国发运 AI 服务器，核验区域伙伴出口合规",
+   "sourceUrl": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-26T20:03:54Z",
+   "region": "海外",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "暂停范围、期限与执行细节均来自 TechCrunch 转述 WSJ；英伟达无一手公告。24% 算力占比为智库估算，非官方统计。",
+   "summary": "TechCrunch 11 月 26 日援引《华尔街日报》报道称，英伟达已要求戴尔、超微等制造合作伙伴暂停向马来西亚、新加坡、泰国和印尼发运服务器，暂停期未说明，理由是评估区域伙伴是否满足美国出口要求。报道指出，中国企业此前可远程使用这些数据中心里的英伟达芯片，美国商务部本月早些时候收紧了这一路径。智库 Institute for Progress 估计，此类远程数据中心约提供中国 24% 的 AI 算力。英伟达方面未在报道中给出新的公开声明。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
+     "url": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+     "publisher": "The Wall Street Journal",
+     "date": "2026-11-26",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "rejected",
+   "leadHeadline": "英伟达按下暂停键：AI 芯片的「境外绕行」通道正在被收紧",
+   "angle": "从区域数据中心被要求暂停交付切入，解释算力获取从买卡转向买合规路径的变化",
+   "outline": [
+    "暂停涉及哪些国家与合作方",
+    "远程使用云算力这一路径为何被盯上",
+    "24% 算力估算意味着什么",
+    "对企业采购与算力租赁的启示",
+    "哪些细节尚无官方确认"
+   ],
+   "audience": "关注 AI 基础设施与算力采购的行业读者",
+   "risk": "出口管制话题需严格按外媒报道表述，不添加政策预测；数字注明为智库估算",
+   "basis": "原文称英伟达要求戴尔、超微暂停向马来西亚、新加坡、泰国、印尼发运服务器，并引用 Institute for Progress 约 24% 的估算",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-28-nvidia-seasia-pause.json",
+   "auditScore": 66.8
+  },
+  {
+   "slug": "e2-fa901a",
+   "sourceItemId": "fa901ab7bcdef879",
+   "sourceTitle": "人形机器人行业日报：小鹏IRON在广州车展主持发布会并上岗导购，高交会机器人展区转向真实作业",
+   "sourceUrl": "http://mp.weixin.qq.com/s?__biz=Mzk0MjQxMDY1Mg==&mid=2247506152&idx=1&sn=75dc0568e25dabef1fe5d0d868e6519c&chksm=c395e8e2334aec1245d5455d3918cb310753024defa57573bd7323305dd15770ace7696b6a4a#rd",
+   "sourcePlatform": "微信公众号",
+   "publishedAt": "2026-11-27T18:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "IRON量产时间、售价锚点与融资数字均来自企业口径或第三方统计，未见完整公告原文；待核问题：IRON是否已实际进入门店、零次方融资金额是否有工商或公告佐证。",
+   "summary": "11月27日公众号行业日报称，第二十四届广州车展开幕，小鹏人形机器人IRON以发布会主持人身份出场，8台IRON在展台承担迎宾、导览与车辆讲解，公司同步宣布成立香港研发中心并给出2027年下半年全球上市的时间表。11月26日开幕的第二十八届高交会上，机器人展区以家务、咖啡、工厂搬运等作业演示为主，乐聚机器人已进入物流工厂与汽车产线。日报同时记录零次方机器人完成新一轮融资、众擎提供不少于10亿元产业级生态支持等比价与产业信息，并注明部分数字来自第三方统计与企业自述。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "人形机器人 & 具身智能 · 行业日报 2026年11月27日",
+     "url": "http://mp.weixin.qq.com/s?__biz=Mzk0MjQxMDY1Mg==&mid=2247506152&idx=1&sn=75dc0568e25dabef1fe5d0d868e6519c&chksm=c395e8e2334aec1245d5455d3918cb310753024defa57573bd7323305dd15770ace7696b6a4a#rd",
+     "publisher": "茶派科技（微信公众号）",
+     "date": "2026-11-27",
+     "relation": "一手"
+    },
+    {
+     "title": "机器人展区从炫技转向上岗（高交会现场报道）",
+     "url": "https://www.toutiao.com/article/7712769107728368162/",
+     "publisher": "今日头条",
+     "date": "2026-11-27",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "rejected",
+   "leadHeadline": "从展台到工位：广州车展和高交会上的机器人开始「真上岗」",
+   "angle": "以两场展会的现场分工变化切入，梳理人形机器人商业化的可核验进展与仍需兑现的承诺。",
+   "outline": [
+    "IRON在车展承担的具体岗位与公布的时间表",
+    "高交会上家务、咖啡、产线搬运等作业演示",
+    "融资与生态支持的资金流向：整机还是上游",
+    "价格锚点变化与真实订单之间的差距",
+    "待核问题：门店实际在岗率、企业自述数字"
+   ],
+   "audience": "关注机器人产业与智能制造的行业读者",
+   "risk": "融资额、售价与产量预测多为企业自述或第三方统计，须标待核实；不构成投资建议；展会现场图片版权归原发布方。",
+   "basis": "原文关于8台IRON导购、高交会真实作业演示及融资口径的表述",
+   "hasLead": true,
+   "score": 75,
+   "readyFile": "2026-11-28-e2-fa901a.json",
+   "auditScore": 66.7
+  },
+  {
+   "slug": "1password-security-incident",
+   "sourceItemId": "272297cceb9161ae",
+   "sourceTitle": "1Password 披露安全事件：员工 GitHub 账号被入侵，部分客户账户信息被复制",
+   "sourceUrl": "https://1password.com/blog/update-on-nov-2026-security-incident",
+   "sourcePlatform": "1Password 官方博客",
+   "publishedAt": "",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "受影响客户范围公告称是子集，未给出具体数量；发布时间页面未明确标注",
+   "summary": "1Password 官方博客公告称，11 月 19 日开始调查 attacker 访问其员工企业 GitHub 账号的迹象；攻击者利用该账号访问源码并向后端服务推送恶意代码，下载了部分客户的账户记录。被复制信息包括账户与用户标识、创建与最近登录时间、公钥、SRP 协议参数、邀请/配置/恢复邮件链接中的令牌及其他账户元数据。公司称保险库数据、其中的条目与保护密钥未受影响，已遏制并恢复干净服务版本、轮换内部凭据，用户无需更新账户，但应警惕钓鱼邮件。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "1Password Security Incident（Hacker News 讨论）",
+     "url": "https://news.ycombinator.com/item?id=50644817",
+     "publisher": "Hacker News",
+     "date": "2026-11-25",
+     "relation": "二手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-article",
+   "formLabel": "公众号文章",
+   "status": "rejected",
+   "leadHeadline": "1Password 确认被入侵：密码没泄露，但这几类信息被复制了",
+   "angle": "区分“密码库安全”和“账户元数据泄露”，提醒用户警惕伪装成邀请与恢复的钓鱼邮件",
+   "outline": [
+    "攻击从哪里进入",
+    "哪些数据被复制",
+    "哪些数据没有受影响",
+    "公司已做的处置",
+    "用户现在应该做什么"
+   ],
+   "audience": "密码管理器用户与职场读者",
+   "risk": "不要写成密码泄露，不做恐慌式标题",
+   "basis": "1Password 官方公告：源码与部分客户账户记录被复制、保险库与密钥未受影响",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-28-1password-security-incident.json",
+   "auditScore": 66.8
+  },
+  {
+   "slug": "hdd-price-hike",
+   "sourceItemId": "5067b54391c37f7a",
+   "sourceTitle": "Hacker News 热议黑五硬盘价格：20TB 外置盘两年从 249.99 美元涨到 549.99 美元",
+   "sourceUrl": "https://news.ycombinator.com/item?id=50661646",
+   "sourcePlatform": "Hacker News",
+   "publishedAt": "2026-11-27T01:13:49Z",
+   "region": "海外",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "价格为作者个人购买记录与页面截图口径，未做实时比价；关于厂商勾结的表述是作者观点，不是监管结论。",
+   "summary": "Hacker News 11 月 27 日讨论指向博主 Alex Kretzschmar 11 月 26 日文章。作者依据自己 2018 年以来的购买收据对比：同款 WD EasyStore 20TB 在 2024 年 11 月为 249.99 美元，2026 年黑五为 549.99 美元，折合每 TB 从 12.50 美元升至 27.50 美元。他列举 2024 年与 2026 年再认证企业级盘报价，称每 TB 涨幅至少 58%、最高 218%，部分已售罄；四块 20TB 组 NAS 的盘位成本从 999.96 美元升至 2199.96 美元。文章梳理了硬盘厂商从多家整合到希捷、西部数据、东芝三家的过程，并提到 2011 年泰国洪水与供应链价格操纵案。作者认为涨价与行业集中有关，并考虑把十块盘缩减为五块 20TB。以上价格与判断均为作者记录与观点。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "440 分（HN 页面可见）",
+     "comments": "386 条（页面可见）",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "Hard Drive pricing has gotten bad.",
+     "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+     "publisher": "blog.ktz.me",
+     "date": "2026-11-26",
+     "relation": "一手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "rejected",
+   "leadHeadline": "黑五硬盘比两年前贵一倍：AI 时代的「存储税」谁在买单",
+   "angle": "以具体价格曲线切入，讨论存储涨价对普通用户和小团队的影响",
+   "outline": [
+    "同款 20TB 两年价格对比",
+    "再认证企业盘也同步上涨",
+    "三家厂商格局的形成过程",
+    "家庭 NAS 的成本变化",
+    "普通用户该如何取舍"
+   ],
+   "audience": "关注数码消费与家庭存储的读者",
+   "risk": "价格注明为作者记录；不把作者『勾结』判断写成事实",
+   "basis": "原文表格显示 20TB EasyStore 从 249.99 美元升至 549.99 美元，四盘 NAS 成本从 999.96 美元升至 2199.96 美元",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-28-hdd-price-hike.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "iphone",
+   "sourceItemId": "0fb3854a2025ca35",
+   "sourceTitle": "一个月折叠 iPhone Duo 体验：双屏习惯改变用法，长焦与 Face ID 仍有取舍",
+   "sourceUrl": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-26T17:00:00Z",
+   "region": "海外",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "体验结论属作者主观评价，不能写成普遍事实；价格等信息本文未直接给出。",
+   "summary": "TechCrunch 作者 Sarah Perez 11 月 26 日发布使用 iPhone Duo 近一个月的体验。她称折叠形态改变了自己的应用习惯：拖动即可分屏，常把 X 与新闻、邮件或 Slack 并排使用；合上时像小屏 iPhone，便于单手回复消息与看导航，展开后更适合看视频、购物与阅读。她提到苹果 11 月中表示已有超过 20 万个 Duo 适配应用，自己常用的 Gmail、Drive 仍有黑边。作者仍偶尔怀念长焦镜头与 Face ID，但表示系统更新带来了面部解锁功能；她还因内外屏差异重新安排了主屏幕与阅读习惯，并把手机当作可替代 Kindle 的阅读设备。以上均为作者个人体验。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "rejected",
+   "leadHeadline": "折叠 iPhone 用满一个月后，我最怀念的不是长焦",
+   "angle": "从『使用场景被重写』而不是硬件参数切入，谈折叠屏如何改变日常习惯",
+   "outline": [
+    "分屏为何从噱头变成日常",
+    "合上是小屏、展开是大屏的行为分工",
+    "应用适配的真实进度与遗留问题",
+    "阅读替代Kindle的意外收获",
+    "仍存在的取舍"
+   ],
+   "audience": "关注手机与数字生活的都市读者",
+   "risk": "标明是一家外媒记者的个人体验，不写成评测结论",
+   "basis": "原文作者详细描述了分屏、内外屏分工、20 万适配应用说法与 Kindle 替代体验",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-28-iphone.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "gta-vi-anthropic",
+   "sourceItemId": "92a6487c4340e53d",
+   "sourceTitle": "观点：GTA VI 与 Anthropic 上市同周，「低效」为何仍是作品的护城河",
+   "sourceUrl": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-26T16:00:00Z",
+   "region": "海外",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "本文为评论，核心论点属作者与受访者观点；游戏销售额为新闻稿口径，不等于审计口径收入。",
+   "summary": "TechCrunch 11 月 26 日刊发评论文章。文中列出：GTA VI 发售后成为 Metacritic 评分最高的游戏，首发日零售销售额 37.9 亿美元；约 5000 人投入十余年制作，全程未使用生成式 AI，并制作了 3 万个有独特外观与性格的 NPC。同期 Anthropic 完成 813 亿美元 IPO，成为首家上市的大型 AI 实验室。文章引用前 Take-Two CEO Ben Feder 的观点称，这类作品需要试错、删改与延期，而删改本身昂贵且天然不高效；Take-Two CEO Strauss Zelnick 此前也反对「按按钮就能生成爆款」的说法。文章认为，效率至上的 AI 叙事与需要长期打磨的创意作品之间存在张力。文中数字多来自商业新闻稿与既有报道。",
+   "heat": {
+    "stage": "上升",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "GTA VI 首日零售销售额新闻稿",
+     "url": "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-%243.79-Billion-in-Day-One-Retail-Sales",
+     "publisher": "Business Wire",
+     "date": "2026-11-20",
+     "relation": "一手"
+    }
+   ],
+   "target": "公众号",
+   "form": "gzh-poster",
+   "formLabel": "公众号贴图",
+   "status": "rejected",
+   "leadHeadline": "当 GTA VI 撞上 Anthropic 上市：低效，可能是作品最贵的护城河",
+   "angle": "用同周发生的两件事对照，讨论创意生产中「浪费」的价值",
+   "outline": [
+    "同周两个纪录的对照",
+    "5000 人十余年与 3 万个 NPC",
+    "受访者为什么说删改昂贵但必要",
+    "效率叙事的边界",
+    "对内容行业的启发"
+   ],
+   "audience": "关注 AI 与创意产业的读者",
+   "risk": "明确观点来自评论文章与受访者；不把销售额写成审计收入",
+   "basis": "原文写明 GTA VI 未使用生成式 AI、约 5000 人制作十余年，并引用 Ben Feder 关于删改成本的表述",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-28-gta-vi-anthropic.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "90",
+   "sourceItemId": "8a23a58c650ec899",
+   "sourceTitle": "Keychron G6 HE 磁轴鼠标实测：价格不到罗技一半，但按键手感与触发点脱节",
+   "sourceUrl": "https://www.theverge.com/games/1043028/keychron-g6-he-hall-effect-magoptic-gaming-mouse-impressions",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-27T14:00:00-04:00",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "价格与重量为页面可见的产品信息；手感评价为记者主观体验。",
+   "summary": "The Verge 11 月 27 日发布 Keychron G6 HE 游戏鼠标体验。该鼠标售价 90 美元，采用霍尔效应磁轴，可通过浏览器端 Keychron Launcher 调整触发深度，重量 49 克（含电池），支持可更换电池，充电底座兼作无线接收器。记者 Antonio G. Di Benedetto 表示，左右键使用的 MagOptic 开关同时具备磁性与光学特性，但点击手感不随触发点变化：设置过浅会在听到或感觉到点击前就触发，设置过深则先有点击感才触发。联合创始人 Fab Chan 解释称，许多用户仍偏好传统点击感，且震动马达会增加重量，公司计划推出带触觉反馈的稍重型号。作者认为它作为普通鼠标有轻量、低价和换电优势。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "rejected",
+   "leadHeadline": "90 美元的磁轴鼠标，为什么「按下去」和「感觉到」对不上？",
+   "angle": "用可调触发点失效的现象，讲清磁轴鼠标的关键体验指标",
+   "outline": [
+    "产品规格与价格对比",
+    "MagOptic 开关的问题表现",
+    "厂商给出的设计解释",
+    "作为普通鼠标的优势",
+    "选购时应关注什么"
+   ],
+   "audience": "游戏外设与数码消费者",
+   "risk": "体验结论来自单篇外媒评测，不写成质量定论",
+   "basis": "原文记录了浅触发先于点击感、深触发晚于点击感，以及 Fab Chan 具名解释",
+   "hasLead": true,
+   "score": 68,
+   "readyFile": "2026-11-28-keychron-g6-he.json",
+   "auditScore": 75.0
+  },
+  {
+   "slug": "android-create-my-widget",
+   "sourceItemId": "9edd1ef30ccfae04",
+   "sourceTitle": "The Verge 实测 Android「Create My Widget」：AI 生成小组件能玩，但不擅长实时信息",
+   "sourceUrl": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "sourcePlatform": "The Verge",
+   "publishedAt": "2026-11-27T14:00:00-04:00",
+   "region": "海外",
+   "type": "resource",
+   "verification": "部分核实",
+   "verificationNote": "功能处于 beta 且分批推送，不同机型与地区表现可能不同；体验结论为记者主观判断。",
+   "summary": "The Verge 11 月 27 日发布对 Android「Create My Widget」功能的体验。该功能在谷歌 I/O 公布，属于 Gemini Intelligence 套件，目前处于 beta，本月早些时候开始向 Pixel 手机推送。记者 Allison Johnson 尝试制作公交实时到站、散步打卡、天气提示等小组件，发现多数成品更像 Gemini 的提示词快捷入口：点击后在桌面唤起 Gemini，由其搜索或生成结果，而非独立刷新的小应用。她用模板做出了倒计时、球队比分等组件，但公交到站组件只给出文字化时刻说明，无法满足实时需求。作者结论是功能有趣、可玩性高，但目前仍属模板化实现。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "rejected",
+   "leadHeadline": "安卓能用 AI 生成小组件了，实测：能玩，但别指望它查实时公交",
+   "angle": "用实测落差讲清新功能的真实能力边界",
+   "outline": [
+    "功能是什么、哪些机型可用",
+    "记者做了哪些小组件",
+    "为什么多数成品像提示词入口",
+    "实时信息场景为什么失败",
+    "现阶段适合怎么用"
+   ],
+   "audience": "安卓手机用户与 AI 工具爱好者",
+   "risk": "功能处于 beta，需写明推送范围有限",
+   "basis": "原文写明功能为 beta、本月起向 Pixel 推送，公交到站组件只返回文字说明",
+   "hasLead": true,
+   "score": 67,
+   "readyFile": "2026-11-28-android-create-my-widget.json",
+   "auditScore": 75.0
+  },
+  {
+   "slug": "u17-8-0-21",
+   "sourceItemId": "e28e7303381f0a11",
+   "sourceTitle": "抖音热榜：U17国足8比0战胜斐济，国字号时隔21年重返世少赛淘汰赛",
+   "sourceUrl": "https://rshub.site/",
+   "sourcePlatform": "抖音",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "hotspot",
+   "verification": "部分核实",
+   "verificationNote": "榜单快照、未取得原链接；页面为聚合榜，热度数值不作为本页数据。待核问题：最终排名与出线规则以国际足联赛后公告为准。",
+   "summary": "11月27日抖音热搜词榜快照显示，「U17国足迎战斐济争出线」位于榜单前列。多份公开热榜汇编转述称，2026年U17男足世界杯H组末轮，中国队以8比0战胜斐济队，赵松源第3分钟首开纪录，邝兆镭、万项各入两球；中国队以1胜1平1负积4分位列小组第三晋级32强，这是队史第三次进入世少赛淘汰赛。相关表述来自榜单条目与汇编稿件，比赛技术统计应以赛事官方公告为准。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "今日热搜榜 AI 看点 Top10（抖音榜快照）",
+     "url": "https://rshub.site/",
+     "publisher": "热搜榜聚合页",
+     "date": "2026-11-27",
+     "relation": "转载"
+    },
+    {
+     "title": "网络热点速览·2026年11月27日",
+     "url": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492555&idx=1&sn=0b9ab34e2d96e05e30de97d9fb1ae6be&chksm=f27bb5d3ddf4a7b5322eecb088906497ca2309a9bd3f166816b3a6861651116bc8d53be494e2#rd",
+     "publisher": "微信公众号",
+     "date": "2026-11-27",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "rejected",
+   "leadHeadline": "U17国足8比0大胜斐济，时隔21年再进世少赛淘汰赛",
+   "angle": "从这场大胜切入中国青少年足球的变化，赛果与历程分开讲。",
+   "outline": [
+    "比赛比分与关键进球时间",
+    "小组赛三场战绩与出线过程",
+    "21年间隔意味着什么",
+    "后续对手与赛程以官方公告为准"
+   ],
+   "audience": "球迷与关注青训的家庭读者",
+   "risk": "比分与出线规则需核对赛事官方；不预测未来战绩；不转载未经授权的比赛画面。",
+   "basis": "抖音榜单条目与公众号汇编记录的比分、进球队员与出线表述",
+   "hasLead": true,
+   "score": 67,
+   "readyFile": "2026-11-28-u17-8-0-21.json",
+   "auditScore": 75.0
+  },
+  {
+   "slug": "indium-phosphide-squeeze",
+   "sourceItemId": "ec47957503ba5bd5",
+   "sourceTitle": "Tom's Hardware：AI 光互连需求挤压磷化铟供应链，材料端成新瓶颈",
+   "sourceUrl": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+   "sourcePlatform": "Tom's Hardware",
+   "publishedAt": "2026-11-26T16:00:00Z",
+   "region": "海外",
+   "type": "news",
+   "verification": "部分核实",
+   "verificationNote": "供应份额与出货缺口为报道口径，未逐一核验一手财报；涉及出口许可的表述需保持中性。",
+   "summary": "Tom's Hardware 11 月 26 日报道，AI 集群从铜互连转向光互连，使磷化铟（InP）这类用于激光器、调制器与探测器的材料供应趋紧。文章称 InP 衬底产能高度集中：住友电工与 AXT 合计约占全球八成，JX Advanced Metals 另约占一成；AXT 多数衬底由其北京子公司生产，出口需许可，中国约占全球精炼铟产量七成。Lumentum 管理层今年 7 月表示其 InP 工厂出货仍比客户需求低 30% 以上；Coherent 把 InP 产能称为其收发器业务的首要约束。文章还提到英伟达已分别向 Lumentum 与 Coherent 投资 20 亿美元并附带采购承诺；共封装光学虽缩短电路径，但仍多依赖外置 InP 连续波激光。上述份额与产能表述均来自该报道及其引用的公司公开信息。",
+   "heat": {
+    "stage": "缓慢起量",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [],
+   "target": "今日头条",
+   "form": "tt-article",
+   "formLabel": "头条文章",
+   "status": "rejected",
+   "leadHeadline": "AI 算力卡在一种叫磷化铟的材料上：光模块为什么突然不够用了",
+   "angle": "从材料端解释 AI 数据中心的网络瓶颈",
+   "outline": [
+    "铜线为什么不够用",
+    "磷化铟在光模块中的作用",
+    "供应集中在哪里",
+    "厂商说的缺口有多大",
+    "扩容为什么慢"
+   ],
+   "audience": "关注 AI 产业与科技的读者",
+   "risk": "不构成投资建议；出口许可表述保持报道口径",
+   "basis": "原文写明住友电工与 AXT 合计约占八成衬底产能，Lumentum 出货低于需求 30% 以上",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-28-indium-phosphide-squeeze.json",
+   "auditScore": 75.0
+  },
+  {
+   "slug": "e11-dc4504",
+   "sourceItemId": "dc45042c0e6438b4",
+   "sourceTitle": "腾讯新闻：超市羽绒服卖空，参数与价格成为年轻人选购重点",
+   "sourceUrl": "https://news.qq.com/rain/a/20261127A0EIJ600",
+   "sourcePlatform": "腾讯新闻",
+   "publishedAt": "2026-11-27T15:00:00+08:00",
+   "region": "国内",
+   "type": "idea",
+   "verification": "部分核实",
+   "verificationNote": "断货与代购加价为个案观察，不足以代表全国市场；待核问题：不同渠道羽绒服的绒子含量标注是否可统一比较。",
+   "summary": "11月27日腾讯新闻刊文称，山姆499元长羽绒服、开市客359.9元短款羽绒服与胖东来580元长款羽绒服在本轮冬季销售中被消费者抢购，部分门店断货并出现代购加价。文章转述消费者与行业顾问观点称，购买者会先比较绒子含量、充绒量等参数，基础色比白色更好买，主力人群是30至45岁的务实型白领；文中同时提到奥莱与品牌特卖平台承接同类需求。价格、断货程度与人群画像均来自记者观察及被访者自述。",
+   "heat": {
+    "stage": "缓慢起量",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "羽绒服越卖越贵，年轻人不陪了",
+     "url": "https://news.qq.com/rain/a/20261127A0EIJ600",
+     "publisher": "腾讯新闻/勇砺商业评论",
+     "date": "2026-11-27",
+     "relation": "一手"
+    },
+    {
+     "title": "迪奥圣诞礼盒争议与社媒开箱观察",
+     "url": "https://finance.sina.cn/2026-11-27/detail-inkaeneh5557470.d.html",
+     "publisher": "新浪财经",
+     "date": "2026-11-27",
+     "relation": "二手"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "rejected",
+   "leadHeadline": "几百元的超市羽绒服为什么难买？年轻人先看参数再看牌子",
+   "angle": "从排队现象切入讲绒子含量、充绒量等可比较参数，给读者一套理性选购方法。",
+   "outline": [
+    "被抢购的几款羽绒服价格与标注参数",
+    "断货与代购现象是个案还是趋势",
+    "绒子含量、充绒量如何横向比较",
+    "奥莱与特卖渠道承接同类需求",
+    "价格与缺货均为观察，不写购买指引"
+   ],
+   "audience": "准备购买冬装的普通消费者",
+   "risk": "价格与断货为个案观察，需注明来源；不做品牌导购、不搬运未授权商品图；不构成消费建议。",
+   "basis": "原文列举的三款超市羽绒服价格、参数与消费者比较行为的描述",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-28-e11-dc4504.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "tv-boot-ad-ban",
+   "sourceItemId": "fcfd891e84daeeec",
+   "sourceTitle": "今天起电视不得播放开机广告，广电两项新规正式施行",
+   "sourceUrl": "https://www.toutiao.com/article/7712668805784175130/",
+   "sourcePlatform": "今日头条",
+   "publishedAt": "2026-11-27T09:00:00+08:00",
+   "region": "国内",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "规定条文与生效日期多源一致；2.05亿户为报道中分析师引用的口径，待核问题：新规在存量智能电视上的实际执行进度。",
+   "summary": "国家广播电视总局第17号令《有线广播电视运营服务管理规定》与第18号令《交互式网络电视运营服务管理暂行规定》自2026年11月27日起施行。今日头条转载的报道列出新规要求：坚持直播优先，实现开机看全屏直播并设置频道回看入口，不得播放开机广告；智能电视应支持优先呈现直播频道并提供便捷设置入口；首页应设免费专区、精简收费栏目、明示收费信息；应缩短开机时长、简化遥控操作，并在十个工作日内答复用户服务投诉。报道援引行业分析师观点称新规覆盖约2.05亿户有线电视用户。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "今天开始，广电新规正式施行：电视不得播放开机广告",
+     "url": "https://www.toutiao.com/article/7712668805784175130/",
+     "publisher": "今日头条/南方都市报",
+     "date": "2026-11-27",
+     "relation": "一手"
+    },
+    {
+     "title": "看电视更省心 今日起电视不得播放开机广告",
+     "url": "https://www.toutiao.com/article/7712758598551503398/",
+     "publisher": "新华社音视频部（今日头条转载）",
+     "date": "2026-11-27",
+     "relation": "官方"
+    },
+    {
+     "title": "今天起，电视不得播放开机广告！",
+     "url": "https://news.qq.com/rain/a/20261127A05CS900",
+     "publisher": "腾讯新闻/央视新闻",
+     "date": "2026-11-27",
+     "relation": "转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "rejected",
+   "leadHeadline": "今天起电视不得播放开机广告，这几项变化和你有关",
+   "angle": "按「开机—看直播—找免费内容—投诉」的使用顺序讲清新规。",
+   "outline": [
+    "生效日期与适用对象",
+    "开机不再播广告、可直接看直播",
+    "首页免费专区与收费信息明示",
+    "遥控操作简化与投诉答复时限"
+   ],
+   "audience": "普通电视用户",
+   "risk": "条文引用须与广电总局原文一致；不建议预测厂商执行速度。",
+   "basis": "报道逐条列出的新规要求与生效日期",
+   "hasLead": true,
+   "score": 83,
+   "readyFile": "2026-11-28-tv-boot-ad-ban.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "x-parental-controls",
+   "sourceItemId": "ddabb8f0eb3e30a2",
+   "sourceTitle": "X 上线青少年家长控制：13–17 岁默认保护模式，家长看不到私信",
+   "sourceUrl": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
+   "sourcePlatform": "TechCrunch",
+   "publishedAt": "2026-11-26T19:31:50Z",
+   "region": "海外",
+   "type": "news",
+   "verification": "已核实",
+   "verificationNote": "官方帖页面显示发布时间为 2026-11-25， TechCrunch 报道为 11-26；以报道发布日为准，功能上线时间按官方帖表述。",
+   "summary": "TechCrunch 11 月 26 日报道，运营 20 年后，X 面向 13–17 岁用户的家庭推出家长控制功能。青少年账号默认进入保护模式，不展示敏感内容、不投放定向广告；家长可查看每周使用时长、设置每日上限、要求新关注者获批、限制推荐与视频来源、过滤关键词、管理私信对象并查看私信往来账号名单。X 安全负责人 Michael O'Herlihy 表示，家长获得的是护栏而非查看青少年私人生活的窗口；家长不能读私信、查搜索或浏览记录，也不能代替孩子发帖。每项改动对青少年可见，双方需同意才能建立监护关系。",
+   "heat": {
+    "stage": "新出现",
+    "signals": {
+     "views": "不可见",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "X 官方安全账号：Parental Controls 公告",
+     "url": "https://x.com/Safety/status/2125709760066670625",
+     "publisher": "X Safety",
+     "date": "2026-11-25",
+     "relation": "官方"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "rejected",
+   "leadHeadline": "",
+   "angle": "与国内常见的家长监护方案相比，X 把『可见但不越界』写进产品设计：家长能看时长与联系人，却看不到内容本身。这个边界感是可迁移到国内家庭教育讨论的角度。",
+   "outline": [],
+   "audience": "",
+   "risk": "",
+   "basis": "",
+   "hasLead": false,
+   "score": 45,
+   "readyFile": "2026-11-28-x-parental-controls.json",
+   "auditScore": 65.0
+  },
+  {
+   "slug": "robot-startup-shutdowns",
+   "sourceItemId": "aac1ec0be313df3d",
+   "sourceTitle": "知乎热议：机器人赛道融资火热，为何近两年多家公司进入破产清算",
+   "sourceUrl": "https://www.zhihu.com/question/21088630070485913288",
+   "sourcePlatform": "知乎",
+   "publishedAt": "",
+   "region": "国内",
+   "type": "discussion",
+   "verification": "部分核实",
+   "verificationNote": "待核问题：\"两年近30家\"来自问题陈述，报道口径为\"2026年以来十余家\"；不要把两者当成同一统计",
+   "summary": "知乎11月26日热榜问题提到\"多家机器人公司进入破产清算，两年近30家机器人公司倒闭\"。澎湃新闻转载红星资本局报道称，2026年以来已有十余家机器人相关企业进入清算、破产或停摆状态，达闼机器人、深兰机器人等被提及；报道把共性归为商业化闭环断裂、现金流与成本失控、战略失焦，并提醒框架订单不等于已实现收入。\"近30家\"为问题陈述，未独立核实。",
+   "heat": {
+    "stage": "成熟",
+    "signals": {
+     "views": "1710万（榜单值，晚间快照，非页面可见浏览量）",
+     "likes": "不可见",
+     "comments": "不可见",
+     "shares": "不可见"
+    }
+   },
+   "citations": [
+    {
+     "title": "机器人赛道\"换血\"：破产清算与百亿融资同时发生，出清才刚开始",
+     "url": "https://m.thepaper.cn/newsDetail_forward_34407303",
+     "publisher": "澎湃新闻/红星资本局",
+     "date": "2026-11-26",
+     "relation": "二手/转载"
+    },
+    {
+     "title": "机器人很热 这两家公司却在破产清算",
+     "url": "https://new.qq.com/rain/a/20261110A07LDS00",
+     "publisher": "腾讯新闻",
+     "date": "2026-11-10",
+     "relation": "二手/转载"
+    }
+   ],
+   "target": "今日头条",
+   "form": "tt-micro",
+   "formLabel": "微头条",
+   "status": "rejected",
+   "leadHeadline": "机器人赛道一边融资一边出清，问题出在哪？",
+   "angle": "从调查报道中的具体案例解释行业分化",
+   "outline": [
+    "多家企业进入清算、破产或停摆的报道",
+    "交付验收与回款难点",
+    "融资向头部集中的趋势",
+    "判断企业经营状况的公开信号"
+   ],
+   "audience": "关注新兴产业与普通就业的读者",
+   "risk": "避免给个股、具体公司下结论；数字注明出处与口径",
+   "basis": "澎湃新闻调查稿与知乎热榜问题",
+   "hasLead": true,
+   "score": 60,
+   "readyFile": "2026-11-28-robot-startup-shutdowns.json",
+   "auditScore": 65.0
+  }
+ ],
+ "syncedAt": "2026-11-28T07:38:16+08:00"
+}

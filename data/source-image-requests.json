@@ -1,101 +1,98 @@
 {
-  "builtAt": "2026-11-27T04:46:57+08:00",
+  "builtAt": "2026-11-28T04:46:21+08:00",
   "jobs": [
     {
-      "slug": "ny-ai-toy-ban",
+      "slug": "nvidia-seasia-pause",
       "urls": [
-        "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
-        "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
-        "https://www.theverge.com/ai-artificial-intelligence/1042261/new-york-bans-ai-chatbot-toys-for-kids"
+        "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+        "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
       ]
     },
     {
-      "slug": "fcc-100",
+      "slug": "e2-fa901a",
       "urls": [
-        "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-        "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+        "http://mp.weixin.qq.com/s?__biz=Mzk0MjQxMDY1Mg==&mid=2247506152&idx=1&sn=75dc0568e25dabef1fe5d0d868e6519c&chksm=c395e8e2334aec1245d5455d3918cb310753024defa57573bd7323305dd15770ace7696b6a4a#rd",
+        "https://www.toutiao.com/article/7712769107728368162/"
       ]
     },
     {
-      "slug": "character-ai-chat-auction",
-      "urls": [
-        "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
-        "https://www.ag.state.mn.us/Office/Communications/2026/11/23_CharacterAI.asp",
-        "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
-      ]
-    },
-    {
-      "slug": "3500",
-      "urls": [
-        "https://www.sohu.com/a/1106633237_121426544",
-        "https://m.gmw.cn/2026-11/26/content_1304589616.htm",
-        "https://www.toutiao.com/a7712247825421124139"
-      ]
-    },
-    {
-      "slug": "shenzhou-24-space-handshake",
-      "urls": [
-        "http://mp.weixin.qq.com/s?__biz=MzkzMTI0MzY0Nw==&mid=2247486267&idx=1&sn=7e3087ce7442d9a43a7eefe3c21843b4&chksm=c393276b4de6a5ccfc5385f10e16e71519e2831484b6e398b603cec66026241cf49606de1ca3#rd"
-      ]
-    },
-    {
-      "slug": "yab-browser",
-      "urls": [
-        "https://sspai.com/",
-        "https://sspai.com/post/119310"
-      ]
-    },
-    {
-      "slug": "1password",
+      "slug": "1password-security-incident",
       "urls": [
         "https://news.ycombinator.com/item?id=50644817",
         "https://1password.com/blog/update-on-nov-2026-security-incident"
       ]
     },
     {
-      "slug": "meta-ai",
+      "slug": "hdd-price-hike",
       "urls": [
-        "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
-        "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
-        "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+        "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+        "https://news.ycombinator.com/item?id=50661646"
       ]
     },
     {
-      "slug": "anthropic-ai-adoption-study",
+      "slug": "iphone",
       "urls": [
-        "https://www.anthropic.com/research/working-with-ai",
-        "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/"
+        "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/"
       ]
     },
     {
-      "slug": "anthropic-free-will",
+      "slug": "gta-vi-anthropic",
       "urls": [
-        "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai"
+        "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-%243.79-Billion-in-Day-One-Retail-Sales",
+        "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/"
       ]
     },
     {
-      "slug": "e11-aac1ec",
+      "slug": "90",
+      "urls": [
+        "https://www.theverge.com/games/1043028/keychron-g6-he-hall-effect-magoptic-gaming-mouse-impressions"
+      ]
+    },
+    {
+      "slug": "android-create-my-widget",
+      "urls": [
+        "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini"
+      ]
+    },
+    {
+      "slug": "u17-8-0-21",
+      "urls": [
+        "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492555&idx=1&sn=0b9ab34e2d96e05e30de97d9fb1ae6be&chksm=f27bb5d3ddf4a7b5322eecb088906497ca2309a9bd3f166816b3a6861651116bc8d53be494e2#rd",
+        "https://rshub.site/"
+      ]
+    },
+    {
+      "slug": "indium-phosphide-squeeze",
+      "urls": [
+        "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"
+      ]
+    },
+    {
+      "slug": "e11-dc4504",
+      "urls": [
+        "https://news.qq.com/rain/a/20261127A0EIJ600",
+        "https://finance.sina.cn/2026-11-27/detail-inkaeneh5557470.d.html"
+      ]
+    },
+    {
+      "slug": "tv-boot-ad-ban",
+      "urls": [
+        "https://news.qq.com/rain/a/20261127A05CS900",
+        "https://www.toutiao.com/article/7712668805784175130/",
+        "https://www.toutiao.com/article/7712758598551503398/"
+      ]
+    },
+    {
+      "slug": "x-parental-controls",
+      "urls": [
+        "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/"
+      ]
+    },
+    {
+      "slug": "robot-startup-shutdowns",
       "urls": [
         "https://m.thepaper.cn/newsDetail_forward_34407303",
         "https://new.qq.com/rain/a/20261110A07LDS00"
-      ]
-    },
-    {
-      "slug": "chow-tai-fook-stores",
-      "urls": [
-        "https://whatshot.top/news/kuaishou?view=detail"
-      ]
-    },
-    {
-      "slug": "e13-384cae",
-      "urls": [
-        "https://jesseovo.github.io/last30days-skill-cn/"
-      ]
-    },
-    {
-      "slug": "zhuan-ren-gong",
-      "urls": [
-        "https://whatshot.top/news/baidu?type=realtime&view=detail"
       ]
     }
   ]

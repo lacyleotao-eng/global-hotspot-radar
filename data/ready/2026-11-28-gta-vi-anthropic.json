@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "date": "2026-11-28",
+  "slug": "gta-vi-anthropic",
+  "sourceItemId": "92a6487c4340e53d",
+  "sourceTitle": "观点：GTA VI 与 Anthropic 上市同周，「低效」为何仍是作品的护城河",
+  "sourceUrl": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+  "sourcePlatform": "TechCrunch",
+  "verification": "部分核实",
+  "verificationNote": "本文为评论，核心论点属作者与受访者观点；游戏销售额为新闻稿口径，不等于审计口径收入。",
+  "imageNote": "",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "创意观察",
+      "title": "GTA VI撞上813亿IPO：低效，原来是作品最贵的护城河",
+      "digest": "同一周，GTA VI创下首发纪录，Anthropic完成813亿美元IPO。一篇评论用5000人、3万个NPC与两次延期，讲清删改为何昂贵却必要。",
+      "images": [],
+      "blocks": [
+        {"type": "para", "text": "这两天，一个巧合被反复提起：GTA VI 首发日零售销售额 37.9 亿美元，同一周 Anthropic 以 813 亿美元完成 IPO。一个靠十余年手工打磨，一个把效率当成北极星，恰好撞在了一起。"},
+        {"type": "para", "text": "两组数字先标清口径。37.9 亿美元来自商业新闻稿，是首发日零售销售额，不等于审计口径收入；813 亿美元 IPO 则是评论文章援引的公开报道。数字都来自既有稿件，不是我们重新核算的结果。"},
+        {"type": "para", "text": "评论列出的制作账本很具体：约 5000 人投入十余年，全程未使用生成式 AI，还做了 3 万个有独特外观与性格的非玩家角色。文章称它成为 Metacritic 评分最高的游戏，也提到它经历两次延期。"},
+        {"type": "para", "text": "前 Take-Two CEO Ben Feder 对 TechCrunch 说，这类作品大概率是最后一种这样做的方式。他的观点是：好作品几乎必须慢下来，创作离不开删改；到了这种复杂度的游戏，删改极其昂贵，按定义就不高效。"},
+        {"type": "para", "text": "现任 Take-Two CEO Strauss Zelnick 此前也反对「按一下按钮就生成爆款」的说法。同一篇评论里，Meta 的扎克伯格则承诺很快会有能理解用户、生成个性化内容的 AI。两种未来观被放在了一页纸上。"},
+        {"type": "para", "text": "这篇稿子本身是评论，核心判断属于作者和受访者，不是行业定论。它值得记下的是一个问题：当效率成为默认目标，那些靠试错、删改和延期换来的品质，还有没有位置？答案留给每个做内容的人自己判断。"}
+      ]
+    }
+  ]
+}

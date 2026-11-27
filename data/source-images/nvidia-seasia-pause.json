@@ -1,0 +1,100 @@
+{
+  "slug": "nvidia-seasia-pause",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/nvidia-seasia-pause/raw-1.jpeg",
+      "bytes": 170235,
+      "w": 1600,
+      "h": 1066,
+      "url": "https://images.wsj.net/im-68022991?width=700&size=1.501&pixel_ratio=3",
+      "page": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+      "alt": "Nvidia CEO Jensen Huang holds up a small GPU chip during a keynote address.",
+      "md5": "bd5bbeaaf517d7b0640a017b09a9c9bd",
+      "status": "approved",
+      "reason": "1黄仁勋手持AI芯片现场照、3台证交所芯片展板与英伟达供应链相关，TWSE为拍摄场所标识非水印；2与1近重复、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/nvidia-seasia-pause/raw-2.jpeg",
+      "bytes": 35812,
+      "w": 1280,
+      "h": 640,
+      "url": "https://images.wsj.net/im-68022991/social",
+      "page": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+      "alt": "",
+      "md5": "ea68b67cde30035dfd5d4baba0169eca",
+      "status": "drop",
+      "reason": "人工淘汰：1黄仁勋手持AI芯片现场照、3台证交所芯片展板与英伟达供应链相关，TWSE为拍摄场所标识非水印；2与1近重复、4与3近重复，丢弃",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 3,
+      "file": "assets/source/nvidia-seasia-pause/raw-3.webp",
+      "bytes": 74762,
+      "w": 1024,
+      "h": 683,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg",
+      "page": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "alt": "",
+      "md5": "87768009b5d152e33a44d174a9a9b071",
+      "status": "approved",
+      "reason": "1黄仁勋手持AI芯片现场照、3台证交所芯片展板与英伟达供应链相关，TWSE为拍摄场所标识非水印；2与1近重复、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 4,
+      "file": "assets/source/nvidia-seasia-pause/raw-4.webp",
+      "bytes": 79136,
+      "w": 1024,
+      "h": 683,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024",
+      "page": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "alt": "",
+      "md5": "aa7715b7d88442c77380a2f984d67027",
+      "status": "drop",
+      "reason": "与前面近似重复（同一场景）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/nvidia-seasia-pause/raw-1.jpeg",
+      "bytes": 170235,
+      "w": 1600,
+      "h": 1066,
+      "url": "https://images.wsj.net/im-68022991?width=700&size=1.501&pixel_ratio=3",
+      "page": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0",
+      "alt": "Nvidia CEO Jensen Huang holds up a small GPU chip during a keynote address.",
+      "md5": "bd5bbeaaf517d7b0640a017b09a9c9bd",
+      "status": "approved",
+      "reason": "1黄仁勋手持AI芯片现场照、3台证交所芯片展板与英伟达供应链相关，TWSE为拍摄场所标识非水印；2与1近重复、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/nvidia-seasia-pause/raw-3.webp",
+      "bytes": 74762,
+      "w": 1024,
+      "h": 683,
+      "url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg",
+      "page": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "alt": "",
+      "md5": "87768009b5d152e33a44d174a9a9b071",
+      "status": "approved",
+      "reason": "1黄仁勋手持AI芯片现场照、3台证交所芯片展板与英伟达供应链相关，TWSE为拍摄场所标识非水印；2与1近重复、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

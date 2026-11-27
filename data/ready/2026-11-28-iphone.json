@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "date": "2026-11-28",
+  "slug": "iphone",
+  "sourceItemId": "0fb3854a2025ca35",
+  "sourceUrl": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/",
+  "sourceTitle": "一个月折叠 iPhone Duo 体验：双屏习惯改变用法，长焦与 Face ID 仍有取舍",
+  "sourcePlatform": "TechCrunch",
+  "verification": "部分核实",
+  "verificationNote": "体验结论属作者主观评价，不能写成普遍事实；价格等信息本文未直接给出。",
+  "imageNote": "",
+  "batch": "morning",
+  "pieces": [
+    {
+      "id": "gzh-poster",
+      "target": "公众号",
+      "form": "贴图",
+      "badge": "数码生活",
+      "title": "折叠iPhone用满1个月后，最怀念的却不是长焦",
+      "digest": "一位外媒记者用满一个月折叠iPhone后，习惯被双屏重写：分屏成日常、合上像小屏、展开能替代Kindle。适配进度仍有黑边。",
+      "images": [],
+      "blocks": [
+        {"type": "para", "text": "这两天，一篇折叠 iPhone Duo 的体验稿引发讨论。TechCrunch 记者 Sarah Perez 用满近一个月后说，真正改变她的不是硬件参数，而是用法：拖动即可分屏，她常把 X 与新闻、邮件或 Slack 并排用。"},
+        {"type": "para", "text": "合上与展开被她分成了两套场景。合上时像一台小屏 iPhone，单手回消息、看导航更顺手，也更容易塞进口袋；展开后更适合看视频、购物和阅读。她甚至重新安排了主屏幕：合上时只留小组件，图标收进底部栏。"},
+        {"type": "para", "text": "应用适配的进度有数字可查。她在文中提到，苹果 11 月中表示已有超过 20 万个 Duo 适配应用；但她常用的 Gmail、Drive 等谷歌应用仍有黑边。这条数字是企业说法，黑边则是她个人的使用观察。"},
+        {"type": "para", "text": "一个意外收获是阅读。她说自己把 Kindle 用得少了，改在展开的 Duo 上读书，竖握时手感接近阅读器，内屏偏哑光、反光更少。这同样是她的主观体验，不等于这类屏幕普遍适合长时间阅读。"},
+        {"type": "para", "text": "取舍仍然存在：她偶尔怀念长焦镜头和 Face ID，不过系统更新后带来了面部解锁功能。价格、续航等数据本文未直接给出，属于不可见，不做补写。"},
+        {"type": "para", "text": "把这篇稿子读成「评测结论」并不合适，它更像一个人的习惯记录。对正在观望折叠屏的人来说，值得参考的是那份场景分工：先想清楚自己更在意单手随手用，还是摊开慢慢看，再谈值不值。"}
+      ]
+    }
+  ]
+}

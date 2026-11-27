@@ -1,0 +1,100 @@
+{
+  "slug": "indium-phosphide-squeeze",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/indium-phosphide-squeeze/raw-1.jpeg",
+      "bytes": 179803,
+      "w": 1600,
+      "h": 900,
+      "url": "https://cdn.mos.cms.futurecdn.net/QHDLcWSaWAmDdMePxyymwb-2560-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "Telecommunications using Fiber Optics handling multiple data",
+      "md5": "f42d8cc1c3c653057e71c09690c75899",
+      "status": "approved",
+      "reason": "1机房光模块跳线、2收发器设备，对应磷化铟光互连供应链；3为通用PCB特写、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/indium-phosphide-squeeze/raw-2.jpeg",
+      "bytes": 216267,
+      "w": 1600,
+      "h": 900,
+      "url": "https://cdn.mos.cms.futurecdn.net/H9c8yy2A5KxKsr5o3HGqr4-1920-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "Quantum-X InfiniBand Photonics Switch",
+      "md5": "82d2b48da338a94ee9e22eba3321646b",
+      "status": "approved",
+      "reason": "1机房光模块跳线、2收发器设备，对应磷化铟光互连供应链；3为通用PCB特写、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 3,
+      "file": "assets/source/indium-phosphide-squeeze/raw-3.jpeg",
+      "bytes": 223097,
+      "w": 1600,
+      "h": 675,
+      "url": "https://cdn.mos.cms.futurecdn.net/veeGtgCPJNgJzwffWHN9h5-2560-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "",
+      "md5": "0158758210ebed323a23fc570377dea2",
+      "status": "drop",
+      "reason": "人工淘汰：1机房光模块跳线、2收发器设备，对应磷化铟光互连供应链；3为通用PCB特写、4与3近重复，丢弃",
+      "crop": "",
+      "approved": false
+    },
+    {
+      "index": 4,
+      "file": "assets/source/indium-phosphide-squeeze/raw-4.jpeg",
+      "bytes": 129965,
+      "w": 1200,
+      "h": 506,
+      "url": "https://cdn.mos.cms.futurecdn.net/veeGtgCPJNgJzwffWHN9h5-1200-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "",
+      "md5": "f7350680d4e2e79fe291a59064e6e958",
+      "status": "drop",
+      "reason": "与前面近似重复（同一场景）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/indium-phosphide-squeeze/raw-1.jpeg",
+      "bytes": 179803,
+      "w": 1600,
+      "h": 900,
+      "url": "https://cdn.mos.cms.futurecdn.net/QHDLcWSaWAmDdMePxyymwb-2560-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "Telecommunications using Fiber Optics handling multiple data",
+      "md5": "f42d8cc1c3c653057e71c09690c75899",
+      "status": "approved",
+      "reason": "1机房光模块跳线、2收发器设备，对应磷化铟光互连供应链；3为通用PCB特写、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    },
+    {
+      "index": 2,
+      "file": "assets/source/indium-phosphide-squeeze/raw-2.jpeg",
+      "bytes": 216267,
+      "w": 1600,
+      "h": 900,
+      "url": "https://cdn.mos.cms.futurecdn.net/H9c8yy2A5KxKsr5o3HGqr4-1920-80.jpg",
+      "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure",
+      "alt": "Quantum-X InfiniBand Photonics Switch",
+      "md5": "82d2b48da338a94ee9e22eba3321646b",
+      "status": "approved",
+      "reason": "1机房光模块跳线、2收发器设备，对应磷化铟光互连供应链；3为通用PCB特写、4与3近重复，丢弃",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "hdd-price-hike",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/hdd-price-hike/raw-1.webp",
+      "bytes": 297148,
+      "w": 1448,
+      "h": 1086,
+      "url": "https://pub-430e0c9ecb66464fa6999cd23a749d13.r2.dev/content/images/2026/11/black-friday-hard-drive-prices-are-messed-up/row-of-easystore-drives-on-a-cluttered-workbench.webp",
+      "page": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "alt": "",
+      "md5": "e0c6b97a73101d997ee8e956338c15d3",
+      "status": "approved",
+      "reason": "原文博客实拍：多块外置硬盘与NAS阵列，对应黑五20TB硬盘涨价，无水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approved": [
+    {
+      "index": 1,
+      "file": "assets/source/hdd-price-hike/raw-1.webp",
+      "bytes": 297148,
+      "w": 1448,
+      "h": 1086,
+      "url": "https://pub-430e0c9ecb66464fa6999cd23a749d13.r2.dev/content/images/2026/11/black-friday-hard-drive-prices-are-messed-up/row-of-easystore-drives-on-a-cluttered-workbench.webp",
+      "page": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "alt": "",
+      "md5": "e0c6b97a73101d997ee8e956338c15d3",
+      "status": "approved",
+      "reason": "原文博客实拍：多块外置硬盘与NAS阵列，对应黑五20TB硬盘涨价，无水印",
+      "crop": "",
+      "approved": true
+    }
+  ],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

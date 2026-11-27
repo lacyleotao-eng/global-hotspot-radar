@@ -1166,45 +1166,83 @@
 
   // 1688 采购直达：一条店铺一行，组合品按组件分组。
   // 数据来自 scripts/t1688_links.py（1688 公开聚合页），价格是挂牌起批价，不含运费。
-  function tbPickRow(p) {
-    var meta = [];
-    if (p.moq) meta.push(p.moq);
-    if (p.repeat) meta.push('回头 ' + p.repeat + '%');
-    return '<a class="tb-pick" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer"' +
-      ' title="' + esc(p.title || '') + '">' +
-      '<span class="tb-pick-main"><b>' + esc(p.shop || '店铺未见') + '</b>' +
-        '<em>' + esc(p.title || '') + '</em></span>' +
-      '<span class="tb-pick-side"><b>' + tbMoney(p.price) + '</b>' +
-        '<em>' + esc(meta.join(' · ')) + '</em></span>' +
-      '<span class="tb-pick-go">1688&nbsp;↗</span></a>';
+  function tbLadder(o) {
+    var L = (o.ladder || []).slice().sort(function (a, b) { return (a.min || 0) - (b.min || 0); });
+    if (!L.length) return '';
+    var parts = L.map(function (l) {
+      var range = l.min == null ? ''
+        : (l.max == null ? (l.min <= 1 ? '起批' : '≥' + l.min) : (l.min + '–' + l.max));
+      return '<span><b>' + tbMoney(l.price) + '</b>' + (range ? '<em>' + esc(range) + '</em>' : '') + '</span>';
+    });
+    return '<div class="tb-ladder"><i>阶梯价</i>' + parts.join('') + '</div>';
   }
 
-  function tbLinks(x) {
-    var rows = x.links || [];
-    var st = x.linkStats || {};
-    if (!rows.length) return '';
-    var multi = rows.length > 1;
-    var body = rows.map(function (g) {
-      var head = multi
-        ? '<div class="tb-buy-gt"><b>' + esc(g.label || '') + '</b>' +
-            (g.role ? '<em>' + esc(g.role) + '</em>' : '') +
-            (g.note ? '<i>' + esc(g.note) + '</i>' : '') + '</div>'
-        : (g.note ? '<div class="tb-buy-note">' + esc(g.note) + '</div>' : '');
-      var picks = (g.picks || []).map(tbPickRow).join('');
-      var more = g.searchUrl
-        ? '<a class="tb-buy-search" href="' + esc(g.searchUrl) + '" target="_blank" rel="noopener noreferrer">' +
-          '在 1688 搜「' + esc(g.keyword || '') + '」看全部 →</a>'
-        : '';
-      return '<div class="tb-buy-g">' + head + picks + more + '</div>';
+  // 一个新产品规格 = 一张下单清单：每条都是「哪家厂的哪个规格、单价多少、买几件」
+  function tbSkuBlock(s) {
+    var hmap = { loss: ['亏', 'red'], thin: ['薄', 'warn'], ok: ['健康', 'live'], unknown: ['待核', 'warn'] };
+    var h = hmap[s.health] || hmap.unknown;
+    var open = s.role === '主推' ? ' open' : '';
+    var rows = (s.parts || []).map(function (p, idx) {
+      var stock = p.stock != null ? ('库存 ' + p.stock) : '';
+      var unit = p.unitPrice != null ? tbMoney(p.unitPrice) : '未命中';
+      return '<li>' +
+        '<span class="tb-order-no">' + (idx + 1) + '</span>' +
+        '<div class="tb-order-main">' +
+          '<b>' + esc(p.shop || '店铺未见') + '</b>' +
+          '<em title="' + esc(p.offerTitle || '') + '">' + esc(p.offerTitle || '') + '</em>' +
+          '<p class="tb-order-spec">' + esc(p.label || '') + ' · 规格 <b>' + esc(p.spec || '—') + '</b>' +
+            (p.match === 'fuzzy' ? '<span class="tb-order-warn">近似匹配</span>' : '') + '</p>' +
+          '<p class="tb-order-meta"><span class="tb-order-qty">' + unit + ' × ' + p.qty +
+            ' = <b>' + (p.fee != null ? tbMoney(p.fee) : '—') + '</b></span>' +
+            (stock ? '<span class="tb-order-stock">' + esc(stock) + '</span>' : '') +
+          '</p>' +
+        '</div>' +
+        '<a class="tb-order-go" href="' + esc(p.url) + '" target="_blank" rel="noopener noreferrer">下单 ↗</a>' +
+        '</li>';
     }).join('');
-    var day = (st.fetchedAt || '').slice(5, 10).replace('-', '/');
-    return '<div class="tb-buy">' +
-      '<div class="tb-buy-h"><b>1688 采购直达</b>' +
-        '<span>' + (st.shops || 0) + ' 家店铺 · ' + (st.count || 0) + ' 条链接' +
-        (day ? ' · 抓于 ' + day : '') + '</span></div>' +
-      body +
-      '<p class="tb-buy-tip">挂牌价是 1688 起批价，不含运费与阶梯价；进详情页自己核规格、起订量和运费。</p>' +
-      '</div>';
+
+    var sum = s.costAllIn == null
+      ? '<p class="tb-order-sum bad">成本没算：' + esc((s.pending || []).join('；') || '规格未对上') + '</p>'
+      : '<p class="tb-order-sum">货价 <b>' + tbMoney(s.goods) + '</b> + 快递 <b>' + tbMoney(s.express) + '</b>（' +
+        (s.factories || 1) + ' 家 = ' + (s.factories || 1) + ' 笔运费）+ 包装 <b>' + tbMoney(s.pack) + '</b> = 全成本 <b>' + tbMoney(s.costAllIn) + '</b>' +
+        '　→ 扣平台/广告/退货后净利 <b class="' + (s.net < 0 ? 'neg' : '') + '">' + tbMoney(s.net) + '</b>' +
+        (s.breakEven != null ? '（保本售价 ' + tbMoney(s.breakEven) + '）' : '') + '</p>' +
+        (s.note ? '<p class="tb-order-note">' + esc(s.note) + '</p>' : '');
+
+    return '<details class="tb-sku"' + open + '>' +
+      '<summary>' +
+        '<span class="tb-sku-name">' + esc(s.name || '') + (s.role ? '<i>' + esc(s.role) + '</i>' : '') + '</span>' +
+        '<span class="tb-sku-nums">' +
+          '<b>' + (s.price != null ? tbMoney(s.price) : '—') + '</b>' +
+          '<em>成本 ' + (s.costAllIn != null ? tbMoney(s.costAllIn) : '—') + '</em>' +
+          '<em>净利 ' + (s.net != null ? tbMoney(s.net) : '—') + '</em>' +
+        '</span>' +
+        '<span class="tb-tag ' + h[1] + ' tb-sku-tag">' + h[0] + '</span>' +
+      '</summary>' +
+      '<div class="tb-sku-body">' +
+        '<div class="tb-sku-buyh"><b>下单清单</b><span>' + (s.parts || []).length + ' 个组件 · ' +
+          (s.factories || 1) + ' 家厂 · ' + (s.packages || 1) + ' 个包裹</span></div>' +
+        '<ol class="tb-order">' + rows + '</ol>' + sum +
+      '</div></details>';
+  }
+
+  // 供应商商品：把它在 1688 上的每个规格和价格都摆出来，用户能换规格
+  function tbSup(o) {
+    var specs = (o.specs || []).map(function (v) {
+      return '<span class="tb-spec"><b>' + esc(v.name) + '</b><em>' + (v.price != null ? tbMoney(v.price) : '—') + '</em>' +
+        (v.stock != null ? '<i>存 ' + v.stock + '</i>' : '') + '</span>';
+    }).join('');
+    var meta = [o.shipFrom, (o.freight ? '运费 ' + tbMoney(o.freight) + ' 起' : ''), o.sold].filter(Boolean).join(' · ');
+    return '<div class="tb-sup">' +
+      '<div class="tb-sup-h">' +
+        '<b>' + esc(o.shop || '店铺未见') + '</b>' +
+        '<span>' + esc(meta) + '</span>' +
+        '<a href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer">进店 ↗</a>' +
+      '</div>' +
+      '<p class="tb-sup-t" title="' + esc(o.title || '') + '">' + esc(o.title || '') + '</p>' +
+      '<div class="tb-sup-specs">' + (specs || '<span class="tb-none">未抓到规格</span>') + '</div>' +
+      tbLadder(o) +
+    '</div>';
   }
 
   function tbCard(x, staleDays) {
@@ -1215,46 +1253,19 @@
     var approx = x.priceApprox ? '≈' : '';
     var sp = x.scoreParts || {};
     var skus = x.skus || [];
-    var main = null, i;
-    for (i = 0; i < skus.length; i++) { if (skus[i].role === '主推') { main = skus[i]; break; } }
-    if (!main) main = skus[0] || null;
+    var sups = x.suppliers || [];
 
     var hmap = { loss: ['亏钱', 'red'], thin: ['净利薄', 'warn'], ok: ['净利健康', 'live'], unknown: ['成本未核', 'warn'] };
     var hh = hmap[x.health] || hmap.unknown;
+    var kindName = x.kind === 'bundle' ? '组合品' : '单件';
 
     var badges = [];
     badges.push('<span class="tb-tag ' + hh[1] + '">' + hh[0] + '</span>');
+    badges.push('<span class="tb-tag gray">' + kindName + ' · ' + (x.specCount || 0) + ' 规格</span>');
     if (x.specPending) badges.push('<span class="tb-tag gray">规格待核</span>');
     if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
     if (x.windowPassed) badges.push('<span class="tb-tag red">窗口已过</span>');
-    if ((x.linkStats || {}).count) badges.push('<span class="tb-tag link">1688 ' + x.linkStats.shops + ' 家可点</span>');
-
-    // SKU 表：成本必须能拆（货价 + 履约），不给一个来路不明的数字
-    var priceRows = skus.map(function (s) {
-      var cost = s.costAllIn == null
-        ? '<b>—</b><i>绑不到报价</i>'
-        : '<b>' + tbMoney(s.costAllIn) + '</b><i>货' + tbMoney(s.goods).slice(1) + '+运' + tbMoney((s.express || 0) + (s.pack || 0)).slice(1) + '</i>';
-      var net = s.net == null ? '—'
-        : '<span class="' + (s.net < 0 ? 'neg' : (s.rate < 0.15 ? 'thin' : '')) + '">' + tbMoney(s.net) + '</span>';
-      var rate = s.rate == null ? '—' : Math.round(s.rate * 100) + '%';
-      return '<tr' + (s.health === 'loss' ? ' class="loss"' : '') + '>' +
-        '<td>' + esc(s.name || '') + '<span class="tb-role">' + esc(s.role || '') + '</span></td>' +
-        '<td class="num">' + tbMoney(s.price) + '</td>' +
-        '<td class="num">' + cost + '</td>' +
-        '<td class="num">' + net + '</td>' +
-        '<td class="num">' + rate + '</td>' +
-        '<td class="num">' + (s.breakEven == null ? '—' : tbMoney(s.breakEven)) + '</td></tr>';
-    }).join('');
-
-    var bridge = main && main.costAllIn != null
-      ? '货价 ' + tbMoney(main.goods) + ' + 快递 ' + tbMoney(main.express) + '（¥3.5×' + (x.packages || 1) + ' 包裹）+ 包装 ' +
-        tbMoney(main.pack) + ' = 全成本 ' + tbMoney(main.costAllIn) +
-        '；再扣平台 1.2%、广告 10%、退货 3%（按售价）→ 净利 ' + tbMoney(main.net)
-      : '这款还没有能点进去的报价，成本不算。';
-
-    var skuNotes = skus.filter(function (s) { return s.specNote; }).map(function (s) {
-      return '<li><b>' + esc(s.name || '') + '</b>　' + esc(s.specNote) + '</li>';
-    }).join('');
+    if (sups.length) badges.push('<span class="tb-tag link">' + sups.length + ' 家供应商 · ' + (x.specCountTotal || 0) + ' 个可选规格</span>');
 
     var why = (x.why || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
     var plays = (x.plays || []).map(function (p) {
@@ -1269,6 +1280,10 @@
       if (beLo == null || s.breakEven < beLo) beLo = s.breakEven;
       if (beHi == null || s.breakEven > beHi) beHi = s.breakEven;
     });
+
+    var supSum = sups.length
+      ? '供应商商品与它的全部规格（' + sups.length + ' 家 / ' + (x.specCountTotal || 0) + ' 个规格，可换规格后重算）'
+      : '供应商规格';
 
     return '<article class="tb-card ' + vcls + (x.stale ? ' stale' : '') + '">' +
       '<div class="tb-card-top">' +
@@ -1289,18 +1304,11 @@
         '<div><span>保本售价</span><b>' + (beLo == null ? '—' : tbRange1(beLo, beHi)) + '</b><i>低于此价就亏</i></div>' +
         '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b><i>' + (m.n ? m.n + ' 个样本' : '样本 0，纯估') + '</i></div>' +
       '</div>' +
-      '<table class="tb-price"><thead><tr><th>SKU</th><th>售价</th><th>全成本</th><th>净利</th><th>率</th><th>保本</th></tr></thead>' +
-        '<tbody>' + priceRows + '</tbody></table>' +
-      '<p class="tb-bridge">' + esc(bridge) + '</p>' +
-      tbLinks(x) +
-      '<details class="tb-more"><summary>完整论证：成本怎么算 / 规格对不对 / 淘宝对标 / 为什么 / 怎么打 / 翻车点</summary>' +
-        '<h4>成本怎么算的</h4>' +
-        '<p class="tb-bridge">' + esc(bridge) + '</p>' +
-        '<p class="tb-assume">假设（可改）：快递 ¥3.5/包裹 × <b>' + (x.packages || 1) + '</b> 个包裹' +
-          (x.packagesNote ? '（' + esc(x.packagesNote) + '）' : '') +
-          '、包装 ¥0.6、平台 1.2%、广告 10%、退货率 6% 且退回件五成报废。</p>' +
-        '<h4>规格对不对得上</h4>' +
-        (skuNotes ? '<ul class="tb-why">' + skuNotes + '</ul>' : '<p class="tb-none">报价与规格没有明显缺口。</p>') +
+      '<div class="tb-skus"><div class="tb-skus-h"><b>规格与下单清单</b><span>点开任一规格，就是这一单要去哪几家、买哪个规格、几件</span></div>' +
+        (skus.map(tbSkuBlock).join('') || '<p class="tb-none">还没有定义产品规格。</p>') + '</div>' +
+      '<details class="tb-sups"><summary>' + esc(supSum) + '</summary>' +
+        (sups.map(tbSup).join('') || '<p class="tb-none">没有可用供应商。</p>') + '</details>' +
+      '<details class="tb-more"><summary>完整论证：为什么是它 / 淘宝对标 / 怎么打 / 翻车点</summary>' +
         '<h4>淘宝对标</h4>' +
         '<p class="tb-bridge">价带 ' + tbRange(m.lo, m.hi, x.priceApprox) + '（' + (m.n ? m.n + ' 个样本' : '样本 0，是估的') +
           '）· 榜首 ' + approx + tbMoney(top.price) + ' ' + esc(top.sold || '') + ' ' + esc(top.shop || '') +
@@ -1311,7 +1319,7 @@
         '<h4>结论</h4><p class="tb-vwhy"><b>' + esc(x.verdict || '') + '</b>　' + esc(x.verdictWhy || '') + '</p>' +
       '</details>' +
       '<div class="tb-card-foot">' +
-        '<span>报价 ' + esc(((x.linkStats || {}).fetchedAt || '').slice(5, 10).replace('-', '/')) + ' 抓取</span>' +
+        '<span>1688 规格 ' + esc((x.suppliers || [{}])[0].fetchedAt || '').slice(5) + ' 抓取</span>' +
         '<span>淘宝快照 ' + esc(x.shotAt || '—') + (x.stale ? '（' + x.shotDaysAgo + ' 天前）' : '') + '</span>' +
         '<span>' + esc(x.shelfFrom || '') + ' → ' + esc(x.shelfTo || '') + '</span>' +
       '</div></article>';
@@ -1333,9 +1341,10 @@
 
     var stat = document.getElementById('tbStat');
     if (stat) {
-      stat.innerHTML = '<b>' + (c.total || 0) + '</b> 张候选　做 <b>' + (c.do || 0) + '</b> / 观望 ' + (c.watch || 0) + ' / 放弃 ' + (c.drop || 0) +
+      stat.innerHTML = '<b>' + (c.total || 0) + '</b> 个产品　做 <b>' + (c.do || 0) + '</b> / 观望 ' + (c.watch || 0) + ' / 放弃 ' + (c.drop || 0) +
+        '<br>' + (c.skuCount || 0) + ' 个产品规格 ← ' + (c.supplierCount || 0) + ' 家供应商 / <b>' + (c.specRows || 0) + '</b> 个可下单规格' +
         '<br>净利健康 <b>' + (c.healthOk || 0) + '</b>　薄利 ' + (c.healthThin || 0) + '　亏钱 <b>' + (c.healthLoss || 0) + '</b>' +
-        '<br>' + (c.skuCount || 0) + ' 个 SKU 全部按可点报价重算　' + (c.specPending || 0) + ' 款规格待核';
+        (c.specPending ? '　规格待核 <b>' + c.specPending + '</b>' : '');
     }
 
     var cal = tb.calendar || [];

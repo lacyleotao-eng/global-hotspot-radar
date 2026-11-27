@@ -1,245 +1,219 @@
 #!/usr/bin/env python3
-"""选品情报 · 派生字段计算 + 生成前端数据
+"""选品情报构建器 v2：以「1688 供应商商品」为核心，按规格级算成本。
 
-用法：
-    python3 scripts/taobao_build_index.py
+数据链路（改这一块必读）：
+  data/t1688-offers.json  供应商商品真源：每个 offer 的全部规格 + 每个规格的价格/库存
+                          + 阶梯价 + 发货地 + 运费（scripts/t1688_specs.js 抓取）
+  data/t1688-plan.json    新产品定义（人改）：每个新产品规格 = 若干「offer + 该 offer 的规格名 + 数量」
+  data/taobao.json        商品层文案：名字、适配分、为什么、怎么打、翻车点、上架窗口（人改）
+  ↓
+  data/taobao-index.json + data/taobao-embed.js
 
-输入：data/taobao.json（人改这个，字段定义见「选品模块设计说明.md」第 3 节）
-输出：data/taobao-index.json（可 curl 校验）+ data/taobao-embed.js（window.__TB__，前端读）
+成本桥（唯一口径）：
+  货价   = Σ(该规格单价 × 数量)
+  快递   = express × 包裹数（默认 = 不同厂家数，几家工厂就几笔运费）
+  包装   = pack × 包裹数
+  全成本 = 货价 + 快递 + 包装
+  净利   = 售价 − 全成本 − 售价 × (平台率 + 广告率 + 退货率 × 报废率)
+  保本价 = 全成本 ÷ (1 − 平台率 − 广告率 − 退货率 × 报废率)
 
-只算不改：
-  - days / inWindow（节点日历）
-  - daysToPeak（距峰值天数）
-  - 成本桥（每 SKU 一条）：货价（绑 1688 offer）→ +快递×包裹数 → +包装 → 平台费 → 退货损耗 → 广告 → 净利
-  - breakEven（保本售价）、net / rate（净利与净利率）、health（亏/薄利/健康）
-  - stale（核价超过 staleAfterDays 天要复核）
-  - counts（结论分布、窗口内数量、待复核数量）
-
-成本一律从 data/taobao-sku.json 的 SKU 绑定推出来，绑定不上就不算成本、只标「规格待核」。
-taobao.json 里手写的 cost / sources 只作历史留档，不参与任何计算——两套数并存是上一版最致命的问题。
-
-派生字段一律不写回源文件——源文件是人写的，脚本只读。
+规格必须精确命中：plan 里写的规格名在 offer 的 specs 里找不到，就标 specPending，
+不给这个 SKU 出成本，也不许用均价糊过去。
 """
 import json
-from datetime import date, datetime
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "data" / "taobao.json"
-LINKS = ROOT / "data" / "t1688-links.json"
-SKUS = ROOT / "data" / "taobao-sku.json"
+CORE = ROOT / "data" / "taobao.json"
+OFFERS = ROOT / "data" / "t1688-offers.json"
+PLAN = ROOT / "data" / "t1688-plan.json"
 OUT_JSON = ROOT / "data" / "taobao-index.json"
 OUT_JS = ROOT / "data" / "taobao-embed.js"
 
-FEE_RATE = 0.006  # 淘宝基础软件服务费（保留给旧字段兼容）
 
-DEFAULT_ASSUME = {
-    "mode": "1688 一件代发",
-    "express": 3.5,
-    "pack": 0.6,
-    "refundRate": 0.06,
-    "refundLossRatio": 0.5,
-    "platformRate": 0.012,
-    "adRate": 0.1,
-}
+def load(p):
+    return json.loads(Path(p).read_text("utf-8"))
 
 
 def parse_date(s):
     if not s:
         return None
     try:
-        return datetime.strptime(str(s)[:10], "%Y-%m-%d").date()
-    except ValueError:
+        y, m, d = (int(x) for x in str(s)[:10].split("-"))
+        return date(y, m, d)
+    except Exception:
         return None
 
 
-def is_pending(src):
-    """供应商没落定（写的是「待定」「待核价」这类）"""
-    shop = (src.get("shop") or "").strip()
-    if not shop:
-        return True
-    return shop.startswith("待") or "待核价" in shop or "待定" in shop
+def find_spec(offer, want):
+    """在 offer 的 specs 里精确找规格；退一步允许唯一包含匹配。"""
+    specs = offer.get("specs") or []
+    if not want:
+        return None, "missing"
+    want = want.strip()
+    for s in specs:
+        if (s.get("name") or "").strip() == want:
+            return s, "exact"
+    hits = [s for s in specs if want in (s.get("name") or "")]
+    if len(hits) == 1:
+        return hits[0], "fuzzy"
+    return None, "ambiguous" if hits else "notfound"
 
 
-def offer_index(links_map):
-    """所有已采链接按 offer id 建索引，成本只认这里的价格"""
-    idx = {}
-    for rows in (links_map or {}).values():
-        for g in rows:
-            for p in g.get("picks") or []:
-                idx[str(p["id"])] = p
-    return idx
-
-
-def compute_skus(plan, offers, a, packages, keep_rate):
-    """一条 SKU = 一条真实成本桥。绑不到 offer 就不给成本，绝不估。"""
-    out = []
-    for s in plan.get("skus") or []:
-        parts, goods, miss = [], 0.0, []
-        for pt in s.get("parts") or []:
-            o = offers.get(str(pt.get("offer")))
-            qty = float(pt.get("qty") or 1)
-            if not o or o.get("price") is None:
-                miss.append(str(pt.get("offer")))
-                continue
-            sub = float(o["price"]) * qty
-            goods += sub
-            parts.append({
-                "as": pt.get("as") or "",
-                "offer": o["id"],
-                "shop": o.get("shop"),
-                "qty": qty,
-                "price": o["price"],
-                "sub": round(sub, 2),
-            })
-        price = float(s.get("price") or 0)
-        if miss or not parts or not price:
-            out.append({
-                "name": s.get("name"), "price": price, "role": s.get("role"),
-                "parts": parts, "missOffers": miss, "specNote": s.get("specNote") or "",
-                "specPending": bool(s.get("specPending")) or bool(miss),
-                "goods": None, "express": None, "pack": None, "costAllIn": None,
-                "platform": None, "ad": None, "refund": None,
-                "net": None, "rate": None, "breakEven": None, "health": "unknown",
-            })
-            continue
-        express = round(a["express"] * packages, 2)
-        pack = float(a["pack"])
-        base = goods + express + pack
-        plat = round(price * a["platformRate"], 2)
-        ad = round(price * a["adRate"], 2)
-        refund = round(price * a["refundRate"] * a["refundLossRatio"], 2)
-        net = round(price - base - plat - ad - refund, 2)
-        rate = round(net / price, 3)
-        health = "loss" if net < 0 else ("thin" if rate < 0.15 else "ok")
-        out.append({
-            "name": s.get("name"), "price": price, "role": s.get("role"),
-            "parts": parts, "missOffers": [],
-            "specNote": s.get("specNote") or "",
-            "specPending": bool(s.get("specPending")),
-            "goods": round(goods, 2), "express": express, "pack": pack,
-            "costAllIn": round(base, 2),
-            "platform": plat, "ad": ad, "refund": refund,
-            "net": net, "rate": rate,
-            "breakEven": round(base / keep_rate, 2),
-            "health": health,
-        })
-    return out
-
-
-def worst_health(skus):
-    hs = [s.get("health") for s in skus or []]
-    if "loss" in hs:
-        return "loss"
-    if "thin" in hs:
-        return "thin"
-    if hs and all(h == "unknown" for h in hs):
-        return "unknown"
-    return "ok"
+def money(v):
+    return None if v is None else round(float(v) + 1e-9, 2)
 
 
 def build():
+    core = load(CORE)
+    offers_doc = load(OFFERS)
+    plan_doc = load(PLAN) if PLAN.exists() else {"items": {}}
+    offers = offers_doc.get("offers") or {}
+    assume = plan_doc.get("assumptions") or {}
+    a_express = float(assume.get("express", 3.5))
+    a_pack = float(assume.get("pack", 0.6))
+    a_platform = float(assume.get("platformRate", 0.012))
+    a_ad = float(assume.get("adRate", 0.10))
+    a_refund = float(assume.get("refundRate", 0.06))
+    a_loss = float(assume.get("refundLossRatio", 0.5))
+    cost_rate = a_platform + a_ad + a_refund * a_loss
+    keep_rate = 1 - cost_rate
+
     today = date.today()
-    data = json.loads(SRC.read_text("utf-8"))
-    stale_days = int(data.get("staleAfterDays") or 14)
-
-    # ---- 1688 采购链接（scripts/t1688_links.py 抓的，抓不到就留空）----
-    links_map, links_at = {}, None
-    if LINKS.exists():
-        lk = json.loads(LINKS.read_text("utf-8"))
-        links_map, links_at = lk.get("items") or {}, lk.get("generatedAt")
-
-    # ---- 节点日历 ----
-    cal = []
-    for c in data.get("calendar") or []:
-        d = parse_date(c.get("date"))
-        f, t = parse_date(c.get("shelfFrom")), parse_date(c.get("shelfTo"))
-        cal.append({
-            **c,
-            "days": (d - today).days if d else None,
-            "inWindow": bool(f and t and f <= today <= t),
-            "passed": bool(t and today > t),
-        })
-    cal.sort(key=lambda x: x.get("days") if x.get("days") is not None else 9999)
-
-    # ---- 选品卡片 ----
-    sku_src = json.loads(SKUS.read_text("utf-8")) if SKUS.exists() else {"items": {}}
-    assume = {**DEFAULT_ASSUME, **(sku_src.get("assumptions") or {})}
-    offers = offer_index(links_map)
-    keep_rate = 1 - assume["platformRate"] - assume["adRate"] - assume["refundRate"] * assume["refundLossRatio"]
-
+    warns = []
     items = []
-    for it in data.get("items") or []:
-        srcs = it.get("sources") or []
-        legacy_landed = None
-        for s in srcs:
-            if is_pending(s):
-                continue
-            p, fr = float(s.get("price") or 0), float(s.get("freight") or 0)
-            if p <= 0:
-                continue
-            v = round(p + fr, 2)
-            if legacy_landed is None or v < legacy_landed:
-                legacy_landed = v
 
-        mkt = it.get("market") or {}
-        n_sample = int(mkt.get("n") or 0)
+    for it in core.get("items") or []:
+        pid = it.get("id")
+        pitem = (plan_doc.get("items") or {}).get(pid) or {}
+        skus = []
+        supplier_ids = []
+
+        for sku in pitem.get("skus") or []:
+            parts = []
+            pending = []
+            goods = 0.0
+            for p in sku.get("parts") or []:
+                o = offers.get(str(p.get("offer")))
+                if not o:
+                    pending.append(f"offer {p.get('offer')} 未抓取")
+                    continue
+                sp, how = find_spec(o, p.get("spec"))
+                sid = str(p.get("offer"))
+                if sid not in supplier_ids:
+                    supplier_ids.append(sid)
+                qty = int(p.get("qty") or 1)
+                unit = sp.get("price") if sp else None
+                if unit is None:
+                    pending.append(f"{o.get('shop', '')[:12]} 的规格「{p.get('spec')}」未命中({how})")
+                else:
+                    goods += unit * qty
+                parts.append({
+                    "label": p.get("label") or "",
+                    "offerId": sid,
+                    "shop": o.get("shop") or "",
+                    "offerTitle": o.get("title") or "",
+                    "url": o.get("url") or f"https://detail.1688.com/offer/{sid}.html",
+                    "spec": sp.get("name") if sp else (p.get("spec") or ""),
+                    "specWant": p.get("spec") or "",
+                    "unitPrice": money(unit),
+                    "stock": sp.get("stock") if sp else None,
+                    "qty": qty,
+                    "fee": money(unit * qty) if unit is not None else None,
+                    "match": how,
+                    "shipFrom": o.get("shipFrom") or "",
+                    "ladderLo": o.get("ladderLo"),
+                })
+
+            factories = len({p["offerId"] for p in parts}) or 1
+            packages = int(sku.get("packages") or factories)
+            express = round(a_express * packages, 2)
+            pack = round(a_pack * packages, 2)
+            cost_all = money(goods + express + pack) if not pending else None
+            price = float(sku.get("price") or 0) or None
+            net = money(price - cost_all - price * cost_rate) if (price and cost_all is not None) else None
+            be = money(cost_all / keep_rate) if cost_all is not None else None
+            rate = round(net / price, 3) if (net is not None and price) else None
+            health = "unknown"
+            if net is not None:
+                health = "loss" if net < 0 else ("thin" if rate < 0.15 else "ok")
+
+            skus.append({
+                "id": sku.get("id") or f"s{len(skus) + 1}",
+                "name": sku.get("name") or "",
+                "role": sku.get("role") or "",
+                "price": money(price),
+                "goods": money(goods) if not pending else None,
+                "express": express,
+                "pack": pack,
+                "packages": packages,
+                "factories": factories,
+                "costAllIn": cost_all,
+                "net": net,
+                "rate": rate,
+                "breakEven": be,
+                "health": health,
+                "parts": parts,
+                "pending": pending,
+                "note": sku.get("note") or "",
+            })
+            for w in pending:
+                warns.append(f"{pid}/{sku.get('name')}: {w}")
+
+        suppliers = []
+        for sid in supplier_ids:
+            o = offers.get(sid) or {}
+            suppliers.append({
+                "id": sid,
+                "shop": o.get("shop") or "",
+                "title": o.get("title") or "",
+                "url": o.get("url") or f"https://detail.1688.com/offer/{sid}.html",
+                "shipFrom": o.get("shipFrom") or "",
+                "freight": o.get("freight"),
+                "sold": o.get("sold") or "",
+                "ladder": o.get("ladder") or [],
+                "ladderLo": o.get("ladderLo"),
+                "dims": o.get("dims") or [],
+                "specs": o.get("specs") or [],
+                "specLo": o.get("specLo"),
+                "specHi": o.get("specHi"),
+                "fetchedAt": o.get("fetchedAt") or "",
+            })
+
+        valid = [s for s in skus if s["costAllIn"] is not None]
+        netlo = min((s["net"] for s in valid), default=None)
+        netHi = max((s["net"] for s in valid), default=None)
+        costlo = min((s["costAllIn"] for s in valid), default=None)
+        costHi = max((s["costAllIn"] for s in valid), default=None)
         peak = parse_date(it.get("peakAt"))
         sf, st = parse_date(it.get("shelfFrom")), parse_date(it.get("shelfTo"))
-        shot = parse_date(it.get("shotAt"))
-
-        # ---- 成本桥 ----
-        plan = (sku_src.get("items") or {}).get(it.get("id")) or {}
-        packages = int(plan.get("packages") or 1)
-        skus = compute_skus(plan, offers, assume, packages, keep_rate)
-        landed_list = [s["costAllIn"] for s in skus if s.get("costAllIn") is not None]
-        nets = [s["net"] for s in skus if s.get("net") is not None]
-        main_sku = next((s for s in skus if s.get("role") == "主推"), skus[0] if skus else None)
-        health = worst_health(skus)
-
-        rows = links_map.get(it.get("id")) or []
-        picks_all = [p for r in rows for p in (r.get("picks") or [])]
-        prices = [p["price"] for p in picks_all if p.get("price") is not None]
-        main_row = next((r for r in rows if "主件" in (r.get("role") or "")), rows[0] if rows else None)
-        main_prices = [p["price"] for p in (main_row or {}).get("picks") or [] if p.get("price") is not None]
-        link_stats = {
-            "count": len(picks_all),
-            "shops": len({p.get("shop") for p in picks_all}),
-            "groups": len(rows),
-            "lo": min(prices) if prices else None,
-            "hi": max(prices) if prices else None,
-            "mainLo": min(main_prices) if main_prices else None,
-            "fetchedAt": links_at,
-        }
+        health = "unknown"
+        if valid:
+            health = "loss" if netlo < 0 else ("thin" if all((s["rate"] or 0) < 0.15 for s in valid) else "ok")
 
         items.append({
             **it,
-            "links": rows,
-            "linkStats": link_stats,
+            "rank": len(items) + 1,
+            "kind": pitem.get("kind") or "single",
+            "specCount": len(skus),
             "skus": skus,
-            "packages": packages,
-            "packagesNote": plan.get("packagesNote") or "",
-            "mainLanded": main_sku.get("costAllIn") if main_sku else None,
-            "costLo": min(landed_list) if landed_list else None,
-            "costHi": max(landed_list) if landed_list else None,
-            "netLo": min(nets) if nets else None,
-            "netHi": max(nets) if nets else None,
+            "suppliers": suppliers,
+            "supplierCount": len(suppliers),
+            "specCountTotal": sum(len(s["specs"]) for s in suppliers),
+            "costLo": costlo,
+            "costHi": costHi,
+            "netLo": netlo,
+            "netHi": netHi,
             "health": health,
-            "specPending": any(s.get("specPending") for s in skus),
+            "pendingCost": not valid,
+            "specPending": any(s["pending"] for s in skus),
             "daysToPeak": (peak - today).days if peak else None,
             "inWindow": bool(sf and st and sf <= today <= st),
             "windowPassed": bool(st and today > st),
-            "legacyLanded": legacy_landed,
-            "pendingCost": not skus,
-            "priceApprox": n_sample == 0,
-            "stale": bool(shot and (today - shot).days > stale_days),
-            "shotDaysAgo": (today - shot).days if shot else None,
-            "sourceCount": len([s for s in srcs if not is_pending(s)]),
+            "stale": bool(it.get("shotAt") and (today - parse_date(it["shotAt"])).days > 14) if it.get("shotAt") else False,
+            "shotDaysAgo": (today - parse_date(it["shotAt"])).days if it.get("shotAt") else None,
         })
-
-    items.sort(key=lambda x: -(x.get("score") or 0))
-    for i, x in enumerate(items, 1):
-        x["rank"] = i
 
     counts = {
         "total": len(items),
@@ -247,55 +221,50 @@ def build():
         "watch": sum(1 for x in items if x.get("verdict") == "观望"),
         "drop": sum(1 for x in items if x.get("verdict") == "放弃"),
         "inWindow": sum(1 for x in items if x.get("inWindow")),
-        "expired": sum(1 for x in items if x.get("windowPassed") and x.get("verdict") != "放弃"),
         "stale": sum(1 for x in items if x.get("stale")),
         "pendingCost": sum(1 for x in items if x.get("pendingCost")),
-        "withLinks": sum(1 for x in items if (x.get("linkStats") or {}).get("count")),
-        "linkCount": sum((x.get("linkStats") or {}).get("count", 0) for x in items),
         "healthLoss": sum(1 for x in items if x.get("health") == "loss"),
         "healthThin": sum(1 for x in items if x.get("health") == "thin"),
         "healthOk": sum(1 for x in items if x.get("health") == "ok"),
         "specPending": sum(1 for x in items if x.get("specPending")),
         "skuCount": sum(len(x.get("skus") or []) for x in items),
+        "supplierCount": len({s["id"] for x in items for s in x.get("suppliers") or []}),
+        "specRows": sum(x.get("specCountTotal", 0) for x in items),
+        "withLinks": sum(1 for x in items if x.get("suppliers")),
     }
 
-    payload = {
-        "updatedAt": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
-        "dataAsOf": data.get("dataAsOf"),
-        "generatedAtSource": data.get("generatedAt"),
-        "staleAfterDays": stale_days,
-        "model": data.get("model") or {},
-        "assumptions": assume,
-        "assumptionsWhy": (sku_src.get("assumptions") or {}).get("why") or "",
-        "assumptionsWarn": (sku_src.get("assumptions") or {}).get("warn") or "",
-        "calendar": cal,
-        "items": items,
+    doc = {
+        "generatedAt": today.isoformat(),
+        "model": core.get("model") or {},
+        "assumptions": {
+            "express": a_express, "pack": a_pack, "platformRate": a_platform,
+            "adRate": a_ad, "refundRate": a_refund, "refundLossRatio": a_loss,
+        },
+        "assumptionsWhy": assume.get("why") or "",
+        "assumptionsWarn": assume.get("warn") or "",
+        "offersFetchedAt": offers_doc.get("fetchedAt") or "",
+        "calendar": core.get("calendar") or [],
         "counts": counts,
+        "items": items,
     }
+    OUT_JSON.write_text(json.dumps(doc, ensure_ascii=False, indent=1), "utf-8")
+    OUT_JS.write_text("window.__TB__ = " + json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + ";\n", "utf-8")
 
-    OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=1), "utf-8")
-    OUT_JS.write_text(
-        "/* 自动生成：scripts/taobao_build_index.py */\nwindow.__TB__ = "
-        + json.dumps(payload, ensure_ascii=False)
-        + ";\n",
-        "utf-8",
-    )
-
-    print(f"[ok] {counts['total']} 张候选卡 → data/taobao-index.json + data/taobao-embed.js")
+    print(f"[ok] {counts['total']} 个产品 / {counts['skuCount']} 个产品规格 / "
+          f"{counts['supplierCount']} 家供应商 / {counts['specRows']} 行供应商规格")
     print(f"     做 {counts['do']} / 观望 {counts['watch']} / 放弃 {counts['drop']}"
-          f"｜窗口内 {counts['inWindow']}｜待复核 {counts['stale']}｜成本待核 {counts['pendingCost']}"
-          f"｜1688 链接 {counts['linkCount']} 条 / {counts['withLinks']} 张卡")
+          f"｜净利健康 {counts['healthOk']}｜薄利 {counts['healthThin']}｜亏 {counts['healthLoss']}｜规格待核 {counts['specPending']}")
     for x in items:
-        flag = "做  " if x.get("verdict") == "做" else ("观望" if x.get("verdict") == "观望" else "放弃")
-        hm = {"loss": "亏钱", "thin": "薄利", "ok": "健康", "unknown": "无成本"}.get(x.get("health"), "?")
-        print(f"  {x['rank']:>2}. {flag} {x.get('score'):>5} {x.get('name')[:22]}"
-              f"｜全成本 {x.get('costLo')}–{x.get('costHi')}"
-              f"｜净利 {x.get('netLo')}–{x.get('netHi')}｜{hm}"
-              f"{'｜规格待核' if x.get('specPending') else ''}")
-        for s_ in x.get("skus") or []:
-            print(f"        - {s_['name'][:18]:<20} 售价 {s_.get('price')} 成本 {s_.get('costAllIn')}"
-                  f" 净利 {s_.get('net')} 保本 {s_.get('breakEven')}"
-                  f" {'【亏】' if s_.get('health') == 'loss' else ('【薄】' if s_.get('health') == 'thin' else '')}")
+        print(f"  {x['rank']:>2}. {x.get('verdict')} {x.get('name')[:20]}｜{x['kind']}｜"
+              f"规格 {x['specCount']}｜供应商 {x['supplierCount']}｜全成本 {x['costLo']}–{x['costHi']}")
+        for s in x["skus"]:
+            flag = "" if not s["pending"] else "  ⚠ " + "; ".join(s["pending"])[:60]
+            print(f"       - {s['name'][:20]:<22} 卖 {s['price']} 成本 {s['costAllIn']} "
+                  f"净利 {s['net']} 保本 {s['breakEven']}{flag}")
+    if warns:
+        print(f"\n[warn] {len(warns)} 条规格未命中：")
+        for w in warns[:20]:
+            print("   ", w)
 
 
 if __name__ == "__main__":

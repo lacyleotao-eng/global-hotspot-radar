@@ -1,0 +1,24 @@
+{
+  "slug": "android-create-my-widget",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/android-create-my-widget/raw-1.webp",
+      "bytes": 34808,
+      "w": 1200,
+      "h": 624,
+      "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+      "page": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "alt": "",
+      "md5": "97ef686678e3209406e72cfae77a8624",
+      "status": "drop",
+      "reason": "体积过小（缩略图）",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-28T04:51:16+08:00"
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "u17-8-0-21",
+  "date": "2026-11-28",
+  "builtAt": "2026-11-28T04:50:07+08:00",
+  "candidates": [
+    {
+      "index": 1,
+      "file": "assets/source/u17-8-0-21/raw-1.jpeg",
+      "bytes": 40609,
+      "w": 900,
+      "h": 382,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Mbia2x47rZMz7Nw6IexYUicfA93FYFfIUOXYVBzRxsP8B0x6q73BYENh7CfWiacOXPlribRnebet5q1zjaayqQ84ibFANw5s9DtK8bLGsRPpTKCY/0?wx_fmt=jpeg",
+      "page": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492555&idx=1&sn=0b9ab34e2d96e05e30de97d9fb1ae6be&chksm=f27bb5d3ddf4a7b5322eecb088906497ca2309a9bd3f166816b3a6861651116bc8d53be494e2#rd",
+      "alt": "",
+      "md5": "f436b896930495d71208d1aa76a3569d",
+      "status": "candidate",
+      "reason": "",
+      "crop": "",
+      "approved": false
+    }
+  ],
+  "approved": [],
+  "approvedAt": "2026-11-28T04:51:15+08:00"
+}

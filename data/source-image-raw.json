@@ -1,180 +1,75 @@
 {
-  "updatedAt": "2026-11-26T20:56:48.498Z",
+  "updatedAt": "2026-11-27T20:49:47.626Z",
   "items": {
-    "3500": [
+    "90": [
       {
-        "file": "assets/source/3500/raw-1.jpeg",
-        "bytes": 125037,
-        "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/3967705287210220867.jpg",
-        "w": 1024,
-        "h": 697,
-        "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+        "file": "assets/source/90/raw-1.webp",
+        "bytes": 47252,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268886_Keychron_G6_HE_gaming_mouse_ADiBenedetto_0008.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.theverge.com/games/1043028/keychron-g6-he-hall-effect-magoptic-gaming-mouse-impressions"
+      }
+    ],
+    "nvidia-seasia-pause": [
+      {
+        "file": "assets/source/nvidia-seasia-pause/raw-1.jpeg",
+        "bytes": 108494,
+        "url": "https://images.wsj.net/im-68022991?width=700&size=1.501&pixel_ratio=3",
+        "w": 700,
+        "h": 466,
+        "alt": "Nvidia CEO Jensen Huang holds up a small GPU chip during a keynote address.",
         "from": "img",
-        "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm"
+        "page": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0"
       },
       {
-        "file": "assets/source/3500/raw-2.jpeg",
-        "bytes": 109389,
-        "url": "https://imgm.gmw.cn/attachement/jpg/site215/20261126/1377393568859733930.jpg",
+        "file": "assets/source/nvidia-seasia-pause/raw-2.jpeg",
+        "bytes": 35812,
+        "url": "https://images.wsj.net/im-68022991/social",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://www.wsj.com/tech/nvidia-tells-partners-to-pause-shipments-to-southeast-asia-5b791cb0"
+      },
+      {
+        "file": "assets/source/nvidia-seasia-pause/raw-3.webp",
+        "bytes": 74762,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg",
         "w": 1024,
         "h": 683,
-        "alt": "金价继续下跌，消费者购金热情高涨！提醒→",
+        "alt": "",
         "from": "img",
-        "page": "https://m.gmw.cn/2026-11/26/content_1304589616.htm"
-      }
-    ],
-    "ny-ai-toy-ban": [
+        "page": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+      },
       {
-        "file": "assets/source/ny-ai-toy-ban/raw-1.webp",
-        "bytes": 54762,
-        "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2237660127.jpg?resize=1200,800",
+        "file": "assets/source/nvidia-seasia-pause/raw-4.webp",
+        "bytes": 79136,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"
+        "page": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
       }
     ],
-    "fcc-100": [
+    "e2-fa901a": [
       {
-        "file": "assets/source/fcc-100/raw-1.jpeg",
-        "bytes": 48336,
-        "url": "https://image.cnbcfm.com/api/v1/image/108559452-17956258221795625820-49856285423-1080pnbcnews.jpg?v=1795625821&w=750&h=422&vtcrop=y",
-        "w": 750,
-        "h": 422,
-        "alt": "FCC authorizes SpaceX to deploy 1 million data centers in space",
-        "from": "img",
-        "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
-      },
-      {
-        "file": "assets/source/fcc-100/raw-2.jpeg",
-        "bytes": 141574,
-        "url": "https://image.cnbcfm.com/api/v1/image/108368728-1790601399956-Screenshot_2026-09-28_at_91434_AM.png?v=1790601411&w=1920&h=1080",
+        "file": "assets/source/e2-fa901a/raw-1.jpeg",
+        "bytes": 27662,
+        "url": "http://mmecoa.qpic.cn/mmecoa_jpg/Iticnl7d76lE6VEKvSN4NhNicJM4t0PuN9B4Kx9fAP5HdH1GErhnvTGAHJwB9AtdmiaxsIyeOv3x3OZNXHe4b85AxUvJvAkCTOlpOuza1ZkAHI/0?wx_fmt=jpeg",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
-      },
-      {
-        "file": "assets/source/fcc-100/raw-3.webp",
-        "bytes": 50784,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+        "page": "http://mp.weixin.qq.com/s?__biz=Mzk0MjQxMDY1Mg==&mid=2247506152&idx=1&sn=75dc0568e25dabef1fe5d0d868e6519c&chksm=c395e8e2334aec1245d5455d3918cb310753024defa57573bd7323305dd15770ace7696b6a4a#rd"
       }
     ],
-    "character-ai-chat-auction": [
+    "1password-security-incident": [
       {
-        "file": "assets/source/character-ai-chat-auction/raw-1.jpeg",
-        "bytes": 298239,
-        "url": "https://oag.ca.gov/sites/default/files/og-link-card-24.jpg",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns"
-      },
-      {
-        "file": "assets/source/character-ai-chat-auction/raw-2.jpeg",
-        "bytes": 46932,
-        "url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
-      }
-    ],
-    "shenzhou-24-space-handshake": [],
-    "yab-browser": [
-      {
-        "file": "assets/source/yab-browser/raw-1.webp",
-        "bytes": 153414,
-        "url": "https://cdnfile.sspai.com/2026/11/20/5e9c6884bf2a0d0de14dbb9c51cfa19c.jpg?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 840,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-2.webp",
-        "bytes": 148442,
-        "url": "https://cdnfile.sspai.com/2026/11/20/2ade8a03bdfdbe3ba26d5d8d08b66ba1.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 771,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-3.webp",
-        "bytes": 190040,
-        "url": "https://cdnfile.sspai.com/2026/11/20/718bea8d43342391f74f428113e1ac40.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 771,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-4.webp",
-        "bytes": 61112,
-        "url": "https://cdnfile.sspai.com/2026/11/20/59d68aef3759bbab8ad0d60a2ee95f3a.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 740,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-5.webp",
-        "bytes": 49042,
-        "url": "https://cdnfile.sspai.com/2026/11/20/47ea6b599f152c6a31d389bdfc95c327.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 740,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-6.webp",
-        "bytes": 85366,
-        "url": "https://cdnfile.sspai.com/2026/11/20/db2f90830fc6cb065d583c888f10cfc0.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 740,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-7.webp",
-        "bytes": 71954,
-        "url": "https://cdnfile.sspai.com/2026/11/20/ce36500edfa610ca40b3126fc8e94e80.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 740,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      },
-      {
-        "file": "assets/source/yab-browser/raw-8.webp",
-        "bytes": 234678,
-        "url": "https://cdnfile.sspai.com/2026/11/20/5c527756c388b8db16d191ded671bf05.png?imageView2/2/format/webp",
-        "w": 1120,
-        "h": 713,
-        "alt": "",
-        "from": "img",
-        "page": "https://sspai.com/post/119310"
-      }
-    ],
-    "1password": [
-      {
-        "file": "assets/source/1password/raw-1.webp",
+        "file": "assets/source/1password-security-incident/raw-1.webp",
         "bytes": 28358,
         "url": "https://images.ctfassets.net/3091ajzcmzlr/3yu0DTU3edoU7HK8MxkW54/c5e7801fb8c0d7d52295da96af7e8013/business_2x.webp",
         "w": 0,
@@ -184,156 +79,111 @@
         "page": "https://1password.com/blog/update-on-nov-2026-security-incident"
       }
     ],
-    "meta-ai": [
+    "hdd-price-hike": [
       {
-        "file": "assets/source/meta-ai/raw-1.webp",
-        "bytes": 28122,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+        "file": "assets/source/hdd-price-hike/raw-1.webp",
+        "bytes": 297148,
+        "url": "https://pub-430e0c9ecb66464fa6999cd23a749d13.r2.dev/content/images/2026/11/black-friday-hard-drive-prices-are-messed-up/row-of-easystore-drives-on-a-cluttered-workbench.webp",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
-      },
-      {
-        "file": "assets/source/meta-ai/raw-2.webp",
-        "bytes": 32914,
-        "url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2296209094_cc3633-e1795590650418.jpg?resize=1200,600",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/"
-      },
-      {
-        "file": "assets/source/meta-ai/raw-3.webp",
-        "bytes": 29830,
-        "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg",
-        "w": 921,
-        "h": 483,
-        "alt": "Meta Muse mascot sitting at laptop",
-        "from": "img",
-        "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
-      },
-      {
-        "file": "assets/source/meta-ai/raw-4.jpeg",
-        "bytes": 98542,
-        "url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
-        "w": 0,
-        "h": 0,
-        "alt": "",
-        "from": "meta",
-        "page": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+        "page": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/"
       }
     ],
-    "anthropic-ai-adoption-study": [
+    "iphone": [
       {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-1.webp",
-        "bytes": 115172,
-        "url": "https://assets.claude.com/2cfb3389391d51357b0fcf4b360e0e20faaabaff.png?w=3840&q=75&fm=webp&fit=max",
-        "w": 868,
-        "h": 802,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.anthropic.com/research/working-with-ai"
-      },
-      {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-2.webp",
-        "bytes": 209110,
-        "url": "https://assets.claude.com/c31ec00df169743b88562ec419df063053313cfd.png?w=3840&q=75&fm=webp&fit=max",
-        "w": 896,
-        "h": 729,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.anthropic.com/research/working-with-ai"
-      },
-      {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-3.webp",
-        "bytes": 112576,
-        "url": "https://assets.claude.com/b8a511edb078752c5aa30a54fcb1f882a39d5a2f.png?w=3840&q=75&fm=webp&fit=max",
-        "w": 868,
-        "h": 671,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.anthropic.com/research/working-with-ai"
-      },
-      {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-4.webp",
-        "bytes": 131338,
-        "url": "https://assets.claude.com/91b8f4998c83a5b4af153c6d8ea6737c71a9e2f2.png?w=3840&q=75&fm=webp&fit=max",
-        "w": 868,
-        "h": 527,
-        "alt": "",
-        "from": "img",
-        "page": "https://www.anthropic.com/research/working-with-ai"
-      },
-      {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-5.jpeg",
-        "bytes": 177681,
-        "url": "https://assets.claude.com/cd30ce2e82eb423476801098073b39e025839018.jpg",
+        "file": "assets/source/iphone/raw-1.jpeg",
+        "bytes": 77554,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/iphone-duo-GettyImages-2301595744.jpg?w=1024",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://www.anthropic.com/research/working-with-ai"
-      },
+        "page": "https://techcrunch.com/2026/11/26/a-month-with-the-iphone-duo-has-changed-how-i-use-my-phone/"
+      }
+    ],
+    "gta-vi-anthropic": [
       {
-        "file": "assets/source/anthropic-ai-adoption-study/raw-6.png",
-        "bytes": 1337725,
-        "url": "https://the-decoder.com/wp-content/uploads/2026/11/ai_office_paper-1200x675.png",
+        "file": "assets/source/gta-vi-anthropic/raw-1.jpeg",
+        "bytes": 124074,
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/"
+        "page": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/"
       }
     ],
-    "anthropic-free-will": [
+    "android-create-my-widget": [
       {
-        "file": "assets/source/anthropic-free-will/raw-1.webp",
-        "bytes": 45792,
-        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot_20261125-153847.png?quality=90&strip=all&crop=0%2C23.625752568742%2C100%2C52.748494862516&w=1200",
+        "file": "assets/source/android-create-my-widget/raw-1.webp",
+        "bytes": 34808,
+        "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
         "w": 0,
         "h": 0,
         "alt": "",
         "from": "meta",
-        "page": "https://www.theverge.com/ai-artificial-intelligence/1042513/dario-amodei-clarifies-he-doesnt-believe-we-should-surrender-free-will-to-ai"
+        "page": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini"
       }
     ],
-    "e11-aac1ec": [
+    "u17-8-0-21": [
       {
-        "file": "assets/source/e11-aac1ec/raw-1.jpeg",
-        "bytes": 483086,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261104/ccddb226-1570-438d-8ed1-c84da9cc717d.jpg",
-        "w": 750,
-        "h": 1158,
-        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
-        "from": "img",
-        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
-      },
-      {
-        "file": "assets/source/e11-aac1ec/raw-2.jpeg",
-        "bytes": 483472,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261104/03e0e53c-1be7-42c4-bbaa-eb03a88e5f8d.jpg",
-        "w": 750,
-        "h": 944,
-        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
-        "from": "img",
-        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
-      },
-      {
-        "file": "assets/source/e11-aac1ec/raw-3.jpeg",
-        "bytes": 154154,
-        "url": "https://imgpai.thepaper.cn/pphimage/20261104/17d9b825-fdf6-4624-a069-bebb523f535d.jpg",
-        "w": 750,
-        "h": 562,
-        "alt": "机器人赛道“换血”：破产清算与百亿融资同时发生，出清才刚开始",
-        "from": "img",
-        "page": "https://m.thepaper.cn/newsDetail_forward_34407303"
+        "file": "assets/source/u17-8-0-21/raw-1.jpeg",
+        "bytes": 40609,
+        "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/Mbia2x47rZMz7Nw6IexYUicfA93FYFfIUOXYVBzRxsP8B0x6q73BYENh7CfWiacOXPlribRnebet5q1zjaayqQ84ibFANw5s9DtK8bLGsRPpTKCY/0?wx_fmt=jpeg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "http://mp.weixin.qq.com/s?__biz=MzY4NDQyNDU5NQ==&mid=2247492555&idx=1&sn=0b9ab34e2d96e05e30de97d9fb1ae6be&chksm=f27bb5d3ddf4a7b5322eecb088906497ca2309a9bd3f166816b3a6861651116bc8d53be494e2#rd"
       }
     ],
-    "chow-tai-fook-stores": [],
-    "e13-384cae": [],
-    "zhuan-ren-gong": []
+    "indium-phosphide-squeeze": [
+      {
+        "file": "assets/source/indium-phosphide-squeeze/raw-1.jpeg",
+        "bytes": 312707,
+        "url": "https://cdn.mos.cms.futurecdn.net/QHDLcWSaWAmDdMePxyymwb-2560-80.jpg",
+        "w": 800,
+        "h": 450,
+        "alt": "Telecommunications using Fiber Optics handling multiple data",
+        "from": "img",
+        "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"
+      },
+      {
+        "file": "assets/source/indium-phosphide-squeeze/raw-2.jpeg",
+        "bytes": 257810,
+        "url": "https://cdn.mos.cms.futurecdn.net/H9c8yy2A5KxKsr5o3HGqr4-1920-80.jpg",
+        "w": 800,
+        "h": 450,
+        "alt": "Quantum-X InfiniBand Photonics Switch",
+        "from": "img",
+        "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"
+      },
+      {
+        "file": "assets/source/indium-phosphide-squeeze/raw-3.jpeg",
+        "bytes": 391666,
+        "url": "https://cdn.mos.cms.futurecdn.net/veeGtgCPJNgJzwffWHN9h5-2560-80.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"
+      },
+      {
+        "file": "assets/source/indium-phosphide-squeeze/raw-4.jpeg",
+        "bytes": 129965,
+        "url": "https://cdn.mos.cms.futurecdn.net/veeGtgCPJNgJzwffWHN9h5-1200-80.jpg",
+        "w": 0,
+        "h": 0,
+        "alt": "",
+        "from": "meta",
+        "page": "https://tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"
+      }
+    ],
+    "e11-dc4504": [],
+    "tv-boot-ad-ban": [],
+    "x-parental-controls": [],
+    "robot-startup-shutdowns": []
   }
 }
