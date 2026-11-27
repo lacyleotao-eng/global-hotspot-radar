@@ -44,6 +44,11 @@
     var t = ((state.yt || {}).targetDaily) || 0;
     return t > 0 ? t : 10;
   }
+  // B 站是第二条来源，单独计数：每天 1 篇，不占 YouTube 的 10 篇名额
+  function biliTarget() {
+    var b = (state.yt || {}).biliDaily;
+    return (typeof b === 'number' && b > 0) ? b : 1;
+  }
 
   function fmt(t) {
     if (!t) return '时间未知';
@@ -245,8 +250,9 @@
     var pnVideoNote = document.querySelector('.pnode[data-view="videos"] small');
     if (pnVideoNote) {
       var today = fmt(new Date()).slice(0, 10);
-      var todayN = ytDocs.filter(function (d) { return d.digestAt === today; }).length;
-      pnVideoNote.textContent = '今天 ' + todayN + ' / ' + ytTarget() + ' 篇 · 只用原片截帧配图';
+      var todayYt = ytDocs.filter(function (d) { return d.digestAt === today && d.source !== 'bilibili'; }).length;
+      var todayBili = ytDocs.filter(function (d) { return d.digestAt === today && d.source === 'bilibili'; }).length;
+      pnVideoNote.textContent = '今天 ' + todayYt + ' / ' + ytTarget() + ' 篇 + B站 ' + todayBili + ' / ' + biliTarget() + ' 篇';
     }
 
     Array.prototype.forEach.call(document.querySelectorAll('.pnode'), function (b) {
@@ -255,7 +261,7 @@
     var hint = document.getElementById('viewHint');
     if (hint) {
       var hintTxt = VIEW_HINT[state.view] || '';
-      if (state.view === 'videos') hintTxt = '视频拆解线｜每天 ' + ytTarget() + ' 篇：' + hintTxt;
+      if (state.view === 'videos') hintTxt = '视频拆解线｜每天 ' + ytTarget() + ' 篇 + B站 ' + biliTarget() + ' 篇：' + hintTxt;
       hint.textContent = hintTxt;
     }
   }
@@ -1123,10 +1129,11 @@
     if (!wrap || !grid) return;
 
     var today = fmt(new Date()).slice(0, 10);
-    var todayN = docs.filter(function (d) { return d.digestAt === today; }).length;
+    var todayYt = docs.filter(function (d) { return d.digestAt === today && d.source !== 'bilibili'; }).length;
+    var todayBili = docs.filter(function (d) { return d.digestAt === today && d.source === 'bilibili'; }).length;
     var withImg = docs.filter(function (d) { return (d.images || 0) > 0; }).length;
     document.getElementById('ytStat').innerHTML =
-      '<b>' + docs.length + '</b> 篇攻略　·　今天 <b>' + todayN + '</b> / ' + ytTarget() + ' 篇</span><br>' +
+      '<b>' + docs.length + '</b> 篇攻略　·　今天 <b>' + todayYt + '</b> / ' + ytTarget() + ' 篇 + B站 <b>' + todayBili + '</b> 篇</span><br>' +
       '全部带截帧配图：<b>' + withImg + '</b> / ' + docs.length;
 
     var catMap = {};

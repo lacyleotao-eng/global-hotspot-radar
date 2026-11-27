@@ -102,12 +102,18 @@ def main():
     args = ap.parse_args()
 
     dirs = sorted([d for d in DIGEST.iterdir() if d.is_dir() and d.name.startswith(args.date)])
-    rows = []
+    rows, yt_rows, bili_rows = [], [], []
     for d in dirs:
         if not (d / "article.html").exists():
             continue
         r, _ = check_one(d)
         rows.append(r)
+        try:
+            src = json.loads((d / "meta.json").read_text("utf-8")).get("source", "youtube")
+        except Exception:
+            src = "youtube"
+        # B 站稿是额外的第二条来源，不占 YouTube 的每日 10 篇名额
+        (bili_rows if src == "bilibili" else yt_rows).append(r)
 
     fails = [r for r in rows if r["problems"]]
     print(f"== 视频拆解质检 {args.date} ==  成稿 {len(rows)} / 目标 {args.target} 篇")
@@ -119,8 +125,9 @@ def main():
         for w in r["warns"]:
             print(f"        ! {w}")
 
-    gap = args.target - len(rows)
-    print(f"\n合计：{len(rows)} 篇，达标线 {args.target} 篇，" + (f"缺 {gap} 篇" if gap > 0 else "已达标"))
+    gap = args.target - len(yt_rows)
+    print(f"\n合计：YouTube {len(yt_rows)} 篇（达标线 {args.target} 篇，" +
+          (f"缺 {gap} 篇" if gap > 0 else "已达标") + f"）；B 站 {len(bili_rows)} 篇")
     if gap > 0:
         print("补齐提示：python3 scripts/yt_plan_next.py --stats 看还剩哪些选题没写")
     print("人工必查（脚本判不了）：画里有没有博主出镜/正脸/自拍/第一人称手持/手或筷子/路人儿童正脸/频道水印。")

@@ -86,6 +86,7 @@ def build():
         "updatedAt": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
         "total": len(docs),
         "targetDaily": DAILY_TARGET,
+        "biliDaily": 1,
         "docs": docs,
     }
     (DIGEST / "index.json").write_text(
