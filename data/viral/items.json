@@ -1801,6 +1801,200 @@
       "sourceHost": "www.toutiao.com"
     },
     {
+      "title": "今天午后，大A突然从ICU跑进了KTV，创业板、科创板一路狂飙，连券商都起来干活了",
+      "form": "tt-micro",
+      "account": "王智远",
+      "platform": "今日头条",
+      "url": "https://www.toutiao.com/w/1882991024160779/",
+      "publishedAt": null,
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "财经",
+      "region": "国内",
+      "summary": "作者用 ICU 到 KTV 的比喻描述当日 A 股与日韩市场大涨，引用摩根大通交易台关于空头解除风险对冲的判断，给出两融余额回落、股票型 ETF 净流入与融资保证金比例下调等数据，最后提醒别急着给牛市续费，关注下周一融资余额与 ETF 资金。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "榜单数据"
+      },
+      "ranking": {
+        "name": "今日头条热榜（同事件话题页，非原文上榜）",
+        "position": "A股放量暴涨 反转来了吗 第7位",
+        "duration": "采集时点快照"
+      },
+      "viralScore": {
+        "total": 17,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 8,
+            "note": "热榜同事件话题页\" A股放量暴涨 反转来了吗\"位列第7，原文未上榜，按上过榜给 8"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅见今日头条微头条原文，未取得跨平台转载证据"
+          },
+          {
+            "label": "时效性",
+            "points": 6,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 780,
+        "paragraphs": 22,
+        "subheads": 0,
+        "images": 1,
+        "titlePattern": "强比喻+市场场景",
+        "hook": "首句\"大A从ICU跑进KTV\"用一句反差比喻把当日行情写活",
+        "structure": [
+          "一句话比喻定调当日行情",
+          "引用机构解释空头回补",
+          "给两融与ETF数据",
+          "解释保证金调整的潜在空间",
+          "结尾反向提醒并给出观察指标"
+        ],
+        "highlightSkills": [
+          "金融术语后紧跟一句白话翻译",
+          "关键数字成段（2.18万亿、1852.6亿、80%）",
+          "用\"别人贪婪我站岗\"收尾"
+        ],
+        "lessons": [
+          "行情类微头条用一句具象比喻开头，比\"今日大涨\"有效得多",
+          "每个数据后面补一句\"这意味着什么\"，降低理解门槛",
+          "结尾给下个交易日的观察指标，把一次性情绪转成追更理由"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "ego-browser 打开微头条原文页面实测 + 热榜接口",
+        "notes": "页面中文字符 780、段落 22、图片 1 为实测；页面未显示发布时间，publishedAt 记 null，时效保守按 7 天内给 6；阅读/互动不可见；热榜为同事件话题页，非原文上榜"
+      },
+      "tags": [
+        "今日头条",
+        "微头条",
+        "A股",
+        "行情解读"
+      ],
+      "id": "ae3ec1deb8cfbaa7",
+      "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "#今起电视开机广告没了##电视# 刚刚看到新闻，说从今天起，电视开机广告就没了",
+      "form": "tt-micro",
+      "account": "郭静的互联网圈",
+      "platform": "今日头条",
+      "url": "https://www.toutiao.com/w/1882976418403338/",
+      "publishedAt": null,
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "社会",
+      "region": "国内",
+      "summary": "作者看到新规新闻后实机检查家中电视，发现开机广告仍在，查证后确认新规主要规范有线电视与 IPTV，对互联网电视尚不能直接取消；随后从硬件低价依赖广告收入、品牌系统更新慢两方面解释原因，并指出手机替代才是电视开机率低的根本问题。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "榜单数据"
+      },
+      "ranking": {
+        "name": "今日头条热榜（同事件话题页，非原文上榜）",
+        "position": "今起电视开机广告没了 第26位",
+        "duration": "采集时点快照"
+      },
+      "viralScore": {
+        "total": 17,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 8,
+            "note": "热榜同事件话题页\"今起电视开机广告没了\"位列第26，原文未上榜，按上过榜给 8"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅见今日头条微头条原文，未取得跨平台转载证据"
+          },
+          {
+            "label": "时效性",
+            "points": 6,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 860,
+        "paragraphs": 10,
+        "subheads": 0,
+        "images": 3,
+        "titlePattern": "热点话题标签+亲测反转",
+        "hook": "先说看到\"开机广告没了\"的新闻，再写自己开机实测发现广告还在，形成即时反差",
+        "structure": [
+          "用亲测结果制造新闻与现实的冲突",
+          "解释三类电视服务适用范围差异",
+          "从硬件利润结构解释广告难取消",
+          "从品牌系统更新慢补充原因",
+          "落到手机替代与开机率的现实"
+        ],
+        "highlightSkills": [
+          "第一人称实测带出可信度",
+          "把政策适用范围拆成三种看电视方式",
+          "用\"第一、第二\"组织原因"
+        ],
+        "lessons": [
+          "遇到政策新闻先做一次亲测，实测与 headline 不一致就是最好的钩子",
+          "把新规的适用边界分清（有线/IPTV/OTT），避免一刀切误读",
+          "解释行业现象时给一个产业链利益点（硬件不赚钱靠广告），比单纯吐槽更有说服力"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "ego-browser 打开微头条原文页面实测 + 热榜接口",
+        "notes": "页面中文字符 860、段落 10、图片 3 为实测；页面未显示发布时间，publishedAt 记 null，时效保守按 7 天内给 6；阅读/互动不可见；热榜为同事件话题页，非原文上榜"
+      },
+      "tags": [
+        "今日头条",
+        "微头条",
+        "电视开机广告",
+        "亲测"
+      ],
+      "id": "6f7372cb48362012",
+      "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
       "title": "周末，超级大瓜！",
       "form": "gzh-poster",
       "platform": "微信公众号",
@@ -1982,6 +2176,468 @@
       "id": "d2d1e3db6fcb23f4",
       "formLabel": "今日头条 · 文章",
       "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "外卖大势已定？假如不出意外，明后年外卖行业将迎来3个变化",
+      "form": "tt-article",
+      "account": "栉风拆解局",
+      "platform": "今日头条",
+      "url": "https://www.toutiao.com/article/7712774759682982440/",
+      "publishedAt": "2026-11-27T17:07:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "财经",
+      "region": "国内",
+      "summary": "文章从即时零售订单规模、二选一处罚与补贴战回溯外卖竞争格局，提出后续三个变化：竞争从补贴转向本地供给与运力，低线城市成为增量战场，无人车无人机可能改变最后一公里成本结构，并提醒技术落地仍有监管与运营不确定性。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅见今日头条原文，未取得其他平台转载或第三方拆解引用证据"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2965,
+        "paragraphs": 53,
+        "subheads": 3,
+        "images": 11,
+        "titlePattern": "热点判断+时间锚+数字悬念",
+        "hook": "开头连问\"格局是否定型、明后年往哪变\"，随即用财报订单数把问题落到实据上",
+        "structure": [
+          "开篇用两个问题锁定读者关切",
+          "以财报订单与股价反应交代竞争规模",
+          "按时间线复盘补贴战与二选一处罚",
+          "逐条展开三个变化并引专家判断",
+          "结尾回到\"半小时生活圈\"入口之争"
+        ],
+        "highlightSkills": [
+          "先给订单数与补贴金额，再讲逻辑",
+          "按第一类/第二类列机制，层次清楚",
+          "每个变化都配场景与不确定性提醒"
+        ],
+        "lessons": [
+          "写行业趋势文先给一个可核验的财报数字当锚点，别上来就下判断",
+          "把\"二选一\"这类旧闻拆成四条机制，旧料也能出新意",
+          "每条趋势后面跟一句风险边界，避免被读者当成确定性预测"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "ego-browser 打开今日头条原文页面实测",
+        "notes": "页面元数据 visible：2026-11-27 17:07·栉风拆解局；正文中文字符 2965、段落 53、图片 11、分节 3 均为页面实测；阅读/互动数不可见，未编造"
+      },
+      "tags": [
+        "今日头条",
+        "外卖",
+        "即时零售",
+        "行业趋势"
+      ],
+      "id": "4ca42572c909ad8f",
+      "formLabel": "今日头条 · 文章",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "浙大00后博士做世界模型，估值百亿",
+      "form": "tt-article",
+      "account": "邱处机",
+      "platform": "今日头条",
+      "url": "https://www.toutiao.com/article/7712764455536591379/",
+      "publishedAt": "2026-11-27T16:26:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "科技",
+      "region": "国内",
+      "summary": "文章讲述浙江大学在读博士、魔芯科技创始人陈天润从 899 元 3D 打印机创业到转向 4D 世界模型的过程，列出九个月五轮融资、估值从 8.4 亿元到近百亿元、投资方名单与团队扩张，并写到公司账面承压时仍选择全面转型，以及商业化落地场景。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅见今日头条原文，未取得跨平台转载证据"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2014,
+        "paragraphs": 38,
+        "subheads": 3,
+        "images": 3,
+        "titlePattern": "身份反差+具体估值",
+        "hook": "第一句直接给出\"26岁在读博士、公司估值近百亿\"的反差，再用办公室里的机械臂场景接住悬念",
+        "structure": [
+          "用年龄与估值反差开场",
+          "现场描写虚拟工厂里的世界模型",
+          "以\"899元3D打印机\"回看创业起点",
+          "三段式小标题讲融资、路径选择与商业化",
+          "结尾用负债期仍转型的细节收束"
+        ],
+        "highlightSkills": [
+          "数字前置：26岁、9个月5轮、估值8.4亿到近百亿",
+          "小标题用 01/02/03 加一句结论",
+          "人物引语与账面数据交叉出现"
+        ],
+        "lessons": [
+          "人物稿先抛最强反差数字，再补现场细节，读者才会往下看",
+          "把创业史切成一个具体物件（899元打印机）比按年份罗列更好记",
+          "写高估值故事必须给出账面压力和转型时点，避免变成软文"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "ego-browser 打开今日头条原文页面实测",
+        "notes": "页面元数据 visible：2026-11-27 16:26·邱处机（正文署名余生）；中文字符 2014、段落 38、图片 3、小标题 3 为页面实测；阅读/互动数不可见"
+      },
+      "tags": [
+        "今日头条",
+        "AI创业",
+        "世界模型",
+        "人物"
+      ],
+      "id": "d9b68c9aaec52147",
+      "formLabel": "今日头条 · 文章",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "智谱辟谣 GLM-5.5 延期；特斯拉和 SpaceX 冲刺年底合并；18 家平台完成算法协商，覆盖 2500 万新就业形态劳动者｜极客早知道",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "极客公园",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117509&idx=1&sn=b26a9ef2a807975c2f2a93b4a45884b4",
+      "publishedAt": "2026-11-27T08:41:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "科技",
+      "region": "国内",
+      "summary": "极客早知道当日汇总智谱辟谣 GLM-5.5 延期、腾讯推广混元 HY4、OpenAI 修正计费、特斯拉与 SpaceX 拟合并、英伟达暂停向五国交付 AI 服务器、华为发布星驰辅助驾驶等消息，每条给出事实细节并标注来源媒体。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 4669,
+        "paragraphs": 72,
+        "subheads": 11,
+        "images": 18,
+        "titlePattern": "多事件并列+数字锚点",
+        "hook": "首屏把\"马云现身平头哥、英伟达暂停交付\"等最强消息并列，做成可扫读的早报入口",
+        "structure": [
+          "开篇用当日最热的两条消息定调",
+          "按公司分条给出事件、数据与消息来源",
+          "每条结尾标注来源媒体",
+          "覆盖芯片、模型、汽车等赛道",
+          "末尾接自有活动与播客导流"
+        ],
+        "highlightSkills": [
+          "每条独立小标题并附消息来源",
+          "关键金额/比例前置（3.5万亿美元、10%额度）",
+          "数字+结论式标题"
+        ],
+        "lessons": [
+          "早报类内容用\"事件+数据+来源\"三件套，读者能快速判断是否可信",
+          "小标题写成一句完整结论，扫读也能获得信息",
+          "把自有活动放在文末而非开头，避免冲淡资讯密度"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS + 原文 mp.weixin.qq.com 直链",
+        "notes": "微信外部阅读与互动不可见，未编造；字数/段落/小标题/图数来自 Wechat2RSS 全文统计；结构拆解基于 RSS 正文实读"
+      },
+      "tags": [
+        "微信公众号",
+        "公众号文章",
+        "科技"
+      ],
+      "id": "8307541644e914da",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "具身公司抱团回应：通用大模型跨维打击？没那么简单",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "量子位",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247949256&idx=3&sn=f5a1c3b3c89d06b4fe191bc2849408ff",
+      "publishedAt": "2026-11-26T20:26:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "科技",
+      "region": "国内",
+      "summary": "文章整理智源 REAL 物理 AI 开放日圆桌，讨论通用大模型对具身智能 System 2 层的冲击，以及端侧部署、延迟、灵巧操作三道鸿沟；多位创始人就软硬件一体、研发与商业化先后给出不同选择，并提出行业将洗牌、创业需谨慎。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2857,
+        "paragraphs": 82,
+        "subheads": 3,
+        "images": 11,
+        "titlePattern": "行业共识+反问",
+        "hook": "用\"焦虑，焦虑，焦虑\"三连开篇，直接点出融资降温和通用大模型跨界双重压力",
+        "structure": [
+          "用行业焦虑开场并提出资源投向问题",
+          "解释 System 0/1/2 分层与通用模型的威胁",
+          "列出端侧部署、延迟、灵巧操作三道鸿沟",
+          "对比嘉宾对软硬一体与创业节奏的分歧",
+          "结尾以\"谨慎创业\"共识收束"
+        ],
+        "highlightSkills": [
+          "技术分层用 S0/S1/S2 黑话后立刻解释",
+          "每位创始人观点都带公司名和职务",
+          "把圆桌讨论拆成可执行判断"
+        ],
+        "lessons": [
+          "行业圆桌稿要先把技术分层讲清，否则后面的争论读者跟不上",
+          "观点必须挂人名与职位，避免\"有人认为\"式空话",
+          "结尾给一个反常识共识（谨慎创业），比罗列干货更容易被记住"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS + 原文 mp.weixin.qq.com 直链",
+        "notes": "微信外部阅读与互动不可见，未编造；字数/段落/小标题/图数来自 Wechat2RSS 全文统计；结构拆解基于 RSS 正文实读"
+      },
+      "tags": [
+        "微信公众号",
+        "公众号文章",
+        "科技"
+      ],
+      "id": "75799d2064b3cbe3",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
+    },
+    {
+      "title": "17岁的B站，凭什么还能让4亿人上头？",
+      "form": "gzh-article",
+      "platform": "微信公众号",
+      "account": "差评X.PIN",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&mid=2654710958&idx=2&sn=b324c73c55a6354db2ea74a117d71616",
+      "publishedAt": "2026-11-27T00:00:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "娱乐",
+      "region": "国内",
+      "summary": "文章结合 BLG 夺冠与 B 站 Q3 财报，指出日活 1.24 亿、月活 3.94 亿、日均使用时长 121 分钟均创新高，广告收入同比增长 20%；随后用音乐、AI、户外等领域 UP 主案例解释内容生态与社区氛围如何支撑增长。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 13,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+          },
+          {
+            "label": "时效性",
+            "points": 10,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2387,
+        "paragraphs": 79,
+        "subheads": 0,
+        "images": 32,
+        "titlePattern": "数字+反问+情绪判断",
+        "hook": "用\"逆风翻盘\"四个字定调，再接 BLG 夺冠与 Q3 财报双喜的现场感",
+        "structure": [
+          "用赛事热度与财报新高双线开场",
+          "列日活、月活、时长与营收广告数据",
+          "以抢遥控器大战回忆切入创作者生态",
+          "举音乐、AI、户外等 UP 主实例",
+          "用社区氛围与良性循环收尾"
+        ],
+        "highlightSkills": [
+          "财报数字与生活化比喻交替",
+          "具体 UP 主案例配播放与评论数",
+          "用\"我爸\"\"小时候\"拉近距离"
+        ],
+        "lessons": [
+          "平台分析文用家庭抢遥控器的共同记忆切入，数据就不显得干",
+          "每个趋势都配一个具体 UP 主和播放数字，比抽象概括更可信",
+          "把\"社区—创作者—平台\"的闭环写清楚，读者能带走一个解释框架"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "Wechat2RSS 公开 RSS + 原文 mp.weixin.qq.com 直链",
+        "notes": "微信外部阅读与互动不可见，未编造；字数/段落/小标题/图数来自 Wechat2RSS 全文统计；结构拆解基于 RSS 正文实读 当日 gzh-poster 未采到：微信客户端无可用自动化窗口，data/wechat-urls.txt 清单 5 条直链均已入库；留空待客户端补录，不拿图文冒充贴图。"
+      },
+      "tags": [
+        "微信公众号",
+        "公众号文章",
+        "娱乐"
+      ],
+      "id": "c82c66fe2805b02b",
+      "formLabel": "微信公众号 · 文章",
+      "sourceHost": "mp.weixin.qq.com"
     },
     {
       "title": "跌成白菜价，也卖不动？14亿人输给3亿美国人，电视究竟咋了？",
@@ -3564,6 +4220,99 @@
       },
       "id": "474bb40c9eb4b05b",
       "formLabel": "今日头条 · 微头条",
+      "sourceHost": "www.toutiao.com"
+    },
+    {
+      "title": "一年关掉2.7万家！药店诊所的苦日子，才刚开始？",
+      "form": "tt-article",
+      "account": "云莳一",
+      "platform": "今日头条",
+      "url": "https://www.toutiao.com/article/7711933767186743846/",
+      "publishedAt": "2026-11-25T14:35:00+08:00",
+      "collectedAt": "2026-11-27T17:37:00+08:00",
+      "category": "财经",
+      "region": "国内",
+      "summary": "文章依据国家药监局数据指出一年净减约 2.72 万家零售药店，其中连锁门店占净减少的 76.6%，头部连锁反而净增；随后分析中型连锁的成本困境、政策给出的药学服务转型方向，以及诊所赛道与合规收紧的差异，最后列出官方与媒体信源。",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见",
+        "favorites": "不可见",
+        "wow": "不可见",
+        "source": "不可见"
+      },
+      "ranking": null,
+      "viralScore": {
+        "total": 9,
+        "tier": "C",
+        "breakdown": [
+          {
+            "label": "阅读信号",
+            "points": 0,
+            "note": "页面无阅读/播放计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "互动信号",
+            "points": 0,
+            "note": "页面未渲染点赞/评论计数，不可见，按 0 计，未编造"
+          },
+          {
+            "label": "榜单信号",
+            "points": 0,
+            "note": "未取得该原文上榜证据，按 0 计"
+          },
+          {
+            "label": "传播广度",
+            "points": 3,
+            "note": "仅见今日头条原文，文末列举第三方信源但未见本文被转载"
+          },
+          {
+            "label": "时效性",
+            "points": 6,
+            "note": "见 verification.notes"
+          }
+        ],
+        "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+      },
+      "anatomy": {
+        "wordCount": 2224,
+        "paragraphs": 30,
+        "subheads": 5,
+        "images": 17,
+        "titlePattern": "具体数字+行业反问",
+        "hook": "开头并置\"一年关2.7万家\"与\"上市连锁仍在净增\"的矛盾，直接抛出谁会倒下的疑问",
+        "structure": [
+          "用总量与结构性反差起笔",
+          "拆净减数据的连锁/单体占比",
+          "分析中型连锁固定成本困境",
+          "对照政策出路与诊所的不同难题",
+          "列官方与媒体信源收尾"
+        ],
+        "highlightSkills": [
+          " 关键占比数字单独成段",
+          "每个小标题都是一句判断",
+          "文末附可点开的信源链接"
+        ],
+        "lessons": [
+          "行业洗牌题先找\"总量下降但头部扩张\"的反差，比单写坏消息更有信息量",
+          "数据后面立刻拆结构（连锁/单体、中型/头部），读者才知道和谁有关",
+          "文末附原始信源链接能显著提高可信度，写作时预留这一栏"
+        ]
+      },
+      "verification": {
+        "status": "部分核实",
+        "method": "ego-browser 打开今日头条原文页面实测",
+        "notes": "页面元数据 visible：2026-11-25 14:35·云莳一；中文字符 2224、段落 30、图片 17、小标题 5 为页面实测；发布于 2 天前，时效给 6；阅读/互动数不可见"
+      },
+      "tags": [
+        "今日头条",
+        "药店",
+        "行业洗牌",
+        "数据拆解"
+      ],
+      "id": "3152faba4c9ff624",
+      "formLabel": "今日头条 · 文章",
       "sourceHost": "www.toutiao.com"
     },
     {
