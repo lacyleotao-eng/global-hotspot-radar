@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球热点情报站 · 每日热点 / 资源 / 需求聚合</title>
 <meta name="description" content="每天汇总国内外热点、新闻、帖子、资源、需求与想法，附来源链接、核实状态、评价与引用溯源。">
-<link rel="stylesheet" href="styles.css?v=1123c">
+<link rel="stylesheet" href="styles.css?v=1127a">
 </head>
 <body>
 <header class="topbar">
@@ -85,6 +85,15 @@
         <small>每天采 10 篇真爆款（公众号 5 · 头条 5）</small>
       </button>
     </div>
+    <div class="pipe-ref pipe-video">
+      <span class="pipe-ref-label">视频拆解线 · 另一条产品线</span>
+      <button class="pnode vid" data-view="videos">
+        <span class="pn-num">▶</span>
+        <b>视频攻略</b>
+        <em id="pnVideo">—</em>
+        <small>每天 3 篇：把 YouTube 长视频拆成一步步能照做的攻略</small>
+      </button>
+    </div>
   </div>
   <p class="viewhint" id="viewHint">今日发布 = 通过自检的最终成品，直接复制就能发</p>
 
@@ -152,6 +161,20 @@
     <div class="resultbar"><span id="viralCount">—</span></div>
     <div class="viral-grid" id="viralGrid"></div>
     <div class="empty" id="viralEmpty" hidden>该形态暂无爆款样本。</div>
+  </section>
+
+  <section class="ytpanel" id="videoPanel" hidden>
+    <div class="yt-head">
+      <div>
+        <h2>视频攻略 · 一条长视频，拆成能照着做的一步步</h2>
+        <p>选的是 YouTube 上信息密度够高的视频：探店、旅行、赚钱、工具、健身、DIY……先把整条视频的字幕读成时间轴，再按「先给结论 → 怎么开始 → 每一步怎么做 → 哪里会踩坑」重写成一篇攻略。每个关键说法后面都挂着<b>原片时间戳</b>，点开原视频能直接对到那一句。</p>
+        <p class="yt-rule"><b>配图铁律</b>：只用<b>原片截帧</b>或 AI 生成示意图。<b>绝不用博主出镜、自拍、第一人称手持画面</b>——只要场景、物件、菜品、招牌这类客观镜头；AI 图一律标注「示意图，非现场」。</p>
+      </div>
+      <div class="yt-stat" id="ytStat">—</div>
+    </div>
+    <div class="yt-cats" id="ytCats"></div>
+    <div class="yt-grid" id="ytGrid"></div>
+    <div class="empty" id="ytEmpty" hidden>还没有视频拆解稿，今天的任务跑完就会出现在这里。</div>
   </section>
 
   <section class="pickspanel" id="picksPanel">
@@ -245,12 +268,26 @@
   </div>
 </div>
 
+<div class="yt-mask" id="ytMask" hidden>
+  <div class="yt-shell" role="dialog" aria-modal="true" aria-labelledby="ytTopLabel">
+    <div class="yt-topbar">
+      <span class="yt-top-label" id="ytTopLabel">视频攻略</span>
+      <div class="draft-tools">
+        <a class="draft-copy" id="ytSource" href="#" target="_blank" rel="noopener">打开原视频 ↗</a>
+        <button class="draft-close" id="ytClose" aria-label="关闭">×</button>
+      </div>
+    </div>
+    <iframe id="ytFrame" title="视频攻略正文"></iframe>
+  </div>
+</div>
+
 <script src="data/embed.js"></script>
 <script src="data/issue-embed.js"></script>
 <script src="data/picks-embed.js"></script>
 <script src="data/ready-embed.js"></script>
 <script src="data/viral-embed.js"></script>
 <script src="data/audit-embed.js"></script>
-<script src="app.js?v=1123c"></script>
+<script src="data/yt-embed.js"></script>
+<script src="app.js?v=1127a"></script>
 </body>
 </html>

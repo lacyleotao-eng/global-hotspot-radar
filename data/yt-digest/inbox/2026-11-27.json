@@ -1,0 +1,101 @@
+{
+ "date": "2026-11-27",
+ "generatedAt": "2026-11-27T10:47:34",
+ "types": [
+  "food",
+  "tech",
+  "money"
+ ],
+ "candidates": [
+  {
+   "videoId": "OSsRfVSJz8g",
+   "url": "https://www.youtube.com/watch?v=OSsRfVSJz8g",
+   "title": "老广州人才知道的顶级街头美食！这期视频一定要收藏！",
+   "channel": "渣叔爱酒",
+   "duration": 698,
+   "views": 283362,
+   "publishedAt": "",
+   "categoryKey": "food"
+  },
+  {
+   "videoId": "ViIw6Rj3xlA",
+   "url": "https://www.youtube.com/watch?v=ViIw6Rj3xlA",
+   "title": "イスタンブールで必見のストリートフードガイド！Istanbul Street Food VLOG [4k]",
+   "channel": "奥地利的小胡 Who's'HU",
+   "duration": 504,
+   "views": 45002,
+   "publishedAt": "",
+   "categoryKey": "food"
+  },
+  {
+   "videoId": "kdd9EMuQynQ",
+   "url": "https://www.youtube.com/watch?v=kdd9EMuQynQ",
+   "title": "那不勒斯街头美食之旅：意大利女孩的周末狂吃攻略！",
+   "channel": "意大利女孩善美",
+   "duration": 829,
+   "views": 39137,
+   "publishedAt": "",
+   "categoryKey": "food"
+  },
+  {
+   "videoId": "FwOTs4UxQS4",
+   "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4",
+   "title": "AI Agents, Clearly Explained",
+   "channel": "Jeff Su",
+   "duration": 609,
+   "views": 5836228,
+   "publishedAt": "",
+   "categoryKey": "tech"
+  },
+  {
+   "videoId": "EH5jx5qPabU",
+   "url": "https://www.youtube.com/watch?v=EH5jx5qPabU",
+   "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
+   "channel": "Futurepedia and AI Agent Lab",
+   "duration": 1558,
+   "views": 4678049,
+   "publishedAt": "",
+   "categoryKey": "tech"
+  },
+  {
+   "videoId": "zkXonmqIBFg",
+   "url": "https://www.youtube.com/watch?v=zkXonmqIBFg",
+   "title": "101 Ways To Use AI In Your Daily Life",
+   "channel": "Tina Huang",
+   "duration": 866,
+   "views": 780766,
+   "publishedAt": "",
+   "categoryKey": "tech"
+  },
+  {
+   "videoId": "o2qVt4irs9c",
+   "url": "https://www.youtube.com/watch?v=o2qVt4irs9c",
+   "title": "(一定要看，下一個中招的可能就是你！）這種新型騙局正在席捲互聯網，擺攤就能月入30萬？！背後套路深到你無法想像！[驚掉下巴 | 小烏]",
+   "channel": "驚掉下巴",
+   "duration": 607,
+   "views": 606495,
+   "publishedAt": "",
+   "categoryKey": "money"
+  },
+  {
+   "videoId": "6O6IrVFMr3U",
+   "url": "https://www.youtube.com/watch?v=6O6IrVFMr3U",
+   "title": "牛肉饼兄弟日流水过万，却被新品牌取代！两人转身楼下摆摊，联合多种小吃打通园区配送，把冷清街带成全城网红街！ #短劇 #逆襲 #drama #小吃创业 #男頻",
+   "channel": "微光漫剧",
+   "duration": 2396,
+   "views": 88318,
+   "publishedAt": "",
+   "categoryKey": "money"
+  },
+  {
+   "videoId": "rBdOGNlvjIg",
+   "url": "https://www.youtube.com/watch?v=rBdOGNlvjIg",
+   "title": "青岛小哥摆摊卖重口味小吃，20一碗要啥给啥，小摊一晚流水6000块【好食勇哥】",
+   "channel": "好食勇哥",
+   "duration": 703,
+   "views": 68069,
+   "publishedAt": "",
+   "categoryKey": "money"
+  }
+ ]
+}

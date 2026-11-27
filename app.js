@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', auditToday: true, issue: null };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', auditToday: true, issue: null, yt: { docs: [], total: 0 }, ytCat: '' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -107,14 +107,16 @@
     state.viral = window.__VIRAL__ || { items: [], meta: {}, benchmark: [] };
     state.audit = window.__AUDIT__ || null;
     state.issue = window.__ISSUE__ || null;
+    state.yt = window.__YT__ || { docs: [], total: 0 };
     initControls();
-    // 深链：#view=picks|audit|benchmark|feed|leads 直接打开某个视图
-    var vm = /^#view=(issue|picks|audit|benchmark|feed|leads)$/.exec(location.hash || '');
+    // 深链：#view=picks|audit|benchmark|feed|leads|videos 直接打开某个视图
+    var vm = /^#view=(issue|picks|audit|benchmark|feed|leads|videos)$/.exec(location.hash || '');
     if (vm) state.view = vm[1];
     applyView();
     renderPipe();
     render();
     renderIssue();
+    renderVideos();
     // 深链：#draft=<sourceItemId>:<pieceId> 直接打开某篇成品稿
     var m = /^#draft=([^:]+):(.+)$/.exec(location.hash || '');
     if (m) openDraft(decodeURIComponent(m[1]), decodeURIComponent(m[2]));
@@ -159,17 +161,20 @@
     var isBench = state.view === 'benchmark';
     var isAudit = state.view === 'audit';
     var isIssue = state.view === 'issue';
+    var isVideos = state.view === 'videos';
     document.getElementById('issuePanel').hidden = !isIssue;
     document.getElementById('benchPanel').hidden = !isBench;
     document.getElementById('auditPanel').hidden = !isAudit;
     document.getElementById('picksPanel').hidden = !isPicks;
-    document.getElementById('mainToolbar').hidden = isPicks || isBench || isAudit || isIssue;
-    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit || isIssue;
+    document.getElementById('videoPanel').hidden = !isVideos;
+    var fullPanel = isPicks || isBench || isAudit || isIssue || isVideos;
+    document.getElementById('mainToolbar').hidden = fullPanel;
+    document.getElementById('typeChips').hidden = isPicks || isLeads || isBench || isAudit || isIssue || isVideos;
     document.getElementById('leadBar').hidden = !isLeads;
-    document.querySelector('.resultbar').hidden = isPicks || isBench || isAudit || isIssue;
-    document.getElementById('grid').hidden = isPicks || isBench || isAudit || isIssue;
+    document.querySelector('.resultbar').hidden = fullPanel;
+    document.getElementById('grid').hidden = fullPanel;
     document.getElementById('empty').hidden = true;
-    document.querySelector('.more-wrap').hidden = isPicks || isBench || isAudit || isIssue;
+    document.querySelector('.more-wrap').hidden = fullPanel;
   }
 
   // 六个视图其实是两条路：
@@ -181,7 +186,8 @@
     picks: '第 3 步｜今天定下要做的选题：公众号 6 个 + 头条 8 个，每个选题下面挂着已出的稿和自检分',
     audit: '第 4 步｜闸门：按爆款基准打分，≥85 进发布池，＜85 直接淘汰',
     issue: '第 5 步｜通过自检的成品，复制全文 + 下载图片就能发',
-    benchmark: '参照系｜每天采 10 篇真爆款（公众号 5 · 头条 5），拆成标尺；它不参与生产，只决定自检的及格线'
+    benchmark: '参照系｜每天采 10 篇真爆款（公众号 5 · 头条 5），拆成标尺；它不参与生产，只决定自检的及格线',
+    videos: '视频拆解线｜每天 3 篇：把 YouTube 长视频读成时间轴，重写成一步步能照做的攻略，配图只用原片截帧'
   };
 
   function setText(id, txt) {
@@ -228,6 +234,14 @@
       var vt = ((state.viral || {}).meta || {}).total || 0;
       pnViralNote.textContent = '样本库 ' + vt + ' 篇 · 每天新增约 10 篇（公 5 · 头 5）';
     }
+    var ytDocs = (state.yt || {}).docs || [];
+    setText('pnVideo', ytDocs.length ? ytDocs.length + ' 篇' : '—');
+    var pnVideoNote = document.querySelector('.pnode[data-view="videos"] small');
+    if (pnVideoNote) {
+      var today = fmt(new Date()).slice(0, 10);
+      var todayN = ytDocs.filter(function (d) { return d.digestAt === today; }).length;
+      pnVideoNote.textContent = '今天 ' + todayN + ' / 3 篇 · 只用原片截帧配图';
+    }
 
     Array.prototype.forEach.call(document.querySelectorAll('.pnode'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-view') === state.view);
@@ -255,7 +269,8 @@
         applyView();
         renderPipe();
         if (state.view === 'issue') renderIssue();
-        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit' || state.view === 'issue';
+        if (state.view === 'videos') renderVideos();
+        document.querySelector('.legend').hidden = state.view === 'leads' || state.view === 'picks' || state.view === 'benchmark' || state.view === 'audit' || state.view === 'issue' || state.view === 'videos';
         document.getElementById('search').placeholder = state.view === 'leads' ? '搜索选题标题、切入点、提纲…' : '搜索标题、摘要、平台、标签…';
         render();
       };
@@ -295,6 +310,8 @@
     document.getElementById('draftMask').onclick = function (e) { if (e.target.id === 'draftMask') closeDraft(); };
     document.getElementById('viralClose').onclick = closeViral;
     document.getElementById('viralMask').onclick = function (e) { if (e.target.id === 'viralMask') closeViral(); };
+    document.getElementById('ytClose').onclick = closeYt;
+    document.getElementById('ytMask').onclick = function (e) { if (e.target.id === 'ytMask') closeYt(); };
     document.getElementById('viralCopy').onclick = function () {
       if (state.viralOpen) copyText(viralFullText(state.viralOpen), document.getElementById('viralCopy'));
     };
@@ -306,7 +323,8 @@
     };
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
-      if (!document.getElementById('viralMask').hidden) closeViral();
+      if (!document.getElementById('ytMask').hidden) closeYt();
+      else if (!document.getElementById('viralMask').hidden) closeViral();
       else if (!document.getElementById('draftMask').hidden) closeDraft();
       else closeModal();
     });
@@ -1068,10 +1086,108 @@
     });
   }
 
+  // ── 视频拆解线 ────────────────────────────────────────────────
+  // 一个视图、一份清单：data/yt-embed.js 里的 docs[] 原样渲染。
+  // 正文是独立的 article.html，用 iframe 全屏打开，保持文章自己的排版与配图。
+  function fmtDur(sec) {
+    sec = Number(sec) || 0;
+    if (!sec) return '时长未知';
+    var m = Math.floor(sec / 60), s = sec % 60;
+    return (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s);
+  }
+  function fmtViews(n) {
+    n = Number(n) || 0;
+    if (!n) return '播放不可见';
+    if (n >= 10000) return (n / 10000).toFixed(1).replace('.0', '') + ' 万播放';
+    return n + ' 播放';
+  }
+
+  function renderVideos() {
+    var wrap = document.getElementById('videoPanel');
+    var docs = (state.yt || {}).docs || [];
+    var grid = document.getElementById('ytGrid');
+    var empty = document.getElementById('ytEmpty');
+    var cats = document.getElementById('ytCats');
+    if (!wrap || !grid) return;
+
+    var today = fmt(new Date()).slice(0, 10);
+    var todayN = docs.filter(function (d) { return d.digestAt === today; }).length;
+    var withImg = docs.filter(function (d) { return (d.images || 0) > 0; }).length;
+    document.getElementById('ytStat').innerHTML =
+      '<b>' + docs.length + '</b> 篇攻略　·　今天 <b>' + todayN + '</b> / 3 篇</span><br>' +
+      '全部带截帧配图：<b>' + withImg + '</b> / ' + docs.length;
+
+    var catMap = {};
+    docs.forEach(function (d) { catMap[d.category] = (catMap[d.category] || 0) + 1; });
+    var chips = ['<button class="yt-chip' + (state.ytCat ? '' : ' on') + '" data-cat="">全部 ' + docs.length + '</button>'];
+    Object.keys(catMap).forEach(function (c) {
+      chips.push('<button class="yt-chip' + (state.ytCat === c ? ' on' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + ' ' + catMap[c] + '</button>');
+    });
+    cats.innerHTML = chips.join('');
+    Array.prototype.forEach.call(cats.querySelectorAll('.yt-chip'), function (b) {
+      b.onclick = function () { state.ytCat = b.getAttribute('data-cat'); renderVideos(); };
+    });
+
+    var rows = docs.filter(function (d) { return !state.ytCat || d.category === state.ytCat; });
+    empty.hidden = rows.length > 0;
+    grid.innerHTML = rows.map(function (d) {
+      var img = d.cover ? '<img src="' + esc(d.cover) + '" alt="" loading="lazy">' : '<div class="yt-noimg">无封面</div>';
+      return '<article class="yt-card">' +
+        '<button class="yt-cover" data-slug="' + esc(d.slug) + '" aria-label="打开攻略">' + img +
+          '<span class="yt-cat">' + esc(d.category) + '</span>' +
+          (d.place ? '<span class="yt-place">' + esc(d.place) + '</span>' : '') +
+        '</button>' +
+        '<div class="yt-body">' +
+          '<h3>' + esc(d.title) + '</h3>' +
+          '<p class="yt-dek">' + esc(d.dek) + '</p>' +
+          '<div class="yt-meta">' +
+            '<span><b>' + (d.steps || 0) + '</b> 步</span>' +
+            '<span><b>' + (d.images || 0) + '</b> 张截帧</span>' +
+            '<span>' + fmtDur(d.duration) + '</span>' +
+            '<span>' + fmtViews(d.views) + '</span>' +
+          '</div>' +
+          '<div class="yt-foot">' +
+            '<span class="yt-src">YouTube · ' + esc(d.channel || '') + '</span>' +
+            '<button class="yt-read" data-slug="' + esc(d.slug) + '">读攻略 →</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }).join('');
+
+    Array.prototype.forEach.call(grid.querySelectorAll('[data-slug]'), function (b) {
+      b.onclick = function () {
+        var slug = b.getAttribute('data-slug');
+        var doc = docs.filter(function (d) { return d.slug === slug; })[0];
+        if (doc) openYt(doc);
+      };
+    });
+  }
+
+  function openYt(doc) {
+    var mask = document.getElementById('ytMask');
+    var frame = document.getElementById('ytFrame');
+    document.getElementById('ytTopLabel').textContent = doc.category + ' · ' + doc.title;
+    var src = document.getElementById('ytSource');
+    src.href = doc.videoUrl || '#';
+    src.style.display = doc.videoUrl ? '' : 'none';
+    frame.src = doc.url;
+    mask.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeYt() {
+    var mask = document.getElementById('ytMask');
+    if (!mask || mask.hidden) return;
+    mask.hidden = true;
+    document.getElementById('ytFrame').src = 'about:blank';
+    document.body.style.overflow = '';
+  }
+
   function render() {
     if (state.view === 'benchmark') { renderBenchmark(); return; }
     if (state.view === 'audit') { renderAudit(); return; }
     if (state.view === 'picks') { renderPicks(); return; }
+    if (state.view === 'videos') { renderVideos(); return; }
     var rows = state.view === 'leads' ? filteredLeads() : filtered();
     document.getElementById('resultCount').textContent = '显示 ' + rows.length + (state.view === 'leads' ? ' 条选题线索' : ' 条');
     document.getElementById('empty').hidden = rows.length > 0;
