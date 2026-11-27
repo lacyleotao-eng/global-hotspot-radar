@@ -68,6 +68,7 @@ def build():
             "category": meta.get("category", "未分类"),
             "categoryKey": meta.get("categoryKey", "other"),
             "place": meta.get("city", ""),
+            "source": meta.get("source", "youtube"),
             "channel": meta.get("channel", ""),
             "videoId": meta.get("id", ""),
             "videoUrl": meta.get("webpage", ""),
@@ -96,7 +97,7 @@ def build():
     (ROOT / "data" / "yt-embed.js").write_text(js, "utf-8")
     print(f"[ok] {len(docs)} 篇 → data/yt-digest/index.json + data/yt-embed.js")
     for x in docs:
-        print(f"  - {x['slug']}｜{x['category']}｜{x['steps']} 步｜{x['images']} 图")
+        print(f"  - {x['slug']}｜{x['source']}｜{x['category']}｜{x['steps']} 步｜{x['images']} 图")
 
 
 if __name__ == "__main__":

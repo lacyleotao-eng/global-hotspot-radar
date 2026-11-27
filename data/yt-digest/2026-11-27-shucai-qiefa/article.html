@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>切菜只记 2 个参数：5 类形状，19 种蔬菜一次讲完</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#2f6b3f; --accent-soft:#eaf3ec; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  .src-tag{background:#fdeef0;color:#c0392b;padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(47,107,63,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0 10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  td.num-cell{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:650;color:var(--accent)}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .quote{border-left:3px solid var(--gold);padding:2px 0 2px 14px;color:var(--ink-2);font-size:15px;margin:16px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src{font-size:13px;color:var(--ink-2)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="src-tag">B 站</span>
+    <span class="tag">厨房技巧</span>
+    <span>·</span>
+    <span>刀工 · 备菜</span>
+  </div>
+  <h1>切菜只记 2 个参数：5 类形状，19 种蔬菜一次讲完</h1>
+  <p class="lede">一条 5 分钟的 B 站视频，把洋葱、土豆、黄瓜、玉米、西兰花按几何形状分成 5 类，每类只配一套刀法。这篇把视频里的角度、手法和弹幕里的补刀，整理成能照着做的一步步。</p>
+  <div class="meta">
+    <span>素材：B 站视频 <b>《蔬菜切法指南！从几何角度出发…》</b>（UP 主「杨光_建厨师」）</span>
+    <span>时长 <b>5:11</b></span>
+    <span>发布 <b>2025-03-30</b></span>
+    <span>播放 <b>351 万</b></span>
+    <span>弹幕 <b>1652</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-veg-lineup.jpg" alt="一排圆柱形蔬菜横放在白色台面上：胡萝卜、黄瓜、西葫芦、长茄子、白萝卜、芹菜、紫甘蓝梗" loading="lazy">
+    <figcaption><b>这一排就是最常见的「圆柱类」：胡萝卜、黄瓜、西葫芦、长茄子、白萝卜、芹菜。</b>视频给它们配的是同一套刀法——靠刀的角度控制片的大小。<span class="ts">视频截帧 00:02:24</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：这份东西值得存下来</h2>
+
+<div class="grid">
+  <div class="kpi"><div class="n">5 类</div><div class="l">全片只讲 5 类形状，不用背具体菜名</div></div>
+  <div class="kpi"><div class="n">19 种</div><div class="l">视频点名的蔬菜，全部能归到这 5 类里</div></div>
+  <div class="kpi"><div class="n">2 个参数</div><div class="l">纹理方向、刀与轴线的夹角</div></div>
+  <div class="kpi"><div class="n">5 分钟</div><div class="l">原片时长，1.25 倍速看完约 4 分钟</div></div>
+</div>
+
+<p><b>适合谁</b>：做饭频率一周三次以上、切菜还靠「感觉」的人；想一次把洋葱丝、土豆丝、黄瓜片切利索的人。</p>
+<p><b>不适合谁</b>：想找菜谱的（这里没有一道菜的做法）；想学切肉的（视频明确没讲，弹幕里也有人在问）。</p>
+
+<p>视频开篇就把两类最实用的问题摆出来了：怎么最快拿到茄丁、黄瓜丝、葱末，以及西兰花怎么切才不掉渣<span class="ts">00:00:00</span>。它的解法不是「背 30 种刀法」，而是先看形状，再定角度。</p>
+
+<h2><span class="num">1</span>先记住 2 个参数，后面全靠它们</h2>
+
+<p><b>第一个参数是纹理方向。</b>同一颗洋葱，顺纹切和逆纹切，下锅后的结果完全不同——这是全片最值钱的一条。</p>
+
+<div class="box calm">
+  <p><b>顺纹切</b>（刀平行于蔬菜的轴线）：洋葱丝加热后更容易保持形状，适合做泡菜，或者炒法式洋葱汤<span class="ts">00:00:39</span>。</p>
+  <p><b>逆纹切</b>（刀垂直于轴线）：生吃口感爽脆，但一炒就容易碎，能化到汤里，适合炖菜打底<span class="ts">00:00:45</span>。</p>
+  <p>所以不是「哪种切法更好」，而是<b>先想这道菜要什么口感</b>，再决定往哪个方向下刀。</p>
+</div>
+
+<p><b>第二个参数是刀与轴线的夹角。</b>它决定片的大小：蔬菜截面直径越小，刀与轴线的夹角就要相应减小，才能切出更大的片<span class="ts">00:02:33</span>。具体数值在第 4 节。</p>
+
+<h2><span class="num">2</span>第 1 类：圆润多层，先一分为二</h2>
+
+<p><b>一句话做法：先对半切开，让底面平稳，再决定顺纹还是逆纹。</b>这一类包括洋葱、卷心菜、白菜、番茄四种<span class="ts">00:00:23</span>。</p>
+
+<h3>洋葱：三种切法，同一颗菜</h3>
+
+<p>第一步永远是<b>一分为二</b>——不是为了对称，是因为切开后底面平稳，「不会乱动」<span class="ts">00:00:32</span>。切丝前先在根部斜着来两刀，把根去掉<span class="ts">00:00:34</span>。</p>
+
+<p>接着是分岔口：顺着纹理切，出来的是能保持形状的洋葱丝；垂直于纹理切，出来的是容易炒碎的洋葱。选哪个，看你要做泡菜还是炖菜。</p>
+
+<h3>切丁：别学西餐那套「十字刀法」</h3>
+
+<p>视频提到传统西餐技法是在洋葱上横竖各来几刀再切丁，但它紧接着给了一句很实在的评价：<b>这要求刀非常锋利，相对也比较危险</b><span class="ts">00:00:59</span>。</p>
+
+<p>它更推荐的做法是利用洋葱自己的结构：洋葱内部的纹理是<b>一圈一圈的同心圆</b><span class="ts">00:01:05</span>，所以从最外侧切向圆心，每一层自然就切得均匀<span class="ts">00:01:07</span>。下刀间隔大一点就是块，密一点就是末<span class="ts">00:01:11</span>。安全、快，还不用练刀工。</p>
+
+<p>切完的洋葱丝用清水投洗一遍，可以洗掉一部分辛辣，吃起来更清甜<span class="ts">00:01:17</span>。</p>
+
+<p class="quote">至于「切洋葱怎么不流泪」，视频卖了个关子，说要留到「洋葱食用指南」那期讲<span class="ts">00:01:21</span>。所以这篇不给偏方——弹幕里那些戴泳镜、含口水的说法，见第 8 节，都标了来源，没验证过。</p>
+
+<p>卷心菜和白菜相当于放大版的洋葱，结构类似，切丝切丁的方法可以通用<span class="ts">00:01:27</span>；番茄虽然不是多层结构，也能借用这套思路切丁<span class="ts">00:01:33</span>。</p>
+
+<h2><span class="num">3</span>第 2 类：实心块茎，先切一块稳定底面</h2>
+
+<figure>
+  <img src="img/02-potato-whole.jpg" alt="砧板上并排三个土豆和芋头，表皮带泥，没有削皮" loading="lazy">
+  <figcaption><b>土豆和芋头是同一类：实心、通体质地均匀、往往富含淀粉。</b>这一类没有方向性，怎么切都不会「切错纹理」。<span class="ts">视频截帧 00:01:41</span></figcaption>
+</figure>
+
+<p><b>一句话做法：侧面切掉一块当底座，第一片粘在刀背上，之后想切丝切条切丁都只是叠法不同。</b></p>
+
+<p>去皮时手要避开削皮刀<span class="ts">00:01:45</span>，这条比什么刀法都重要。然后从侧面切掉一块，把这一面朝下放——底面稳了，后面才好下刀<span class="ts">00:01:48</span>。</p>
+
+<p>有个小技巧值得单独记：<b>把第一片粘在刀上</b>，后面切的时候就不会一片片往刀面上粘<span class="ts">00:01:50</span>。</p>
+
+<table>
+  <tr><th>你要的形状</th><th>怎么下刀</th><th>时间戳</th></tr>
+  <tr><td>小片</td><td>垂直于长轴切片</td><td class="num-cell">00:01:55</td></tr>
+  <tr><td>丝</td><td>切好的片层叠起来，再切</td><td class="num-cell">00:01:59</td></tr>
+  <tr><td>薯条</td><td>切厚片，叠起来切条</td><td class="num-cell">00:02:02</td></tr>
+  <tr><td>丁</td><td>薯条转 90 度再切</td><td class="num-cell">00:02:04</td></tr>
+</table>
+
+<p>土豆和芋头切开变色，是酚类物质和酶发生氧化反应<span class="ts">00:02:06</span>，切好尽快泡水就能避免。泡水还有第二个作用：洗掉表面多余的淀粉。要炒土豆丝，就得<b>投到水清澈</b>，炒出来才清爽不粘<span class="ts">00:02:15</span>。</p>
+
+<h2><span class="num">4</span>第 3 类：圆柱与椎体，靠角度控制片的大小</h2>
+
+<figure>
+  <img src="img/04-wedge-chunks.jpg" alt="砧板上堆着切好的块状蔬菜，淡绿果肉、深绿外皮，块形是多面不规则形状" loading="lazy">
+  <figcaption><b>这就是「滚刀块」的成品：块形是多面、有棱有角的，不是方方正正的丁。</b>块的大小靠下刀角度控制，每刀转动 30–45 度。<span class="ts">视频截帧 00:03:00</span></figcaption>
+</figure>
+
+<p><b>一句话做法：切片靠夹角，切条靠叠，切块靠转角。</b>茄子、黄瓜、萝卜、大葱、西葫芦、青笋、西芹都属于这一类<span class="ts">00:02:20</span>。</p>
+
+<h3>切片：两个关键数字</h3>
+
+<div class="box">
+  <p><b>长茄子：刀与轴线 30–45 度</b><span class="ts">00:02:39</span>。</p>
+  <p><b>黄瓜：基本要 15 度</b>，片才漂亮<span class="ts">00:02:41</span>。</p>
+  <p>原因在上一节说过：截面越细，角度越小。黄瓜比茄子细，所以角度要压得更低。</p>
+</div>
+
+<p>切出来的片再叠起来切，就能得到两头带皮的漂亮条状——茄条、黄瓜丝都是这么来的<span class="ts">00:02:45</span>。</p>
+
+<h3>菱形片与滚刀块</h3>
+
+<p><b>菱形片</b>：第一步把下刀间距拉大，先切出斜块，再转 90 度，让切面贴着砧板切，就得到菱形片了<span class="ts">00:02:50</span>。</p>
+
+<p><b>滚刀块</b>：斜着架刀，从端头开始，<b>每一刀都把蔬菜转动 30–45 度左右</b>，并且每一刀都经过截面的中心<span class="ts">00:03:03</span>。块的大小，靠下刀角度的深浅来控制。这样切出来的块有棱有角，各面受热不一样，吃到嘴里能尝到不同口感<span class="ts">00:03:13</span>。</p>
+
+<h3>还有一条捷径：借洋葱的切法</h3>
+
+<p>先把蔬菜一分为二，然后像切洋葱那样朝圆心方向切，<b>根部连着不要切断</b>，再改刀，就能切出每片带皮的条或丁<span class="ts">00:03:24</span>。</p>
+
+<p>如果要方正的蔬菜丁，就走三步：先片、再条、最后垂直于长条切丁<span class="ts">00:03:28</span>。西芹、茄子、黄瓜都能这么处理。</p>
+
+<h3>大葱是个例外：它是多层圆柱</h3>
+
+<figure>
+  <img src="img/06-radish-julienne.jpg" alt="不锈钢漏勺里盛着大量切得极细的白萝卜丝，丝丝分明" loading="lazy">
+  <figcaption><b>细丝的效果长这样：根根分明、不粘连。</b>要达到这个状态，片要先切得薄且均匀，再叠起来切丝。<span class="ts">视频截帧 00:02:18</span></figcaption>
+</figure>
+
+<p>大葱是多层圆柱结构，处理方法略有不同：可以<b>整根旋转着划几刀，再垂直于轴线切</b>，这是最省事的家庭版葱末切法<span class="ts">00:03:40</span>。</p>
+
+<p>想要更规矩漂亮的葱丝，就切断之后先划开，把中间的部分拿掉，再平铺切丝；泡水还能打卷<span class="ts">00:03:53</span>。</p>
+
+<h2><span class="num">5</span>第 4 类：环柱体，中心不能吃</h2>
+
+<figure>
+  <img src="img/03-pepper-corn.jpg" alt="台面上并排躺着三根青椒和一根带皮玉米" loading="lazy">
+  <figcaption><b>玉米和青椒同属一类：外面一圈能吃，中心不能吃。</b>所以处理顺序都是「先去芯，再切形」。<span class="ts">视频截帧 00:03:58</span></figcaption>
+</figure>
+
+<p><b>一句话做法：先去掉不能吃的中心，剩下的部分再按平铺的片来切。</b></p>
+
+<h3>玉米：刀根切断，切到芯就拍</h3>
+
+<p>切断的时候建议用<b>刀的根部</b>下刀<span class="ts">00:04:00</span>；感觉切到玉米芯的时候，用手轻拍几下就能切断了<span class="ts">00:04:03</span>。</p>
+
+<p>只取玉米粒的话，就切断之后先切掉一排，再转着玉米切，能轻松剥下来<span class="ts">00:04:09</span>。</p>
+
+<figure>
+  <img src="img/07-corn-kernels.jpg" alt="砧板上散落着一小堆切下来的玉米粒，颗粒完整" loading="lazy">
+  <figcaption><b>切下来的玉米粒，颗粒是完整的。</b>如果压碎了，多半是刀直接压过了芯——弹幕里有人给了改法，见第 8 节。<span class="ts">视频截帧 00:04:10</span></figcaption>
+</figure>
+
+<h3>青椒辣椒：去头尾，下刀要浅</h3>
+
+<p>先去头尾，下刀要浅，就能去掉蒂和筋<span class="ts">00:04:15</span>。按压平铺之后，切片或切丝都很方便<span class="ts">00:04:18</span>。辣椒也可以按圆柱类的方法切成滚刀块——按炒菜想要的形状选就行<span class="ts">00:04:21</span>。</p>
+
+<h2><span class="num">6</span>第 5 类：叶部与花部，要掰不要切</h2>
+
+<figure>
+  <img src="img/05-cauliflower-broccoli.jpg" alt="台面上一颗掰开的菜花和一整颗西兰花，白色花球与深绿色花球并排" loading="lazy">
+  <figcaption><b>西兰花、菜花、宝塔菜是一类：整体和细节有着类似的结构。</b>这类蔬菜的切法核心是「切到根部就改成掰」。<span class="ts">视频截帧 00:04:30</span></figcaption>
+</figure>
+
+<p><b>一句话做法：从根部冲水洗，头朝下切断根部，再顺着根部下刀、不切到底，用手掰断。</b></p>
+
+<p>顺序是先洗后切：从根部冲水清洗<span class="ts">00:04:34</span>，然后头朝下把根部切断，得到大块的花球<span class="ts">00:04:36</span>。</p>
+
+<p>关键的一步在分小朵：<b>从根部下刀，但不要切到底，轻轻掰断</b>，头部就会自然分开，不会有一堆碎末<span class="ts">00:04:42</span>。这一条直接解决了「切西兰花满案板碎渣」的问题。</p>
+
+<p>根部别扔。它其实也好吃，可以当成圆柱体蔬菜来切片，一起焯水、单独炒，或者做泡菜<span class="ts">00:04:48</span>。</p>
+
+<h2><span class="num">7</span>三个容易翻车的细节</h2>
+
+<table>
+  <tr><th>坑</th><th>怎么避</th><th>来源</th></tr>
+  <tr><td>洋葱切丁切成「一盘碎」</td><td>别剁，顺着同心圆层走刀，从外向内、根部不切断</td><td>视频 00:01:07</td></tr>
+  <tr><td>土豆丝粘成坨</td><td>切片后均匀叠放，切完投水到清澈</td><td>视频 00:02:15</td></tr>
+  <tr><td>西兰花满案板碎渣</td><td>根部下刀不切到底，改成手掰</td><td>视频 00:04:42</td></tr>
+  <tr><td>切到一半刀打滑</td><td>先把侧面切一块、底面放平再下刀</td><td>视频 00:00:32</td></tr>
+  <tr><td>刀不够快还硬切</td><td>西餐那套十字刀法要求刀很锋利、也更危险，新手直接用放射法</td><td>视频 00:00:59</td></tr>
+  <tr><td>绿叶菜切完泡水</td><td>先洗再切；切完再泡会流失水溶性维生素，炒的时候出水还影响锅温</td><td>视频 00:04:57</td></tr>
+</table>
+
+<p>最后一条值得展开：除了需要防止氧化变色的（比如土豆），<b>大多数蔬菜都该先清洗再切配</b>；绿叶菜尤其不能切完再泡水<span class="ts">00:04:54</span>。</p>
+
+<h2><span class="num">8</span>弹幕里观众在问什么（B 站独有的一段）</h2>
+
+<figure>
+  <img src="img/08-greens-wok.jpg" alt="炒锅里正在翻炒绿色蔬菜，菜叶已经塌软出水" loading="lazy">
+  <figcaption><b>蔬菜下锅后的样子。</b>切完再泡水的菜，进锅会先出一汪水，锅温掉下来，炒不香。<span class="ts">视频截帧 00:05:02</span></figcaption>
+</figure>
+
+<p><b>这一节的每句话都来自弹幕，不是视频作者说的，也没经过验证</b>——放在这里是因为它们补上了视频没讲的部分。</p>
+
+<table>
+  <tr><th>弹幕在说什么</th><th>出现在</th><th>值不值得听</th></tr>
+  <tr><td>「我还想知道肉的切法，比如什么是横切、什么是顺着纹理切」</td><td>00:00:19</td><td>问到点子上了，但这期确实没讲</td></tr>
+  <tr><td>「这个土豆丝的叠反了，上下颠倒容易滑」</td><td>00:01:59</td><td>有道理：叠放方向一致才不会打滑</td></tr>
+  <tr><td>「这样有点容易把底部的玉米粒压碎，切到芯把刀和玉米倒过来敲也可以」</td><td>00:04:03</td><td>是个更稳的替代手法</td></tr>
+  <tr><td>「你应该拿个紫洋葱做例子，白洋葱看不清」</td><td>00:00:42</td><td>对新手有用：紫洋葱的层次更清楚</td></tr>
+  <tr><td>「我选择擦丝器」</td><td>00:02:06</td><td>省事，但丝的口感会软一些</td></tr>
+  <tr><td>「我切洋葱时候戴泳镜，物理隔绝」</td><td>00:01:17</td><td>偏方，未验证</td></tr>
+  <tr><td>「白菜卷心菜其实手撕最好吃」</td><td>—</td><td>口味偏好，不是刀工问题</td></tr>
+</table>
+
+<p>还有两件事从弹幕里能直接看出来：一是<b>「青年大学习」这条弹幕出现了 61 次</b>，观众自嘲在听课；二是不少人喊「已经听不懂了」「没看懂」<span class="ts">00:00:55</span>——所以第一次看别开 2 倍速，1.25 倍刚刚好。</p>
+
+<h2><span class="num">9</span>一页速查</h2>
+
+<div class="box">
+  <ul>
+    <li><b>圆润多层</b>（洋葱/卷心菜/白菜/番茄）：先一分为二 → 顺纹切丝保形，逆纹切丝易碎 → 切丁从外向内切向圆心</li>
+    <li><b>实心块茎</b>（土豆/芋头）：侧面切一块放平 → 第一片粘刀上 → 片叠起来切丝、厚片叠起来切条、转 90 度切丁</li>
+    <li><b>圆柱椎体</b>（茄子 30–45 度 / 黄瓜 15 度）：片叠起来切条；菱形片先切斜块转 90 度；滚刀块每刀转 30–45 度并过中心</li>
+    <li><b>环柱体</b>（玉米/青椒）：去芯再切形；玉米用刀根、切到芯就轻拍；青椒去头尾、下刀浅、压平再切</li>
+    <li><b>叶部花部</b>（西兰花/菜花/宝塔菜）：先洗，头朝下断根，根部下刀不切到底、用手掰</li>
+    <li><b>两条保命规则</b>：先去皮安全（手避开削皮刀）、先洗后切（叶菜尤其）</li>
+    <li><b>两个数字</b>：黄瓜 15 度，长茄子 30–45 度</li>
+  </ul>
+</div>
+
+<footer>
+  <p><b>事实来源</b>：本文全部手法、角度与顺序，均来自 B 站视频《蔬菜切法指南！从几何角度出发，一次性搞清楚所有蔬菜的最优切法【解构家常菜】》（UP 主「杨光_建厨师」，2025-03-30 发布，时长 5:11，播放 351 万）的<b>本地语音转写</b>，括号里的时间戳可直接回查原片对应位置。</p>
+  <p><b>为什么用本地转写而不是平台字幕</b>：B 站接口返回的 AI 字幕地址不稳定——同一请求连发 6 次，约 40% 会指向另一条视频的字幕文件。本稿的事实源是片内音轨的本地 ASR，平台字幕一律未采用。</p>
+  <p><b>未采信的部分</b>：弹幕里的「戴泳镜」「含一口水」「闭眼切」等防流泪偏方未经验证，仅作为观众建议并列；「青年大学习」等玩梗弹幕不作事实引用；视频对「切洋葱不流泪」的正面回答留在了下一期，本文不作补充。</p>
+  <p><b>配图说明</b>：全部 8 张配图均为原片截帧，从 1280×720 画面裁切后压缩；<b>已裁掉片内烧制字幕条，且不含 UP 主出镜、正脸、自拍、第一人称手持、手部特写</b>。每张图注都标了截帧时间，可回原片核对。</p>
+  <p><b>时效</b>：视频发布于 2025 年 3 月，手法类内容不随时间失效；涉及具体食材品种时以你手上的实物为准。</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@
   var STATUS = ['已核实', '部分核实', '待核实', '未核实'];
   var REGION = ['国内', '海外'];
 
-  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', auditToday: true, issue: null, yt: { docs: [], total: 0 }, ytCat: '' };
+  var state = { items: [], meta: {}, picks: null, ready: { docs: [] }, viral: { items: [], meta: {}, benchmark: [] }, audit: null, q: '', type: '', region: '', verify: '', sort: 'collected', page: 1, per: 24, view: 'issue', target: '', priority: '', draftOpen: null, viralForm: '', viralSort: 'score', viralTier: '', viralOpen: null, auditForm: '', auditToday: true, issue: null, yt: { docs: [], total: 0 }, ytCat: '', ytSrc: '' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -1112,6 +1112,8 @@
     return n + ' 播放';
   }
 
+  function platOf(d) { return d.source === 'bilibili' ? 'B站' : 'YouTube'; }
+
   function renderVideos() {
     var wrap = document.getElementById('videoPanel');
     var docs = (state.yt || {}).docs || [];
@@ -1129,22 +1131,40 @@
 
     var catMap = {};
     docs.forEach(function (d) { catMap[d.category] = (catMap[d.category] || 0) + 1; });
+    var biliN = docs.filter(function (d) { return d.source === 'bilibili'; }).length;
     var chips = ['<button class="yt-chip' + (state.ytCat ? '' : ' on') + '" data-cat="">全部 ' + docs.length + '</button>'];
+    if (biliN) {
+      chips.push('<button class="yt-chip yt-chip-src' + (state.ytSrc === 'bilibili' ? ' on' : '') + '" data-src="bilibili">B站 ' + biliN + '</button>');
+      chips.push('<button class="yt-chip yt-chip-src' + (state.ytSrc === 'youtube' ? ' on' : '') + '" data-src="youtube">YouTube ' + (docs.length - biliN) + '</button>');
+    }
     Object.keys(catMap).forEach(function (c) {
       chips.push('<button class="yt-chip' + (state.ytCat === c ? ' on' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + ' ' + catMap[c] + '</button>');
     });
     cats.innerHTML = chips.join('');
     Array.prototype.forEach.call(cats.querySelectorAll('.yt-chip'), function (b) {
-      b.onclick = function () { state.ytCat = b.getAttribute('data-cat'); renderVideos(); };
+      b.onclick = function () {
+        if (b.hasAttribute('data-src')) {
+          var s = b.getAttribute('data-src');
+          state.ytSrc = state.ytSrc === s ? '' : s;
+        } else {
+          state.ytCat = b.getAttribute('data-cat');
+        }
+        renderVideos();
+      };
     });
 
-    var rows = docs.filter(function (d) { return !state.ytCat || d.category === state.ytCat; });
+    var rows = docs.filter(function (d) {
+      if (state.ytSrc === 'bilibili' && d.source !== 'bilibili') return false;
+      if (state.ytSrc === 'youtube' && d.source === 'bilibili') return false;
+      return !state.ytCat || d.category === state.ytCat;
+    });
     empty.hidden = rows.length > 0;
     grid.innerHTML = rows.map(function (d) {
       var img = d.cover ? '<img src="' + esc(d.cover) + '" alt="" loading="lazy">' : '<div class="yt-noimg">无封面</div>';
       return '<article class="yt-card">' +
         '<button class="yt-cover" data-slug="' + esc(d.slug) + '" aria-label="打开攻略">' + img +
           '<span class="yt-cat">' + esc(d.category) + '</span>' +
+          '<span class="yt-plat' + (d.source === 'bilibili' ? ' bili' : '') + '">' + platOf(d) + '</span>' +
           (d.place ? '<span class="yt-place">' + esc(d.place) + '</span>' : '') +
         '</button>' +
         '<div class="yt-body">' +
@@ -1157,7 +1177,7 @@
             '<span>' + fmtViews(d.views) + '</span>' +
           '</div>' +
           '<div class="yt-foot">' +
-            '<span class="yt-src">YouTube · ' + esc(d.channel || '') + '</span>' +
+            '<span class="yt-src">' + platOf(d) + ' · ' + esc(d.channel || '') + '</span>' +
             '<button class="yt-read" data-slug="' + esc(d.slug) + '">读攻略 →</button>' +
           '</div>' +
         '</div>' +

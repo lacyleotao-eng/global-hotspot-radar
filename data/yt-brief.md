@@ -251,3 +251,62 @@ python3 scripts/yt_storyboard.py --plan --limit 15    # 给计划里 pending 的
 - `東京近郊一日來回`：车站、列车、街道、食物、店铺占一半以上 → 可写
 
 这一条能把「死在配图不足」的比例从约 1/3 压到很低，代价是选题任务多花 2–3 分钟。
+
+---
+
+## 十一、B 站来源（2026-11-27 立，样板稿 `2026-11-27-shucai-qiefa`）
+
+### 为什么单独定规则
+
+B 站和 YouTube 的差别不在内容，在**事实源的可靠性**：
+
+| 项 | YouTube | B 站 |
+|---|---|---|
+| 字幕 | 平台字幕可直接用（人工轨优先） | **不能用**：`x/player/v2` 的 `ai-zh.subtitle_url` 不稳定，实测约 40% 指向别的视频、20% 为空 |
+| 事实源 | 平台字幕 | **本地 ASR**（`scripts/bili_asr.py`，faster-whisper small int8，约 4.3 倍实时） |
+| 素材 | `yt_grab_frames.js` 在播放器里抽帧 | `playurl`（`fnval=1` 拿带音轨 mp4）→ ffmpeg 本地抽帧，稳得多 |
+| 站点字段 | — | `meta.json` 加 `"source": "bilibili"`，前端显示 B站 角标 + 来源筛选 |
+
+覆盖判据：`subtitle_url` 路径 `/bfs/ai_subtitle/prod/<aid><cid><hash>` 里的 aid+cid 必须等于请求值，不等就是错配。批量取字幕用 `scripts/bili_subtitle.js`（自带重试 + redact auth_key），但**即使命中也不当事实源**，只用来做内容自检或校对。
+
+### 流程
+
+```bash
+# 1. 取流（ego 里登录态，fnval=1 拿 720p 带音轨 mp4）
+#    产物 /tmp/bili_full.mp4
+# 2. 本地转写（必做，事实源）
+python3 scripts/bili_asr.py /tmp/bili_full.mp4 data/yt-digest/<日期>-<slug>
+#    产物 transcript.json / transcript.txt（带时间戳，必须留）
+# 3. 本地抽帧（ffmpeg，不依赖播放器）
+ffmpeg -ss <秒> -i /tmp/bili_full.mp4 -frames:v 1 -vf "crop=W:H:X:Y,scale=1100:-2" -q:v 3 img/xx.jpg
+# 4. 写稿 → yt_build_index.py → push
+```
+
+### 配图：B 站独有的两个坑
+
+1. **片内烧制字幕条必须裁掉**。B 站 UP 主普遍把字幕压在画面底部：720p 下字幕带在 **y≈600–665**，另有知识小标题在 **y≈110–160 / 部分帧在 y≈215**。安全区是 **y 170–595**，所以截帧一律带 crop，不能整帧缩放。
+2. **教学类视频几乎每帧都有手**。判据不变：**无人手、无人脸**。这类视频能过的帧通常是「成品/食材特写」——切好的堆、摆盘、下锅。实测 311 秒的片子，310 帧里干净帧约 20 张，裁切后可用 8 张。**凑不出 8 张就别发**，不要去用「俯拍操作手」凑数。
+3. 章节卡片（黑屏白字）不能当配图。
+
+### 结构：比 YouTube 稿多一节
+
+B 站稿固定加一节 **「弹幕里观众在问什么」**，位置在「避坑清单」之后、「一页速查」之前：
+
+- 弹幕拿法：`api.bilibili.com/x/v1/dm/list.so?oid=<cid>`，返回 zlib 压缩 XML，页面内用 `DecompressionStream("deflate")` 解；
+- 只选三类：**补充手法的**（如「切到芯把刀和玉米倒过来敲」）、**指正错误的**（如「土豆丝叠反了容易滑」）、**问视频没讲的**（如「横切和顺纹怎么分」）；
+- 表格三列：弹幕说什么 / 出现在几分几秒 / 值不值得听；
+- **每条都要标「这是弹幕说的，不是视频作者说的」**，偏方类（戴泳镜防流泪）必须写「未验证」；
+- 视频播放量、弹幕总数从 `x/web-interface/view` 的 `stat` 取，不估算。
+
+### meta.json 增量字段
+
+```json
+{
+  "source": "bilibili",
+  "bvid": "BV15gZzYXE4N",
+  "aid": 114250811048162,
+  "cid": 29148450116,
+  "stats": { "view": 3509789, "like": 237804, "favorite": 397621, "danmaku": 1652 },
+  "transcriptSource": "local-asr:faster-whisper-small"
+}
+```

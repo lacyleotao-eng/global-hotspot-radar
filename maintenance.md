@@ -388,3 +388,40 @@ ego-browser nodejs < scripts/bili_subtitle.js
 [ok] BV1tnZqYTEx6 attempts=3 lines=527 | 手机续航大横评…（stats: empty 1, 人工轨 1 跳过）
 [attribution_failed] BV17WZ4YsEiX attempts=8（stats: empty 5, other 3）→ 待复核是否真无字幕
 ```
+
+## 2026-11-27 晚 · B 站样板稿（蔬菜切法）跑通
+
+### 交付
+
+`data/yt-digest/2026-11-27-shucai-qiefa/` —— 《切菜只记 2 个参数：5 类形状，19 种蔬菜一次讲完》，8 张原片截帧、10 节、51 个时间戳，`source: "bilibili"`。
+
+### 链路与产出
+
+| 环节 | 做法 | 结果 |
+|---|---|---|
+| 取流 | ego 登录态 `playurl fnval=1` | `/tmp/bili_full.mp4` 1280×720 带音轨，310 秒 / 29MB |
+| 转写 | 新增 `scripts/bili_asr.py`（本地 faster-whisper small int8） | 167 段、100 秒跑完（约 3 倍实时），首句「如何最快速的获取茄丁」与原片一致 |
+| 弹幕 | `x/v1/dm/list.so` + `DecompressionStream("deflate")` | 拿到 1200 条，最高频「青年大学习」61 次 |
+| 抽帧 | ffmpeg 本地抽帧 + 按肤色占比粗筛 + 人眼复核 | 310 帧里无人手/无人脸的约 20 张，最终裁切出 8 张 |
+| 写稿 | 按 `yt-brief.md` 骨架，多一节「弹幕里观众在问什么」 | 10 节 / 8 图 / 51 时间戳 |
+
+### 三个新坑（已写进 `data/yt-brief.md` 第十一节）
+
+1. **片内烧制字幕在 y≈600–665，知识小标题在 y≈110–160**，720p 下安全区只有 y 170–595。整帧缩放的图一定带字幕，必须 crop。
+2. **教学类视频几乎每帧都有手**。310 帧里干净帧约 20 张；用「成品/食材特写」凑图，不要用俯拍操作手凑。
+3. **章节卡片是黑屏白字**，不能当配图。
+
+### 顺手做的站点改动
+
+- `scripts/yt_build_index.py` 输出 `source` 字段（缺省 `youtube`）；
+- 卡片右上角新增来源角标（B站 蓝色 / YouTube 红色），筛选 chips 增加「B站 / YouTube」两项；
+- 面板文案与导航小字改成「YouTube / B 站」，并说明 B 站稿多一节弹幕。
+
+### 验证
+
+```
+python3 scripts/yt_check_digest.py --date 2026-11-27 --target 10
+[ok] 2026-11-27-shucai-qiefa｜厨房技巧｜图 8｜图注 8｜时间戳 51｜10 节
+合计：10 篇，达标线 10 篇，已达标
+```
+本地 `127.0.0.1:8811` 截图复核：角标位置正常、B站筛选出 1 张、文章 8 图全部加载、图注与正文无重叠。

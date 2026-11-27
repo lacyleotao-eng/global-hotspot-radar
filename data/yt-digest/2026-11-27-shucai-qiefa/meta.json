@@ -1,0 +1,33 @@
+{
+ "id": "BV15gZzYXE4N",
+ "bvid": "BV15gZzYXE4N",
+ "source": "bilibili",
+ "aid": 114250811048162,
+ "cid": 29148450116,
+ "title": "蔬菜切法指南！从几何角度出发，一次性搞清楚所有蔬菜的最优切法【解构家常菜】",
+ "channel": "杨光_建厨师",
+ "channelMid": 21950148,
+ "duration": 311,
+ "viewCount": 3509789,
+ "uploadDate": "2025-03-30",
+ "webpage": "https://www.bilibili.com/video/BV15gZzYXE4N",
+ "category": "厨房技巧",
+ "categoryKey": "food",
+ "guideTitle": "切菜只记 2 个参数：5 类形状，19 种蔬菜一次讲完",
+ "dek": "一条 5 分钟的 B 站视频，把洋葱、土豆、黄瓜、玉米、西兰花按几何形状分成 5 类，每类只配一套刀法。这篇把视频里的角度、手法和弹幕里的补刀，整理成能照着做的一步步。",
+ "steps": 10,
+ "images": 8,
+ "cover": "img/01-veg-lineup.jpg",
+ "digestAt": "2026-11-27",
+ "stats": {
+  "view": 3509789,
+  "like": 237804,
+  "favorite": 397621,
+  "coin": 102139,
+  "danmaku": 1652,
+  "reply": 3010,
+  "share": 36842
+ },
+ "transcriptSource": "local-asr:faster-whisper-small",
+ "note": "B 站 x/player/v2 返回的 ai-zh 字幕地址不稳定（实测约 40% 指向别的视频），本稿事实源为本地 ASR 转写，未采信平台字幕"
+}
