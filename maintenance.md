@@ -265,3 +265,27 @@
 `[fulltext]` 只是**报告**，不是闸门：写稿 agent 到底跑没跑那条命令，目前依赖 brief 的自觉，没有强制。
 不设硬闸门的理由：抓取失败率高且随站点策略波动（今天 5 条要靠 ego 才成），拿它扣分会把能发的稿卡死。
 判断标准改为：08:10 收口看 `[fulltext]` 数字，明显偏低就人工补跑 ego，而不是自动判废。
+
+## 2026-11-27 新增能力：YouTube 视频拆解成攻略
+
+用户问「能不能直接拆 YouTube 视频、整理成一步步的攻略」。答案：能，但入口是**字幕**，不是"看视频"。
+
+### 三段式链路（已跑通）
+1. `ego-browser nodejs < scripts/yt_export_cookies.js` → `/tmp/yt_cookies.txt`（从已登录会话经 CDP `Network.getAllCookies` 导出，不碰 Keychain）
+2. `python3 scripts/yt_transcript.py --url <链接> --cookies /tmp/yt_cookies.txt --out data/yt-digest/<日期>-<slug>` → `meta.json` / `transcript.txt`（带时间戳）/ `transcript.json` / `subs/*.vtt`
+3. 人工或 agent 读 `transcript.txt` 改写 → 文章里每个事实后面挂 `00:12:31` 时间戳，读者可回查
+
+### 踩过的坑（都写进脚本注释了）
+- **无 cookie 直接死**：`Sign in to confirm you're not a bot`。yt-dlp 的 `--cookies-from-browser chrome` 会碰 Keychain，改用 ego 的 CDP 导出更稳。
+- **yt-dlp 版本要新**：2026.07.04 报 `The page needs to be reloaded`，升到 2026.11.23 才正常。
+- **`-f sb0` 不是笔误**：部分视频只返回 storyboard 格式，yt-dlp 会在取字幕前因"无可用格式"报错，指定 sb0 绕过。
+- **字幕分 `subtitles`（人工）与 `automatic_captions`（自动）**：粤语这类小语种常是人工轨 `yue`，用 `--write-subs` 而非 `--write-auto-subs`。
+- **timedtext 接口已强制 pot 校验**：页面里 `captionTracks[].baseUrl` 直接 fetch 返回 200 但 0 字节，绕不过去，只能走 yt-dlp。
+
+### 边界
+- 无字幕的视频（纯音乐、无人声、关闭字幕）走不通，只能下音频交给 `AudioTranscribe`，成本高一个量级。
+- 会员/私享视频即便有 cookie 也不保证；地区限制同理。
+- 版权：只做结构化改写（时间轴、价格、路线、避坑），不整段搬运口播原文；成稿必须标来源与发布时间。
+
+### 样例
+`data/yt-digest/2026-11-27-shamian-yumcha/`：33 分钟粤语早茶 vlog → 一篇带 9 步流程、价目表、环岛路线的攻略；字幕里"我看过资料但找不到实物证据"这类含糊处，成稿里明确写成未采信，不替视频下结论。
