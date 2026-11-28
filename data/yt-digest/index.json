@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-28T14:05:49",
- "total": 18,
+ "updatedAt": "2026-11-28T15:14:18",
+ "total": 19,
  "targetDaily": 10,
  "biliDaily": 1,
  "docs": [
@@ -102,6 +102,26 @@
    "steps": 10,
    "images": 8,
    "cover": "data/yt-digest/2026-11-28-how-to-build-the-best-capsule/img/01-capsule-rack.jpg",
+   "digestAt": "2026-11-28"
+  },
+  {
+   "slug": "2026-11-28-discovering-hungary-one-bite-a",
+   "url": "data/yt-digest/2026-11-28-discovering-hungary-one-bite-a/article.html",
+   "title": "布达佩斯3站吃法：你照这条线从市场吃到废墟酒吧",
+   "dek": "从中央市场问店、Rustico 吃传统炖菜，到巧克力店试 5 种口味、坐电车去 Zator；字幕没说地址与人均。",
+   "category": "美食探店 / 做饭",
+   "categoryKey": "food",
+   "place": "布达佩斯 · 中央市场 / Rustico / Zator",
+   "source": "youtube",
+   "channel": "Munchies",
+   "videoId": "s2uKndo13Es",
+   "videoUrl": "https://www.youtube.com/watch?v=s2uKndo13Es",
+   "duration": 699,
+   "views": 322781,
+   "publishedAt": "20231201",
+   "steps": 10,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-28-discovering-hungary-one-bite-a/img/01-central-market.jpg",
    "digestAt": "2026-11-28"
   },
   {
