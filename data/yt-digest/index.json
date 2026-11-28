@@ -1,9 +1,29 @@
 {
- "updatedAt": "2026-11-28T11:46:39",
- "total": 14,
+ "updatedAt": "2026-11-28T13:25:23",
+ "total": 16,
  "targetDaily": 10,
  "biliDaily": 1,
  "docs": [
+  {
+   "slug": "2026-11-28-train-your-whole-body-in-4-day",
+   "url": "data/yt-digest/2026-11-28-train-your-whole-body-in-4-day/article.html",
+   "title": "照4天13个器械动作练全身：新手先记12次3组",
+   "dek": "把健身房新手计划拆成胸腿肩背四天：13个动作、12次3组、休息90秒，重量按视频示范值记录。",
+   "category": "健康 / 健身",
+   "categoryKey": "health",
+   "place": "健身 · 全器械训练",
+   "source": "youtube",
+   "channel": "健人蓋伊",
+   "videoId": "4iu_w2SvOCE",
+   "videoUrl": "https://www.youtube.com/watch?v=4iu_w2SvOCE",
+   "duration": 1014,
+   "views": 643136,
+   "publishedAt": "20250824",
+   "steps": 10,
+   "images": 8,
+   "cover": "data/yt-digest/2026-11-28-train-your-whole-body-in-4-day/img/01-gym-floor.jpg",
+   "digestAt": "2026-11-28"
+  },
   {
    "slug": "2026-11-28-how-to-repair-and-remove-dents",
    "url": "data/yt-digest/2026-11-28-how-to-repair-and-remove-dents/article.html",
@@ -42,6 +62,26 @@
    "steps": 10,
    "images": 8,
    "cover": "data/yt-digest/2026-11-28-how-to-invest-for-beginners-in/img/01-chart.jpg",
+   "digestAt": "2026-11-28"
+  },
+  {
+   "slug": "2026-11-28-how-to-build-the-best-capsule",
+   "url": "data/yt-digest/2026-11-28-how-to-build-the-best-capsule/article.html",
+   "title": "照这6步做胶囊衣橱：4件上衣配4件下装",
+   "dek": "先用4+4公式定数量，再定一个色调、错开领口与质感、用一衣多穿和鞋包呼应做变化。",
+   "category": "穿搭 / 美妆",
+   "categoryKey": "fashion",
+   "place": "穿搭 · 胶囊衣橱",
+   "source": "youtube",
+   "channel": "Miss Louie",
+   "videoId": "yxc7e_UYnoM",
+   "videoUrl": "https://www.youtube.com/watch?v=yxc7e_UYnoM",
+   "duration": 570,
+   "views": 174582,
+   "publishedAt": "20260213",
+   "steps": 10,
+   "images": 8,
+   "cover": "data/yt-digest/2026-11-28-how-to-build-the-best-capsule/img/01-capsule-rack.jpg",
    "digestAt": "2026-11-28"
   },
   {

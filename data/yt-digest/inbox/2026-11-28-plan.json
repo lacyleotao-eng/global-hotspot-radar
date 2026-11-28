@@ -96,8 +96,8 @@
    "score": 4,
    "hasSubs": null,
    "slug": "2026-11-28-outdoor-sdn3ghrv",
-   "status": "pending",
-   "notes": "",
+   "status": "abandoned",
+   "notes": "yt-dlp 实测无字幕轨（has no subtitles / no automatic captions），重导 cookie 后仍为 0 句段",
    "buffer": 0
   },
   {
@@ -144,7 +144,7 @@
    "score": 6,
    "hasSubs": null,
    "slug": "2026-11-28-how-to-build-the-best-capsule",
-   "status": "pending",
+   "status": "done",
    "notes": "",
    "buffer": 0
   },
@@ -160,7 +160,7 @@
    "score": 2,
    "hasSubs": null,
    "slug": "2026-11-28-train-your-whole-body-in-4-day",
-   "status": "pending",
+   "status": "done",
    "notes": "",
    "buffer": 0
   },
