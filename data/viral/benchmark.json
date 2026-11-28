@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-11-27T17:37:54+08:00",
+  "updatedAt": "2026-11-28T17:38:14+08:00",
   "rows": [
     {
       "form": "gzh-article",
       "formLabel": "微信公众号 · 文章",
-      "viralSample": 26,
-      "selfSample": 19,
+      "viralSample": 29,
+      "selfSample": 22,
       "viral": {
-        "wordCount": 2727.0,
-        "images": 12.5,
-        "subheads": 0.0
+        "wordCount": 2852,
+        "images": 13,
+        "subheads": 0
       },
       "mine": {
-        "wordCount": 1592,
-        "images": 5,
-        "subheads": 6
+        "wordCount": 1600.0,
+        "images": 5.0,
+        "subheads": 6.0
       },
       "verdict": "字数明显不足",
       "advice": "同一事件做「第二落点」：隔三五天用新进展再写一次，比跟第一条更省力也更容易出彩"
@@ -23,16 +23,16 @@
       "form": "gzh-poster",
       "formLabel": "微信公众号 · 贴图",
       "viralSample": 7,
-      "selfSample": 19,
+      "selfSample": 22,
       "viral": {
         "wordCount": 400,
         "images": 9,
         "subheads": 0
       },
       "mine": {
-        "wordCount": 408,
-        "images": 6,
-        "subheads": 0
+        "wordCount": 412.5,
+        "images": 6.0,
+        "subheads": 0.0
       },
       "verdict": "字数达标",
       "advice": "贴图封面决定 90% 点击，先定封面再做内容，固定 2-3 类模板形成视觉记忆"
@@ -40,15 +40,15 @@
     {
       "form": "tt-article",
       "formLabel": "今日头条 · 文章",
-      "viralSample": 15,
-      "selfSample": 24,
+      "viralSample": 18,
+      "selfSample": 28,
       "viral": {
-        "wordCount": 1443,
-        "images": 5,
-        "subheads": 3
+        "wordCount": 1471.5,
+        "images": 4.5,
+        "subheads": 1.0
       },
       "mine": {
-        "wordCount": 1192.0,
+        "wordCount": 1230.5,
         "images": 1.0,
         "subheads": 5.0
       },
@@ -58,19 +58,19 @@
     {
       "form": "tt-micro",
       "formLabel": "今日头条 · 微头条",
-      "viralSample": 10,
-      "selfSample": 24,
+      "viralSample": 12,
+      "selfSample": 28,
       "viral": {
-        "wordCount": 541.0,
+        "wordCount": 419.5,
         "images": 1.0,
         "subheads": 0.0
       },
       "mine": {
-        "wordCount": 360.5,
+        "wordCount": 382.5,
         "images": 1.0,
         "subheads": 0.0
       },
-      "verdict": "字数偏少",
+      "verdict": "字数达标",
       "advice": "微头条靠一个具体画面开头，不要铺垫"
     }
   ]

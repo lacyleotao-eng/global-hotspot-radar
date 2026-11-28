@@ -1,0 +1,2102 @@
+[
+  {
+    "title": "夜里，我偷偷用“千问AI小剧场”演了十五部短剧。。。",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "浅黑科技",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU0NDEwMTc1MA==&mid=2247526850&idx=1&sn=2cd3c1e530e59266149c1873fa9f1852",
+    "publishedAt": "2025-12-16T19:29:00+08:00",
+    "collectedAt": "2026-11-28T17:30:55+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "一晚上，四大名著被我演完了。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2025-12-16T19:29:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2625,
+      "paragraphs": 127,
+      "subheads": 0,
+      "images": 21,
+      "titlePattern": "第一人称经历",
+      "hook": "一晚上，四大名著被我演完了。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "黎曼猜想那份1740万行的证明，被砍掉了99.5%！",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "夕小瑶科技说",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623769&idx=1&sn=794e09d3a6a4ad72d905c0e2b5aaab57",
+    "publishedAt": "2026-11-26T10:45:00+08:00",
+    "collectedAt": "2026-11-28T17:30:56+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "原创 阿雅 2026-11-26 10:45 北京\n\n\n\n\n\n\n\n\n \n \n\n \n 1740万行，砍到了7.6万行！\n还记得上周那份让整个数学圈看傻眼的黎曼猜想证明吗，它被重写了。\n今天早上，Anthropic 研究员 Luke Sernau 在 GitHub 放出新版本，最短的一版只剩7.6万行代码。\n\n链接：https://github.com/lser",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 9,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 6,
+          "note": "发布于 2026-11-26T10:45:00+08:00，距采集 6 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 1581,
+      "paragraphs": 59,
+      "subheads": 4,
+      "images": 8,
+      "titlePattern": "数字+结果",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "一手体验豆包 Personal Agent「小豆」：比价购物、代打电话，它开始真的办事了",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "夕小瑶科技说",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623739&idx=1&sn=e790d9a3ae7ead26b1da3ca971e05b2b",
+    "publishedAt": "2026-11-25T11:28:00+08:00",
+    "collectedAt": "2026-11-28T17:30:56+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "原创 夕小瑶编辑部 2026-11-25 11:28 北京\n\n\n\n\n\n\n\n\n \n \n\n \n 最近这段时间，Personal Agent（个人智能体）开始频繁出现在大家的讨论里，它能记住你的习惯、打通你的应用、替你处理琐事。\n在开启的 Personal Agent 竞赛中，也已经出现多个产品，Muse、Cue、灵光、千问Go！等。如果把「能替你操作手机」也算上",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 9,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 6,
+          "note": "发布于 2026-11-25T11:28:00+08:00，距采集 6 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3677,
+      "paragraphs": 111,
+      "subheads": 5,
+      "images": 18,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "DeepSeek 估值或超 6000 亿！新股东名单曝光",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "夕小瑶科技说",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247623669&idx=1&sn=b80ab2f22ad78ca56547bc79ede0ec87",
+    "publishedAt": "2026-11-24T09:03:00+08:00",
+    "collectedAt": "2026-11-28T17:30:56+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "原创 阿雅 2026-11-24 09:03 北京\n\n\n\n\n\n\n\n\n \n \n\n \n 家人们，还记得前几天，我写了文章，DeepSeek 限额冲上热搜，首次对免费网页端和 APP 端限制了用量。\n没想到这才过去了几天，DeepSeek 的第二轮融资也有了新进展，工商变更信息有了新动向 。\n近日，DeepSeek 运营主体杭州深度求索人工智能基础技术研究有限公司",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 9,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 6,
+          "note": "发布于 2026-11-24T09:03:00+08:00，距采集 6 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2082,
+      "paragraphs": 61,
+      "subheads": 3,
+      "images": 11,
+      "titlePattern": "数字+结果",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "莫言：高明的作家都有一个强大的“本我”",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "莫言读书会",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495736&idx=1&sn=82335ffef2cb51b9e2524172c376c21a",
+    "publishedAt": "2026-11-07T18:00:00+08:00",
+    "collectedAt": "2026-11-28T17:30:57+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "我们要学习和借鉴的是属于艺术的共通性的东西，我们要赋予的，是属于艺术个性的东西。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-11-07T18:00:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3806,
+      "paragraphs": 68,
+      "subheads": 0,
+      "images": 11,
+      "titlePattern": "第一人称经历",
+      "hook": "我们要学习和借鉴的是属于艺术的共通性的东西，我们要赋予的，是属于艺术个性的东西。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "莫言：我几乎尝遍了田野里的百草百虫",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "莫言读书会",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495725&idx=1&sn=ebfb144df22da593680f813d065c86b3",
+    "publishedAt": "2026-10-17T18:00:00+08:00",
+    "collectedAt": "2026-11-28T17:30:57+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "莫言 2026-10-17 18:00 上海\n\n\n\n\n\n\n\n \n \n\n \n \n\n草木虫鱼\n莫言 | 文\n好多文章把三年困难时期写得一团漆黑、毫无乐趣，我认为是不对的。在那个特殊的时期里，也还是有欢乐，尽管几乎所有的欢乐都与得到食物有关。\n那时候，我六七八岁，与村中的孩子们一起，四处游荡着觅食，活似一群小精灵。\n我们像传说中的神农一样，几乎尝遍了田野里的百草百",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-10-17T18:00:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2829,
+      "paragraphs": 62,
+      "subheads": 0,
+      "images": 25,
+      "titlePattern": "第一人称经历",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "莫言：我只是把古人和现代人之间的障碍拆除了",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "莫言读书会",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzU0MDk5NTI3OA==&mid=2247495717&idx=1&sn=4f15ef01692c9b5e3c0f63422bd8fdf9",
+    "publishedAt": "2026-10-11T18:00:00+08:00",
+    "collectedAt": "2026-11-28T17:30:57+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "我想，所谓古人，从根本上看，跟我们没有什么差别。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-10-11T18:00:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2129,
+      "paragraphs": 52,
+      "subheads": 0,
+      "images": 62,
+      "titlePattern": "第一人称经历",
+      "hook": "我想，所谓古人，从根本上看，跟我们没有什么差别。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "2026年6月长赢投资计划（四）（卖出部分）",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "长赢指数投资",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412874&idx=1&sn=cb15a63f24e34c97339834acb1b1ccab",
+    "publishedAt": "2026-06-25T19:16:00+08:00",
+    "collectedAt": "2026-11-28T17:30:58+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "150计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\nS计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\n\n\n今天卖出的这份建信500，且慢平台跟车的朋友平均收益率是87.11%。\n\n卖出的这份证券公司，且慢平台跟车的朋友平均收益率是30.01%。\n\n（收益率计算方式：各位卖出该份拿回的资金，与当初买入时候的",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-06-25T19:16:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 575,
+      "paragraphs": 20,
+      "subheads": 0,
+      "images": 2,
+      "titlePattern": "数字+结果",
+      "hook": "150计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\nS计划：\n\n卖出一份建信500（场外000478）\n\n卖出一份证券公司（场外502010）\n\n\n\n\n今天卖出的这份建信500，且慢平台跟车的",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "2026年6月长赢投资计划（二）（卖出部分）",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "长赢指数投资",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412822&idx=1&sn=c4a29e8e877e7d65ba1ff8e57c025a5f",
+    "publishedAt": "2026-06-05T20:49:00+08:00",
+    "collectedAt": "2026-11-28T17:30:58+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "150计划：\n\n卖出一份富国中证红利（100032）\n\nS计划：\n\n卖出一份富国中证红利（100032）\n\n\n与昨天建信500卖出的朋友非常多不同，本次卖出富国红利的人少了很多很多。\n\n但各位的收益率是非常好：平均收益率高达82%。\n\n原因很简单，因为这份我们买的太早了，建立大仓位是2018年。最重要的是，买入后就几乎没有机会补仓上车。这与建信500完全不同——中证500一直到去年都没涨。\n\n这也",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-06-05T20:49:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 496,
+      "paragraphs": 15,
+      "subheads": 0,
+      "images": 1,
+      "titlePattern": "数字+结果",
+      "hook": "150计划：\n\n卖出一份富国中证红利（100032）\n\nS计划：\n\n卖出一份富国中证红利（100032）\n\n\n与昨天建信500卖出的朋友非常多不同，本次卖出富国红利的人少了很多很多。\n\n但各位的收益率是非常好：平均收益率高达82%。\n\n原因",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "2026年5月长赢投资计划(二)（卖出部分）",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "长赢指数投资",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTIzNDMwNA==&mid=2653412810&idx=1&sn=6516c0799b21993c86d414b6652ac60e",
+    "publishedAt": "2026-05-27T21:21:00+08:00",
+    "collectedAt": "2026-11-28T17:30:58+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "150计划：\n\n卖出一份华夏中证500（001052）\n\n卖出一份建信中证500（000478）\n\n\nS计划：\n\n卖出一份华夏中证500（001052）\n\n\n本次几万位在且慢跟车卖出的朋友，平均收益率在80%左右（平均每份收回的金额与每份买入金额之比）。\n\n此次此刻我的心情非常复杂。\n\n中证500这个品种，时间短的朋友是2024年补仓拿到，时间长的朋友已经拿了5-6年。这几年起起伏伏，一路走来，只",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2026-05-27T21:21:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 567,
+      "paragraphs": 21,
+      "subheads": 0,
+      "images": 3,
+      "titlePattern": "数字+结果",
+      "hook": "150计划：\n\n卖出一份华夏中证500（001052）\n\n卖出一份建信中证500（000478）\n\n\nS计划：\n\n卖出一份华夏中证500（001052）\n\n\n本次几万位在且慢跟车卖出的朋友，平均收益率在80%左右（平均每份收回的金额与每份买",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "从《我看见的世界》里品出的育儿经",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "思想花火",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314046&idx=1&sn=5ccc37c3e90e66f928be68f2a0fa11df",
+    "publishedAt": "2025-10-09T07:02:00+08:00",
+    "collectedAt": "2026-11-28T17:30:59+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "强烈推荐每一位家长都去阅读此书，无论你懂不懂 AI，你都应该去了解一下李飞飞的成长过程，一定会让你受益良多。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2025-10-09T07:02:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 1630,
+      "paragraphs": 16,
+      "subheads": 0,
+      "images": 2,
+      "titlePattern": "第一人称经历",
+      "hook": "强烈推荐每一位家长都去阅读此书，无论你懂不懂 AI，你都应该去了解一下李飞飞的成长过程，一定会让你受益良多。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "Garak-大语言模型脆弱性扫描器",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "思想花火",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314038&idx=1&sn=7e1abbb07e76b5277b66851dc6518eba",
+    "publishedAt": "2025-06-30T19:52:07+08:00",
+    "collectedAt": "2026-11-28T17:30:59+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "Garak - 是英伟达开源的大语言模型脆弱性扫描器，今天让我们来学习他。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2025-06-30T19:52:07+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 913,
+      "paragraphs": 34,
+      "subheads": 0,
+      "images": 11,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "Garak - 是英伟达开源的大语言模型脆弱性扫描器，今天让我们来学习他。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "招聘｜小米招聘安全合规工程师",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "思想花火",
+    "url": "https://mp.weixin.qq.com/s?__biz=MjM5Mjc0MDU1MQ==&mid=2452314013&idx=1&sn=35c28fa8cda208efb50a9a5ce749f163",
+    "publishedAt": "2025-03-13T20:38:00+08:00",
+    "collectedAt": "2026-11-28T17:30:59+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "2025-03-13 20:38 北京\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJD如下，感兴趣的朋友速速应聘，简历投递方式在最下方，领导不光专业一流，而且人美心善😄\n岗位职责：产品安全BP1. 根据监管要求及信息安全相关法律法规，开展内部自查，发现并推进整改，消除合规风险；2. 将法规要求结合公司的业务情况，沉淀为内部规范，与相关部门协作并推进落地；3. 完善内部",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 5,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 2,
+          "note": "发布于 2025-03-13T20:38:00+08:00，距采集 2 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 563,
+      "paragraphs": 12,
+      "subheads": 0,
+      "images": 3,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "具身智能新一局，这家公司「出手」了",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "机器之心",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651076720&idx=1&sn=ef2ebbb2d6ecb322cf51296ebcd3d0c4",
+    "publishedAt": "2026-11-27T17:00:00+08:00",
+    "collectedAt": "2026-11-28T17:31:00+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "一目科技战略升级：基于触觉感知，构建机器人灵巧操作生态",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T17:00:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 4287,
+      "paragraphs": 75,
+      "subheads": 0,
+      "images": 5,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "一目科技战略升级：基于触觉感知，构建机器人灵巧操作生态",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "SteerSound：迈向更可靠的音频编辑",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "机器之心",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651076468&idx=3&sn=f12338e3ac2c0ac570f87aa9337689c5",
+    "publishedAt": "2026-11-26T19:38:00+08:00",
+    "collectedAt": "2026-11-28T17:31:00+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "一个模型完成六类音频编辑，改错声音的比例下降七成以上。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-26T19:38:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2692,
+      "paragraphs": 76,
+      "subheads": 0,
+      "images": 11,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "一个模型完成六类音频编辑，改错声音的比例下降七成以上。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "传RSA已被OpenAI与Anthropic攻破，互联网加密要变天了？",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "机器之心",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651076468&idx=2&sn=133ad9665035bc5be0491b4357010b3a",
+    "publishedAt": "2026-11-26T19:38:00+08:00",
+    "collectedAt": "2026-11-28T17:31:00+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "支撑现代互联网安全近半个世纪的数学假设，可能要被 AI 推翻了。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-26T19:38:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3632,
+      "paragraphs": 95,
+      "subheads": 0,
+      "images": 14,
+      "titlePattern": "痛点+反问",
+      "hook": "支撑现代互联网安全近半个世纪的数学假设，可能要被 AI 推翻了。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "量子位编辑作者招聘",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "量子位",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247949529&idx=5&sn=29f8d2485b0e05abe1bcc9aea313b6ee",
+    "publishedAt": "2026-11-27T18:28:00+08:00",
+    "collectedAt": "2026-11-28T17:31:01+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "3个岗位（含实习），不设边界",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T18:28:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 1568,
+      "paragraphs": 65,
+      "subheads": 4,
+      "images": 3,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "3个岗位（含实习），不设边界",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "只改0.015%参数，问答提速10倍！NYU等新方法把大模型思考换成了一次参数更新｜COLM'26",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "量子位",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247949529&idx=3&sn=08b80af54902ee217847c1bd04a90443",
+    "publishedAt": "2026-11-27T18:28:00+08:00",
+    "collectedAt": "2026-11-28T17:31:01+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "让模型在权重里完成思考",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T18:28:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3528,
+      "paragraphs": 64,
+      "subheads": 9,
+      "images": 9,
+      "titlePattern": "数字+结果",
+      "hook": "让模型在权重里完成思考",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "王虹再获数学大奖！奖名背后是另一位传奇女性的故事",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "量子位",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247949529&idx=2&sn=7b1c2564cb64e1c6b58048ccf594d6b0",
+    "publishedAt": "2026-11-27T18:28:00+08:00",
+    "collectedAt": "2026-11-28T17:31:01+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "200年前的她，搞数学研究只能用化名。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T18:28:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2887,
+      "paragraphs": 68,
+      "subheads": 2,
+      "images": 8,
+      "titlePattern": "强情绪判断",
+      "hook": "200年前的她，搞数学研究只能用化名。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "Anthropic拆穿AI假遗忘！46万神经元动几十个，黑客知识就复活",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "新智元",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652745406&idx=3&sn=0f152507b1a02d3d897e4faf8a75467c",
+    "publishedAt": "2026-11-27T11:29:00+08:00",
+    "collectedAt": "2026-11-28T17:31:02+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "原创 ASI启示录 2026-11-27 11:29 北京\n\n\n\n\n\n\n\n\n \n \n\n \n \n新智元报道  \n\nAI考试题答不出来，就等于它不会吗？\n11月25日，Anthropic晒出两篇新研究，揭开了AI「假遗忘」的真相：有的遗忘模型，46万个神经元里只要动几十个，「删掉」的黑客知识就回来了。\n\n第一篇发现，单个神经元极少一心二用，比想象中好懂。\n第二篇",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T11:29:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3529,
+      "paragraphs": 129,
+      "subheads": 2,
+      "images": 15,
+      "titlePattern": "数字+结果",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "Gemini 4 Carbon点亮8颗太阳！70年几何悬案告破，只用6页神级证明",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "新智元",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652745406&idx=2&sn=108a5e867a8bd75f7e51a3e8087a9232",
+    "publishedAt": "2026-11-27T11:29:00+08:00",
+    "collectedAt": "2026-11-28T17:31:02+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "你还记得高中地理课上的晨昏线吗？这个寻常的物理现象，在数学家眼中却是极具挑战的几何谜题。如果这颗星球不是完美",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T11:29:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3127,
+      "paragraphs": 102,
+      "subheads": 0,
+      "images": 20,
+      "titlePattern": "数字+结果",
+      "hook": "你还记得高中地理课上的晨昏线吗？这个寻常的物理现象，在数学家眼中却是极具挑战的几何谜题。如果这颗星球不是完美",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "GPT-6.2正式接班！OpenAI官宣淘汰GPT-5.6",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "新智元",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652745240&idx=3&sn=6db0d8f2621561054778cdef72220067",
+    "publishedAt": "2026-11-26T11:08:00+08:00",
+    "collectedAt": "2026-11-28T17:31:02+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "ASI启示录 2026-11-26 11:08 北京\n\n\n\n\n\n\n\n\n \n \n\n \n \n新智元报道  \n\n好家伙，ChatGPT直接一夜换代！\n最近，OpenAI正式拍板：12月23日之后，GPT-5.6 Sol将彻底下线停用。\n官帖还特别煽情：每个模型都有属于自己的高光时刻，对于GPT-5.6来说，是时候落幕了。\n\n从今年7月发布到现在，满打满算，它只活了",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 9,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 6,
+          "note": "发布于 2026-11-26T11:08:00+08:00，距采集 6 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 1646,
+      "paragraphs": 72,
+      "subheads": 2,
+      "images": 18,
+      "titlePattern": "数字+结果",
+      "hook": "",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "问界将入局换电，知乎与DeepSeek达成合作，海康威视称取消大小周遭员工抵制不属实，台积电1.4nm制程获重大进展，这是今天的其他大新闻！",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "差评X.PIN",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&mid=2654711169&idx=6&sn=64a965c55774a84cffcf3c6b61699522",
+    "publishedAt": "2026-11-28T00:00:00+08:00",
+    "collectedAt": "2026-11-28T17:31:03+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "今天是 11 月 27 日，农历十月十九。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-28T00:00:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 1130,
+      "paragraphs": 48,
+      "subheads": 0,
+      "images": 18,
+      "titlePattern": "数字+结果",
+      "hook": "今天是 11 月 27 日，农历十月十九。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "只有 BBA 还在输出，广州车展是真没人了吗？",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "差评X.PIN",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&mid=2654711169&idx=3&sn=cfd36dac88a1706b7e1b375f07def5e9",
+    "publishedAt": "2026-11-28T00:00:00+08:00",
+    "collectedAt": "2026-11-28T17:31:03+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "一年一度的广州车展又来了。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-28T00:00:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2700,
+      "paragraphs": 122,
+      "subheads": 0,
+      "images": 44,
+      "titlePattern": "痛点+反问",
+      "hook": "一年一度的广州车展又来了。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "12999元的华为Mate X8，差一点就干掉了折痕。",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "差评X.PIN",
+    "url": "https://mp.weixin.qq.com/s?__biz=MzA5NDc1NzQ4MA==&mid=2654711169&idx=2&sn=8e54eb78c706a5ae35f99b90c1ca5174",
+    "publishedAt": "2026-11-28T00:00:00+08:00",
+    "collectedAt": "2026-11-28T17:31:03+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "屏幕可以给到夯。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-28T00:00:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 2852,
+      "paragraphs": 101,
+      "subheads": 0,
+      "images": 46,
+      "titlePattern": "数字+结果",
+      "hook": "屏幕可以给到夯。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作 | 极客早知道",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "极客公园",
+    "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117543&idx=1&sn=ac03f5c1a0a62e978167ba2c0c428fa2",
+    "publishedAt": "2026-11-28T08:55:00+08:00",
+    "collectedAt": "2026-11-28T17:31:04+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "WhatsApp 或将推出旅行 eSIM 功能；何小鹏谈机器人 IRON：等下个季度或下两个季度，要把全身的触觉打通；iPhone 20 Pro 或将采用 3D 打印钛金属边框",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-28T08:55:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 4687,
+      "paragraphs": 67,
+      "subheads": 11,
+      "images": 16,
+      "titlePattern": "数字+结果",
+      "hook": "WhatsApp 或将推出旅行 eSIM 功能；何小鹏谈机器人 IRON：等下个季度或下两个季度，要把全身的触觉打通；iPhone 20 Pro 或将采用 3D 打印钛金属边框",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "大厂的应届生名额，正在先让给 AI 预算",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "极客公园",
+    "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117520&idx=1&sn=e319ff57dd51d56203a28dd60e582a91",
+    "publishedAt": "2026-11-27T15:53:00+08:00",
+    "collectedAt": "2026-11-28T17:31:04+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "初级活少了，新人还怎么变成有经验的人才。",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T15:53:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 3536,
+      "paragraphs": 74,
+      "subheads": 0,
+      "images": 15,
+      "titlePattern": "热点借势+观点判断",
+      "hook": "初级活少了，新人还怎么变成有经验的人才。",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  },
+  {
+    "title": "智谱辟谣 GLM-5.5 延期；特斯拉和 SpaceX 冲刺年底合并；18 家平台完成算法协商，覆盖 2500 万新就业形态劳动者｜极客早知道",
+    "form": "gzh-article",
+    "platform": "微信公众号",
+    "account": "极客公园",
+    "url": "https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653117509&idx=1&sn=b26a9ef2a807975c2f2a93b4a45884b4",
+    "publishedAt": "2026-11-27T08:41:00+08:00",
+    "collectedAt": "2026-11-28T17:31:04+08:00",
+    "category": "综合",
+    "region": "国内",
+    "summary": "马云现身平头哥；英伟达暂停向新加坡交付 AI 服务器",
+    "signals": {
+      "views": "不可见",
+      "likes": "不可见",
+      "comments": "不可见",
+      "shares": "不可见",
+      "favorites": "不可见",
+      "wow": "不可见",
+      "source": "不可见"
+    },
+    "ranking": null,
+    "viralScore": {
+      "total": 13,
+      "tier": "C",
+      "breakdown": [
+        {
+          "label": "阅读信号",
+          "points": 0,
+          "note": "微信外部页面无阅读数，不可见，不编造"
+        },
+        {
+          "label": "互动信号",
+          "points": 0,
+          "note": "无可见点赞/在看/评论计数"
+        },
+        {
+          "label": "榜单信号",
+          "points": 0,
+          "note": "未取得该文上榜证据"
+        },
+        {
+          "label": "传播广度",
+          "points": 3,
+          "note": "被 Wechat2RSS 收录为公开 feed，单一来源"
+        },
+        {
+          "label": "时效性",
+          "points": 10,
+          "note": "发布于 2026-11-27T08:41:00+08:00，距采集 10 分档"
+        }
+      ],
+      "method": "五维加权：阅读30+互动25+榜单20+传播15+时效10，逐项见 breakdown"
+    },
+    "anatomy": {
+      "wordCount": 4669,
+      "paragraphs": 72,
+      "subheads": 11,
+      "images": 18,
+      "titlePattern": "数字+结果",
+      "hook": "马云现身平头哥；英伟达暂停向新加坡交付 AI 服务器",
+      "structure": [],
+      "highlightSkills": [],
+      "lessons": []
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "Wechat2RSS 公开 RSS（源项目 ttttmr/Wechat2RSS）",
+      "notes": "原文为 mp.weixin.qq.com 真实直链，正文/字数/图数来自 RSS 全文；阅读与互动数外部不可见，未取得上榜证据；仅作公众号文章形态基准，不冒充爆款。"
+    },
+    "tags": [
+      "微信文章",
+      "feed采集",
+      "形态基准"
+    ]
+  }
+]
