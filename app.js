@@ -1239,7 +1239,13 @@
         ' / 率 ' + Math.round((s.suggestRate || 0) * 100) + '%）<i>' +
         (s.suggestBasis === 'cost'
           ? '只按成本倒推（这个规格没找到同类参照价），上架前要自己看一圈同行'
-          : '下限 = 成本倒推 20% 净利，上限 = 同类参照价与 p75 取高') + '</i></p>'
+          : '下限 = 成本倒推 20% 净利，上限 = 同类参照价与 p75 取高') +
+        (s.price != null && s.price > s.suggest + 0.05
+          ? '；<b class="tb-advise-warn">现价 ' + tbMoney(s.price) + ' 比建议价高 ' + tbMoney(s.price - s.suggest) + '</b>'
+          : (s.price != null && s.price < s.suggest - 0.05
+            ? '；现价 ' + tbMoney(s.price) + ' 比建议价低 ' + tbMoney(s.suggest - s.price) + '，可以让一点'
+            : '')) +
+        '</i></p>'
       : '<p class="tb-advise bad"><b>没有可行价</b>' + esc(s.suggestWhy || '') +
         '<i>要么换更低货源，要么这个规格别上</i></p>';
 
