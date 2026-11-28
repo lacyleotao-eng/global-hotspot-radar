@@ -1341,8 +1341,10 @@
       (m.p25 != null
         ? '<p class="tb-band">同类价带 <b>' + tbMoney(m.p25) + '–' + tbMoney(m.p75) + '</b>（p25–p75，n=' + m.n +
           '）· 参照词「' + esc(m.kw || '') + '」' + (m.level === 'bundle' ? '· 套装形态' : '') +
-          (x.kind === 'bundle' && m.level !== 'bundle' ? '<em>这个词搜到的多是单件，套装没有同形态对手，只当价格下限看</em>' : '') +
-          '<em>2026-11-28 按销量排序抓的实时在售价，不是估价</em></p>'
+          (x.kind === 'bundle'
+            ? '<em>组合品的形态差别大，这条价带只作背景；定价看上面的「同类散买合计」</em>'
+            : '<em>2026-11-28 按销量排序抓的实时在售价，不是估价</em>') +
+          '</p>'
         : '') +
       '<div class="tb-skus"><div class="tb-skus-h"><b>规格与下单清单</b><span>点开任一规格，就是这一单要去哪几家、买哪个规格、几件</span></div>' +
         (skus.map(tbSkuBlock).join('') || '<p class="tb-none">还没有定义产品规格。</p>') + '</div>' +

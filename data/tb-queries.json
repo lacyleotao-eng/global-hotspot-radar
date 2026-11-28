@@ -1,38 +1,190 @@
 {
-  "_readme": "淘宝比价采样词表。每个词抓一次搜索结果（按销量排序），用来算真实在售价带。id 落 data/tb-market.json 的键；product 对应 data/taobao.json 的产品 id；sku 只在需要给单个规格单独定价时填；level=bundle 表示这个词搜的是『套装形态』，用来给组合品定价；must 是标题必须命中的词（过滤掉教学磁贴、设计素材这类跑题结果）。改词直接改这里，别改脚本。",
-  "sort": "sale-desc",
-  "maxPages": 1,
-  "queries": [
-    { "id": "door-room", "product": "door-newyear-set", "level": "single", "kw": "卧室门 新年装饰", "must": "门贴|门挂|门框|福字|房门|门帘", "why": "单件参照：卧室门这一层的单件价格" },
-    { "id": "door-hang", "product": "door-newyear-set", "level": "single", "sku": "std", "kw": "新年门挂 装饰 春节", "must": "门挂|挂件|花环|挂饰|福", "why": "组件单价：门挂单独卖多少钱" },
-    { "id": "door-set", "product": "door-newyear-set", "level": "bundle", "kw": "新年装饰 套装 门 一套", "must": "套装|一套|组合|礼盒|全", "why": "套装形态参照：59/89/99 有没有同形态对手" },
-
-    { "id": "mag-base", "product": "magnet-duilian", "level": "single", "kw": "磁吸对联", "must": "对联|春联", "why": "主词，行业最大流量口" },
-    { "id": "mag-3d", "product": "magnet-duilian", "level": "single", "sku": "double", "kw": "磁吸对联 立体 双层", "must": "对联|春联", "why": "双层立体这个规格单独值多少" },
-
-    { "id": "mag-full", "product": "magnet-fullback", "level": "single", "kw": "全磁吸对联 整面吸附", "must": "对联|春联|门贴", "why": "全背磁吸是细分，价差要单独量" },
-
-    { "id": "kit-fridge", "product": "kitchen-newyear", "level": "single", "kw": "新年冰箱贴 福字", "must": "冰箱贴|磁吸|福字", "why": "厨房小件主词（单件）" },
-    { "id": "kit-spring", "product": "kitchen-newyear", "level": "single", "sku": "spring", "kw": "弹簧 招财 摆件 新年", "must": "弹簧|摆件|招财|摇", "why": "弹簧两件套单独价" },
-    { "id": "kit-set", "product": "kitchen-newyear", "level": "bundle", "kw": "新年装饰 冰箱贴 套装 组合", "must": "套装|组合|一套|三件|多件", "why": "三件套/四件套怎么卖" },
-
-    { "id": "tv-wall", "product": "tvwall-set", "level": "single", "kw": "新年装饰 电视墙 布置", "must": "电视|背景墙|拉花|客厅", "why": "单件参照" },
-    { "id": "tv-flower", "product": "tvwall-set", "level": "single", "sku": "dragon", "kw": "拉花 新年 装饰 长条", "must": "拉花|装饰|彩带", "why": "拉花组件单价（20.11 的大件要验证）" },
-    { "id": "tv-set", "product": "tvwall-set", "level": "bundle", "kw": "客厅 新年装饰 套装 布置 大全", "must": "套装|大全|一套|组合|布置", "why": "整屋/套装形态参照" },
-
-    { "id": "cut-paper", "product": "paper-cut", "level": "single", "kw": "新年窗花 贴纸 装饰 春节", "must": "窗花|窗贴|贴", "why": "主词，判断 8.9 是否偏高（已避开「剪纸素材」这类虚拟商品）" },
-    { "id": "cut-20", "product": "paper-cut", "level": "single", "sku": "28", "kw": "窗花 20张 新年 贴", "must": "窗花", "why": "20 张装这个规格的价" },
-
-    { "id": "photo-prop", "product": "photo-props", "level": "single", "kw": "新年拍照道具 手持牌", "must": "道具|拍照|手持|牌", "why": "主词" },
-    { "id": "photo-set", "product": "photo-props", "level": "bundle", "kw": "新年 拍照道具 套装 全家福", "must": "道具|套装|拍照", "why": "件套形态参照" },
-
-    { "id": "tree-desk", "product": "christmas-tree", "level": "single", "kw": "桌面圣诞树 60cm", "must": "圣诞树", "why": "主词 + 尺寸限定" },
-    { "id": "tree-light", "product": "christmas-tree", "level": "single", "sku": "lux", "kw": "圣诞树 带灯 60cm 套餐", "must": "圣诞树", "why": "带灯豪华套餐单独价" },
-
-    { "id": "fudai", "product": "fudai", "level": "single", "kw": "福筒 春联 礼盒", "must": "福筒|对联|春联|礼盒|福桶", "why": "主词，礼盒价位" },
-    { "id": "fudai-bucket", "product": "fudai", "level": "single", "kw": "福桶 新年 装饰 桶", "must": "福桶|桶", "why": "绒布桶/纸桶组件价" },
-
-    { "id": "static", "product": "static-window", "level": "single", "kw": "静电窗花 新年", "must": "静电|窗花", "why": "主词" },
-    { "id": "static-30", "product": "static-window", "level": "single", "sku": "30", "kw": "静电贴 窗花 30cm", "must": "静电|窗花", "why": "30cm 大尺寸单独价" }
-  ]
+ "_readme": "淘宝比价采样词表。每个词抓一次搜索结果（按销量排序），用来算真实在售价带。id 落 data/tb-market.json 的键；product 对应 data/taobao.json 的产品 id；sku 只在需要给单个规格单独定价时填；level=bundle 表示这个词搜的是『套装形态』，用来给组合品定价；must 是标题必须命中的词（过滤掉教学磁贴、设计素材这类跑题结果）。改词直接改这里，别改脚本。",
+ "sort": "sale-desc",
+ "maxPages": 1,
+ "queries": [
+  {
+   "id": "door-room",
+   "product": "door-newyear-set",
+   "level": "single",
+   "kw": "卧室门 新年装饰",
+   "must": "门贴|门挂|门框|福字|房门|门帘",
+   "why": "单件参照：卧室门这一层的单件价格"
+  },
+  {
+   "id": "door-hang",
+   "product": "door-newyear-set",
+   "level": "single",
+   "sku": "std",
+   "kw": "新年门挂 装饰 春节",
+   "must": "门挂|挂件|花环|挂饰|福",
+   "why": "组件单价：门挂单独卖多少钱"
+  },
+  {
+   "id": "door-set",
+   "product": "door-newyear-set",
+   "level": "bundle",
+   "kw": "新年装饰 套装 门 一套",
+   "must": "套装|一套|组合装|礼盒|大全|全套",
+   "why": "套装形态参照：59/89/99 有没有同形态对手"
+  },
+  {
+   "id": "mag-base",
+   "product": "magnet-duilian",
+   "level": "single",
+   "kw": "磁吸对联",
+   "must": "对联|春联",
+   "why": "主词，行业最大流量口"
+  },
+  {
+   "id": "mag-3d",
+   "product": "magnet-duilian",
+   "level": "single",
+   "sku": "double",
+   "kw": "磁吸对联 立体 双层",
+   "must": "对联|春联",
+   "why": "双层立体这个规格单独值多少"
+  },
+  {
+   "id": "mag-full",
+   "product": "magnet-fullback",
+   "level": "single",
+   "kw": "全磁吸对联 整面吸附",
+   "must": "对联|春联|门贴",
+   "why": "全背磁吸是细分，价差要单独量"
+  },
+  {
+   "id": "kit-fridge",
+   "product": "kitchen-newyear",
+   "level": "single",
+   "kw": "新年冰箱贴 福字",
+   "must": "冰箱贴|磁吸|福字",
+   "why": "厨房小件主词（单件）"
+  },
+  {
+   "id": "kit-spring",
+   "product": "kitchen-newyear",
+   "level": "single",
+   "sku": "spring",
+   "kw": "弹簧 招财 摆件 新年",
+   "must": "弹簧|摆件|招财|摇",
+   "why": "弹簧两件套单独价"
+  },
+  {
+   "id": "kit-set",
+   "product": "kitchen-newyear",
+   "level": "bundle",
+   "kw": "新年装饰 冰箱贴 套装 组合",
+   "must": "套装|组合|一套|三件|多件",
+   "why": "三件套/四件套怎么卖"
+  },
+  {
+   "id": "tv-wall",
+   "product": "tvwall-set",
+   "level": "single",
+   "kw": "新年装饰 电视墙 布置",
+   "must": "电视|背景墙|拉花|客厅",
+   "why": "单件参照"
+  },
+  {
+   "id": "tv-flower",
+   "product": "tvwall-set",
+   "level": "single",
+   "sku": "dragon",
+   "kw": "拉花 新年 装饰 长条",
+   "must": "拉花|装饰|彩带",
+   "why": "拉花组件单价（20.11 的大件要验证）"
+  },
+  {
+   "id": "tv-set",
+   "product": "tvwall-set",
+   "level": "bundle",
+   "kw": "客厅 新年装饰 套装 布置 大全",
+   "must": "套装|大全|一套|组合|布置",
+   "why": "整屋/套装形态参照"
+  },
+  {
+   "id": "cut-paper",
+   "product": "paper-cut",
+   "level": "single",
+   "kw": "新年窗花 贴纸 装饰 春节",
+   "must": "窗花|窗贴|贴",
+   "why": "主词，判断 8.9 是否偏高（已避开「剪纸素材」这类虚拟商品）"
+  },
+  {
+   "id": "cut-20",
+   "product": "paper-cut",
+   "level": "single",
+   "sku": "28",
+   "kw": "窗花 20张 新年 贴",
+   "must": "窗花",
+   "why": "20 张装这个规格的价"
+  },
+  {
+   "id": "photo-prop",
+   "product": "photo-props",
+   "level": "single",
+   "kw": "新年拍照道具 手持牌",
+   "must": "道具|拍照|手持|牌",
+   "why": "主词"
+  },
+  {
+   "id": "photo-set",
+   "product": "photo-props",
+   "level": "bundle",
+   "kw": "新年 拍照道具 套装 全家福",
+   "must": "道具|套装|拍照",
+   "why": "件套形态参照"
+  },
+  {
+   "id": "tree-desk",
+   "product": "christmas-tree",
+   "level": "single",
+   "kw": "桌面圣诞树 60cm",
+   "must": "圣诞树",
+   "why": "主词 + 尺寸限定"
+  },
+  {
+   "id": "tree-light",
+   "product": "christmas-tree",
+   "level": "single",
+   "sku": "lux",
+   "kw": "圣诞树 带灯 60cm 套餐",
+   "must": "圣诞树",
+   "why": "带灯豪华套餐单独价"
+  },
+  {
+   "id": "fudai",
+   "product": "fudai",
+   "level": "single",
+   "kw": "福筒 春联 礼盒",
+   "must": "福筒|对联|春联|礼盒|福桶",
+   "why": "主词，礼盒价位"
+  },
+  {
+   "id": "fudai-bucket",
+   "product": "fudai",
+   "level": "single",
+   "kw": "福桶 新年 装饰 桶",
+   "must": "福桶|桶",
+   "why": "绒布桶/纸桶组件价"
+  },
+  {
+   "id": "static",
+   "product": "static-window",
+   "level": "single",
+   "kw": "静电窗花 新年",
+   "must": "静电|窗花",
+   "why": "主词"
+  },
+  {
+   "id": "static-30",
+   "product": "static-window",
+   "level": "single",
+   "sku": "30",
+   "kw": "静电贴 窗花 30cm",
+   "must": "静电|窗花",
+   "why": "30cm 大尺寸单独价"
+  }
+ ]
 }
