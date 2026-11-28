@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-28T15:14:18",
- "total": 19,
+ "updatedAt": "2026-11-28T15:25:54",
+ "total": 20,
  "targetDaily": 10,
  "biliDaily": 1,
  "docs": [
@@ -82,6 +82,26 @@
    "steps": 10,
    "images": 8,
    "cover": "data/yt-digest/2026-11-28-how-to-invest-for-beginners-in/img/01-chart.jpg",
+   "digestAt": "2026-11-28"
+  },
+  {
+   "slug": "2026-11-28-how-to-detail-faded-paint-by-h",
+   "url": "data/yt-digest/2026-11-28-how-to-detail-faded-paint-by-h/article.html",
+   "title": "500美元旧车漆修复：你按研磨抛光打蜡3步走",
+   "dek": "洗车分区后，研磨—抛光—打蜡救发白漆面；剥落处再经180/320/400目打磨、遮蔽、三层色漆与清漆，晾24小时后水磨衔接。",
+   "category": "汽车 / 用车",
+   "categoryKey": "car",
+   "place": "旧车 · 手工漆面修复",
+   "source": "youtube",
+   "channel": "ChrisFix",
+   "videoId": "vUdSUDObwVc",
+   "videoUrl": "https://www.youtube.com/watch?v=vUdSUDObwVc",
+   "duration": 1750,
+   "views": 17943445,
+   "publishedAt": "20200322",
+   "steps": 10,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-28-how-to-detail-faded-paint-by-h/img/01-old-suv.jpg",
    "digestAt": "2026-11-28"
   },
   {

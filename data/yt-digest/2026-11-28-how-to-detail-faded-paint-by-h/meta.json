@@ -109,5 +109,14 @@
  "cjk": 24401,
  "segments": 1638,
  "usedSubtitle": "vUdSUDObwVc.zh-Hans.vtt",
- "fetchedAt": "2026-11-28T15:09:57"
+ "fetchedAt": "2026-11-28T15:09:57",
+ "category": "汽车 / 用车",
+ "categoryKey": "car",
+ "guideTitle": "500美元旧车漆修复：你按研磨抛光打蜡3步走",
+ "dek": "洗车分区后，研磨—抛光—打蜡救发白漆面；剥落处再经180/320/400目打磨、遮蔽、三层色漆与清漆，晾24小时后水磨衔接。",
+ "city": "旧车 · 手工漆面修复",
+ "steps": 10,
+ "images": 9,
+ "cover": "img/01-old-suv.jpg",
+ "digestAt": "2026-11-28"
 }
