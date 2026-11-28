@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>照5类资产拆组合：100减年龄先算清</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#9c2b1f; --accent-soft:#f6ece9; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(156,43,31,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">理财 / 投资常识</span>
+    <span>理财 · 组合配置</span><span>·</span><span>规则与风险，不荐股</span>
+  </div>
+  <h1>照5类资产拆组合：100减年龄先算清</h1>
+  <p class="lede">RainIsHere 用 17:20 的视频公开一套「新手也能做」的 2025 组合：从定额定期、再平衡，到五类资产和宏观假设。下面只按字幕记录步骤、比例与风险提醒，不构成投资建议。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《2025年如何投資? 新手豬豬也會的投資組合》</b>（频道「RainIsHere」）</span>
+    <span>时长 <b>17:20</b></span><span>发布 <b>2025-01-21</b></span><span>播放 <b>约 25.6 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-chart.jpg" alt="带橙色圈线的价格走势图" loading="lazy">
+    <figcaption><b>开场用走势图引出「不要靠猜顶底」的问题：视频随后把做法拆成系统、再平衡和资产配置。</b><span class="ts">视频截帧 00:00:30</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：先画系统，再谈买什么</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">3 步 <span class="ts">00:02:20</span></div><div class="l">视频拆法：入市方法、再平衡、买什么与买多少</div></div>
+  <div class="kpi"><div class="n">5 年 / 不少于 3 年 <span class="ts">00:03:00</span></div><div class="l">视频建议的长期投资时间框架</div></div>
+  <div class="kpi"><div class="n">100 − 年龄 <span class="ts">00:06:05</span></div><div class="l">视频给的高风险资产比例起点公式</div></div>
+  <div class="kpi"><div class="n">60 / 15 / 25 <span class="ts">00:13:05</span></div><div class="l">视频给中年普通风险者的三档占比</div></div>
+</div>
+<p><b>适合谁：</b>视频说的是投资新手，或太忙没时间看市的人；核心是先定下系统，再按个人需要调整<span class="ts">00:01:10</span><span class="ts">00:01:20</span>。</p>
+<p><b>不适合谁：</b>想照抄代码、靠一条 15 分钟视频就冲进市场的人。视频自己也提醒要保持独立思考、自己做功课<span class="ts">00:13:40</span><span class="ts">00:13:50</span>。</p>
+<p><b>视频里没说：</b>你的现金流、负债、税务、交易成本和所在市场的合规要求。下面的比例和代号都是视频说法，不是给你的个性化方案。</p>
+
+<h2><span class="num">1</span>怎么开始：年初写下一张系统表</h2>
+<p>先把「什么时候投、投多少、买哪类」写死。视频说有系统投资，就是年初已计划好投资金额和要买的资产<span class="ts">00:01:55</span>。</p>
+<ol>
+  <li>写下每月投入金额和指定日期<span class="ts">00:02:25</span>。</li>
+  <li>写下要用的工具类型：视频把 ETF 解释成装着股票、债券、黄金、比特币等资产的大篮子<span class="ts">00:02:00</span><span class="ts">00:02:10</span>。</li>
+  <li>写下复盘频率：视频说每几个月或每半年看一次，不要每天盯市<span class="ts">00:04:15</span><span class="ts">00:04:20</span>。</li>
+</ol>
+<p>视频把组合称为「分散风险」，不是投资比赛；它明确说 All in 一只股票可能赢过这个组合，但那不是同一件事<span class="ts">00:14:00</span><span class="ts">00:14:10</span>。</p>
+
+<h2><span class="num">2</span>关键决策点：先按年龄定风险档，再按市场改比例</h2>
+<table>
+  <tr><th>情况</th><th>视频给的比例</th><th>你要先回答的问题</th></tr>
+  <tr><td>20 岁、健康、自认风险承受高</td><td>高风险 <b>80%</b>，低风险 <b>20%</b><span class="ts">00:06:10</span><span class="ts">00:06:15</span></td><td>真的是「年纪轻就能承受无限风险」吗？视频后面也否定了这个绝对说法<span class="ts">00:16:10</span>。</td></tr>
+  <tr><td>中年、保守、少量风险</td><td><b>50% / 50%</b><span class="ts">00:06:20</span><span class="ts">00:06:25</span></td><td>能否接受账面波动，而不是只看长期年化？</td></tr>
+  <tr><td>老年、不能承受风险</td><td>低风险 <b>80%</b><span class="ts">00:06:30</span><span class="ts">00:06:35</span></td><td>视频同时说老人也不一定不能碰风险资产，仍要看个人情况<span class="ts">00:16:15</span>。</td></tr>
+  <tr><td>视频 2025 中年普通风险版</td><td>普通风险 <b>60%</b>、高风险 <b>15%</b>、防守型 <b>25%</b><span class="ts">00:13:05</span><span class="ts">00:13:15</span></td><td>视频是基于减息与通胀预期手动调整了债券和部分工具比例<span class="ts">00:06:45</span><span class="ts">00:08:10</span>。</td></tr>
+</table>
+<figure>
+  <img src="img/08-allocation-table.jpg" alt="2025 年组合三档占比表格" loading="lazy">
+  <figcaption><b>视频把 2025 版分成普通风险、高风险、防守型三部分；表格里的百分比按字幕记录。</b><span class="ts">视频截帧 00:13:10</span></figcaption>
+</figure>
+<p>公式只是起点。视频说「100 减年龄」后，还要看健康、时间、风险承受能力和财力背景<span class="ts">00:06:05</span><span class="ts">00:16:20</span>。</p>
+
+<h2><span class="num">3</span>第 1 步：用 DCA 把择时变成固定动作</h2>
+<p>DCA 在视频里叫「定额定期投资」：每月指定日子、指定金额，按当时市价买目标 ETF<span class="ts">00:02:25</span><span class="ts">00:02:30</span>。价格跌就买多一点，升就买少一点，但投入金额不变<span class="ts">00:02:35</span>。</p>
+<figure>
+  <img src="img/02-dca-chart.jpg" alt="定额定期买入示意图" loading="lazy">
+  <figcaption><b>示意图写的是「无论价格高低，定期投资相同金额」：低价买多一点，高价买少一点。</b><span class="ts">视频截帧 00:02:35</span></figcaption>
+</figure>
+<p>视频说这个方法的好处是不用晚上盯市场，牛市买、股灾也买；它给的时间框架是 <b>5 年</b>，不少于 <b>3 年</b><span class="ts">00:02:45</span><span class="ts">00:02:50</span><span class="ts">00:03:00</span>。</p>
+<p>视频还举了 VOO 的例子：5 年前开始买的回报是 <b>80%</b><span class="ts">00:03:05</span><span class="ts">00:03:10</span>。这是历史例子，不是未来承诺；视频自己也不建议只凭一年回报做决定<span class="ts">00:03:20</span>。</p>
+
+<h2><span class="num">4</span>第 2 步：用再平衡替代「跌就入、升就放」</h2>
+<p>视频说人容易 Buy High、Sell Low，所以要用再平衡做买卖决定：资产涨得过高、过急时卖出部分，再用资金买入相对便宜的资产<span class="ts">00:03:55</span><span class="ts">00:04:05</span><span class="ts">00:04:10</span>。</p>
+<figure>
+  <img src="img/03-rebalance.jpg" alt="写有再平衡二字的视频画面" loading="lazy">
+  <figcaption><b>视频把再平衡定义为买入卖出决策机制，而不是凭感觉追涨杀跌。</b><span class="ts">视频截帧 00:04:05</span></figcaption>
+</figure>
+<p>视频举的例子是：刚过去的 12 月美股创新高，于是卖出部分；当时债券价格下跌，于是把那部分钱看作买债时机<span class="ts">00:04:30</span><span class="ts">00:04:35</span>。</p>
+<p>复盘频率写在步骤里：每几个月或每半年看一次组合，再决定买或卖<span class="ts">00:04:15</span><span class="ts">00:04:25</span>。视频里提到的 AI 再平衡计算器属于它的课程页面，本文不提供入口。</p>
+
+<h2><span class="num">5</span>第 3 步：把 5 类资产写成自己的配置表</h2>
+<p>视频列的 5 类工具是：美股、环球股票、债券、黄金、加密货币，并说都放在低成本 ETF 里；五类风险程度不同<span class="ts">00:05:40</span><span class="ts">00:05:50</span><span class="ts">00:05:55</span>。</p>
+<figure>
+  <img src="img/04-risk-rank.jpg" alt="投资工具风险排序画面" loading="lazy">
+  <figcaption><b>视频说五类工具风险程度各有不同，并单独展示了一页风险排序。</b><span class="ts">视频截帧 00:06:05</span></figcaption>
+</figure>
+<p>下表只记录视频里提到的工具、作用和数值，不把它们写成推荐。字幕没逐一说出的占比，本文不补。</p>
+<table>
+  <tr><th>视频分层</th><th>字幕提到的工具与作用</th><th>字幕里的数值 / 限定</th></tr>
+  <tr>
+    <td>普通风险</td>
+    <td>VOO 对应 S&amp;P 500；QQQ 对应 Nasdaq 100；ESGU 追踪超过 280 间符合环境社会责任的美国公司；HDV 追踪美国 75 只大型高息股；XLP 是必需消费品行业 ETF<span class="ts">00:08:30</span><span class="ts">00:08:45</span><span class="ts">00:09:00</span><span class="ts">00:09:20</span></td>
+    <td>VOO 占 <b>25%</b>、QQQ 占 <b>22%</b>；HDV 利率 <b>3.7%</b>；ESGU 上年回报 <b>24%</b><span class="ts">00:09:35</span><span class="ts">00:09:40</span><span class="ts">00:09:15</span><span class="ts">00:08:55</span></td>
+  </tr>
+  <tr>
+    <td>高风险</td>
+    <td>VUG 偏大型成长股；VGT 覆盖美国科技、AI、机械人、生物科技、太空等；SMH 追踪 25 大半导体公司；另加比特币和以太币<span class="ts">00:09:50</span><span class="ts">00:10:00</span><span class="ts">00:10:25</span><span class="ts">00:11:00</span></td>
+    <td>VUG 5 年平均 <b>18%</b>、VGT 5 年平均 <b>21%</b>、SMH 平均 PE 约 <b>40 倍</b>、5 年年化 <b>28%</b><span class="ts">00:10:00</span><span class="ts">00:10:20</span><span class="ts">00:10:45</span><span class="ts">00:11:00</span></td>
+  </tr>
+  <tr>
+    <td>防守型</td>
+    <td>黄金用于保值和平衡风险；VGSH 专门追踪美国 1–3 年短期国债<span class="ts">00:11:35</span><span class="ts">00:12:30</span></td>
+    <td>GLD 管理费 <b>0.4%</b>；VGSH 债息 <b>4.3%</b>、平均到期日 <b>2 年</b><span class="ts">00:12:10</span><span class="ts">00:12:35</span><span class="ts">00:12:40</span></td>
+  </tr>
+</table>
+<figure>
+  <img src="img/05-holdings-table.jpg" alt="基金持仓前十大列表" loading="lazy">
+  <figcaption><b>视频用持仓表解释 ETF 是一个篮子：买一个工具等于持有里面多项资产。</b><span class="ts">视频截帧 00:09:30</span></figcaption>
+</figure>
+<figure>
+  <img src="img/06-sector-weights.jpg" alt="行业权重饼图与列表" loading="lazy">
+  <figcaption><b>视频展示行业权重页，用来说明 ETF 里究竟装了什么。</b><span class="ts">视频截帧 00:10:20</span></figcaption>
+</figure>
+<p>视频特别提醒：半导体是周期性产业，只适合在周期内持有，不能长期持有不卖；加密货币属极高风险工具，只可用闲钱，不信就不要投<span class="ts">00:10:50</span><span class="ts">00:11:15</span><span class="ts">00:11:25</span>。</p>
+
+<h2><span class="num">6</span>第 4 步：防守端先算清黄金和债券的角色</h2>
+<p>视频说黄金用于保值、平衡风险。实物金的好处是防美元和货币贬值、去中心化；如果不需要去中心化，可以考虑黄金 ETF，由管理人买并保存实体黄金<span class="ts">00:11:35</span><span class="ts">00:11:45</span><span class="ts">00:11:55</span><span class="ts">00:12:05</span>。</p>
+<figure>
+  <img src="img/07-gold-etf.jpg" alt="写有黄金 ETF 的笔记页" loading="lazy">
+  <figcaption><b>黄金 ETF：视频说买它的股份等于拥有一部分由管理人保存的实体黄金。</b><span class="ts">视频截帧 00:12:00</span></figcaption>
+</figure>
+<p>视频拿 GLD 的 <b>0.4%</b> 管理费，和实物金自己保存的成本作对照；这不等于说哪种一定更便宜，只是它给出的比较口径<span class="ts">00:12:10</span><span class="ts">00:12:20</span>。</p>
+<p>债券方面，视频说 VGSH 成交量较大、流动性较高，加入是为了固定收益和平衡风险；但它不会让资产大幅增长，风险相对较低<span class="ts">00:12:45</span><span class="ts">00:12:50</span><span class="ts">00:12:55</span>。</p>
+
+<h2><span class="num">7</span>避坑清单：把视频的限定条件一起抄下来</h2>
+<table>
+  <tr><th>坑</th><th>怎么避</th></tr>
+  <tr><td>抄一年回报最高的代码</td><td>视频用 Palantir 的例子说明：2023 年大跌、2024 年涨 316%，所以要从系统出发<span class="ts">00:01:35</span><span class="ts">00:01:40</span><span class="ts">00:01:45</span></td></tr>
+  <tr><td>只看五年、三年或一年回报</td><td>视频说要用长期投资时间框架看整体资产回報<span class="ts">00:03:20</span><span class="ts">00:03:25</span></td></tr>
+  <tr><td>把「跌就入、升就放」当纪律</td><td>人容易感情用事；视频给的纪律是定期再平衡<span class="ts">00:03:50</span><span class="ts">00:04:05</span></td></tr>
+  <tr><td>把年龄公式当硬性规定</td><td>视频后面说 20 岁不等于无限风险，老人也不等于不能碰风险资产<span class="ts">00:16:10</span><span class="ts">00:16:15</span></td></tr>
+  <tr><td>把加密货币当稳健配置</td><td>字幕说它是极高风险工具，只可用闲钱；不信就不要投<span class="ts">00:11:15</span><span class="ts">00:11:25</span></td></tr>
+  <tr><td>把半导体当永久持有</td><td>字幕说它是周期性产业，适合周期内持有<span class="ts">00:10:50</span><span class="ts">00:10:55</span></td></tr>
+  <tr><td>忽略宏观预测的不确定性</td><td>联储局官员对减息次数有 1 次和 5 次两种看法，通胀预测 2.5%<span class="ts">00:07:20</span><span class="ts">00:07:35</span></td></tr>
+  <tr><td>把组合当比赛</td><td>视频说它不是投资比赛，目标是为自己定制合适组合<span class="ts">00:14:00</span><span class="ts">00:14:35</span></td></tr>
+</table>
+
+<h2><span class="num">8</span>有争议的说法：只记录，不下结论</h2>
+<div class="box warn">
+  <p><b>「每月 3000，8 年、年回报 10% 就够退休」</b><span class="ts">00:00:00</span><span class="ts">00:00:05</span>：视频随后解释 10% 指股市长期平均年回报率<span class="ts">00:01:00</span>；这仍是演示假设，本文不把它当承诺。</p>
+  <p><b>「人人都可以做到退休有钱花」</b><span class="ts">00:01:05</span>：字幕里的判断，未给个人收支、税务和市场条件；本文不下结论。</p>
+  <p><b>「比特币和以太币用来去中心化、对冲去美元化风险」</b><span class="ts">00:11:00</span><span class="ts">00:11:05</span>：这是视频给的目的，不是已验证的对冲效果。</p>
+  <p><b>课程、券商开户链接和优惠</b><span class="ts">00:05:15</span><span class="ts">00:15:25</span><span class="ts">00:17:00</span>：视频多次提到自家课程、计算器和开户链接，本文只记录出现事实，不推广、不替读者决定。</p>
+</div>
+
+<h2><span class="num">9</span>一页速查：照这 10 行做自查</h2>
+<ul>
+  <li>先写系统：年初定金额和资产，不先写代码<span class="ts">00:01:55</span><span class="ts">00:02:00</span>。</li>
+  <li>3 步顺序：入市方法 → 再平衡 → 买什么与买多少<span class="ts">00:02:20</span><span class="ts">00:05:35</span>。</li>
+  <li>DCA：每月指定日、指定金额；跌多买、升少买，投入金额不变<span class="ts">00:02:25</span><span class="ts">00:02:35</span>。</li>
+  <li>时间框架：视频说 5 年，不少于 3 年<span class="ts">00:03:00</span>。</li>
+  <li>再平衡：涨太高卖部分，买相对便宜的；每几个月或半年看一次<span class="ts">00:04:05</span><span class="ts">00:04:15</span>。</li>
+  <li>风险起点：100 减年龄，再按健康、时间、承受力调整<span class="ts">00:06:05</span><span class="ts">00:16:20</span>。</li>
+  <li>五类工具：美股、环球股票、债券、黄金、加密；视频用低成本 ETF<span class="ts">00:05:50</span><span class="ts">00:05:55</span>。</li>
+  <li>视频 2025 中年普通风险版：60% / 15% / 25%<span class="ts">00:13:05</span><span class="ts">00:13:15</span>。</li>
+  <li>防守端：黄金 ETF 对比实物保存成本；VGSH 是 1–3 年美国短债，债息 4.3%<span class="ts">00:12:20</span><span class="ts">00:12:35</span>。</li>
+  <li>最后一道闸门：独立做功课，别因一条视频就抄号码入市<span class="ts">00:13:40</span><span class="ts">00:13:50</span>。</li>
+</ul>
+
+<footer>
+  <p><b>事实来源：</b>YouTube 视频《2025年如何投資? 新手豬豬也會的投資組合》，频道 RainIsHere，时长 17:20，发布日 2025-01-21，播放约 25.6 万。原文为粤语，文中百分比、代号、费用与时间点均按视频中文字幕记录；不构成投资建议。</p>
+  <p><b>未采信：</b>「每月 3000、年回报 10% 就够退休」<span class="ts">00:00:00</span>与「人人都可以做到退休有钱花」<span class="ts">00:01:05</span>是演示/判断，未验证；加密资产的对冲目的<span class="ts">00:11:05</span>不下结论；视频里的课程、计算器和开户链接<span class="ts">00:05:15</span><span class="ts">00:15:25</span>只记录出现，不推广。视频没给读者个人财务数据、税务和交易成本，本文未补写。</p>
+  <p><b>配图说明：</b>8 张均为原片截帧，只保留走势图、示意图、文字卡、持仓表、行业权重、黄金 ETF 说明页和组合占比表；已裁掉主持人出镜、手部、视频字幕条、频道水印与播放器 UI，未使用 AI 生成图。</p>
+</footer>
+
+</div>
+</body>
+</html>
