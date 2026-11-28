@@ -8,7 +8,7 @@
   "sourcePlatform": "今日头条",
   "verification": "已核实",
   "verificationNote": "规定条文与生效日期多源一致；2.05亿户为报道中分析师引用的口径。新规在存量智能电视上的实际执行进度尚未得到官方确认。",
-  "imageNote": "",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -16,7 +16,13 @@
       "target": "今日头条",
       "form": "微头条",
       "title": "10个工作日答复投诉，但电视开机广告真能说没就没？",
-      "images": [],
+      "images": [
+        {
+          "src": "assets/images/tv-boot-ad-ban-cg-1.png",
+          "caption": "AI 生成示意图：客厅里一台黑屏平板电视放在浅色电视柜上（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
       "blocks": [
         {
           "type": "para",
@@ -42,7 +48,8 @@
           "type": "para",
           "text": "条文生效不等于每台存量电视都已完成设置，新规在存量智能电视上的实际执行进度，目前尚未得到官方确认。你家的开机第一屏，现在是直播还是广告？"
         }
-      ]
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
     }
   ]
 }

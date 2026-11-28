@@ -43,7 +43,7 @@
    "target": "公众号",
    "form": "gzh-article",
    "formLabel": "公众号文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "英伟达按下暂停键：AI 芯片的「境外绕行」通道正在被收紧",
    "angle": "从区域数据中心被要求暂停交付切入，解释算力获取从买卡转向买合规路径的变化",
    "outline": [
@@ -59,7 +59,7 @@
    "hasLead": true,
    "score": 75,
    "readyFile": "2026-11-28-nvidia-seasia-pause.json",
-   "auditScore": 66.8
+   "auditScore": 89.3
   },
   {
    "slug": "e2-fa901a",
@@ -101,7 +101,7 @@
    "target": "公众号",
    "form": "gzh-article",
    "formLabel": "公众号文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "从展台到工位：广州车展和高交会上的机器人开始「真上岗」",
    "angle": "以两场展会的现场分工变化切入，梳理人形机器人商业化的可核验进展与仍需兑现的承诺。",
    "outline": [
@@ -117,7 +117,7 @@
    "hasLead": true,
    "score": 75,
    "readyFile": "2026-11-28-e2-fa901a.json",
-   "auditScore": 66.7
+   "auditScore": 89.3
   },
   {
    "slug": "1password-security-incident",
@@ -152,7 +152,7 @@
    "target": "公众号",
    "form": "gzh-article",
    "formLabel": "公众号文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "1Password 确认被入侵：密码没泄露，但这几类信息被复制了",
    "angle": "区分“密码库安全”和“账户元数据泄露”，提醒用户警惕伪装成邀请与恢复的钓鱼邮件",
    "outline": [
@@ -168,7 +168,7 @@
    "hasLead": true,
    "score": 83,
    "readyFile": "2026-11-28-1password-security-incident.json",
-   "auditScore": 66.8
+   "auditScore": 89.3
   },
   {
    "slug": "hdd-price-hike",
@@ -203,7 +203,7 @@
    "target": "公众号",
    "form": "gzh-poster",
    "formLabel": "公众号贴图",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "黑五硬盘比两年前贵一倍：AI 时代的「存储税」谁在买单",
    "angle": "以具体价格曲线切入，讨论存储涨价对普通用户和小团队的影响",
    "outline": [
@@ -219,7 +219,7 @@
    "hasLead": true,
    "score": 68,
    "readyFile": "2026-11-28-hdd-price-hike.json",
-   "auditScore": 65.0
+   "auditScore": 98.8
   },
   {
    "slug": "iphone",
@@ -246,7 +246,7 @@
    "target": "公众号",
    "form": "gzh-poster",
    "formLabel": "公众号贴图",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "折叠 iPhone 用满一个月后，我最怀念的不是长焦",
    "angle": "从『使用场景被重写』而不是硬件参数切入，谈折叠屏如何改变日常习惯",
    "outline": [
@@ -262,7 +262,7 @@
    "hasLead": true,
    "score": 68,
    "readyFile": "2026-11-28-iphone.json",
-   "auditScore": 65.0
+   "auditScore": 98.8
   },
   {
    "slug": "gta-vi-anthropic",
@@ -297,7 +297,7 @@
    "target": "公众号",
    "form": "gzh-poster",
    "formLabel": "公众号贴图",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "当 GTA VI 撞上 Anthropic 上市：低效，可能是作品最贵的护城河",
    "angle": "用同周发生的两件事对照，讨论创意生产中「浪费」的价值",
    "outline": [
@@ -313,7 +313,7 @@
    "hasLead": true,
    "score": 68,
    "readyFile": "2026-11-28-gta-vi-anthropic.json",
-   "auditScore": 65.0
+   "auditScore": 98.8
   },
   {
    "slug": "90",
@@ -340,7 +340,7 @@
    "target": "今日头条",
    "form": "tt-article",
    "formLabel": "头条文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "90 美元的磁轴鼠标，为什么「按下去」和「感觉到」对不上？",
    "angle": "用可调触发点失效的现象，讲清磁轴鼠标的关键体验指标",
    "outline": [
@@ -356,7 +356,7 @@
    "hasLead": true,
    "score": 68,
    "readyFile": "2026-11-28-keychron-g6-he.json",
-   "auditScore": 75.0
+   "auditScore": 96.4
   },
   {
    "slug": "android-create-my-widget",
@@ -383,7 +383,7 @@
    "target": "今日头条",
    "form": "tt-article",
    "formLabel": "头条文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "安卓能用 AI 生成小组件了，实测：能玩，但别指望它查实时公交",
    "angle": "用实测落差讲清新功能的真实能力边界",
    "outline": [
@@ -399,7 +399,7 @@
    "hasLead": true,
    "score": 67,
    "readyFile": "2026-11-28-android-create-my-widget.json",
-   "auditScore": 75.0
+   "auditScore": 96.4
   },
   {
    "slug": "u17-8-0-21",
@@ -441,7 +441,7 @@
    "target": "今日头条",
    "form": "tt-article",
    "formLabel": "头条文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "U17国足8比0大胜斐济，时隔21年再进世少赛淘汰赛",
    "angle": "从这场大胜切入中国青少年足球的变化，赛果与历程分开讲。",
    "outline": [
@@ -456,7 +456,7 @@
    "hasLead": true,
    "score": 67,
    "readyFile": "2026-11-28-u17-8-0-21.json",
-   "auditScore": 75.0
+   "auditScore": 96.4
   },
   {
    "slug": "indium-phosphide-squeeze",
@@ -483,7 +483,7 @@
    "target": "今日头条",
    "form": "tt-article",
    "formLabel": "头条文章",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "AI 算力卡在一种叫磷化铟的材料上：光模块为什么突然不够用了",
    "angle": "从材料端解释 AI 数据中心的网络瓶颈",
    "outline": [
@@ -499,7 +499,7 @@
    "hasLead": true,
    "score": 60,
    "readyFile": "2026-11-28-indium-phosphide-squeeze.json",
-   "auditScore": 75.0
+   "auditScore": 96.4
   },
   {
    "slug": "e11-dc4504",
@@ -541,7 +541,7 @@
    "target": "今日头条",
    "form": "tt-micro",
    "formLabel": "微头条",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "几百元的超市羽绒服为什么难买？年轻人先看参数再看牌子",
    "angle": "从排队现象切入讲绒子含量、充绒量等可比较参数，给读者一套理性选购方法。",
    "outline": [
@@ -557,7 +557,7 @@
    "hasLead": true,
    "score": 60,
    "readyFile": "2026-11-28-e11-dc4504.json",
-   "auditScore": 65.0
+   "auditScore": 95.0
   },
   {
    "slug": "tv-boot-ad-ban",
@@ -606,7 +606,7 @@
    "target": "今日头条",
    "form": "tt-micro",
    "formLabel": "微头条",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "今天起电视不得播放开机广告，这几项变化和你有关",
    "angle": "按「开机—看直播—找免费内容—投诉」的使用顺序讲清新规。",
    "outline": [
@@ -621,7 +621,7 @@
    "hasLead": true,
    "score": 83,
    "readyFile": "2026-11-28-tv-boot-ad-ban.json",
-   "auditScore": 65.0
+   "auditScore": 95.0
   },
   {
    "slug": "x-parental-controls",
@@ -656,7 +656,7 @@
    "target": "今日头条",
    "form": "tt-micro",
    "formLabel": "微头条",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "",
    "angle": "与国内常见的家长监护方案相比，X 把『可见但不越界』写进产品设计：家长能看时长与联系人，却看不到内容本身。这个边界感是可迁移到国内家庭教育讨论的角度。",
    "outline": [],
@@ -666,7 +666,7 @@
    "hasLead": false,
    "score": 45,
    "readyFile": "2026-11-28-x-parental-controls.json",
-   "auditScore": 65.0
+   "auditScore": 95.0
   },
   {
    "slug": "robot-startup-shutdowns",
@@ -708,7 +708,7 @@
    "target": "今日头条",
    "form": "tt-micro",
    "formLabel": "微头条",
-   "status": "rejected",
+   "status": "done",
    "leadHeadline": "机器人赛道一边融资一边出清，问题出在哪？",
    "angle": "从调查报道中的具体案例解释行业分化",
    "outline": [
@@ -723,8 +723,8 @@
    "hasLead": true,
    "score": 60,
    "readyFile": "2026-11-28-robot-startup-shutdowns.json",
-   "auditScore": 65.0
+   "auditScore": 95.0
   }
  ],
- "syncedAt": "2026-11-28T07:38:16+08:00"
+ "syncedAt": "2026-11-28T08:41:32+08:00"
 }

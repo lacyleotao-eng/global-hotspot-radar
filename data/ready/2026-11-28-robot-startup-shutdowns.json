@@ -8,7 +8,7 @@
   "sourcePlatform": "知乎",
   "verification": "部分核实",
   "verificationNote": "“两年近30家”来自知乎问题陈述，未独立核实；报道口径为“2026年以来十余家”，两者不可混为同一统计。",
-  "imageNote": "",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -16,7 +16,13 @@
       "target": "今日头条",
       "form": "微头条",
       "title": "十余家机器人公司出清，但热搜说的近30家别急着信",
-      "images": [],
+      "images": [
+        {
+          "src": "assets/images/robot-startup-shutdowns-cg-1.png",
+          "caption": "AI 生成示意图：空置的现代创业办公室（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
       "blocks": [
         {
           "type": "para",
@@ -42,7 +48,8 @@
           "type": "para",
           "text": "热的一面同样真：报道援引数据称，2026年上半年具身智能融资1091.74亿元，已超2025年全年；报道提到企业暂缓IPO，但框架订单不等于已实现收入。看机器人公司，你更信融资额，还是验收单和回款记录？"
         }
-      ]
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
     }
   ]
 }

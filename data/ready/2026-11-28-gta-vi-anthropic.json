@@ -8,7 +8,7 @@
   "sourcePlatform": "TechCrunch",
   "verification": "部分核实",
   "verificationNote": "本文为评论，核心论点属作者与受访者观点；游戏销售额为新闻稿口径，不等于审计口径收入。",
-  "imageNote": "",
+  "imageNote": "原文图优先，已核对无水印/像素达标；原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -18,15 +18,65 @@
       "badge": "创意观察",
       "title": "GTA VI撞上813亿IPO：低效，原来是作品最贵的护城河",
       "digest": "同一周，GTA VI创下首发纪录，Anthropic完成813亿美元IPO。一篇评论用5000人、3万个NPC与两次延期，讲清删改为何昂贵却必要。",
-      "images": [],
+      "images": [
+        {
+          "src": "assets/source/gta-vi-anthropic/raw-1.jpeg",
+          "caption": "原文刊发的现场画面（图源：TechCrunch）",
+          "origin": "source"
+        },
+        {
+          "src": "assets/images/gta-vi-anthropic-db-1.jpeg",
+          "caption": "AI 生成示意图：霓虹灯映照的现代都市街道（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/gta-vi-anthropic-db-2.jpeg",
+          "caption": "AI 生成示意图：霓虹灯映照的现代都市街道（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/gta-vi-anthropic-db-3.jpeg",
+          "caption": "AI 生成示意图：霓虹灯映照的现代都市街道（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/gta-vi-anthropic-db-4.jpeg",
+          "caption": "AI 生成示意图：玻璃幕墙科技公司办公室的夜景空镜（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        },
+        {
+          "src": "assets/images/gta-vi-anthropic-db-5.jpeg",
+          "caption": "AI 生成示意图：玻璃幕墙科技公司办公室的夜景空镜（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
       "blocks": [
-        {"type": "para", "text": "这两天，一个巧合被反复提起：GTA VI 首发日零售销售额 37.9 亿美元，同一周 Anthropic 以 813 亿美元完成 IPO。一个靠十余年手工打磨，一个把效率当成北极星，恰好撞在了一起。"},
-        {"type": "para", "text": "两组数字先标清口径。37.9 亿美元来自商业新闻稿，是首发日零售销售额，不等于审计口径收入；813 亿美元 IPO 则是评论文章援引的公开报道。数字都来自既有稿件，不是我们重新核算的结果。"},
-        {"type": "para", "text": "评论列出的制作账本很具体：约 5000 人投入十余年，全程未使用生成式 AI，还做了 3 万个有独特外观与性格的非玩家角色。文章称它成为 Metacritic 评分最高的游戏，也提到它经历两次延期。"},
-        {"type": "para", "text": "前 Take-Two CEO Ben Feder 对 TechCrunch 说，这类作品大概率是最后一种这样做的方式。他的观点是：好作品几乎必须慢下来，创作离不开删改；到了这种复杂度的游戏，删改极其昂贵，按定义就不高效。"},
-        {"type": "para", "text": "现任 Take-Two CEO Strauss Zelnick 此前也反对「按一下按钮就生成爆款」的说法。同一篇评论里，Meta 的扎克伯格则承诺很快会有能理解用户、生成个性化内容的 AI。两种未来观被放在了一页纸上。"},
-        {"type": "para", "text": "这篇稿子本身是评论，核心判断属于作者和受访者，不是行业定论。它值得记下的是一个问题：当效率成为默认目标，那些靠试错、删改和延期换来的品质，还有没有位置？答案留给每个做内容的人自己判断。"}
-      ]
+        {
+          "type": "para",
+          "text": "这两天，一个巧合被反复提起：GTA VI 首发日零售销售额 37.9 亿美元，同一周 Anthropic 以 813 亿美元完成 IPO。一个靠十余年手工打磨，一个把效率当成北极星，恰好撞在了一起。"
+        },
+        {
+          "type": "para",
+          "text": "两组数字先标清口径。37.9 亿美元来自商业新闻稿，是首发日零售销售额，不等于审计口径收入；813 亿美元 IPO 则是评论文章援引的公开报道。数字都来自既有稿件，不是我们重新核算的结果。"
+        },
+        {
+          "type": "para",
+          "text": "评论列出的制作账本很具体：约 5000 人投入十余年，全程未使用生成式 AI，还做了 3 万个有独特外观与性格的非玩家角色。文章称它成为 Metacritic 评分最高的游戏，也提到它经历两次延期。"
+        },
+        {
+          "type": "para",
+          "text": "前 Take-Two CEO Ben Feder 对 TechCrunch 说，这类作品大概率是最后一种这样做的方式。他的观点是：好作品几乎必须慢下来，创作离不开删改；到了这种复杂度的游戏，删改极其昂贵，按定义就不高效。"
+        },
+        {
+          "type": "para",
+          "text": "现任 Take-Two CEO Strauss Zelnick 此前也反对「按一下按钮就生成爆款」的说法。同一篇评论里，Meta 的扎克伯格则承诺很快会有能理解用户、生成个性化内容的 AI。两种未来观被放在了一页纸上。"
+        },
+        {
+          "type": "para",
+          "text": "这篇稿子本身是评论，核心判断属于作者和受访者，不是行业定论。它值得记下的是一个问题：当效率成为默认目标，那些靠试错、删改和延期换来的品质，还有没有位置？答案留给每个做内容的人自己判断。"
+        }
+      ],
+      "imageNote": "6 张配图：原文图1 张、豆包生成5 张"
     }
   ]
 }

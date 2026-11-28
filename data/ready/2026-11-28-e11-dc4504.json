@@ -8,7 +8,7 @@
   "sourcePlatform": "腾讯新闻",
   "verification": "部分核实",
   "verificationNote": "断货与代购加价为个案观察，不足以代表全国市场；不同渠道羽绒服的绒子含量标注是否可统一比较，尚未得到官方确认。",
-  "imageNote": "",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -16,7 +16,13 @@
       "target": "今日头条",
       "form": "微头条",
       "title": "499元羽绒服被抢空，但真正被比较的是参数",
-      "images": [],
+      "images": [
+        {
+          "src": "assets/images/e11-dc4504-db-1.jpeg",
+          "caption": "AI 生成示意图：冬季商场服装区挂满深蓝色与米色羽绒服的展示架（豆包 Seedream，非新闻现场）",
+          "origin": "doubao"
+        }
+      ],
       "blocks": [
         {
           "type": "para",
@@ -42,7 +48,8 @@
           "type": "para",
           "text": "但不同渠道的绒子含量、充绒量标注能不能统一比较，目前还缺统一口径。抢得到抢不到是一回事，参数能不能真横着比是另一回事。你买羽绒服，先看牌子还是先看充绒量？"
         }
-      ]
+      ],
+      "imageNote": "1 张配图：豆包生成1 张"
     }
   ]
 }

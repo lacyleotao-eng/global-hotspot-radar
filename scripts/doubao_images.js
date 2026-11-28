@@ -81,10 +81,10 @@ try {
   const hasEditor = await page.evaluate(() => !!document.querySelector('[contenteditable="true"]'));
   if (!hasEditor) throw new Error("豆包页面无输入框，可能未登录或页面结构变化");
 
-  // 激活「图像生成」模式：点输入框下方那排按钮里文本完全等于「图像生成」的那个
+  // 激活图像生成模式：2026-11-28 起豆包把按钮文案从「图像生成」改成「图片生成」，两者都兼容
   const modeOn = await page.evaluate(() => {
     const hit = Array.from(document.querySelectorAll("div,span,button,a"))
-      .find((e) => e.textContent.trim() === "图像生成" && e.offsetParent !== null);
+      .find((e) => ["图像生成", "图片生成"].includes(e.textContent.trim()) && e.offsetParent !== null);
     if (!hit) return false;
     hit.click();
     return true;

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T00:37:41.629Z",
+  "updatedAt": "2026-11-28T00:40:20.919Z",
   "items": {
     "7": [
       {
@@ -139,6 +139,30 @@
       {
         "src": "assets/images/6-5000-cg-1.png",
         "prompt": "山景纪实摄影：清晨高山观景平台上的栏杆与云雾，远处山峰层叠，一位穿素色冲锋衣的游客背影站在栏杆前，衣服上没有字，画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。"
+      }
+    ],
+    "indium-phosphide-squeeze": [
+      {
+        "src": "assets/images/indium-phosphide-squeeze-cg-1.png",
+        "prompt": "微距摄影：一小片深色磷化铟晶圆在洁净室灯光下反射金属光泽，背景是模糊的实验室设备，冷色调 画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。"
+      }
+    ],
+    "tv-boot-ad-ban": [
+      {
+        "src": "assets/images/tv-boot-ad-ban-cg-1.png",
+        "prompt": "纪实摄影：客厅里一台黑屏平板电视放在浅色电视柜上，遥控器摆在旁边，清晨自然光，画面简洁 画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。"
+      }
+    ],
+    "x-parental-controls": [
+      {
+        "src": "assets/images/x-parental-controls-cg-1.png",
+        "prompt": "科技摄影：一部手机竖立在桌面，屏幕显示模糊的蓝绿色抽象界面，旁边放着一台平板电脑，柔和自然光 画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。"
+      }
+    ],
+    "robot-startup-shutdowns": [
+      {
+        "src": "assets/images/robot-startup-shutdowns-cg-1.png",
+        "prompt": "纪实摄影：空置的现代创业办公室，桌上留下一只马克杯和几张空白纸，窗外是模糊城市天际线，冷色调 画面中没有任何文字、字母、数字、标识与 logo，16:9 横构图。"
       }
     ]
   }

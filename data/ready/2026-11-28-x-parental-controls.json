@@ -8,7 +8,7 @@
   "sourcePlatform": "TechCrunch",
   "verification": "已核实",
   "verificationNote": "官方帖页面显示发布时间为2026-11-25，TechCrunch报道为11-26；功能上线时间按官方帖表述。上线后的使用效果数据不可见。",
-  "imageNote": "",
+  "imageNote": "原文图不足部分用 AI 生成示意图补足，非新闻现场",
   "batch": "morning",
   "pieces": [
     {
@@ -16,7 +16,13 @@
       "target": "今日头条",
       "form": "微头条",
       "title": "13到17岁默认保护，但家长看不到私信，这算管吗？",
-      "images": [],
+      "images": [
+        {
+          "src": "assets/images/x-parental-controls-cg-1.png",
+          "caption": "AI 生成示意图：科技摄影：一部手机竖立在桌面（ChatGPT，非新闻现场）",
+          "origin": "chatgpt"
+        }
+      ],
       "blocks": [
         {
           "type": "para",
@@ -42,7 +48,8 @@
           "type": "para",
           "text": "能管时长和联系人、不管私信内容，这套边界放在家庭教育里算松还是算合适？如果是你，会接受这种“看得见边界、看不见内容”的监护吗？"
         }
-      ]
+      ],
+      "imageNote": "1 张配图：ChatGPT 生成1 张"
     }
   ]
 }
