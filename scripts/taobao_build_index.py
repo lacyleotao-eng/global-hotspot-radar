@@ -23,6 +23,7 @@
 不给这个 SKU 出成本，也不许用均价糊过去。
 """
 import json
+import math
 from datetime import date
 from pathlib import Path
 
@@ -106,6 +107,42 @@ def position(price, band):
     if price <= band["p90"]:
         return "high"
     return "top"
+
+
+TARGET_RATE = 0.20  # 建议价按「扣完所有费用后净利率 20%」倒推
+PRICE_CAP = 1.15    # 市场参照价往上最多加 15%，再多就没理由买了
+
+
+def suggest_price(cost_all, ref, cost_rate, kind="single", ref_partial=False, p75=None):
+    """给出该卖多少：成本要求的下限 与 市场接受的上限 取交集。
+
+    返回 (建议价, 净利, 净利率, 不可做原因)。交集为空 = 这个规格不该上。
+    """
+    if cost_all is None:
+        return None, None, None, "成本没算出来", ""
+    if ref_partial and not ref:
+        return None, None, None, "参照价缺组件（有组件没找到同类词），先补齐再定价", ""
+    need = cost_all / (1 - cost_rate - TARGET_RATE)  # 20% 净利率要求的最低价
+    if not ref:
+        p = math.floor(need) + 0.9
+        net = p - cost_all - p * cost_rate
+        return round(p, 2), money(net), round(net / p, 3), "", "cost"
+    # 上限：单件允许到「同类 p75」与「参照价 +15%」里更高的那个（市场上有四分之一的人卖得比中位贵）；
+    # 组合品的参照价本身就是散买合计，套装不该比散买贵太多，收到 1.15
+    if kind == "bundle":
+        cap = ref * 1.15
+    else:
+        cap = max(ref * PRICE_CAP, p75 or 0)
+    if need > cap:
+        return None, None, None, f"要有 {int(TARGET_RATE * 100)}% 净利得卖 ¥{need:.1f}，市场天花板 ¥{cap:.1f}，差 ¥{need - cap:.1f}", ""
+    pick = min(cap, max(need, ref))
+    p = math.floor(pick) + 0.9
+    if p < need:
+        p = math.ceil(need) + 0.9
+    if p > cap:
+        p = round(cap, 2)  # 收尾价超上限就回到上限
+    net = p - cost_all - p * cost_rate
+    return round(p, 2), money(net), round(net / p, 3), "", "market"
 
 
 def build():
@@ -259,12 +296,17 @@ def build():
             ref_price, ref_partial, ref_src = None, False, ""
             if dedup and len(dedup) == len(parts) and not dup:
                 ref_price, ref_src = money(known), "basket"
-            elif not dedup and len(parts) == 1 and band:
+            elif not dedup and len(parts) == 1 and band and (pitem.get("kind") or "single") != "bundle":
                 ref_price, ref_src = money(band["p50"]), "product"
             elif dedup:
                 ref_price, ref_partial, ref_src = money(known), True, "basket-partial"
             premium = round(price / ref_price, 2) if (price and ref_price) else None
             net_at_ref = money(ref_price - cost_all - ref_price * cost_rate) if (ref_price and cost_all is not None) else None
+
+            sp_price, sp_net, sp_rate, sp_why, sp_basis = suggest_price(
+                cost_all, ref_price, cost_rate, pitem.get("kind") or "single", ref_partial,
+                (band or {}).get("p75"),
+            )
 
             flags = []
             if pending:
@@ -310,6 +352,11 @@ def build():
                 "refParts": ref_parts,
                 "premium": premium,
                 "netAtRef": net_at_ref,
+                "suggest": sp_price,
+                "suggestNet": sp_net,
+                "suggestRate": sp_rate,
+                "suggestWhy": sp_why,
+                "suggestBasis": sp_basis,
                 "flags": flags,
                 "shipPlan": ship_plan,
                 "parts": parts,
@@ -437,7 +484,7 @@ def build():
             mk = s.get("market") or {}
             print(f"       - {s['name'][:20]:<22} 卖 {s['price']} 成本 {s['costAllIn']} "
                   f"净利 {s['net']} 保本 {s['breakEven']}｜参照价 {s.get('refPrice')}{'(缺组件)' if s.get('refPartial') else ''} "
-                  f"溢价 {s.get('premium')}x 按参照价卖净利 {s.get('netAtRef')}"
+                  f"溢价 {s.get('premium')}x｜建议价 {s.get('suggest') or ('不可做:' + (s.get('suggestWhy') or ''))}"
                   f"{' [' + ','.join(s['flags']) + ']' if s['flags'] else ''}{flag}")
     if warns:
         print(f"\n[warn] {len(warns)} 条规格未命中：")

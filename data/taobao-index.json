@@ -246,6 +246,11 @@
      ],
      "premium": 2.44,
      "netAtRef": -21.22,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥63.8，市场天花板 ¥27.8，差 ¥36.0",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -391,6 +396,11 @@
      ],
      "premium": 3.68,
      "netAtRef": -26.22,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥71.4，市场天花板 ¥27.8，差 ¥43.6",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -544,6 +554,11 @@
      ],
      "premium": 3.41,
      "netAtRef": -30.49,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥84.2，市场天花板 ¥33.4，差 ¥50.8",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -1612,6 +1627,11 @@
      ],
      "premium": 1.56,
      "netAtRef": -2.19,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥19.9，市场天花板 ¥16.9，差 ¥3.0",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -1693,6 +1713,11 @@
      ],
      "premium": 1.49,
      "netAtRef": -3.19,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥21.4，市场天花板 ¥16.9，差 ¥4.5",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -1774,6 +1799,11 @@
      ],
      "premium": 1.8,
      "netAtRef": -1.74,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥19.2，市场天花板 ¥17.1，差 ¥2.1",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -2177,6 +2207,11 @@
      ],
      "premium": 2.04,
      "netAtRef": -1.69,
+     "suggest": 19.9,
+     "suggestNet": 4.47,
+     "suggestRate": 0.225,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "market-loss",
       "price-high"
@@ -2258,6 +2293,11 @@
      ],
      "premium": 1.56,
      "netAtRef": 0.01,
+     "suggest": 16.9,
+     "suggestNet": 3.6,
+     "suggestRate": 0.213,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "price-high"
      ],
@@ -2338,6 +2378,11 @@
      ],
      "premium": 2.82,
      "netAtRef": -5.49,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥24.9，市场天花板 ¥20.9，差 ¥4.0",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -2659,6 +2704,11 @@
      ],
      "premium": 2.67,
      "netAtRef": -8.18,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥31.9，市场天花板 ¥17.2，差 ¥14.7",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -2800,6 +2850,11 @@
      ],
      "premium": 2.51,
      "netAtRef": -9.71,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥40.7，市场天花板 ¥22.9，差 ¥17.8",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -2943,6 +2998,11 @@
      ],
      "premium": 1.12,
      "netAtRef": 4.01,
+     "suggest": 20.9,
+     "suggestNet": 4.33,
+     "suggestRate": 0.207,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "price-high"
      ],
@@ -3317,6 +3377,11 @@
      ],
      "premium": 3.92,
      "netAtRef": -11.59,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥34.2，市场天花板 ¥14.6，差 ¥19.6",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -3430,6 +3495,11 @@
      ],
      "premium": 3.92,
      "netAtRef": -22.59,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥57.3，市场天花板 ¥20.3，差 ¥37.0",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -3520,14 +3590,18 @@
      },
      "pos": "top",
      "netAtP50": -20.95,
-     "refPrice": 14.51,
+     "refPrice": null,
      "refPartial": false,
-     "refSrc": "product",
+     "refSrc": "",
      "refParts": [],
-     "premium": 5.44,
-     "netAtRef": -20.95,
+     "premium": null,
+     "netAtRef": null,
+     "suggest": 50.9,
+     "suggestNet": 10.27,
+     "suggestRate": 0.202,
+     "suggestWhy": "",
+     "suggestBasis": "cost",
      "flags": [
-      "market-loss",
       "price-high"
      ],
      "shipPlan": [
@@ -4419,6 +4493,11 @@
      ],
      "premium": 1.85,
      "netAtRef": -4.27,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥12.8，市场天花板 ¥5.7，差 ¥7.1",
+     "suggestBasis": "",
      "flags": [
       "loss",
       "market-loss",
@@ -4501,6 +4580,11 @@
      ],
      "premium": 2.06,
      "netAtRef": -2.46,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥10.0，市场天花板 ¥5.5，差 ¥4.5",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -4582,6 +4666,11 @@
      ],
      "premium": 2.27,
      "netAtRef": -4.67,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥13.4，市场天花板 ¥5.5，差 ¥7.8",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -5490,6 +5579,11 @@
      ],
      "premium": 0.93,
      "netAtRef": -0.76,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥19.1，市场天花板 ¥15.9，差 ¥3.3",
+     "suggestBasis": "",
      "flags": [
       "loss",
       "market-loss"
@@ -5579,6 +5673,11 @@
      ],
      "premium": 1.08,
      "netAtRef": 3.18,
+     "suggest": 31.74,
+     "suggestNet": 6.73,
+     "suggestRate": 0.212,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "price-high"
      ],
@@ -5699,6 +5798,11 @@
      ],
      "premium": 0.93,
      "netAtRef": 4.84,
+     "suggest": 13.9,
+     "suggestNet": 4.93,
+     "suggestRate": 0.354,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [],
      "shipPlan": [
       {
@@ -6420,6 +6524,11 @@
      "refParts": [],
      "premium": 1.05,
      "netAtRef": 7.48,
+     "suggest": 25.9,
+     "suggestNet": 7.82,
+     "suggestRate": 0.302,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [],
      "shipPlan": [
       {
@@ -6489,6 +6598,11 @@
      "refParts": [],
      "premium": 1.17,
      "netAtRef": 4.78,
+     "suggest": 26.9,
+     "suggestNet": 5.98,
+     "suggestRate": 0.222,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [],
      "shipPlan": [
       {
@@ -6558,6 +6672,11 @@
      "refParts": [],
      "premium": 2.35,
      "netAtRef": -14.72,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥55.6，市场天花板 ¥48.0，差 ¥7.6",
+     "suggestBasis": "",
      "flags": [
       "market-loss",
       "price-high"
@@ -6976,6 +7095,11 @@
      ],
      "premium": 0.89,
      "netAtRef": 13.44,
+     "suggest": 44.9,
+     "suggestNet": 13.6,
+     "suggestRate": 0.303,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "price-high"
      ],
@@ -7120,6 +7244,11 @@
      ],
      "premium": 1.12,
      "netAtRef": 7.18,
+     "suggest": 47.9,
+     "suggestNet": 9.92,
+     "suggestRate": 0.207,
+     "suggestWhy": "",
+     "suggestBasis": "market",
      "flags": [
       "price-high"
      ],
@@ -8388,6 +8517,11 @@
      "refParts": [],
      "premium": 2.08,
      "netAtRef": -10.32,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥21.9，市场天花板 ¥5.5，差 ¥16.4",
+     "suggestBasis": "",
      "flags": [
       "bulk-price",
       "loss",
@@ -8462,6 +8596,11 @@
      "refParts": [],
      "premium": 2.47,
      "netAtRef": -10.67,
+     "suggest": null,
+     "suggestNet": null,
+     "suggestRate": null,
+     "suggestWhy": "要有 20% 净利得卖 ¥22.5，市场天花板 ¥6.2，差 ¥16.3",
+     "suggestBasis": "",
      "flags": [
       "bulk-price",
       "loss",

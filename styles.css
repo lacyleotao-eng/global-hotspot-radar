@@ -708,6 +708,12 @@ table.tb-price tr.loss td{background:#fdf6f4}
 .tb-flag.warn{color:#b7791f;border-color:#f0e0bd;background:#fdf6e7}
 .tb-flag.gray{color:#7b87a3;border-color:#e4e9f2;background:#f7f9fc}
 .tb-sku-nums em.neg{color:#c0392b}
+.tb-advise{margin:0 0 8px;padding:7px 9px;border-radius:8px;font-size:11px;line-height:1.6;font-variant-numeric:tabular-nums}
+.tb-advise.ok{background:#f1faf3;border:1px solid #d6ecdb;color:#2f6b45}
+.tb-advise.ok b{color:#1e7a45;font-size:12px}
+.tb-advise.bad{background:#fdf3f1;border:1px solid #f4d9d2;color:#a8452f}
+.tb-advise.bad b{color:#c0392b;font-size:12px;margin-right:5px}
+.tb-advise i{display:block;font-style:normal;color:#8e9ab0;font-size:10px;margin-top:2px}
 
 /* ===== 规格级下单清单 ===== */
 .tb-skus{margin-top:11px;border:1px solid #e4e9f2;border-radius:11px;overflow:hidden;background:#fcfdff}

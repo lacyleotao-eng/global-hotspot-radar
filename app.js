@@ -1234,6 +1234,15 @@
       return v ? '<span class="tb-flag ' + v[1] + '">' + v[0] + '</span>' : '';
     }).join('');
 
+    var advise = s.suggest != null
+      ? '<p class="tb-advise ok"><b>建议定价 ' + tbMoney(s.suggest) + '</b>（按这个价卖，净利 ' + tbMoney(s.suggestNet) +
+        ' / 率 ' + Math.round((s.suggestRate || 0) * 100) + '%）<i>' +
+        (s.suggestBasis === 'cost'
+          ? '只按成本倒推（这个规格没找到同类参照价），上架前要自己看一圈同行'
+          : '下限 = 成本倒推 20% 净利，上限 = 同类参照价与 p75 取高') + '</i></p>'
+      : '<p class="tb-advise bad"><b>没有可行价</b>' + esc(s.suggestWhy || '') +
+        '<i>要么换更低货源，要么这个规格别上</i></p>';
+
     return '<details class="tb-sku"' + open + '>' +
       '<summary>' +
         '<span class="tb-sku-name">' + esc(s.name || '') + (s.role ? '<i>' + esc(s.role) + '</i>' : '') + '</span>' +
@@ -1246,6 +1255,7 @@
         '<span class="tb-tag ' + h[1] + ' tb-sku-tag">' + h[0] + '</span>' +
       '</summary>' +
       '<div class="tb-sku-body">' +
+        advise +
         '<div class="tb-sku-buyh"><b>下单清单</b><span>' + (s.parts || []).length + ' 个组件 · ' +
           (s.factories || 1) + ' 家店 · ' + (s.packages || 1) + ' 个包裹' +
           (posName ? ' · ' + posName : '') + '</span></div>' +
@@ -1291,6 +1301,12 @@
     badges.push('<span class="tb-tag ' + hh[1] + '">' + hh[0] + '</span>');
     badges.push('<span class="tb-tag gray">' + kindName + ' · ' + (x.specCount || 0) + ' 规格</span>');
     if (x.specPending) badges.push('<span class="tb-tag gray">规格待核</span>');
+    var canPrice = skus.filter(function (s) { return s.suggest != null; }).length;
+    if (skus.length) {
+      badges.push(canPrice
+        ? '<span class="tb-tag live">' + canPrice + '/' + skus.length + ' 个规格有可行价</span>'
+        : '<span class="tb-tag red">无可行定价</span>');
+    }
     if ((x.flags || []).indexOf('bulk-price') >= 0) badges.push('<span class="tb-tag warn">含批量报价</span>');
     if ((x.flags || []).indexOf('market-loss') >= 0) badges.push('<span class="tb-tag red">按市场价卖必亏</span>');
     if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
