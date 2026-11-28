@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-28T13:25:23",
- "total": 16,
+ "updatedAt": "2026-11-28T14:05:49",
+ "total": 18,
  "targetDaily": 10,
  "biliDaily": 1,
  "docs": [
@@ -22,6 +22,26 @@
    "steps": 10,
    "images": 8,
    "cover": "data/yt-digest/2026-11-28-train-your-whole-body-in-4-day/img/01-gym-floor.jpg",
+   "digestAt": "2026-11-28"
+  },
+  {
+   "slug": "2026-11-28-samsung-a14-screen-replacement",
+   "url": "data/yt-digest/2026-11-28-samsung-a14-screen-replacement/article.html",
+   "title": "你自己换三星A14屏幕：先拆10颗螺丝再对型号",
+   "dek": "关机取卡托、上下两组共18颗十字螺丝、断排线取电池，再按反序装回；4G 与 5G 屏幕不通用。",
+   "category": "手工 / 维修 / 改造",
+   "categoryKey": "diy",
+   "place": "手机 · 三星 A14 前屏",
+   "source": "youtube",
+   "channel": "iDoctor UK",
+   "videoId": "Y_CezGRzxQg",
+   "videoUrl": "https://www.youtube.com/watch?v=Y_CezGRzxQg",
+   "duration": 610,
+   "views": 695078,
+   "publishedAt": "20231121",
+   "steps": 10,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-28-samsung-a14-screen-replacement/img/01-open-phone.jpg",
    "digestAt": "2026-11-28"
   },
   {
@@ -102,6 +122,26 @@
    "steps": 9,
    "images": 8,
    "cover": "data/yt-digest/2026-11-28-chef-reviews-rates-premium-gad/img/01-blender.jpg",
+   "digestAt": "2026-11-28"
+  },
+  {
+   "slug": "2026-11-28-a-pro-chef-s-guide-to-nyc-s-be",
+   "url": "data/yt-digest/2026-11-28-a-pro-chef-s-guide-to-nyc-s-be/article.html",
+   "title": "你跟大厨吃纽约3站：半鸡半羊加双酱怎么点",
+   "dek": "Fish Cheeks 分享菜、中央车站 Joji 主厨席、中城清真餐车半鸡半羊：只取字幕里能照着点的菜名和酱汁说法。",
+   "category": "美食探店 / 做饭",
+   "categoryKey": "food",
+   "place": "纽约 · Fish Cheeks / Joji / 清真餐车",
+   "source": "youtube",
+   "channel": "Condé Nast Traveler",
+   "videoId": "Ro1ecCa7p48",
+   "videoUrl": "https://www.youtube.com/watch?v=Ro1ecCa7p48",
+   "duration": 675,
+   "views": 422487,
+   "publishedAt": "20250221",
+   "steps": 11,
+   "images": 9,
+   "cover": "data/yt-digest/2026-11-28-a-pro-chef-s-guide-to-nyc-s-be/img/01-fish-cheeks-facade.jpg",
    "digestAt": "2026-11-28"
   },
   {

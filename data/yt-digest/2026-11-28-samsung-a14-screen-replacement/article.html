@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>你自己换三星A14屏幕：先拆10颗螺丝再对型号</title>
+<style>
+  :root{
+    --ink:#1b1b1f; --ink-2:#4a4a55; --ink-3:#7c7c88;
+    --line:#e6e3dc; --paper:#fbfaf6; --card:#fff;
+    --accent:#1f6b73; --accent-soft:#e8f2f2; --gold:#a8842c;
+    --shadow:0 1px 2px rgba(24,20,12,.04),0 8px 24px rgba(24,20,12,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px 80px}
+  header.hero{padding:54px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+  .tag{background:var(--accent-soft);color:var(--accent);padding:2px 9px;border-radius:999px;font-weight:600}
+  h1{font-size:31px;line-height:1.34;margin:16px 0 12px;letter-spacing:-.01em;font-weight:800}
+  .lede{font-size:16.5px;color:var(--ink-2);margin:0}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--ink-3)}
+  .meta b{color:var(--ink);font-weight:600}
+  h2{font-size:21px;margin:44px 0 14px;padding-top:6px;letter-spacing:-.01em;font-weight:750}
+  h2 .num{display:inline-flex;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;
+    font-size:13px;align-items:center;justify-content:center;margin-right:10px;vertical-align:2px;font-weight:700}
+  h3{font-size:16.5px;margin:26px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(31,107,115,.25)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+  .box h3{margin-top:0}
+  .box.warn{background:#fff9f0;border-color:#f0dfc0}
+  .box.calm{background:#f4f8f6;border-color:#d9e7e0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:7px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f6f4ee;font-size:13px;color:var(--ink-2);font-weight:650}
+  tr:last-child td{border-bottom:none}
+  .ts{font-size:12px;color:var(--ink-3);background:#f1efe9;border-radius:6px;padding:1px 6px;
+    font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:4px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:800;letter-spacing:-.02em}
+  .kpi .l{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
+  .src li{margin:5px 0}
+  figure{margin:24px 0}
+  figure img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f1efe9}
+  figcaption{font-size:12.5px;color:var(--ink-3);margin-top:7px;line-height:1.65}
+  figcaption b{color:var(--ink-2);font-weight:600}
+  .herofig{margin:26px 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">
+    <span class="tag">手工 / 维修 / 改造</span>
+    <span>三星 A14 · 前屏更换</span><span>·</span><span>5 步拆装 + 型号核对</span>
+  </div>
+  <h1>你自己换三星A14屏幕：先拆10颗螺丝再对型号</h1>
+  <p class="lede">一段 10 分钟的维修视频，把三星 A14 换前屏从取卡托、撬后盖到开机验证走了一遍。下面按字幕拆成 5 步，重点说清 10 颗与 8 颗螺丝、排线顺序，以及 4G 和 5G 屏幕不通用这件事。</p>
+  <div class="meta">
+    <span>素材：YouTube 视频 <b>《Samsung A14 Screen Replacement - DIY Guide To Fix Your Broken Phone Screen!》</b>（频道「iDoctor UK」）</span>
+    <span>时长 <b>10:10</b></span><span>发布 <b>2023-11-21</b></span><span>播放 <b>约 69.5 万</b></span>
+  </div>
+  <figure class="herofig">
+    <img src="img/01-open-phone.jpg" alt="拆开后盖的三星 A14 内部，电池标签、摄像头和螺丝刀清晰可见" loading="lazy">
+    <figcaption><b>先看这台机器：打开后盖后，电池和摄像头模组都在手边。</b><span class="ts">视频截帧 00:01:18</span></figcaption>
+  </figure>
+</header>
+
+<h2><span class="num">0</span>先看结论：能自己换，但先确认屏幕版本</h2>
+<div class="grid">
+  <div class="kpi"><div class="n">10 颗 <span class="ts">00:01:14</span></div><div class="l">机身上部需要拧下的十字螺丝</div></div>
+  <div class="kpi"><div class="n">8 颗 <span class="ts">00:02:50</span></div><div class="l">底部固定扬声器与后盖板的十字螺丝</div></div>
+  <div class="kpi"><div class="n">2 条 <span class="ts">00:07:37</span></div><div class="l">装回时要重连的屏幕子板排线</div></div>
+  <div class="kpi"><div class="n">4G ≠ 5G <span class="ts">00:04:48</span></div><div class="l">视频明确说两个版本用的不是同一块屏</div></div>
+</div>
+<p><b>适合谁：</b>手边有塑料撬棒、小螺丝刀和镊子，愿意按视频顺序拆装的人；视频里这三样工具都实际出现过<span class="ts">00:00:26</span><span class="ts">00:01:17</span><span class="ts">00:02:12</span>。</p>
+<p><b>不适合谁：</b>还没确认手机是 4G 还是 5G 就下单的人。视频展示的是 A14 4G 版本，并说 5G 版本用的是另一块屏幕<span class="ts">00:04:48</span>。</p>
+<p><b>视频里没说：</b>屏幕价格、整单维修报价、总耗时，以及具体工具品牌型号。字幕只出现了工具类别，没有给出购买参数。</p>
+
+<h2><span class="num">1</span>怎么开始：关机、取卡托、备好撬棒和镊子</h2>
+<p>先关机，再用 SIM 卡弹出工具取出 SIM 卡托；视频里作者用的是镊子<span class="ts">00:00:11</span><span class="ts">00:00:14</span>。</p>
+<p>别把卡托取出当成多余动作。视频说取出卡托后，机身上会形成一个薄弱点，后面撬后盖就从这里开始<span class="ts">00:00:22</span>。</p>
+<p>准备三样：塑料撬棒、小螺丝刀、镊子。撬棒用来开封，螺丝刀用来拧十字螺丝，镊子负责挑排线和取小零件<span class="ts">00:00:26</span><span class="ts">00:01:17</span><span class="ts">00:02:12</span>。</p>
+
+<h2><span class="num">2</span>关键决策点：买哪块屏、哪些连接别急着断</h2>
+<table>
+  <tr><th>要决定的事</th><th>视频里的说法</th><th>照着做</th></tr>
+  <tr><td>买 4G 还是 5G 屏</td><td>视频展示的是 A14 4G 版本，5G 版本用的是另一块屏幕<span class="ts">00:04:48</span>；画面里还报出 SM A14 5 的部件标识<span class="ts">00:04:57</span></td><td>下单前先核对自己的版本，别只看“A14”三个字</td></tr>
+  <tr><td>同轴电缆要不要先拔</td><td>作者特意保留同轴电缆连接，说这样装新屏时更容易<span class="ts">00:02:38</span></td><td>拆主板时先留着，到拆屏幕子板时再松开<span class="ts">00:03:46</span></td></tr>
+  <tr><td>螺丝刀选磁性还是普通</td><td>用磁性螺丝刀时，有些螺丝无法完全拔出，还得用镊子取<span class="ts">00:01:38</span></td><td>不管用哪种，都把镊子放在手边</td></tr>
+  <tr><td>螺丝放哪里</td><td>视频直接把拆下的螺丝放在后盖里暂存<span class="ts">00:02:05</span></td><td>按拆卸位置分区放，装回时不会混</td></tr>
+  <tr><td>新屏塑料膜撕不撕</td><td>可以随时取下；作者通常保留，避免交给客户前留下指纹<span class="ts">00:09:41</span></td><td>交付前再决定，别在装的过程中反复摸屏幕</td></tr>
+</table>
+
+<h2><span class="num">3</span>第 1 步：从卡托缺口撬后盖，避开按键排线</h2>
+<p>把塑料撬棒插进屏幕边缘、塑料机身和塑料盖之间，开始撬后盖<span class="ts">00:00:29</span>。边角处会有点紧，视频说别怕用点力<span class="ts">00:00:43</span>。</p>
+<p>经过按键位置时放慢：下面有一条排线，只需轻轻插入撬棒，不要深插<span class="ts">00:00:49</span><span class="ts">00:00:51</span>。</p>
+<p>最后绕过顶部角落，后盖就能松开。遇到前面说的那条排线，从左侧把它打开，别硬扯<span class="ts">00:00:59</span><span class="ts">00:01:05</span>。</p>
+
+<h2><span class="num">4</span>第 2 步：拧 10 颗螺丝，断开排线取出主板</h2>
+<p>打开后盖后，先拧下 <b>10 颗十字螺丝</b>，用小平头螺丝刀操作<span class="ts">00:01:14</span>。磁性螺丝刀吸住的螺丝拔不出来时，用镊子取下<span class="ts">00:01:40</span>。</p>
+<figure>
+  <img src="img/02-board-battery.jpg" alt="三星 A14 内部的电池和主板区域特写，排线仍连接着" loading="lazy">
+  <figcaption><b>拆开挡板后才能看到逻辑板，电池就在旁边。</b><span class="ts">视频截帧 00:02:14</span></figcaption>
+</figure>
+<p>用镊子从顶角把塑料挡板撬起来，露出逻辑板<span class="ts">00:02:14</span>。接着用塑料镊子断开电池两根排线，以及左侧锁定按钮的排线<span class="ts">00:02:24</span><span class="ts">00:02:30</span>。</p>
+<figure>
+  <img src="img/03-motherboard.jpg" alt="主板与摄像头模组特写，可见橙色排线与屏蔽罩" loading="lazy">
+  <figcaption><b>主板区域：橙色排线和摄像头都在这一侧，操作空间不大。</b><span class="ts">视频截帧 00:02:27</span></figcaption>
+</figure>
+<p>这时可以把主板从机箱里取出，但作者保留了同轴电缆的连接，说这样后面装新屏更省事<span class="ts">00:02:36</span><span class="ts">00:02:43</span>。</p>
+
+<h2><span class="num">5</span>第 3 步：拆底部 8 颗螺丝，松开子板</h2>
+<p>转到底部，这里有 <b>8 颗十字螺丝</b>，固定着扬声器和后盖板<span class="ts">00:02:50</span>。螺丝收好，后面装回还要用<span class="ts">00:03:04</span>。</p>
+<p>用镊子轻轻插入盖板边缘向上撬。视频里作者发现自己漏拆了一颗螺丝，但盖板最后还是能抬起来<span class="ts">00:03:22</span><span class="ts">00:03:27</span>。</p>
+<figure>
+  <img src="img/04-bottom-cover-screws.jpg" alt="手机底部边框特写，扬声器和后盖板位置的螺丝孔可见" loading="lazy">
+  <figcaption><b>底部区域：8 颗螺丝固定扬声器与后盖板。</b><span class="ts">视频截帧 00:02:54</span></figcaption>
+</figure>
+<p>松开盖板后，断开屏幕背面的柔性电缆，再松开同轴电缆，撬起子板下方让它脱开<span class="ts">00:03:43</span><span class="ts">00:03:51</span>。</p>
+<figure>
+  <img src="img/05-lower-cover.jpg" alt="手机下部盖板与边框特写，排线和卡扣位置可见" loading="lazy">
+  <figcaption><b>下部盖板取下后的边界，排线从这里穿过。</b><span class="ts">视频截帧 00:03:32</span></figcaption>
+</figure>
+
+<h2><span class="num">6</span>第 4 步：取电池、核对屏幕、转移扬声器与马达</h2>
+<p>这块电池用的是卡扣固定：先移除卡扣，再向上提起卡扣、拉出电池<span class="ts">00:04:12</span><span class="ts">00:04:28</span>。视频说这是他第一次在三星手机上见到这种设计<span class="ts">00:04:02</span>。</p>
+<figure>
+  <img src="img/06-battery-label.jpg" alt="三星电池标签特写，排线接口位于上方" loading="lazy">
+  <figcaption><b>电池本体：卡扣结构，不用硬撬电池边缘。</b><span class="ts">视频截帧 00:03:58</span></figcaption>
+</figure>
+<p>电池取出后再看新屏。字幕明确说这支片子用的是 A14 4G 屏幕，5G 版本用的是另一个部件<span class="ts">00:04:48</span>。</p>
+<figure>
+  <img src="img/07-new-screen-box.jpg" alt="白色新屏包装盒与拆解下的电池放在工作台上" loading="lazy">
+  <figcaption><b>新件开箱：装之前先核对屏幕版本。</b><span class="ts">视频截帧 00:04:45</span></figcaption>
+</figure>
+<p>新屏不附带扬声器和振动马达，要把它们移到机箱上<span class="ts">00:05:08</span>。马达用镊子伸到下面就能取出；扬声器底部有小凹槽，从凹槽处向上撬<span class="ts">00:05:14</span><span class="ts">00:05:18</span>。</p>
+<p>装回时确认凸出的针脚朝下，方向和取出时一致<span class="ts">00:05:32</span>。最后撕掉电池的粘合剂，把末端固定好<span class="ts">00:05:52</span>。</p>
+
+<h2><span class="num">7</span>第 5 步：按拆卸反序装回，开机再插卡托</h2>
+<p>从下面的门板开始装回。线缆要放进对应的小凹槽，用塑料撬棒按进去，确保完全贴合<span class="ts">00:06:06</span><span class="ts">00:06:18</span>。</p>
+<figure>
+  <img src="img/08-midframe.jpg" alt="手机中框内部特写，排线槽与蓝色导热垫可见" loading="lazy">
+  <figcaption><b>中框内部：线缆要压进凹槽，不能鼓起来。</b><span class="ts">视频截帧 00:04:56</span></figcaption>
+</figure>
+<p>重连排线后，装回扬声器和塑料盖，拧上 <b>8 颗十字螺丝</b><span class="ts">00:06:28</span><span class="ts">00:06:40</span>。</p>
+<p>主板要平放，别压到螺丝孔。依次接回屏幕子板的两条排线、电源按钮的小排线，最后接电池连接器<span class="ts">00:07:28</span><span class="ts">00:07:37</span><span class="ts">00:07:45</span>。</p>
+<p>摄像头塑料盖用 <b>10 颗十字螺丝</b>固定<span class="ts">00:07:58</span>。如果卡扣凸出来没贴合，用镊子尾部轻轻按压<span class="ts">00:09:05</span>。</p>
+<figure>
+  <img src="img/09-battery-adhesive.jpg" alt="电池仓内的粘合剂与排线接口特写" loading="lazy">
+  <figcaption><b>电池仓：粘合剂和排线接口都要整理到位再合盖。</b><span class="ts">视频截帧 00:07:20</span></figcaption>
+</figure>
+<p>后盖折叠装回时，先确认按钮到位，再沿边缘施压<span class="ts">00:09:14</span><span class="ts">00:09:24</span>。开机看到三星标志后，再把 SIM 卡托插回去<span class="ts">00:09:50</span><span class="ts">00:09:58</span>。</p>
+
+<h2><span class="num">8</span>避坑清单：这些位置最容易返工</h2>
+<table>
+  <tr><th>坑</th><th>怎么避</th></tr>
+  <tr><td>买错屏幕版本</td><td>视频只演示 A14 4G 屏；5G 版本用的是另一个部件，下单前先核对<span class="ts">00:04:48</span></td></tr>
+  <tr><td>撬后盖时扯断按键排线</td><td>按键下方有排线，撬棒只轻轻插入<span class="ts">00:00:49</span></td></tr>
+  <tr><td>螺丝混装</td><td>上部 10 颗、底部 8 颗分开存放；可用后盖当临时托盘<span class="ts">00:02:05</span></td></tr>
+  <tr><td>主板压到螺丝孔</td><td>放回主板时保持平放，确认位置再拧螺丝<span class="ts">00:07:31</span></td></tr>
+  <tr><td>扬声器针脚方向装反</td><td>让凸出的针脚朝下，与取出时同向<span class="ts">00:05:32</span></td></tr>
+  <tr><td>摄像头盖卡扣凸出</td><td>拧紧后若没贴合，用镊子尾部轻按到位<span class="ts">00:09:05</span></td></tr>
+  <tr><td>盖后盖时按钮卡住</td><td>先让按钮到位，再沿边缘逐段施压<span class="ts">00:09:21</span></td></tr>
+</table>
+
+<h2><span class="num">9</span>一页速查：照着这条线走</h2>
+<ul>
+  <li>关机 → 取 SIM 卡托 → 从卡托薄弱点撬后盖<span class="ts">00:00:11</span><span class="ts">00:00:22</span>。</li>
+  <li>按键处轻撬，避开下方排线；顶部角落从左侧松开排线<span class="ts">00:00:49</span><span class="ts">00:01:05</span>。</li>
+  <li>上部拧 10 颗十字螺丝；塑料镊子断开电池与按键排线<span class="ts">00:01:14</span><span class="ts">00:02:24</span>。</li>
+  <li>保留同轴电缆；底部再拧 8 颗十字螺丝，松开子板<span class="ts">00:02:38</span><span class="ts">00:02:50</span>。</li>
+  <li>松卡扣取电池；核对 4G / 5G 屏幕，别买错<span class="ts">00:04:12</span><span class="ts">00:04:48</span>。</li>
+  <li>扬声器与振动马达移到新屏，针脚朝下<span class="ts">00:05:08</span><span class="ts">00:05:32</span>。</li>
+  <li>反序装回：底部 → 主板 → 摄像头盖 → 后盖<span class="ts">00:06:02</span><span class="ts">00:09:14</span>。</li>
+  <li>开机见三星标志后再插 SIM 卡托<span class="ts">00:09:50</span><span class="ts">00:09:58</span>。</li>
+</ul>
+
+<footer>
+  <p><b>事实来源：</b>原视频字幕（zh-Hans 轨，280 段）与原片截帧；所有数字和动作均来自字幕，时间戳对应原片位置。</p>
+  <p><b>未采信：</b>视频描述页里的工具购买链接、配件推荐和宣传语没有出现在字幕里，未写入正文；字幕中「SM A14 5」的转写存在歧义，只按原文呈现，不据此推断具体型号；「视频里没说」的费用与工时不做估算。</p>
+  <p><b>配图说明：</b>9 张均为原片截帧，裁去画面中的手部后压缩至 1100px 宽，无博主出镜、无人脸、无水印或播放器界面；首图作封面。</p>
+</footer>
+
+</div>
+</body>
+</html>
