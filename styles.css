@@ -693,6 +693,22 @@ table.tb-price tr.loss td{background:#fdf6f4}
 .tb-bridge em{font-style:normal;color:#98a2b3}
 .tb-assume{margin:6px 0 0;font-size:10.5px;color:#98a2b3;line-height:1.6}
 
+/* 淘宝实时价带 */
+.tb-band{margin:7px 0 0;font-size:10.5px;color:#5b6580;line-height:1.6;font-variant-numeric:tabular-nums}
+.tb-band b{color:#b7791f}
+.tb-band em{display:block;font-style:normal;color:#98a2b3;margin-top:1px}
+.tb-order-mkt{margin:6px 0 0;padding:6px 8px;font-size:10.5px;color:#4a5568;line-height:1.65;background:#fbfaf5;border:1px dashed #e8e0c8;border-radius:7px;font-variant-numeric:tabular-nums}
+.tb-order-mkt b{color:#8a6d1f}
+.tb-order-mkt b.neg{color:#c0392b}
+.tb-order-mkt i{font-style:normal;color:#b7791f}
+.tb-order-mkt span{display:block;color:#98a2b3;font-size:10px;margin-top:1px}
+.tb-flags{margin:6px 0 0;display:flex;flex-wrap:wrap;gap:5px}
+.tb-flag{font-size:9.5px;padding:1px 6px;border-radius:4px;border:1px solid;line-height:1.6}
+.tb-flag.red{color:#c0392b;border-color:#f3d2cb;background:#fdf2ef}
+.tb-flag.warn{color:#b7791f;border-color:#f0e0bd;background:#fdf6e7}
+.tb-flag.gray{color:#7b87a3;border-color:#e4e9f2;background:#f7f9fc}
+.tb-sku-nums em.neg{color:#c0392b}
+
 /* ===== 规格级下单清单 ===== */
 .tb-skus{margin-top:11px;border:1px solid #e4e9f2;border-radius:11px;overflow:hidden;background:#fcfdff}
 .tb-skus-h{display:flex;align-items:baseline;gap:8px;padding:8px 11px;background:#f2f6ff;border-bottom:1px solid #e4e9f2}

@@ -15,6 +15,8 @@
  "assumptionsWhy": "快递 3.5 是义乌周边小件代发均价（1688 页面标『运费 ¥2–5 起』，按中位取 3.5）；包装 0.6 是气泡袋+贴纸；退款 6% 且退回件五成报废（春节装饰实测偏高）；平台 1.2%=淘宝 0.6% 软件服务费 + 0.6% 支付通道；广告 10% 按 GSV 计。",
  "assumptionsWarn": "这 6 个数是假设，不是抓来的。它们是『净利』与『保本价』唯一的软环节，真实值要等第一周广告与退款报表后替换。",
  "offersFetchedAt": "2026-11-27",
+ "bandsFetchedAt": "2026-11-28T00:11:31.613Z",
+ "bandsMethod": "按 N人付款 加权分位；剔除虚拟商品与异常价；价格为列表展示价（通常是最低价规格，可能含首单价）",
  "calendar": [
   {
    "date": "2026-12-12",
@@ -75,20 +77,25 @@
  ],
  "counts": {
   "total": 10,
-  "do": 3,
-  "watch": 6,
-  "drop": 1,
+  "do": 4,
+  "watch": 1,
+  "drop": 5,
   "inWindow": 0,
   "stale": 10,
   "pendingCost": 0,
-  "healthLoss": 0,
+  "healthLoss": 3,
   "healthThin": 0,
-  "healthOk": 10,
+  "healthOk": 7,
   "specPending": 0,
   "skuCount": 28,
   "supplierCount": 20,
   "specRows": 277,
-  "withLinks": 10
+  "withLinks": 10,
+  "priceHigh": 10,
+  "marketLoss": 9,
+  "bulkPrice": 1,
+  "banded": 10,
+  "bandSamples": 415
  },
  "items": [
   {
@@ -120,15 +127,18 @@
     }
    ],
    "market": {
-    "lo": 29.9,
-    "mid": 39.9,
-    "hi": 69.0,
-    "n": 0,
-    "top": {
-     "price": 39.9,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 14,
+    "p25": 3.87,
+    "p50": 4.93,
+    "p75": 5.67,
+    "p90": 5.98,
+    "kw": "新年装饰 套装 门 一套",
+    "level": "bundle",
+    "id": "door-set",
+    "fetchedAt": "2026-11-28T00:10:56.422Z",
+    "match": "bundle",
+    "tmall": 0.5,
+    "zhejiang": 0.429
    },
    "pricing": [
     {
@@ -145,9 +155,9 @@
     }
    ],
    "why": [
-    "同一个需求，两种说法供给差 350 倍：「新年装饰门贴」在线商品 19.7 万、蓝海值 10；「卧室门新年装饰」在线商品 559、蓝海值 4810。",
-    "天猫店做「新年装饰」这种大词标品，不会为「卧室门」单独做一套货——空间细分是大店的结构性盲区。",
-    "套装化把小件拼成 39.9 的客单，比单卖 15.9 的对联多赚 3 倍，且避开主词价格战。"
+    "同一个需求两种说法供给差 350 倍：「新年装饰门贴」在线商品 19.7 万、「卧室门新年装饰」559 个，前者是红海标品，后者是还没人专门做的场景词。",
+    "但这个场景词搜出来的全是 4–14 元的单件门贴/窗花，没有一家在做「门挂+对联+门贴」的成套——说明套装形态尚未被验证，不是空白格而是没人做成的格子。",
+    "要成立必须先解决运费：三家发三个包裹，12 元运费把 24 元的散买价顶到 42 元成本，套装溢价无从谈起。"
    ],
    "plays": [
     {
@@ -167,9 +177,9 @@
      "do": "有 20+ 付款人数后，再考虑 100 元/天测 3 天；止损线 300 元"
     }
    ],
-   "risk": "①门挂、对联、门贴来自三家，三笔运费 10.50 占全成本 24%，且任一家晚发就缺件；②门挂（茵晟）库存 9777、门贴（锦怡）库存 49977 都够，但春节前两周会同时抢货，要提前锁定；③59 元档净利只有 10.14，一次退款（退回件报废）直接归零三单。",
-   "verdict": "做",
-   "verdictWhy": "标准档 59 元：货价 28.18（门挂 12.88 + 对联 8.50 + 门贴 6.80）+ 三笔运费 10.50 + 包装 1.80 = 43.18，扣完平台/广告/退货净利 10.14；旗舰档 89 元（充电门挂 17.88）净利 30.88，率 35%。淘宝价带 29.9–69，59 元卡在中位偏上。利润不是问题，问题是三家发货不同步——缺一件就整单退，退一次吃掉两单净利。",
+   "risk": "①三笔运费 12 元占全成本 29%，是定价下不来的唯一原因；②59 元档净利 8.64，一次退货（退回件五成报废）吃掉 1.3 单利润；③买家会拿单件加总比价，24 元的散买价就是天花板；④茵晟门挂库存 9777、锦怡门贴 49977 够卖，但春节前两周会同时抢货。",
+   "verdict": "观望",
+   "verdictWhy": "三家三个包裹：货 28.18 + 快递 12（茵晟 4、晶磁 5、锦怡 3）+ 包装 1.8 = 41.98，卖 59 净利 8.64。问题在市场：淘宝「卧室门 新年装饰」同类单件中位 5.5–12.72，三件散买合计约 24 元，我们 59 是 2.4 倍；按 24 元卖每单亏 21。三笔运费占全成本 29%，是这个套装唯一的结构性硬伤——除非在 1688 找到一家同时卖门挂+对联+门贴，把三笔运费压成一笔（全成本降到约 34），49.9 才有 8 元净利。",
    "rank": 1,
    "kind": "bundle",
    "specCount": 3,
@@ -180,15 +190,86 @@
      "role": "主推",
      "price": 59.0,
      "goods": 28.18,
-     "express": 10.5,
+     "express": 12.0,
      "pack": 1.8,
      "packages": 3,
      "factories": 3,
-     "costAllIn": 40.48,
-     "net": 10.14,
-     "rate": 0.172,
-     "breakEven": 47.18,
-     "health": "ok",
+     "costAllIn": 41.98,
+     "net": 8.64,
+     "rate": 0.146,
+     "breakEven": 48.93,
+     "health": "thin",
+     "market": {
+      "n": 14,
+      "p25": 3.87,
+      "p50": 4.93,
+      "p75": 5.67,
+      "p90": 5.98,
+      "kw": "新年装饰 套装 门 一套",
+      "level": "bundle",
+      "id": "door-set",
+      "fetchedAt": "2026-11-28T00:10:56.422Z",
+      "match": "bundle",
+      "tmall": 0.5,
+      "zhejiang": 0.429
+     },
+     "pos": "top",
+     "netAtP50": -37.75,
+     "refPrice": 24.2,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "门挂",
+       "band": "door-hang",
+       "kw": "新年门挂 装饰 春节",
+       "p50": 5.98,
+       "n": 41,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "门贴",
+       "band": "door-room",
+       "kw": "卧室门 新年装饰",
+       "p50": 5.5,
+       "n": 40,
+       "qty": 1
+      }
+     ],
+     "premium": 2.44,
+     "netAtRef": -21.22,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市茵晟工艺品有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "石家庄锦怡商贸有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "门挂",
@@ -204,7 +285,9 @@
        "fee": 12.88,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-hang"
       },
       {
        "label": "对联",
@@ -220,7 +303,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       },
       {
        "label": "门贴",
@@ -236,7 +321,9 @@
        "fee": 6.8,
        "match": "exact",
        "shipFrom": "河南安阳",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-room"
       }
      ],
      "pending": [],
@@ -248,15 +335,86 @@
      "role": "拉客单",
      "price": 89.0,
      "goods": 33.18,
-     "express": 10.5,
+     "express": 12.0,
      "pack": 1.8,
      "packages": 3,
      "factories": 3,
-     "costAllIn": 45.48,
-     "net": 30.88,
-     "rate": 0.347,
-     "breakEven": 53.01,
+     "costAllIn": 46.98,
+     "net": 29.38,
+     "rate": 0.33,
+     "breakEven": 54.76,
      "health": "ok",
+     "market": {
+      "n": 14,
+      "p25": 3.87,
+      "p50": 4.93,
+      "p75": 5.67,
+      "p90": 5.98,
+      "kw": "新年装饰 套装 门 一套",
+      "level": "bundle",
+      "id": "door-set",
+      "fetchedAt": "2026-11-28T00:10:56.422Z",
+      "match": "bundle",
+      "tmall": 0.5,
+      "zhejiang": 0.429
+     },
+     "pos": "top",
+     "netAtP50": -42.75,
+     "refPrice": 24.2,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "门挂",
+       "band": "door-hang",
+       "kw": "新年门挂 装饰 春节",
+       "p50": 5.98,
+       "n": 41,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "门贴",
+       "band": "door-room",
+       "kw": "卧室门 新年装饰",
+       "p50": 5.5,
+       "n": 40,
+       "qty": 1
+      }
+     ],
+     "premium": 3.68,
+     "netAtRef": -26.22,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市茵晟工艺品有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "石家庄锦怡商贸有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "门挂",
@@ -272,7 +430,9 @@
        "fee": 17.88,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-hang"
       },
       {
        "label": "对联",
@@ -288,7 +448,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       },
       {
        "label": "门贴",
@@ -304,7 +466,9 @@
        "fee": 6.8,
        "match": "exact",
        "shipFrom": "河南安阳",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-room"
       }
      ],
      "pending": [],
@@ -316,15 +480,100 @@
      "role": "加购",
      "price": 99.0,
      "goods": 34.98,
-     "express": 14.0,
+     "express": 18.0,
      "pack": 2.4,
      "packages": 4,
      "factories": 4,
-     "costAllIn": 51.38,
-     "net": 33.56,
-     "rate": 0.339,
-     "breakEven": 59.88,
+     "costAllIn": 55.38,
+     "net": 29.56,
+     "rate": 0.299,
+     "breakEven": 64.55,
      "health": "ok",
+     "market": {
+      "n": 14,
+      "p25": 3.87,
+      "p50": 4.93,
+      "p75": 5.67,
+      "p90": 5.98,
+      "kw": "新年装饰 套装 门 一套",
+      "level": "bundle",
+      "id": "door-set",
+      "fetchedAt": "2026-11-28T00:10:56.422Z",
+      "match": "bundle",
+      "tmall": 0.5,
+      "zhejiang": 0.429
+     },
+     "pos": "top",
+     "netAtP50": -51.15,
+     "refPrice": 29.01,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "门挂",
+       "band": "door-hang",
+       "kw": "新年门挂 装饰 春节",
+       "p50": 5.98,
+       "n": 41,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "门贴",
+       "band": "door-room",
+       "kw": "卧室门 新年装饰",
+       "p50": 5.5,
+       "n": 40,
+       "qty": 1
+      },
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 3.41,
+     "netAtRef": -30.49,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市茵晟工艺品有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "石家庄锦怡商贸有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "freight": 6.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "门挂",
@@ -340,7 +589,9 @@
        "fee": 17.88,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-hang"
       },
       {
        "label": "对联",
@@ -356,7 +607,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       },
       {
        "label": "门贴",
@@ -372,7 +625,9 @@
        "fee": 6.8,
        "match": "exact",
        "shipFrom": "河南安阳",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "door-room"
       },
       {
        "label": "窗花",
@@ -388,12 +643,18 @@
        "fee": 1.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
      "note": "窗花是第四家，运费多一笔。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -1182,10 +1443,10 @@
    ],
    "supplierCount": 4,
    "specCountTotal": 48,
-   "costLo": 40.48,
-   "costHi": 51.38,
-   "netLo": 10.14,
-   "netHi": 33.56,
+   "costLo": 41.98,
+   "costHi": 55.38,
+   "netLo": 8.64,
+   "netHi": 29.56,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -1242,15 +1503,18 @@
     }
    ],
    "market": {
-    "lo": 9.9,
-    "mid": 16.5,
-    "hi": 29.9,
-    "n": 275,
-    "top": {
-     "price": 12.94,
-     "sold": "20万+",
-     "shop": "菲寻旗舰店（对联热卖榜第 1）"
-    }
+    "n": 47,
+    "p25": 8.8,
+    "p50": 12.72,
+    "p75": 16.9,
+    "p90": 20,
+    "kw": "磁吸对联",
+    "level": "single",
+    "id": "mag-base",
+    "fetchedAt": "2026-11-28T00:06:44.877Z",
+    "match": "single",
+    "tmall": 0.787,
+    "zhejiang": 0.574
    },
    "pricing": [
     {
@@ -1295,9 +1559,9 @@
      "do": "只在小尺寸和全背两个 SKU 上加预算，标准款不动"
     }
    ],
-   "risk": "①最低价那条（立珑天启 3.91）规格写的是「马年植绒对联」，2027 是羊年，款式对不上；②晶磁 6 个图案同价 8.50，但 ≥500 套才降到 8.20，首批几十套拿不到这个价；③主词猫系 80.96%、在售 36658，绝不能打主词。",
-   "verdict": "观望",
-   "verdictWhy": "三档净利 3.62–6.80，率 19–30%，比上一版（净利 1.04）好；但淘宝 275 个真实样本里中位是 16.5、下限 9.9，我们要卖 18.9–22.9 才有这个净利，等于用高于中位的价打一个 3.6 万在售的红海。除非拿到 ≤5 元的植绒对开（现在最低 8.50，且标题写的是马年旧款），否则不开。",
+   "risk": "①货源价比淘宝零售中位只低 4 元，运费一进来就倒挂；②18.9–22.9 靠图文差异撑溢价，但这个词前 20 名里 79% 是天猫旗舰店；③退货 6% 直接吃掉两单净利。",
+   "verdict": "放弃",
+   "verdictWhy": "1688 同款 8.5–9.5 元/副 + 5 元运费 + 0.6 包装 = 全成本 13.1–14.1。淘宝「磁吸对联」按销量排序前 40 名中位 12.72、p75 16.9，头部 13.76 卖了 20 万+ 件——他们的快递成本在 1.5–2 元。我们按市场价 12.72 卖每单亏 2.2，要 19.9 才赚 3.97，那已经是 p90 价位。一件代发在这个价格带没有生存空间。",
    "rank": 2,
    "kind": "single",
    "specCount": 3,
@@ -1317,6 +1581,49 @@
      "rate": 0.199,
      "breakEven": 15.27,
      "health": "ok",
+     "market": {
+      "n": 47,
+      "p25": 8.8,
+      "p50": 12.72,
+      "p75": 16.9,
+      "p90": 20,
+      "kw": "磁吸对联",
+      "level": "single",
+      "id": "mag-base",
+      "fetchedAt": "2026-11-28T00:06:44.877Z",
+      "match": "single",
+      "tmall": 0.787,
+      "zhejiang": 0.574
+     },
+     "pos": "high",
+     "netAtP50": -2.19,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 1.56,
+     "netAtRef": -2.19,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市封阳工艺品有限公司",
+       "freight": 3.5,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1332,7 +1639,9 @@
        "fee": 9.0,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -1344,15 +1653,58 @@
      "role": "主推",
      "price": 18.9,
      "goods": 8.5,
-     "express": 3.5,
+     "express": 5.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 12.6,
-     "net": 3.62,
-     "rate": 0.192,
-     "breakEven": 14.69,
-     "health": "ok",
+     "costAllIn": 14.1,
+     "net": 2.12,
+     "rate": 0.112,
+     "breakEven": 16.43,
+     "health": "thin",
+     "market": {
+      "n": 47,
+      "p25": 8.8,
+      "p50": 12.72,
+      "p75": 16.9,
+      "p90": 20,
+      "kw": "磁吸对联",
+      "level": "single",
+      "id": "mag-base",
+      "fetchedAt": "2026-11-28T00:06:44.877Z",
+      "match": "single",
+      "tmall": 0.787,
+      "zhejiang": 0.574
+     },
+     "pos": "high",
+     "netAtP50": -3.19,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 1.49,
+     "netAtRef": -3.19,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1368,7 +1720,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -1380,15 +1734,58 @@
      "role": "拉客单",
      "price": 22.9,
      "goods": 8.75,
-     "express": 3.5,
+     "express": 3.3,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 12.85,
-     "net": 6.8,
-     "rate": 0.297,
-     "breakEven": 14.98,
+     "costAllIn": 12.65,
+     "net": 7.0,
+     "rate": 0.306,
+     "breakEven": 14.74,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 15.81,
+      "p50": 17.15,
+      "p75": 17.15,
+      "p90": 19.9,
+      "kw": "磁吸对联 立体 双层",
+      "level": "single",
+      "id": "mag-3d",
+      "fetchedAt": "2026-11-28T00:06:55.430Z",
+      "match": "sku",
+      "tmall": 0.531,
+      "zhejiang": 0.49
+     },
+     "pos": "top",
+     "netAtP50": 2.06,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 1.8,
+     "netAtRef": -1.74,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "辛集市博纳森商贸经营部",
+       "freight": 3.3,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1404,12 +1801,18 @@
        "fee": 8.75,
        "match": "exact",
        "shipFrom": "河北石家庄",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
      "note": "可贴非铁门，是磁吸款最大的售后痛点补丁。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -1629,10 +2032,10 @@
    ],
    "supplierCount": 3,
    "specCountTotal": 9,
-   "costLo": 12.6,
-   "costHi": 13.1,
-   "netLo": 3.62,
-   "netHi": 6.8,
+   "costLo": 12.65,
+   "costHi": 14.1,
+   "netLo": 2.12,
+   "netHi": 7.0,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -1671,15 +2074,18 @@
     }
    ],
    "market": {
-    "lo": 19.9,
-    "mid": 25.9,
-    "hi": 45.0,
-    "n": 0,
-    "top": {
-     "price": 25.9,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 49,
+    "p25": 11.2,
+    "p50": 12.65,
+    "p75": 20.88,
+    "p90": 39.19,
+    "kw": "全磁吸对联 整面吸附",
+    "level": "single",
+    "id": "mag-full",
+    "fetchedAt": "2026-11-28T00:07:05.396Z",
+    "match": "single",
+    "tmall": 0.694,
+    "zhejiang": 0.51
    },
    "pricing": [
     {
@@ -1718,9 +2124,9 @@
      "do": "这是唯一值得加预算的款，毛利高、竞品少"
     }
    ],
-   "risk": "①「全背磁吸」必须验货：标题写全背、实物只有四角磁铁的货很多；②盒记 9 件套库存 3138 套，卖爆会断；③强磁款（喜福优嘉）15.80 是两条不同图案同价，别把两个图案算成一款。",
+   "risk": "①定价已到价带上沿，再涨没量；②8 件套净利 6.17，退一次掉 1.5 单；③全背磁吸成本随尺寸涨，13 元以上的大尺寸要重新核价。",
    "verdict": "做",
-   "verdictWhy": "9 件套 25.9 元：货价 8.50 + 运费 3.50 + 包装 0.60 = 12.60，净利 9.62（率 37%）；8 件套 19.9 元净利 6.17；强磁款 35.9 元净利 10.90。淘宝价带 19.9–45，25.9 正好中位。整面吸附是磁吸款唯一能讲的差异点，且盒记这条月销 600+ 套已验证。",
+   "verdictWhy": "8 件套货 7.3 + 运费 3.5 + 包装 0.6 = 10.9，卖 19.9 净利 6.17（31%）；9 件套货 9 元、同运费，卖 25.9 净利 9.62（37%）。淘宝「全磁吸对联」p25–p75 是 11.2–20.88，19.9 落在 p75 上沿、25.9 在 p90 附近，属「贵但还有人买」的档。能站住的前提是主图把「整面吸、不留胶」拍清楚——这个细分里 8 件套以上是稀缺的。",
    "rank": 3,
    "kind": "single",
    "specCount": 3,
@@ -1740,6 +2146,49 @@
      "rate": 0.371,
      "breakEven": 14.69,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 11.2,
+      "p50": 12.65,
+      "p75": 20.88,
+      "p90": 39.19,
+      "kw": "全磁吸对联 整面吸附",
+      "level": "single",
+      "id": "mag-full",
+      "fetchedAt": "2026-11-28T00:07:05.396Z",
+      "match": "single",
+      "tmall": 0.694,
+      "zhejiang": 0.51
+     },
+     "pos": "high",
+     "netAtP50": -1.75,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 2.04,
+     "netAtRef": -1.69,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "温州市盒记食品有限公司",
+       "freight": 3.5,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1755,7 +2204,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "广东深圳",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -1776,6 +2227,48 @@
      "rate": 0.31,
      "breakEven": 12.7,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 11.2,
+      "p50": 12.65,
+      "p75": 20.88,
+      "p90": 39.19,
+      "kw": "全磁吸对联 整面吸附",
+      "level": "single",
+      "id": "mag-full",
+      "fetchedAt": "2026-11-28T00:07:05.396Z",
+      "match": "single",
+      "tmall": 0.694,
+      "zhejiang": 0.51
+     },
+     "pos": "in",
+     "netAtP50": -0.05,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 1.56,
+     "netAtRef": 0.01,
+     "flags": [
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "温州市盒记食品有限公司",
+       "freight": 3.5,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1791,7 +2284,9 @@
        "fee": 6.8,
        "match": "exact",
        "shipFrom": "广东深圳",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -1803,15 +2298,58 @@
      "role": "拉客单",
      "price": 35.9,
      "goods": 15.8,
-     "express": 3.5,
+     "express": 0.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 19.9,
-     "net": 10.9,
-     "rate": 0.304,
-     "breakEven": 23.19,
+     "costAllIn": 16.4,
+     "net": 14.4,
+     "rate": 0.401,
+     "breakEven": 19.11,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 11.2,
+      "p50": 12.65,
+      "p75": 20.88,
+      "p90": 39.19,
+      "kw": "全磁吸对联 整面吸附",
+      "level": "single",
+      "id": "mag-full",
+      "fetchedAt": "2026-11-28T00:07:05.396Z",
+      "match": "single",
+      "tmall": 0.694,
+      "zhejiang": 0.51
+     },
+     "pos": "high",
+     "netAtP50": -5.55,
+     "refPrice": 12.72,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 2.82,
+     "netAtRef": -5.49,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "石家庄喜福优嘉工艺品有限公司",
+       "freight": 0.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "对联",
@@ -1827,12 +2365,18 @@
        "fee": 15.8,
        "match": "exact",
        "shipFrom": "河北石家庄",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
      "note": "喜福优嘉主打『磁力强不掉落』，比盒记贵 7 元，卖抗风。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -1955,9 +2499,9 @@
    "supplierCount": 2,
    "specCountTotal": 5,
    "costLo": 10.9,
-   "costHi": 19.9,
+   "costHi": 16.4,
    "netLo": 6.17,
-   "netHi": 10.9,
+   "netHi": 14.4,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -1996,15 +2540,18 @@
     }
    ],
    "market": {
-    "lo": 9.9,
-    "mid": 19.9,
-    "hi": 39.9,
-    "n": 0,
-    "top": {
-     "price": 19.9,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 49,
+    "p25": 4.88,
+    "p50": 4.98,
+    "p75": 5.88,
+    "p90": 7.74,
+    "kw": "新年冰箱贴 福字",
+    "level": "single",
+    "id": "kit-fridge",
+    "fetchedAt": "2026-11-28T00:07:15.559Z",
+    "match": "loose",
+    "tmall": 0.408,
+    "zhejiang": 0.51
    },
    "pricing": [
     {
@@ -2043,9 +2590,9 @@
      "do": "转化率高就加预算，这是少数投得起的款"
     }
    ],
-   "risk": "①三件同店（亚圣）库存各 400 多，四件套要一次拿 4 个图案，凑不齐就缺件；②冰箱贴属小件，运费占比高，9.9 包邮打法直接亏；③定位模糊，详情页必须写清「厨房/冰箱/玄关都能贴」。",
-   "verdict": "观望",
-   "verdictWhy": "三件套 39.9 元净利 12.73（率 32%），四件套 49.9 元净利 15.51——数字比上一版好看，因为三件同一家、只算一笔运费。但「厨房年味」在淘宝没有对应搜索词，实际只能按「冰箱贴」卖，而冰箱贴价带 9.9–39.9，我们的三件套要卖 39.9 正好在带顶。",
+   "risk": "①货源价高于淘宝零售价，同一款在 1688 找 3 元以内的才可能翻盘；②三件套保本 24.48，市场认的价在 15 上下；③冰箱贴是冲动型低价品，客单堆不上去。",
+   "verdict": "放弃",
+   "verdictWhy": "1688 冰箱贴 5.8 元/个，淘宝「新年冰箱贴」中位 4.98 元——我们的货源比零售价还贵，这是换货源问题不是定价问题。三件套全成本 21（三个 5.8 + 3 运费 + 1.8 包装），卖 39.9 净利 13.23 看着不错，但三个散买只要 14.94，溢价 2.67 倍没人接；能打的价格（19.9）必亏。",
    "rank": 4,
    "kind": "bundle",
    "specCount": 3,
@@ -2056,15 +2603,74 @@
      "role": "主推",
      "price": 39.9,
      "goods": 17.4,
-     "express": 3.5,
+     "express": 3.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 21.5,
-     "net": 12.73,
-     "rate": 0.319,
-     "breakEven": 25.06,
+     "costAllIn": 21.0,
+     "net": 13.23,
+     "rate": 0.332,
+     "breakEven": 24.48,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 4.88,
+      "p50": 4.98,
+      "p75": 5.88,
+      "p90": 7.74,
+      "kw": "新年冰箱贴 福字",
+      "level": "single",
+      "id": "kit-fridge",
+      "fetchedAt": "2026-11-28T00:07:15.559Z",
+      "match": "loose",
+      "tmall": 0.408,
+      "zhejiang": 0.51
+     },
+     "pos": "top",
+     "netAtP50": -16.73,
+     "refPrice": 14.94,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "冰箱贴 1",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "冰箱贴 2",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "冰箱贴 3",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      }
+     ],
+     "premium": 2.67,
+     "netAtRef": -8.18,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "温州市亚圣文创用品有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 3
+      }
+     ],
      "parts": [
       {
        "label": "冰箱贴 1",
@@ -2080,7 +2686,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       },
       {
        "label": "冰箱贴 2",
@@ -2096,7 +2704,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       },
       {
        "label": "冰箱贴 3",
@@ -2112,7 +2722,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       }
      ],
      "pending": [],
@@ -2124,15 +2736,82 @@
      "role": "拉客单",
      "price": 49.9,
      "goods": 23.2,
-     "express": 3.5,
+     "express": 3.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 27.3,
-     "net": 15.51,
-     "rate": 0.311,
-     "breakEven": 31.82,
+     "costAllIn": 26.8,
+     "net": 16.01,
+     "rate": 0.321,
+     "breakEven": 31.24,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 4.88,
+      "p50": 4.98,
+      "p75": 5.88,
+      "p90": 7.74,
+      "kw": "新年冰箱贴 福字",
+      "level": "single",
+      "id": "kit-fridge",
+      "fetchedAt": "2026-11-28T00:07:15.559Z",
+      "match": "loose",
+      "tmall": 0.408,
+      "zhejiang": 0.51
+     },
+     "pos": "top",
+     "netAtP50": -22.53,
+     "refPrice": 19.92,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "冰箱贴 1",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "冰箱贴 2",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "冰箱贴 3",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "冰箱贴 4",
+       "band": "kit-fridge",
+       "kw": "新年冰箱贴 福字",
+       "p50": 4.98,
+       "n": 49,
+       "qty": 1
+      }
+     ],
+     "premium": 2.51,
+     "netAtRef": -9.71,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "温州市亚圣文创用品有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 4
+      }
+     ],
      "parts": [
       {
        "label": "冰箱贴 1",
@@ -2148,7 +2827,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       },
       {
        "label": "冰箱贴 2",
@@ -2164,7 +2845,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       },
       {
        "label": "冰箱贴 3",
@@ -2180,7 +2863,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       },
       {
        "label": "冰箱贴 4",
@@ -2196,7 +2881,9 @@
        "fee": 5.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 4
+       "ladderLo": 4,
+       "bulk": false,
+       "band": "kit-fridge"
       }
      ],
      "pending": [],
@@ -2208,15 +2895,65 @@
      "role": "引流",
      "price": 22.9,
      "goods": 8.0,
-     "express": 3.5,
+     "express": 5.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 12.1,
-     "net": 7.55,
-     "rate": 0.33,
-     "breakEven": 14.1,
+     "costAllIn": 13.6,
+     "net": 6.05,
+     "rate": 0.264,
+     "breakEven": 15.85,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 4.88,
+      "p50": 4.98,
+      "p75": 5.88,
+      "p90": 7.74,
+      "kw": "新年冰箱贴 福字",
+      "level": "single",
+      "id": "kit-fridge",
+      "fetchedAt": "2026-11-28T00:07:15.559Z",
+      "match": "loose",
+      "tmall": 0.408,
+      "zhejiang": 0.51
+     },
+     "pos": "top",
+     "netAtP50": -9.33,
+     "refPrice": 20.52,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "弹簧贴 1",
+       "band": "kit-spring",
+       "kw": "弹簧 招财 摆件 新年",
+       "p50": 10.26,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "弹簧贴 2",
+       "band": "kit-spring",
+       "kw": "弹簧 招财 摆件 新年",
+       "p50": 10.26,
+       "n": 49,
+       "qty": 1
+      }
+     ],
+     "premium": 1.12,
+     "netAtRef": 4.01,
+     "flags": [
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "浦江县福曜工艺品厂",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 2
+      }
+     ],
      "parts": [
       {
        "label": "弹簧贴 1",
@@ -2232,7 +2969,9 @@
        "fee": 4.0,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": 2.8
+       "ladderLo": 2.8,
+       "bulk": false,
+       "band": "kit-spring"
       },
       {
        "label": "弹簧贴 2",
@@ -2248,12 +2987,18 @@
        "fee": 4.0,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": 2.8
+       "ladderLo": 2.8,
+       "bulk": false,
+       "band": "kit-spring"
       }
      ],
      "pending": [],
      "note": "会晃的弹簧款，拍视频更抓眼，成本 4 元/个。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -2427,10 +3172,10 @@
    ],
    "supplierCount": 2,
    "specCountTotal": 6,
-   "costLo": 12.1,
-   "costHi": 27.3,
-   "netLo": 7.55,
-   "netHi": 15.51,
+   "costLo": 13.6,
+   "costHi": 26.8,
+   "netLo": 6.05,
+   "netHi": 16.01,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -2469,15 +3214,18 @@
     }
    ],
    "market": {
-    "lo": 39.9,
-    "mid": 59.9,
-    "hi": 129.0,
-    "n": 0,
-    "top": {
-     "price": 59.9,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 35,
+    "p25": 6.78,
+    "p50": 14.51,
+    "p75": 19.32,
+    "p90": 54.79,
+    "kw": "客厅 新年装饰 套装 布置 大全",
+    "level": "bundle",
+    "id": "tv-set",
+    "fetchedAt": "2026-11-28T00:11:17.094Z",
+    "match": "bundle",
+    "tmall": 0.714,
+    "zhejiang": 0.257
    },
    "pricing": [
     {
@@ -2516,9 +3264,9 @@
      "do": "只在运费可控时追加"
     }
    ],
-   "risk": "①串旗（景成顺）与对联（晶磁）两家发货，两笔运费已算，但串旗是抛货，实际运费可能超 3.5；②拉花款 2.6 米加长件易折，包装要加硬纸筒，成本会涨 1–2 元；③「电视墙」是场景词，搜索量靠「新年装饰」带。",
+   "risk": "①拉花款成本 37.71（拉花 20.11）保本 43.95、溢价 3.9 倍，这个规格先别上，要么换更便宜的拉花货源；②串旗 3.8 元/条只够 6.5 米，24 米要拼 4 条，同店合并才不重复算运费；③整屋款 79 元要靠主图撑住「一整面墙」的预期。",
    "verdict": "做",
-   "verdictWhy": "基础款 49.9 元：串旗 3.80 + 对联 8.50 + 两笔运费 7.00 + 包装 1.20 = 20.50，净利 22.31（率 45%）；整屋款 79 元净利 34.88。淘宝价带 39.9–129，49.9 在带内偏低，是这套里最容易起量的价位。上一版判观望是因为运费没算清，现在两笔运费已计入。",
+   "verdictWhy": "基础款货 12.3 + 两笔运费 7 + 包装 1.2 = 22.5，卖 49.9 净利 20.31（41%），是 10 个品里净利率最高的。淘宝「客厅新年装饰套装」p25–p75 6.78–19.32 是单件拉花/对联的价，6.5 米串旗 + 1 米对联的整墙组合实际成交在 40–60。整屋款 24 米串旗卖 79 净利 34.38，是唯一「客单高、成本占比低」的规格。",
    "rank": 5,
    "kind": "bundle",
    "specCount": 3,
@@ -2529,15 +3277,64 @@
      "role": "主推",
      "price": 49.9,
      "goods": 12.3,
-     "express": 7.0,
+     "express": 9.0,
      "pack": 1.2,
      "packages": 2,
      "factories": 2,
-     "costAllIn": 20.5,
-     "net": 22.31,
-     "rate": 0.447,
-     "breakEven": 23.89,
+     "costAllIn": 22.5,
+     "net": 20.31,
+     "rate": 0.407,
+     "breakEven": 26.22,
      "health": "ok",
+     "market": {
+      "n": 35,
+      "p25": 6.78,
+      "p50": 14.51,
+      "p75": 19.32,
+      "p90": 54.79,
+      "kw": "客厅 新年装饰 套装 布置 大全",
+      "level": "bundle",
+      "id": "tv-set",
+      "fetchedAt": "2026-11-28T00:11:17.094Z",
+      "match": "bundle",
+      "tmall": 0.714,
+      "zhejiang": 0.257
+     },
+     "pos": "high",
+     "netAtP50": -10.05,
+     "refPrice": 12.72,
+     "refPartial": true,
+     "refSrc": "basket-partial",
+     "refParts": [
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 3.92,
+     "netAtRef": -11.59,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "石家庄景成顺工工艺品有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "串旗",
@@ -2553,7 +3350,9 @@
        "fee": 3.8,
        "match": "exact",
        "shipFrom": "河北石家庄",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": null
       },
       {
        "label": "对联",
@@ -2569,7 +3368,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -2581,15 +3382,72 @@
      "role": "拉客单",
      "price": 69.0,
      "goods": 28.61,
-     "express": 7.0,
+     "express": 7.9,
      "pack": 1.2,
      "packages": 2,
      "factories": 2,
-     "costAllIn": 36.81,
-     "net": 22.39,
-     "rate": 0.324,
-     "breakEven": 42.9,
+     "costAllIn": 37.71,
+     "net": 21.49,
+     "rate": 0.311,
+     "breakEven": 43.95,
      "health": "ok",
+     "market": {
+      "n": 35,
+      "p25": 6.78,
+      "p50": 14.51,
+      "p75": 19.32,
+      "p90": 54.79,
+      "kw": "客厅 新年装饰 套装 布置 大全",
+      "level": "bundle",
+      "id": "tv-set",
+      "fetchedAt": "2026-11-28T00:11:17.094Z",
+      "match": "bundle",
+      "tmall": 0.714,
+      "zhejiang": 0.257
+     },
+     "pos": "top",
+     "netAtP50": -25.26,
+     "refPrice": 17.62,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "拉花",
+       "band": "tv-flower",
+       "kw": "拉花 新年 装饰 长条",
+       "p50": 4.9,
+       "n": 49,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      }
+     ],
+     "premium": 3.92,
+     "netAtRef": -22.59,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "石家庄月盛工艺品有限公司",
+       "freight": 2.9,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "温州晶磁工艺品有限公司",
+       "freight": 5.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "拉花",
@@ -2605,7 +3463,9 @@
        "fee": 20.11,
        "match": "exact",
        "shipFrom": "河北石家庄",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "tv-flower"
       },
       {
        "label": "对联",
@@ -2621,7 +3481,9 @@
        "fee": 8.5,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": 8
+       "ladderLo": 8,
+       "bulk": false,
+       "band": "mag-base"
       }
      ],
      "pending": [],
@@ -2633,15 +3495,49 @@
      "role": "加购",
      "price": 79.0,
      "goods": 28.8,
-     "express": 3.5,
+     "express": 4.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 32.9,
-     "net": 34.88,
-     "rate": 0.442,
-     "breakEven": 38.34,
+     "costAllIn": 33.4,
+     "net": 34.38,
+     "rate": 0.435,
+     "breakEven": 38.93,
      "health": "ok",
+     "market": {
+      "n": 35,
+      "p25": 6.78,
+      "p50": 14.51,
+      "p75": 19.32,
+      "p90": 54.79,
+      "kw": "客厅 新年装饰 套装 布置 大全",
+      "level": "bundle",
+      "id": "tv-set",
+      "fetchedAt": "2026-11-28T00:11:17.094Z",
+      "match": "bundle",
+      "tmall": 0.714,
+      "zhejiang": 0.257
+     },
+     "pos": "top",
+     "netAtP50": -20.95,
+     "refPrice": 14.51,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 5.44,
+     "netAtRef": -20.95,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "石家庄景成顺工工艺品有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "串旗",
@@ -2657,12 +3553,18 @@
        "fee": 28.8,
        "match": "exact",
        "shipFrom": "河北石家庄",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": null
       }
      ],
      "pending": [],
      "note": "单家一件，运费一笔，适合客厅+阳台+院子一次挂完。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -3372,10 +4274,10 @@
    ],
    "supplierCount": 3,
    "specCountTotal": 44,
-   "costLo": 20.5,
-   "costHi": 36.81,
-   "netLo": 22.31,
-   "netHi": 34.88,
+   "costLo": 22.5,
+   "costHi": 37.71,
+   "netLo": 20.31,
+   "netHi": 34.38,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -3414,15 +4316,18 @@
     }
    ],
    "market": {
-    "lo": 2.9,
-    "mid": 5.8,
-    "hi": 12.9,
-    "n": 275,
-    "top": {
-     "price": 5.8,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 46,
+    "p25": 3.81,
+    "p50": 4.81,
+    "p75": 5.68,
+    "p90": 6.6,
+    "kw": "窗花 20张 新年 贴",
+    "level": "single",
+    "id": "cut-20",
+    "fetchedAt": "2026-11-28T00:08:09.458Z",
+    "match": "sku",
+    "tmall": 0.543,
+    "zhejiang": 0.565
    },
    "pricing": [
     {
@@ -3461,9 +4366,9 @@
      "do": "作为店铺引流款长期挂着，不指望它赚钱"
     }
    ],
-   "risk": "①泽威 1.80 是「每包 20 张」的价，别按张算错；②22 个图案同价，客户自选会造成拣货错误；③爱壹汇混装库存只有 1229 包，起量前必须问补货周期。",
-   "verdict": "观望",
-   "verdictWhy": "三档净利 1.74–3.05，率 20–28%：绝对额太低，一单赚不到 3 块，退一次赔两单。淘宝 275 个真实样本中位 5.8，我们卖 8.9–10.9 已高于中位。只能当凑单/加购件，不能当主推。",
+   "risk": "①单包运费 6 元（泽威报价）吃掉全部毛利；②20 张装是标品，对手 4.81 包邮；③只有和别的品合包（一单凑 2 件以上）才可能成立，但那已经不是这个品的生意。",
+   "verdict": "放弃",
+   "verdictWhy": "1688 1.8 元/包（20 张），淘宝「窗花 20 张」中位 4.81 元包邮。加 6 元运费 + 0.6 包装，全成本 8.4–8.8，卖 8.9 净利 −0.76。要有净利得卖 10 元以上，那是 p95。死因只有一个：6 元运费是 1.8 元货价的 3.3 倍。",
    "rank": 6,
    "kind": "single",
    "specCount": 3,
@@ -3474,15 +4379,59 @@
      "role": "主推",
      "price": 8.9,
      "goods": 1.8,
-     "express": 3.5,
+     "express": 6.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 5.9,
-     "net": 1.74,
-     "rate": 0.196,
-     "breakEven": 6.88,
-     "health": "ok",
+     "costAllIn": 8.4,
+     "net": -0.76,
+     "rate": -0.085,
+     "breakEven": 9.79,
+     "health": "loss",
+     "market": {
+      "n": 46,
+      "p25": 3.81,
+      "p50": 4.81,
+      "p75": 5.68,
+      "p90": 6.6,
+      "kw": "窗花 20张 新年 贴",
+      "level": "single",
+      "id": "cut-20",
+      "fetchedAt": "2026-11-28T00:08:09.458Z",
+      "match": "sku",
+      "tmall": 0.543,
+      "zhejiang": 0.565
+     },
+     "pos": "top",
+     "netAtP50": -4.27,
+     "refPrice": 4.81,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 1.85,
+     "netAtRef": -4.27,
+     "flags": [
+      "loss",
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "freight": 6.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "窗花",
@@ -3498,7 +4447,9 @@
        "fee": 1.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
@@ -3510,15 +4461,58 @@
      "role": "引流",
      "price": 9.9,
      "goods": 1.99,
-     "express": 3.5,
+     "express": 4.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 6.09,
-     "net": 2.4,
-     "rate": 0.242,
-     "breakEven": 7.1,
+     "costAllIn": 6.59,
+     "net": 1.9,
+     "rate": 0.192,
+     "breakEven": 7.68,
      "health": "ok",
+     "market": {
+      "n": 30,
+      "p25": 3.81,
+      "p50": 4.75,
+      "p75": 5.1,
+      "p90": 5.98,
+      "kw": "新年窗花 贴纸 装饰 春节",
+      "level": "single",
+      "id": "cut-paper",
+      "fetchedAt": "2026-11-28T00:07:58.659Z",
+      "match": "single",
+      "tmall": 0.5,
+      "zhejiang": 0.6
+     },
+     "pos": "top",
+     "netAtP50": -2.51,
+     "refPrice": 4.81,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 2.06,
+     "netAtRef": -2.46,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市爱壹汇电子商务有限公司",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "窗花",
@@ -3534,7 +4528,9 @@
        "fee": 1.99,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
@@ -3546,15 +4542,58 @@
      "role": "拉客单",
      "price": 10.9,
      "goods": 2.2,
-     "express": 3.5,
+     "express": 6.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 6.3,
-     "net": 3.05,
-     "rate": 0.28,
-     "breakEven": 7.34,
-     "health": "ok",
+     "costAllIn": 8.8,
+     "net": 0.55,
+     "rate": 0.05,
+     "breakEven": 10.26,
+     "health": "thin",
+     "market": {
+      "n": 30,
+      "p25": 3.81,
+      "p50": 4.75,
+      "p75": 5.1,
+      "p90": 5.98,
+      "kw": "新年窗花 贴纸 装饰 春节",
+      "level": "single",
+      "id": "cut-paper",
+      "fetchedAt": "2026-11-28T00:07:58.659Z",
+      "match": "single",
+      "tmall": 0.5,
+      "zhejiang": 0.6
+     },
+     "pos": "top",
+     "netAtP50": -4.72,
+     "refPrice": 4.81,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 2.27,
+     "netAtRef": -4.67,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "freight": 6.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "窗花",
@@ -3570,12 +4609,19 @@
        "fee": 2.2,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
      "note": "彩色比单色贵 0.4 元，卖价能高 2 元。"
     }
+   ],
+   "flags": [
+    "loss",
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -4299,11 +5345,11 @@
    ],
    "supplierCount": 2,
    "specCountTotal": 48,
-   "costLo": 5.9,
-   "costHi": 6.3,
-   "netLo": 1.74,
-   "netHi": 3.05,
-   "health": "ok",
+   "costLo": 6.59,
+   "costHi": 8.8,
+   "netLo": -0.76,
+   "netHi": 1.9,
+   "health": "loss",
    "pendingCost": false,
    "specPending": false,
    "daysToPeak": 70,
@@ -4341,15 +5387,18 @@
     }
    ],
    "market": {
-    "lo": 3.9,
-    "mid": 6.6,
-    "hi": 19.9,
-    "n": 275,
-    "top": {
-     "price": 6.6,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 40,
+    "p25": 6.66,
+    "p50": 16.69,
+    "p75": 21.37,
+    "p90": 59.5,
+    "kw": "新年 拍照道具 套装 全家福",
+    "level": "bundle",
+    "id": "photo-set",
+    "fetchedAt": "2026-11-28T00:11:28.119Z",
+    "match": "bundle",
+    "tmall": 0.425,
+    "zhejiang": 0.375
    },
    "pricing": [
     {
@@ -4388,9 +5437,9 @@
      "do": "元旦前一周是峰值，之后转春节档"
     }
    ],
-   "risk": "①道具来自两家，两笔运费；②这类道具退货率天然高，拍过、折过基本报废；③价带封顶 19.9，卖不上价，只能当赠品。",
+   "risk": "①运费 8 元占成本六成；②22 件套是引流款，12.9 已亏、涨价又没优势；③拍照道具是一次性需求，复购为零。",
    "verdict": "放弃",
-   "verdictWhy": "22 件套 12.9 元净利 2.97（率 23%）；24 件套+立牌 29.9 元净利 10.15，但淘宝真实价带 3.9–19.9（中位 6.6），29.9 卖不动。降到 19.9 净利只剩 1.5 左右——两家两个包裹、运费占全成本 46%，这是死结。",
+   "verdictWhy": "22 件套货 4 + 运费 8 + 包装 0.6 = 12.6，卖 12.9 净利 −1.53；淘宝「新年拍照道具套装」p50 16.69，按 16.69 卖才赚 1.72。24 件套成本 20.5 卖 29.9 净利 5.15，是这个品里唯一能看的。8 元运费（戈兮报价）占 22 件套全成本 63%。",
    "rank": 7,
    "kind": "bundle",
    "specCount": 3,
@@ -4401,15 +5450,58 @@
      "role": "引流",
      "price": 12.9,
      "goods": 4.0,
-     "express": 3.5,
+     "express": 8.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 8.1,
-     "net": 2.97,
-     "rate": 0.23,
-     "breakEven": 9.44,
-     "health": "ok",
+     "costAllIn": 12.6,
+     "net": -1.53,
+     "rate": -0.119,
+     "breakEven": 14.69,
+     "health": "loss",
+     "market": {
+      "n": 40,
+      "p25": 6.66,
+      "p50": 16.69,
+      "p75": 21.37,
+      "p90": 59.5,
+      "kw": "新年 拍照道具 套装 全家福",
+      "level": "bundle",
+      "id": "photo-set",
+      "fetchedAt": "2026-11-28T00:11:28.119Z",
+      "match": "bundle",
+      "tmall": 0.425,
+      "zhejiang": 0.375
+     },
+     "pos": "in",
+     "netAtP50": 1.72,
+     "refPrice": 13.8,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "道具包",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      }
+     ],
+     "premium": 0.93,
+     "netAtRef": -0.76,
+     "flags": [
+      "loss",
+      "market-loss"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市戈兮电子商务商行",
+       "freight": 8.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "道具包",
@@ -4425,7 +5517,9 @@
        "fee": 4.0,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       }
      ],
      "pending": [],
@@ -4437,15 +5531,71 @@
      "role": "主推",
      "price": 29.9,
      "goods": 7.3,
-     "express": 7.0,
+     "express": 12.0,
      "pack": 1.2,
      "packages": 2,
      "factories": 2,
-     "costAllIn": 15.5,
-     "net": 10.15,
-     "rate": 0.339,
-     "breakEven": 18.07,
+     "costAllIn": 20.5,
+     "net": 5.15,
+     "rate": 0.172,
+     "breakEven": 23.89,
      "health": "ok",
+     "market": {
+      "n": 40,
+      "p25": 6.66,
+      "p50": 16.69,
+      "p75": 21.37,
+      "p90": 59.5,
+      "kw": "新年 拍照道具 套装 全家福",
+      "level": "bundle",
+      "id": "photo-set",
+      "fetchedAt": "2026-11-28T00:11:28.119Z",
+      "match": "bundle",
+      "tmall": 0.425,
+      "zhejiang": 0.375
+     },
+     "pos": "high",
+     "netAtP50": -6.18,
+     "refPrice": 27.6,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "道具包",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      },
+      {
+       "label": "立牌",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      }
+     ],
+     "premium": 1.08,
+     "netAtRef": 3.18,
+     "flags": [
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市戈兮电子商务商行",
+       "freight": 8.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "义乌市快诺工艺品厂",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "道具包",
@@ -4461,7 +5611,9 @@
        "fee": 4.5,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       },
       {
        "label": "立牌",
@@ -4477,7 +5629,9 @@
        "fee": 2.8,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       }
      ],
      "pending": [],
@@ -4489,15 +5643,71 @@
      "role": "加购",
      "price": 12.9,
      "goods": 2.4,
-     "express": 3.5,
+     "express": 4.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 6.5,
-     "net": 4.57,
-     "rate": 0.354,
-     "breakEven": 7.58,
+     "costAllIn": 7.0,
+     "net": 4.07,
+     "rate": 0.316,
+     "breakEven": 8.16,
      "health": "ok",
+     "market": {
+      "n": 40,
+      "p25": 6.66,
+      "p50": 16.69,
+      "p75": 21.37,
+      "p90": 59.5,
+      "kw": "新年 拍照道具 套装 全家福",
+      "level": "bundle",
+      "id": "photo-set",
+      "fetchedAt": "2026-11-28T00:11:28.119Z",
+      "match": "bundle",
+      "tmall": 0.425,
+      "zhejiang": 0.375
+     },
+     "pos": "in",
+     "netAtP50": 7.32,
+     "refPrice": 13.8,
+     "refPartial": true,
+     "refSrc": "basket-partial",
+     "refParts": [
+      {
+       "label": "横幅",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      },
+      {
+       "label": "横幅",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      },
+      {
+       "label": "横幅",
+       "band": "photo-prop",
+       "kw": "新年拍照道具 手持牌",
+       "p50": 13.8,
+       "n": 20,
+       "qty": 1
+      }
+     ],
+     "premium": 0.93,
+     "netAtRef": 4.84,
+     "flags": [],
+     "shipPlan": [
+      {
+       "shop": "义乌市快诺工艺品厂",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 3
+      }
+     ],
      "parts": [
       {
        "label": "横幅",
@@ -4513,7 +5723,9 @@
        "fee": 0.8,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       },
       {
        "label": "横幅",
@@ -4529,7 +5741,9 @@
        "fee": 0.8,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       },
       {
        "label": "横幅",
@@ -4545,12 +5759,19 @@
        "fee": 0.8,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "photo-prop"
       }
      ],
      "pending": [],
      "note": "同店三件一笔运费，0.8 元/条，是引流 SKU。"
     }
+   ],
+   "flags": [
+    "loss",
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -5064,11 +6285,11 @@
    ],
    "supplierCount": 2,
    "specCountTotal": 33,
-   "costLo": 6.5,
-   "costHi": 15.5,
-   "netLo": 2.97,
-   "netHi": 10.15,
-   "health": "ok",
+   "costLo": 7.0,
+   "costHi": 20.5,
+   "netLo": -1.53,
+   "netHi": 5.15,
+   "health": "loss",
    "pendingCost": false,
    "specPending": false,
    "daysToPeak": 34,
@@ -5106,15 +6327,18 @@
     }
    ],
    "market": {
-    "lo": 14.8,
-    "mid": 27.2,
-    "hi": 59.9,
-    "n": 275,
-    "top": {
-     "price": 29.0,
-     "sold": "1万+",
-     "shop": "待验证"
-    }
+    "n": 46,
+    "p25": 15.25,
+    "p50": 25.5,
+    "p75": 39,
+    "p90": 69.5,
+    "kw": "桌面圣诞树 60cm",
+    "level": "single",
+    "id": "tree-desk",
+    "fetchedAt": "2026-11-28T00:08:28.678Z",
+    "match": "single",
+    "tmall": 0.522,
+    "zhejiang": 0.826
    },
    "pricing": [
     {
@@ -5152,9 +6376,9 @@
      "do": "不再追加"
     }
    ],
-   "risk": "①窗口不到 16 天，压货即死；②树是抛货，60cm 实际运费大概率超 3.5；③初兴 14 个规格同店但库存分散，金色 9878、黑色只有 87，别按全色备货。",
-   "verdict": "观望",
-   "verdictWhy": "60cm 绿树 26.9 元净利 12.18（率 45%），金树 29.9 元净利 12.05，淘宝中位 27.2——价格能对上，成本也不再虚高。问题只剩时间：12/1 开窗、12/20 撤，物流提前 3 天，实际销售期不到 16 天，首批只敢备 50 棵试水。",
+   "risk": "①只有初兴一家供货，断货即断链；②豪华套餐 59.9 成本 36.6、溢价 2.35 倍，市场接不接受没验证；③圣诞窗口只到 12 月中，过季清零。",
+   "verdict": "做",
+   "verdictWhy": "60cm 绿树货 10.3 + 运费 3.5 + 包装 0.6 = 14.4，卖 26.9 净利 8.68（32%）。淘宝「桌面圣诞树 60cm」p25–p75 15.25–39，我们 26.9 卡在中位 25.5 上，溢价只有 1.05 倍——10 个品里唯一「价格贴着市场、净利还健康」的。",
    "rank": 8,
    "kind": "single",
    "specCount": 3,
@@ -5165,15 +6389,46 @@
      "role": "引流",
      "price": 26.9,
      "goods": 6.8,
-     "express": 3.5,
+     "express": 7.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 10.9,
-     "net": 12.18,
-     "rate": 0.453,
-     "breakEven": 12.7,
+     "costAllIn": 14.4,
+     "net": 8.68,
+     "rate": 0.323,
+     "breakEven": 16.78,
      "health": "ok",
+     "market": {
+      "n": 46,
+      "p25": 15.25,
+      "p50": 25.5,
+      "p75": 39,
+      "p90": 69.5,
+      "kw": "桌面圣诞树 60cm",
+      "level": "single",
+      "id": "tree-desk",
+      "fetchedAt": "2026-11-28T00:08:28.678Z",
+      "match": "single",
+      "tmall": 0.522,
+      "zhejiang": 0.826
+     },
+     "pos": "in",
+     "netAtP50": 7.48,
+     "refPrice": 25.5,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 1.05,
+     "netAtRef": 7.48,
+     "flags": [],
+     "shipPlan": [
+      {
+       "shop": "义乌市初兴工艺品有限公司",
+       "freight": 7.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "圣诞树",
@@ -5189,7 +6444,9 @@
        "fee": 6.8,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": null
       }
      ],
      "pending": [],
@@ -5201,15 +6458,46 @@
      "role": "主推",
      "price": 29.9,
      "goods": 9.5,
-     "express": 3.5,
+     "express": 7.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 13.6,
-     "net": 12.05,
-     "rate": 0.403,
-     "breakEven": 15.85,
+     "costAllIn": 17.1,
+     "net": 8.55,
+     "rate": 0.286,
+     "breakEven": 19.93,
      "health": "ok",
+     "market": {
+      "n": 46,
+      "p25": 15.25,
+      "p50": 25.5,
+      "p75": 39,
+      "p90": 69.5,
+      "kw": "桌面圣诞树 60cm",
+      "level": "single",
+      "id": "tree-desk",
+      "fetchedAt": "2026-11-28T00:08:28.678Z",
+      "match": "single",
+      "tmall": 0.522,
+      "zhejiang": 0.826
+     },
+     "pos": "in",
+     "netAtP50": 4.78,
+     "refPrice": 25.5,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 1.17,
+     "netAtRef": 4.78,
+     "flags": [],
+     "shipPlan": [
+      {
+       "shop": "义乌市初兴工艺品有限公司",
+       "freight": 7.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "圣诞树",
@@ -5225,7 +6513,9 @@
        "fee": 9.5,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": null
       }
      ],
      "pending": [],
@@ -5237,15 +6527,49 @@
      "role": "拉客单",
      "price": 59.9,
      "goods": 29.0,
-     "express": 3.5,
+     "express": 7.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 33.1,
-     "net": 18.29,
-     "rate": 0.305,
-     "breakEven": 38.58,
+     "costAllIn": 36.6,
+     "net": 14.79,
+     "rate": 0.247,
+     "breakEven": 42.66,
      "health": "ok",
+     "market": {
+      "n": 49,
+      "p25": 5.98,
+      "p50": 25.5,
+      "p75": 48,
+      "p90": 79,
+      "kw": "圣诞树 带灯 60cm 套餐",
+      "level": "single",
+      "id": "tree-light",
+      "fetchedAt": "2026-11-28T00:08:39.118Z",
+      "match": "sku",
+      "tmall": 0.592,
+      "zhejiang": 0.857
+     },
+     "pos": "high",
+     "netAtP50": -14.72,
+     "refPrice": 25.5,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 2.35,
+     "netAtRef": -14.72,
+     "flags": [
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "义乌市初兴工艺品有限公司",
+       "freight": 7.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "圣诞树套餐",
@@ -5261,12 +6585,18 @@
        "fee": 29.0,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": null
       }
      ],
      "pending": [],
      "note": "带灯套餐 29 元，是全店最贵规格，利润也最厚。"
     }
+   ],
+   "flags": [
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -5491,10 +6821,10 @@
    ],
    "supplierCount": 1,
    "specCountTotal": 14,
-   "costLo": 10.9,
-   "costHi": 33.1,
-   "netLo": 12.05,
-   "netHi": 18.29,
+   "costLo": 14.4,
+   "costHi": 36.6,
+   "netLo": 8.55,
+   "netHi": 14.79,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -5533,15 +6863,18 @@
     }
    ],
    "market": {
-    "lo": 25.0,
-    "mid": 32.0,
-    "hi": 40.0,
-    "n": 275,
-    "top": {
-     "price": 32.0,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 47,
+    "p25": 26.82,
+    "p50": 27.18,
+    "p75": 33.91,
+    "p90": 38.96,
+    "kw": "福桶 新年 装饰 桶",
+    "level": "single",
+    "id": "fudai-bucket",
+    "fetchedAt": "2026-11-28T00:09:00.379Z",
+    "match": "loose",
+    "tmall": 0.234,
+    "zhejiang": 0.617
    },
    "pricing": [
     {
@@ -5574,9 +6907,9 @@
      "do": "—"
     }
    ],
-   "risk": "①三家三个包裹，运费占全成本 44%，是这套最大的坑；②绒布桶库存只剩 211，只够打样；③桶 + 对联 + 窗花要塞得进 12cm 桶，尺寸不匹配就得换桶，换桶等于重算成本。",
-   "verdict": "观望",
-   "verdictWhy": "小号 39.9 元：桶 2.40 + 1.0m 对联 7.62 + 窗花 1.80 + 三笔运费 10.50 + 包装 1.80 = 24.12，净利 10.11；大号 49.9 元净利 13.43。淘宝真实中位 32，39.9 偏高但在带内。上一版判「不做」是因为成本按 28.40 算，实际自组只要 24.12。",
+   "risk": "①四家发货、运费 10.5 占全成本 42%，任一家晚发就缺件；②绒布桶库存仅 211（金东创惠），春节前必抢；③礼盒怕压，0.6 元包装费可能不够，要加硬纸板。",
+   "verdict": "做",
+   "verdictWhy": "小号散买合计 44.71（桶 27.18 + 对联 12.72 + 窗花 4.81），整盒卖 39.9 比散买便宜 11%，净利 9.31（23%）；大号 49.9 净利 11.63。淘宝「福桶」p25–p75 26.82–33.91 是散件价，故宫淘宝 75.7 元的福筒卖了 2 万+ 件，说明礼盒形态有溢价空间。这是唯一「套装比散买便宜」的品。",
    "rank": 9,
    "kind": "bundle",
    "specCount": 2,
@@ -5587,15 +6920,85 @@
      "role": "主推",
      "price": 39.9,
      "goods": 11.82,
-     "express": 10.5,
+     "express": 11.3,
      "pack": 1.8,
      "packages": 3,
      "factories": 3,
-     "costAllIn": 24.12,
-     "net": 10.11,
-     "rate": 0.253,
-     "breakEven": 28.11,
+     "costAllIn": 24.92,
+     "net": 9.31,
+     "rate": 0.233,
+     "breakEven": 29.04,
      "health": "ok",
+     "market": {
+      "n": 47,
+      "p25": 26.82,
+      "p50": 27.18,
+      "p75": 33.91,
+      "p90": 38.96,
+      "kw": "福桶 新年 装饰 桶",
+      "level": "single",
+      "id": "fudai-bucket",
+      "fetchedAt": "2026-11-28T00:09:00.379Z",
+      "match": "loose",
+      "tmall": 0.234,
+      "zhejiang": 0.617
+     },
+     "pos": "top",
+     "netAtP50": -1.6,
+     "refPrice": 44.71,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "福桶",
+       "band": "fudai-bucket",
+       "kw": "福桶 新年 装饰 桶",
+       "p50": 27.18,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 0.89,
+     "netAtRef": 13.44,
+     "flags": [
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "东阳市花简包装有限公司",
+       "freight": 3.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "漳州年年好电子商务有限公司",
+       "freight": 2.3,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "freight": 6.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "福桶",
@@ -5611,7 +7014,9 @@
        "fee": 2.4,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": 2.2
+       "ladderLo": 2.2,
+       "bulk": false,
+       "band": "fudai-bucket"
       },
       {
        "label": "对联",
@@ -5627,7 +7032,9 @@
        "fee": 7.62,
        "match": "exact",
        "shipFrom": "福建漳州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       },
       {
        "label": "窗花",
@@ -5643,7 +7050,9 @@
        "fee": 1.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
@@ -5655,15 +7064,85 @@
      "role": "拉客单",
      "price": 49.9,
      "goods": 17.08,
-     "express": 10.5,
+     "express": 12.3,
      "pack": 1.8,
      "packages": 3,
      "factories": 3,
-     "costAllIn": 29.38,
-     "net": 13.43,
-     "rate": 0.269,
-     "breakEven": 34.24,
+     "costAllIn": 31.18,
+     "net": 11.63,
+     "rate": 0.233,
+     "breakEven": 36.34,
      "health": "ok",
+     "market": {
+      "n": 47,
+      "p25": 26.82,
+      "p50": 27.18,
+      "p75": 33.91,
+      "p90": 38.96,
+      "kw": "福桶 新年 装饰 桶",
+      "level": "single",
+      "id": "fudai-bucket",
+      "fetchedAt": "2026-11-28T00:09:00.379Z",
+      "match": "loose",
+      "tmall": 0.234,
+      "zhejiang": 0.617
+     },
+     "pos": "top",
+     "netAtP50": -7.86,
+     "refPrice": 44.71,
+     "refPartial": false,
+     "refSrc": "basket",
+     "refParts": [
+      {
+       "label": "福桶",
+       "band": "fudai-bucket",
+       "kw": "福桶 新年 装饰 桶",
+       "p50": 27.18,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "对联",
+       "band": "mag-base",
+       "kw": "磁吸对联",
+       "p50": 12.72,
+       "n": 47,
+       "qty": 1
+      },
+      {
+       "label": "窗花",
+       "band": "cut-20",
+       "kw": "窗花 20张 新年 贴",
+       "p50": 4.81,
+       "n": 46,
+       "qty": 1
+      }
+     ],
+     "premium": 1.12,
+     "netAtRef": 7.18,
+     "flags": [
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "金华市金东区创惠塑料制品厂",
+       "freight": 4.0,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "漳州年年好电子商务有限公司",
+       "freight": 2.3,
+       "src": "1688",
+       "n": 1
+      },
+      {
+       "shop": "苍南县龙港泽威纸塑制品厂",
+       "freight": 6.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "福桶",
@@ -5679,7 +7158,9 @@
        "fee": 2.1,
        "match": "exact",
        "shipFrom": "浙江金华",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "fudai-bucket"
       },
       {
        "label": "对联",
@@ -5695,7 +7176,9 @@
        "fee": 12.78,
        "match": "exact",
        "shipFrom": "福建漳州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "mag-base"
       },
       {
        "label": "窗花",
@@ -5711,12 +7194,17 @@
        "fee": 2.2,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": false,
+       "band": "cut-20"
       }
      ],
      "pending": [],
      "note": "绒布桶库存只剩 211，只够打样，放量前必须先问产能。"
     }
+   ],
+   "flags": [
+    "price-high"
    ],
    "suppliers": [
     {
@@ -6771,10 +8259,10 @@
    ],
    "supplierCount": 4,
    "specCountTotal": 67,
-   "costLo": 24.12,
-   "costHi": 29.38,
-   "netLo": 10.11,
-   "netHi": 13.43,
+   "costLo": 24.92,
+   "costHi": 31.18,
+   "netLo": 9.31,
+   "netHi": 11.63,
    "health": "ok",
    "pendingCost": false,
    "specPending": false,
@@ -6813,15 +8301,18 @@
     }
    ],
    "market": {
-    "lo": 2.9,
-    "mid": 5.8,
-    "hi": 12.9,
-    "n": 275,
-    "top": {
-     "price": 5.8,
-     "sold": "—",
-     "shop": "待验证"
-    }
+    "n": 42,
+    "p25": 3.81,
+    "p50": 4.75,
+    "p75": 4.88,
+    "p90": 8.5,
+    "kw": "静电窗花 新年",
+    "level": "single",
+    "id": "static",
+    "fetchedAt": "2026-11-28T00:09:10.736Z",
+    "match": "single",
+    "tmall": 0.643,
+    "zhejiang": 0.571
    },
    "pricing": [
     {
@@ -6853,9 +8344,9 @@
      "do": "—"
     }
    ],
-   "risk": "①文泉按张报价，20 张不同图案必须客服备注，否则容易发成同款 20 张；②单价低，一单赚 3.6 元，只能做加购；③与「剪纸窗花 20 张装」高度重叠，别同时上两个链接。",
-   "verdict": "观望",
-   "verdictWhy": "25cm 20 张 9.9 元：货 0.80（0.04/张 × 20）+ 运费 3.50 + 包装 0.60 = 4.90，净利 3.59（率 36%）；30cm 11.9 元净利 4.91。上一版判「不做」是因为把 0.04 当成了每包价，实际是按张。",
+   "risk": "①13 元运费说明这家不做小单代发；②0.04/张是批量价，起订量页面没写清；③同类 4.75 包邮，我们没有空间。",
+   "verdict": "放弃",
+   "verdictWhy": "1688 文泉 0.04 元/张（按张报价，不是一件代发价），20 张 0.8 元，但这家运费报 13 元 → 全成本 14.4，卖 9.9 净利 −5.91。淘宝「静电窗花」中位 4.75 包邮。这个品同时踩两个坑：货源是批量报价、运费 13 元。",
    "rank": 10,
    "kind": "single",
    "specCount": 2,
@@ -6866,15 +8357,51 @@
      "role": "主推",
      "price": 9.9,
      "goods": 0.8,
-     "express": 3.5,
+     "express": 13.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 4.9,
-     "net": 3.59,
-     "rate": 0.363,
-     "breakEven": 5.71,
-     "health": "ok",
+     "costAllIn": 14.4,
+     "net": -5.91,
+     "rate": -0.597,
+     "breakEven": 16.78,
+     "health": "loss",
+     "market": {
+      "n": 42,
+      "p25": 3.81,
+      "p50": 4.75,
+      "p75": 4.88,
+      "p90": 8.5,
+      "kw": "静电窗花 新年",
+      "level": "single",
+      "id": "static",
+      "fetchedAt": "2026-11-28T00:09:10.736Z",
+      "match": "single",
+      "tmall": 0.643,
+      "zhejiang": 0.571
+     },
+     "pos": "top",
+     "netAtP50": -10.32,
+     "refPrice": 4.75,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 2.08,
+     "netAtRef": -10.32,
+     "flags": [
+      "bulk-price",
+      "loss",
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "龙港文泉包装有限公司",
+       "freight": 13.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "静电贴",
@@ -6890,7 +8417,9 @@
        "fee": 0.8,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": true,
+       "band": null
       }
      ],
      "pending": [],
@@ -6902,15 +8431,51 @@
      "role": "拉客单",
      "price": 11.9,
      "goods": 1.2,
-     "express": 3.5,
+     "express": 13.0,
      "pack": 0.6,
      "packages": 1,
      "factories": 1,
-     "costAllIn": 5.3,
-     "net": 4.91,
-     "rate": 0.413,
-     "breakEven": 6.18,
-     "health": "ok",
+     "costAllIn": 14.8,
+     "net": -4.59,
+     "rate": -0.386,
+     "breakEven": 17.25,
+     "health": "loss",
+     "market": {
+      "n": 47,
+      "p25": 3.8,
+      "p50": 4.81,
+      "p75": 6.2,
+      "p90": 7.74,
+      "kw": "静电贴 窗花 30cm",
+      "level": "single",
+      "id": "static-30",
+      "fetchedAt": "2026-11-28T00:09:21.729Z",
+      "match": "sku",
+      "tmall": 0.447,
+      "zhejiang": 0.234
+     },
+     "pos": "top",
+     "netAtP50": -10.67,
+     "refPrice": 4.81,
+     "refPartial": false,
+     "refSrc": "product",
+     "refParts": [],
+     "premium": 2.47,
+     "netAtRef": -10.67,
+     "flags": [
+      "bulk-price",
+      "loss",
+      "market-loss",
+      "price-high"
+     ],
+     "shipPlan": [
+      {
+       "shop": "龙港文泉包装有限公司",
+       "freight": 13.0,
+       "src": "1688",
+       "n": 1
+      }
+     ],
      "parts": [
       {
        "label": "静电贴",
@@ -6926,12 +8491,20 @@
        "fee": 1.2,
        "match": "exact",
        "shipFrom": "浙江温州",
-       "ladderLo": null
+       "ladderLo": null,
+       "bulk": true,
+       "band": null
       }
      ],
      "pending": [],
      "note": "同样按张 0.06，20 张 = 1.20。"
     }
+   ],
+   "flags": [
+    "bulk-price",
+    "loss",
+    "market-loss",
+    "price-high"
    ],
    "suppliers": [
     {
@@ -7002,11 +8575,11 @@
    ],
    "supplierCount": 1,
    "specCountTotal": 3,
-   "costLo": 4.9,
-   "costHi": 5.3,
-   "netLo": 3.59,
-   "netHi": 4.91,
-   "health": "ok",
+   "costLo": 14.4,
+   "costHi": 14.8,
+   "netLo": -5.91,
+   "netHi": -4.59,
+   "health": "loss",
    "pendingCost": false,
    "specPending": false,
    "daysToPeak": 70,

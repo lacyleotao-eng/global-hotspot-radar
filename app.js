@@ -1204,10 +1204,35 @@
     var sum = s.costAllIn == null
       ? '<p class="tb-order-sum bad">成本没算：' + esc((s.pending || []).join('；') || '规格未对上') + '</p>'
       : '<p class="tb-order-sum">货价 <b>' + tbMoney(s.goods) + '</b> + 快递 <b>' + tbMoney(s.express) + '</b>（' +
-        (s.factories || 1) + ' 家 = ' + (s.factories || 1) + ' 笔运费）+ 包装 <b>' + tbMoney(s.pack) + '</b> = 全成本 <b>' + tbMoney(s.costAllIn) + '</b>' +
+        (s.factories || 1) + ' 家店 = ' + (s.packages || 1) + ' 个包裹）+ 包装 <b>' + tbMoney(s.pack) + '</b> = 全成本 <b>' + tbMoney(s.costAllIn) + '</b>' +
         '　→ 扣平台/广告/退货后净利 <b class="' + (s.net < 0 ? 'neg' : '') + '">' + tbMoney(s.net) + '</b>' +
         (s.breakEven != null ? '（保本售价 ' + tbMoney(s.breakEven) + '）' : '') + '</p>' +
         (s.note ? '<p class="tb-order-note">' + esc(s.note) + '</p>' : '');
+
+    // 淘宝同类参照：单件看自己词的中位；组合看各组件散买相加
+    var mk = s.market || {};
+    var posName = { below: '低于同类', in: '落在价带内', high: '高于价带', top: '最高一档' }[s.pos] || '';
+    var mkLine = '';
+    if (s.refPrice != null) {
+      mkLine = '<p class="tb-order-mkt">淘宝同类参照价 <b>' + tbMoney(s.refPrice) + '</b>' +
+        (s.refPartial ? '<i>（部分组件没找到同类词，只是下限）</i>' : '') +
+        ' · 我们是它的 <b>' + s.premium + '×</b>' +
+        (s.netAtRef != null ? ' · 按参照价卖净利 <b class="' + (s.netAtRef < 0 ? 'neg' : '') + '">' + tbMoney(s.netAtRef) + '</b>' : '') +
+        (mk.p50 ? '<span>同类中位 ' + tbMoney(mk.p50) + '（n=' + mk.n + '，' + esc(mk.kw || '') + '）</span>' : '') +
+        '</p>';
+    }
+    var flagMap = {
+      'loss': ['这个价卖就亏', 'red'],
+      'market-loss': ['按市场价卖必亏', 'red'],
+      'price-high': ['定价高于同类', 'warn'],
+      'bulk-price': ['含批量报价，成本可能低估', 'warn'],
+      'freight-assumed': ['运费用了假设值', 'gray'],
+      'cost-pending': ['规格待核', 'warn'],
+    };
+    var chips = (s.flags || []).map(function (f) {
+      var v = flagMap[f];
+      return v ? '<span class="tb-flag ' + v[1] + '">' + v[0] + '</span>' : '';
+    }).join('');
 
     return '<details class="tb-sku"' + open + '>' +
       '<summary>' +
@@ -1216,13 +1241,16 @@
           '<b>' + (s.price != null ? tbMoney(s.price) : '—') + '</b>' +
           '<em>成本 ' + (s.costAllIn != null ? tbMoney(s.costAllIn) : '—') + '</em>' +
           '<em>净利 ' + (s.net != null ? tbMoney(s.net) : '—') + '</em>' +
+          (s.premium != null ? '<em class="' + (s.premium > 1.3 ? 'neg' : '') + '">同类 ' + s.premium + '×</em>' : '') +
         '</span>' +
         '<span class="tb-tag ' + h[1] + ' tb-sku-tag">' + h[0] + '</span>' +
       '</summary>' +
       '<div class="tb-sku-body">' +
         '<div class="tb-sku-buyh"><b>下单清单</b><span>' + (s.parts || []).length + ' 个组件 · ' +
-          (s.factories || 1) + ' 家厂 · ' + (s.packages || 1) + ' 个包裹</span></div>' +
-        '<ol class="tb-order">' + rows + '</ol>' + sum +
+          (s.factories || 1) + ' 家店 · ' + (s.packages || 1) + ' 个包裹' +
+          (posName ? ' · ' + posName : '') + '</span></div>' +
+        '<ol class="tb-order">' + rows + '</ol>' + sum + mkLine +
+        (chips ? '<p class="tb-flags">' + chips + '</p>' : '') +
       '</div></details>';
   }
 
@@ -1263,6 +1291,8 @@
     badges.push('<span class="tb-tag ' + hh[1] + '">' + hh[0] + '</span>');
     badges.push('<span class="tb-tag gray">' + kindName + ' · ' + (x.specCount || 0) + ' 规格</span>');
     if (x.specPending) badges.push('<span class="tb-tag gray">规格待核</span>');
+    if ((x.flags || []).indexOf('bulk-price') >= 0) badges.push('<span class="tb-tag warn">含批量报价</span>');
+    if ((x.flags || []).indexOf('market-loss') >= 0) badges.push('<span class="tb-tag red">按市场价卖必亏</span>');
     if (x.inWindow) badges.push('<span class="tb-tag live">窗口内</span>');
     if (x.windowPassed) badges.push('<span class="tb-tag red">窗口已过</span>');
     if (sups.length) badges.push('<span class="tb-tag link">' + sups.length + ' 家供应商 · ' + (x.specCountTotal || 0) + ' 个可选规格</span>');
@@ -1274,6 +1304,9 @@
 
     var numCost = (x.costLo != null && x.costHi != null) ? tbRange1(x.costLo, x.costHi) : '未核';
     var numNet = (x.netLo != null && x.netHi != null) ? tbRange1(x.netLo, x.netHi) : '—';
+    var head = skus.filter(function (s) { return s.role === '主推'; })[0] || skus[0] || {};
+    var refV = head.refPrice != null ? head.refPrice : (m.p50 != null ? m.p50 : null);
+    var refLabel = head.refPrice != null ? '同类散买合计' : '淘宝同类中位';
     var beLo = null, beHi = null;
     skus.forEach(function (s) {
       if (s.breakEven == null) return;
@@ -1302,17 +1335,27 @@
         '<div><span>全成本</span><b>' + numCost + '</b><i>货价+快递+包装</i></div>' +
         '<div><span>单件净利</span><b class="' + (x.health === 'loss' ? 'neg' : '') + '">' + numNet + '</b><i>扣完平台/广告/退货</i></div>' +
         '<div><span>保本售价</span><b>' + (beLo == null ? '—' : tbRange1(beLo, beHi)) + '</b><i>低于此价就亏</i></div>' +
-        '<div><span>淘宝中位</span><b>' + approx + tbMoney(m.mid) + '</b><i>' + (m.n ? m.n + ' 个样本' : '样本 0，纯估') + '</i></div>' +
+        '<div><span>' + refLabel + '</span><b>' + (refV != null ? tbMoney(refV) : '—') + '</b><i>' +
+          (x.kind === 'bundle' ? '按组件散买中位相加' : (m.n ? 'n=' + m.n + ' · 11-28 采样' : '未采到')) + '</i></div>' +
       '</div>' +
+      (m.p25 != null
+        ? '<p class="tb-band">同类价带 <b>' + tbMoney(m.p25) + '–' + tbMoney(m.p75) + '</b>（p25–p75，n=' + m.n +
+          '）· 参照词「' + esc(m.kw || '') + '」' + (m.level === 'bundle' ? '· 套装形态' : '') +
+          (x.kind === 'bundle' && m.level !== 'bundle' ? '<em>这个词搜到的多是单件，套装没有同形态对手，只当价格下限看</em>' : '') +
+          '<em>2026-11-28 按销量排序抓的实时在售价，不是估价</em></p>'
+        : '') +
       '<div class="tb-skus"><div class="tb-skus-h"><b>规格与下单清单</b><span>点开任一规格，就是这一单要去哪几家、买哪个规格、几件</span></div>' +
         (skus.map(tbSkuBlock).join('') || '<p class="tb-none">还没有定义产品规格。</p>') + '</div>' +
       '<details class="tb-sups"><summary>' + esc(supSum) + '</summary>' +
         (sups.map(tbSup).join('') || '<p class="tb-none">没有可用供应商。</p>') + '</details>' +
       '<details class="tb-more"><summary>完整论证：为什么是它 / 淘宝对标 / 怎么打 / 翻车点</summary>' +
-        '<h4>淘宝对标</h4>' +
-        '<p class="tb-bridge">价带 ' + tbRange(m.lo, m.hi, x.priceApprox) + '（' + (m.n ? m.n + ' 个样本' : '样本 0，是估的') +
-          '）· 榜首 ' + approx + tbMoney(top.price) + ' ' + esc(top.sold || '') + ' ' + esc(top.shop || '') +
-          '　<em>快照日 ' + esc(x.shotAt || '—') + '，与 1688 报价不同源</em></p>' +
+        '<h4>淘宝对标（2026-11-28 实时）</h4>' +
+        (m.n
+          ? '<p class="tb-bridge">词「' + esc(m.kw || '') + '」按销量排序取前 ' + m.n + ' 个有效链接：' +
+            'p25 <b>' + tbMoney(m.p25) + '</b> · 中位 <b>' + tbMoney(m.p50) + '</b> · p75 <b>' + tbMoney(m.p75) + '</b> · p90 <b>' + tbMoney(m.p90) + '</b>' +
+            '；天猫占 ' + Math.round((m.tmall || 0) * 100) + '%，浙江发货占 ' + Math.round((m.zhejiang || 0) * 100) + '%' +
+            '<em>价格为列表展示价（多为最低价规格，可能含首单价），所以价带偏低，用它判断「我们贵不贵」是保守的</em></p>'
+          : '<p class="tb-bridge">这个词没采到有效样本。</p>') +
         '<h4>为什么判断它是爆款</h4><ul class="tb-why">' + (why || '<li>—</li>') + '</ul>' +
         '<h4>怎么打</h4><ul class="tb-plays">' + (plays || '<li>—</li>') + '</ul>' +
         '<h4>最容易翻车的地方</h4><p class="tb-risk">' + esc(x.risk || '—') + '</p>' +
@@ -1333,7 +1376,7 @@
 
     setText('tbFormula', (tb.model || {}).formula || '—');
     var a = tb.assumptions || {};
-    setText('tbAssume', '快递 ¥' + (a.express != null ? a.express : '—') + '/包裹 · 包装 ¥' + (a.pack != null ? a.pack : '—') +
+    setText('tbAssume', '运费回退值 ¥' + (a.express != null ? a.express : '—') + '/包裹 · 包装 ¥' + (a.pack != null ? a.pack : '—') +
       ' · 平台 ' + (a.platformRate != null ? String(+(a.platformRate * 100).toFixed(1)) + '%' : '—') +
       ' · 广告 ' + (a.adRate != null ? Math.round(a.adRate * 100) + '%' : '—') +
       ' · 退货 ' + (a.refundRate != null ? Math.round(a.refundRate * 100) + '%（退回件废五成）' : '—'));
@@ -1344,7 +1387,9 @@
       stat.innerHTML = '<b>' + (c.total || 0) + '</b> 个产品　做 <b>' + (c.do || 0) + '</b> / 观望 ' + (c.watch || 0) + ' / 放弃 ' + (c.drop || 0) +
         '<br>' + (c.skuCount || 0) + ' 个产品规格 ← ' + (c.supplierCount || 0) + ' 家供应商 / <b>' + (c.specRows || 0) + '</b> 个可下单规格' +
         '<br>净利健康 <b>' + (c.healthOk || 0) + '</b>　薄利 ' + (c.healthThin || 0) + '　亏钱 <b>' + (c.healthLoss || 0) + '</b>' +
-        (c.specPending ? '　规格待核 <b>' + c.specPending + '</b>' : '');
+        (c.specPending ? '　规格待核 <b>' + c.specPending + '</b>' : '') +
+        '<br>淘宝价带 ' + (c.banded || 0) + ' 个产品 / <b>' + (c.bandSamples || 0) + '</b> 条实时样本　定价高于同类 <b>' + (c.priceHigh || 0) +
+        '</b>　按市场价必亏 <b>' + (c.marketLoss || 0) + '</b>' + (c.bulkPrice ? '　批量价存疑 ' + c.bulkPrice : '');
     }
 
     var cal = tb.calendar || [];
