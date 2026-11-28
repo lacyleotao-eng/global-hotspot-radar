@@ -1,0 +1,578 @@
+[
+  {
+    "title": "Hacker News 热议 Google DeepCrossAttention：同等质量训练最快 3 倍，可加装到已训练模型",
+    "summary": "Google Research 博客介绍 DeepCrossAttention（DCA）：把 Transformer 残差连接改成动态路由，用可学习权重与深度方向的 cross-attention 组合历史层输出。页面声称同等质量最快 3 倍、所需参数减少 30%–40%、额外参数不到总量 0.2%；LM1B 上 30 层 DCA 取得比标准 42 层更低的困惑度，加装到预训练模型后短暂续训困惑度降 0.19。结果出自 ICML 2025 论文。该话题 11 月 27 日 23:06 UTC 进入 Hacker News 首页，页面显示 476 分、172 条评论。",
+    "type": "discussion",
+    "subtype": "AI/模型架构讨论",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50672565",
+    "publishedAt": "2026-11-27T23:06:29+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "476（HN points，抓取时点可见）",
+        "comments": "172（抓取时点可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 Hacker News 讨论页与 Google Research 博客正文，核对页面给出的数字与论文链接",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "3 倍、30%–40% 等为 Google 博客与论文作者口径，未见独立复现；HN 分数与评论数为抓取时点页面可见值；社区具体观点未逐条采样"
+    },
+    "citations": [
+      {
+        "title": "Supercharging transformer residual connections",
+        "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+        "publisher": "Google Research Blog",
+        "date": "2026-11-23",
+        "relation": "一手"
+      },
+      {
+        "title": "DeepCrossAttention: Supercharging Transformer Residual Connections",
+        "url": "https://arxiv.org/abs/2502.06785",
+        "publisher": "arXiv / ICML 2025",
+        "date": "2025",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "对国内读者最有迁移价值的是「可 retrofit 到已训练模型、少量续训即可见效」这一工程思路；但所有性能数字出自论文方，落地前需自行复现，标题不可写成已被业界验证。",
+      "community": "Hacker News 页面显示 172 条评论，热度高于同日多数技术帖；具体争论内容未逐条核验，不作概述。",
+      "sentiment": "未知",
+      "source": "Google Research 官方博客 + HN 公开讨论页"
+    },
+    "tags": ["AI", "Transformer", "模型架构", "Google", "开源论文"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "不改权重也能提速？DeepCrossAttention 把残差连接变成了“深度路由”",
+        "angle": "从工程落地角度解释：为什么残差连接是信息稀释问题，以及 retrofitting 已训练模型这条路径对算力紧张的团队意味着什么。",
+        "outline": ["传统残差连接等权相加的问题", "DCA 的动态层路由与深度 cross-attention 做法", "博客给出的 3 倍速度、30%–40% 参数与 perplexity 数字", "可加装到预训练模型的续训实验结果", "数字来自论文方、需独立复现的边界"],
+        "audience": "算法工程师、模型训练与推理优化从业者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "性能数字为论文方口径，不得写成已被工业界普遍验证",
+        "basis": "Google Research 博客正文与 HN 讨论页（2026-11-27 23:06 UTC，476 分/172 评论）"
+      }
+    ]
+  },
+  {
+    "title": "黑五前五家购物网站被植入 WebRTC 银行卡窃取脚本，研究方通报后陆续下架",
+    "summary": "安全研究机构 InfoHawk 披露，黑五前一周 Lascana、Samsonite、American Tourister、Revolve、FWRD 五家网站的页面被植入窃取支付信息的脚本。脚本通过营销像素、Cookie 同意横幅配置或自有 CDN 文件进入页面，仅在手机尺寸触屏的结算页运行，并借 WebRTC 数据通道与 Cloudflare TURN 中继加载和回传数据，绕开常规 connect-src 监控。研究方在 Lascana 用测试卡确认信息被外传；接到通报后相关代码于 11 月 24–25 日移除。真实受害人数未知。",
+    "type": "news",
+    "subtype": "科技/支付安全",
+    "region": "海外",
+    "platform": "InfoHawk",
+    "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+    "publishedAt": null,
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "读取 InfoHawk 原始披露全文，核对受影响站点、时间线、攻击鏈路及 Revolve 的公开回应",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "页面仅标日期 2026 年 11 月 27 日，无精确时刻，故 publishedAt 置 null；真实被盗取的持卡人数量研究方明确表示未知；该事件在 Hacker News 的讨论见 citations（556 分、304 评论，抓取时点可见），非本页数据"
+    },
+    "citations": [
+      {
+        "title": "Credit card skimming scripts using WebRTC found on popular shopping sites — Hacker News discussion",
+        "url": "https://news.ycombinator.com/item?id=50668145",
+        "publisher": "Hacker News",
+        "date": "2026-11-27",
+        "relation": "转载"
+      }
+    ],
+    "evaluation": {
+      "editor": "这是典型的第三方脚本供应链攻击：风险不在网站自身代码，而在像素、同意横幅和 CDN 文件。国内海淘、跨境支付和电商前端都能直接借鉴防护清单，写稿时要强调「真实受害人数未知」。",
+      "community": "Hacker News 讨论页显示 556 分、304 条评论，为同日热度最高的安全类话题之一；具体观点未逐条采样。",
+      "sentiment": "负面",
+      "source": "InfoHawk 安全研究披露（一手）+ HN 公开讨论"
+    },
+    "tags": ["支付安全", "黑五", "WebRTC", "供应链攻击", "跨境电商"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "黑五海淘要当心：五家知名网站被植入“看不见”的盗卡脚本",
+        "angle": "从消费者视角讲清攻击如何绕过常规检测，并给出可执行的自保与核查动作。",
+        "outline": ["五家受影响网站与时间线", "脚本如何藏在像素、同意横幅和 CDN 里", "为什么只在手机结算页运行、为什么 WebRTC 难查", "普通用户如何查账单、保护和更换卡片", "网站运营方应立即做的 connect-src 与第三方脚本清理"],
+        "audience": "海淘用户、跨境电商从业者、前端与安全团队",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "不得写出未经证实的受害人数，不得暗示所有涉事网站均确认数据泄露",
+        "basis": "InfoHawk 原文：五家站点名单、Lascana 测试卡外传、11 月 24–25 日移除、真实受害人数未知"
+      }
+    ]
+  },
+  {
+    "title": "扫描 327 万个 Hugging Face 仓库发现 5 个藏恶意代码的 GGUF 模型，累计下载 2428 次",
+    "summary": "安全研究者 Düzgün 在 11 月 26 日扫描了 Hugging Face 全部 3273389 个公开模型仓库，其中 226310 个 GGUF 仓库、572184 个聊天模板，静态解析后发现 5 个仍在线的恶意 GGUF 模型，截至 27 日累计下载 2428 次，涉及 Mir2k 与 timdedid 两个账号。攻击把 Windows 远控程序附加在 GGUF 最后一个张量之后，再通过篡改聊天模板让模型在每次回复开头输出解密执行命令；另一路模板会在触发词出现时劫持带 shell 权限的智能体。研究者同时发布无需执行代码的检测工具 gguf-radar。",
+    "type": "news",
+    "subtype": "科技/AI 供应链安全",
+    "region": "海外",
+    "platform": "Malspark",
+    "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+    "publishedAt": null,
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 Malspark 原始分析全文，核对扫描口径、仓库下载量与攻击链描述；检查 Hacker News 讨论页数据",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "页面仅标日期 2026 年 11 月 27 日，无精确时刻；数字为研究者自述且已给出扫描方法，未见 Hugging Face 官方公告确认；下载量不等于受害人数（原文明确说明）；相关 HN 讨论 34 分/15 评论为抓取时点数据"
+    },
+    "citations": [
+      {
+        "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims — Hacker News discussion",
+        "url": "https://news.ycombinator.com/item?id=50676752",
+        "publisher": "Hacker News",
+        "date": "2026-11-28",
+        "relation": "转载"
+      }
+    ],
+    "evaluation": {
+      "editor": "本地部署热门模型正在成为新的投毒入口，重点不是「AI 会不会作恶」，而是模型文件与聊天模板本身可作为载体。写稿需明确这是研究者披露、下载量不等于受害人数。",
+      "community": "Hacker News 讨论页显示 34 分、15 条评论，讨论规模尚小，处于新出现阶段。",
+      "sentiment": "负面",
+      "source": "Malspark 安全研究博客（一手披露）+ HN 公开讨论"
+    },
+    "tags": ["AI 安全", "GGUF", "Hugging Face", "本地大模型", "供应链投毒"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "下载到本地的大模型也可能带毒：5 个 GGUF 文件被查出藏有远控程序",
+        "angle": "面向本地部署爱好者，解释模型文件末尾隐藏字节与聊天模板投毒两种手法，并给出自查思路。",
+        "outline": ["扫描范围：327 万个公开仓库、5 个恶意模型、2428 次下载", "恶意代码如何藏在最后一个张量之后且不影响加载", "聊天模板如何让模型输出诱导执行的命令", "另一路攻击如何劫持带 shell 权限的编程智能体", "下载量不等于受害人数，以及静态检测工具的作用"],
+        "audience": "本地大模型玩家、开发者、AI 工具重度用户",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "不可写成「2400 人受害」，不可把研究者披露写成平台官方通报",
+        "basis": "Malspark 原文扫描数字、Mir2k/timdedid 攻击机制与下载量口径说明"
+      }
+    ]
+  },
+  {
+    "title": "Hacker News 热帖：真实 Linux 内核被编译成 WebAssembly，可在浏览器里启动",
+    "summary": "unkernel.dev 演示页展示了一个可在浏览器中启动的真实 Linux 内核：页面日志显示浏览器特性检查通过、下载 3.6 MiB 的 unkernel-smp.wasm、用 17 毫秒完成内核编译、加载 1.5 MiB 基础 initramfs、分配 2048 MiB 内存并启动内核 worker。该项目 11 月 28 日 03:19 UTC 登上 Hacker News，页面显示 435 分、115 条评论；The Register 同日以《Unkernel and Trynix just transported computing to 2035》为题做了报道。演示页面未说明完整系统可用性边界。",
+    "type": "discussion",
+    "subtype": "开源技术/浏览器运行时",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50674218",
+    "publishedAt": "2026-11-28T03:19:20+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "435（HN points，抓取时点可见）",
+        "comments": "115（抓取时点可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 unkernel.dev 演示页可见启动日志与 Hacker News 讨论页数据；The Register 报道标题由 HN 条目给出，正文因人机验证未能打开",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "演示页日志与 HN 数据为页面可见事实；项目性能、可用性及 Trynix 细节未获完整正文核实，不作结论"
+    },
+    "citations": [
+      {
+        "title": "… unkernel — Linux on WebAssembly",
+        "url": "https://unkernel.dev",
+        "publisher": "unkernel.dev",
+        "date": "2026-11-28",
+        "relation": "一手"
+      },
+      {
+        "title": "Unkernel and Trynix just transported computing to 2035",
+        "url": "https://www.theregister.com/software/2026/11/28/unkernel-and-trynix-just-transported-computing-to-2035/5313200",
+        "publisher": "The Register",
+        "date": "2026-11-28",
+        "relation": "二手"
+      }
+    ],
+    "evaluation": {
+      "editor": "「浏览器里跑真内核」是很有画面感的开发者话题，适合讲 WebAssembly 的能力边界；但要严格限定为演示页已展示的启动流程，不夸大成熟度。",
+      "community": "Hacker News 页面显示 435 分、115 条评论，属当日高热技术帖；具体观点未逐条采样。",
+      "sentiment": "未知",
+      "source": "项目演示页 + HN 公开讨论 + The Register 报道"
+    },
+    "tags": ["WebAssembly", "Linux", "浏览器", "开源项目", "Hacker News"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "浏览器里启动一个真 Linux 内核：3.6MB 的 wasm 文件是怎么做到的",
+        "angle": "用可视化思路讲清 WebAssembly 运行时的边界，以及这件事为什么让开发者兴奋。",
+        "outline": ["演示页可见的启动流程与关键数字", "真实内核与模拟器的区别", "WebAssembly 近年来能力扩展的脉络", "目前能做什么、不能做什么", "对在线IDE、教学与轻量云桌面的潜在意义"],
+        "audience": "开发者、技术爱好者、云计算从业者",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "不要把演示启动等同于可用操作系统环境，不写未经证实的 Trynix 细节",
+        "basis": "unkernel.dev 演示页日志与 HN 讨论页（435 分/115 评论）"
+      }
+    ]
+  },
+  {
+    "title": "OpenAI 在加州反诉 Apple，指其重新雇用前员工获取机密信息",
+    "summary": "BBC 报道，Apple 今年 7 月起诉 OpenAI、两名前 Apple 员工及 Jony Ive 创立的 io Products，指控存在窃取机密信息的模式；OpenAI 已在周五于加州提出反诉。OpenAI 称 Apple 重新雇用了一名仅任职六个月的前员工，该员工接触过一款新设备与公司实体产品路线图，并把数十份 OpenAI 文档发送到个人电话号码，还应 Apple 要求向其高级员工展示 OpenAI 计划。OpenAI 另指控 Apple 阻止硬件供应商与其合作。Apple 回应称反诉是转移视线的企图，并重申原诉针对故意窃取机密信息。",
+    "type": "news",
+    "subtype": "商业/科技法律纠纷",
+    "region": "海外",
+    "platform": "BBC",
+    "url": "https://www.bbc.com/news/articles/cm15ekqvlezeo",
+    "publishedAt": null,
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 BBC 报道正文，核对双方诉讼主张与公开回应；未读取法院诉状原文",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "BBC 页面仅显示「3 hours ago」（抓取时点约 2026-11-28 14:20 UTC），无精确发布时间，故 publishedAt 置 null；文中未给出具体法院名称与日期；所有指控均为双方诉状主张，未经法院认定"
+    },
+    "citations": [
+      {
+        "title": "OpenAI counter-sues Apple over alleged theft of trade secrets — Hacker News discussion",
+        "url": "https://news.ycombinator.com/item?id=50677365",
+        "publisher": "Hacker News",
+        "date": "2026-11-28",
+        "relation": "转载"
+      }
+    ],
+    "evaluation": {
+      "editor": "这场官司的看点不是谁对谁错，而是 AI 硬件创业与老牌消费电子巨头在人才、供应链和产品设计上的正面碰撞。写稿时必须用「指控」「回应」措辞，不做法律判断。",
+      "community": "Hacker News 讨论页显示 3 分、0 条评论（抓取时点），尚未形成讨论热度。",
+      "sentiment": "争议",
+      "source": "BBC 报道（媒体一手采访与诉状转述）+ 双方公开回应"
+    },
+    "tags": ["OpenAI", "Apple", "商业秘密", "AI 硬件", "诉讼"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "从被诉到反诉：OpenAI 与 Apple 争夺的不只是几份文档",
+        "angle": "把诉讼当作商业竞争样本，分析 AI 硬件人才流动、供应链关系与产品路线图保密的行业性难题。",
+        "outline": ["Apple 7 月起诉的对象与核心指控", "OpenAI 反诉的具体主张", "io Products 与 65 亿美元收购背景", "双方回应与尚未经法院认定的边界", "对国内硬件创业团队的人才与保密启示"],
+        "audience": "科技行业从业者、创业者、关注 AI 硬件的读者",
+        "timeliness": "当日",
+        "priority": "高",
+        "risk": "全部内容须标注为诉状指控，不得作有罪或无罪判断",
+        "basis": "BBC 报道正文：双方诉讼主张、io Products 收购金额与 Apple 发言人回应"
+      }
+    ]
+  },
+  {
+    "title": "Sakana AI CEO：自研模型 Sawara 不只为了日本国家安全，更要提振本土制造业",
+    "summary": "TechCrunch 采访日本 AI 初创 Sakana AI 联合创始人兼 CEO David Ha。他表示公司本月启动自研基础模型 Sawara，计划 2027 年初先训练发布较小规模版本、随后推更大版本，长期目标是支撑日本工业与制造业，短期也回应本土网络安全与本地部署需求。Ha 称直接照搬开放权重模型难以适配日本企业与政府场景，政府项目要求训练数据可审计、模型可定制、可本地部署。公司 7 月与日本防卫省签研究合同，也参与总务省的虚假信息检测系统。对日媒报道的 IPO 传闻，他称暂无近期计划，但长期倾向在日本上市。",
+    "type": "news",
+    "subtype": "商业/AI 产业",
+    "region": "海外",
+    "platform": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+    "publishedAt": "2026-11-28T14:00:00+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "读取 TechCrunch 正文与 RSS 时间戳，核对受访者原话与公司项目时间线",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "内容为 CEO 对媒体的自述与计划，Sawara 尚未发布；IPO 为媒体报道与本人回应，不得写成确定安排"
+    },
+    "citations": [
+      {
+        "title": "Sakana AI's CEO says its homegrown models are about more than Japan's national security",
+        "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+        "publisher": "TechCrunch",
+        "date": "2026-11-28",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "这条最值得迁移到国内语境的是「开放权重模型不够适配本地企业与政府场景」的判断：本地化语料、可审计、可本地部署是共性需求。写稿宜对比思路，不做地缘政治延伸。",
+      "community": "未见公开社区讨论数据，热度信号不可见。",
+      "sentiment": "中性",
+      "source": "TechCrunch 对 Sakana AI CEO 的直接采访"
+    },
+    "tags": ["AI 产业", "日本", "本地部署", "基础模型", "制造业"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "一家日本 AI 公司为什么要自己训基础模型？CEO 给出了三个理由",
+        "angle": "从「通用模型不够用」的痛点切入，讨论垂直本地化、可审计与 on-prem 部署的共性价值。",
+        "outline": ["Sawara 的计划与时间线", "为何直接沿用开放权重模型不够", "政府与制造场景对本地部署的硬要求", "Fugu、Namazu 与 Sawara 的产品分工", "对国内行业模型路线的对照启示"],
+        "audience": "AI 行业从业者、企业数字化负责人",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "避免地缘政治化的过度解读；IPO 传闻只能写成传闻",
+        "basis": "TechCrunch 采访原文：David Ha 关于 Sawara、本地部署与政府项目的表述"
+      }
+    ]
+  },
+  {
+    "title": "Ars Technica 评测 2026 款 Kindle Paperwhite：翻页键回归，但价格也涨了",
+    "summary": "Ars Technica 发布 2026 款 Kindle Paperwhite 评测。文章指出，过去五年供应链压力、短缺与通胀推高电子产品价格，Kindle 也不例外：今年基础款 Kindle 售价 150 美元，而 2024 年 160 美元的 Paperwhite 在屏幕、前光和防水方面明显更好。2026 年单色 Kindle 系列共有五款，旗舰为 250 美元的 Paperwhite Signature Edition，采用铝制外壳并基于 200 美元 Paperwhite 的核心规格。标题称翻页按键回归，但要为此支付更高价格。正文因站点人机验证未能完整读取。",
+    "type": "news",
+    "subtype": "产品/消费电子评测",
+    "region": "海外",
+    "platform": "Ars Technica",
+    "url": "https://arstechnica.com/gadgets/2026/11/2026-kindle-paperwhite-review-page-turn-buttons-are-back-for-a-price/",
+    "publishedAt": "2026-11-28T12:00:20+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 Ars Technica RSS 中的完整摘要与条目时间戳，尝试打开正文遇人机验证",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "价格与型号信息来自 RSS 摘要，未获正文逐项复核；「翻页键回归」来自原文标题；具体评测结论不作延伸"
+    },
+    "citations": [],
+    "evaluation": {
+      "editor": "电子阅读器的涨价与产品线分层是很好的生活方式话题，国内读者对「上一代更值」的共鸣强。引用价格时必须是文章给出的美元价，不换算成国内售价。",
+      "community": "未见公开互动数据，热度信号不可见。",
+      "sentiment": "中性",
+      "source": "Ars Technica 官方 RSS 摘要"
+    },
+    "tags": ["Kindle", "电子阅读器", "消费电子", "产品评测", "价格"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "新版 Kindle 把翻页键加回来了，可价格也涨了：五款机型怎么选",
+        "angle": "围绕「功能回归与涨价并存」做选购向梳理，帮助读者判断值不值。",
+        "outline": ["2026 年五款单色 Kindle 的价格与定位", "翻页键回归的意义与代价", "150 美元基础款与 2024 年 160 美元 Paperwhite 的对比", "200 与 250 美元 Paperwhite 的差异", "给不同阅读习惯用户的建议"],
+        "audience": "电子书读者、数码产品和购机决策人群",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "价格均为报道时的美元价，不得写成国内售价或促销价",
+        "basis": "Ars Technica 评测标题与 RSS 摘要中的价格、型号与配置描述"
+      }
+    ]
+  },
+  {
+    "title": "Product Hunt 新品 OpenCrawl：让多个编程智能体互相搜索历史、跨机器对话",
+    "summary": "Product Hunt 11 月 27 日上线开源工具 OpenCrawl，标语为「Multiplayer for your coding agents」。产品页说明，它让编程智能体互相搜索彼此的历史记录并对话，覆盖笔记本与云端编码环境，兼容 Claude Code、Codex、Cursor、Gemini CLI 等，支持自托管、免费起步。发布者在描述中提到，并行运行多个编程智能体时，人常沦为在窗口间复制上下文的「秘书」。产品页展示的评论提到多会话改动同一仓库时上下文难以追溯的问题。投票数在页面不可见。",
+    "type": "resource",
+    "subtype": "开源工具/AI 编程",
+    "region": "海外",
+    "platform": "Product Hunt",
+    "url": "https://www.producthunt.com/products/opencrawl",
+    "publishedAt": "2026-11-27T22:38:08+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "新出现",
+      "signals": {
+        "views": "不可见",
+        "likes": "不可见",
+        "comments": "不可见",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 Product Hunt 官方 Atom feed 获取发布时间和产品直链，再读取产品页正文与可见评论",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "产品能力为发布方自述，未实测；Atom feed 与页面均未显示投票数；发布时间由 feed 的 2026-11-27T14:38:08-08:00 换算为 UTC"
+    },
+    "citations": [
+      {
+        "title": "Product Hunt 官方 Atom feed",
+        "url": "https://www.producthunt.com/feed",
+        "publisher": "Product Hunt",
+        "date": "2026-11-27",
+        "relation": "官方"
+      }
+    ],
+    "evaluation": {
+      "editor": "「多个 AI 编程智能体之间共享上下文」是当下开发者真实痛点，OpenCrawl 的思路可与同类多智能体编排工具对照写，但功能均属自述，需标明未实测。",
+      "community": "产品页可见评论关注「决策来自哪个会话、能否追溯」的问题，反映上下文溯源需求；样本很小，不作总体评价。",
+      "sentiment": "正面",
+      "source": "Product Hunt 官方产品页与 Atom feed"
+    },
+    "tags": ["AI 编程", "多智能体", "开源工具", "Product Hunt", "开发效率"],
+    "needs": ["多个编程智能体之间的上下文共享与决策溯源"],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "同时开五个 AI 编程助手后，最累的居然是复制粘贴上下文",
+        "angle": "从多开智能体的真实痛点点出新工具品类，讲清它解决什么、不解决什么。",
+        "outline": ["并行编程智能体带来的上下文搬运问题", "OpenCrawl 的自托管与跨机器方案", "兼容 Claude Code、Codex、Cursor、Gemini CLI 等", "评论中提到的决策溯源需求", "自述功能、未实测的边界提示"],
+        "audience": "程序员、AI 编程工具用户、技术团队负责人",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "不得写成已验证的效率提升结论，不虚构用户数与投票数",
+        "basis": "Product Hunt 产品页正文、发布者描述与可见评论"
+      }
+    ]
+  },
+  {
+    "title": "GitHub 日榜：App Store / Google Play 合规仓库 app-store-compliance 单日新增 907 星",
+    "summary": "GitHub Trending 11 月 28 日抓取的日榜中，mjmirza/app-store-compliance 位列前列，页面显示总星标 8296、当日新增 907 星。仓库自述提供 App Store 与 Google Play 提审合规的开放 playbook 和提交前检查工具，包含 125 条已记录的拒审模式与修复方法、隐私清单与 Data safety 检查、117 项法规期限追踪（如欧盟 AI 法案、DSA、COPPA、年龄法规），并附带面向 AI 编程智能体的 skill。仓库由 GitHub 用户 mjmirza 维护，抓取页面未显示许可证信息。",
+    "type": "resource",
+    "subtype": "开源工具/出海合规",
+    "region": "海外",
+    "platform": "GitHub Trending",
+    "url": "https://github.com/mjmirza/app-store-compliance",
+    "publishedAt": null,
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "8296 星（抓取时点可见）",
+        "comments": "不可见",
+        "shares": "907 星（当日新增，抓取时点可见）"
+      }
+    },
+    "verification": {
+      "status": "部分核实",
+      "method": "读取 GitHub Trending 日榜页面与仓库主页，核对星标数、当日增量和 README 自述数字",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "榜单无发布时间，publishedAt 置 null；星标为抓取时点数据，会随时间变化；125/117 等为仓库自述，未逐项核验；页面未显示许可证，不据此推断授权方式"
+    },
+    "citations": [
+      {
+        "title": "Trending repositories on GitHub today",
+        "url": "https://github.com/trending?since=daily",
+        "publisher": "GitHub",
+        "date": "2026-11-28",
+        "relation": "官方"
+      }
+    ],
+    "evaluation": {
+      "editor": "国内出海 App 团队对拒审和隐私合规有强需求，这个仓库适合做「工具介绍 + 流程意识」类内容。星标热度高但自述数字未经核验，许可证不明，写稿需提示。",
+      "community": "当日新增 907 星说明关注度快速上升；未采样具体用户评价。",
+      "sentiment": "正面",
+      "source": "GitHub Trending 日榜 + 仓库主页"
+    },
+    "tags": ["GitHub", "App Store", "Google Play", "合规", "出海"],
+    "needs": ["上架前的拒审风险排查与法规期限追踪"],
+    "leads": [
+      {
+        "target": "今日头条",
+        "headline": "App 上架总被拒？这个开源仓库整理了 125 种拒审原因和修复方法",
+        "angle": "面向出海开发者，做工具介绍兼上架前自查清单，强调合规意识。",
+        "outline": ["仓库为何当天冲上 GitHub 日榜", "125 条拒审模式与提交前检查工具", "隐私清单、Data safety 与 117 项法规期限", "AI 编程智能体 skill 的用法场景", "自述数字与许可证未明的注意事项"],
+        "audience": "移动应用开发者、出海团队、独立开发者",
+        "timeliness": "本周",
+        "priority": "中",
+        "risk": "不写成法律或合规确定结论；星标数注明抓取时点",
+        "basis": "GitHub Trending 日榜星标数据与仓库主页描述"
+      }
+    ]
+  },
+  {
+    "title": "《神经网络与深度学习》作者 Michael Nielsen 撤下网络版：不想帮助训练前沿实验室人才",
+    "summary": "Michael Nielsen 在其经典教材《Neural Networks and Deep Learning》主页发表声明：本书写于 2011 至 2015 年，当时他预期基于神经网络的 AGI 还需数十年才会到来并带来巨大收益，挑战会随能力发展而被解决。他现在改变了看法：前沿实验室行为极其鲁莽，系统发展远快于预期，给人类应对挑战的时间太少，虽然系统已带来并将继续带来许多好事，但也构成重大灾难风险。他表示不希望哪怕在很小程度上帮助训练从事这项工作的人，因此已把书撤下。声明署名 2026 年 11 月。该消息 11 月 27 日 19:31 UTC 登上 Hacker News，页面显示 591 分、406 条评论。",
+    "type": "idea",
+    "subtype": "观点讨论/AI 安全",
+    "region": "海外",
+    "platform": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50670757",
+    "publishedAt": "2026-11-27T19:31:01+00:00",
+    "collectedAt": "2026-11-28T22:20:00+08:00",
+    "image": null,
+    "heat": {
+      "stage": "上升",
+      "signals": {
+        "views": "不可见",
+        "likes": "591（HN points，抓取时点可见）",
+        "comments": "406（抓取时点可见）",
+        "shares": "不可见"
+      }
+    },
+    "verification": {
+      "status": "已核实",
+      "method": "读取作者主页原始声明全文与 Hacker News 讨论页数据",
+      "verifiedAt": "2026-11-28T22:20:00+08:00",
+      "notes": "主页仅标「November 2026」，无精确日期；HN 分数与评论数为抓取时点可见值；社区具体观点未逐条采样"
+    },
+    "citations": [
+      {
+        "title": "Neural Networks and Deep Learning — 作者声明",
+        "url": "https://neuralnetworksanddeeplearning.com/",
+        "publisher": "Michael Nielsen",
+        "date": "2026-11",
+        "relation": "一手"
+      }
+    ],
+    "evaluation": {
+      "editor": "一位经典教材作者主动撤书，本身就是关于「知识传播与责任」的强观点符号，适合做观点类选题。需要把作者个人判断与已证实事实分开写，不将其灾难风险判断写成科学共识。",
+      "community": "Hacker News 页面显示 591 分、406 条评论，为当日讨论量最大的条目之一；具体立场分布未逐条采样。",
+      "sentiment": "争议",
+      "source": "作者主页声明（一手）+ HN 公开讨论"
+    },
+    "tags": ["AI 安全", "观点", "教育", "Michael Nielsen", "Hacker News"],
+    "needs": [],
+    "leads": [
+      {
+        "target": "公众号",
+        "headline": "写下最经典神经网络教材的人，把书撤了",
+        "angle": "以「一个人改变主意」为线索，讨论基础知识传播者在 AI 加速时代面临的责任困境。",
+        "outline": ["作者声明的原话与撤书决定", "2011–2015 年的预期与今天判断的落差", "他所说的「前沿实验室鲁莽行为」指什么", "撤书能否真正减少风险：可讨论的争议", "对国内 AI 教育与科普内容与立场的一点启示"],
+        "audience": "AI 从业者、教育工作者、关注技术伦理的读者",
+        "timeliness": "本周",
+        "priority": "高",
+        "risk": "作者的风险判断属个人观点，不得写成科学定论；避免政治化延伸",
+        "basis": "作者主页 2026 年 11 月声明原文与 HN 讨论页 591 分/406 评论"
+      }
+    ]
+  }
+]

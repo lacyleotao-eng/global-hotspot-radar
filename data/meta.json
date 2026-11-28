@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-28T21:03:15+08:00",
-  "total": 207,
+  "updatedAt": "2026-11-28T22:21:18+08:00",
+  "total": 217,
   "byType": {
-    "idea": 16,
-    "news": 73,
+    "news": 78,
+    "discussion": 37,
+    "resource": 41,
+    "idea": 17,
     "hotspot": 30,
-    "discussion": 35,
-    "demand": 14,
-    "resource": 39
+    "demand": 14
   },
   "sources": [
     "12306 / 自贡网",
@@ -15,6 +15,8 @@
     "21世纪经济报道",
     "36氪",
     "AI Paper Digest",
+    "Ars Technica",
+    "BBC",
     "B站",
     "CrowdStrike 官方公告",
     "DEV Community",
@@ -31,10 +33,12 @@
     "Hugging Face",
     "IT之家",
     "IT之家（引微信公众号·北京昌平）",
+    "InfoHawk",
     "Ladybird 官方博客",
     "LinkedIn（经 Daily 8 报道）",
     "LinkedIn（经 Discoverable 整理）",
     "Lobste.rs",
+    "Malspark",
     "NGA",
     "OSCHINA",
     "PC Gamer",
@@ -106,10 +110,10 @@
     "虎扑",
     "青浦区政府网（来源“绿色青浦”微信公众号）"
   ],
-  "leadsTotal": 172,
+  "leadsTotal": 182,
   "byTarget": {
-    "公众号": 95,
-    "今日头条": 77
+    "公众号": 100,
+    "今日头条": 82
   },
-  "lastBatch": 12
+  "lastBatch": 10
 }
